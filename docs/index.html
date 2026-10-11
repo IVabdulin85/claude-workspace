@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Репетитор</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Golos+Text:wght@400;500;600;700&family=Unbounded:wght@500;600;700&display=swap">
+<style>
+/* Layout: школьная тетрадь в клетку — лист с красной полосой полей, проверка «красной ручкой учителя». */
+:root{
+  --paper:#F7F9FC; --grid:#E2E9F4; --margin:#EFB3AE;
+  --card:#FFFFFF; --ink:#1D2842; --muted:#5B6782; --line:#D6DDE9;
+  --accent:#2756C0; --accent-soft:#E5ECFA;
+  --pen:#C4362C; --pen-soft:#FBE8E5;
+  --ok:#2C8650; --ok-soft:#E3F3E9;
+  --warn:#A86E12; --warn-soft:#FAF0DC;
+  --kid0:#2756C0; --kid1:#0E7C78;
+  --f-display:"Unbounded","Golos Text",system-ui,sans-serif;
+  --f-body:"Golos Text",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-hand:"Caveat","Segoe Print","Comic Sans MS",cursive;
+  --r:12px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#131A26; --grid:#1D2636; --margin:#55302F;
+  --card:#1A2232; --ink:#E6EBF4; --muted:#9BA7BE; --line:#2C3649;
+  --accent:#86A7F2; --accent-soft:#222F4B;
+  --pen:#F2857A; --pen-soft:#3A2325;
+  --ok:#62C690; --ok-soft:#1C3428;
+  --warn:#E5B653; --warn-soft:#382D17;
+  --kid0:#86A7F2; --kid1:#52C7C0; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#131A26; --grid:#1D2636; --margin:#55302F;
+  --card:#1A2232; --ink:#E6EBF4; --muted:#9BA7BE; --line:#2C3649;
+  --accent:#86A7F2; --accent-soft:#222F4B;
+  --pen:#F2857A; --pen-soft:#3A2325;
+  --ok:#62C690; --ok-soft:#1C3428;
+  --warn:#E5B653; --warn-soft:#382D17;
+  --kid0:#86A7F2; --kid1:#52C7C0; color-scheme:dark}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--paper);color:var(--ink);font:400 17px/1.55 var(--f-body);
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px;}
+.wrap{max-width:860px;margin:0 auto;padding-inline:16px;padding-block:12px 64px}
+h1,h2,h3{font-family:var(--f-display);font-weight:600;line-height:1.25;text-wrap:balance;margin:0}
+h1{font-size:1.55rem} h2{font-size:1.2rem} h3{font-size:1.02rem}
+p{margin:0}
+.muted{color:var(--muted)}
+.small{font-size:.9rem}
+.tnum{font-variant-numeric:tabular-nums}
+
+/* top bar */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:10px;padding-block:10px}
+@media (max-width:480px){.tab{padding:7px 11px;font-size:.84rem}.brand{font-size:.95rem}}
+.brand{font-family:var(--f-display);font-weight:700;font-size:1.05rem;letter-spacing:.01em;display:flex;align-items:center;gap:8px;cursor:pointer;background:none;border:0;color:var(--ink);padding:0}
+.brand .dot{width:12px;height:12px;border-radius:3px;background:var(--pen);transform:rotate(45deg)}
+.nav{margin-left:auto;display:flex;gap:6px}
+.tab{white-space:nowrap;font:600 .92rem var(--f-body);border:1px solid var(--line);background:var(--card);color:var(--ink);padding:8px 14px;border-radius:999px;cursor:pointer}
+.tab[aria-current="page"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+
+/* buttons */
+.btn{font:600 1rem var(--f-body);display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:10px 20px;border-radius:10px;border:2px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer;text-decoration:none}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.soft{background:var(--accent-soft);color:var(--accent);border-color:transparent}
+.btn.pen{background:var(--pen);border-color:var(--pen);color:#fff}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn:focus-visible,.opt:focus-visible,.tab:focus-visible,.kid:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.stack{display:flex;flex-direction:column;gap:14px}
+
+/* sheet = тетрадный лист */
+.sheet{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px 18px 20px 34px;box-shadow:0 1px 0 var(--line)}
+.sheet::before{content:"";position:absolute;left:18px;top:0;bottom:0;width:2px;background:var(--margin)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px}
+.chip{display:inline-flex;align-items:center;gap:6px;font:600 .78rem var(--f-body);letter-spacing:.03em;text-transform:uppercase;padding:3px 9px;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
+.chip.ok{background:var(--ok-soft);color:var(--ok)} .chip.pen{background:var(--pen-soft);color:var(--pen)} .chip.warn{background:var(--warn-soft);color:var(--warn)} .chip.gray{background:transparent;color:var(--muted);border:1px solid var(--line)}
+.hand{font-family:var(--f-hand);font-weight:700;color:var(--pen);font-size:1.6rem;line-height:1.1}
+.hand.ok{color:var(--ok)}
+
+/* home */
+.hero{padding-block:22px 6px}
+.hero p{max-width:60ch;margin-top:8px}
+.kids{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin-top:18px}
+.kid{text-align:left;cursor:pointer;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px;display:flex;flex-direction:column;gap:10px;color:var(--ink);font:inherit;border-top:6px solid var(--kc,var(--accent))}
+.kid .name{font-family:var(--f-display);font-weight:600;font-size:1.25rem}
+.kid .stats{display:flex;gap:16px;flex-wrap:wrap}
+.stat b{display:block;font-family:var(--f-display);font-size:1.3rem;font-variant-numeric:tabular-nums}
+.stat span{font-size:.82rem;color:var(--muted)}
+.howto{margin-top:18px}
+.howto ol{margin:8px 0 0;padding-left:20px}
+
+/* test list */
+.list{display:flex;flex-direction:column;gap:10px}
+.item{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px}
+.item>div{min-width:0}
+.item .t{font-weight:600;font-size:1.05rem}
+.section-h{margin:22px 0 10px;font-family:var(--f-body);font-weight:700;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+@media (max-width:520px){.item{grid-template-columns:1fr}.item .btn{width:100%}}
+
+/* runner */
+.progress{height:8px;border-radius:999px;background:var(--line);overflow:hidden;margin:8px 0 14px}
+.progress i{display:block;height:100%;background:var(--accent);transition:width .3s}
+.qtext{font-size:1.12rem;line-height:1.6}
+.qtext mark{background:var(--warn-soft);color:inherit;padding:0 3px;border-radius:3px}
+.vis{margin:14px 0;overflow-x:auto}
+.vis svg{display:block;width:100%;height:auto;max-height:380px;color:var(--ink)}
+.jxgbox{width:100%;max-width:520px;max-height:420px;margin:0 auto;border:1px solid var(--line);border-radius:8px;background:var(--card);position:relative;overflow:hidden}
+.jxgbox .JXGtext{font-family:var(--f-body)!important}
+.opts{display:grid;gap:10px;margin-top:16px}
+.opt{display:flex;align-items:flex-start;gap:12px;text-align:left;font:inherit;color:var(--ink);background:var(--card);border:2px solid var(--line);border-radius:10px;padding:12px 14px;cursor:pointer;min-height:52px}
+.opt .let{flex:none;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-weight:700;background:var(--accent-soft);color:var(--accent)}
+.opt[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.opt.right{border-color:var(--ok);background:var(--ok-soft)} .opt.right .let{background:var(--ok);color:#fff}
+.opt.wrong{border-color:var(--pen);background:var(--pen-soft)} .opt.wrong .let{background:var(--pen);color:#fff}
+.opt:disabled{cursor:default}
+.numrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;align-items:center}
+.numrow input{font:600 1.2rem var(--f-body);width:min(240px,100%);min-height:52px;padding:8px 14px;border:2px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink)}
+.unit{font-weight:600;color:var(--muted)}
+.hintbox{margin-top:12px;padding:12px 14px;border-left:4px solid var(--warn);background:var(--warn-soft);border-radius:6px}
+.verdict{display:flex;gap:14px;align-items:center;padding:14px 16px;border-radius:10px;margin-top:16px}
+.verdict.ok{background:var(--ok-soft)} .verdict.bad{background:var(--pen-soft)}
+.why{margin-top:12px;padding:12px 14px;border:2px dashed var(--pen);border-radius:10px}
+.why .lbl{font-weight:700;color:var(--pen);font-size:.86rem;letter-spacing:.04em;text-transform:uppercase}
+.solution{margin-top:16px;padding-top:14px;border-top:1px dashed var(--line)}
+.steps{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-direction:column;gap:10px;counter-reset:st}
+.steps li{counter-increment:st;display:grid;grid-template-columns:32px 1fr;gap:10px;align-items:start}
+.steps li::before{content:counter(st);width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:.9rem;border:2px solid var(--accent);color:var(--accent)}
+.steps li>div{min-width:0}
+.lesson{margin-top:14px;padding:16px;border-radius:10px;background:var(--accent-soft)}
+.lesson h3{color:var(--accent)}
+.foot{display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between;margin-top:18px}
+.score{font-family:var(--f-display);font-size:2.6rem;font-weight:700;font-variant-numeric:tabular-nums}
+.res-list{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+.res-list div{display:flex;gap:10px;align-items:flex-start}
+.mark{flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-weight:700;color:#fff;font-size:.9rem}
+.mark.ok{background:var(--ok)} .mark.bad{background:var(--pen)} .mark.study{background:var(--warn)}
+.photo{margin-top:14px;padding:14px;border:1px solid var(--line);border-radius:10px;background:var(--card)}
+.photo img{max-height:220px;border-radius:8px;margin-top:10px;border:1px solid var(--line)}
+.ai{margin-top:10px;white-space:pre-wrap}
+input[type=file]{position:absolute;width:1px;height:1px;opacity:0}
+
+/* parent */
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:12px}
+.tbl-wrap{overflow-x:auto;margin-top:10px}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.bar{display:inline-block;width:70px;height:7px;border-radius:999px;background:var(--line);vertical-align:middle;margin-right:8px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--ok)}
+.namefield{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:8px}
+.namefield input{font:inherit;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);min-height:44px;width:min(260px,100%)}
+.banner{margin-top:10px;padding:10px 14px;border-radius:10px;background:var(--warn-soft);color:var(--ink);font-size:.95rem}
+.sendres textarea{width:100%;min-height:90px;margin-top:8px;font:13px/1.4 ui-monospace,Menlo,monospace;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)}
+.toast{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--paper);padding:12px 16px;border-radius:10px;max-width:calc(100% - 32px);z-index:20;font-weight:500}
+.empty{text-align:left;padding:22px}
+code.tex{font-family:ui-monospace,Menlo,monospace;font-size:.92em;background:var(--accent-soft);padding:0 4px;border-radius:4px}
+math{font-size:1.1em}
+.opt math{font-size:1.25em}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<header class="top"><div class="wrap">
+  <button class="brand" id="brand" type="button"><span class="dot" aria-hidden="true"></span>Репетитор</button>
+  <nav class="nav" aria-label="Разделы">
+    <button class="tab" id="tabKids" type="button">Ученики</button>
+    <button class="tab" id="tabParent" type="button">Для родителя</button>
+  </nav>
+</div></header>
+<div class="wrap" id="localBanner" hidden><div class="banner"><b>Ответы сохраняются на этом устройстве.</b> В конце теста нажми «Поделиться» или «WhatsApp» — результат уйдёт родителю, и он добавит его в статистику.</div></div>
+<main class="wrap" id="view">
+  <section class="hero">
+    <h1>Тесты по школьной программе</h1>
+    <p class="muted">Загружаю тесты…</p>
+  </section>
+</main>
+<div class="toast" id="toast" hidden role="status"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/katex.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.12.2/jsxgraphcore.js"></script>
+<style>.share-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.share-row .btn{text-decoration:none}</style>
+
+<script>
+/* ===== static mode (GitHub Pages): база данных заменена JSON-файлами ===== */
+(function(){
+  const DATA = "data/";
+  let index = null, cache = {};
+  async function loadIndex(){
+    if(index) return index;
+    const r = await fetch(DATA + "index.json", {cache:"no-cache"});
+    if(!r.ok) throw new Error("index.json " + r.status);
+    index = await r.json(); return index;
+  }
+  async function loadQuestions(testId){
+    if(cache[testId]) return cache[testId];
+    const r = await fetch(DATA + "tests/" + encodeURIComponent(testId) + ".json", {cache:"no-cache"});
+    if(!r.ok) throw new Error("questions " + r.status);
+    const d = await r.json(); cache[testId] = d.questions || []; return cache[testId];
+  }
+  const snapDoc = (exists, data) => ({exists, data: () => data});
+  const snapQuery = rows => ({docs: rows.map(x => ({id: x.id, data: () => { const {id, ...b} = x; return b; }}))});
+  const readOnly = () => Promise.reject({code: "invalid_argument", message: "static site"});
+  function db(){
+    return {
+      doc(path){
+        return {
+          onSnapshot(cb, err){ loadIndex().then(ix => {
+              if(path === "config/main") cb(snapDoc(true, {kids: ix.kids}));
+              else cb(snapDoc(false, null));
+            }).catch(err || console.warn); },
+          get(){ return loadIndex().then(ix => path === "config/main" ? snapDoc(true, {kids: ix.kids}) : snapDoc(false, null)); },
+          set: readOnly, update: readOnly
+        };
+      },
+      collection(path){
+        const m = /^tests\/([^/]+)\/questions$/.exec(path);
+        const fetchRows = async () => {
+          if(path === "tests") return (await loadIndex()).tests;
+          if(path === "attempts") return [];
+          if(m) return (await loadQuestions(decodeURIComponent(m[1]))).slice().sort((a, b) => (a.order || 0) - (b.order || 0));
+          return [];
+        };
+        const q = {
+          get: () => fetchRows().then(snapQuery),
+          orderBy(){ return q; },
+          onSnapshot(cb, err){ fetchRows().then(r => cb(snapQuery(r))).catch(err || console.warn); },
+          doc(){ return {id: "loc-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 8)}; }
+        };
+        return q;
+      }
+    };
+  }
+  window.claude = {
+    use(name){
+      if(name === "db") return Promise.resolve(db());
+      if(name === "user") return Promise.resolve({can: async () => false});
+      return Promise.resolve(null);
+    }
+  };
+  /* прямая ссылка: ?kid=k8  или  ?kid=k8&test=<id> */
+  window.addEventListener("load", () => {
+    const p = new URLSearchParams(location.search);
+    const kid = p.get("kid"), test = p.get("test");
+    if(!kid) return;
+    let n = 0;
+    const tick = () => {
+      if(typeof S === "undefined" || !S.ready || !S.kids.some(k => k.id === kid)){ if(n++ < 60) setTimeout(tick, 150); return; }
+      const t = test && S.tests.find(x => x.id === test);
+      if(t && typeof startTest === "function") startTest(kid, t);
+      else if(typeof go === "function") go({name: "kid", kid});
+    };
+    tick();
+  });
+})();
+</script>
+<script>
+"use strict";
+/* ============ state ============ */
+const DEFAULT_KIDS=[{id:"k5",name:"Ученик 5 класса",grade:5},{id:"k8",name:"Ученик 8 класса",grade:8}];
+const S={db:null,sample:null,canImages:false,ready:false,kids:DEFAULT_KIDS.slice(),tests:[],attempts:[],dbAttempts:[],route:{name:"home"},run:null,local:false};
+const $view=document.getElementById("view");
+
+/* ============ helpers ============ */
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function inl(s){return s.replace(/\*\*(.+?)\*\*/g,"<b>$1</b>").replace(/==(.+?)==/g,"<mark>$1</mark>").replace(/\n/g,"<br>");}
+function rich(str){
+  return String(str??"").split(/(\$[^$\n]+\$)/g).map(p=>{
+    if(p.length>2&&p[0]==="$"&&p[p.length-1]==="$"){
+      const tex=p.slice(1,-1);
+      if(typeof katex!=="undefined"){try{return katex.renderToString("\\displaystyle "+tex,{output:"mathml",throwOnError:false});}catch(e){}}
+      return '<code class="tex">'+esc(tex)+"</code>";
+    }
+    return inl(esc(p));
+  }).join("");
+}
+function h(tag,attrs,...kids){
+  const el=document.createElement(tag);
+  for(const [k,v] of Object.entries(attrs||{})){
+    if(v==null||v===false)continue;
+    if(k==="html")el.innerHTML=v; else if(k==="text")el.textContent=v;
+    else if(k.startsWith("on"))el.addEventListener(k.slice(2),v);
+    else if(k==="class")el.className=v; else el.setAttribute(k,v===true?"":v);
+  }
+  for(const c of kids.flat()){if(c==null||c===false)continue;el.append(c instanceof Node?c:document.createTextNode(String(c)));}
+  return el;
+}
+const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+let toastT;function toast(msg){const t=document.getElementById("toast");t.textContent=msg;t.hidden=false;clearTimeout(toastT);toastT=setTimeout(()=>t.hidden=true,4200);}
+const fmtDate=iso=>{try{return new Date(iso).toLocaleDateString("ru-RU",{day:"numeric",month:"short"});}catch(e){return "";}};
+const pct=(a,b)=>b?Math.round(a/b*100):0;
+const kidById=id=>S.kids.find(k=>k.id===id)||{id,name:"Ученик",grade:""};
+const kidColor=id=>`var(--kid${Math.max(0,S.kids.findIndex(k=>k.id===id))%2})`;
+function lsGet(k){try{return localStorage.getItem(k);}catch(e){return null;}}
+function lsSet(k,v){try{localStorage.setItem(k,v);}catch(e){}}
+function plural(n,a,b,c){const m=n%10,mm=n%100;return m===1&&mm!==11?a:(m>=2&&m<=4&&(mm<10||mm>=20)?b:c);}
+
+/* local mode: viewer can read tests but cannot write the shared base (opened by link / view access) */
+const LKEY="tutor.localAttempts";
+function localAll(){try{return JSON.parse(localStorage.getItem(LKEY)||"[]");}catch(e){return [];}}
+function localPut(a){if(!a)return;try{const all=localAll().filter(x=>x.id!==a.id);all.push({...a,local:true});localStorage.setItem(LKEY,JSON.stringify(all.slice(-200)));}catch(e){}}
+function mergeAttempts(){const loc=localAll();const ids=new Set(loc.map(x=>x.id));S.attempts=S.dbAttempts.filter(x=>!ids.has(x.id)).concat(loc);}
+function goLocal(){if(S.local)return;S.local=true;if(S.run&&S.run.a){S.run.a.local=true;localPut(S.run.a);}mergeAttempts();showBanner();
+  toast("Ответы сохраняются на этом устройстве. В конце нажми «Отправить результат».");}
+function showBanner(){const b=document.getElementById("localBanner");if(b)b.hidden=!S.local;}
+
+/* serialized writes */
+let wq=Promise.resolve();
+function save(path,data,mode){
+  if(path.startsWith("attempts/")&&(S.local||(S.run&&S.run.a&&S.run.a.local))){localPut(S.run&&S.run.a);mergeAttempts();return wq;}
+  if(S.local&&path.startsWith("config/")){toast("Менять имена может только владелец страницы.");return wq;}
+  wq=wq.then(async()=>{if(!S.db)return;const ref=S.db.doc(path);
+    try{await (mode==="set"?ref.set(data):ref.update(data));}
+    catch(e){ if(e&&e.code==="unavailable"){await new Promise(r=>setTimeout(r,700+Math.random()*600));try{await (mode==="set"?ref.set(data):ref.update(data));return;}catch(e2){e=e2;}}
+      if(e&&e.code==="invalid_argument"&&path.startsWith("attempts/")){goLocal();return;}
+      console.warn("save",path,e);toast(e&&e.code==="quota_exceeded"?"Место в базе закончилось — попросите Claude удалить старые тесты.":"Не удалось сохранить ответ. Проверьте интернет.");}
+  });return wq;
+}
+
+/* ============ sanitizer & visuals ============ */
+function cleanTree(root){
+  root.querySelectorAll("script,iframe,object,embed,foreignObject,link,meta,style,base").forEach(n=>n.remove());
+  const all=[root,...root.querySelectorAll("*")];
+  for(const el of all){for(const a of [...el.attributes]){const n=a.name.toLowerCase(),v=a.value.trim().toLowerCase();
+    if(n.startsWith("on")||((n==="href"||n==="xlink:href"||n==="src")&&(v.startsWith("javascript:")||v.startsWith("http"))))el.removeAttribute(a.name);}}
+  return root;
+}
+function insertMarkup(box,markup,kind){
+  try{
+    if(kind==="svg"){
+      const d=new DOMParser().parseFromString(String(markup),"image/svg+xml");const r=d.documentElement;
+      if(!r||r.nodeName!=="svg"||d.querySelector("parsererror"))throw new Error("bad svg");
+      box.appendChild(document.importNode(cleanTree(r),true));
+    }else{
+      const d=new DOMParser().parseFromString("<div>"+String(markup)+"</div>","text/html");
+      const r=cleanTree(d.body.firstElementChild);while(r.firstChild)box.appendChild(document.importNode(r.firstChild,true)),r.removeChild(r.firstChild);
+    }
+    return true;
+  }catch(e){box.append(h("p",{class:"muted small"},"Рисунок не удалось показать."));return false;}
+}
+const TOK={ink:"--ink",muted:"--muted",accent:"--accent",pen:"--pen",ok:"--ok",warn:"--warn",soft:"--accent-soft",line:"--line",card:"--card"};
+function colorize(attrs){
+  for(const k of Object.keys(attrs)){const v=attrs[k];
+    if(typeof v==="string"&&/color$/i.test(k)&&TOK[v])attrs[k]=css(TOK[v]);
+    else if(v&&typeof v==="object"&&!Array.isArray(v))colorize(v);
+  }
+  return attrs;
+}
+let jxgInit=false,jxgSeq=0;
+function jxgDefaults(){
+  if(jxgInit||typeof JXG==="undefined")return;jxgInit=true;
+  const ink=css("--ink"),acc=css("--accent"),mut=css("--muted"),line=css("--line");
+  const O=JXG.Options;
+  O.elements.highlight=false;O.elements.fixed=true;
+  O.point.strokeColor=ink;O.point.fillColor=ink;O.point.size=2;O.point.highlight=false;
+  O.label.strokeColor=ink;O.label.fontSize=16;
+  O.text.strokeColor=ink;O.text.fontSize=16;O.text.highlight=false;
+  O.line.strokeColor=ink;O.line.strokeWidth=2;
+  O.segment&&(O.segment.strokeColor=ink);
+  O.polygon.fillColor=acc;O.polygon.fillOpacity=.12;O.polygon.borders.strokeColor=ink;O.polygon.borders.strokeWidth=2;
+  O.circle.strokeColor=ink;
+  O.functiongraph.strokeColor=acc;O.functiongraph.strokeWidth=3;
+  O.angle.fillColor=css("--warn");O.angle.fillOpacity=.25;O.angle.strokeColor=css("--warn");
+  O.axis.strokeColor=mut;if(O.axis.ticks){O.axis.ticks.strokeColor=mut;if(O.axis.ticks.label)O.axis.ticks.label.strokeColor=mut;}
+  O.grid.strokeColor=line;
+  O.text.cssDefaultStyle="font-family:Golos Text,system-ui,sans-serif;";
+}
+function renderJsx(box,v){
+  if(typeof JXG==="undefined"){box.append(h("p",{class:"muted small"},"Чертёж не загрузился. Проверьте интернет и обновите страницу."));return null;}
+  jxgDefaults();
+  const b=v.board||{},bb=Array.isArray(b.boundingbox)&&b.boundingbox.length===4?b.boundingbox:[-6,6,6,-6];
+  const id="jxg"+(++jxgSeq);const el=h("div",{id,class:"jxgbox"});
+  const ratio=Math.abs((bb[2]-bb[0])/(bb[1]-bb[3]))||1;el.style.aspectRatio=String(ratio);box.append(el);
+  let stepped=null,want=0,brd=null,tries=0;
+  const apply=()=>{if(!brd||!stepped)return;brd.suspendUpdate();for(const s of stepped)s.o.setAttribute({visible:s.vis&&s.step<=want&&want<s.until});brd.unsuspendUpdate();};
+  const init=()=>{
+    if(!el.isConnected||!el.clientWidth){if(++tries<120)requestAnimationFrame(init);return;}
+    try{brd=JXG.JSXGraph.initBoard(id,{boundingbox:bb,axis:!!b.axis,grid:!!b.grid,keepAspectRatio:!!b.keepAspectRatio,showNavigation:false,showCopyright:false,pan:{enabled:false},zoom:{enabled:false},showFullscreen:false,showScreenshot:false});}
+    catch(e){console.warn(e);el.replaceWith(h("p",{class:"muted small"},"Чертёж не удалось построить."));return;}
+    const map={};stepped=[];
+    const res=p=>typeof p==="string"&&map[p]?map[p]:(Array.isArray(p)?p.map(res):p);
+    brd.suspendUpdate();
+    for(const e of v.elements||[]){
+      try{const attrs=colorize(JSON.parse(JSON.stringify(e.attrs||{})));
+        const wantVis=attrs.visible!==false;
+        if(e.step||e.until)attrs.visible=false;
+        const o=brd.create(e.type,(e.parents||[]).map(res),attrs);
+        if(e.id)map[e.id]=o;
+        if(e.step||e.until)stepped.push({o,step:e.step||0,until:e.until||Infinity,vis:wantVis});
+      }catch(err){console.warn("Элемент чертежа",e,err);}
+    }
+    brd.unsuspendUpdate();apply();
+  };
+  requestAnimationFrame(init);
+  return{setLayer(n){want=n;apply();}};
+}
+function visual(v,layer){
+  const box=h("div",{class:"vis"});if(!v)return{node:box,setLayer(){}};
+  let ctl=null;
+  if(v.kind==="jsx"){ctl=renderJsx(box,v);}
+  else if(v.kind==="svg"||v.kind==="html"){insertMarkup(box,v.kind==="svg"?v.svg:v.html,v.kind);
+    ctl={setLayer(n){box.querySelectorAll("[data-step],[data-until]").forEach(x=>{const s=+(x.getAttribute("data-step")||0),u=x.hasAttribute("data-until")?+x.getAttribute("data-until"):Infinity;x.style.display=(s<=n&&n<u)?"":"none";});}};}
+  const api={node:box,setLayer(n){ctl&&ctl.setLayer(n);}};
+  api.setLayer(layer??0);
+  if(v.caption)box.append(h("p",{class:"muted small",html:rich(v.caption),style:"margin-top:6px"}));
+  return api;
+}
+
+/* ============ answers ============ */
+function parseNum(s){
+  s=String(s??"").trim().replace(/,/g,".").replace(/[−–]/g,"-");
+  if(!s)return NaN;
+  const mx=s.match(/^(-?)(\d+)\s+(\d+)\s*\/\s*(\d+)$/);if(mx){const v=+mx[2]+ +mx[3]/+mx[4];return mx[1]?-v:v;}
+  s=s.replace(/\s+/g,"");
+  const m=s.match(/^(-?\d+(?:\.\d+)?)\/(\d+(?:\.\d+)?)$/);if(m)return +m[2]?+m[1]/+m[2]:NaN;
+  return /^-?\d+(?:\.\d+)?$/.test(s)?Number(s):NaN;
+}
+function isRight(q,resp){
+  if(q.type==="number"){const v=parseNum(resp);if(!isFinite(v))return false;return Math.abs(v-Number(q.answer))<=(q.tolerance??0.001);}
+  return String(resp)===String(q.answer);
+}
+function whyWrong(q,resp){
+  if(q.type==="number"){const v=parseNum(resp);
+    for(const t of q.typicalWrong||[]){if(isFinite(v)&&Math.abs(v-Number(t.value))<=(t.tolerance??q.tolerance??0.001))return t.why;}
+    return q.genericWrong||"Сравни свой ход решения с разбором ниже: найди шаг, где ответ пошёл не туда.";}
+  const o=(q.options||[]).find(o=>o.id===resp);return o&&o.why?o.why:"Посмотри разбор ниже, шаг за шагом.";
+}
+function answerText(q){
+  if(q.type==="number")return String(q.answer).replace(".",",")+(q.unit?" "+q.unit:"");
+  const o=(q.options||[]).find(o=>o.id===q.answer);return o?o.text:"";
+}
+
+/* ============ data ============ */
+function attemptsFor(kid,testId){return S.attempts.filter(a=>a.kid===kid&&(!testId||a.testId===testId)).sort((a,b)=>String(b.startedAt).localeCompare(String(a.startedAt)));}
+function errorsOf(a){return Object.entries(a.answers||{}).filter(([,v])=>!v.correct).map(([k])=>k);}
+function testStatus(kid,t){
+  const a=attemptsFor(kid,t.id)[0];
+  if(!a)return{key:"new",a};
+  if(a.phase==="test")return{key:"progress",a};
+  if(a.phase==="result"||a.phase==="review")return{key:"review",a};
+  return{key:"done",a};
+}
+function studyItems(a){return Object.entries(a.review||{}).filter(([,r])=>r.status==="study").map(([qid,r])=>({qid,...r}));}
+
+async function boot(){
+  try{if(window.claude&&claude.use){S.db=await claude.use("db");}}catch(e){S.db=null;}
+  if(!S.db){S.ready=true;render();return;}
+  try{const u=await claude.use("user");if(u){const w=await u.can("data.write");if(w===false){S.local=true;showBanner();}}}catch(e){}
+  S.db.doc("config/main").onSnapshot(s=>{const d=s.exists?s.data():null;S.kids=(d&&Array.isArray(d.kids)&&d.kids.length)?d.kids.map(k=>({...k})):DEFAULT_KIDS.slice();softRender();},e=>console.warn(e));
+  S.db.collection("tests").onSnapshot(s=>{S.tests=s.docs.map(d=>({id:d.id,...d.data()}));S.ready=true;softRender();},e=>{console.warn(e);S.ready=true;softRender();});
+  S.db.collection("attempts").onSnapshot(s=>{S.dbAttempts=s.docs.map(d=>({id:d.id,...d.data()}));mergeAttempts();softRender();},e=>console.warn(e));
+  mergeAttempts();
+  claude.use("sample").then(async smp=>{S.sample=smp||null;if(smp){try{const l=await smp.limits();S.canImages=!!(l&&l.images);}catch(e){S.canImages=false;}}}).catch(()=>{});
+}
+/* list screens re-render on data change; running test does not (keeps the child's place) */
+function softRender(){if(["home","kid","parent"].includes(S.route.name))render();}
+
+/* ============ routing ============ */
+function go(route){S.route=route;window.scrollTo({top:0});render();}
+function render(){
+  document.getElementById("tabKids").setAttribute("aria-current",S.route.name!=="parent"?"page":"false");
+  document.getElementById("tabParent").setAttribute("aria-current",S.route.name==="parent"?"page":"false");
+  $view.replaceChildren();
+  const r=S.route.name;
+  if(r==="home")viewHome();else if(r==="kid")viewKid(S.route.kid);else if(r==="parent")viewParent();
+  else if(r==="run")viewRun();
+}
+document.getElementById("brand").onclick=()=>go({name:"home"});
+document.getElementById("tabKids").onclick=()=>go({name:"home"});
+document.getElementById("tabParent").onclick=()=>go({name:"parent"});
+
+/* ============ home ============ */
+function kidSummary(kid){
+  const done=S.attempts.filter(a=>a.kid===kid&&a.phase!=="test"&&a.score);
+  const avg=done.length?Math.round(done.reduce((s,a)=>s+pct(a.score.correct,a.score.total),0)/done.length):null;
+  const tests=S.tests.filter(t=>t.kid===kid);
+  const fresh=tests.filter(t=>testStatus(kid,t).key==="new").length;
+  const study=new Set();for(const a of S.attempts.filter(a=>a.kid===kid))for(const s of studyItems(a))study.add((a.subject||"")+"|"+(s.subtopic||""));
+  return{done:done.length,avg,fresh,study:study.size,tests:tests.length};
+}
+function viewHome(){
+  const hero=h("section",{class:"hero"},h("h1",{},"Кто сегодня занимается?"),
+    h("p",{class:"muted"},"Выбери себя. Ответь на вопросы — после каждого ответа будет подробный разбор с рисунком. В конце сделаем работу над ошибками."));
+  $view.append(hero);
+  if(!S.db){$view.append(h("div",{class:"card empty",style:"margin-top:18px"},h("h2",{},"Тесты появятся здесь"),
+    h("p",{class:"muted",style:"margin-top:8px"},"Откройте эту страницу в Claude под своим аккаунтом — тогда загрузятся тесты и будут сохраняться ответы детей.")));return;}
+  const grid=h("div",{class:"kids"});
+  for(const k of S.kids){const s=kidSummary(k.id);
+    grid.append(h("button",{class:"kid",type:"button",style:`--kc:${kidColor(k.id)}`,onclick:()=>{lsSet("tutor.kid",k.id);go({name:"kid",kid:k.id});}},
+      h("span",{class:"chip gray"},k.grade?k.grade+" класс":"Ученик"),
+      h("span",{class:"name"},k.name),
+      h("span",{class:"stats"},
+        h("span",{class:"stat"},h("b",{},String(s.fresh)),h("span",{},"новых тестов")),
+        h("span",{class:"stat"},h("b",{},s.avg==null?"—":s.avg+"%"),h("span",{},"средний результат")),
+        h("span",{class:"stat"},h("b",{},String(s.study)),h("span",{},"тем доучить")))));
+  }
+  $view.append(grid);
+  if(S.ready&&!S.tests.length)$view.append(howTo());
+}
+function howTo(){return h("div",{class:"card howto"},h("h3",{},"Как добавить новый тест"),
+  h("ol",{},h("li",{},"Сфотографируйте страницу учебника, параграф или домашнее задание."),
+    h("li",{},"Отправьте фото Claude и напишите, для кого тест: например, «Сделай тест для 8 класса по этим страницам»."),
+    h("li",{},"Тест появится здесь через пару минут — ребёнок выберет своё имя и начнёт.")));}
+
+/* ============ kid ============ */
+function viewKid(kid){
+  const k=kidById(kid);
+  $view.append(h("section",{class:"hero"},h("span",{class:"chip gray"},k.grade?k.grade+" класс":""),h("h1",{style:"margin-top:8px"},k.name)));
+  const tests=S.tests.filter(t=>t.kid===kid).sort((a,b)=>String(b.createdAt||"").localeCompare(String(a.createdAt||"")));
+  if(!tests.length){$view.append(h("div",{class:"card empty"},h("h2",{},"Тестов пока нет"),h("p",{class:"muted",style:"margin-top:8px"},"Попроси родителя сфотографировать тему из учебника и отправить Claude — тест появится здесь.")));return;}
+  const groups={review:[],progress:[],new:[],done:[]};
+  for(const t of tests){const st=testStatus(kid,t);groups[st.key].push({t,st});}
+  const sec=(title,arr)=>{if(!arr.length)return;$view.append(h("h2",{class:"section-h"},title));const l=h("div",{class:"list"});arr.forEach(x=>l.append(testItem(kid,x.t,x.st)));$view.append(l);};
+  sec("Работа над ошибками ждёт",groups.review);sec("Начатые",groups.progress);sec("Новые",groups.new);sec("Пройденные",groups.done);
+}
+function testItem(kid,t,st){
+  const a=st.a;let chip,btn;
+  if(st.key==="new"){chip=h("span",{class:"chip"},"Новый");btn=h("button",{class:"btn",type:"button",onclick:()=>startTest(kid,t,null)},"Начать");}
+  else if(st.key==="progress"){chip=h("span",{class:"chip warn"},`Отвечено ${Object.keys(a.answers||{}).length} из ${t.qCount||"?"}`);btn=h("button",{class:"btn",type:"button",onclick:()=>startTest(kid,t,a)},"Продолжить");}
+  else if(st.key==="review"){chip=h("span",{class:"chip pen"},`Ошибок: ${errorsOf(a).length}`);btn=h("button",{class:"btn pen",type:"button",onclick:()=>startTest(kid,t,a)},"Работа над ошибками");}
+  else{const sc=a.score||{correct:0,total:0},nStudy=studyItems(a).length;
+    chip=h("span",{class:"row",style:"gap:6px"},h("span",{class:"chip ok tnum"},`${sc.correct} из ${sc.total}`),nStudy?h("span",{class:"chip warn"},`Доучить: ${nStudy}`):null);
+    btn=h("button",{class:"btn ghost",type:"button",onclick:()=>startTest(kid,t,null)},"Пройти заново");}
+  return h("div",{class:"item"},h("div",{},
+    h("div",{class:"row",style:"gap:8px;margin-bottom:4px"},h("span",{class:"chip gray"},t.subject||"Предмет"),t.demo?h("span",{class:"chip warn"},"Пример"):null,chip),
+    h("div",{class:"t"},t.title||t.topic||"Тест"),
+    h("div",{class:"muted small"},[t.topic,t.source].filter(Boolean).join(" · "))),btn);
+}
+
+/* ============ runner ============ */
+async function startTest(kid,t,attempt){
+  let qs=[];
+  try{const snap=await S.db.collection(`tests/${t.id}/questions`).orderBy("order").get();qs=snap.docs.map(d=>({id:d.id,...d.data()}));}
+  catch(e){console.warn(e);toast("Не удалось загрузить вопросы. Проверьте интернет.");return;}
+  if(!qs.length){toast("В этом тесте пока нет вопросов.");return;}
+  let a=attempt;
+  if(!a){const ref=S.db.collection("attempts").doc();
+    a={id:ref.id,local:S.local||undefined,kid,testId:t.id,testTitle:t.title||t.topic||"Тест",subject:t.subject||"",topic:t.topic||"",grade:kidById(kid).grade||t.grade||"",startedAt:new Date().toISOString(),phase:"test",answers:{},review:{},score:null};
+    if(!a.local)delete a.local;
+    S.run={kid,test:t,qs,a};
+    const {id,local,...body}=a;save(`attempts/${id}`,body,"set");}
+  else a=JSON.parse(JSON.stringify(a));
+  S.run={kid,test:t,qs,a};
+  go({name:"run"});
+}
+function viewRun(){
+  const R=S.run;if(!R){go({name:"home"});return;}
+  const a=R.a;
+  if(a.phase==="test"){
+    const idx=R.qs.findIndex(q=>!(a.answers||{})[q.id]);
+    if(idx===-1){finishTest();return;}
+    return screenQuestion(idx);
+  }
+  if(a.phase==="result")return screenResult();
+  if(a.phase==="review")return screenReview();
+  return screenDone();
+}
+function runHeader(label,done,total){
+  const R=S.run;
+  $view.append(h("div",{class:"row",style:"justify-content:space-between;margin-top:14px"},
+    h("button",{class:"btn ghost",type:"button",style:"min-height:40px;padding:6px 14px",onclick:()=>{S.run=null;go({name:"kid",kid:R.kid});}},"← К списку"),
+    h("span",{class:"muted small tnum"},label)));
+  $view.append(h("div",{class:"progress","aria-hidden":"true"},h("i",{style:`width:${pct(done,total)}%`})));
+}
+
+/* --- shared question widget: renders a question, calls onAnswer(resp) once --- */
+function questionWidget(q,onAnswer,opts={}){
+  const box=h("div",{class:"stack"});
+  box.append(h("div",{class:"qtext",html:rich(q.text)}));
+  if(q.figure)box.append(visual(q.figure,0).node);
+  let chosen=null;const ans=h("div",{});
+  const submit=h("button",{class:"btn",type:"button",disabled:true},"Проверить");
+  let hintShown=false;const hintBtn=q.hint?h("button",{class:"btn soft",type:"button"},"Подсказка"):null;
+  const hintBox=h("div",{});
+  if(hintBtn)hintBtn.onclick=()=>{if(hintShown)return;hintShown=true;hintBox.append(h("div",{class:"hintbox",html:"<b>Подсказка.</b> "+rich(q.hint)}));hintBtn.disabled=true;};
+  if(q.type==="number"){
+    const inp=h("input",{type:"text",inputmode:"decimal",autocomplete:"off",id:"num-"+q.id,"aria-label":"Ответ"});
+    inp.addEventListener("input",()=>{chosen=inp.value;submit.disabled=!isFinite(parseNum(inp.value));});
+    inp.addEventListener("keydown",e=>{if(e.key==="Enter"&&!submit.disabled)submit.click();});
+    ans.append(h("div",{class:"numrow"},inp,q.unit?h("span",{class:"unit"},q.unit):null));
+    if(!Number.isInteger(Number(q.answer)))ans.append(h("p",{class:"muted small",style:"margin-top:6px"},"Дробь можно записать так: 3/4, десятичную — через запятую: 2,5"));
+  }else{
+    const grid=h("div",{class:"opts",role:"group","aria-label":"Варианты ответа"});
+    (q.options||[]).forEach((o,i)=>{const b=h("button",{class:"opt",type:"button","aria-pressed":"false","data-id":o.id},h("span",{class:"let"},"АБВГДЕЖ"[i]||String(i+1)),h("span",{html:rich(o.text)}));
+      b.onclick=()=>{chosen=o.id;grid.querySelectorAll(".opt").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));submit.disabled=false;};grid.append(b);});
+    ans.append(grid);
+  }
+  box.append(ans,hintBox);
+  box.append(h("div",{class:"row"},submit,hintBtn));
+  const t0=Date.now();
+  submit.onclick=()=>{if(chosen==null)return;submit.disabled=true;hintBtn&&(hintBtn.disabled=true);
+    box.querySelectorAll(".opt,input").forEach(x=>x.disabled=true);
+    const ok=isRight(q,chosen);
+    if(q.type!=="number"){box.querySelectorAll(".opt").forEach(x=>{const id=x.getAttribute("data-id");if(id===String(q.answer))x.classList.add("right");else if(id===chosen)x.classList.add("wrong");});}
+    submit.remove();hintBtn&&hintBtn.remove();
+    onAnswer({resp:chosen,ok,ms:Date.now()-t0,hint:hintShown});
+  };
+  return box;
+}
+function solutionBlock(q,startOpen){
+  const wrap=h("div",{class:"solution"});
+  wrap.append(h("h3",{},"Решение"));
+  const sv=q.solution?.visual||null;let vis=null;
+  if(sv){vis=visual(sv,0);wrap.append(vis.node);}
+  const steps=q.solution?.steps||[];const ol=h("ol",{class:"steps"});wrap.append(ol);
+  let shown=0;const more=h("button",{class:"btn soft",type:"button"},"Следующий шаг");const all=h("button",{class:"btn ghost",type:"button"},"Показать все шаги");
+  const show=n=>{while(shown<Math.min(n,steps.length)){const st=steps[shown];ol.append(h("li",{},h("div",{html:rich(st.text)})));shown++;vis&&vis.setLayer(st.layer??shown);}
+    if(shown>=steps.length){more.remove();all.remove();}};
+  more.onclick=()=>show(shown+1);all.onclick=()=>show(steps.length);
+  if(steps.length)wrap.append(h("div",{class:"row",style:"margin-top:10px"},more,all));
+  show(startOpen?steps.length:1);
+  if(q.solution?.answerLine)wrap.append(h("p",{style:"margin-top:12px",html:"<b>Ответ:</b> "+rich(q.solution.answerLine)}));
+  return wrap;
+}
+
+function screenQuestion(idx){
+  const R=S.run,q=R.qs[idx],a=R.a;
+  runHeader(`Вопрос ${idx+1} из ${R.qs.length}`,Object.keys(a.answers).length,R.qs.length);
+  const sheet=h("section",{class:"sheet"});
+  sheet.append(h("div",{class:"row",style:"gap:8px;margin-bottom:10px"},h("span",{class:"chip gray"},R.test.subject||""),q.subtopic?h("span",{class:"chip"},q.subtopic):null));
+  const fb=h("div",{});
+  const w=questionWidget(q,res=>{
+    a.answers[q.id]={resp:String(res.resp),correct:res.ok,ms:res.ms,hint:res.hint};
+    save(`attempts/${a.id}`,{answers:{[q.id]:a.answers[q.id]}},"update");
+    fb.append(feedbackBlock(q,res,()=>render()));
+    document.querySelector(".progress i").style.width=pct(Object.keys(a.answers).length,R.qs.length)+"%";
+    fb.scrollIntoView({behavior:"smooth",block:"start"});
+  });
+  sheet.append(w,fb);$view.append(sheet);
+}
+function feedbackBlock(q,res,onNext){
+  const box=h("div",{});
+  if(res.ok)box.append(h("div",{class:"verdict ok"},h("span",{class:"hand ok"},"Верно!"),h("span",{},"Посмотри решение — так закрепишь способ.")));
+  else{box.append(h("div",{class:"verdict bad"},h("span",{class:"hand"},"Ошибка"),h("span",{html:"Правильный ответ: <b>"+rich(answerText(q))+"</b>"})));
+    box.append(h("div",{class:"why"},h("div",{class:"lbl"},"Почему не так"),h("p",{style:"margin-top:4px",html:rich(whyWrong(q,res.resp))})));}
+  box.append(solutionBlock(q,false));
+  box.append(h("div",{class:"foot"},h("span"),h("button",{class:"btn",type:"button",onclick:onNext},"Дальше →")));
+  return box;
+}
+function finishTest(){
+  const R=S.run,a=R.a;const total=R.qs.length;const correct=R.qs.filter(q=>a.answers[q.id]?.correct).length;
+  a.score={correct,total};a.finishedAt=new Date().toISOString();
+  const errs=R.qs.filter(q=>!a.answers[q.id]?.correct).map(q=>q.id);
+  a.phase=errs.length?"result":"done";
+  save(`attempts/${a.id}`,{score:a.score,finishedAt:a.finishedAt,phase:a.phase},"update");
+  render();
+}
+function screenResult(){
+  const R=S.run,a=R.a,sc=a.score;
+  runHeader("Тест пройден",1,1);
+  const errs=R.qs.filter(q=>!a.answers[q.id]?.correct);
+  const sheet=h("section",{class:"sheet stack"});
+  sheet.append(h("div",{},h("p",{class:"muted"},R.test.title),h("div",{class:"score"},`${sc.correct} из ${sc.total}`)));
+  const list=h("div",{class:"res-list"});
+  R.qs.forEach((q,i)=>{const ok=a.answers[q.id]?.correct;list.append(h("div",{},h("span",{class:"mark "+(ok?"ok":"bad"),"aria-label":ok?"верно":"ошибка"},ok?"✓":"✗"),h("span",{html:`<b>${i+1}.</b> `+esc(q.subtopic||"")})));});
+  sheet.append(list);
+  sheet.append(h("div",{class:"lesson"},h("h3",{},"Работа над ошибками"),
+    h("p",{style:"margin-top:6px"},`Ты ошибся в ${errs.length} ${plural(errs.length,"вопросе","вопросах","вопросах")}. По каждому дам 1–2 похожие задачи. Решишь верно — значит, разобрался, и тест будет закрыт.`)));
+  const sr=sendResultBlock(a);if(sr)sheet.append(sr);
+  sheet.append(h("div",{class:"foot"},h("button",{class:"btn ghost",type:"button",onclick:()=>{S.run=null;go({name:"kid",kid:R.kid});}},"Позже"),
+    h("button",{class:"btn pen",type:"button",onclick:()=>{
+      a.phase="review";for(const q of errs)if(!a.review[q.id])a.review[q.id]={status:"pending",tries:[],subtopic:q.subtopic||""};
+      save(`attempts/${a.id}`,{phase:"review",review:a.review},"update");render();}},"Начать работу над ошибками")));
+  $view.append(sheet);
+}
+
+/* --- review loop --- */
+function currentReview(){
+  const R=S.run,a=R.a;
+  for(const q of R.qs){const r=a.review[q.id];if(!r)continue;if(r.status==="pending"||(r.status==="study"&&!r.ack))return{q,r};}
+  return null;
+}
+function screenReview(){
+  const R=S.run,a=R.a;const items=R.qs.filter(q=>a.review[q.id]);
+  const cur=currentReview();
+  if(!cur){a.phase="done";save(`attempts/${a.id}`,{phase:"done",reviewedAt:new Date().toISOString()},"update");return render();}
+  const doneN=items.filter(q=>{const r=a.review[q.id];return r.status==="closed"||(r.status==="study"&&r.ack)||r.status==="explained";}).length;
+  runHeader(`Работа над ошибками: ${doneN+1} из ${items.length}`,doneN,items.length);
+  const {q,r}=cur;const orig=R.qs.indexOf(q)+1;
+  const sheet=h("section",{class:"sheet"});
+  sheet.append(h("div",{class:"row",style:"gap:8px;margin-bottom:10px"},h("span",{class:"chip pen"},"Работа над ошибками"),h("span",{class:"chip"},q.subtopic||`Вопрос ${orig}`)));
+  if(r.status==="study"){sheet.append(studyBlock(q,r));$view.append(sheet);return;}
+  const twins=q.twins||[];const n=r.tries.length;
+  if(!twins.length){ // нет запасных задач — сразу объясняем тему
+    r.status="explained";save(`attempts/${a.id}`,{review:{[q.id]:{status:"explained"}}},"update");
+    sheet.append(h("p",{},"Разберём эту тему ещё раз."),lessonBlock(q),h("div",{class:"foot"},h("span"),h("button",{class:"btn",type:"button",onclick:render},"Дальше →")));$view.append(sheet);return;}
+  const tw=twins[Math.min(n,twins.length-1)];
+  sheet.append(h("p",{class:"muted",style:"margin-bottom:10px"},n===0?`В тесте ты ошибся в вопросе ${orig}. Вот похожая задача — реши её.`:"Верно! Ещё одна похожая — чтобы убедиться, что ты разобрался."));
+  const fb=h("div",{});
+  sheet.append(questionWidget(tw,res=>{
+    r.tries.push({twin:Math.min(n,twins.length-1),resp:String(res.resp),correct:res.ok,at:new Date().toISOString()});
+    const twinQ={...tw};
+    if(!res.ok){
+      r.status="study";r.lastWrong={resp:String(res.resp),why:whyWrong(twinQ,res.resp)};
+      save(`attempts/${a.id}`,{review:{[q.id]:{status:"study",tries:r.tries,lastWrong:r.lastWrong}}},"update");
+      setTimeout(render,0);return;
+    }
+    const closed=r.tries.filter(t=>t.correct).length>=Math.min(2,twins.length);
+    if(closed)r.status="closed";
+    save(`attempts/${a.id}`,{review:{[q.id]:{status:r.status,tries:r.tries}}},"update");
+    fb.append(h("div",{class:"verdict ok"},h("span",{class:"hand ok"},closed?"Разобрался!":"Верно!"),h("span",{},closed?"Эта тема закрыта.":"Хорошо, теперь ещё одна.")));
+    const det=h("details",{style:"margin-top:10px"},h("summary",{},"Посмотреть решение"));det.append(solutionBlock(tw,true));fb.append(det);
+    fb.append(h("div",{class:"foot"},h("span"),h("button",{class:"btn",type:"button",onclick:render},"Дальше →")));
+  }),fb);
+  $view.append(sheet);
+}
+function lessonBlock(q){
+  const L=q.lesson||{};const box=h("div",{class:"lesson"});
+  box.append(h("h3",{},L.title||("Тема: "+(q.subtopic||"повторим правило"))));
+  if(L.text)box.append(h("div",{style:"margin-top:8px",html:rich(L.text)}));
+  if(L.visual)box.append(visual(L.visual,99).node);
+  if(L.remember)box.append(h("p",{style:"margin-top:10px",html:"<b>Запомни:</b> "+rich(L.remember)}));
+  return box;
+}
+function studyBlock(q,r){
+  const R=S.run,a=R.a;const box=h("div",{class:"stack"});
+  const tw=(q.twins||[])[r.tries.length?r.tries[r.tries.length-1].twin:0]||q;
+  box.append(h("div",{class:"verdict bad"},h("span",{class:"hand"},"Снова ошибка"),
+    h("span",{html:`Ты ошибся второй раз в теме «<b>${esc(q.subtopic||R.test.topic||"")}</b>». Значит, эту часть нужно доучить — сейчас разберём, что именно.`})));
+  box.append(h("div",{class:"why"},h("div",{class:"lbl"},"Что пошло не так"),
+    h("p",{style:"margin-top:4px",html:rich(r.lastWrong?.why||whyWrong(tw,r.lastWrong?.resp))}),
+    h("p",{style:"margin-top:6px",html:"Правильный ответ в этой задаче: <b>"+rich(answerText(tw))+"</b>"})));
+  box.append(lessonBlock(q));
+  const det=h("details",{},h("summary",{},"Показать решение этой задачи"));det.append(solutionBlock(tw,true));box.append(det);
+  box.append(photoBlock(q,tw,r));
+  if(S.sample)box.append(explainAgainBlock(q));
+  box.append(h("div",{class:"foot"},h("span"),h("button",{class:"btn",type:"button",onclick:()=>{r.ack=true;save(`attempts/${a.id}`,{review:{[q.id]:{ack:true}}},"update");render();}},"Понятно, дальше →")));
+  return box;
+}
+function photoBlock(q,tw,r){
+  const R=S.run,a=R.a;const box=h("div",{class:"photo"});
+  box.append(h("h3",{},"Покажи, как ты решал"),h("p",{class:"muted small",style:"margin-top:4px"},"Сфотографируй решение в тетради — найду, на каком шаге ошибка."));
+  if(r.photoNote){box.append(h("div",{class:"ai",html:rich(r.photoNote)}));return box;}
+  if(!S.sample||!S.canImages){box.append(h("p",{style:"margin-top:8px"},`Попроси родителя отправить фото Claude в чат с подписью: «Разбор ошибки: ${R.test.title}, ${q.subtopic||"вопрос"}».`));return box;}
+  const inp=h("input",{type:"file",accept:"image/*",capture:"environment",id:"photo-"+q.id});
+  const pick=h("label",{class:"btn soft",for:"photo-"+q.id,style:"margin-top:10px"},"Сфотографировать или выбрать фото",inp);
+  const out=h("div",{class:"ai"});const prev=h("div",{});const send=h("button",{class:"btn",type:"button",hidden:true},"Проверить решение");
+  let file=null;
+  inp.onchange=()=>{file=inp.files&&inp.files[0];prev.replaceChildren();if(file){const u=URL.createObjectURL(file);prev.append(h("img",{src:u,alt:"Фото решения"}));send.hidden=false;}};
+  send.onclick=async()=>{if(!file)return;send.disabled=true;out.textContent="Смотрю решение…";
+    const prompt=`Ты — доброжелательный школьный репетитор. Ученик ${a.grade||""} класса решал задачу и ошибся. На фото — его решение в тетради.
+Задача: ${tw.text}
+Правильный ответ: ${answerText(tw)}
+Ответ ученика: ${r.lastWrong?.resp||"—"}
+Верное решение по шагам: ${(tw.solution?.steps||[]).map((s,i)=>(i+1)+") "+s.text).join(" ")}
+Найди на фото, на каком шаге ученик ошибся и в чём именно ошибка (вычисление, правило, формула, невнимательность). Объясни по-русски, просто и по-доброму, 3–6 предложений, обращаясь к ученику на «ты». Не пиши решение целиком заново. Если на фото не видно решения или его нельзя прочитать — так и скажи и попроси переснять крупнее.`;
+    try{const {text}=await S.sample(prompt,{images:[file],onText:({text})=>{out.textContent=text;}});
+      out.textContent=text;r.photoNote=text.slice(0,4000);save(`attempts/${a.id}`,{review:{[q.id]:{photoNote:r.photoNote}}},"update");send.remove();}
+    catch(e){send.disabled=false;out.textContent=e&&e.text?e.text:"";
+      const m={not_granted:"Доступ к Claude не разрешён — попроси родителя отправить фото в чат.",rate_limited:"Слишком много запросов. Попробуй через несколько минут.",image_rejected:"Фото не подошло. Сфотографируй ещё раз, крупнее.",images_unavailable:"Отправка фото здесь недоступна — попроси родителя отправить фото в чат."};
+      toast(m[e&&e.code]||"Не получилось проверить фото. Попробуй ещё раз.");if(e&&["not_granted","images_unavailable","sampling_disabled"].includes(e.code)){S.canImages=false;send.remove();}}
+  };
+  box.append(pick,prev,h("div",{class:"row",style:"margin-top:10px"},send),out);return box;
+}
+function explainAgainBlock(q){
+  const box=h("div",{});const out=h("div",{class:"ai"});
+  const b=h("button",{class:"btn ghost",type:"button"},"Объясни по-другому");
+  b.onclick=async()=>{b.disabled=true;out.textContent="Думаю, как объяснить проще…";
+    const L=q.lesson||{};
+    const prompt=`Ты — школьный репетитор. Ученик ${S.run.a.grade||""} класса дважды ошибся в теме «${q.subtopic||S.run.test.topic}» (${S.run.test.subject}). Вот объяснение, которое он уже прочитал: ${L.text||""}
+Объясни эту же тему по-другому: через простой жизненный пример и один маленький разобранный пример с числами (другими, не из задачи). По-русски, на «ты», 5–8 предложений, без сложных терминов. Формулы пиши в знаках доллара, например $\\frac{3}{4}$.`;
+    try{const {text}=await S.sample(prompt,{cache:false,onText:({text})=>{out.innerHTML=rich(text);}});out.innerHTML=rich(text);}
+    catch(e){out.textContent="";toast("Не получилось. Попробуй ещё раз позже.");if(e&&["not_granted","sampling_disabled"].includes(e.code))b.remove();}
+    finally{b.disabled=false;}};
+  box.append(b,out);return box;
+}
+function resultCode(a){
+  const json=JSON.stringify({v:1,...a,local:undefined});
+  let b64="";try{b64=btoa(unescape(encodeURIComponent(json)));}catch(e){}
+  const k=kidById(a.kid),sc=a.score||{correct:0,total:0};
+  const study=Object.values(a.review||{}).filter(r=>r.status==="study"||r.status==="explained").map(r=>r.subtopic).filter(Boolean);
+  return `${k.name}: «${a.testTitle}» — ${sc.correct} из ${sc.total}.`+(study.length?` Нужно доучить: ${study.join(", ")}.`:"")+`\nВставь это сообщение в чат с Claude, чтобы добавить результат в статистику:\nРЕПЕТИТОР-РЕЗУЛЬТАТ ${b64}`;
+}
+function sendResultBlock(a){
+  if(!(S.local||a.local))return null;
+  const box=h("div",{class:"lesson sendres"},h("h3",{},"Отправить результат родителю"),
+    h("p",{style:"margin-top:6px"},"Нажми кнопку — текст скопируется. Отправь его папе или маме в мессенджере."));
+  const ta=h("textarea",{readonly:true,id:"res-"+a.id,"aria-label":"Текст результата"});ta.value=resultCode(a);
+  const b=h("button",{class:"btn",type:"button",style:"margin-top:10px"},"Скопировать результат");
+  b.onclick=()=>{const done=()=>{b.textContent="Скопировано";toast("Результат скопирован — вставь его в сообщение.");};
+    try{navigator.clipboard.writeText(ta.value).then(done,()=>{ta.focus();ta.select();toast("Выдели текст и скопируй вручную.");});}catch(e){ta.focus();ta.select();}};
+  const row=h("div",{class:"share-row"});
+  const txt=()=>ta.value;
+  if(navigator.share)row.append(h("button",{class:"btn",type:"button",onclick:()=>{navigator.share({text:txt()}).catch(()=>{});}},"Поделиться"));
+  row.append(h("a",{class:"btn ghost",href:"https://wa.me/?text="+encodeURIComponent(txt()),target:"_blank",rel:"noopener"},"WhatsApp"));
+  row.append(h("a",{class:"btn ghost",href:"https://t.me/share/url?url="+encodeURIComponent(" ")+"&text="+encodeURIComponent(txt()),target:"_blank",rel:"noopener"},"Telegram"));
+  row.append(b);
+  box.append(row,ta);return box;
+}
+function screenDone(){
+  const R=S.run,a=R.a,sc=a.score||{correct:0,total:R.qs.length};
+  runHeader("Готово",1,1);
+  const sheet=h("section",{class:"sheet stack"});
+  const rev=Object.entries(a.review||{});const closed=rev.filter(([,r])=>r.status==="closed"),study=rev.filter(([,r])=>r.status==="study"||r.status==="explained");
+  sheet.append(h("span",{class:"hand ok"},rev.length?"Тест завершён":"Без ошибок — отлично!"));
+  sheet.append(h("div",{},h("p",{class:"muted"},R.test.title),h("div",{class:"score"},`${sc.correct} из ${sc.total}`)));
+  if(rev.length){const l=h("div",{class:"res-list"});
+    for(const [qid,r] of rev){const q=R.qs.find(x=>x.id===qid);const ok=r.status==="closed";
+      l.append(h("div",{},h("span",{class:"mark "+(ok?"ok":"study")},ok?"✓":"!"),h("span",{html:`<b>${esc(q?.subtopic||"")}</b> — `+(ok?"разобрался после работы над ошибками":"нужно доучить: перечитай правило и вернись к теме")})));}
+    sheet.append(l);}
+  if(study.length)sheet.append(h("p",{class:"muted"},"Эти темы появятся у родителя в разделе «Нужно доучить»."));
+  const sr=sendResultBlock(a);if(sr)sheet.append(sr);
+  sheet.append(h("div",{class:"foot"},h("span"),h("button",{class:"btn",type:"button",onclick:()=>{S.run=null;go({name:"kid",kid:R.kid});}},"К списку тестов")));
+  $view.append(sheet);
+}
+
+/* ============ parent ============ */
+function viewParent(){
+  $view.append(h("section",{class:"hero"},h("h1",{},"Для родителя"),h("p",{class:"muted"},"Результаты, работа над ошибками и темы, которые стоит повторить.")));
+  if(!S.db){$view.append(h("div",{class:"card empty"},h("p",{},"Откройте страницу в Claude под своим аккаунтом, чтобы увидеть статистику.")));return;}
+  for(const k of S.kids){
+    const att=S.attempts.filter(a=>a.kid===k.id&&a.score).sort((x,y)=>String(y.finishedAt||y.startedAt).localeCompare(String(x.finishedAt||x.startedAt)));
+    const avg=att.length?Math.round(att.reduce((s,a)=>s+pct(a.score.correct,a.score.total),0)/att.length):null;
+    let closedN=0;const study=new Map();
+    for(const a of att)for(const [qid,r] of Object.entries(a.review||{})){
+      if(r.status==="closed")closedN++;
+      if(r.status==="study"||r.status==="explained"){const key=(a.subject||"")+"|"+(r.subtopic||a.topic);const cur=study.get(key)||{subject:a.subject,subtopic:r.subtopic||a.topic,test:a.testTitle,date:a.finishedAt||a.startedAt,count:0,notes:[]};cur.count++;if(r.photoNote)cur.notes.push(r.photoNote);study.set(key,cur);}
+    }
+    const card=h("section",{class:"card",style:`margin-top:16px;border-top:6px solid ${kidColor(k.id)}`});
+    card.append(h("div",{class:"row",style:"justify-content:space-between"},h("h2",{},k.name),h("span",{class:"chip gray"},k.grade?k.grade+" класс":"")));
+    card.append(h("div",{class:"grid3"},
+      h("div",{class:"stat"},h("b",{},String(att.length)),h("span",{},"тестов пройдено")),
+      h("div",{class:"stat"},h("b",{},avg==null?"—":avg+"%"),h("span",{},"средний результат")),
+      h("div",{class:"stat"},h("b",{},String(closedN)),h("span",{},"ошибок исправлено")),
+      h("div",{class:"stat"},h("b",{},String(study.size)),h("span",{},"тем доучить"))));
+    card.append(h("h3",{class:"section-h"},"Нужно доучить"));
+    if(!study.size)card.append(h("p",{class:"muted"},att.length?"Пока таких тем нет.":"Появятся после первых тестов."));
+    else{const l=h("div",{class:"list"});
+      for(const s of [...study.values()].sort((x,y)=>String(y.date).localeCompare(String(x.date)))){
+        const it=h("div",{class:"item",style:"grid-template-columns:1fr"},h("div",{},
+          h("div",{class:"row",style:"gap:8px"},h("span",{class:"chip gray"},s.subject||""),h("span",{class:"chip warn"},s.count>1?`ошибок: ${s.count}`:"ошибка повторилась")),
+          h("div",{class:"t",style:"margin-top:4px"},s.subtopic||""),h("div",{class:"muted small"},`${s.test||""} · ${fmtDate(s.date)}`)));
+        if(s.notes.length){const d=h("details",{style:"margin-top:8px"},h("summary",{},"Разбор фото решения"));s.notes.forEach(n=>d.append(h("p",{class:"ai small",html:rich(n)})));it.firstChild.append(d);}
+        l.append(it);}
+      card.append(l);
+      card.append(h("p",{class:"muted small",style:"margin-top:8px"},"Чтобы повторить эти темы, напишите Claude: «Сделай повторение слабых тем для "+k.name+"»."));}
+    card.append(h("h3",{class:"section-h"},"Последние тесты"));
+    if(!att.length)card.append(h("p",{class:"muted"},"Пока нет пройденных тестов."));
+    else{const tb=h("table",{},h("thead",{},h("tr",{},h("th",{},"Дата"),h("th",{},"Тест"),h("th",{},"Результат"),h("th",{},"Работа над ошибками"))));const body=h("tbody");
+      for(const a of att.slice(0,15)){const p=pct(a.score.correct,a.score.total);const rv=Object.values(a.review||{});const errs=errorsOf(a).length;
+        const rtext=!errs?"не нужна":(a.phase==="result"?"не начата":a.phase==="review"?"в процессе":`исправлено ${rv.filter(r=>r.status==="closed").length} из ${errs}`);
+        body.append(h("tr",{},h("td",{class:"tnum"},fmtDate(a.finishedAt||a.startedAt)),h("td",{},h("div",{},a.testTitle||""),h("div",{class:"muted small"},a.subject||"")),
+          h("td",{class:"tnum"},h("span",{class:"bar"},h("i",{style:`width:${p}%`})),`${a.score.correct}/${a.score.total}`),h("td",{},rtext)));}
+      tb.append(body);card.append(h("div",{class:"tbl-wrap"},tb));}
+    // rename
+    const inp=h("input",{type:"text",value:k.name,id:"name-"+k.id,"aria-label":"Имя"});
+    const sv=h("button",{class:"btn ghost",type:"button",style:"min-height:44px"},"Сохранить имя");
+    sv.onclick=async()=>{const name=inp.value.trim();if(!name)return;const kids=S.kids.map(x=>x.id===k.id?{...x,name}:x);await save("config/main",{kids},"set");toast("Имя сохранено");};
+    card.append(h("details",{style:"margin-top:14px"},h("summary",{class:"muted"},"Изменить имя"),h("div",{class:"namefield"},inp,sv)));
+    $view.append(card);
+  }
+  $view.append(howTo());
+}
+
+/* ============ start ============ */
+render();boot();
+</script>
+
+</body></html>

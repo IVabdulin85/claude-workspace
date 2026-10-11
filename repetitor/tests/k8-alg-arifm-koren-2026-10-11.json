@@ -1,0 +1,1790 @@
+{
+ "test": {
+  "id": "k8-alg-arifm-koren-2026-10-11",
+  "kid": "k8",
+  "grade": 8,
+  "subject": "Алгебра",
+  "topic": "Арифметический квадратный корень и его свойства",
+  "title": "Квадратный корень: определение, свойства, освобождение от иррациональности",
+  "source": "Алгебра 8 кл., §8, с. 22, 27, 28, 30, 39",
+  "createdAt": "2026-10-11T15:25:38+00:00"
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "type": "choice",
+   "subtopic": "Когда корень имеет смысл",
+   "text": "Какое из выражений имеет смысл?",
+   "options": [
+    {
+     "id": "a",
+     "text": "$\\sqrt{-25}$",
+     "why": "Под корнем стоит отрицательное число. Квадрат любого числа не бывает отрицательным, поэтому ни одно число в квадрате не даст −25. Такой корень не имеет смысла."
+    },
+    {
+     "id": "b",
+     "text": "$\\sqrt{-\\frac{1}{4}}$",
+     "why": "Под корнем стоит отрицательное число. Квадрат любого числа не бывает отрицательным, поэтому ни одно число в квадрате не даст −1/4. Такой корень не имеет смысла."
+    },
+    {
+     "id": "c",
+     "text": "$\\sqrt{\\frac{16}{9}}$"
+    }
+   ],
+   "answer": "c",
+   "hint": "Что может стоять под знаком арифметического корня: любое число или только неотрицательное?",
+   "solution": {
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 140\" role=\"img\" style=\"max-width:440px;margin:0 auto\"><rect x=\"8\" y=\"10\" width=\"200\" height=\"120\" rx=\"10\" style=\"fill:var(--pen);fill-opacity:0.12;stroke:var(--pen);stroke-width:2\"/><rect x=\"212\" y=\"10\" width=\"200\" height=\"120\" rx=\"10\" style=\"fill:var(--ok);fill-opacity:0.15;stroke:var(--ok);stroke-width:2\"/><text x=\"108.0\" y=\"34.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">под корнем &lt; 0</text><text x=\"108.0\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">корня нет</text><text x=\"312.0\" y=\"34.0\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 15px sans-serif\">под корнем ≥ 0</text><text x=\"312.0\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 15px sans-serif\">корень есть</text><circle data-step=\"1\" cx=\"58.0\" cy=\"92.0\" r=\"7\" style=\"fill:var(--pen);stroke:var(--pen);stroke-width:3\"/><text data-step=\"1\" x=\"58.0\" y=\"120.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">−25</text><circle data-step=\"1\" cx=\"158.0\" cy=\"92.0\" r=\"7\" style=\"fill:var(--pen);stroke:var(--pen);stroke-width:3\"/><text data-step=\"1\" x=\"158.0\" y=\"120.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">−1/4</text><circle data-step=\"1\" cx=\"312.0\" cy=\"92.0\" r=\"7\" style=\"fill:var(--ok);stroke:var(--ok);stroke-width:3\"/><text data-step=\"1\" x=\"312.0\" y=\"120.0\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 15px sans-serif\">16/9</text></svg>",
+     "caption": "Раскладываем подкоренные числа по двум зонам."
+    },
+    "steps": [
+     {
+      "text": "Корень имеет смысл, только если число под корнем **неотрицательное** (≥ 0).",
+      "layer": 0
+     },
+     {
+      "text": "Смотрим на знак каждого числа под корнем: −25 — отрицательное, −1/4 — отрицательное; 16/9 — положительное.",
+      "layer": 1
+     },
+     {
+      "text": "Смысл имеет только $\\sqrt{\\frac{16}{9}}$.",
+      "layer": 1
+     }
+    ],
+    "answerLine": "$\\sqrt{\\frac{16}{9}}$"
+   },
+   "lesson": {
+    "title": "Когда корень имеет смысл",
+    "text": "Арифметический квадратный корень $\\sqrt{a}$ — это **неотрицательное** число, квадрат которого равен $a$.\nКвадрат любого числа не бывает отрицательным. Поэтому под знаком корня **не может быть отрицательного числа**: выражение $\\sqrt{a}$ имеет смысл только при $a \\ge 0$.\nНапример, $\\sqrt{-1}$ не имеет смысла, а $\\sqrt{0} = 0$ и $\\sqrt{\\frac{1}{4}} = \\frac{1}{2}$ — имеют.",
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 140\" role=\"img\" style=\"max-width:440px;margin:0 auto\"><rect x=\"8\" y=\"10\" width=\"200\" height=\"120\" rx=\"10\" style=\"fill:var(--pen);fill-opacity:0.12;stroke:var(--pen);stroke-width:2\"/><rect x=\"212\" y=\"10\" width=\"200\" height=\"120\" rx=\"10\" style=\"fill:var(--ok);fill-opacity:0.15;stroke:var(--ok);stroke-width:2\"/><text x=\"108.0\" y=\"34.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">под корнем &lt; 0</text><text x=\"108.0\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">корня нет</text><text x=\"312.0\" y=\"34.0\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 15px sans-serif\">под корнем ≥ 0</text><text x=\"312.0\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 15px sans-serif\">корень есть</text><circle data-step=\"1\" cx=\"58.0\" cy=\"92.0\" r=\"7\" style=\"fill:var(--pen);stroke:var(--pen);stroke-width:3\"/><text data-step=\"1\" x=\"58.0\" y=\"120.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">−1</text><circle data-step=\"1\" cx=\"158.0\" cy=\"92.0\" r=\"7\" style=\"fill:var(--pen);stroke:var(--pen);stroke-width:3\"/><text data-step=\"1\" x=\"158.0\" y=\"120.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">−0,5</text><circle data-step=\"1\" cx=\"262.0\" cy=\"92.0\" r=\"7\" style=\"fill:var(--ok);stroke:var(--ok);stroke-width:3\"/><text data-step=\"1\" x=\"262.0\" y=\"120.0\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 15px sans-serif\">0</text><circle data-step=\"1\" cx=\"362.0\" cy=\"92.0\" r=\"7\" style=\"fill:var(--ok);stroke:var(--ok);stroke-width:3\"/><text data-step=\"1\" x=\"362.0\" y=\"120.0\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 15px sans-serif\">2,25</text></svg>"
+    },
+    "remember": "под корнем число должно быть ≥ 0."
+   },
+   "twins": [
+    {
+     "id": "q1t1",
+     "type": "choice",
+     "subtopic": "Когда корень имеет смысл",
+     "text": "Выбери корень, который существует.",
+     "options": [
+      {
+       "id": "a",
+       "text": "$\\sqrt{0{,}49}$"
+      },
+      {
+       "id": "b",
+       "text": "$\\sqrt{-0{,}36}$",
+       "why": "Под корнем стоит отрицательное число. Квадрат любого числа не бывает отрицательным, поэтому ни одно число в квадрате не даст −0,36. Такой корень не имеет смысла."
+      },
+      {
+       "id": "c",
+       "text": "$\\sqrt{-\\frac{9}{4}}$",
+       "why": "Под корнем стоит отрицательное число. Квадрат любого числа не бывает отрицательным, поэтому ни одно число в квадрате не даст −9/4. Такой корень не имеет смысла."
+      }
+     ],
+     "answer": "a",
+     "hint": "Что может стоять под знаком арифметического корня: любое число или только неотрицательное?",
+     "solution": {
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 140\" role=\"img\" style=\"max-width:440px;margin:0 auto\"><rect x=\"8\" y=\"10\" width=\"200\" height=\"120\" rx=\"10\" style=\"fill:var(--pen);fill-opacity:0.12;stroke:var(--pen);stroke-width:2\"/><rect x=\"212\" y=\"10\" width=\"200\" height=\"120\" rx=\"10\" style=\"fill:var(--ok);fill-opacity:0.15;stroke:var(--ok);stroke-width:2\"/><text x=\"108.0\" y=\"34.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">под корнем &lt; 0</text><text x=\"108.0\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">корня нет</text><text x=\"312.0\" y=\"34.0\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 15px sans-serif\">под корнем ≥ 0</text><text x=\"312.0\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 15px sans-serif\">корень есть</text><circle data-step=\"1\" cx=\"58.0\" cy=\"92.0\" r=\"7\" style=\"fill:var(--pen);stroke:var(--pen);stroke-width:3\"/><text data-step=\"1\" x=\"58.0\" y=\"120.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">−0,36</text><circle data-step=\"1\" cx=\"158.0\" cy=\"92.0\" r=\"7\" style=\"fill:var(--pen);stroke:var(--pen);stroke-width:3\"/><text data-step=\"1\" x=\"158.0\" y=\"120.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">−9/4</text><circle data-step=\"1\" cx=\"312.0\" cy=\"92.0\" r=\"7\" style=\"fill:var(--ok);stroke:var(--ok);stroke-width:3\"/><text data-step=\"1\" x=\"312.0\" y=\"120.0\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 15px sans-serif\">0,49</text></svg>",
+       "caption": "Раскладываем подкоренные числа по двум зонам."
+      },
+      "steps": [
+       {
+        "text": "Корень имеет смысл, только если число под корнем **неотрицательное** (≥ 0).",
+        "layer": 0
+       },
+       {
+        "text": "Смотрим на знак каждого числа под корнем: −0,36 — отрицательное, −9/4 — отрицательное; 0,49 — положительное.",
+        "layer": 1
+       },
+       {
+        "text": "Смысл имеет только $\\sqrt{0{,}49}$.",
+        "layer": 1
+       }
+      ],
+      "answerLine": "$\\sqrt{0{,}49}$"
+     }
+    },
+    {
+     "id": "q1t2",
+     "type": "choice",
+     "subtopic": "Когда корень имеет смысл",
+     "text": "Какой из корней можно вычислить?",
+     "options": [
+      {
+       "id": "a",
+       "text": "$\\sqrt{-7}$",
+       "why": "Под корнем стоит отрицательное число. Квадрат любого числа не бывает отрицательным, поэтому ни одно число в квадрате не даст −7. Такой корень не имеет смысла."
+      },
+      {
+       "id": "b",
+       "text": "$\\sqrt{\\frac{25}{4}}$"
+      },
+      {
+       "id": "c",
+       "text": "$\\sqrt{-1{,}5}$",
+       "why": "Под корнем стоит отрицательное число. Квадрат любого числа не бывает отрицательным, поэтому ни одно число в квадрате не даст −1,5. Такой корень не имеет смысла."
+      }
+     ],
+     "answer": "b",
+     "hint": "Что может стоять под знаком арифметического корня: любое число или только неотрицательное?",
+     "solution": {
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 140\" role=\"img\" style=\"max-width:440px;margin:0 auto\"><rect x=\"8\" y=\"10\" width=\"200\" height=\"120\" rx=\"10\" style=\"fill:var(--pen);fill-opacity:0.12;stroke:var(--pen);stroke-width:2\"/><rect x=\"212\" y=\"10\" width=\"200\" height=\"120\" rx=\"10\" style=\"fill:var(--ok);fill-opacity:0.15;stroke:var(--ok);stroke-width:2\"/><text x=\"108.0\" y=\"34.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">под корнем &lt; 0</text><text x=\"108.0\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">корня нет</text><text x=\"312.0\" y=\"34.0\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 15px sans-serif\">под корнем ≥ 0</text><text x=\"312.0\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 15px sans-serif\">корень есть</text><circle data-step=\"1\" cx=\"58.0\" cy=\"92.0\" r=\"7\" style=\"fill:var(--pen);stroke:var(--pen);stroke-width:3\"/><text data-step=\"1\" x=\"58.0\" y=\"120.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">−7</text><circle data-step=\"1\" cx=\"158.0\" cy=\"92.0\" r=\"7\" style=\"fill:var(--pen);stroke:var(--pen);stroke-width:3\"/><text data-step=\"1\" x=\"158.0\" y=\"120.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">−1,5</text><circle data-step=\"1\" cx=\"312.0\" cy=\"92.0\" r=\"7\" style=\"fill:var(--ok);stroke:var(--ok);stroke-width:3\"/><text data-step=\"1\" x=\"312.0\" y=\"120.0\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 15px sans-serif\">25/4</text></svg>",
+       "caption": "Раскладываем подкоренные числа по двум зонам."
+      },
+      "steps": [
+       {
+        "text": "Корень имеет смысл, только если число под корнем **неотрицательное** (≥ 0).",
+        "layer": 0
+       },
+       {
+        "text": "Смотрим на знак каждого числа под корнем: −7 — отрицательное, −1,5 — отрицательное; 25/4 — положительное.",
+        "layer": 1
+       },
+       {
+        "text": "Смысл имеет только $\\sqrt{\\frac{25}{4}}$.",
+        "layer": 1
+       }
+      ],
+      "answerLine": "$\\sqrt{\\frac{25}{4}}$"
+     }
+    }
+   ],
+   "order": 1
+  },
+  {
+   "id": "q2",
+   "type": "choice",
+   "subtopic": "Допустимые значения переменной под корнем",
+   "text": "При каких значениях $a$ имеет смысл выражение $\\sqrt{a-5}$?",
+   "options": [
+    {
+     "id": "a",
+     "text": "$a \\ge 5$"
+    },
+    {
+     "id": "b",
+     "text": "$a \\le 5$",
+     "why": "Ты перепутал знак неравенства. Корень имеет смысл, когда подкоренное выражение **больше или равно нулю**: $a-5 \\ge 0$."
+    },
+    {
+     "id": "c",
+     "text": "$a \\ge -5$",
+     "why": "Ты перенёс число через знак неравенства, не поменяв знак. Из $a-5 \\ge 0$ получается $a \\ge 5$."
+    },
+    {
+     "id": "d",
+     "text": "$a > 5$",
+     "why": "При $a = 5$ под корнем получается 0, а $\\sqrt{0} = 0$ — выражение имеет смысл. Значит, значение 5 тоже подходит, неравенство нестрогое."
+    }
+   ],
+   "answer": "a",
+   "hint": "Подкоренное выражение должно быть неотрицательным. Запиши это неравенством и реши его.",
+   "solution": {
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 120\" role=\"img\" style=\"max-width:440px;margin:0 auto\"><line x1=\"30.0\" y1=\"70.0\" x2=\"394.0\" y2=\"70.0\" style=\"stroke:var(--ink);stroke-width:2;stroke-linecap:round;\"/><line x1=\"30.0\" y1=\"64.0\" x2=\"30.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"30.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">2</text><line x1=\"80.0\" y1=\"64.0\" x2=\"80.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"80.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">3</text><line x1=\"130.0\" y1=\"64.0\" x2=\"130.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"130.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">4</text><line x1=\"180.0\" y1=\"64.0\" x2=\"180.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"180.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">5</text><line x1=\"230.0\" y1=\"64.0\" x2=\"230.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"230.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">6</text><line x1=\"280.0\" y1=\"64.0\" x2=\"280.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"280.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">7</text><line x1=\"330.0\" y1=\"64.0\" x2=\"330.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"330.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">8</text><line x1=\"380.0\" y1=\"64.0\" x2=\"380.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"380.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">9</text><line data-step=\"2\" x1=\"180.0\" y1=\"50.0\" x2=\"390.0\" y2=\"50.0\" style=\"stroke:var(--ok);stroke-width:6;stroke-linecap:round;\"/><circle data-step=\"2\" cx=\"180.0\" cy=\"50.0\" r=\"7\" style=\"fill:var(--ok);stroke:var(--ok);stroke-width:3\"/><text data-step=\"2\" x=\"300.0\" y=\"36.0\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 18px sans-serif\">a ≥ 5</text></svg>",
+     "caption": "Подходят все числа от 5 и правее."
+    },
+    "steps": [
+     {
+      "text": "Подкоренное выражение неотрицательно: $a-5 \\ge 0$.",
+      "layer": 1
+     },
+     {
+      "text": "Переносим −5 в правую часть с противоположным знаком: $a \\ge 5$.",
+      "layer": 1
+     },
+     {
+      "text": "На числовой прямой это луч от 5 вправо, точка 5 входит.",
+      "layer": 2
+     }
+    ],
+    "answerLine": "$a \\ge 5$"
+   },
+   "lesson": {
+    "title": "Допустимые значения под корнем",
+    "text": "Допустимые значения переменной — те, при которых выражение имеет смысл. Для $\\sqrt{x-1}$ нужно, чтобы $x-1 \\ge 0$.\nРешаем как обычное неравенство: переносим $-1$ в правую часть с **противоположным знаком**: $x \\ge 1$.\nЗнак «больше **или равно**»: при $x = 1$ получается $\\sqrt{0} = 0$ — это нормально, значит, точка 1 тоже входит. Ответ можно записать лучом $[1; +\\infty)$.",
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 120\" role=\"img\" style=\"max-width:440px;margin:0 auto\"><line x1=\"30.0\" y1=\"70.0\" x2=\"394.0\" y2=\"70.0\" style=\"stroke:var(--ink);stroke-width:2;stroke-linecap:round;\"/><line x1=\"30.0\" y1=\"64.0\" x2=\"30.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"30.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">−2</text><line x1=\"80.0\" y1=\"64.0\" x2=\"80.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"80.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">−1</text><line x1=\"130.0\" y1=\"64.0\" x2=\"130.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"130.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">0</text><line x1=\"180.0\" y1=\"64.0\" x2=\"180.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"180.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">1</text><line x1=\"230.0\" y1=\"64.0\" x2=\"230.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"230.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">2</text><line x1=\"280.0\" y1=\"64.0\" x2=\"280.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"280.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">3</text><line x1=\"330.0\" y1=\"64.0\" x2=\"330.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"330.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">4</text><line x1=\"380.0\" y1=\"64.0\" x2=\"380.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"380.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">5</text><line data-step=\"2\" x1=\"180.0\" y1=\"50.0\" x2=\"390.0\" y2=\"50.0\" style=\"stroke:var(--ok);stroke-width:6;stroke-linecap:round;\"/><circle data-step=\"2\" cx=\"180.0\" cy=\"50.0\" r=\"7\" style=\"fill:var(--ok);stroke:var(--ok);stroke-width:3\"/><text data-step=\"2\" x=\"300.0\" y=\"36.0\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 18px sans-serif\">x ≥ 1</text></svg>"
+    },
+    "remember": "подкоренное выражение ≥ 0, число переносим со сменой знака."
+   },
+   "twins": [
+    {
+     "id": "q2t1",
+     "type": "choice",
+     "subtopic": "Допустимые значения переменной под корнем",
+     "text": "При каких значениях $x$ имеет смысл выражение $\\sqrt{x+4}$?",
+     "options": [
+      {
+       "id": "a",
+       "text": "$x \\le -4$",
+       "why": "Ты перепутал знак неравенства. Корень имеет смысл, когда подкоренное выражение **больше или равно нулю**: $x+4 \\ge 0$."
+      },
+      {
+       "id": "b",
+       "text": "$x \\ge 4$",
+       "why": "Ты перенёс число через знак неравенства, не поменяв знак. Из $x+4 \\ge 0$ получается $x \\ge -4$."
+      },
+      {
+       "id": "c",
+       "text": "$x \\ge -4$"
+      },
+      {
+       "id": "d",
+       "text": "$x > -4$",
+       "why": "При $x = -4$ под корнем получается 0, а $\\sqrt{0} = 0$ — выражение имеет смысл. Значит, значение −4 тоже подходит, неравенство нестрогое."
+      }
+     ],
+     "answer": "c",
+     "hint": "Подкоренное выражение должно быть неотрицательным. Запиши это неравенством и реши его.",
+     "solution": {
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 120\" role=\"img\" style=\"max-width:440px;margin:0 auto\"><line x1=\"30.0\" y1=\"70.0\" x2=\"394.0\" y2=\"70.0\" style=\"stroke:var(--ink);stroke-width:2;stroke-linecap:round;\"/><line x1=\"30.0\" y1=\"64.0\" x2=\"30.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"30.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">−7</text><line x1=\"80.0\" y1=\"64.0\" x2=\"80.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"80.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">−6</text><line x1=\"130.0\" y1=\"64.0\" x2=\"130.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"130.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">−5</text><line x1=\"180.0\" y1=\"64.0\" x2=\"180.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"180.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">−4</text><line x1=\"230.0\" y1=\"64.0\" x2=\"230.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"230.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">−3</text><line x1=\"280.0\" y1=\"64.0\" x2=\"280.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"280.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">−2</text><line x1=\"330.0\" y1=\"64.0\" x2=\"330.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"330.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">−1</text><line x1=\"380.0\" y1=\"64.0\" x2=\"380.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"380.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">0</text><line data-step=\"2\" x1=\"180.0\" y1=\"50.0\" x2=\"390.0\" y2=\"50.0\" style=\"stroke:var(--ok);stroke-width:6;stroke-linecap:round;\"/><circle data-step=\"2\" cx=\"180.0\" cy=\"50.0\" r=\"7\" style=\"fill:var(--ok);stroke:var(--ok);stroke-width:3\"/><text data-step=\"2\" x=\"300.0\" y=\"36.0\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 18px sans-serif\">x ≥ −4</text></svg>",
+       "caption": "Подходят все числа от −4 и правее."
+      },
+      "steps": [
+       {
+        "text": "Подкоренное выражение неотрицательно: $x+4 \\ge 0$.",
+        "layer": 1
+       },
+       {
+        "text": "Переносим 4 в правую часть с противоположным знаком: $x \\ge -4$.",
+        "layer": 1
+       },
+       {
+        "text": "На числовой прямой это луч от −4 вправо, точка −4 входит.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "$x \\ge -4$"
+     }
+    },
+    {
+     "id": "q2t2",
+     "type": "choice",
+     "subtopic": "Допустимые значения переменной под корнем",
+     "text": "При каких значениях $b$ имеет смысл выражение $\\sqrt{b-8}$?",
+     "options": [
+      {
+       "id": "a",
+       "text": "$b \\le 8$",
+       "why": "Ты перепутал знак неравенства. Корень имеет смысл, когда подкоренное выражение **больше или равно нулю**: $b-8 \\ge 0$."
+      },
+      {
+       "id": "b",
+       "text": "$b \\ge 8$"
+      },
+      {
+       "id": "c",
+       "text": "$b \\ge -8$",
+       "why": "Ты перенёс число через знак неравенства, не поменяв знак. Из $b-8 \\ge 0$ получается $b \\ge 8$."
+      },
+      {
+       "id": "d",
+       "text": "$b > 8$",
+       "why": "При $b = 8$ под корнем получается 0, а $\\sqrt{0} = 0$ — выражение имеет смысл. Значит, значение 8 тоже подходит, неравенство нестрогое."
+      }
+     ],
+     "answer": "b",
+     "hint": "Подкоренное выражение должно быть неотрицательным. Запиши это неравенством и реши его.",
+     "solution": {
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 120\" role=\"img\" style=\"max-width:440px;margin:0 auto\"><line x1=\"30.0\" y1=\"70.0\" x2=\"394.0\" y2=\"70.0\" style=\"stroke:var(--ink);stroke-width:2;stroke-linecap:round;\"/><line x1=\"30.0\" y1=\"64.0\" x2=\"30.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"30.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">5</text><line x1=\"80.0\" y1=\"64.0\" x2=\"80.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"80.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">6</text><line x1=\"130.0\" y1=\"64.0\" x2=\"130.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"130.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">7</text><line x1=\"180.0\" y1=\"64.0\" x2=\"180.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"180.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">8</text><line x1=\"230.0\" y1=\"64.0\" x2=\"230.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"230.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">9</text><line x1=\"280.0\" y1=\"64.0\" x2=\"280.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"280.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">10</text><line x1=\"330.0\" y1=\"64.0\" x2=\"330.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"330.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">11</text><line x1=\"380.0\" y1=\"64.0\" x2=\"380.0\" y2=\"76.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"380.0\" y=\"98.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">12</text><line data-step=\"2\" x1=\"180.0\" y1=\"50.0\" x2=\"390.0\" y2=\"50.0\" style=\"stroke:var(--ok);stroke-width:6;stroke-linecap:round;\"/><circle data-step=\"2\" cx=\"180.0\" cy=\"50.0\" r=\"7\" style=\"fill:var(--ok);stroke:var(--ok);stroke-width:3\"/><text data-step=\"2\" x=\"300.0\" y=\"36.0\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 18px sans-serif\">b ≥ 8</text></svg>",
+       "caption": "Подходят все числа от 8 и правее."
+      },
+      "steps": [
+       {
+        "text": "Подкоренное выражение неотрицательно: $b-8 \\ge 0$.",
+        "layer": 1
+       },
+       {
+        "text": "Переносим −8 в правую часть с противоположным знаком: $b \\ge 8$.",
+        "layer": 1
+       },
+       {
+        "text": "На числовой прямой это луч от 8 вправо, точка 8 входит.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "$b \\ge 8$"
+     }
+    }
+   ],
+   "order": 2
+  },
+  {
+   "id": "q3",
+   "type": "choice",
+   "subtopic": "Уравнение x² = a",
+   "text": "Реши уравнение $x^2 = 36$.",
+   "options": [
+    {
+     "id": "a",
+     "text": "$x = 6$",
+     "why": "Ты нашёл только арифметический корень. Но $(-6)^2$ тоже равно 36, поэтому у уравнения $x^2 = a$ при $a > 0$ **два** корня."
+    },
+    {
+     "id": "b",
+     "text": "$x = 6$ и $x = -6$"
+    },
+    {
+     "id": "c",
+     "text": "$x = 18$",
+     "why": "Ты разделил 36 на 2. Но $x^2$ — это $x \\cdot x$, а не $2x$. Нужно искать число, которое при умножении на себя даёт 36."
+    },
+    {
+     "id": "d",
+     "text": "Корней нет",
+     "why": "Корни есть: число 36 положительное, а корней нет только когда справа отрицательное число."
+    }
+   ],
+   "answer": "b",
+   "hint": "Какие числа в квадрате дают это число? Не забудь про отрицательное.",
+   "solution": {
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 110\" role=\"img\" style=\"max-width:440px;margin:0 auto\"><line x1=\"30.0\" y1=\"66.0\" x2=\"390.0\" y2=\"66.0\" style=\"stroke:var(--ink);stroke-width:2;stroke-linecap:round;\"/><line x1=\"210.0\" y1=\"59.0\" x2=\"210.0\" y2=\"73.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"210.0\" y=\"94.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">0</text><circle cx=\"66.0\" cy=\"66.0\" r=\"7\" style=\"fill:var(--accent);stroke:var(--accent);stroke-width:3\"/><text x=\"66.0\" y=\"94.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 17px sans-serif\">−6</text><text data-step=\"1\" x=\"66.0\" y=\"42.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 16px sans-serif\">(−6)² = 36</text><circle cx=\"354.0\" cy=\"66.0\" r=\"7\" style=\"fill:var(--accent);stroke:var(--accent);stroke-width:3\"/><text x=\"354.0\" y=\"94.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 17px sans-serif\">6</text><text data-step=\"1\" x=\"354.0\" y=\"42.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 16px sans-serif\">(6)² = 36</text></svg>",
+     "caption": "Оба числа в квадрате дают одно и то же."
+    },
+    "steps": [
+     {
+      "text": "Уравнение $x^2 = a$ при $a > 0$ имеет два корня: $x = \\pm\\sqrt{a}$.",
+      "layer": 0
+     },
+     {
+      "text": "$\\sqrt{36} = 6$, значит, $x = 6$ или $x = -6$.",
+      "layer": 1
+     },
+     {
+      "text": "Проверка: $6^2 = 36$ и $(-6)^2 = 36$.",
+      "layer": 1
+     }
+    ],
+    "answerLine": "$x = \\pm 6$"
+   },
+   "lesson": {
+    "title": "Уравнение x² = a",
+    "text": "Уравнение $x^2 = a$ при $a > 0$ имеет **два** корня: $\\sqrt{a}$ и $-\\sqrt{a}$. Записывают: $x = \\pm\\sqrt{a}$.\nПочему два? Потому что $(\\sqrt{a})^2 = a$ и $(-\\sqrt{a})^2 = a$. Сам знак $\\sqrt{\\ }$ даёт только неотрицательное число, поэтому отрицательный корень приходится добавлять самому.\nПример: $x^2 = 4$ → $x = 2$ или $x = -2$. При $a = 0$ корень один — 0, при $a < 0$ корней нет.",
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 110\" role=\"img\" style=\"max-width:440px;margin:0 auto\"><line x1=\"30.0\" y1=\"66.0\" x2=\"390.0\" y2=\"66.0\" style=\"stroke:var(--ink);stroke-width:2;stroke-linecap:round;\"/><line x1=\"210.0\" y1=\"59.0\" x2=\"210.0\" y2=\"73.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"210.0\" y=\"94.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">0</text><circle cx=\"66.0\" cy=\"66.0\" r=\"7\" style=\"fill:var(--accent);stroke:var(--accent);stroke-width:3\"/><text x=\"66.0\" y=\"94.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 17px sans-serif\">−2</text><text data-step=\"1\" x=\"66.0\" y=\"42.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 16px sans-serif\">(−2)² = 4</text><circle cx=\"354.0\" cy=\"66.0\" r=\"7\" style=\"fill:var(--accent);stroke:var(--accent);stroke-width:3\"/><text x=\"354.0\" y=\"94.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 17px sans-serif\">2</text><text data-step=\"1\" x=\"354.0\" y=\"42.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 16px sans-serif\">(2)² = 4</text></svg>"
+    },
+    "remember": "x² = a даёт x = ±√a (при a > 0)."
+   },
+   "twins": [
+    {
+     "id": "q3t1",
+     "type": "choice",
+     "subtopic": "Уравнение x² = a",
+     "text": "Реши уравнение $x^2 = 81$.",
+     "options": [
+      {
+       "id": "a",
+       "text": "$x = 9$",
+       "why": "Ты нашёл только арифметический корень. Но $(-9)^2$ тоже равно 81, поэтому у уравнения $x^2 = a$ при $a > 0$ **два** корня."
+      },
+      {
+       "id": "b",
+       "text": "$x = 40.5$",
+       "why": "Ты разделил 81 на 2. Но $x^2$ — это $x \\cdot x$, а не $2x$. Нужно искать число, которое при умножении на себя даёт 81."
+      },
+      {
+       "id": "c",
+       "text": "$x = 9$ и $x = -9$"
+      },
+      {
+       "id": "d",
+       "text": "Корней нет",
+       "why": "Корни есть: число 81 положительное, а корней нет только когда справа отрицательное число."
+      }
+     ],
+     "answer": "c",
+     "hint": "Какие числа в квадрате дают это число? Не забудь про отрицательное.",
+     "solution": {
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 110\" role=\"img\" style=\"max-width:440px;margin:0 auto\"><line x1=\"30.0\" y1=\"66.0\" x2=\"390.0\" y2=\"66.0\" style=\"stroke:var(--ink);stroke-width:2;stroke-linecap:round;\"/><line x1=\"210.0\" y1=\"59.0\" x2=\"210.0\" y2=\"73.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"210.0\" y=\"94.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">0</text><circle cx=\"66.0\" cy=\"66.0\" r=\"7\" style=\"fill:var(--accent);stroke:var(--accent);stroke-width:3\"/><text x=\"66.0\" y=\"94.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 17px sans-serif\">−9</text><text data-step=\"1\" x=\"66.0\" y=\"42.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 16px sans-serif\">(−9)² = 81</text><circle cx=\"354.0\" cy=\"66.0\" r=\"7\" style=\"fill:var(--accent);stroke:var(--accent);stroke-width:3\"/><text x=\"354.0\" y=\"94.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 17px sans-serif\">9</text><text data-step=\"1\" x=\"354.0\" y=\"42.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 16px sans-serif\">(9)² = 81</text></svg>",
+       "caption": "Оба числа в квадрате дают одно и то же."
+      },
+      "steps": [
+       {
+        "text": "Уравнение $x^2 = a$ при $a > 0$ имеет два корня: $x = \\pm\\sqrt{a}$.",
+        "layer": 0
+       },
+       {
+        "text": "$\\sqrt{81} = 9$, значит, $x = 9$ или $x = -9$.",
+        "layer": 1
+       },
+       {
+        "text": "Проверка: $9^2 = 81$ и $(-9)^2 = 81$.",
+        "layer": 1
+       }
+      ],
+      "answerLine": "$x = \\pm 9$"
+     }
+    },
+    {
+     "id": "q3t2",
+     "type": "choice",
+     "subtopic": "Уравнение x² = a",
+     "text": "Реши уравнение $x^2 = 121$.",
+     "options": [
+      {
+       "id": "a",
+       "text": "$x = 11$ и $x = -11$"
+      },
+      {
+       "id": "b",
+       "text": "$x = 11$",
+       "why": "Ты нашёл только арифметический корень. Но $(-11)^2$ тоже равно 121, поэтому у уравнения $x^2 = a$ при $a > 0$ **два** корня."
+      },
+      {
+       "id": "c",
+       "text": "$x = 60.5$",
+       "why": "Ты разделил 121 на 2. Но $x^2$ — это $x \\cdot x$, а не $2x$. Нужно искать число, которое при умножении на себя даёт 121."
+      },
+      {
+       "id": "d",
+       "text": "Корней нет",
+       "why": "Корни есть: число 121 положительное, а корней нет только когда справа отрицательное число."
+      }
+     ],
+     "answer": "a",
+     "hint": "Какие числа в квадрате дают это число? Не забудь про отрицательное.",
+     "solution": {
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 110\" role=\"img\" style=\"max-width:440px;margin:0 auto\"><line x1=\"30.0\" y1=\"66.0\" x2=\"390.0\" y2=\"66.0\" style=\"stroke:var(--ink);stroke-width:2;stroke-linecap:round;\"/><line x1=\"210.0\" y1=\"59.0\" x2=\"210.0\" y2=\"73.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"210.0\" y=\"94.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">0</text><circle cx=\"66.0\" cy=\"66.0\" r=\"7\" style=\"fill:var(--accent);stroke:var(--accent);stroke-width:3\"/><text x=\"66.0\" y=\"94.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 17px sans-serif\">−11</text><text data-step=\"1\" x=\"66.0\" y=\"42.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 16px sans-serif\">(−11)² = 121</text><circle cx=\"354.0\" cy=\"66.0\" r=\"7\" style=\"fill:var(--accent);stroke:var(--accent);stroke-width:3\"/><text x=\"354.0\" y=\"94.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 17px sans-serif\">11</text><text data-step=\"1\" x=\"354.0\" y=\"42.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 16px sans-serif\">(11)² = 121</text></svg>",
+       "caption": "Оба числа в квадрате дают одно и то же."
+      },
+      "steps": [
+       {
+        "text": "Уравнение $x^2 = a$ при $a > 0$ имеет два корня: $x = \\pm\\sqrt{a}$.",
+        "layer": 0
+       },
+       {
+        "text": "$\\sqrt{121} = 11$, значит, $x = 11$ или $x = -11$.",
+        "layer": 1
+       },
+       {
+        "text": "Проверка: $11^2 = 121$ и $(-11)^2 = 121$.",
+        "layer": 1
+       }
+      ],
+      "answerLine": "$x = \\pm 11$"
+     }
+    }
+   ],
+   "order": 3
+  },
+  {
+   "id": "q4",
+   "type": "number",
+   "subtopic": "Корень из произведения (числа-квадраты)",
+   "text": "Вычисли: $\\sqrt{16 \\cdot 25}$.",
+   "answer": 20,
+   "tolerance": 0.001,
+   "typicalWrong": [
+    {
+     "value": 400,
+     "why": "Ты перемножил 16 · 25 = 400, но забыл извлечь корень. Лучше сначала извлечь корень из каждого множителя."
+    },
+    {
+     "value": 9,
+     "why": "Ты сложил корни: 4 + 5. Но корень из **произведения** равен **произведению** корней: 4 · 5."
+    }
+   ],
+   "hint": "Корень из произведения равен произведению корней: $\\sqrt{ab} = \\sqrt{a}\\cdot\\sqrt{b}$.",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<div style=\"text-align:center\"><div style=\"font-size:19px;line-height:2;text-align:left;display:inline-block\"><div>√(16·25)</div><div data-step=\"1\">= √16 · √25</div><div data-step=\"2\">= 4 · 5</div><div data-step=\"3\">= <b style='color:var(--pen)'>20</b></div></div></div>"
+    },
+    "steps": [
+     {
+      "text": "$a = 16 \\ge 0$ и $b = 25 \\ge 0$, поэтому можно: $\\sqrt{16\\cdot25} = \\sqrt{16}\\cdot\\sqrt{25}$.",
+      "layer": 1
+     },
+     {
+      "text": "$\\sqrt{16} = 4$, $\\sqrt{25} = 5$.",
+      "layer": 2
+     },
+     {
+      "text": "$4 \\cdot 5 = 20$.",
+      "layer": 3
+     }
+    ],
+    "answerLine": "20"
+   },
+   "lesson": {
+    "title": "Корень из произведения",
+    "text": "**Теорема 1.** Если $a \\ge 0$ и $b \\ge 0$, то $\\sqrt{ab} = \\sqrt{a}\\cdot\\sqrt{b}$.\nПравило работает в обе стороны. Слева направо — разбиваем: $\\sqrt{4\\cdot 9} = \\sqrt{4}\\cdot\\sqrt{9} = 2\\cdot 3 = 6$. Справа налево — объединяем: $\\sqrt{2}\\cdot\\sqrt{18} = \\sqrt{36} = 6$.\nВыбирай то направление, при котором числа становятся «квадратами» и корни извлекаются. Корни **умножаются** — не складываются!",
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 70' style='max-width:420px;margin:0 auto'><text x=\"210.0\" y=\"42.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 26px sans-serif\">√(a·b)  =  √a · √b</text></svg>"
+    },
+    "remember": "корень из произведения = произведение корней (a ≥ 0, b ≥ 0)."
+   },
+   "twins": [
+    {
+     "id": "q4t1",
+     "type": "number",
+     "subtopic": "Корень из произведения (числа-квадраты)",
+     "text": "Вычисли: $\\sqrt{4 \\cdot 49}$.",
+     "answer": 14,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 196,
+       "why": "Ты перемножил 4 · 49 = 196, но забыл извлечь корень. Лучше сначала извлечь корень из каждого множителя."
+      },
+      {
+       "value": 9,
+       "why": "Ты сложил корни: 2 + 7. Но корень из **произведения** равен **произведению** корней: 2 · 7."
+      }
+     ],
+     "hint": "Корень из произведения равен произведению корней: $\\sqrt{ab} = \\sqrt{a}\\cdot\\sqrt{b}$.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<div style=\"text-align:center\"><div style=\"font-size:19px;line-height:2;text-align:left;display:inline-block\"><div>√(4·49)</div><div data-step=\"1\">= √4 · √49</div><div data-step=\"2\">= 2 · 7</div><div data-step=\"3\">= <b style='color:var(--pen)'>14</b></div></div></div>"
+      },
+      "steps": [
+       {
+        "text": "$a = 4 \\ge 0$ и $b = 49 \\ge 0$, поэтому можно: $\\sqrt{4\\cdot49} = \\sqrt{4}\\cdot\\sqrt{49}$.",
+        "layer": 1
+       },
+       {
+        "text": "$\\sqrt{4} = 2$, $\\sqrt{49} = 7$.",
+        "layer": 2
+       },
+       {
+        "text": "$2 \\cdot 7 = 14$.",
+        "layer": 3
+       }
+      ],
+      "answerLine": "14"
+     }
+    },
+    {
+     "id": "q4t2",
+     "type": "number",
+     "subtopic": "Корень из произведения (числа-квадраты)",
+     "text": "Вычисли: $\\sqrt{9 \\cdot 64}$.",
+     "answer": 24,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 576,
+       "why": "Ты перемножил 9 · 64 = 576, но забыл извлечь корень. Лучше сначала извлечь корень из каждого множителя."
+      },
+      {
+       "value": 11,
+       "why": "Ты сложил корни: 3 + 8. Но корень из **произведения** равен **произведению** корней: 3 · 8."
+      }
+     ],
+     "hint": "Корень из произведения равен произведению корней: $\\sqrt{ab} = \\sqrt{a}\\cdot\\sqrt{b}$.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<div style=\"text-align:center\"><div style=\"font-size:19px;line-height:2;text-align:left;display:inline-block\"><div>√(9·64)</div><div data-step=\"1\">= √9 · √64</div><div data-step=\"2\">= 3 · 8</div><div data-step=\"3\">= <b style='color:var(--pen)'>24</b></div></div></div>"
+      },
+      "steps": [
+       {
+        "text": "$a = 9 \\ge 0$ и $b = 64 \\ge 0$, поэтому можно: $\\sqrt{9\\cdot64} = \\sqrt{9}\\cdot\\sqrt{64}$.",
+        "layer": 1
+       },
+       {
+        "text": "$\\sqrt{9} = 3$, $\\sqrt{64} = 8$.",
+        "layer": 2
+       },
+       {
+        "text": "$3 \\cdot 8 = 24$.",
+        "layer": 3
+       }
+      ],
+      "answerLine": "24"
+     }
+    }
+   ],
+   "order": 4
+  },
+  {
+   "id": "q5",
+   "type": "number",
+   "subtopic": "Произведение корней",
+   "text": "Вычисли: $\\sqrt{8} \\cdot \\sqrt{2}$.",
+   "answer": 4,
+   "tolerance": 0.001,
+   "typicalWrong": [
+    {
+     "value": 16,
+     "why": "Ты перемножил подкоренные числа (8·2 = 16), но корень остался: нужно извлечь $\\sqrt{16}$."
+    },
+    {
+     "value": 10,
+     "why": "Ты сложил числа под корнем: 8+2. Корни умножаются, значит, под корнем числа тоже **перемножаем**."
+    }
+   ],
+   "hint": "Объедини два корня в один: $\\sqrt{a}\\cdot\\sqrt{b} = \\sqrt{ab}$.",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<div style=\"text-align:center\"><div style=\"font-size:19px;line-height:2;text-align:left;display:inline-block\"><div>√8 · √2</div><div data-step=\"1\">= √(8·2)</div><div data-step=\"2\">= √16</div><div data-step=\"3\">= <b style='color:var(--pen)'>4</b></div></div></div>"
+    },
+    "steps": [
+     {
+      "text": "Произведение корней равно корню из произведения: $\\sqrt{8}\\cdot\\sqrt{2} = \\sqrt{8\\cdot2}$.",
+      "layer": 1
+     },
+     {
+      "text": "$8\\cdot2 = 16$.",
+      "layer": 2
+     },
+     {
+      "text": "$\\sqrt{16} = 4$.",
+      "layer": 3
+     }
+    ],
+    "answerLine": "4"
+   },
+   "lesson": {
+    "title": "Корень из произведения",
+    "text": "**Теорема 1.** Если $a \\ge 0$ и $b \\ge 0$, то $\\sqrt{ab} = \\sqrt{a}\\cdot\\sqrt{b}$.\nПравило работает в обе стороны. Слева направо — разбиваем: $\\sqrt{4\\cdot 9} = \\sqrt{4}\\cdot\\sqrt{9} = 2\\cdot 3 = 6$. Справа налево — объединяем: $\\sqrt{2}\\cdot\\sqrt{18} = \\sqrt{36} = 6$.\nВыбирай то направление, при котором числа становятся «квадратами» и корни извлекаются. Корни **умножаются** — не складываются!",
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 70' style='max-width:420px;margin:0 auto'><text x=\"210.0\" y=\"42.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 26px sans-serif\">√(a·b)  =  √a · √b</text></svg>"
+    },
+    "remember": "корень из произведения = произведение корней (a ≥ 0, b ≥ 0)."
+   },
+   "twins": [
+    {
+     "id": "q5t1",
+     "type": "number",
+     "subtopic": "Произведение корней",
+     "text": "Вычисли: $\\sqrt{18} \\cdot \\sqrt{2}$.",
+     "answer": 6,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 36,
+       "why": "Ты перемножил подкоренные числа (18·2 = 36), но корень остался: нужно извлечь $\\sqrt{36}$."
+      },
+      {
+       "value": 20,
+       "why": "Ты сложил числа под корнем: 18+2. Корни умножаются, значит, под корнем числа тоже **перемножаем**."
+      }
+     ],
+     "hint": "Объедини два корня в один: $\\sqrt{a}\\cdot\\sqrt{b} = \\sqrt{ab}$.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<div style=\"text-align:center\"><div style=\"font-size:19px;line-height:2;text-align:left;display:inline-block\"><div>√18 · √2</div><div data-step=\"1\">= √(18·2)</div><div data-step=\"2\">= √36</div><div data-step=\"3\">= <b style='color:var(--pen)'>6</b></div></div></div>"
+      },
+      "steps": [
+       {
+        "text": "Произведение корней равно корню из произведения: $\\sqrt{18}\\cdot\\sqrt{2} = \\sqrt{18\\cdot2}$.",
+        "layer": 1
+       },
+       {
+        "text": "$18\\cdot2 = 36$.",
+        "layer": 2
+       },
+       {
+        "text": "$\\sqrt{36} = 6$.",
+        "layer": 3
+       }
+      ],
+      "answerLine": "6"
+     }
+    },
+    {
+     "id": "q5t2",
+     "type": "number",
+     "subtopic": "Произведение корней",
+     "text": "Вычисли: $\\sqrt{7} \\cdot \\sqrt{28}$.",
+     "answer": 14,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 196,
+       "why": "Ты перемножил подкоренные числа (7·28 = 196), но корень остался: нужно извлечь $\\sqrt{196}$."
+      },
+      {
+       "value": 35,
+       "why": "Ты сложил числа под корнем: 7+28. Корни умножаются, значит, под корнем числа тоже **перемножаем**."
+      }
+     ],
+     "hint": "Объедини два корня в один: $\\sqrt{a}\\cdot\\sqrt{b} = \\sqrt{ab}$.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<div style=\"text-align:center\"><div style=\"font-size:19px;line-height:2;text-align:left;display:inline-block\"><div>√7 · √28</div><div data-step=\"1\">= √(7·28)</div><div data-step=\"2\">= √196</div><div data-step=\"3\">= <b style='color:var(--pen)'>14</b></div></div></div>"
+      },
+      "steps": [
+       {
+        "text": "Произведение корней равно корню из произведения: $\\sqrt{7}\\cdot\\sqrt{28} = \\sqrt{7\\cdot28}$.",
+        "layer": 1
+       },
+       {
+        "text": "$7\\cdot28 = 196$.",
+        "layer": 2
+       },
+       {
+        "text": "$\\sqrt{196} = 14$.",
+        "layer": 3
+       }
+      ],
+      "answerLine": "14"
+     }
+    }
+   ],
+   "order": 5
+  },
+  {
+   "id": "q6",
+   "type": "number",
+   "subtopic": "Корень из дроби",
+   "text": "Вычисли: $\\sqrt{\\frac{49}{25}}$. Ответ запиши дробью (например 3/5) или десятичной.",
+   "answer": 1.4,
+   "tolerance": 0.0005,
+   "typicalWrong": [
+    {
+     "value": 0.28,
+     "why": "Ты извлёк корень только из числителя (7), а знаменатель 25 оставил. Корень нужно извлечь из **обоих** чисел."
+    },
+    {
+     "value": 9.8,
+     "why": "Ты извлёк корень только из знаменателя (5), а числитель 49 оставил. Корень берут из числителя и из знаменателя."
+    }
+   ],
+   "hint": "Корень из дроби равен корню из числителя, делённому на корень из знаменателя.",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<div style=\"text-align:center\"><div style=\"font-size:19px;line-height:2;text-align:left;display:inline-block\"><div>√(<span style=\"display:inline-block;vertical-align:middle;text-align:center\"><span style=\"display:block;padding:0 4px;border-bottom:2px solid var(--ink)\">49</span><span style=\"display:block;padding:0 4px\">25</span></span>)</div><div data-step=\"1\">= <span style=\"display:inline-block;vertical-align:middle;text-align:center\"><span style=\"display:block;padding:0 4px;border-bottom:2px solid var(--ink)\">√49</span><span style=\"display:block;padding:0 4px\">√25</span></span></div><div data-step=\"2\">= <span style=\"display:inline-block;vertical-align:middle;text-align:center\"><span style=\"display:block;padding:0 4px;border-bottom:2px solid var(--ink)\">7</span><span style=\"display:block;padding:0 4px\">5</span></span></div></div></div>"
+    },
+    "steps": [
+     {
+      "text": "Числитель 49 ≥ 0, знаменатель 25 > 0, поэтому $\\sqrt{\\frac{49}{25}} = \\frac{\\sqrt{49}}{\\sqrt{25}}$.",
+      "layer": 1
+     },
+     {
+      "text": "$\\sqrt{49} = 7$, $\\sqrt{25} = 5$ — получаем $\\frac{7}{5}$.",
+      "layer": 2
+     }
+    ],
+    "answerLine": "$\\frac{7}{5}$"
+   },
+   "lesson": {
+    "title": "Корень из дроби",
+    "text": "**Теорема 2.** Если $a \\ge 0$ и $b > 0$, то $\\sqrt{\\frac{a}{b}} = \\frac{\\sqrt{a}}{\\sqrt{b}}$.\nКорень из дроби — это корень из числителя, делённый на корень из знаменателя. Корень берётся из **обоих** чисел.\nПример: $\\sqrt{\\frac{9}{4}} = \\frac{\\sqrt{9}}{\\sqrt{4}} = \\frac{3}{2} = 1{,}5$.",
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 70' style='max-width:420px;margin:0 auto'><text x=\"210.0\" y=\"42.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 26px sans-serif\">√(a/b)  =  √a / √b</text></svg>"
+    },
+    "remember": "корень берём и из числителя, и из знаменателя."
+   },
+   "twins": [
+    {
+     "id": "q6t1",
+     "type": "number",
+     "subtopic": "Корень из дроби",
+     "text": "Вычисли: $\\sqrt{\\frac{81}{16}}$. Ответ запиши дробью (например 3/5) или десятичной.",
+     "answer": 2.25,
+     "tolerance": 0.0005,
+     "typicalWrong": [
+      {
+       "value": 0.5625,
+       "why": "Ты извлёк корень только из числителя (9), а знаменатель 16 оставил. Корень нужно извлечь из **обоих** чисел."
+      },
+      {
+       "value": 20.25,
+       "why": "Ты извлёк корень только из знаменателя (4), а числитель 81 оставил. Корень берут из числителя и из знаменателя."
+      }
+     ],
+     "hint": "Корень из дроби равен корню из числителя, делённому на корень из знаменателя.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<div style=\"text-align:center\"><div style=\"font-size:19px;line-height:2;text-align:left;display:inline-block\"><div>√(<span style=\"display:inline-block;vertical-align:middle;text-align:center\"><span style=\"display:block;padding:0 4px;border-bottom:2px solid var(--ink)\">81</span><span style=\"display:block;padding:0 4px\">16</span></span>)</div><div data-step=\"1\">= <span style=\"display:inline-block;vertical-align:middle;text-align:center\"><span style=\"display:block;padding:0 4px;border-bottom:2px solid var(--ink)\">√81</span><span style=\"display:block;padding:0 4px\">√16</span></span></div><div data-step=\"2\">= <span style=\"display:inline-block;vertical-align:middle;text-align:center\"><span style=\"display:block;padding:0 4px;border-bottom:2px solid var(--ink)\">9</span><span style=\"display:block;padding:0 4px\">4</span></span></div></div></div>"
+      },
+      "steps": [
+       {
+        "text": "Числитель 81 ≥ 0, знаменатель 16 > 0, поэтому $\\sqrt{\\frac{81}{16}} = \\frac{\\sqrt{81}}{\\sqrt{16}}$.",
+        "layer": 1
+       },
+       {
+        "text": "$\\sqrt{81} = 9$, $\\sqrt{16} = 4$ — получаем $\\frac{9}{4}$.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "$\\frac{9}{4}$"
+     }
+    },
+    {
+     "id": "q6t2",
+     "type": "number",
+     "subtopic": "Корень из дроби",
+     "text": "Вычисли: $\\sqrt{\\frac{121}{36}}$. Ответ запиши дробью (например 3/5) или десятичной.",
+     "answer": 1.8333333333333333,
+     "tolerance": 0.0005,
+     "typicalWrong": [
+      {
+       "value": 0.3055555555555556,
+       "why": "Ты извлёк корень только из числителя (11), а знаменатель 36 оставил. Корень нужно извлечь из **обоих** чисел."
+      },
+      {
+       "value": 20.166666666666668,
+       "why": "Ты извлёк корень только из знаменателя (6), а числитель 121 оставил. Корень берут из числителя и из знаменателя."
+      }
+     ],
+     "hint": "Корень из дроби равен корню из числителя, делённому на корень из знаменателя.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<div style=\"text-align:center\"><div style=\"font-size:19px;line-height:2;text-align:left;display:inline-block\"><div>√(<span style=\"display:inline-block;vertical-align:middle;text-align:center\"><span style=\"display:block;padding:0 4px;border-bottom:2px solid var(--ink)\">121</span><span style=\"display:block;padding:0 4px\">36</span></span>)</div><div data-step=\"1\">= <span style=\"display:inline-block;vertical-align:middle;text-align:center\"><span style=\"display:block;padding:0 4px;border-bottom:2px solid var(--ink)\">√121</span><span style=\"display:block;padding:0 4px\">√36</span></span></div><div data-step=\"2\">= <span style=\"display:inline-block;vertical-align:middle;text-align:center\"><span style=\"display:block;padding:0 4px;border-bottom:2px solid var(--ink)\">11</span><span style=\"display:block;padding:0 4px\">6</span></span></div></div></div>"
+      },
+      "steps": [
+       {
+        "text": "Числитель 121 ≥ 0, знаменатель 36 > 0, поэтому $\\sqrt{\\frac{121}{36}} = \\frac{\\sqrt{121}}{\\sqrt{36}}$.",
+        "layer": 1
+       },
+       {
+        "text": "$\\sqrt{121} = 11$, $\\sqrt{36} = 6$ — получаем $\\frac{11}{6}$.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "$\\frac{11}{6}$"
+     }
+    }
+   ],
+   "order": 6
+  },
+  {
+   "id": "q7",
+   "type": "choice",
+   "subtopic": "Корень из квадрата: √(x²) = |x|",
+   "text": "Чему равно $\\sqrt{(-7)^2}$?",
+   "options": [
+    {
+     "id": "a",
+     "text": "$-7$",
+     "why": "Ты просто убрал корень и квадрат. Но арифметический корень **никогда не бывает отрицательным**: $\\sqrt{(-7)^2} = \\sqrt{49} = 7$."
+    },
+    {
+     "id": "b",
+     "text": "$7$"
+    },
+    {
+     "id": "c",
+     "text": "$49$",
+     "why": "Ты возвёл 7 в квадрат, а корень не извлёк. После этого надо ещё взять $\\sqrt{49}$."
+    },
+    {
+     "id": "d",
+     "text": "$\\pm 7$",
+     "why": "Знак ± появляется, когда решают уравнение $x^2 = a$. Сам знак √ означает одно число — **неотрицательное**."
+    }
+   ],
+   "answer": "b",
+   "hint": "Сначала найди, чему равно выражение под корнем. Потом извлеки корень.",
+   "solution": {
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 120\" role=\"img\" style=\"max-width:440px;margin:0 auto\"><line x1=\"30.0\" y1=\"76.0\" x2=\"390.0\" y2=\"76.0\" style=\"stroke:var(--ink);stroke-width:2;stroke-linecap:round;\"/><line x1=\"210.0\" y1=\"69.0\" x2=\"210.0\" y2=\"83.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"210.0\" y=\"104.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">0</text><circle cx=\"71.5\" cy=\"76.0\" r=\"7\" style=\"fill:var(--accent);stroke:var(--accent);stroke-width:3\"/><text x=\"71.5\" y=\"104.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 17px sans-serif\">−7</text><circle cx=\"348.5\" cy=\"76.0\" r=\"7\" style=\"fill:var(--ok);stroke:var(--ok);stroke-width:3\"/><text x=\"348.5\" y=\"104.0\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 17px sans-serif\">7</text><line data-step=\"1\" x1=\"71.5\" y1=\"54.0\" x2=\"210.0\" y2=\"54.0\" style=\"stroke:var(--accent);stroke-width:4;stroke-linecap:round;\"/><text data-step=\"1\" x=\"140.8\" y=\"44.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">|−7| = 7</text><line data-step=\"1\" x1=\"210.0\" y1=\"54.0\" x2=\"348.5\" y2=\"54.0\" style=\"stroke:var(--ok);stroke-width:4;stroke-linecap:round;\"/><text data-step=\"1\" x=\"279.2\" y=\"44.0\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 16px sans-serif\">|7| = 7</text></svg>",
+     "caption": "Расстояние от нуля до −7 и до 7 одинаково — это модуль."
+    },
+    "steps": [
+     {
+      "text": "Считаем под корнем: $(-7)^2 = 49$.",
+      "layer": 0
+     },
+     {
+      "text": "$\\sqrt{49} = 7$ — арифметический корень не бывает отрицательным.",
+      "layer": 1
+     },
+     {
+      "text": "Это то же, что модуль: $\\sqrt{x^2} = |x|$, то есть $|-7| = 7$.",
+      "layer": 1
+     }
+    ],
+    "answerLine": "$7$"
+   },
+   "lesson": {
+    "title": "Корень из квадрата: √(x²) = |x|",
+    "text": "**Теорема 3.** Для любого числа $x$: $\\sqrt{x^2} = |x|$.\nНе «$x$», а именно модуль: корень не бывает отрицательным. Если $x \\ge 0$, то $\\sqrt{x^2} = x$. Если $x < 0$, то $\\sqrt{x^2} = -x$ (а $-x$ положительное).\nПример: $\\sqrt{(-3)^2} = \\sqrt{9} = 3 = |-3|$. Не путай с уравнением $x^2 = 9$: там два корня, а $\\sqrt{9}$ — одно число 3.",
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 120\" role=\"img\" style=\"max-width:440px;margin:0 auto\"><line x1=\"30.0\" y1=\"76.0\" x2=\"390.0\" y2=\"76.0\" style=\"stroke:var(--ink);stroke-width:2;stroke-linecap:round;\"/><line x1=\"210.0\" y1=\"69.0\" x2=\"210.0\" y2=\"83.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"210.0\" y=\"104.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">0</text><circle cx=\"71.5\" cy=\"76.0\" r=\"7\" style=\"fill:var(--accent);stroke:var(--accent);stroke-width:3\"/><text x=\"71.5\" y=\"104.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 17px sans-serif\">−3</text><circle cx=\"348.5\" cy=\"76.0\" r=\"7\" style=\"fill:var(--ok);stroke:var(--ok);stroke-width:3\"/><text x=\"348.5\" y=\"104.0\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 17px sans-serif\">3</text><line data-step=\"0\" x1=\"71.5\" y1=\"54.0\" x2=\"210.0\" y2=\"54.0\" style=\"stroke:var(--accent);stroke-width:4;stroke-linecap:round;\"/><text data-step=\"0\" x=\"140.8\" y=\"44.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">|−3| = 3</text><line data-step=\"0\" x1=\"210.0\" y1=\"54.0\" x2=\"348.5\" y2=\"54.0\" style=\"stroke:var(--ok);stroke-width:4;stroke-linecap:round;\"/><text data-step=\"0\" x=\"279.2\" y=\"44.0\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 16px sans-serif\">|3| = 3</text></svg>"
+    },
+    "remember": "√(x²) = |x| — ответ неотрицательный."
+   },
+   "twins": [
+    {
+     "id": "q7t1",
+     "type": "choice",
+     "subtopic": "Корень из квадрата: √(x²) = |x|",
+     "text": "Чему равно $\\sqrt{(-12)^2}$?",
+     "options": [
+      {
+       "id": "a",
+       "text": "$12$"
+      },
+      {
+       "id": "b",
+       "text": "$-12$",
+       "why": "Ты просто убрал корень и квадрат. Но арифметический корень **никогда не бывает отрицательным**: $\\sqrt{(-12)^2} = \\sqrt{144} = 12$."
+      },
+      {
+       "id": "c",
+       "text": "$144$",
+       "why": "Ты возвёл 12 в квадрат, а корень не извлёк. После этого надо ещё взять $\\sqrt{144}$."
+      },
+      {
+       "id": "d",
+       "text": "$\\pm 12$",
+       "why": "Знак ± появляется, когда решают уравнение $x^2 = a$. Сам знак √ означает одно число — **неотрицательное**."
+      }
+     ],
+     "answer": "a",
+     "hint": "Сначала найди, чему равно выражение под корнем. Потом извлеки корень.",
+     "solution": {
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 120\" role=\"img\" style=\"max-width:440px;margin:0 auto\"><line x1=\"30.0\" y1=\"76.0\" x2=\"390.0\" y2=\"76.0\" style=\"stroke:var(--ink);stroke-width:2;stroke-linecap:round;\"/><line x1=\"210.0\" y1=\"69.0\" x2=\"210.0\" y2=\"83.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"210.0\" y=\"104.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">0</text><circle cx=\"71.5\" cy=\"76.0\" r=\"7\" style=\"fill:var(--accent);stroke:var(--accent);stroke-width:3\"/><text x=\"71.5\" y=\"104.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 17px sans-serif\">−12</text><circle cx=\"348.5\" cy=\"76.0\" r=\"7\" style=\"fill:var(--ok);stroke:var(--ok);stroke-width:3\"/><text x=\"348.5\" y=\"104.0\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 17px sans-serif\">12</text><line data-step=\"1\" x1=\"71.5\" y1=\"54.0\" x2=\"210.0\" y2=\"54.0\" style=\"stroke:var(--accent);stroke-width:4;stroke-linecap:round;\"/><text data-step=\"1\" x=\"140.8\" y=\"44.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">|−12| = 12</text><line data-step=\"1\" x1=\"210.0\" y1=\"54.0\" x2=\"348.5\" y2=\"54.0\" style=\"stroke:var(--ok);stroke-width:4;stroke-linecap:round;\"/><text data-step=\"1\" x=\"279.2\" y=\"44.0\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 16px sans-serif\">|12| = 12</text></svg>",
+       "caption": "Расстояние от нуля до −12 и до 12 одинаково — это модуль."
+      },
+      "steps": [
+       {
+        "text": "Считаем под корнем: $(-12)^2 = 144$.",
+        "layer": 0
+       },
+       {
+        "text": "$\\sqrt{144} = 12$ — арифметический корень не бывает отрицательным.",
+        "layer": 1
+       },
+       {
+        "text": "Это то же, что модуль: $\\sqrt{x^2} = |x|$, то есть $|-12| = 12$.",
+        "layer": 1
+       }
+      ],
+      "answerLine": "$12$"
+     }
+    },
+    {
+     "id": "q7t2",
+     "type": "choice",
+     "subtopic": "Корень из квадрата: √(x²) = |x|",
+     "text": "Чему равно $\\sqrt{(-20)^2}$?",
+     "options": [
+      {
+       "id": "a",
+       "text": "$-20$",
+       "why": "Ты просто убрал корень и квадрат. Но арифметический корень **никогда не бывает отрицательным**: $\\sqrt{(-20)^2} = \\sqrt{400} = 20$."
+      },
+      {
+       "id": "b",
+       "text": "$400$",
+       "why": "Ты возвёл 20 в квадрат, а корень не извлёк. После этого надо ещё взять $\\sqrt{400}$."
+      },
+      {
+       "id": "c",
+       "text": "$20$"
+      },
+      {
+       "id": "d",
+       "text": "$\\pm 20$",
+       "why": "Знак ± появляется, когда решают уравнение $x^2 = a$. Сам знак √ означает одно число — **неотрицательное**."
+      }
+     ],
+     "answer": "c",
+     "hint": "Сначала найди, чему равно выражение под корнем. Потом извлеки корень.",
+     "solution": {
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 120\" role=\"img\" style=\"max-width:440px;margin:0 auto\"><line x1=\"30.0\" y1=\"76.0\" x2=\"390.0\" y2=\"76.0\" style=\"stroke:var(--ink);stroke-width:2;stroke-linecap:round;\"/><line x1=\"210.0\" y1=\"69.0\" x2=\"210.0\" y2=\"83.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round;\"/><text x=\"210.0\" y=\"104.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">0</text><circle cx=\"71.5\" cy=\"76.0\" r=\"7\" style=\"fill:var(--accent);stroke:var(--accent);stroke-width:3\"/><text x=\"71.5\" y=\"104.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 17px sans-serif\">−20</text><circle cx=\"348.5\" cy=\"76.0\" r=\"7\" style=\"fill:var(--ok);stroke:var(--ok);stroke-width:3\"/><text x=\"348.5\" y=\"104.0\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 17px sans-serif\">20</text><line data-step=\"1\" x1=\"71.5\" y1=\"54.0\" x2=\"210.0\" y2=\"54.0\" style=\"stroke:var(--accent);stroke-width:4;stroke-linecap:round;\"/><text data-step=\"1\" x=\"140.8\" y=\"44.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">|−20| = 20</text><line data-step=\"1\" x1=\"210.0\" y1=\"54.0\" x2=\"348.5\" y2=\"54.0\" style=\"stroke:var(--ok);stroke-width:4;stroke-linecap:round;\"/><text data-step=\"1\" x=\"279.2\" y=\"44.0\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 16px sans-serif\">|20| = 20</text></svg>",
+       "caption": "Расстояние от нуля до −20 и до 20 одинаково — это модуль."
+      },
+      "steps": [
+       {
+        "text": "Считаем под корнем: $(-20)^2 = 400$.",
+        "layer": 0
+       },
+       {
+        "text": "$\\sqrt{400} = 20$ — арифметический корень не бывает отрицательным.",
+        "layer": 1
+       },
+       {
+        "text": "Это то же, что модуль: $\\sqrt{x^2} = |x|$, то есть $|-20| = 20$.",
+        "layer": 1
+       }
+      ],
+      "answerLine": "$20$"
+     }
+    }
+   ],
+   "order": 7
+  },
+  {
+   "id": "q8",
+   "type": "choice",
+   "subtopic": "Корень из чётной степени",
+   "text": "Упрости выражение: $\\sqrt{y^{4}}$.",
+   "options": [
+    {
+     "id": "a",
+     "text": "$y^{2}$"
+    },
+    {
+     "id": "b",
+     "text": "$y$",
+     "why": "Ты поделил показатель 4 на 4, а корень делит показатель на **2**: $\\sqrt{y^{4}} = \\sqrt{(y^{2})^2}$."
+    },
+    {
+     "id": "c",
+     "text": "$|y|$",
+     "why": "Модуль $|y|$ получается из $\\sqrt{y^2}$. А здесь показатель 4: степень y^{4} — это $(y^{2})^2$, и корень равен $y^{2}$."
+    },
+    {
+     "id": "d",
+     "text": "$-y^{2}$",
+     "why": "Минус не нужен: $y^{2}$ при чётном показателе 2 никогда не отрицательно, а корень и так неотрицателен."
+    }
+   ],
+   "answer": "a",
+   "hint": "Представь $y^{4}$ как квадрат какого-то выражения.",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<div style=\"text-align:center\"><div style=\"font-size:19px;line-height:2;text-align:left;display:inline-block\"><div>√(y<sup>4</sup>)</div><div data-step=\"1\">= √((y<sup>2</sup>)²)</div><div data-step=\"2\">= |y<sup>2</sup>|</div><div data-step=\"3\">= <b style='color:var(--pen)'>y<sup>2</sup></b> &nbsp;<span style='font-size:15px;color:var(--muted)'>(y<sup>2</sup> ≥ 0, модуль не нужен)</span></div></div></div>"
+    },
+    "steps": [
+     {
+      "text": "$y^{4} = (y^{2})^2$ — показатель 4 делим на 2.",
+      "layer": 1
+     },
+     {
+      "text": "$\\sqrt{x^2} = |x|$, значит, $\\sqrt{(y^{2})^2} = |y^{2}|$.",
+      "layer": 2
+     },
+     {
+      "text": "Показатель 2 чётный, поэтому $y^{2} \\ge 0$ и модуль можно убрать.",
+      "layer": 3
+     }
+    ],
+    "answerLine": "$y^{2}$"
+   },
+   "lesson": {
+    "title": "Корень из чётной степени",
+    "text": "Чётную степень можно записать как квадрат: $x^{16} = (x^8)^2$. Тогда $\\sqrt{x^{16}} = \\sqrt{(x^8)^2} = |x^8|$.\nПоказатель 8 чётный, значит, $x^8 \\ge 0$ при любом $x$, и модуль убираем: $\\sqrt{x^{16}} = x^8$.\nКороткое правило: **показатель делим на 2**. Если после деления получилась чётная степень — модуль не нужен, потому что чётная степень неотрицательна.",
+    "visual": {
+     "kind": "html",
+     "html": "<div style=\"text-align:center\"><div style=\"font-size:19px;line-height:2;text-align:left;display:inline-block\"><div>√(x¹⁶) = √((x⁸)²) = |x⁸| = x⁸</div></div></div>"
+    },
+    "remember": "показатель делим на 2; чётная степень не бывает отрицательной."
+   },
+   "twins": [
+    {
+     "id": "q8t1",
+     "type": "choice",
+     "subtopic": "Корень из чётной степени",
+     "text": "Упрости выражение: $\\sqrt{m^{8}}$.",
+     "options": [
+      {
+       "id": "a",
+       "text": "$m^{2}$",
+       "why": "Ты поделил показатель 8 на 4, а корень делит показатель на **2**: $\\sqrt{m^{8}} = \\sqrt{(m^{4})^2}$."
+      },
+      {
+       "id": "b",
+       "text": "$|m|$",
+       "why": "Модуль $|m|$ получается из $\\sqrt{m^2}$. А здесь показатель 8: степень m^{8} — это $(m^{4})^2$, и корень равен $m^{4}$."
+      },
+      {
+       "id": "c",
+       "text": "$m^{4}$"
+      },
+      {
+       "id": "d",
+       "text": "$-m^{4}$",
+       "why": "Минус не нужен: $m^{4}$ при чётном показателе 4 никогда не отрицательно, а корень и так неотрицателен."
+      }
+     ],
+     "answer": "c",
+     "hint": "Представь $m^{8}$ как квадрат какого-то выражения.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<div style=\"text-align:center\"><div style=\"font-size:19px;line-height:2;text-align:left;display:inline-block\"><div>√(m<sup>8</sup>)</div><div data-step=\"1\">= √((m<sup>4</sup>)²)</div><div data-step=\"2\">= |m<sup>4</sup>|</div><div data-step=\"3\">= <b style='color:var(--pen)'>m<sup>4</sup></b> &nbsp;<span style='font-size:15px;color:var(--muted)'>(m<sup>4</sup> ≥ 0, модуль не нужен)</span></div></div></div>"
+      },
+      "steps": [
+       {
+        "text": "$m^{8} = (m^{4})^2$ — показатель 8 делим на 2.",
+        "layer": 1
+       },
+       {
+        "text": "$\\sqrt{x^2} = |x|$, значит, $\\sqrt{(m^{4})^2} = |m^{4}|$.",
+        "layer": 2
+       },
+       {
+        "text": "Показатель 4 чётный, поэтому $m^{4} \\ge 0$ и модуль можно убрать.",
+        "layer": 3
+       }
+      ],
+      "answerLine": "$m^{4}$"
+     }
+    },
+    {
+     "id": "q8t2",
+     "type": "choice",
+     "subtopic": "Корень из чётной степени",
+     "text": "Упрости выражение: $\\sqrt{n^{12}}$.",
+     "options": [
+      {
+       "id": "a",
+       "text": "$n^{3}$",
+       "why": "Ты поделил показатель 12 на 4, а корень делит показатель на **2**: $\\sqrt{n^{12}} = \\sqrt{(n^{6})^2}$."
+      },
+      {
+       "id": "b",
+       "text": "$n^{6}$"
+      },
+      {
+       "id": "c",
+       "text": "$|n|$",
+       "why": "Модуль $|n|$ получается из $\\sqrt{n^2}$. А здесь показатель 12: степень n^{12} — это $(n^{6})^2$, и корень равен $n^{6}$."
+      },
+      {
+       "id": "d",
+       "text": "$-n^{6}$",
+       "why": "Минус не нужен: $n^{6}$ при чётном показателе 6 никогда не отрицательно, а корень и так неотрицателен."
+      }
+     ],
+     "answer": "b",
+     "hint": "Представь $n^{12}$ как квадрат какого-то выражения.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<div style=\"text-align:center\"><div style=\"font-size:19px;line-height:2;text-align:left;display:inline-block\"><div>√(n<sup>12</sup>)</div><div data-step=\"1\">= √((n<sup>6</sup>)²)</div><div data-step=\"2\">= |n<sup>6</sup>|</div><div data-step=\"3\">= <b style='color:var(--pen)'>n<sup>6</sup></b> &nbsp;<span style='font-size:15px;color:var(--muted)'>(n<sup>6</sup> ≥ 0, модуль не нужен)</span></div></div></div>"
+      },
+      "steps": [
+       {
+        "text": "$n^{12} = (n^{6})^2$ — показатель 12 делим на 2.",
+        "layer": 1
+       },
+       {
+        "text": "$\\sqrt{x^2} = |x|$, значит, $\\sqrt{(n^{6})^2} = |n^{6}|$.",
+        "layer": 2
+       },
+       {
+        "text": "Показатель 6 чётный, поэтому $n^{6} \\ge 0$ и модуль можно убрать.",
+        "layer": 3
+       }
+      ],
+      "answerLine": "$n^{6}$"
+     }
+    }
+   ],
+   "order": 8
+  },
+  {
+   "id": "q9",
+   "type": "choice",
+   "subtopic": "Корень из степени при отрицательной переменной",
+   "text": "Упрости выражение $\\sqrt{x^{6}}$, где $x < 0$.",
+   "options": [
+    {
+     "id": "a",
+     "text": "$x^{3}$",
+     "why": "При $x < 0$ число $x^{3}$ отрицательное (показатель 3 нечётный), а арифметический корень отрицательным быть не может."
+    },
+    {
+     "id": "b",
+     "text": "$-x^{3}$"
+    },
+    {
+     "id": "c",
+     "text": "$-x^{6}$",
+     "why": "Ты оставил старую степень 6. Корень делит показатель на 2, получится степень 3."
+    }
+   ],
+   "answer": "b",
+   "hint": "Подставь число, например $x = -2$, и посмотри на знак $x^{3}$.",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<div style=\"text-align:center\"><div style=\"font-size:19px;line-height:2;text-align:left;display:inline-block\"><div>Пример: x = −2</div><div data-step=\"1\">x<sup>6</sup> = (−2)<sup>6</sup> = 64</div><div data-step=\"2\">√64 = 8</div><div data-step=\"3\">x<sup>3</sup> = −8 &nbsp;(отрицательное — не подходит)</div><div data-step=\"4\">−x<sup>3</sup> = <b style='color:var(--pen)'>8</b> ✓</div></div></div>"
+    },
+    "steps": [
+     {
+      "text": "$\\sqrt{x^{6}} = \\sqrt{(x^{3})^2} = |x^{3}|$.",
+      "layer": 1
+     },
+     {
+      "text": "Показатель 3 нечётный, $x < 0$, значит, $x^{3} < 0$. По определению модуля $|a| = -a$ при $a < 0$.",
+      "layer": 3
+     },
+     {
+      "text": "$|x^{3}| = -x^{3}$. Проверка при $x = -2$ сходится.",
+      "layer": 4
+     }
+    ],
+    "answerLine": "$-x^{3}$"
+   },
+   "lesson": {
+    "title": "Корень из степени, когда переменная отрицательна",
+    "text": "$\\sqrt{x^{2n}} = |x^n|$. Если после деления показателя пополам получилась **нечётная** степень, знак числа $x^n$ совпадает со знаком $x$.\nПри $x < 0$ число $x^n$ отрицательное, поэтому модуль меняет знак: $|x^n| = -x^n$.\nПример: $\\sqrt{x^{18}}$ при $x < 0$: $|x^9| = -x^9$. Проверь на числе: $x = -1$: $\\sqrt{1} = 1$, а $x^9 = -1$, значит, нужен минус.",
+    "remember": "отрицательное x и нечётная степень → ставим минус."
+   },
+   "twins": [
+    {
+     "id": "q9t1",
+     "type": "choice",
+     "subtopic": "Корень из степени при отрицательной переменной",
+     "text": "Упрости выражение $\\sqrt{a^{10}}$, где $a < 0$.",
+     "options": [
+      {
+       "id": "a",
+       "text": "$-a^{5}$"
+      },
+      {
+       "id": "b",
+       "text": "$a^{5}$",
+       "why": "При $a < 0$ число $a^{5}$ отрицательное (показатель 5 нечётный), а арифметический корень отрицательным быть не может."
+      },
+      {
+       "id": "c",
+       "text": "$-a^{10}$",
+       "why": "Ты оставил старую степень 10. Корень делит показатель на 2, получится степень 5."
+      }
+     ],
+     "answer": "a",
+     "hint": "Подставь число, например $a = -2$, и посмотри на знак $a^{5}$.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<div style=\"text-align:center\"><div style=\"font-size:19px;line-height:2;text-align:left;display:inline-block\"><div>Пример: a = −2</div><div data-step=\"1\">a<sup>10</sup> = (−2)<sup>10</sup> = 1024</div><div data-step=\"2\">√1024 = 32</div><div data-step=\"3\">a<sup>5</sup> = −32 &nbsp;(отрицательное — не подходит)</div><div data-step=\"4\">−a<sup>5</sup> = <b style='color:var(--pen)'>32</b> ✓</div></div></div>"
+      },
+      "steps": [
+       {
+        "text": "$\\sqrt{a^{10}} = \\sqrt{(a^{5})^2} = |a^{5}|$.",
+        "layer": 1
+       },
+       {
+        "text": "Показатель 5 нечётный, $a < 0$, значит, $a^{5} < 0$. По определению модуля $|a| = -a$ при $a < 0$.",
+        "layer": 3
+       },
+       {
+        "text": "$|a^{5}| = -a^{5}$. Проверка при $a = -2$ сходится.",
+        "layer": 4
+       }
+      ],
+      "answerLine": "$-a^{5}$"
+     }
+    },
+    {
+     "id": "q9t2",
+     "type": "choice",
+     "subtopic": "Корень из степени при отрицательной переменной",
+     "text": "Упрости выражение $\\sqrt{b^{14}}$, где $b < 0$.",
+     "options": [
+      {
+       "id": "a",
+       "text": "$b^{7}$",
+       "why": "При $b < 0$ число $b^{7}$ отрицательное (показатель 7 нечётный), а арифметический корень отрицательным быть не может."
+      },
+      {
+       "id": "b",
+       "text": "$-b^{7}$"
+      },
+      {
+       "id": "c",
+       "text": "$-b^{14}$",
+       "why": "Ты оставил старую степень 14. Корень делит показатель на 2, получится степень 7."
+      }
+     ],
+     "answer": "b",
+     "hint": "Подставь число, например $b = -2$, и посмотри на знак $b^{7}$.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<div style=\"text-align:center\"><div style=\"font-size:19px;line-height:2;text-align:left;display:inline-block\"><div>Пример: b = −2</div><div data-step=\"1\">b<sup>14</sup> = (−2)<sup>14</sup> = 16384</div><div data-step=\"2\">√16384 = 128</div><div data-step=\"3\">b<sup>7</sup> = −128 &nbsp;(отрицательное — не подходит)</div><div data-step=\"4\">−b<sup>7</sup> = <b style='color:var(--pen)'>128</b> ✓</div></div></div>"
+      },
+      "steps": [
+       {
+        "text": "$\\sqrt{b^{14}} = \\sqrt{(b^{7})^2} = |b^{7}|$.",
+        "layer": 1
+       },
+       {
+        "text": "Показатель 7 нечётный, $b < 0$, значит, $b^{7} < 0$. По определению модуля $|a| = -a$ при $a < 0$.",
+        "layer": 3
+       },
+       {
+        "text": "$|b^{7}| = -b^{7}$. Проверка при $b = -2$ сходится.",
+        "layer": 4
+       }
+      ],
+      "answerLine": "$-b^{7}$"
+     }
+    }
+   ],
+   "order": 9
+  },
+  {
+   "id": "q10",
+   "type": "choice",
+   "subtopic": "Условия для свойств корней",
+   "text": "При каких $a$ и $b$ верно равенство $\\sqrt{ab} = \\sqrt{a}\\cdot\\sqrt{b}$?",
+   "options": [
+    {
+     "id": "a",
+     "text": "при любых $a$ и $b$",
+     "why": "При $a = -4$, $b = -9$ слева $\\sqrt{36} = 6$, а справа $\\sqrt{-4}\\cdot\\sqrt{-9}$ — таких корней не существует. Значит, для любых чисел свойство неверно."
+    },
+    {
+     "id": "b",
+     "text": "$a \\ge 0$ и $b \\ge 0$"
+    },
+    {
+     "id": "c",
+     "text": "только при $a > 0$ и $b > 0$",
+     "why": "Нуль тоже подходит: $\\sqrt{0\\cdot 9} = 0 = \\sqrt{0}\\cdot\\sqrt{9}$. Условие нестрогое: $a \\ge 0$, $b \\ge 0$."
+    },
+    {
+     "id": "d",
+     "text": "$a \\ge 0$ или $b \\ge 0$",
+     "why": "Достаточно одного неотрицательного? Нет: при $a = 9$, $b = -4$ справа $\\sqrt{-4}$ не имеет смысла. Оба числа должны быть неотрицательными."
+    }
+   ],
+   "answer": "b",
+   "hint": "Каждый корень в равенстве должен иметь смысл.",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<div style=\"text-align:center\"><div style=\"font-size:19px;line-height:2;text-align:left;display:inline-block\"><div>Проверим a = −4, b = −9:</div><div data-step=\"1\">слева: √((−4)·(−9)) = √36 = 6</div><div data-step=\"2\">справа: √(−4) · √(−9) — нет смысла ✗</div><div data-step=\"3\">значит, нужно a ≥ 0 и b ≥ 0 ✓</div></div></div>"
+    },
+    "steps": [
+     {
+      "text": "В правой части стоят $\\sqrt{a}$ и $\\sqrt{b}$ — они имеют смысл только при $a \\ge 0$ и $b \\ge 0$.",
+      "layer": 1
+     },
+     {
+      "text": "Пример $a = -4$, $b = -9$: слева 6, справа корней нет — для любых чисел свойство не работает.",
+      "layer": 2
+     },
+     {
+      "text": "Теорема 1 верна при $a \\ge 0$ и $b \\ge 0$.",
+      "layer": 3
+     }
+    ],
+    "answerLine": "$a \\ge 0$ и $b \\ge 0$"
+   },
+   "lesson": {
+    "title": "Условия для свойств корней",
+    "text": "Свойства корней верны не для любых чисел, а только когда **все корни имеют смысл**.\nДля $\\sqrt{ab} = \\sqrt{a}\\cdot\\sqrt{b}$ нужно $a \\ge 0$ и $b \\ge 0$.\nДля $\\sqrt{\\frac{a}{b}} = \\frac{\\sqrt{a}}{\\sqrt{b}}$ нужно $a \\ge 0$ и $b > 0$ (на нуль делить нельзя).\nПроверка: подставь отрицательные числа. Например, $\\sqrt{(-1)(-1)} = 1$, а $\\sqrt{-1}\\cdot\\sqrt{-1}$ не существует.",
+    "remember": "корни должны существовать: под ними ≥ 0, в знаменателе ≠ 0."
+   },
+   "twins": [
+    {
+     "id": "q10t1",
+     "type": "choice",
+     "subtopic": "Условия для свойств корней",
+     "text": "При каких $a$ и $b$ верно равенство $\\sqrt{\\dfrac{a}{b}} = \\dfrac{\\sqrt{a}}{\\sqrt{b}}$?",
+     "options": [
+      {
+       "id": "a",
+       "text": "$a \\ge 0$ и $b \\ge 0$",
+       "why": "Знаменатель не может быть нулём — делить на 0 нельзя. Поэтому для $b$ условие строгое: $b > 0$."
+      },
+      {
+       "id": "b",
+       "text": "при любых $a$ и $b \\ne 0$",
+       "why": "При $a = -4$, $b = 9$ слева $\\sqrt{-4/9}$ — нет смысла. Числитель тоже должен быть неотрицательным."
+      },
+      {
+       "id": "c",
+       "text": "$a \\ge 0$ и $b > 0$"
+      },
+      {
+       "id": "d",
+       "text": "$a \\le 0$ и $b > 0$",
+       "why": "Неотрицательным должно быть число под корнем. При $a < 0$ выражение $\\sqrt{a}$ не имеет смысла."
+      }
+     ],
+     "answer": "c",
+     "hint": "Корни должны иметь смысл, а знаменатель не должен быть нулём.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<div style=\"text-align:center\"><div style=\"font-size:19px;line-height:2;text-align:left;display:inline-block\"><div>√a имеет смысл: a ≥ 0</div><div data-step=\"1\">√b имеет смысл: b ≥ 0</div><div data-step=\"2\">b стоит в знаменателе: b ≠ 0</div><div data-step=\"3\">значит: a ≥ 0 и b &gt; 0 ✓</div></div></div>"
+      },
+      "steps": [
+       {
+        "text": "$\\sqrt{a}$ имеет смысл при $a \\ge 0$, $\\sqrt{b}$ — при $b \\ge 0$.",
+        "layer": 1
+       },
+       {
+        "text": "Но $b$ — знаменатель, он не может быть нулём: $b \\ne 0$.",
+        "layer": 2
+       },
+       {
+        "text": "Итог: $a \\ge 0$ и $b > 0$ (Теорема 2).",
+        "layer": 3
+       }
+      ],
+      "answerLine": "$a \\ge 0$ и $b > 0$"
+     }
+    },
+    {
+     "id": "q10t2",
+     "type": "choice",
+     "subtopic": "Условия для свойств корней",
+     "text": "Можно ли вычислить $\\sqrt{(-4)\\cdot(-9)}$ как $\\sqrt{-4}\\cdot\\sqrt{-9}$?",
+     "options": [
+      {
+       "id": "a",
+       "text": "Нет: $\\sqrt{-4}$ и $\\sqrt{-9}$ не существуют"
+      },
+      {
+       "id": "b",
+       "text": "Да: $\\sqrt{-4}\\cdot\\sqrt{-9} = (-2)\\cdot(-3) = 6$",
+       "why": "Числа $-2$ и $-3$ не являются арифметическими корнями: корень из отрицательного числа не имеет смысла вообще, а квадрат $-2$ равен 4, а не $-4$."
+      },
+      {
+       "id": "c",
+       "text": "Да: $\\sqrt{-4}\\cdot\\sqrt{-9} = -\\sqrt{36} = -6$",
+       "why": "Корней из $-4$ и $-9$ нет, поэтому разложить так нельзя. А $\\sqrt{36}$ равен 6, не $-6$."
+      }
+     ],
+     "answer": "a",
+     "hint": "Проверь, имеет ли смысл каждый корень в правой части.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<div style=\"text-align:center\"><div style=\"font-size:19px;line-height:2;text-align:left;display:inline-block\"><div>Слева: √((−4)·(−9)) = √36 = 6</div><div data-step=\"1\">Справа: √(−4) · √(−9)</div><div data-step=\"2\">под корнями отрицательные числа — нет смысла ✗</div><div data-step=\"3\">верный способ: сначала перемножить: √36 = 6 ✓</div></div></div>"
+      },
+      "steps": [
+       {
+        "text": "Свойство $\\sqrt{ab} = \\sqrt{a}\\cdot\\sqrt{b}$ требует $a \\ge 0$, $b \\ge 0$. Здесь оба числа отрицательные.",
+        "layer": 1
+       },
+       {
+        "text": "Корни $\\sqrt{-4}$ и $\\sqrt{-9}$ не имеют смысла.",
+        "layer": 2
+       },
+       {
+        "text": "Правильно: $(-4)\\cdot(-9) = 36$, тогда $\\sqrt{36} = 6$.",
+        "layer": 3
+       }
+      ],
+      "answerLine": "Нет, нельзя"
+     }
+    }
+   ],
+   "order": 10
+  },
+  {
+   "id": "q11",
+   "type": "choice",
+   "subtopic": "Иррациональность в знаменателе",
+   "text": "В какой дроби есть иррациональность в **знаменателе**?",
+   "options": [
+    {
+     "id": "a",
+     "text": "$\\frac{2-\\sqrt{7}}{3}$",
+     "why": "Корень стоит в **числителе**, а в знаменателе — обычное число. В знаменателе иррациональности нет."
+    },
+    {
+     "id": "b",
+     "text": "$\\frac{9-4\\sqrt{5}}{5}$",
+     "why": "Корень стоит в **числителе**, а в знаменателе — обычное число. В знаменателе иррациональности нет."
+    },
+    {
+     "id": "c",
+     "text": "$\\frac{5}{\\sqrt{3}}$"
+    }
+   ],
+   "answer": "c",
+   "hint": "Смотри на то, что стоит под чертой дроби: есть ли там знак корня?",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<div style=\"text-align:center\"><div style=\"font-size:19px;line-height:2;text-align:left;display:inline-block\"><div>Дробь: \\frac{5}{\\sqrt{3}}</div><div data-step=\"1\">Под чертой (в знаменателе) — знак √ ✓</div><div data-step=\"2\">В других дробях под чертой только числа ✗</div></div></div>"
+    },
+    "steps": [
+     {
+      "text": "Иррациональность в знаменателе — когда под чертой дроби есть знак корня (даже как слагаемое).",
+      "layer": 1
+     },
+     {
+      "text": "Знаменатель дроби $ \\frac{5}{\\sqrt{3}} $ содержит корень. В остальных дробях корень только в числителе.",
+      "layer": 2
+     }
+    ],
+    "answerLine": "$\\frac{5}{\\sqrt{3}}$"
+   },
+   "lesson": {
+    "title": "Иррациональность в знаменателе",
+    "text": "Иррациональность — это знак корня в выражении. Говорят «иррациональность в знаменателе», когда знак корня стоит **под чертой** дроби. Он может быть и слагаемым: $\\frac{1}{3+\\sqrt{2}}$.\nЕсли корень только в числителе, например $\\frac{\\sqrt{2}+3}{5}$, то в знаменателе иррациональности нет.\nПример: в дроби $\\frac{7}{\\sqrt{2}}$ иррациональность в знаменателе, в дроби $\\frac{7\\sqrt{2}}{5}$ — только в числителе.",
+    "remember": "смотри под черту: есть √ — есть иррациональность."
+   },
+   "twins": [
+    {
+     "id": "q11t1",
+     "type": "choice",
+     "subtopic": "Иррациональность в знаменателе",
+     "text": "Найди дробь, в знаменателе которой стоит корень.",
+     "options": [
+      {
+       "id": "a",
+       "text": "$\\frac{4}{3+\\sqrt{2}}$"
+      },
+      {
+       "id": "b",
+       "text": "$\\frac{\\sqrt{5}+1}{2}$",
+       "why": "Корень стоит в **числителе**, а в знаменателе — обычное число. В знаменателе иррациональности нет."
+      },
+      {
+       "id": "c",
+       "text": "$\\frac{7-\\sqrt{3}}{4}$",
+       "why": "Корень стоит в **числителе**, а в знаменателе — обычное число. В знаменателе иррациональности нет."
+      }
+     ],
+     "answer": "a",
+     "hint": "Смотри на то, что стоит под чертой дроби: есть ли там знак корня?",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<div style=\"text-align:center\"><div style=\"font-size:19px;line-height:2;text-align:left;display:inline-block\"><div>Дробь: \\frac{4}{3+\\sqrt{2}}</div><div data-step=\"1\">Под чертой (в знаменателе) — знак √ ✓</div><div data-step=\"2\">В других дробях под чертой только числа ✗</div></div></div>"
+      },
+      "steps": [
+       {
+        "text": "Иррациональность в знаменателе — когда под чертой дроби есть знак корня (даже как слагаемое).",
+        "layer": 1
+       },
+       {
+        "text": "Знаменатель дроби $ \\frac{4}{3+\\sqrt{2}} $ содержит корень. В остальных дробях корень только в числителе.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "$\\frac{4}{3+\\sqrt{2}}$"
+     }
+    },
+    {
+     "id": "q11t2",
+     "type": "choice",
+     "subtopic": "Иррациональность в знаменателе",
+     "text": "Какая дробь содержит иррациональность под чертой?",
+     "options": [
+      {
+       "id": "a",
+       "text": "$\\frac{\\sqrt{3}+2}{5}$",
+       "why": "Корень стоит в **числителе**, а в знаменателе — обычное число. В знаменателе иррациональности нет."
+      },
+      {
+       "id": "b",
+       "text": "$\\frac{\\sqrt{2}}{\\sqrt{7}}$"
+      },
+      {
+       "id": "c",
+       "text": "$\\frac{10-\\sqrt{6}}{7}$",
+       "why": "Корень стоит в **числителе**, а в знаменателе — обычное число. В знаменателе иррациональности нет."
+      }
+     ],
+     "answer": "b",
+     "hint": "Смотри на то, что стоит под чертой дроби: есть ли там знак корня?",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<div style=\"text-align:center\"><div style=\"font-size:19px;line-height:2;text-align:left;display:inline-block\"><div>Дробь: \\frac{\\sqrt{2}}{\\sqrt{7}}</div><div data-step=\"1\">Под чертой (в знаменателе) — знак √ ✓</div><div data-step=\"2\">В других дробях под чертой только числа ✗</div></div></div>"
+      },
+      "steps": [
+       {
+        "text": "Иррациональность в знаменателе — когда под чертой дроби есть знак корня (даже как слагаемое).",
+        "layer": 1
+       },
+       {
+        "text": "Знаменатель дроби $ \\frac{\\sqrt{2}}{\\sqrt{7}} $ содержит корень. В остальных дробях корень только в числителе.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "$\\frac{\\sqrt{2}}{\\sqrt{7}}$"
+     }
+    }
+   ],
+   "order": 11
+  },
+  {
+   "id": "q12",
+   "type": "choice",
+   "subtopic": "Освобождение от иррациональности (сопряжённое выражение)",
+   "text": "Освободись от иррациональности в знаменателе: $\\dfrac{2}{\\sqrt{5} - \\sqrt{3}}$.",
+   "options": [
+    {
+     "id": "a",
+     "text": "$\\sqrt{5} + \\sqrt{3}$"
+    },
+    {
+     "id": "b",
+     "text": "$\\sqrt{5} - \\sqrt{3}$",
+     "why": "Ты не поменял знак. Нужно умножать на **сопряжённое** выражение $\\sqrt{5} + \\sqrt{3}$ — тогда по формуле $(a-b)(a+b) = a^2-b^2$ корни в знаменателе исчезнут."
+    },
+    {
+     "id": "c",
+     "text": "$2(\\sqrt{5} + \\sqrt{3})$",
+     "why": "Ты забыл разделить на знаменатель. После умножения в знаменателе получается $5 - 3 = 2$, и числитель 2 надо разделить на 2."
+    },
+    {
+     "id": "d",
+     "text": "$\\frac{\\sqrt{5} + \\sqrt{3}}{2}$",
+     "why": "Ты потерял множитель 2 в числителе. После умножения в числителе остаётся 2·(…), и только потом делим на 2."
+    }
+   ],
+   "answer": "a",
+   "hint": "Умножь числитель и знаменатель на выражение, сопряжённое знаменателю (знак между слагаемыми меняется).",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<div style=\"text-align:center\"><div style=\"font-size:19px;line-height:2;text-align:left;display:inline-block\"><div><span style=\"display:inline-block;vertical-align:middle;text-align:center\"><span style=\"display:block;padding:0 4px;border-bottom:2px solid var(--ink)\">2</span><span style=\"display:block;padding:0 4px\">√5 - √3</span></span></div><div data-step=\"1\">= <span style=\"display:inline-block;vertical-align:middle;text-align:center\"><span style=\"display:block;padding:0 4px;border-bottom:2px solid var(--ink)\">2·(√5 + √3)</span><span style=\"display:block;padding:0 4px\">(√5 - √3)(√5 + √3)</span></span></div><div data-step=\"2\">= <span style=\"display:inline-block;vertical-align:middle;text-align:center\"><span style=\"display:block;padding:0 4px;border-bottom:2px solid var(--ink)\">2·(√5 + √3)</span><span style=\"display:block;padding:0 4px\">5 − 3</span></span> = <span style=\"display:inline-block;vertical-align:middle;text-align:center\"><span style=\"display:block;padding:0 4px;border-bottom:2px solid var(--ink)\">2·(√5 + √3)</span><span style=\"display:block;padding:0 4px\">2</span></span></div><div data-step=\"3\">= <b style='color:var(--pen)'>√5 + √3</b></div></div></div>"
+    },
+    "steps": [
+     {
+      "text": "Сопряжённое к $\\sqrt{5} - \\sqrt{3}$ — это $\\sqrt{5} + \\sqrt{3}$. Умножаем числитель и знаменатель на него.",
+      "layer": 1
+     },
+     {
+      "text": "В знаменателе формула разности квадратов: $(\\sqrt{5})^2 - (\\sqrt{3})^2 = 5 - 3 = 2$.",
+      "layer": 2
+     },
+     {
+      "text": "Остаётся $\\frac{2\\,(\\sqrt{5} + \\sqrt{3})}{2}$. Сокращаем 2 и 2.",
+      "layer": 3
+     }
+    ],
+    "answerLine": "$\\sqrt{5} + \\sqrt{3}$"
+   },
+   "lesson": {
+    "title": "Сопряжённые выражения",
+    "text": "Выражения $\\sqrt{a}+\\sqrt{b}$ и $\\sqrt{a}-\\sqrt{b}$ называются **сопряжёнными**. Их произведение — формула разности квадратов: $(\\sqrt{a}-\\sqrt{b})(\\sqrt{a}+\\sqrt{b}) = a - b$. Корней уже нет!\nПоэтому, чтобы избавиться от иррациональности в знаменателе, умножаем **числитель и знаменатель** на сопряжённое выражение.\nПример: $\\frac{3}{\\sqrt{6}-\\sqrt{3}} = \\frac{3(\\sqrt{6}+\\sqrt{3})}{6-3} = \\sqrt{6}+\\sqrt{3}$. Ловушка: числитель тоже умножаем и не теряем.",
+    "remember": "умножаем на сопряжённое сверху и снизу: (a−b)(a+b) = a²−b²."
+   },
+   "twins": [
+    {
+     "id": "q12t1",
+     "type": "choice",
+     "subtopic": "Освобождение от иррациональности (сопряжённое выражение)",
+     "text": "Освободись от иррациональности в знаменателе: $\\dfrac{3}{\\sqrt{7} - 2}$.",
+     "options": [
+      {
+       "id": "a",
+       "text": "$\\sqrt{7} - 2$",
+       "why": "Ты не поменял знак. Нужно умножать на **сопряжённое** выражение $\\sqrt{7} + 2$ — тогда по формуле $(a-b)(a+b) = a^2-b^2$ корни в знаменателе исчезнут."
+      },
+      {
+       "id": "b",
+       "text": "$3(\\sqrt{7} + 2)$",
+       "why": "Ты забыл разделить на знаменатель. После умножения в знаменателе получается $7 - 4 = 3$, и числитель 3 надо разделить на 3."
+      },
+      {
+       "id": "c",
+       "text": "$\\sqrt{7} + 2$"
+      },
+      {
+       "id": "d",
+       "text": "$\\frac{\\sqrt{7} + 2}{3}$",
+       "why": "Ты потерял множитель 3 в числителе. После умножения в числителе остаётся 3·(…), и только потом делим на 3."
+      }
+     ],
+     "answer": "c",
+     "hint": "Умножь числитель и знаменатель на выражение, сопряжённое знаменателю (знак между слагаемыми меняется).",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<div style=\"text-align:center\"><div style=\"font-size:19px;line-height:2;text-align:left;display:inline-block\"><div><span style=\"display:inline-block;vertical-align:middle;text-align:center\"><span style=\"display:block;padding:0 4px;border-bottom:2px solid var(--ink)\">3</span><span style=\"display:block;padding:0 4px\">√7 - 2</span></span></div><div data-step=\"1\">= <span style=\"display:inline-block;vertical-align:middle;text-align:center\"><span style=\"display:block;padding:0 4px;border-bottom:2px solid var(--ink)\">3·(√7 + 2)</span><span style=\"display:block;padding:0 4px\">(√7 - 2)(√7 + 2)</span></span></div><div data-step=\"2\">= <span style=\"display:inline-block;vertical-align:middle;text-align:center\"><span style=\"display:block;padding:0 4px;border-bottom:2px solid var(--ink)\">3·(√7 + 2)</span><span style=\"display:block;padding:0 4px\">7 − 4</span></span> = <span style=\"display:inline-block;vertical-align:middle;text-align:center\"><span style=\"display:block;padding:0 4px;border-bottom:2px solid var(--ink)\">3·(√7 + 2)</span><span style=\"display:block;padding:0 4px\">3</span></span></div><div data-step=\"3\">= <b style='color:var(--pen)'>√7 + 2</b></div></div></div>"
+      },
+      "steps": [
+       {
+        "text": "Сопряжённое к $\\sqrt{7} - 2$ — это $\\sqrt{7} + 2$. Умножаем числитель и знаменатель на него.",
+        "layer": 1
+       },
+       {
+        "text": "В знаменателе формула разности квадратов: $(\\sqrt{7})^2 - (2)^2 = 7 - 4 = 3$.",
+        "layer": 2
+       },
+       {
+        "text": "Остаётся $\\frac{3\\,(\\sqrt{7} + 2)}{3}$. Сокращаем 3 и 3.",
+        "layer": 3
+       }
+      ],
+      "answerLine": "$\\sqrt{7} + 2$"
+     }
+    },
+    {
+     "id": "q12t2",
+     "type": "choice",
+     "subtopic": "Освобождение от иррациональности (сопряжённое выражение)",
+     "text": "Освободись от иррациональности в знаменателе: $\\dfrac{10}{\\sqrt{13} + \\sqrt{3}}$.",
+     "options": [
+      {
+       "id": "a",
+       "text": "$\\sqrt{13} + \\sqrt{3}$",
+       "why": "Ты не поменял знак. Нужно умножать на **сопряжённое** выражение $\\sqrt{13} - \\sqrt{3}$ — тогда по формуле $(a-b)(a+b) = a^2-b^2$ корни в знаменателе исчезнут."
+      },
+      {
+       "id": "b",
+       "text": "$\\sqrt{13} - \\sqrt{3}$"
+      },
+      {
+       "id": "c",
+       "text": "$10(\\sqrt{13} - \\sqrt{3})$",
+       "why": "Ты забыл разделить на знаменатель. После умножения в знаменателе получается $13 - 3 = 10$, и числитель 10 надо разделить на 10."
+      },
+      {
+       "id": "d",
+       "text": "$\\frac{\\sqrt{13} - \\sqrt{3}}{10}$",
+       "why": "Ты потерял множитель 10 в числителе. После умножения в числителе остаётся 10·(…), и только потом делим на 10."
+      }
+     ],
+     "answer": "b",
+     "hint": "Умножь числитель и знаменатель на выражение, сопряжённое знаменателю (знак между слагаемыми меняется).",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<div style=\"text-align:center\"><div style=\"font-size:19px;line-height:2;text-align:left;display:inline-block\"><div><span style=\"display:inline-block;vertical-align:middle;text-align:center\"><span style=\"display:block;padding:0 4px;border-bottom:2px solid var(--ink)\">10</span><span style=\"display:block;padding:0 4px\">√13 + √3</span></span></div><div data-step=\"1\">= <span style=\"display:inline-block;vertical-align:middle;text-align:center\"><span style=\"display:block;padding:0 4px;border-bottom:2px solid var(--ink)\">10·(√13 - √3)</span><span style=\"display:block;padding:0 4px\">(√13 + √3)(√13 - √3)</span></span></div><div data-step=\"2\">= <span style=\"display:inline-block;vertical-align:middle;text-align:center\"><span style=\"display:block;padding:0 4px;border-bottom:2px solid var(--ink)\">10·(√13 - √3)</span><span style=\"display:block;padding:0 4px\">13 − 3</span></span> = <span style=\"display:inline-block;vertical-align:middle;text-align:center\"><span style=\"display:block;padding:0 4px;border-bottom:2px solid var(--ink)\">10·(√13 - √3)</span><span style=\"display:block;padding:0 4px\">10</span></span></div><div data-step=\"3\">= <b style='color:var(--pen)'>√13 - √3</b></div></div></div>"
+      },
+      "steps": [
+       {
+        "text": "Сопряжённое к $\\sqrt{13} + \\sqrt{3}$ — это $\\sqrt{13} - \\sqrt{3}$. Умножаем числитель и знаменатель на него.",
+        "layer": 1
+       },
+       {
+        "text": "В знаменателе формула разности квадратов: $(\\sqrt{13})^2 - (\\sqrt{3})^2 = 13 - 3 = 10$.",
+        "layer": 2
+       },
+       {
+        "text": "Остаётся $\\frac{10\\,(\\sqrt{13} - \\sqrt{3})}{10}$. Сокращаем 10 и 10.",
+        "layer": 3
+       }
+      ],
+      "answerLine": "$\\sqrt{13} - \\sqrt{3}$"
+     }
+    }
+   ],
+   "order": 12
+  }
+ ]
+}

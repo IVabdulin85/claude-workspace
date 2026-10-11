@@ -1,0 +1,1527 @@
+{
+ "test": {
+  "id": "k5-geo-plan-azimut-2026-10-07",
+  "createdAt": "2026-10-07T16:31:24+00:00",
+  "grade": 5,
+  "kid": "k5",
+  "source": "География 5 кл., § 9–12, с. 34–41",
+  "subject": "География",
+  "title": "План местности: азимут, масштаб, условные знаки",
+  "topic": "План местности, азимут, условные знаки, съёмка"
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "answer": "c",
+   "figure": {
+    "kind": "svg",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 385\" role=\"img\" style=\"max-width:360px;margin:0 auto\"><circle cx=\"210\" cy=\"190\" r=\"120\" style=\"fill:var(--accent);fill-opacity:.08;stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"84.0\" x2=\"210.0\" y2=\"70.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"110.8\" x2=\"294.9\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"316.0\" y1=\"190.0\" x2=\"330.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"269.2\" x2=\"294.9\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"296.0\" x2=\"210.0\" y2=\"310.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"269.2\" x2=\"125.1\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"104.0\" y1=\"190.0\" x2=\"90.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"110.8\" x2=\"125.1\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><text x=\"210.0\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:800 18px sans-serif\">С</text><line x1=\"210\" y1=\"190\" x2=\"210\" y2=\"86\" style=\"stroke:var(--accent);stroke-width:3;stroke-dasharray:6 4\"/><line x1=\"210\" y1=\"190\" x2=\"100.0\" y2=\"190.0\" style=\"stroke:var(--pen);stroke-width:4\"/><polygon points=\"100.0,190.0 112.1,183.0 112.1,197.0\" style=\"fill:var(--pen)\"/><circle cx=\"40.0\" cy=\"190.0\" r=\"13\" style=\"fill:var(--card);stroke:var(--pen);stroke-width:2\"/><text x=\"40.0\" y=\"196.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:800 17px sans-serif\">?</text><circle cx=\"210\" cy=\"190\" r=\"5\" style=\"fill:var(--ink)\"/></svg>"
+   },
+   "hint": "Начни от севера (0°) и двигайся по часовой стрелке. Каждые 90° — следующая главная сторона горизонта.",
+   "lesson": {
+    "remember": "от севера, по часовой: С 0°, В 90°, Ю 180°, З 270°.",
+    "text": "**Азимут** — это угол между направлением на север и направлением на предмет.\nЕго всегда отсчитывают **от севера** и **по часовой стрелке**, от 0° до 360°.\nЗапомни четыре опорные точки: север — 0°, восток — 90°, юг — 180°, запад — 270°. Посередине между ними — промежуточные стороны: северо-восток 45°, юго-восток 135°, юго-запад 225°, северо-запад 315°.\nПример: азимут 200° — это чуть дальше юга (180°), то есть на юго-юго-запад.\nЛовушка: не крути против часовой стрелки — тогда восток и запад поменяются местами.",
+    "title": "Как читать азимут",
+    "visual": {
+     "caption": "Опорные точки компаса.",
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 385\" role=\"img\" style=\"max-width:360px;margin:0 auto\"><circle cx=\"210\" cy=\"190\" r=\"120\" style=\"fill:var(--accent);fill-opacity:.08;stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"84.0\" x2=\"210.0\" y2=\"70.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"110.8\" x2=\"294.9\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"316.0\" y1=\"190.0\" x2=\"330.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"269.2\" x2=\"294.9\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"296.0\" x2=\"210.0\" y2=\"310.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"269.2\" x2=\"125.1\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"104.0\" y1=\"190.0\" x2=\"90.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"110.8\" x2=\"125.1\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><text x=\"210.0\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:800 18px sans-serif\">С</text><line x1=\"210\" y1=\"190\" x2=\"210\" y2=\"86\" style=\"stroke:var(--accent);stroke-width:3;stroke-dasharray:6 4\"/><g data-step=\"0\"><text x=\"310.4\" y=\"95.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">СВ</text><text x=\"284.6\" y=\"148.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">45°</text></g><g data-step=\"0\"><text x=\"352.0\" y=\"196.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">В</text><text x=\"295.7\" y=\"214.8\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">90°</text></g><g data-step=\"0\"><text x=\"310.4\" y=\"296.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">ЮВ</text><text x=\"256.6\" y=\"269.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">135°</text></g><g data-step=\"0\"><text x=\"210.0\" y=\"338.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">Ю</text><text x=\"190.2\" y=\"280.7\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">180°</text></g><g data-step=\"0\"><text x=\"109.6\" y=\"296.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">ЮЗ</text><text x=\"135.4\" y=\"241.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">225°</text></g><g data-step=\"0\"><text x=\"68.0\" y=\"196.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">З</text><text x=\"124.3\" y=\"175.2\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">270°</text></g><g data-step=\"0\"><text x=\"109.6\" y=\"95.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">СЗ</text><text x=\"163.4\" y=\"120.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">315°</text></g><circle cx=\"210\" cy=\"190\" r=\"5\" style=\"fill:var(--ink)\"/></svg>"
+    }
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Восток",
+     "why": "Ты отсчитал угол **против** часовой стрелки. Азимут считают от севера **по часовой** стрелке: север 0°, восток 90°, юг 180°, запад 270°."
+    },
+    {
+     "id": "b",
+     "text": "Север",
+     "why": "Ты ошибся на четверть круга (90°). Вспомни опорные точки: С — 0°, В — 90°, Ю — 180°, З — 270°."
+    },
+    {
+     "id": "c",
+     "text": "Запад"
+    }
+   ],
+   "order": 1,
+   "solution": {
+    "answerLine": "Запад",
+    "steps": [
+     {
+      "layer": 1,
+      "text": "Опорные точки компаса: север — 0°, восток — 90°, юг — 180°, запад — 270°. Между ними — промежуточные стороны через каждые 45°."
+     },
+     {
+      "layer": 2,
+      "text": "От севера идём **по часовой стрелке** на 270°."
+     },
+     {
+      "layer": 3,
+      "text": "Стрелка указывает на **запад** (З)."
+     }
+    ],
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 385\" role=\"img\" style=\"max-width:360px;margin:0 auto\"><circle cx=\"210\" cy=\"190\" r=\"120\" style=\"fill:var(--accent);fill-opacity:.08;stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"84.0\" x2=\"210.0\" y2=\"70.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"110.8\" x2=\"294.9\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"316.0\" y1=\"190.0\" x2=\"330.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"269.2\" x2=\"294.9\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"296.0\" x2=\"210.0\" y2=\"310.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"269.2\" x2=\"125.1\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"104.0\" y1=\"190.0\" x2=\"90.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"110.8\" x2=\"125.1\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><text x=\"210.0\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:800 18px sans-serif\">С</text><line x1=\"210\" y1=\"190\" x2=\"210\" y2=\"86\" style=\"stroke:var(--accent);stroke-width:3;stroke-dasharray:6 4\"/><g data-step=\"1\"><text x=\"310.4\" y=\"95.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">СВ</text><text x=\"284.6\" y=\"148.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">45°</text></g><g data-step=\"1\"><text x=\"352.0\" y=\"196.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">В</text><text x=\"295.7\" y=\"214.8\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">90°</text></g><g data-step=\"1\"><text x=\"310.4\" y=\"296.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">ЮВ</text><text x=\"256.6\" y=\"269.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">135°</text></g><g data-step=\"1\"><text x=\"210.0\" y=\"338.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">Ю</text><text x=\"190.2\" y=\"280.7\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">180°</text></g><g data-step=\"1\"><text x=\"109.6\" y=\"296.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">ЮЗ</text><text x=\"135.4\" y=\"241.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">225°</text></g><g data-step=\"1\"><text data-until=\"3\" x=\"68.0\" y=\"196.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">З</text><text x=\"124.3\" y=\"175.2\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">270°</text></g><g data-step=\"1\"><text x=\"109.6\" y=\"95.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">СЗ</text><text x=\"163.4\" y=\"120.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">315°</text></g><path data-step=\"2\" d=\"M210.0,140.0 A50,50 0 1 1 160.0,190.0\" style=\"fill:none;stroke:var(--warn);stroke-width:4\"/><text data-step=\"2\" x=\"256.7\" y=\"241.7\" text-anchor=\"middle\" style=\"fill:var(--warn);font:800 14px sans-serif\">270°</text><line x1=\"210\" y1=\"190\" x2=\"100.0\" y2=\"190.0\" style=\"stroke:var(--pen);stroke-width:4\"/><polygon points=\"100.0,190.0 112.1,183.0 112.1,197.0\" style=\"fill:var(--pen)\"/><circle data-until=\"3\" cx=\"40.0\" cy=\"190.0\" r=\"13\" style=\"fill:var(--card);stroke:var(--pen);stroke-width:2\"/><text data-until=\"3\" x=\"40.0\" y=\"196.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:800 17px sans-serif\">?</text><g data-step=\"3\"><circle cx=\"40.0\" cy=\"190.0\" r=\"17\" style=\"fill:var(--card);stroke:var(--ok);stroke-width:3\"/><text x=\"40.0\" y=\"196.0\" text-anchor=\"middle\" style=\"fill:var(--ok);font:800 15px sans-serif\">З</text></g><circle cx=\"210\" cy=\"190\" r=\"5\" style=\"fill:var(--ink)\"/></svg>"
+    }
+   },
+   "subtopic": "Азимут и стороны горизонта",
+   "text": "Азимут на объект равен **270°**. В каком направлении находится объект?",
+   "twins": [
+    {
+     "answer": "b",
+     "figure": {
+      "kind": "svg",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 385\" role=\"img\" style=\"max-width:360px;margin:0 auto\"><circle cx=\"210\" cy=\"190\" r=\"120\" style=\"fill:var(--accent);fill-opacity:.08;stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"84.0\" x2=\"210.0\" y2=\"70.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"110.8\" x2=\"294.9\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"316.0\" y1=\"190.0\" x2=\"330.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"269.2\" x2=\"294.9\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"296.0\" x2=\"210.0\" y2=\"310.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"269.2\" x2=\"125.1\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"104.0\" y1=\"190.0\" x2=\"90.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"110.8\" x2=\"125.1\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><text x=\"210.0\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:800 18px sans-serif\">С</text><line x1=\"210\" y1=\"190\" x2=\"210\" y2=\"86\" style=\"stroke:var(--accent);stroke-width:3;stroke-dasharray:6 4\"/><line x1=\"210\" y1=\"190\" x2=\"320.0\" y2=\"190.0\" style=\"stroke:var(--pen);stroke-width:4\"/><polygon points=\"320.0,190.0 307.9,197.0 307.9,183.0\" style=\"fill:var(--pen)\"/><circle cx=\"380.0\" cy=\"190.0\" r=\"13\" style=\"fill:var(--card);stroke:var(--pen);stroke-width:2\"/><text x=\"380.0\" y=\"196.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:800 17px sans-serif\">?</text><circle cx=\"210\" cy=\"190\" r=\"5\" style=\"fill:var(--ink)\"/></svg>"
+     },
+     "hint": "Начни от севера (0°) и двигайся по часовой стрелке. Каждые 90° — следующая главная сторона горизонта.",
+     "id": "q1t1",
+     "options": [
+      {
+       "id": "a",
+       "text": "Запад",
+       "why": "Ты отсчитал угол **против** часовой стрелки. Азимут считают от севера **по часовой** стрелке: север 0°, восток 90°, юг 180°, запад 270°."
+      },
+      {
+       "id": "b",
+       "text": "Восток"
+      },
+      {
+       "id": "c",
+       "text": "Юг",
+       "why": "Ты ошибся на четверть круга (90°). Вспомни опорные точки: С — 0°, В — 90°, Ю — 180°, З — 270°."
+      }
+     ],
+     "solution": {
+      "answerLine": "Восток",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Опорные точки компаса: север — 0°, восток — 90°, юг — 180°, запад — 270°. Между ними — промежуточные стороны через каждые 45°."
+       },
+       {
+        "layer": 2,
+        "text": "От севера идём **по часовой стрелке** на 90°."
+       },
+       {
+        "layer": 3,
+        "text": "Стрелка указывает на **восток** (В)."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 385\" role=\"img\" style=\"max-width:360px;margin:0 auto\"><circle cx=\"210\" cy=\"190\" r=\"120\" style=\"fill:var(--accent);fill-opacity:.08;stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"84.0\" x2=\"210.0\" y2=\"70.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"110.8\" x2=\"294.9\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"316.0\" y1=\"190.0\" x2=\"330.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"269.2\" x2=\"294.9\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"296.0\" x2=\"210.0\" y2=\"310.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"269.2\" x2=\"125.1\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"104.0\" y1=\"190.0\" x2=\"90.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"110.8\" x2=\"125.1\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><text x=\"210.0\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:800 18px sans-serif\">С</text><line x1=\"210\" y1=\"190\" x2=\"210\" y2=\"86\" style=\"stroke:var(--accent);stroke-width:3;stroke-dasharray:6 4\"/><g data-step=\"1\"><text x=\"310.4\" y=\"95.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">СВ</text><text x=\"284.6\" y=\"148.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">45°</text></g><g data-step=\"1\"><text data-until=\"3\" x=\"352.0\" y=\"196.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">В</text><text x=\"295.7\" y=\"214.8\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">90°</text></g><g data-step=\"1\"><text x=\"310.4\" y=\"296.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">ЮВ</text><text x=\"256.6\" y=\"269.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">135°</text></g><g data-step=\"1\"><text x=\"210.0\" y=\"338.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">Ю</text><text x=\"190.2\" y=\"280.7\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">180°</text></g><g data-step=\"1\"><text x=\"109.6\" y=\"296.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">ЮЗ</text><text x=\"135.4\" y=\"241.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">225°</text></g><g data-step=\"1\"><text x=\"68.0\" y=\"196.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">З</text><text x=\"124.3\" y=\"175.2\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">270°</text></g><g data-step=\"1\"><text x=\"109.6\" y=\"95.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">СЗ</text><text x=\"163.4\" y=\"120.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">315°</text></g><path data-step=\"2\" d=\"M210.0,140.0 A50,50 0 0 1 260.0,190.0\" style=\"fill:none;stroke:var(--warn);stroke-width:4\"/><text data-step=\"2\" x=\"256.7\" y=\"148.3\" text-anchor=\"middle\" style=\"fill:var(--warn);font:800 14px sans-serif\">90°</text><line x1=\"210\" y1=\"190\" x2=\"320.0\" y2=\"190.0\" style=\"stroke:var(--pen);stroke-width:4\"/><polygon points=\"320.0,190.0 307.9,197.0 307.9,183.0\" style=\"fill:var(--pen)\"/><circle data-until=\"3\" cx=\"380.0\" cy=\"190.0\" r=\"13\" style=\"fill:var(--card);stroke:var(--pen);stroke-width:2\"/><text data-until=\"3\" x=\"380.0\" y=\"196.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:800 17px sans-serif\">?</text><g data-step=\"3\"><circle cx=\"380.0\" cy=\"190.0\" r=\"17\" style=\"fill:var(--card);stroke:var(--ok);stroke-width:3\"/><text x=\"380.0\" y=\"196.0\" text-anchor=\"middle\" style=\"fill:var(--ok);font:800 15px sans-serif\">В</text></g><circle cx=\"210\" cy=\"190\" r=\"5\" style=\"fill:var(--ink)\"/></svg>"
+      }
+     },
+     "subtopic": "Азимут и стороны горизонта",
+     "text": "Азимут на объект равен **90°**. В каком направлении находится объект?",
+     "type": "choice"
+    },
+    {
+     "answer": "a",
+     "figure": {
+      "kind": "svg",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 385\" role=\"img\" style=\"max-width:360px;margin:0 auto\"><circle cx=\"210\" cy=\"190\" r=\"120\" style=\"fill:var(--accent);fill-opacity:.08;stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"84.0\" x2=\"210.0\" y2=\"70.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"110.8\" x2=\"294.9\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"316.0\" y1=\"190.0\" x2=\"330.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"269.2\" x2=\"294.9\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"296.0\" x2=\"210.0\" y2=\"310.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"269.2\" x2=\"125.1\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"104.0\" y1=\"190.0\" x2=\"90.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"110.8\" x2=\"125.1\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><text x=\"210.0\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:800 18px sans-serif\">С</text><line x1=\"210\" y1=\"190\" x2=\"210\" y2=\"86\" style=\"stroke:var(--accent);stroke-width:3;stroke-dasharray:6 4\"/><line x1=\"210\" y1=\"190\" x2=\"287.8\" y2=\"267.8\" style=\"stroke:var(--pen);stroke-width:4\"/><polygon points=\"287.8,267.8 274.3,264.2 284.2,254.3\" style=\"fill:var(--pen)\"/><circle cx=\"330.2\" cy=\"310.2\" r=\"13\" style=\"fill:var(--card);stroke:var(--pen);stroke-width:2\"/><text x=\"330.2\" y=\"316.2\" text-anchor=\"middle\" style=\"fill:var(--pen);font:800 17px sans-serif\">?</text><circle cx=\"210\" cy=\"190\" r=\"5\" style=\"fill:var(--ink)\"/></svg>"
+     },
+     "hint": "Начни от севера (0°) и двигайся по часовой стрелке. Каждые 90° — следующая главная сторона горизонта.",
+     "id": "q1t2",
+     "options": [
+      {
+       "id": "a",
+       "text": "Юго-восток"
+      },
+      {
+       "id": "b",
+       "text": "Юго-запад",
+       "why": "Ты отсчитал угол **против** часовой стрелки. Азимут считают от севера **по часовой** стрелке: север 0°, восток 90°, юг 180°, запад 270°."
+      },
+      {
+       "id": "c",
+       "text": "Северо-запад",
+       "why": "Это противоположное направление. Ты, наверное, начал отсчёт от юга. Азимут всегда отсчитывают **от севера**."
+      }
+     ],
+     "solution": {
+      "answerLine": "Юго-восток",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Опорные точки компаса: север — 0°, восток — 90°, юг — 180°, запад — 270°. Между ними — промежуточные стороны через каждые 45°."
+       },
+       {
+        "layer": 2,
+        "text": "От севера идём **по часовой стрелке** на 135°."
+       },
+       {
+        "layer": 3,
+        "text": "Стрелка указывает на **юго-восток** (ЮВ)."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 385\" role=\"img\" style=\"max-width:360px;margin:0 auto\"><circle cx=\"210\" cy=\"190\" r=\"120\" style=\"fill:var(--accent);fill-opacity:.08;stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"84.0\" x2=\"210.0\" y2=\"70.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"110.8\" x2=\"294.9\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"316.0\" y1=\"190.0\" x2=\"330.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"269.2\" x2=\"294.9\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"296.0\" x2=\"210.0\" y2=\"310.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"269.2\" x2=\"125.1\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"104.0\" y1=\"190.0\" x2=\"90.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"110.8\" x2=\"125.1\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><text x=\"210.0\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:800 18px sans-serif\">С</text><line x1=\"210\" y1=\"190\" x2=\"210\" y2=\"86\" style=\"stroke:var(--accent);stroke-width:3;stroke-dasharray:6 4\"/><g data-step=\"1\"><text x=\"310.4\" y=\"95.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">СВ</text><text x=\"284.6\" y=\"148.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">45°</text></g><g data-step=\"1\"><text x=\"352.0\" y=\"196.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">В</text><text x=\"295.7\" y=\"214.8\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">90°</text></g><g data-step=\"1\"><text data-until=\"3\" x=\"310.4\" y=\"296.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">ЮВ</text><text x=\"256.6\" y=\"269.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">135°</text></g><g data-step=\"1\"><text x=\"210.0\" y=\"338.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">Ю</text><text x=\"190.2\" y=\"280.7\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">180°</text></g><g data-step=\"1\"><text x=\"109.6\" y=\"296.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">ЮЗ</text><text x=\"135.4\" y=\"241.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">225°</text></g><g data-step=\"1\"><text x=\"68.0\" y=\"196.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">З</text><text x=\"124.3\" y=\"175.2\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">270°</text></g><g data-step=\"1\"><text x=\"109.6\" y=\"95.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">СЗ</text><text x=\"163.4\" y=\"120.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">315°</text></g><path data-step=\"2\" d=\"M210.0,140.0 A50,50 0 0 1 245.4,225.4\" style=\"fill:none;stroke:var(--warn);stroke-width:4\"/><text data-step=\"2\" x=\"271.0\" y=\"169.7\" text-anchor=\"middle\" style=\"fill:var(--warn);font:800 14px sans-serif\">135°</text><line x1=\"210\" y1=\"190\" x2=\"287.8\" y2=\"267.8\" style=\"stroke:var(--pen);stroke-width:4\"/><polygon points=\"287.8,267.8 274.3,264.2 284.2,254.3\" style=\"fill:var(--pen)\"/><circle data-until=\"3\" cx=\"330.2\" cy=\"310.2\" r=\"13\" style=\"fill:var(--card);stroke:var(--pen);stroke-width:2\"/><text data-until=\"3\" x=\"330.2\" y=\"316.2\" text-anchor=\"middle\" style=\"fill:var(--pen);font:800 17px sans-serif\">?</text><g data-step=\"3\"><circle cx=\"330.2\" cy=\"310.2\" r=\"17\" style=\"fill:var(--card);stroke:var(--ok);stroke-width:3\"/><text x=\"330.2\" y=\"316.2\" text-anchor=\"middle\" style=\"fill:var(--ok);font:800 15px sans-serif\">ЮВ</text></g><circle cx=\"210\" cy=\"190\" r=\"5\" style=\"fill:var(--ink)\"/></svg>"
+      }
+     },
+     "subtopic": "Азимут и стороны горизонта",
+     "text": "Азимут на объект равен **135°**. В каком направлении находится объект?",
+     "type": "choice"
+    }
+   ],
+   "type": "choice"
+  },
+  {
+   "id": "q2",
+   "answer": 180,
+   "figure": {
+    "kind": "svg",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 385\" role=\"img\" style=\"max-width:360px;margin:0 auto\"><circle cx=\"210\" cy=\"190\" r=\"120\" style=\"fill:var(--accent);fill-opacity:.08;stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"84.0\" x2=\"210.0\" y2=\"70.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"110.8\" x2=\"294.9\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"316.0\" y1=\"190.0\" x2=\"330.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"269.2\" x2=\"294.9\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"296.0\" x2=\"210.0\" y2=\"310.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"269.2\" x2=\"125.1\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"104.0\" y1=\"190.0\" x2=\"90.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"110.8\" x2=\"125.1\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><text x=\"210.0\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:800 18px sans-serif\">С</text><line x1=\"210\" y1=\"190\" x2=\"210\" y2=\"86\" style=\"stroke:var(--accent);stroke-width:3;stroke-dasharray:6 4\"/><circle cx=\"210\" cy=\"190\" r=\"5\" style=\"fill:var(--ink)\"/></svg>"
+   },
+   "genericWrong": "Вспомни: от севера по часовой стрелке — С 0°, СВ 45°, В 90°, ЮВ 135°, Ю 180°, ЮЗ 225°, З 270°, СЗ 315°.",
+   "hint": "Каждая четверть круга — это 90°. Промежуточная сторона — ровно посередине, ещё 45°.",
+   "lesson": {
+    "remember": "от севера, по часовой: С 0°, В 90°, Ю 180°, З 270°.",
+    "text": "**Азимут** — это угол между направлением на север и направлением на предмет.\nЕго всегда отсчитывают **от севера** и **по часовой стрелке**, от 0° до 360°.\nЗапомни четыре опорные точки: север — 0°, восток — 90°, юг — 180°, запад — 270°. Посередине между ними — промежуточные стороны: северо-восток 45°, юго-восток 135°, юго-запад 225°, северо-запад 315°.\nПример: азимут 200° — это чуть дальше юга (180°), то есть на юго-юго-запад.\nЛовушка: не крути против часовой стрелки — тогда восток и запад поменяются местами.",
+    "title": "Как читать азимут",
+    "visual": {
+     "caption": "Опорные точки компаса.",
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 385\" role=\"img\" style=\"max-width:360px;margin:0 auto\"><circle cx=\"210\" cy=\"190\" r=\"120\" style=\"fill:var(--accent);fill-opacity:.08;stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"84.0\" x2=\"210.0\" y2=\"70.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"110.8\" x2=\"294.9\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"316.0\" y1=\"190.0\" x2=\"330.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"269.2\" x2=\"294.9\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"296.0\" x2=\"210.0\" y2=\"310.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"269.2\" x2=\"125.1\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"104.0\" y1=\"190.0\" x2=\"90.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"110.8\" x2=\"125.1\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><text x=\"210.0\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:800 18px sans-serif\">С</text><line x1=\"210\" y1=\"190\" x2=\"210\" y2=\"86\" style=\"stroke:var(--accent);stroke-width:3;stroke-dasharray:6 4\"/><g data-step=\"0\"><text x=\"310.4\" y=\"95.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">СВ</text><text x=\"284.6\" y=\"148.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">45°</text></g><g data-step=\"0\"><text x=\"352.0\" y=\"196.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">В</text><text x=\"295.7\" y=\"214.8\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">90°</text></g><g data-step=\"0\"><text x=\"310.4\" y=\"296.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">ЮВ</text><text x=\"256.6\" y=\"269.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">135°</text></g><g data-step=\"0\"><text x=\"210.0\" y=\"338.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">Ю</text><text x=\"190.2\" y=\"280.7\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">180°</text></g><g data-step=\"0\"><text x=\"109.6\" y=\"296.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">ЮЗ</text><text x=\"135.4\" y=\"241.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">225°</text></g><g data-step=\"0\"><text x=\"68.0\" y=\"196.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">З</text><text x=\"124.3\" y=\"175.2\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">270°</text></g><g data-step=\"0\"><text x=\"109.6\" y=\"95.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">СЗ</text><text x=\"163.4\" y=\"120.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">315°</text></g><circle cx=\"210\" cy=\"190\" r=\"5\" style=\"fill:var(--ink)\"/></svg>"
+    }
+   },
+   "order": 2,
+   "solution": {
+    "answerLine": "180°",
+    "steps": [
+     {
+      "layer": 1,
+      "text": "Расставим стороны горизонта: С 0°, В 90°, Ю 180°, З 270°, а промежуточные — через 45°."
+     },
+     {
+      "layer": 2,
+      "text": "Направление на юг — это поворот от севера по часовой стрелке на **180°**."
+     }
+    ],
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 385\" role=\"img\" style=\"max-width:360px;margin:0 auto\"><circle cx=\"210\" cy=\"190\" r=\"120\" style=\"fill:var(--accent);fill-opacity:.08;stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"84.0\" x2=\"210.0\" y2=\"70.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"110.8\" x2=\"294.9\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"316.0\" y1=\"190.0\" x2=\"330.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"269.2\" x2=\"294.9\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"296.0\" x2=\"210.0\" y2=\"310.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"269.2\" x2=\"125.1\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"104.0\" y1=\"190.0\" x2=\"90.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"110.8\" x2=\"125.1\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><text x=\"210.0\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:800 18px sans-serif\">С</text><line x1=\"210\" y1=\"190\" x2=\"210\" y2=\"86\" style=\"stroke:var(--accent);stroke-width:3;stroke-dasharray:6 4\"/><g data-step=\"1\"><text x=\"310.4\" y=\"95.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">СВ</text><text x=\"284.6\" y=\"148.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">45°</text></g><g data-step=\"1\"><text x=\"352.0\" y=\"196.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">В</text><text x=\"295.7\" y=\"214.8\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">90°</text></g><g data-step=\"1\"><text x=\"310.4\" y=\"296.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">ЮВ</text><text x=\"256.6\" y=\"269.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">135°</text></g><g data-step=\"1\"><text x=\"210.0\" y=\"338.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">Ю</text><text x=\"190.2\" y=\"280.7\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">180°</text></g><g data-step=\"1\"><text x=\"109.6\" y=\"296.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">ЮЗ</text><text x=\"135.4\" y=\"241.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">225°</text></g><g data-step=\"1\"><text x=\"68.0\" y=\"196.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">З</text><text x=\"124.3\" y=\"175.2\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">270°</text></g><g data-step=\"1\"><text x=\"109.6\" y=\"95.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">СЗ</text><text x=\"163.4\" y=\"120.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">315°</text></g><path data-step=\"2\" d=\"M210.0,140.0 A50,50 0 0 1 210.0,240.0\" style=\"fill:none;stroke:var(--warn);stroke-width:4\"/><text data-step=\"2\" x=\"276.0\" y=\"195.0\" text-anchor=\"middle\" style=\"fill:var(--warn);font:800 14px sans-serif\">180°</text><line x1=\"210\" y1=\"190\" x2=\"210.0\" y2=\"300.0\" style=\"stroke:var(--pen);stroke-width:4\"/><polygon points=\"210.0,300.0 203.0,287.9 217.0,287.9\" style=\"fill:var(--pen)\"/><circle cx=\"210\" cy=\"190\" r=\"5\" style=\"fill:var(--ink)\"/></svg>"
+    }
+   },
+   "subtopic": "Азимут и стороны горизонта",
+   "text": "Чему равен азимут направления на **юг**? Запиши число градусов.",
+   "tolerance": 0.5,
+   "twins": [
+    {
+     "answer": 90,
+     "figure": {
+      "kind": "svg",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 385\" role=\"img\" style=\"max-width:360px;margin:0 auto\"><circle cx=\"210\" cy=\"190\" r=\"120\" style=\"fill:var(--accent);fill-opacity:.08;stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"84.0\" x2=\"210.0\" y2=\"70.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"110.8\" x2=\"294.9\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"316.0\" y1=\"190.0\" x2=\"330.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"269.2\" x2=\"294.9\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"296.0\" x2=\"210.0\" y2=\"310.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"269.2\" x2=\"125.1\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"104.0\" y1=\"190.0\" x2=\"90.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"110.8\" x2=\"125.1\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><text x=\"210.0\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:800 18px sans-serif\">С</text><line x1=\"210\" y1=\"190\" x2=\"210\" y2=\"86\" style=\"stroke:var(--accent);stroke-width:3;stroke-dasharray:6 4\"/><circle cx=\"210\" cy=\"190\" r=\"5\" style=\"fill:var(--ink)\"/></svg>"
+     },
+     "genericWrong": "Вспомни: от севера по часовой стрелке — С 0°, СВ 45°, В 90°, ЮВ 135°, Ю 180°, ЮЗ 225°, З 270°, СЗ 315°.",
+     "hint": "Каждая четверть круга — это 90°. Промежуточная сторона — ровно посередине, ещё 45°.",
+     "id": "q2t1",
+     "solution": {
+      "answerLine": "90°",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Расставим стороны горизонта: С 0°, В 90°, Ю 180°, З 270°, а промежуточные — через 45°."
+       },
+       {
+        "layer": 2,
+        "text": "Направление на восток — это поворот от севера по часовой стрелке на **90°**."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 385\" role=\"img\" style=\"max-width:360px;margin:0 auto\"><circle cx=\"210\" cy=\"190\" r=\"120\" style=\"fill:var(--accent);fill-opacity:.08;stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"84.0\" x2=\"210.0\" y2=\"70.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"110.8\" x2=\"294.9\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"316.0\" y1=\"190.0\" x2=\"330.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"269.2\" x2=\"294.9\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"296.0\" x2=\"210.0\" y2=\"310.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"269.2\" x2=\"125.1\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"104.0\" y1=\"190.0\" x2=\"90.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"110.8\" x2=\"125.1\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><text x=\"210.0\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:800 18px sans-serif\">С</text><line x1=\"210\" y1=\"190\" x2=\"210\" y2=\"86\" style=\"stroke:var(--accent);stroke-width:3;stroke-dasharray:6 4\"/><g data-step=\"1\"><text x=\"310.4\" y=\"95.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">СВ</text><text x=\"284.6\" y=\"148.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">45°</text></g><g data-step=\"1\"><text x=\"352.0\" y=\"196.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">В</text><text x=\"295.7\" y=\"214.8\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">90°</text></g><g data-step=\"1\"><text x=\"310.4\" y=\"296.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">ЮВ</text><text x=\"256.6\" y=\"269.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">135°</text></g><g data-step=\"1\"><text x=\"210.0\" y=\"338.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">Ю</text><text x=\"190.2\" y=\"280.7\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">180°</text></g><g data-step=\"1\"><text x=\"109.6\" y=\"296.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">ЮЗ</text><text x=\"135.4\" y=\"241.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">225°</text></g><g data-step=\"1\"><text x=\"68.0\" y=\"196.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">З</text><text x=\"124.3\" y=\"175.2\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">270°</text></g><g data-step=\"1\"><text x=\"109.6\" y=\"95.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">СЗ</text><text x=\"163.4\" y=\"120.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">315°</text></g><path data-step=\"2\" d=\"M210.0,140.0 A50,50 0 0 1 260.0,190.0\" style=\"fill:none;stroke:var(--warn);stroke-width:4\"/><text data-step=\"2\" x=\"256.7\" y=\"148.3\" text-anchor=\"middle\" style=\"fill:var(--warn);font:800 14px sans-serif\">90°</text><line x1=\"210\" y1=\"190\" x2=\"320.0\" y2=\"190.0\" style=\"stroke:var(--pen);stroke-width:4\"/><polygon points=\"320.0,190.0 307.9,197.0 307.9,183.0\" style=\"fill:var(--pen)\"/><circle cx=\"210\" cy=\"190\" r=\"5\" style=\"fill:var(--ink)\"/></svg>"
+      }
+     },
+     "subtopic": "Азимут и стороны горизонта",
+     "text": "Чему равен азимут направления на **восток**? Запиши число градусов.",
+     "tolerance": 0.5,
+     "type": "number",
+     "typicalWrong": [
+      {
+       "tolerance": 0.5,
+       "value": 270,
+       "why": "Ты отсчитал угол против часовой стрелки. Азимут считают **по часовой** стрелке от севера."
+      },
+      {
+       "tolerance": 0.5,
+       "value": 180,
+       "why": "Ты ошибся на 90° — на одну четверть круга. Проверь опорные точки: С 0°, В 90°, Ю 180°, З 270°."
+      }
+     ],
+     "unit": "°"
+    },
+    {
+     "answer": 315,
+     "figure": {
+      "kind": "svg",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 385\" role=\"img\" style=\"max-width:360px;margin:0 auto\"><circle cx=\"210\" cy=\"190\" r=\"120\" style=\"fill:var(--accent);fill-opacity:.08;stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"84.0\" x2=\"210.0\" y2=\"70.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"110.8\" x2=\"294.9\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"316.0\" y1=\"190.0\" x2=\"330.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"269.2\" x2=\"294.9\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"296.0\" x2=\"210.0\" y2=\"310.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"269.2\" x2=\"125.1\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"104.0\" y1=\"190.0\" x2=\"90.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"110.8\" x2=\"125.1\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><text x=\"210.0\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:800 18px sans-serif\">С</text><line x1=\"210\" y1=\"190\" x2=\"210\" y2=\"86\" style=\"stroke:var(--accent);stroke-width:3;stroke-dasharray:6 4\"/><circle cx=\"210\" cy=\"190\" r=\"5\" style=\"fill:var(--ink)\"/></svg>"
+     },
+     "genericWrong": "Вспомни: от севера по часовой стрелке — С 0°, СВ 45°, В 90°, ЮВ 135°, Ю 180°, ЮЗ 225°, З 270°, СЗ 315°.",
+     "hint": "Каждая четверть круга — это 90°. Промежуточная сторона — ровно посередине, ещё 45°.",
+     "id": "q2t2",
+     "solution": {
+      "answerLine": "315°",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Расставим стороны горизонта: С 0°, В 90°, Ю 180°, З 270°, а промежуточные — через 45°."
+       },
+       {
+        "layer": 2,
+        "text": "Направление на северо-запад — это поворот от севера по часовой стрелке на **315°**."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 385\" role=\"img\" style=\"max-width:360px;margin:0 auto\"><circle cx=\"210\" cy=\"190\" r=\"120\" style=\"fill:var(--accent);fill-opacity:.08;stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"84.0\" x2=\"210.0\" y2=\"70.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"110.8\" x2=\"294.9\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"316.0\" y1=\"190.0\" x2=\"330.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"269.2\" x2=\"294.9\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"296.0\" x2=\"210.0\" y2=\"310.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"269.2\" x2=\"125.1\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"104.0\" y1=\"190.0\" x2=\"90.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"110.8\" x2=\"125.1\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><text x=\"210.0\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:800 18px sans-serif\">С</text><line x1=\"210\" y1=\"190\" x2=\"210\" y2=\"86\" style=\"stroke:var(--accent);stroke-width:3;stroke-dasharray:6 4\"/><g data-step=\"1\"><text x=\"310.4\" y=\"95.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">СВ</text><text x=\"284.6\" y=\"148.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">45°</text></g><g data-step=\"1\"><text x=\"352.0\" y=\"196.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">В</text><text x=\"295.7\" y=\"214.8\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">90°</text></g><g data-step=\"1\"><text x=\"310.4\" y=\"296.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">ЮВ</text><text x=\"256.6\" y=\"269.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">135°</text></g><g data-step=\"1\"><text x=\"210.0\" y=\"338.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">Ю</text><text x=\"190.2\" y=\"280.7\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">180°</text></g><g data-step=\"1\"><text x=\"109.6\" y=\"296.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">ЮЗ</text><text x=\"135.4\" y=\"241.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">225°</text></g><g data-step=\"1\"><text x=\"68.0\" y=\"196.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">З</text><text x=\"124.3\" y=\"175.2\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">270°</text></g><g data-step=\"1\"><text x=\"109.6\" y=\"95.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">СЗ</text><text x=\"163.4\" y=\"120.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">315°</text></g><path data-step=\"2\" d=\"M210.0,140.0 A50,50 0 1 1 174.6,154.6\" style=\"fill:none;stroke:var(--warn);stroke-width:4\"/><text data-step=\"2\" x=\"235.3\" y=\"256.0\" text-anchor=\"middle\" style=\"fill:var(--warn);font:800 14px sans-serif\">315°</text><line x1=\"210\" y1=\"190\" x2=\"132.2\" y2=\"112.2\" style=\"stroke:var(--pen);stroke-width:4\"/><polygon points=\"132.2,112.2 145.7,115.8 135.8,125.7\" style=\"fill:var(--pen)\"/><circle cx=\"210\" cy=\"190\" r=\"5\" style=\"fill:var(--ink)\"/></svg>"
+      }
+     },
+     "subtopic": "Азимут и стороны горизонта",
+     "text": "Чему равен азимут направления на **северо-запад**? Запиши число градусов.",
+     "tolerance": 0.5,
+     "type": "number",
+     "typicalWrong": [
+      {
+       "tolerance": 0.5,
+       "value": 45,
+       "why": "Ты отсчитал угол против часовой стрелки. Азимут считают **по часовой** стрелке от севера."
+      },
+      {
+       "tolerance": 0.5,
+       "value": 135,
+       "why": "Это азимут противоположного направления. Начинай отсчёт с севера (0°)."
+      }
+     ],
+     "unit": "°"
+    }
+   ],
+   "type": "number",
+   "typicalWrong": [
+    {
+     "tolerance": 0.5,
+     "value": 0,
+     "why": "Это азимут противоположного направления. Начинай отсчёт с севера (0°)."
+    },
+    {
+     "tolerance": 0.5,
+     "value": 270,
+     "why": "Ты ошибся на 90° — на одну четверть круга. Проверь опорные точки: С 0°, В 90°, Ю 180°, З 270°."
+    }
+   ],
+   "unit": "°"
+  },
+  {
+   "id": "q3",
+   "answer": "a",
+   "hint": "Вспомни определение из учебника: угол между направлением движения и направлением на север.",
+   "lesson": {
+    "remember": "от севера, по часовой: С 0°, В 90°, Ю 180°, З 270°.",
+    "text": "**Азимут** — это угол между направлением на север и направлением на предмет.\nЕго всегда отсчитывают **от севера** и **по часовой стрелке**, от 0° до 360°.\nЗапомни четыре опорные точки: север — 0°, восток — 90°, юг — 180°, запад — 270°. Посередине между ними — промежуточные стороны: северо-восток 45°, юго-восток 135°, юго-запад 225°, северо-запад 315°.\nПример: азимут 200° — это чуть дальше юга (180°), то есть на юго-юго-запад.\nЛовушка: не крути против часовой стрелки — тогда восток и запад поменяются местами.",
+    "title": "Как читать азимут",
+    "visual": {
+     "caption": "Опорные точки компаса.",
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 385\" role=\"img\" style=\"max-width:360px;margin:0 auto\"><circle cx=\"210\" cy=\"190\" r=\"120\" style=\"fill:var(--accent);fill-opacity:.08;stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"84.0\" x2=\"210.0\" y2=\"70.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"110.8\" x2=\"294.9\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"316.0\" y1=\"190.0\" x2=\"330.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"269.2\" x2=\"294.9\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"296.0\" x2=\"210.0\" y2=\"310.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"269.2\" x2=\"125.1\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"104.0\" y1=\"190.0\" x2=\"90.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"110.8\" x2=\"125.1\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><text x=\"210.0\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:800 18px sans-serif\">С</text><line x1=\"210\" y1=\"190\" x2=\"210\" y2=\"86\" style=\"stroke:var(--accent);stroke-width:3;stroke-dasharray:6 4\"/><g data-step=\"0\"><text x=\"310.4\" y=\"95.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">СВ</text><text x=\"284.6\" y=\"148.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">45°</text></g><g data-step=\"0\"><text x=\"352.0\" y=\"196.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">В</text><text x=\"295.7\" y=\"214.8\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">90°</text></g><g data-step=\"0\"><text x=\"310.4\" y=\"296.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">ЮВ</text><text x=\"256.6\" y=\"269.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">135°</text></g><g data-step=\"0\"><text x=\"210.0\" y=\"338.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">Ю</text><text x=\"190.2\" y=\"280.7\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">180°</text></g><g data-step=\"0\"><text x=\"109.6\" y=\"296.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">ЮЗ</text><text x=\"135.4\" y=\"241.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">225°</text></g><g data-step=\"0\"><text x=\"68.0\" y=\"196.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">З</text><text x=\"124.3\" y=\"175.2\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">270°</text></g><g data-step=\"0\"><text x=\"109.6\" y=\"95.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">СЗ</text><text x=\"163.4\" y=\"120.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">315°</text></g><circle cx=\"210\" cy=\"190\" r=\"5\" style=\"fill:var(--ink)\"/></svg>"
+    }
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "От севера по часовой стрелке"
+    },
+    {
+     "id": "b",
+     "text": "От севера против часовой стрелки",
+     "why": "Против часовой стрелки не считают: тогда восток оказался бы на 270°. Азимут считают **по часовой**."
+    },
+    {
+     "id": "c",
+     "text": "От юга по часовой стрелке",
+     "why": "Начало отсчёта — **север** (0°), а не юг. Юг — это уже 180°."
+    },
+    {
+     "id": "d",
+     "text": "От востока, где восходит Солнце",
+     "why": "Восток — это 90°, а не начало отсчёта. Все азимуты начинаются с **севера**."
+    }
+   ],
+   "order": 3,
+   "solution": {
+    "answerLine": "От севера по часовой стрелке",
+    "steps": [
+     {
+      "layer": 1,
+      "text": "Азимут — угол между направлением **на север** и направлением на предмет."
+     },
+     {
+      "layer": 2,
+      "text": "Его отсчитывают от севера **по часовой стрелке**, от 0° до 360°. На рисунке азимут 60°."
+     }
+    ],
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 385\" role=\"img\" style=\"max-width:360px;margin:0 auto\"><circle cx=\"210\" cy=\"190\" r=\"120\" style=\"fill:var(--accent);fill-opacity:.08;stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"84.0\" x2=\"210.0\" y2=\"70.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"110.8\" x2=\"294.9\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"316.0\" y1=\"190.0\" x2=\"330.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"269.2\" x2=\"294.9\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"296.0\" x2=\"210.0\" y2=\"310.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"269.2\" x2=\"125.1\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"104.0\" y1=\"190.0\" x2=\"90.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"110.8\" x2=\"125.1\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><text x=\"210.0\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:800 18px sans-serif\">С</text><line x1=\"210\" y1=\"190\" x2=\"210\" y2=\"86\" style=\"stroke:var(--accent);stroke-width:3;stroke-dasharray:6 4\"/><g data-step=\"1\"><text x=\"310.4\" y=\"95.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">СВ</text><text x=\"284.6\" y=\"148.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">45°</text></g><g data-step=\"1\"><text x=\"352.0\" y=\"196.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">В</text><text x=\"295.7\" y=\"214.8\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">90°</text></g><g data-step=\"1\"><text x=\"310.4\" y=\"296.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">ЮВ</text><text x=\"256.6\" y=\"269.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">135°</text></g><g data-step=\"1\"><text x=\"210.0\" y=\"338.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">Ю</text><text x=\"190.2\" y=\"280.7\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">180°</text></g><g data-step=\"1\"><text x=\"109.6\" y=\"296.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">ЮЗ</text><text x=\"135.4\" y=\"241.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">225°</text></g><g data-step=\"1\"><text x=\"68.0\" y=\"196.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">З</text><text x=\"124.3\" y=\"175.2\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">270°</text></g><g data-step=\"1\"><text x=\"109.6\" y=\"95.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">СЗ</text><text x=\"163.4\" y=\"120.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">315°</text></g><path data-step=\"2\" d=\"M210.0,140.0 A50,50 0 0 1 253.3,165.0\" style=\"fill:none;stroke:var(--warn);stroke-width:4\"/><text data-step=\"2\" x=\"243.0\" y=\"137.8\" text-anchor=\"middle\" style=\"fill:var(--warn);font:800 14px sans-serif\">60°</text><line x1=\"210\" y1=\"190\" x2=\"305.3\" y2=\"135.0\" style=\"stroke:var(--pen);stroke-width:4\"/><polygon points=\"305.3,135.0 298.3,147.1 291.3,135.0\" style=\"fill:var(--pen)\"/><circle cx=\"210\" cy=\"190\" r=\"5\" style=\"fill:var(--ink)\"/></svg>"
+    }
+   },
+   "subtopic": "Азимут и стороны горизонта",
+   "text": "Как отсчитывают азимут?",
+   "twins": [
+    {
+     "answer": "c",
+     "hint": "Вспомни определение из учебника: угол между направлением движения и направлением на север.",
+     "id": "q3t1",
+     "options": [
+      {
+       "id": "a",
+       "text": "юг",
+       "why": "Юг — это 180°. Угол азимута отмеряют от направления на **север**."
+      },
+      {
+       "id": "b",
+       "text": "восток",
+       "why": "Восток — 90°. А азимут отмеряют от **севера**."
+      },
+      {
+       "id": "c",
+       "text": "север"
+      },
+      {
+       "id": "d",
+       "text": "ближайший ориентир",
+       "why": "Ориентир — это сам предмет. Второе направление всегда одно и то же — **на север**."
+      }
+     ],
+     "solution": {
+      "answerLine": "север",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Азимут — угол между направлением **на север** и направлением на предмет."
+       },
+       {
+        "layer": 2,
+        "text": "Его отсчитывают от севера **по часовой стрелке**, от 0° до 360°. На рисунке азимут 60°."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 385\" role=\"img\" style=\"max-width:360px;margin:0 auto\"><circle cx=\"210\" cy=\"190\" r=\"120\" style=\"fill:var(--accent);fill-opacity:.08;stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"84.0\" x2=\"210.0\" y2=\"70.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"110.8\" x2=\"294.9\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"316.0\" y1=\"190.0\" x2=\"330.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"269.2\" x2=\"294.9\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"296.0\" x2=\"210.0\" y2=\"310.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"269.2\" x2=\"125.1\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"104.0\" y1=\"190.0\" x2=\"90.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"110.8\" x2=\"125.1\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><text x=\"210.0\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:800 18px sans-serif\">С</text><line x1=\"210\" y1=\"190\" x2=\"210\" y2=\"86\" style=\"stroke:var(--accent);stroke-width:3;stroke-dasharray:6 4\"/><g data-step=\"1\"><text x=\"310.4\" y=\"95.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">СВ</text><text x=\"284.6\" y=\"148.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">45°</text></g><g data-step=\"1\"><text x=\"352.0\" y=\"196.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">В</text><text x=\"295.7\" y=\"214.8\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">90°</text></g><g data-step=\"1\"><text x=\"310.4\" y=\"296.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">ЮВ</text><text x=\"256.6\" y=\"269.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">135°</text></g><g data-step=\"1\"><text x=\"210.0\" y=\"338.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">Ю</text><text x=\"190.2\" y=\"280.7\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">180°</text></g><g data-step=\"1\"><text x=\"109.6\" y=\"296.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">ЮЗ</text><text x=\"135.4\" y=\"241.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">225°</text></g><g data-step=\"1\"><text x=\"68.0\" y=\"196.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">З</text><text x=\"124.3\" y=\"175.2\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">270°</text></g><g data-step=\"1\"><text x=\"109.6\" y=\"95.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">СЗ</text><text x=\"163.4\" y=\"120.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">315°</text></g><path data-step=\"2\" d=\"M210.0,140.0 A50,50 0 0 1 253.3,165.0\" style=\"fill:none;stroke:var(--warn);stroke-width:4\"/><text data-step=\"2\" x=\"243.0\" y=\"137.8\" text-anchor=\"middle\" style=\"fill:var(--warn);font:800 14px sans-serif\">60°</text><line x1=\"210\" y1=\"190\" x2=\"305.3\" y2=\"135.0\" style=\"stroke:var(--pen);stroke-width:4\"/><polygon points=\"305.3,135.0 298.3,147.1 291.3,135.0\" style=\"fill:var(--pen)\"/><circle cx=\"210\" cy=\"190\" r=\"5\" style=\"fill:var(--ink)\"/></svg>"
+      }
+     },
+     "subtopic": "Азимут и стороны горизонта",
+     "text": "Азимут — это угол между направлением на предмет и направлением на …",
+     "type": "choice"
+    },
+    {
+     "answer": "b",
+     "hint": "Вспомни определение из учебника: угол между направлением движения и направлением на север.",
+     "id": "q3t2",
+     "options": [
+      {
+       "id": "a",
+       "text": "От 0° до 180°",
+       "why": "180° — это только юг. Азимут может быть и больше: запад — 270°. Полный круг — 360°."
+      },
+      {
+       "id": "b",
+       "text": "От 0° до 360°"
+      },
+      {
+       "id": "c",
+       "text": "От 0° до 90°",
+       "why": "90° — это восток. Направления на юг и запад имеют азимут больше 90°."
+      },
+      {
+       "id": "d",
+       "text": "От −180° до 180°",
+       "why": "Отрицательных азимутов не бывает: отсчёт идёт от 0° по часовой стрелке до 360°."
+      }
+     ],
+     "solution": {
+      "answerLine": "От 0° до 360°",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Азимут — угол между направлением **на север** и направлением на предмет."
+       },
+       {
+        "layer": 2,
+        "text": "Его отсчитывают от севера **по часовой стрелке**, от 0° до 360°. На рисунке азимут 60°."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 385\" role=\"img\" style=\"max-width:360px;margin:0 auto\"><circle cx=\"210\" cy=\"190\" r=\"120\" style=\"fill:var(--accent);fill-opacity:.08;stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"84.0\" x2=\"210.0\" y2=\"70.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"110.8\" x2=\"294.9\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"316.0\" y1=\"190.0\" x2=\"330.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"289.2\" y1=\"269.2\" x2=\"294.9\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"210.0\" y1=\"296.0\" x2=\"210.0\" y2=\"310.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"269.2\" x2=\"125.1\" y2=\"274.9\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"104.0\" y1=\"190.0\" x2=\"90.0\" y2=\"190.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"130.8\" y1=\"110.8\" x2=\"125.1\" y2=\"105.1\" style=\"stroke:var(--ink);stroke-width:2\"/><text x=\"210.0\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:800 18px sans-serif\">С</text><line x1=\"210\" y1=\"190\" x2=\"210\" y2=\"86\" style=\"stroke:var(--accent);stroke-width:3;stroke-dasharray:6 4\"/><g data-step=\"1\"><text x=\"310.4\" y=\"95.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">СВ</text><text x=\"284.6\" y=\"148.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">45°</text></g><g data-step=\"1\"><text x=\"352.0\" y=\"196.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">В</text><text x=\"295.7\" y=\"214.8\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">90°</text></g><g data-step=\"1\"><text x=\"310.4\" y=\"296.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">ЮВ</text><text x=\"256.6\" y=\"269.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">135°</text></g><g data-step=\"1\"><text x=\"210.0\" y=\"338.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">Ю</text><text x=\"190.2\" y=\"280.7\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">180°</text></g><g data-step=\"1\"><text x=\"109.6\" y=\"296.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">ЮЗ</text><text x=\"135.4\" y=\"241.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">225°</text></g><g data-step=\"1\"><text x=\"68.0\" y=\"196.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">З</text><text x=\"124.3\" y=\"175.2\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">270°</text></g><g data-step=\"1\"><text x=\"109.6\" y=\"95.6\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 15px sans-serif\">СЗ</text><text x=\"163.4\" y=\"120.4\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">315°</text></g><path data-step=\"2\" d=\"M210.0,140.0 A50,50 0 0 1 253.3,165.0\" style=\"fill:none;stroke:var(--warn);stroke-width:4\"/><text data-step=\"2\" x=\"243.0\" y=\"137.8\" text-anchor=\"middle\" style=\"fill:var(--warn);font:800 14px sans-serif\">60°</text><line x1=\"210\" y1=\"190\" x2=\"305.3\" y2=\"135.0\" style=\"stroke:var(--pen);stroke-width:4\"/><polygon points=\"305.3,135.0 298.3,147.1 291.3,135.0\" style=\"fill:var(--pen)\"/><circle cx=\"210\" cy=\"190\" r=\"5\" style=\"fill:var(--ink)\"/></svg>"
+      }
+     },
+     "subtopic": "Азимут и стороны горизонта",
+     "text": "В каких пределах может быть азимут?",
+     "type": "choice"
+    }
+   ],
+   "type": "choice"
+  },
+  {
+   "id": "q4",
+   "answer": 40,
+   "figure": {
+    "kind": "svg",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 150\" role=\"img\"><line x1=\"30\" y1=\"50\" x2=\"270\" y2=\"50\" style=\"stroke:var(--accent);stroke-width:6;stroke-linecap:round\"/><text x=\"150.0\" y=\"30\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">на плане 4 см</text><line x1=\"30\" y1=\"42\" x2=\"30\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"90\" y1=\"42\" x2=\"90\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"150\" y1=\"42\" x2=\"150\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"210\" y1=\"42\" x2=\"210\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"270\" y1=\"42\" x2=\"270\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><text data-step=\"99\" x=\"60.0\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 14px sans-serif\">10 м</text><text data-step=\"99\" x=\"120.0\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 14px sans-serif\">10 м</text><text data-step=\"99\" x=\"180.0\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 14px sans-serif\">10 м</text><text data-step=\"99\" x=\"240.0\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 14px sans-serif\">10 м</text><text data-until=\"99\" x=\"150.0\" y=\"122\" text-anchor=\"middle\" style=\"fill:var(--pen);font:800 17px sans-serif\">на местности ? м</text><text data-step=\"99\" x=\"150.0\" y=\"122\" text-anchor=\"middle\" style=\"fill:var(--ok);font:800 17px sans-serif\">на местности 4 × 10 = 40 м</text></svg>"
+   },
+   "hint": "Узнай, сколько метров в 1 см плана, и умножь на число сантиметров.",
+   "lesson": {
+    "remember": "умножаю сантиметры плана на метры в 1 см.",
+    "text": "**Масштаб** показывает, во сколько раз расстояние на плане меньше, чем на местности.\nЗапись 1 : 1000 значит: 1 см на плане — это 1000 см на местности. А 1000 см = 10 м (в 1 м 100 см).\nЧтобы найти расстояние на местности, умножь сантиметры на плане на число метров в 1 см.\nПример: масштаб 1 : 200 (в 1 см — 2 м), на плане 7 см → $7 \\cdot 2 = 14$ м.\nЛовушка: не забудь перевести сантиметры в метры — убери два нуля.",
+    "title": "Что такое масштаб",
+    "visual": {
+     "caption": "1 : 1000 — каждый сантиметр это 10 м.",
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 150\" role=\"img\"><line x1=\"30\" y1=\"50\" x2=\"210\" y2=\"50\" style=\"stroke:var(--accent);stroke-width:6;stroke-linecap:round\"/><text x=\"120.0\" y=\"30\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">на плане 3 см</text><line x1=\"30\" y1=\"42\" x2=\"30\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"90\" y1=\"42\" x2=\"90\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"150\" y1=\"42\" x2=\"150\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"210\" y1=\"42\" x2=\"210\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><text data-step=\"0\" x=\"60.0\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 14px sans-serif\">10 м</text><text data-step=\"0\" x=\"120.0\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 14px sans-serif\">10 м</text><text data-step=\"0\" x=\"180.0\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 14px sans-serif\">10 м</text><text data-step=\"0\" x=\"120.0\" y=\"122\" text-anchor=\"middle\" style=\"fill:var(--ok);font:800 17px sans-serif\">на местности 3 × 10 = 30 м</text></svg>"
+    }
+   },
+   "order": 4,
+   "solution": {
+    "answerLine": "40 м",
+    "steps": [
+     {
+      "layer": 1,
+      "text": "Масштаб 1 : 1000 означает: 1 см на плане = 1000 см на местности = **10 м**."
+     },
+     {
+      "layer": 2,
+      "text": "На плане 4 см, значит на местности $4 \\cdot 10 = 40$ м."
+     }
+    ],
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 150\" role=\"img\"><line x1=\"30\" y1=\"50\" x2=\"270\" y2=\"50\" style=\"stroke:var(--accent);stroke-width:6;stroke-linecap:round\"/><text x=\"150.0\" y=\"30\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">на плане 4 см</text><line x1=\"30\" y1=\"42\" x2=\"30\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"90\" y1=\"42\" x2=\"90\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"150\" y1=\"42\" x2=\"150\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"210\" y1=\"42\" x2=\"210\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"270\" y1=\"42\" x2=\"270\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><text data-step=\"1\" x=\"60.0\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 14px sans-serif\">10 м</text><text data-step=\"1\" x=\"120.0\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 14px sans-serif\">10 м</text><text data-step=\"1\" x=\"180.0\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 14px sans-serif\">10 м</text><text data-step=\"1\" x=\"240.0\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 14px sans-serif\">10 м</text><text data-until=\"2\" x=\"150.0\" y=\"122\" text-anchor=\"middle\" style=\"fill:var(--pen);font:800 17px sans-serif\">на местности ? м</text><text data-step=\"2\" x=\"150.0\" y=\"122\" text-anchor=\"middle\" style=\"fill:var(--ok);font:800 17px sans-serif\">на местности 4 × 10 = 40 м</text></svg>"
+    }
+   },
+   "subtopic": "Масштаб: расстояние на местности",
+   "text": "Масштаб плана **1 : 1 000** (в 1 см — 10 м). Расстояние между домом и колодцем на плане — **4 см**. Сколько это метров на местности?",
+   "tolerance": 0.01,
+   "twins": [
+    {
+     "answer": 30,
+     "figure": {
+      "kind": "svg",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 150\" role=\"img\"><line x1=\"30\" y1=\"50\" x2=\"390\" y2=\"50\" style=\"stroke:var(--accent);stroke-width:6;stroke-linecap:round\"/><text x=\"210.0\" y=\"30\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">на плане 6 см</text><line x1=\"30\" y1=\"42\" x2=\"30\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"90\" y1=\"42\" x2=\"90\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"150\" y1=\"42\" x2=\"150\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"210\" y1=\"42\" x2=\"210\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"270\" y1=\"42\" x2=\"270\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"330\" y1=\"42\" x2=\"330\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"390\" y1=\"42\" x2=\"390\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><text data-step=\"99\" x=\"60.0\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 14px sans-serif\">5 м</text><text data-step=\"99\" x=\"120.0\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 14px sans-serif\">5 м</text><text data-step=\"99\" x=\"180.0\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 14px sans-serif\">5 м</text><text data-step=\"99\" x=\"240.0\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 14px sans-serif\">5 м</text><text data-step=\"99\" x=\"300.0\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 14px sans-serif\">5 м</text><text data-step=\"99\" x=\"360.0\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 14px sans-serif\">5 м</text><text data-until=\"99\" x=\"210.0\" y=\"122\" text-anchor=\"middle\" style=\"fill:var(--pen);font:800 17px sans-serif\">на местности ? м</text><text data-step=\"99\" x=\"210.0\" y=\"122\" text-anchor=\"middle\" style=\"fill:var(--ok);font:800 17px sans-serif\">на местности 6 × 5 = 30 м</text></svg>"
+     },
+     "hint": "Узнай, сколько метров в 1 см плана, и умножь на число сантиметров.",
+     "id": "q4t1",
+     "solution": {
+      "answerLine": "30 м",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Масштаб 1 : 500 означает: 1 см на плане = 500 см на местности = **5 м**."
+       },
+       {
+        "layer": 2,
+        "text": "На плане 6 см, значит на местности $6 \\cdot 5 = 30$ м."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 150\" role=\"img\"><line x1=\"30\" y1=\"50\" x2=\"390\" y2=\"50\" style=\"stroke:var(--accent);stroke-width:6;stroke-linecap:round\"/><text x=\"210.0\" y=\"30\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">на плане 6 см</text><line x1=\"30\" y1=\"42\" x2=\"30\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"90\" y1=\"42\" x2=\"90\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"150\" y1=\"42\" x2=\"150\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"210\" y1=\"42\" x2=\"210\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"270\" y1=\"42\" x2=\"270\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"330\" y1=\"42\" x2=\"330\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"390\" y1=\"42\" x2=\"390\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><text data-step=\"1\" x=\"60.0\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 14px sans-serif\">5 м</text><text data-step=\"1\" x=\"120.0\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 14px sans-serif\">5 м</text><text data-step=\"1\" x=\"180.0\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 14px sans-serif\">5 м</text><text data-step=\"1\" x=\"240.0\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 14px sans-serif\">5 м</text><text data-step=\"1\" x=\"300.0\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 14px sans-serif\">5 м</text><text data-step=\"1\" x=\"360.0\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 14px sans-serif\">5 м</text><text data-until=\"2\" x=\"210.0\" y=\"122\" text-anchor=\"middle\" style=\"fill:var(--pen);font:800 17px sans-serif\">на местности ? м</text><text data-step=\"2\" x=\"210.0\" y=\"122\" text-anchor=\"middle\" style=\"fill:var(--ok);font:800 17px sans-serif\">на местности 6 × 5 = 30 м</text></svg>"
+      }
+     },
+     "subtopic": "Масштаб: расстояние на местности",
+     "text": "Масштаб плана **1 : 500** (в 1 см — 5 м). Расстояние между домом и колодцем на плане — **6 см**. Сколько это метров на местности?",
+     "tolerance": 0.01,
+     "type": "number",
+     "typicalWrong": [
+      {
+       "value": 3000,
+       "why": "Ты получил сантиметры, а не метры: 6 · 500 = 3000 см. Переведи в метры: в 1 м — 100 см, значит 3000 см = 30 м."
+      },
+      {
+       "value": 5,
+       "why": "Это расстояние только для **одного** сантиметра. А на плане 6 см — умножь 5 м на 6."
+      },
+      {
+       "value": 11,
+       "why": "Ты сложил числа. Каждый сантиметр плана — это 5 м, поэтому нужно **умножить**: 6 · 5."
+      }
+     ],
+     "unit": "м"
+    },
+    {
+     "answer": 60,
+     "figure": {
+      "kind": "svg",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 150\" role=\"img\"><line x1=\"30\" y1=\"50\" x2=\"210\" y2=\"50\" style=\"stroke:var(--accent);stroke-width:6;stroke-linecap:round\"/><text x=\"120.0\" y=\"30\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">на плане 3 см</text><line x1=\"30\" y1=\"42\" x2=\"30\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"90\" y1=\"42\" x2=\"90\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"150\" y1=\"42\" x2=\"150\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"210\" y1=\"42\" x2=\"210\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><text data-step=\"99\" x=\"60.0\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 14px sans-serif\">20 м</text><text data-step=\"99\" x=\"120.0\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 14px sans-serif\">20 м</text><text data-step=\"99\" x=\"180.0\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 14px sans-serif\">20 м</text><text data-until=\"99\" x=\"120.0\" y=\"122\" text-anchor=\"middle\" style=\"fill:var(--pen);font:800 17px sans-serif\">на местности ? м</text><text data-step=\"99\" x=\"120.0\" y=\"122\" text-anchor=\"middle\" style=\"fill:var(--ok);font:800 17px sans-serif\">на местности 3 × 20 = 60 м</text></svg>"
+     },
+     "hint": "Узнай, сколько метров в 1 см плана, и умножь на число сантиметров.",
+     "id": "q4t2",
+     "solution": {
+      "answerLine": "60 м",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Масштаб 1 : 2000 означает: 1 см на плане = 2000 см на местности = **20 м**."
+       },
+       {
+        "layer": 2,
+        "text": "На плане 3 см, значит на местности $3 \\cdot 20 = 60$ м."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 150\" role=\"img\"><line x1=\"30\" y1=\"50\" x2=\"210\" y2=\"50\" style=\"stroke:var(--accent);stroke-width:6;stroke-linecap:round\"/><text x=\"120.0\" y=\"30\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">на плане 3 см</text><line x1=\"30\" y1=\"42\" x2=\"30\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"90\" y1=\"42\" x2=\"90\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"150\" y1=\"42\" x2=\"150\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"210\" y1=\"42\" x2=\"210\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><text data-step=\"1\" x=\"60.0\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 14px sans-serif\">20 м</text><text data-step=\"1\" x=\"120.0\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 14px sans-serif\">20 м</text><text data-step=\"1\" x=\"180.0\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 14px sans-serif\">20 м</text><text data-until=\"2\" x=\"120.0\" y=\"122\" text-anchor=\"middle\" style=\"fill:var(--pen);font:800 17px sans-serif\">на местности ? м</text><text data-step=\"2\" x=\"120.0\" y=\"122\" text-anchor=\"middle\" style=\"fill:var(--ok);font:800 17px sans-serif\">на местности 3 × 20 = 60 м</text></svg>"
+      }
+     },
+     "subtopic": "Масштаб: расстояние на местности",
+     "text": "Масштаб плана **1 : 2 000** (в 1 см — 20 м). Расстояние между домом и колодцем на плане — **3 см**. Сколько это метров на местности?",
+     "tolerance": 0.01,
+     "type": "number",
+     "typicalWrong": [
+      {
+       "value": 6000,
+       "why": "Ты получил сантиметры, а не метры: 3 · 2000 = 6000 см. Переведи в метры: в 1 м — 100 см, значит 6000 см = 60 м."
+      },
+      {
+       "value": 20,
+       "why": "Это расстояние только для **одного** сантиметра. А на плане 3 см — умножь 20 м на 3."
+      },
+      {
+       "value": 23,
+       "why": "Ты сложил числа. Каждый сантиметр плана — это 20 м, поэтому нужно **умножить**: 3 · 20."
+      }
+     ],
+     "unit": "м"
+    }
+   ],
+   "type": "number",
+   "typicalWrong": [
+    {
+     "value": 4000,
+     "why": "Ты получил сантиметры, а не метры: 4 · 1000 = 4000 см. Переведи в метры: в 1 м — 100 см, значит 4000 см = 40 м."
+    },
+    {
+     "value": 10,
+     "why": "Это расстояние только для **одного** сантиметра. А на плане 4 см — умножь 10 м на 4."
+    },
+    {
+     "value": 14,
+     "why": "Ты сложил числа. Каждый сантиметр плана — это 10 м, поэтому нужно **умножить**: 4 · 10."
+    }
+   ],
+   "unit": "м"
+  },
+  {
+   "id": "q5",
+   "answer": "b",
+   "hint": "Подумай о размере и форме объекта: большой по площади, длинный и узкий или маленький, как точка?",
+   "lesson": {
+    "remember": "пятно — масштабный, линия — линейный, точка — внемасштабный.",
+    "text": "Условные знаки — «азбука» плана. Их делят на четыре вида.\n**Масштабные (площадные)** — для больших по площади объектов: лес, озеро, болото, луг. Их границы рисуют в масштабе.\n**Линейные** — для длинных и узких объектов: река, ручей, дорога, ЛЭП, граница.\n**Внемасштабные (точечные)** — для маленьких объектов: колодец, мост, памятник, завод, отдельное дерево.\n**Пояснительные** — подписи и числа: высота деревьев, ширина реки, глубина.\nСпроси себя: на плане этот объект — пятно, линия или точка?",
+    "title": "Четыре вида условных знаков",
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 210\" role=\"img\"><rect x=\"15\" y=\"20\" width=\"120\" height=\"90\" rx=\"10\" style=\"fill:var(--ok);fill-opacity:.25;stroke:var(--ok);stroke-width:2;stroke-dasharray:5 4\"/><circle cx=\"40\" cy=\"50\" r=\"8\" style=\"fill:none;stroke:var(--ok);stroke-width:2.5\"/><line x1=\"40\" y1=\"58\" x2=\"40\" y2=\"64\" style=\"stroke:var(--ok);stroke-width:2.5\"/><circle cx=\"75\" cy=\"45\" r=\"8\" style=\"fill:none;stroke:var(--ok);stroke-width:2.5\"/><line x1=\"75\" y1=\"53\" x2=\"75\" y2=\"59\" style=\"stroke:var(--ok);stroke-width:2.5\"/><circle cx=\"110\" cy=\"55\" r=\"8\" style=\"fill:none;stroke:var(--ok);stroke-width:2.5\"/><line x1=\"110\" y1=\"63\" x2=\"110\" y2=\"69\" style=\"stroke:var(--ok);stroke-width:2.5\"/><circle cx=\"55\" cy=\"85\" r=\"8\" style=\"fill:none;stroke:var(--ok);stroke-width:2.5\"/><line x1=\"55\" y1=\"93\" x2=\"55\" y2=\"99\" style=\"stroke:var(--ok);stroke-width:2.5\"/><circle cx=\"95\" cy=\"88\" r=\"8\" style=\"fill:none;stroke:var(--ok);stroke-width:2.5\"/><line x1=\"95\" y1=\"96\" x2=\"95\" y2=\"102\" style=\"stroke:var(--ok);stroke-width:2.5\"/><path d=\"M160 30 C190 60, 220 40, 250 75 S 290 100, 300 110\" style=\"fill:none;stroke:var(--accent);stroke-width:5\"/><circle cx=\"370\" cy=\"65\" r=\"14\" style=\"fill:none;stroke:var(--ink);stroke-width:3\"/><circle cx=\"370\" cy=\"65\" r=\"4\" style=\"fill:var(--ink)\"/><g><text x=\"75\" y=\"145\" text-anchor=\"middle\" style=\"fill:var(--ok);font:800 15px sans-serif\">масштабный</text><text x=\"75\" y=\"166\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">лес, озеро, луг</text><text x=\"230\" y=\"145\" text-anchor=\"middle\" style=\"fill:var(--accent);font:800 15px sans-serif\">линейный</text><text x=\"230\" y=\"166\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">река, дорога, ЛЭП</text><text x=\"370\" y=\"145\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 15px sans-serif\">внемасштабный</text><text x=\"370\" y=\"166\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">колодец, мост, завод</text><text x=\"220\" y=\"198\" text-anchor=\"middle\" style=\"fill:var(--warn);font:700 13px sans-serif\">+ пояснительные: подписи и числа (высота, ширина, глубина)</text></g></svg>"
+    }
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Масштабный (площадной)",
+     "why": "Это не тот вид. Масштабными знаками рисуют объекты, которые занимают **большую площадь** и видны на плане в своём размере: лес, озеро, луг, сад. А река — длинный и узкий объект."
+    },
+    {
+     "id": "b",
+     "text": "Линейный"
+    },
+    {
+     "id": "c",
+     "text": "Внемасштабный (точечный)",
+     "why": "Это не тот вид. Внемасштабными знаками рисуют **маленькие** объекты, которые в масштабе были бы точкой: колодец, мост, отдельное дерево, завод. А река — длинный и узкий объект."
+    },
+    {
+     "id": "d",
+     "text": "Пояснительный",
+     "why": "Это не тот вид. Пояснительные знаки — это **подписи и числа** рядом с другим знаком: высота деревьев, ширина реки, глубина. Сами по себе объект они не рисуют. А река — длинный и узкий объект."
+    }
+   ],
+   "order": 5,
+   "solution": {
+    "answerLine": "Линейный",
+    "steps": [
+     {
+      "layer": 1,
+      "text": "Знаки делят по тому, как выглядит объект на плане: площадь, линия или точка. Числа и подписи — пояснительные."
+     },
+     {
+      "layer": 1,
+      "text": "Река — длинный и узкий объект. Значит, знак **линейный**."
+     }
+    ],
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 210\" role=\"img\"><rect x=\"15\" y=\"20\" width=\"120\" height=\"90\" rx=\"10\" style=\"fill:var(--ok);fill-opacity:.25;stroke:var(--ok);stroke-width:2;stroke-dasharray:5 4\"/><circle cx=\"40\" cy=\"50\" r=\"8\" style=\"fill:none;stroke:var(--ok);stroke-width:2.5\"/><line x1=\"40\" y1=\"58\" x2=\"40\" y2=\"64\" style=\"stroke:var(--ok);stroke-width:2.5\"/><circle cx=\"75\" cy=\"45\" r=\"8\" style=\"fill:none;stroke:var(--ok);stroke-width:2.5\"/><line x1=\"75\" y1=\"53\" x2=\"75\" y2=\"59\" style=\"stroke:var(--ok);stroke-width:2.5\"/><circle cx=\"110\" cy=\"55\" r=\"8\" style=\"fill:none;stroke:var(--ok);stroke-width:2.5\"/><line x1=\"110\" y1=\"63\" x2=\"110\" y2=\"69\" style=\"stroke:var(--ok);stroke-width:2.5\"/><circle cx=\"55\" cy=\"85\" r=\"8\" style=\"fill:none;stroke:var(--ok);stroke-width:2.5\"/><line x1=\"55\" y1=\"93\" x2=\"55\" y2=\"99\" style=\"stroke:var(--ok);stroke-width:2.5\"/><circle cx=\"95\" cy=\"88\" r=\"8\" style=\"fill:none;stroke:var(--ok);stroke-width:2.5\"/><line x1=\"95\" y1=\"96\" x2=\"95\" y2=\"102\" style=\"stroke:var(--ok);stroke-width:2.5\"/><path d=\"M160 30 C190 60, 220 40, 250 75 S 290 100, 300 110\" style=\"fill:none;stroke:var(--accent);stroke-width:5\"/><circle cx=\"370\" cy=\"65\" r=\"14\" style=\"fill:none;stroke:var(--ink);stroke-width:3\"/><circle cx=\"370\" cy=\"65\" r=\"4\" style=\"fill:var(--ink)\"/><g data-step=\"1\"><text x=\"75\" y=\"145\" text-anchor=\"middle\" style=\"fill:var(--ok);font:800 15px sans-serif\">масштабный</text><text x=\"75\" y=\"166\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">лес, озеро, луг</text><text x=\"230\" y=\"145\" text-anchor=\"middle\" style=\"fill:var(--accent);font:800 15px sans-serif\">линейный</text><text x=\"230\" y=\"166\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">река, дорога, ЛЭП</text><text x=\"370\" y=\"145\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 15px sans-serif\">внемасштабный</text><text x=\"370\" y=\"166\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">колодец, мост, завод</text><text x=\"220\" y=\"198\" text-anchor=\"middle\" style=\"fill:var(--warn);font:700 13px sans-serif\">+ пояснительные: подписи и числа (высота, ширина, глубина)</text></g></svg>"
+    }
+   },
+   "subtopic": "Виды условных знаков",
+   "text": "Каким видом условных знаков на плане обозначают **реку**?",
+   "twins": [
+    {
+     "answer": "c",
+     "hint": "Подумай о размере и форме объекта: большой по площади, длинный и узкий или маленький, как точка?",
+     "id": "q5t1",
+     "options": [
+      {
+       "id": "a",
+       "text": "Масштабный (площадной)",
+       "why": "Это не тот вид. Масштабными знаками рисуют объекты, которые занимают **большую площадь** и видны на плане в своём размере: лес, озеро, луг, сад. А колодец — маленький объект, в масштабе он был бы точкой."
+      },
+      {
+       "id": "b",
+       "text": "Линейный",
+       "why": "Это не тот вид. Линейными знаками рисуют **длинные и узкие** объекты: реки, дороги, ЛЭП, границы. А колодец — маленький объект, в масштабе он был бы точкой."
+      },
+      {
+       "id": "c",
+       "text": "Внемасштабный (точечный)"
+      },
+      {
+       "id": "d",
+       "text": "Пояснительный",
+       "why": "Это не тот вид. Пояснительные знаки — это **подписи и числа** рядом с другим знаком: высота деревьев, ширина реки, глубина. Сами по себе объект они не рисуют. А колодец — маленький объект, в масштабе он был бы точкой."
+      }
+     ],
+     "solution": {
+      "answerLine": "Внемасштабный (точечный)",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Знаки делят по тому, как выглядит объект на плане: площадь, линия или точка. Числа и подписи — пояснительные."
+       },
+       {
+        "layer": 1,
+        "text": "Колодец — маленький объект, в масштабе он был бы точкой. Значит, знак **внемасштабный (точечный)**."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 210\" role=\"img\"><rect x=\"15\" y=\"20\" width=\"120\" height=\"90\" rx=\"10\" style=\"fill:var(--ok);fill-opacity:.25;stroke:var(--ok);stroke-width:2;stroke-dasharray:5 4\"/><circle cx=\"40\" cy=\"50\" r=\"8\" style=\"fill:none;stroke:var(--ok);stroke-width:2.5\"/><line x1=\"40\" y1=\"58\" x2=\"40\" y2=\"64\" style=\"stroke:var(--ok);stroke-width:2.5\"/><circle cx=\"75\" cy=\"45\" r=\"8\" style=\"fill:none;stroke:var(--ok);stroke-width:2.5\"/><line x1=\"75\" y1=\"53\" x2=\"75\" y2=\"59\" style=\"stroke:var(--ok);stroke-width:2.5\"/><circle cx=\"110\" cy=\"55\" r=\"8\" style=\"fill:none;stroke:var(--ok);stroke-width:2.5\"/><line x1=\"110\" y1=\"63\" x2=\"110\" y2=\"69\" style=\"stroke:var(--ok);stroke-width:2.5\"/><circle cx=\"55\" cy=\"85\" r=\"8\" style=\"fill:none;stroke:var(--ok);stroke-width:2.5\"/><line x1=\"55\" y1=\"93\" x2=\"55\" y2=\"99\" style=\"stroke:var(--ok);stroke-width:2.5\"/><circle cx=\"95\" cy=\"88\" r=\"8\" style=\"fill:none;stroke:var(--ok);stroke-width:2.5\"/><line x1=\"95\" y1=\"96\" x2=\"95\" y2=\"102\" style=\"stroke:var(--ok);stroke-width:2.5\"/><path d=\"M160 30 C190 60, 220 40, 250 75 S 290 100, 300 110\" style=\"fill:none;stroke:var(--accent);stroke-width:5\"/><circle cx=\"370\" cy=\"65\" r=\"14\" style=\"fill:none;stroke:var(--ink);stroke-width:3\"/><circle cx=\"370\" cy=\"65\" r=\"4\" style=\"fill:var(--ink)\"/><g data-step=\"1\"><text x=\"75\" y=\"145\" text-anchor=\"middle\" style=\"fill:var(--ok);font:800 15px sans-serif\">масштабный</text><text x=\"75\" y=\"166\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">лес, озеро, луг</text><text x=\"230\" y=\"145\" text-anchor=\"middle\" style=\"fill:var(--accent);font:800 15px sans-serif\">линейный</text><text x=\"230\" y=\"166\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">река, дорога, ЛЭП</text><text x=\"370\" y=\"145\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 15px sans-serif\">внемасштабный</text><text x=\"370\" y=\"166\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">колодец, мост, завод</text><text x=\"220\" y=\"198\" text-anchor=\"middle\" style=\"fill:var(--warn);font:700 13px sans-serif\">+ пояснительные: подписи и числа (высота, ширина, глубина)</text></g></svg>"
+      }
+     },
+     "subtopic": "Виды условных знаков",
+     "text": "Каким видом условных знаков на плане обозначают **колодец**?",
+     "type": "choice"
+    },
+    {
+     "answer": "a",
+     "hint": "Подумай о размере и форме объекта: большой по площади, длинный и узкий или маленький, как точка?",
+     "id": "q5t2",
+     "options": [
+      {
+       "id": "a",
+       "text": "Масштабный (площадной)"
+      },
+      {
+       "id": "b",
+       "text": "Линейный",
+       "why": "Это не тот вид. Линейными знаками рисуют **длинные и узкие** объекты: реки, дороги, ЛЭП, границы. А озеро — занимает большую площадь, его размер можно показать в масштабе."
+      },
+      {
+       "id": "c",
+       "text": "Внемасштабный (точечный)",
+       "why": "Это не тот вид. Внемасштабными знаками рисуют **маленькие** объекты, которые в масштабе были бы точкой: колодец, мост, отдельное дерево, завод. А озеро — занимает большую площадь, его размер можно показать в масштабе."
+      },
+      {
+       "id": "d",
+       "text": "Пояснительный",
+       "why": "Это не тот вид. Пояснительные знаки — это **подписи и числа** рядом с другим знаком: высота деревьев, ширина реки, глубина. Сами по себе объект они не рисуют. А озеро — занимает большую площадь, его размер можно показать в масштабе."
+      }
+     ],
+     "solution": {
+      "answerLine": "Масштабный (площадной)",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Знаки делят по тому, как выглядит объект на плане: площадь, линия или точка. Числа и подписи — пояснительные."
+       },
+       {
+        "layer": 1,
+        "text": "Озеро — занимает большую площадь, его размер можно показать в масштабе. Значит, знак **масштабный (площадной)**."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 210\" role=\"img\"><rect x=\"15\" y=\"20\" width=\"120\" height=\"90\" rx=\"10\" style=\"fill:var(--ok);fill-opacity:.25;stroke:var(--ok);stroke-width:2;stroke-dasharray:5 4\"/><circle cx=\"40\" cy=\"50\" r=\"8\" style=\"fill:none;stroke:var(--ok);stroke-width:2.5\"/><line x1=\"40\" y1=\"58\" x2=\"40\" y2=\"64\" style=\"stroke:var(--ok);stroke-width:2.5\"/><circle cx=\"75\" cy=\"45\" r=\"8\" style=\"fill:none;stroke:var(--ok);stroke-width:2.5\"/><line x1=\"75\" y1=\"53\" x2=\"75\" y2=\"59\" style=\"stroke:var(--ok);stroke-width:2.5\"/><circle cx=\"110\" cy=\"55\" r=\"8\" style=\"fill:none;stroke:var(--ok);stroke-width:2.5\"/><line x1=\"110\" y1=\"63\" x2=\"110\" y2=\"69\" style=\"stroke:var(--ok);stroke-width:2.5\"/><circle cx=\"55\" cy=\"85\" r=\"8\" style=\"fill:none;stroke:var(--ok);stroke-width:2.5\"/><line x1=\"55\" y1=\"93\" x2=\"55\" y2=\"99\" style=\"stroke:var(--ok);stroke-width:2.5\"/><circle cx=\"95\" cy=\"88\" r=\"8\" style=\"fill:none;stroke:var(--ok);stroke-width:2.5\"/><line x1=\"95\" y1=\"96\" x2=\"95\" y2=\"102\" style=\"stroke:var(--ok);stroke-width:2.5\"/><path d=\"M160 30 C190 60, 220 40, 250 75 S 290 100, 300 110\" style=\"fill:none;stroke:var(--accent);stroke-width:5\"/><circle cx=\"370\" cy=\"65\" r=\"14\" style=\"fill:none;stroke:var(--ink);stroke-width:3\"/><circle cx=\"370\" cy=\"65\" r=\"4\" style=\"fill:var(--ink)\"/><g data-step=\"1\"><text x=\"75\" y=\"145\" text-anchor=\"middle\" style=\"fill:var(--ok);font:800 15px sans-serif\">масштабный</text><text x=\"75\" y=\"166\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">лес, озеро, луг</text><text x=\"230\" y=\"145\" text-anchor=\"middle\" style=\"fill:var(--accent);font:800 15px sans-serif\">линейный</text><text x=\"230\" y=\"166\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">река, дорога, ЛЭП</text><text x=\"370\" y=\"145\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 15px sans-serif\">внемасштабный</text><text x=\"370\" y=\"166\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">колодец, мост, завод</text><text x=\"220\" y=\"198\" text-anchor=\"middle\" style=\"fill:var(--warn);font:700 13px sans-serif\">+ пояснительные: подписи и числа (высота, ширина, глубина)</text></g></svg>"
+      }
+     },
+     "subtopic": "Виды условных знаков",
+     "text": "Каким видом условных знаков на плане обозначают **озеро**?",
+     "type": "choice"
+    }
+   ],
+   "type": "choice"
+  },
+  {
+   "id": "q6",
+   "answer": "b",
+   "figure": {
+    "kind": "svg",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 150\" role=\"img\" style=\"max-width:380px;margin:0 auto\"><rect x=\"10\" y=\"15\" width=\"380\" height=\"120\" rx=\"10\" style=\"fill:var(--ok);fill-opacity:.12;stroke:var(--ok);stroke-width:2;stroke-dasharray:5 4\"/><text x=\"75\" y=\"85\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 18px sans-serif\">ель, бер.</text><circle cx=\"165\" cy=\"65\" r=\"13\" style=\"fill:none;stroke:var(--ok);stroke-width:3\"/><line x1=\"165\" y1=\"78\" x2=\"165\" y2=\"92\" style=\"stroke:var(--ok);stroke-width:3\"/><text x=\"240\" y=\"66\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 22px sans-serif\">20</text><line x1=\"212\" y1=\"76\" x2=\"268\" y2=\"76\" style=\"stroke:var(--ink);stroke-width:2\"/><text x=\"240\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 22px sans-serif\">0,2</text><text x=\"315\" y=\"84\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 22px sans-serif\">6</text></svg>"
+   },
+   "hint": "Вспомни рис. 32: сверху дроби — высота, снизу — толщина, отдельное число справа — расстояние.",
+   "lesson": {
+    "remember": "сверху высота, снизу толщина, справа расстояние.",
+    "text": "Рядом со знаком леса пишут, какие там деревья и какие они.\nСначала — породы деревьев сокращённо: «ель», «бер.» (берёза), «топ.» (тополь), «сосн.» (сосна).\nДальше — дробь: **сверху** высота деревьев в метрах, **снизу** толщина стволов в метрах.\n**Число справа** от дроби — расстояние между деревьями в метрах.\nПример: «сосн. 18/0,3 5» — сосновый лес, деревья высотой 18 м, толщиной 0,3 м, растут через 5 м.\nЛовушка: толщину пишут в метрах, поэтому 30 см = 0,3 м.",
+    "title": "Как читать пояснительные знаки леса",
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 150\" role=\"img\" style=\"max-width:380px;margin:0 auto\"><rect x=\"10\" y=\"15\" width=\"380\" height=\"120\" rx=\"10\" style=\"fill:var(--ok);fill-opacity:.12;stroke:var(--ok);stroke-width:2;stroke-dasharray:5 4\"/><text x=\"75\" y=\"85\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 18px sans-serif\">сосн.</text><circle cx=\"165\" cy=\"65\" r=\"13\" style=\"fill:none;stroke:var(--ok);stroke-width:3\"/><line x1=\"165\" y1=\"78\" x2=\"165\" y2=\"92\" style=\"stroke:var(--ok);stroke-width:3\"/><text x=\"240\" y=\"66\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 22px sans-serif\">18</text><line x1=\"212\" y1=\"76\" x2=\"268\" y2=\"76\" style=\"stroke:var(--ink);stroke-width:2\"/><text x=\"240\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 22px sans-serif\">0,3</text><text x=\"315\" y=\"84\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 22px sans-serif\">5</text></svg>"
+    }
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Толщина стволов",
+     "why": "Не то место в записи. Толщину стволов пишут **под чертой** дроби (снизу), обычно это число меньше 1 — в метрах. А число 20 стоит в другом месте: высоту деревьев пишут **над чертой** дроби (сверху)."
+    },
+    {
+     "id": "b",
+     "text": "Высота деревьев"
+    },
+    {
+     "id": "c",
+     "text": "Расстояние между деревьями",
+     "why": "Не то место в записи. Расстояние между деревьями пишут **отдельным числом справа** от дроби. А число 20 стоит в другом месте: высоту деревьев пишут **над чертой** дроби (сверху)."
+    },
+    {
+     "id": "d",
+     "text": "Ширина реки",
+     "why": "Ширину реки пишут у знака реки, а здесь знак **леса** — числа рассказывают о деревьях."
+    }
+   ],
+   "order": 6,
+   "solution": {
+    "answerLine": "Высота деревьев — 20 м",
+    "steps": [
+     {
+      "layer": 0,
+      "text": "В пояснительной записи леса: **над чертой** — высота деревьев (м), **под чертой** — толщина стволов (м), **число справа** — расстояние между деревьями (м)."
+     },
+     {
+      "layer": 1,
+      "text": "Число 20 стоит над чертой — это высота деревьев."
+     }
+    ],
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 150\" role=\"img\" style=\"max-width:380px;margin:0 auto\"><rect x=\"10\" y=\"15\" width=\"380\" height=\"120\" rx=\"10\" style=\"fill:var(--ok);fill-opacity:.12;stroke:var(--ok);stroke-width:2;stroke-dasharray:5 4\"/><text x=\"75\" y=\"85\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 18px sans-serif\">ель, бер.</text><circle cx=\"165\" cy=\"65\" r=\"13\" style=\"fill:none;stroke:var(--ok);stroke-width:3\"/><line x1=\"165\" y1=\"78\" x2=\"165\" y2=\"92\" style=\"stroke:var(--ok);stroke-width:3\"/><text x=\"240\" y=\"66\" text-anchor=\"middle\" style=\"fill:var(--pen);font:800 22px sans-serif\">20</text><line x1=\"212\" y1=\"76\" x2=\"268\" y2=\"76\" style=\"stroke:var(--ink);stroke-width:2\"/><text x=\"240\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 22px sans-serif\">0,2</text><text x=\"315\" y=\"84\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 22px sans-serif\">6</text><g data-step=\"1\"><rect x=\"210\" y=\"36\" width=\"60\" height=\"32\" rx=\"6\" style=\"fill:none;stroke:var(--pen);stroke-width:3\"/><text x=\"200\" y=\"128\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">высота деревьев, м</text></g></svg>"
+    }
+   },
+   "subtopic": "Пояснительные знаки леса",
+   "text": "На плане у знака леса стоит запись: «ель, бер.», дробь $\\frac{20}{0,2}$ и число 6. Что означает число **20**?",
+   "twins": [
+    {
+     "answer": "d",
+     "figure": {
+      "kind": "svg",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 150\" role=\"img\" style=\"max-width:380px;margin:0 auto\"><rect x=\"10\" y=\"15\" width=\"380\" height=\"120\" rx=\"10\" style=\"fill:var(--ok);fill-opacity:.12;stroke:var(--ok);stroke-width:2;stroke-dasharray:5 4\"/><text x=\"75\" y=\"85\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 18px sans-serif\">топ., ива</text><circle cx=\"165\" cy=\"65\" r=\"13\" style=\"fill:none;stroke:var(--ok);stroke-width:3\"/><line x1=\"165\" y1=\"78\" x2=\"165\" y2=\"92\" style=\"stroke:var(--ok);stroke-width:3\"/><text x=\"240\" y=\"66\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 22px sans-serif\">12</text><line x1=\"212\" y1=\"76\" x2=\"268\" y2=\"76\" style=\"stroke:var(--ink);stroke-width:2\"/><text x=\"240\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 22px sans-serif\">0,4</text><text x=\"315\" y=\"84\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 22px sans-serif\">7</text></svg>"
+     },
+     "hint": "Вспомни рис. 32: сверху дроби — высота, снизу — толщина, отдельное число справа — расстояние.",
+     "id": "q6t1",
+     "options": [
+      {
+       "id": "a",
+       "text": "Высота деревьев",
+       "why": "Не то место в записи. Высоту деревьев пишут **над чертой** дроби (сверху). А число 7 стоит в другом месте: расстояние между деревьями пишут **отдельным числом справа** от дроби."
+      },
+      {
+       "id": "b",
+       "text": "Толщина стволов",
+       "why": "Не то место в записи. Толщину стволов пишут **под чертой** дроби (снизу), обычно это число меньше 1 — в метрах. А число 7 стоит в другом месте: расстояние между деревьями пишут **отдельным числом справа** от дроби."
+      },
+      {
+       "id": "c",
+       "text": "Ширина реки",
+       "why": "Ширину реки пишут у знака реки, а здесь знак **леса** — числа рассказывают о деревьях."
+      },
+      {
+       "id": "d",
+       "text": "Расстояние между деревьями"
+      }
+     ],
+     "solution": {
+      "answerLine": "Расстояние между деревьями — 7 м",
+      "steps": [
+       {
+        "layer": 0,
+        "text": "В пояснительной записи леса: **над чертой** — высота деревьев (м), **под чертой** — толщина стволов (м), **число справа** — расстояние между деревьями (м)."
+       },
+       {
+        "layer": 1,
+        "text": "Число 7 стоит справа от дроби — это расстояние между деревьями."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 150\" role=\"img\" style=\"max-width:380px;margin:0 auto\"><rect x=\"10\" y=\"15\" width=\"380\" height=\"120\" rx=\"10\" style=\"fill:var(--ok);fill-opacity:.12;stroke:var(--ok);stroke-width:2;stroke-dasharray:5 4\"/><text x=\"75\" y=\"85\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 18px sans-serif\">топ., ива</text><circle cx=\"165\" cy=\"65\" r=\"13\" style=\"fill:none;stroke:var(--ok);stroke-width:3\"/><line x1=\"165\" y1=\"78\" x2=\"165\" y2=\"92\" style=\"stroke:var(--ok);stroke-width:3\"/><text x=\"240\" y=\"66\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 22px sans-serif\">12</text><line x1=\"212\" y1=\"76\" x2=\"268\" y2=\"76\" style=\"stroke:var(--ink);stroke-width:2\"/><text x=\"240\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 22px sans-serif\">0,4</text><text x=\"315\" y=\"84\" text-anchor=\"middle\" style=\"fill:var(--pen);font:800 22px sans-serif\">7</text><g data-step=\"1\"><rect x=\"285\" y=\"54\" width=\"60\" height=\"32\" rx=\"6\" style=\"fill:none;stroke:var(--pen);stroke-width:3\"/><text x=\"200\" y=\"128\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">между деревьями, м</text></g></svg>"
+      }
+     },
+     "subtopic": "Пояснительные знаки леса",
+     "text": "На плане у знака леса стоит запись: «топ., ива», дробь $\\frac{12}{0,4}$ и число 7. Что означает число **7**?",
+     "type": "choice"
+    },
+    {
+     "answer": "a",
+     "figure": {
+      "kind": "svg",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 150\" role=\"img\" style=\"max-width:380px;margin:0 auto\"><rect x=\"10\" y=\"15\" width=\"380\" height=\"120\" rx=\"10\" style=\"fill:var(--ok);fill-opacity:.12;stroke:var(--ok);stroke-width:2;stroke-dasharray:5 4\"/><text x=\"75\" y=\"85\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 18px sans-serif\">сосн.</text><circle cx=\"165\" cy=\"65\" r=\"13\" style=\"fill:none;stroke:var(--ok);stroke-width:3\"/><line x1=\"165\" y1=\"78\" x2=\"165\" y2=\"92\" style=\"stroke:var(--ok);stroke-width:3\"/><text x=\"240\" y=\"66\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 22px sans-serif\">15</text><line x1=\"212\" y1=\"76\" x2=\"268\" y2=\"76\" style=\"stroke:var(--ink);stroke-width:2\"/><text x=\"240\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 22px sans-serif\">0,3</text><text x=\"315\" y=\"84\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 22px sans-serif\">4</text></svg>"
+     },
+     "hint": "Вспомни рис. 32: сверху дроби — высота, снизу — толщина, отдельное число справа — расстояние.",
+     "id": "q6t2",
+     "options": [
+      {
+       "id": "a",
+       "text": "Толщина стволов"
+      },
+      {
+       "id": "b",
+       "text": "Высота деревьев",
+       "why": "Не то место в записи. Высоту деревьев пишут **над чертой** дроби (сверху). А число 0,3 стоит в другом месте: толщину стволов пишут **под чертой** дроби (снизу), обычно это число меньше 1 — в метрах."
+      },
+      {
+       "id": "c",
+       "text": "Расстояние между деревьями",
+       "why": "Не то место в записи. Расстояние между деревьями пишут **отдельным числом справа** от дроби. А число 0,3 стоит в другом месте: толщину стволов пишут **под чертой** дроби (снизу), обычно это число меньше 1 — в метрах."
+      },
+      {
+       "id": "d",
+       "text": "Ширина реки",
+       "why": "Ширину реки пишут у знака реки, а здесь знак **леса** — числа рассказывают о деревьях."
+      }
+     ],
+     "solution": {
+      "answerLine": "Толщина стволов — 0,3 м",
+      "steps": [
+       {
+        "layer": 0,
+        "text": "В пояснительной записи леса: **над чертой** — высота деревьев (м), **под чертой** — толщина стволов (м), **число справа** — расстояние между деревьями (м)."
+       },
+       {
+        "layer": 1,
+        "text": "Число 0,3 стоит под чертой — это толщина стволов."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 150\" role=\"img\" style=\"max-width:380px;margin:0 auto\"><rect x=\"10\" y=\"15\" width=\"380\" height=\"120\" rx=\"10\" style=\"fill:var(--ok);fill-opacity:.12;stroke:var(--ok);stroke-width:2;stroke-dasharray:5 4\"/><text x=\"75\" y=\"85\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 18px sans-serif\">сосн.</text><circle cx=\"165\" cy=\"65\" r=\"13\" style=\"fill:none;stroke:var(--ok);stroke-width:3\"/><line x1=\"165\" y1=\"78\" x2=\"165\" y2=\"92\" style=\"stroke:var(--ok);stroke-width:3\"/><text x=\"240\" y=\"66\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 22px sans-serif\">15</text><line x1=\"212\" y1=\"76\" x2=\"268\" y2=\"76\" style=\"stroke:var(--ink);stroke-width:2\"/><text x=\"240\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--pen);font:800 22px sans-serif\">0,3</text><text x=\"315\" y=\"84\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 22px sans-serif\">4</text><g data-step=\"1\"><rect x=\"210\" y=\"70\" width=\"60\" height=\"32\" rx=\"6\" style=\"fill:none;stroke:var(--pen);stroke-width:3\"/><text x=\"200\" y=\"128\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">толщина стволов, м</text></g></svg>"
+      }
+     },
+     "subtopic": "Пояснительные знаки леса",
+     "text": "На плане у знака леса стоит запись: «сосн.», дробь $\\frac{15}{0,3}$ и число 4. Что означает число **0,3**?",
+     "type": "choice"
+    }
+   ],
+   "type": "choice"
+  },
+  {
+   "id": "q7",
+   "answer": "c",
+   "hint": "План — маленький участок и много подробностей. Карта — большая территория и только главное.",
+   "lesson": {
+    "remember": "план — маленький участок и подробно, карта — большая территория и главное.",
+    "text": "**План местности** — рисунок небольшого участка (школьный двор, парк, село) в **крупном** масштабе. На нём видно каждый дом, дерево, тропинку. Север показывают стрелкой.\n**Географическая карта** — уменьшенное изображение большой территории (области, страны, всей Земли) в **мелком** масштабе. Мелкие объекты на ней не видны, зато есть параллели и меридианы.\nЧем крупнее масштаб, тем больше подробностей и тем меньше участок.\nПример: двор школы — план, Мангистауская область — карта.",
+    "title": "Чем план отличается от карты",
+    "visual": {
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"padding:8px 10px;border-bottom:1px solid var(--line)\"></th><th style=\"padding:8px 10px;border-bottom:1px solid var(--line);color:var(--accent)\">План местности</th><th style=\"padding:8px 10px;border-bottom:1px solid var(--line);color:var(--pen)\">Географическая карта</th></tr><tr><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\"><b>Территория</b></td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">небольшой участок</td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">большая: страна, материк</td></tr><tr><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\"><b>Масштаб</b></td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">крупный (1 : 1000)</td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">мелкий (1 : 1 000 000)</td></tr><tr><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\"><b>Подробности</b></td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">каждый дом, дерево, колодец</td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">только главное</td></tr><tr><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\"><b>Направление</b></td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">стрелка «север»</td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">параллели и меридианы</td></tr></table>",
+     "kind": "html"
+    }
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Изображает большую территорию в мелком масштабе",
+     "why": "Это описание **карты**. План рисуют для маленького участка — двора, парка, села."
+    },
+    {
+     "id": "b",
+     "text": "На плане есть параллели и меридианы",
+     "why": "Параллели и меридианы есть на **карте**. На плане север показывают стрелкой."
+    },
+    {
+     "id": "c",
+     "text": "Изображает небольшой участок в крупном масштабе"
+    },
+    {
+     "id": "d",
+     "text": "На плане не используют условные знаки",
+     "why": "Условные знаки используют и на плане, и на карте — это их «азбука»."
+    }
+   ],
+   "order": 7,
+   "solution": {
+    "answerLine": "Изображает небольшой участок в крупном масштабе",
+    "steps": [
+     {
+      "layer": 1,
+      "text": "Сравним план местности и карту по таблице."
+     },
+     {
+      "layer": 1,
+      "text": "План — небольшой участок в **крупном** масштабе, со всеми подробностями."
+     }
+    ],
+    "visual": {
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"padding:8px 10px;border-bottom:1px solid var(--line)\"></th><th style=\"padding:8px 10px;border-bottom:1px solid var(--line);color:var(--accent)\">План местности</th><th style=\"padding:8px 10px;border-bottom:1px solid var(--line);color:var(--pen)\">Географическая карта</th></tr><tr data-step=\"1\"><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\"><b>Территория</b></td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">небольшой участок</td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">большая: страна, материк</td></tr><tr data-step=\"1\"><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\"><b>Масштаб</b></td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">крупный (1 : 1000)</td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">мелкий (1 : 1 000 000)</td></tr><tr data-step=\"1\"><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\"><b>Подробности</b></td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">каждый дом, дерево, колодец</td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">только главное</td></tr><tr data-step=\"1\"><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\"><b>Направление</b></td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">стрелка «север»</td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">параллели и меридианы</td></tr></table>",
+     "kind": "html"
+    }
+   },
+   "subtopic": "План местности и карта",
+   "text": "Чем **план местности** отличается от географической карты?",
+   "twins": [
+    {
+     "answer": "b",
+     "hint": "План — маленький участок и много подробностей. Карта — большая территория и только главное.",
+     "id": "q7t1",
+     "options": [
+      {
+       "id": "a",
+       "text": "Территорию Казахстана",
+       "why": "Казахстан — огромная территория, её показывают на **карте** в мелком масштабе."
+      },
+      {
+       "id": "b",
+       "text": "Школьный двор"
+      },
+      {
+       "id": "c",
+       "text": "Материк Евразию",
+       "why": "Материк — очень большая территория, это **карта**."
+      },
+      {
+       "id": "d",
+       "text": "Весь земной шар",
+       "why": "Всю Землю изображают на глобусе или карте мира, не на плане."
+      }
+     ],
+     "solution": {
+      "answerLine": "Школьный двор",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Сравним план местности и карту по таблице."
+       },
+       {
+        "layer": 1,
+        "text": "Школьный двор — небольшой участок, его удобно нарисовать подробно на плане."
+       }
+      ],
+      "visual": {
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"padding:8px 10px;border-bottom:1px solid var(--line)\"></th><th style=\"padding:8px 10px;border-bottom:1px solid var(--line);color:var(--accent)\">План местности</th><th style=\"padding:8px 10px;border-bottom:1px solid var(--line);color:var(--pen)\">Географическая карта</th></tr><tr data-step=\"1\"><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\"><b>Территория</b></td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">небольшой участок</td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">большая: страна, материк</td></tr><tr data-step=\"1\"><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\"><b>Масштаб</b></td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">крупный (1 : 1000)</td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">мелкий (1 : 1 000 000)</td></tr><tr data-step=\"1\"><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\"><b>Подробности</b></td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">каждый дом, дерево, колодец</td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">только главное</td></tr><tr data-step=\"1\"><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\"><b>Направление</b></td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">стрелка «север»</td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">параллели и меридианы</td></tr></table>",
+       "kind": "html"
+      }
+     },
+     "subtopic": "План местности и карта",
+     "text": "Что лучше изобразить на **плане местности**, а не на карте?",
+     "type": "choice"
+    },
+    {
+     "answer": "d",
+     "hint": "План — маленький участок и много подробностей. Карта — большая территория и только главное.",
+     "id": "q7t2",
+     "options": [
+      {
+       "id": "a",
+       "text": "Параллелями и меридианами",
+       "why": "Параллели и меридианы — это градусная сетка **карты**. На плане рисуют стрелку на север."
+      },
+      {
+       "id": "b",
+       "text": "Красным цветом",
+       "why": "Цвет направление не показывает. На плане рисуют **стрелку** на север."
+      },
+      {
+       "id": "c",
+       "text": "Никак не показывают",
+       "why": "Без направления на север план не прочитать. Его показывают **стрелкой**."
+      },
+      {
+       "id": "d",
+       "text": "Стрелкой «С»"
+      }
+     ],
+     "solution": {
+      "answerLine": "Стрелкой «С»",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Сравним план местности и карту по таблице."
+       },
+       {
+        "layer": 1,
+        "text": "На плане нет градусной сетки, поэтому север показывают стрелкой."
+       }
+      ],
+      "visual": {
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"padding:8px 10px;border-bottom:1px solid var(--line)\"></th><th style=\"padding:8px 10px;border-bottom:1px solid var(--line);color:var(--accent)\">План местности</th><th style=\"padding:8px 10px;border-bottom:1px solid var(--line);color:var(--pen)\">Географическая карта</th></tr><tr data-step=\"1\"><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\"><b>Территория</b></td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">небольшой участок</td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">большая: страна, материк</td></tr><tr data-step=\"1\"><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\"><b>Масштаб</b></td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">крупный (1 : 1000)</td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">мелкий (1 : 1 000 000)</td></tr><tr data-step=\"1\"><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\"><b>Подробности</b></td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">каждый дом, дерево, колодец</td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">только главное</td></tr><tr data-step=\"1\"><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\"><b>Направление</b></td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">стрелка «север»</td><td style=\"padding:8px 10px;border-bottom:1px solid var(--line)\">параллели и меридианы</td></tr></table>",
+       "kind": "html"
+      }
+     },
+     "subtopic": "План местности и карта",
+     "text": "Как на **плане местности** обычно показывают направление на север?",
+     "type": "choice"
+    }
+   ],
+   "type": "choice"
+  },
+  {
+   "id": "q8",
+   "answer": "b",
+   "hint": "Можно ли увидеть всё из одной точки? Если да — один способ, если нужно идти — другой.",
+   "lesson": {
+    "remember": "стою на месте — полярная, иду по пути — маршрутная.",
+    "text": "Оба способа — **глазомерная съёмка**: план рисуют с помощью планшета, компаса, линейки и карандаша.\n**Полярная съёмка.** Встаёшь в одну точку (полюс), отмечаешь её в центре листа, ориентируешь планшет по компасу. Потом проводишь линии на каждый предмет и откладываешь расстояния в масштабе. Подходит для **небольшого открытого** участка, который виден целиком: школьный двор, поляна.\n**Маршрутная съёмка.** Идёшь по пути, делишь его на участки, на каждой остановке наносишь то, что видно, и отрезок пути в масштабе. Подходит для **длинного пути**: тропа через лес, дорога вдоль реки.",
+    "title": "Полярная и маршрутная съёмка",
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 220\" role=\"img\"><g><line x1=\"105\" y1=\"100\" x2=\"35\" y2=\"45\" style=\"stroke:var(--accent);stroke-width:2;stroke-dasharray:5 4\"/><rect x=\"28\" y=\"38\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><line x1=\"105\" y1=\"100\" x2=\"170\" y2=\"40\" style=\"stroke:var(--accent);stroke-width:2;stroke-dasharray:5 4\"/><rect x=\"163\" y=\"33\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><line x1=\"105\" y1=\"100\" x2=\"185\" y2=\"140\" style=\"stroke:var(--accent);stroke-width:2;stroke-dasharray:5 4\"/><rect x=\"178\" y=\"133\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><line x1=\"105\" y1=\"100\" x2=\"45\" y2=\"160\" style=\"stroke:var(--accent);stroke-width:2;stroke-dasharray:5 4\"/><rect x=\"38\" y=\"153\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><line x1=\"105\" y1=\"100\" x2=\"105\" y2=\"25\" style=\"stroke:var(--accent);stroke-width:2;stroke-dasharray:5 4\"/><rect x=\"98\" y=\"18\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><circle cx=\"105\" cy=\"100\" r=\"8\" style=\"fill:var(--pen)\"/><text x=\"105\" y=\"205\" text-anchor=\"middle\" style=\"fill:var(--accent);font:800 15px sans-serif\">полярная: из одной точки</text></g><g><polyline points=\"250,175 290,130 340,140 370,85 420,45\" style=\"fill:none;stroke:var(--ok);stroke-width:4\"/><circle cx=\"250\" cy=\"175\" r=\"6\" style=\"fill:var(--ok)\"/><circle cx=\"290\" cy=\"130\" r=\"6\" style=\"fill:var(--ok)\"/><circle cx=\"340\" cy=\"140\" r=\"6\" style=\"fill:var(--ok)\"/><circle cx=\"370\" cy=\"85\" r=\"6\" style=\"fill:var(--ok)\"/><circle cx=\"420\" cy=\"45\" r=\"6\" style=\"fill:var(--ok)\"/><rect x=\"263\" y=\"113\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><rect x=\"313\" y=\"168\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><rect x=\"388\" y=\"113\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><rect x=\"343\" y=\"43\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><text x=\"335\" y=\"205\" text-anchor=\"middle\" style=\"fill:var(--ok);font:800 15px sans-serif\">маршрутная: по пути</text></g><line x1=\"220\" y1=\"15\" x2=\"220\" y2=\"185\" style=\"stroke:var(--line);stroke-width:2\"/></svg>"
+    }
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Маршрутная съёмка",
+     "why": "Маршрутную съёмку делают **по пути движения**: идут, останавливаются и снимают то, что видно с каждой остановки. Она нужна для длинного пути."
+    },
+    {
+     "id": "b",
+     "text": "Полярная съёмка"
+    },
+    {
+     "id": "c",
+     "text": "Аэрофотосъёмка",
+     "why": "Аэрофотосъёмку делают с самолёта, вертолёта или дрона. В практической работе в классе её не проводят — нужны планшет и компас."
+    }
+   ],
+   "order": 8,
+   "solution": {
+    "answerLine": "Полярная съёмка",
+    "steps": [
+     {
+      "layer": 1,
+      "text": "**Полярная** съёмка — из одной точки (полюса) проводят линии на все объекты вокруг."
+     },
+     {
+      "layer": 2,
+      "text": "**Маршрутная** съёмка — путь делят на участки и снимают объекты с каждой остановки."
+     },
+     {
+      "layer": 2,
+      "text": "Двор маленький и виден целиком — значит, удобно стоять в одной точке. Это **полярная** съёмка."
+     }
+    ],
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 220\" role=\"img\"><g data-step=\"1\"><line x1=\"105\" y1=\"100\" x2=\"35\" y2=\"45\" style=\"stroke:var(--accent);stroke-width:2;stroke-dasharray:5 4\"/><rect x=\"28\" y=\"38\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><line x1=\"105\" y1=\"100\" x2=\"170\" y2=\"40\" style=\"stroke:var(--accent);stroke-width:2;stroke-dasharray:5 4\"/><rect x=\"163\" y=\"33\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><line x1=\"105\" y1=\"100\" x2=\"185\" y2=\"140\" style=\"stroke:var(--accent);stroke-width:2;stroke-dasharray:5 4\"/><rect x=\"178\" y=\"133\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><line x1=\"105\" y1=\"100\" x2=\"45\" y2=\"160\" style=\"stroke:var(--accent);stroke-width:2;stroke-dasharray:5 4\"/><rect x=\"38\" y=\"153\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><line x1=\"105\" y1=\"100\" x2=\"105\" y2=\"25\" style=\"stroke:var(--accent);stroke-width:2;stroke-dasharray:5 4\"/><rect x=\"98\" y=\"18\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><circle cx=\"105\" cy=\"100\" r=\"8\" style=\"fill:var(--pen)\"/><text x=\"105\" y=\"205\" text-anchor=\"middle\" style=\"fill:var(--accent);font:800 15px sans-serif\">полярная: из одной точки</text></g><g data-step=\"2\"><polyline points=\"250,175 290,130 340,140 370,85 420,45\" style=\"fill:none;stroke:var(--ok);stroke-width:4\"/><circle cx=\"250\" cy=\"175\" r=\"6\" style=\"fill:var(--ok)\"/><circle cx=\"290\" cy=\"130\" r=\"6\" style=\"fill:var(--ok)\"/><circle cx=\"340\" cy=\"140\" r=\"6\" style=\"fill:var(--ok)\"/><circle cx=\"370\" cy=\"85\" r=\"6\" style=\"fill:var(--ok)\"/><circle cx=\"420\" cy=\"45\" r=\"6\" style=\"fill:var(--ok)\"/><rect x=\"263\" y=\"113\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><rect x=\"313\" y=\"168\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><rect x=\"388\" y=\"113\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><rect x=\"343\" y=\"43\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><text x=\"335\" y=\"205\" text-anchor=\"middle\" style=\"fill:var(--ok);font:800 15px sans-serif\">маршрутная: по пути</text></g><line x1=\"220\" y1=\"15\" x2=\"220\" y2=\"185\" style=\"stroke:var(--line);stroke-width:2\"/></svg>"
+    }
+   },
+   "subtopic": "Полярная и маршрутная съёмка",
+   "text": "Нужно составить план **небольшого открытого** школьного двора, который виден целиком с одной точки. Какой способ съёмки выбрать?",
+   "twins": [
+    {
+     "answer": "a",
+     "hint": "Можно ли увидеть всё из одной точки? Если да — один способ, если нужно идти — другой.",
+     "id": "q8t1",
+     "options": [
+      {
+       "id": "a",
+       "text": "Маршрутная съёмка"
+      },
+      {
+       "id": "b",
+       "text": "Полярная съёмка",
+       "why": "При полярной съёмке стоят **в одной точке** и проводят линии на все объекты вокруг. Это удобно для небольшого открытого участка, который виден целиком."
+      },
+      {
+       "id": "c",
+       "text": "Аэрофотосъёмка",
+       "why": "Аэрофотосъёмку делают с самолёта, вертолёта или дрона. В практической работе в классе её не проводят — нужны планшет и компас."
+      }
+     ],
+     "solution": {
+      "answerLine": "Маршрутная съёмка",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "**Полярная** съёмка — из одной точки (полюса) проводят линии на все объекты вокруг."
+       },
+       {
+        "layer": 2,
+        "text": "**Маршрутная** съёмка — путь делят на участки и снимают объекты с каждой остановки."
+       },
+       {
+        "layer": 2,
+        "text": "Путь длинный, и всё сразу не видно — снимаем по ходу движения. Это **маршрутная** съёмка."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 220\" role=\"img\"><g data-step=\"1\"><line x1=\"105\" y1=\"100\" x2=\"35\" y2=\"45\" style=\"stroke:var(--accent);stroke-width:2;stroke-dasharray:5 4\"/><rect x=\"28\" y=\"38\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><line x1=\"105\" y1=\"100\" x2=\"170\" y2=\"40\" style=\"stroke:var(--accent);stroke-width:2;stroke-dasharray:5 4\"/><rect x=\"163\" y=\"33\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><line x1=\"105\" y1=\"100\" x2=\"185\" y2=\"140\" style=\"stroke:var(--accent);stroke-width:2;stroke-dasharray:5 4\"/><rect x=\"178\" y=\"133\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><line x1=\"105\" y1=\"100\" x2=\"45\" y2=\"160\" style=\"stroke:var(--accent);stroke-width:2;stroke-dasharray:5 4\"/><rect x=\"38\" y=\"153\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><line x1=\"105\" y1=\"100\" x2=\"105\" y2=\"25\" style=\"stroke:var(--accent);stroke-width:2;stroke-dasharray:5 4\"/><rect x=\"98\" y=\"18\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><circle cx=\"105\" cy=\"100\" r=\"8\" style=\"fill:var(--pen)\"/><text x=\"105\" y=\"205\" text-anchor=\"middle\" style=\"fill:var(--accent);font:800 15px sans-serif\">полярная: из одной точки</text></g><g data-step=\"2\"><polyline points=\"250,175 290,130 340,140 370,85 420,45\" style=\"fill:none;stroke:var(--ok);stroke-width:4\"/><circle cx=\"250\" cy=\"175\" r=\"6\" style=\"fill:var(--ok)\"/><circle cx=\"290\" cy=\"130\" r=\"6\" style=\"fill:var(--ok)\"/><circle cx=\"340\" cy=\"140\" r=\"6\" style=\"fill:var(--ok)\"/><circle cx=\"370\" cy=\"85\" r=\"6\" style=\"fill:var(--ok)\"/><circle cx=\"420\" cy=\"45\" r=\"6\" style=\"fill:var(--ok)\"/><rect x=\"263\" y=\"113\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><rect x=\"313\" y=\"168\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><rect x=\"388\" y=\"113\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><rect x=\"343\" y=\"43\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><text x=\"335\" y=\"205\" text-anchor=\"middle\" style=\"fill:var(--ok);font:800 15px sans-serif\">маршрутная: по пути</text></g><line x1=\"220\" y1=\"15\" x2=\"220\" y2=\"185\" style=\"stroke:var(--line);stroke-width:2\"/></svg>"
+      }
+     },
+     "subtopic": "Полярная и маршрутная съёмка",
+     "text": "Ребята идут по длинной лесной тропе и хотят нанести на план всё, что видят по дороге. Какой способ съёмки им нужен?",
+     "type": "choice"
+    },
+    {
+     "answer": "c",
+     "hint": "Можно ли увидеть всё из одной точки? Если да — один способ, если нужно идти — другой.",
+     "id": "q8t2",
+     "options": [
+      {
+       "id": "a",
+       "text": "Маршрутная съёмка",
+       "why": "Маршрутную съёмку делают **по пути движения**: идут, останавливаются и снимают то, что видно с каждой остановки. Она нужна для длинного пути."
+      },
+      {
+       "id": "b",
+       "text": "Аэрофотосъёмка",
+       "why": "Аэрофотосъёмку делают с самолёта, вертолёта или дрона. В практической работе в классе её не проводят — нужны планшет и компас."
+      },
+      {
+       "id": "c",
+       "text": "Полярная съёмка"
+      }
+     ],
+     "solution": {
+      "answerLine": "Полярная съёмка",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "**Полярная** съёмка — из одной точки (полюса) проводят линии на все объекты вокруг."
+       },
+       {
+        "layer": 2,
+        "text": "**Маршрутная** съёмка — путь делят на участки и снимают объекты с каждой остановки."
+       },
+       {
+        "layer": 2,
+        "text": "Все линии из одной точки — полюса — проводят при **полярной** съёмке."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 220\" role=\"img\"><g data-step=\"1\"><line x1=\"105\" y1=\"100\" x2=\"35\" y2=\"45\" style=\"stroke:var(--accent);stroke-width:2;stroke-dasharray:5 4\"/><rect x=\"28\" y=\"38\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><line x1=\"105\" y1=\"100\" x2=\"170\" y2=\"40\" style=\"stroke:var(--accent);stroke-width:2;stroke-dasharray:5 4\"/><rect x=\"163\" y=\"33\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><line x1=\"105\" y1=\"100\" x2=\"185\" y2=\"140\" style=\"stroke:var(--accent);stroke-width:2;stroke-dasharray:5 4\"/><rect x=\"178\" y=\"133\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><line x1=\"105\" y1=\"100\" x2=\"45\" y2=\"160\" style=\"stroke:var(--accent);stroke-width:2;stroke-dasharray:5 4\"/><rect x=\"38\" y=\"153\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><line x1=\"105\" y1=\"100\" x2=\"105\" y2=\"25\" style=\"stroke:var(--accent);stroke-width:2;stroke-dasharray:5 4\"/><rect x=\"98\" y=\"18\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><circle cx=\"105\" cy=\"100\" r=\"8\" style=\"fill:var(--pen)\"/><text x=\"105\" y=\"205\" text-anchor=\"middle\" style=\"fill:var(--accent);font:800 15px sans-serif\">полярная: из одной точки</text></g><g data-step=\"2\"><polyline points=\"250,175 290,130 340,140 370,85 420,45\" style=\"fill:none;stroke:var(--ok);stroke-width:4\"/><circle cx=\"250\" cy=\"175\" r=\"6\" style=\"fill:var(--ok)\"/><circle cx=\"290\" cy=\"130\" r=\"6\" style=\"fill:var(--ok)\"/><circle cx=\"340\" cy=\"140\" r=\"6\" style=\"fill:var(--ok)\"/><circle cx=\"370\" cy=\"85\" r=\"6\" style=\"fill:var(--ok)\"/><circle cx=\"420\" cy=\"45\" r=\"6\" style=\"fill:var(--ok)\"/><rect x=\"263\" y=\"113\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><rect x=\"313\" y=\"168\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><rect x=\"388\" y=\"113\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><rect x=\"343\" y=\"43\" width=\"14\" height=\"14\" rx=\"3\" style=\"fill:var(--warn)\"/><text x=\"335\" y=\"205\" text-anchor=\"middle\" style=\"fill:var(--ok);font:800 15px sans-serif\">маршрутная: по пути</text></g><line x1=\"220\" y1=\"15\" x2=\"220\" y2=\"185\" style=\"stroke:var(--line);stroke-width:2\"/></svg>"
+      }
+     },
+     "subtopic": "Полярная и маршрутная съёмка",
+     "text": "При какой съёмке **все линии** на планшете проводят из одной точки в центре листа?",
+     "type": "choice"
+    }
+   ],
+   "type": "choice"
+  },
+  {
+   "id": "q9",
+   "answer": "c",
+   "hint": "Вспомни ленту времени: древний грек → Птолемей → карта с Америкой → «Атлас».",
+   "lesson": {
+    "remember": "Анаксимандр — масштаб, Вальдземюллер — Америка, Меркатор — «Атлас».",
+    "text": "**Картография** — наука о составлении карт. Карты рисовали очень давно: на камне, глиняных табличках, костях мамонта, папирусе, а потом на бумаге.\n**Анаксимандр** (древний грек, больше 2,5 тыс. лет назад) — автор первой карты с масштабом, в её центре Греция.\n**Птолемей** (около 150 г.) — карта мира, на которой ещё нет Америки, Австралии и Тихого океана.\n**Мартин Вальдземюллер** (1507 г.) — первая карта мира с Америкой.\n**Герард Меркатор** (1595 г.) — сборник карт «Атлас».\nЗапоминай по порядку: древний масштаб → мир без Америки → мир с Америкой → «Атлас».",
+    "title": "История картографии",
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 190\" role=\"img\"><line x1=\"30\" y1=\"80\" x2=\"430\" y2=\"80\" style=\"stroke:var(--ink);stroke-width:3\"/><circle cx=\"50\" cy=\"80\" r=\"8\" style=\"fill:var(--accent)\"/><text x=\"50\" y=\"62\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 13px sans-serif\">VI в. до н. э.</text><text x=\"50\" y=\"108\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 14px sans-serif\">Анаксимандр</text><g><text x=\"50\" y=\"130\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 12px sans-serif\">первая карта</text><text x=\"50\" y=\"146\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 12px sans-serif\">с масштабом</text></g><circle cx=\"170\" cy=\"80\" r=\"8\" style=\"fill:var(--accent)\"/><text x=\"170\" y=\"62\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 13px sans-serif\">~150 г.</text><text x=\"170\" y=\"108\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 14px sans-serif\">Птолемей</text><g><text x=\"170\" y=\"130\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 12px sans-serif\">карта мира</text><text x=\"170\" y=\"146\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 12px sans-serif\">без Америки</text></g><circle cx=\"290\" cy=\"80\" r=\"8\" style=\"fill:var(--accent)\"/><text x=\"290\" y=\"62\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 13px sans-serif\">1507 г.</text><text x=\"290\" y=\"108\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 14px sans-serif\">Вальдземюллер</text><g><text x=\"290\" y=\"130\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 12px sans-serif\">первая карта</text><text x=\"290\" y=\"146\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 12px sans-serif\">с Америкой</text></g><circle cx=\"410\" cy=\"80\" r=\"8\" style=\"fill:var(--accent)\"/><text x=\"410\" y=\"62\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 13px sans-serif\">1595 г.</text><text x=\"410\" y=\"108\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 14px sans-serif\">Меркатор</text><g><text x=\"410\" y=\"130\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 12px sans-serif\">сборник карт</text><text x=\"410\" y=\"146\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 12px sans-serif\">«Атлас»</text></g></svg>"
+    }
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Птолемей",
+     "why": "Птолемей составил карту мира около 150 года — на ней ещё не было Америки и Австралии. А здесь спрашивают о другом."
+    },
+    {
+     "id": "b",
+     "text": "Вальдземюллер",
+     "why": "Вальдземюллер в 1507 году составил первую карту мира, на которой изображена Америка. А здесь спрашивают о другом."
+    },
+    {
+     "id": "c",
+     "text": "Анаксимандр"
+    },
+    {
+     "id": "d",
+     "text": "Меркатор",
+     "why": "Меркатор в 1595 году опубликовал сборник карт «Атлас». А здесь спрашивают о другом."
+    }
+   ],
+   "order": 9,
+   "solution": {
+    "answerLine": "Анаксимандр",
+    "steps": [
+     {
+      "layer": 0,
+      "text": "Расставим учёных по времени: Анаксимандр (VI в. до н. э.), Птолемей (~150 г.), Вальдземюллер (1507 г.), Меркатор (1595 г.)."
+     },
+     {
+      "layer": 1,
+      "text": "Анаксимандр создал первую карту с использованием масштаба (больше 2,5 тыс. лет назад)."
+     }
+    ],
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 190\" role=\"img\"><line x1=\"30\" y1=\"80\" x2=\"430\" y2=\"80\" style=\"stroke:var(--ink);stroke-width:3\"/><circle cx=\"50\" cy=\"80\" r=\"8\" style=\"fill:var(--pen)\"/><text x=\"50\" y=\"62\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 13px sans-serif\">VI в. до н. э.</text><text x=\"50\" y=\"108\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 14px sans-serif\">Анаксимандр</text><g data-step=\"1\"><text x=\"50\" y=\"130\" text-anchor=\"middle\" style=\"fill:var(--pen);font:600 12px sans-serif\">первая карта</text><text x=\"50\" y=\"146\" text-anchor=\"middle\" style=\"fill:var(--pen);font:600 12px sans-serif\">с масштабом</text></g><rect data-step=\"1\" x=\"-2\" y=\"45\" width=\"104\" height=\"110\" rx=\"10\" style=\"fill:none;stroke:var(--pen);stroke-width:2.5\"/><circle cx=\"170\" cy=\"80\" r=\"8\" style=\"fill:var(--accent)\"/><text x=\"170\" y=\"62\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 13px sans-serif\">~150 г.</text><text x=\"170\" y=\"108\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 14px sans-serif\">Птолемей</text><g><text x=\"170\" y=\"130\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 12px sans-serif\">карта мира</text><text x=\"170\" y=\"146\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 12px sans-serif\">без Америки</text></g><circle cx=\"290\" cy=\"80\" r=\"8\" style=\"fill:var(--accent)\"/><text x=\"290\" y=\"62\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 13px sans-serif\">1507 г.</text><text x=\"290\" y=\"108\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 14px sans-serif\">Вальдземюллер</text><g><text x=\"290\" y=\"130\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 12px sans-serif\">первая карта</text><text x=\"290\" y=\"146\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 12px sans-serif\">с Америкой</text></g><circle cx=\"410\" cy=\"80\" r=\"8\" style=\"fill:var(--accent)\"/><text x=\"410\" y=\"62\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 13px sans-serif\">1595 г.</text><text x=\"410\" y=\"108\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 14px sans-serif\">Меркатор</text><g><text x=\"410\" y=\"130\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 12px sans-serif\">сборник карт</text><text x=\"410\" y=\"146\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 12px sans-serif\">«Атлас»</text></g></svg>"
+    }
+   },
+   "subtopic": "История картографии",
+   "text": "Кто считается автором **первой карты с использованием масштаба**?",
+   "twins": [
+    {
+     "answer": "b",
+     "hint": "Вспомни ленту времени: древний грек → Птолемей → карта с Америкой → «Атлас».",
+     "id": "q9t1",
+     "options": [
+      {
+       "id": "a",
+       "text": "Анаксимандр",
+       "why": "Анаксимандр создал первую карту с использованием масштаба (больше 2,5 тыс. лет назад). А здесь спрашивают о другом."
+      },
+      {
+       "id": "b",
+       "text": "Меркатор"
+      },
+      {
+       "id": "c",
+       "text": "Птолемей",
+       "why": "Птолемей составил карту мира около 150 года — на ней ещё не было Америки и Австралии. А здесь спрашивают о другом."
+      },
+      {
+       "id": "d",
+       "text": "Вальдземюллер",
+       "why": "Вальдземюллер в 1507 году составил первую карту мира, на которой изображена Америка. А здесь спрашивают о другом."
+      }
+     ],
+     "solution": {
+      "answerLine": "Меркатор",
+      "steps": [
+       {
+        "layer": 0,
+        "text": "Расставим учёных по времени: Анаксимандр (VI в. до н. э.), Птолемей (~150 г.), Вальдземюллер (1507 г.), Меркатор (1595 г.)."
+       },
+       {
+        "layer": 1,
+        "text": "Меркатор в 1595 году опубликовал сборник карт «Атлас»."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 190\" role=\"img\"><line x1=\"30\" y1=\"80\" x2=\"430\" y2=\"80\" style=\"stroke:var(--ink);stroke-width:3\"/><circle cx=\"50\" cy=\"80\" r=\"8\" style=\"fill:var(--accent)\"/><text x=\"50\" y=\"62\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 13px sans-serif\">VI в. до н. э.</text><text x=\"50\" y=\"108\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 14px sans-serif\">Анаксимандр</text><g><text x=\"50\" y=\"130\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 12px sans-serif\">первая карта</text><text x=\"50\" y=\"146\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 12px sans-serif\">с масштабом</text></g><circle cx=\"170\" cy=\"80\" r=\"8\" style=\"fill:var(--accent)\"/><text x=\"170\" y=\"62\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 13px sans-serif\">~150 г.</text><text x=\"170\" y=\"108\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 14px sans-serif\">Птолемей</text><g><text x=\"170\" y=\"130\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 12px sans-serif\">карта мира</text><text x=\"170\" y=\"146\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 12px sans-serif\">без Америки</text></g><circle cx=\"290\" cy=\"80\" r=\"8\" style=\"fill:var(--accent)\"/><text x=\"290\" y=\"62\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 13px sans-serif\">1507 г.</text><text x=\"290\" y=\"108\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 14px sans-serif\">Вальдземюллер</text><g><text x=\"290\" y=\"130\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 12px sans-serif\">первая карта</text><text x=\"290\" y=\"146\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 12px sans-serif\">с Америкой</text></g><circle cx=\"410\" cy=\"80\" r=\"8\" style=\"fill:var(--pen)\"/><text x=\"410\" y=\"62\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 13px sans-serif\">1595 г.</text><text x=\"410\" y=\"108\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 14px sans-serif\">Меркатор</text><g data-step=\"1\"><text x=\"410\" y=\"130\" text-anchor=\"middle\" style=\"fill:var(--pen);font:600 12px sans-serif\">сборник карт</text><text x=\"410\" y=\"146\" text-anchor=\"middle\" style=\"fill:var(--pen);font:600 12px sans-serif\">«Атлас»</text></g><rect data-step=\"1\" x=\"358\" y=\"45\" width=\"104\" height=\"110\" rx=\"10\" style=\"fill:none;stroke:var(--pen);stroke-width:2.5\"/></svg>"
+      }
+     },
+     "subtopic": "История картографии",
+     "text": "Кто в 1595 году опубликовал сборник карт под названием **«Атлас»**?",
+     "type": "choice"
+    },
+    {
+     "answer": "d",
+     "hint": "Вспомни ленту времени: древний грек → Птолемей → карта с Америкой → «Атлас».",
+     "id": "q9t2",
+     "options": [
+      {
+       "id": "a",
+       "text": "Анаксимандр",
+       "why": "Анаксимандр создал первую карту с использованием масштаба (больше 2,5 тыс. лет назад). А здесь спрашивают о другом."
+      },
+      {
+       "id": "b",
+       "text": "Птолемей",
+       "why": "Птолемей составил карту мира около 150 года — на ней ещё не было Америки и Австралии. А здесь спрашивают о другом."
+      },
+      {
+       "id": "c",
+       "text": "Меркатор",
+       "why": "Меркатор в 1595 году опубликовал сборник карт «Атлас». А здесь спрашивают о другом."
+      },
+      {
+       "id": "d",
+       "text": "Вальдземюллер"
+      }
+     ],
+     "solution": {
+      "answerLine": "Вальдземюллер",
+      "steps": [
+       {
+        "layer": 0,
+        "text": "Расставим учёных по времени: Анаксимандр (VI в. до н. э.), Птолемей (~150 г.), Вальдземюллер (1507 г.), Меркатор (1595 г.)."
+       },
+       {
+        "layer": 1,
+        "text": "Вальдземюллер в 1507 году составил первую карту мира, на которой изображена Америка."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 190\" role=\"img\"><line x1=\"30\" y1=\"80\" x2=\"430\" y2=\"80\" style=\"stroke:var(--ink);stroke-width:3\"/><circle cx=\"50\" cy=\"80\" r=\"8\" style=\"fill:var(--accent)\"/><text x=\"50\" y=\"62\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 13px sans-serif\">VI в. до н. э.</text><text x=\"50\" y=\"108\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 14px sans-serif\">Анаксимандр</text><g><text x=\"50\" y=\"130\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 12px sans-serif\">первая карта</text><text x=\"50\" y=\"146\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 12px sans-serif\">с масштабом</text></g><circle cx=\"170\" cy=\"80\" r=\"8\" style=\"fill:var(--accent)\"/><text x=\"170\" y=\"62\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 13px sans-serif\">~150 г.</text><text x=\"170\" y=\"108\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 14px sans-serif\">Птолемей</text><g><text x=\"170\" y=\"130\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 12px sans-serif\">карта мира</text><text x=\"170\" y=\"146\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 12px sans-serif\">без Америки</text></g><circle cx=\"290\" cy=\"80\" r=\"8\" style=\"fill:var(--pen)\"/><text x=\"290\" y=\"62\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 13px sans-serif\">1507 г.</text><text x=\"290\" y=\"108\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 14px sans-serif\">Вальдземюллер</text><g data-step=\"1\"><text x=\"290\" y=\"130\" text-anchor=\"middle\" style=\"fill:var(--pen);font:600 12px sans-serif\">первая карта</text><text x=\"290\" y=\"146\" text-anchor=\"middle\" style=\"fill:var(--pen);font:600 12px sans-serif\">с Америкой</text></g><rect data-step=\"1\" x=\"238\" y=\"45\" width=\"104\" height=\"110\" rx=\"10\" style=\"fill:none;stroke:var(--pen);stroke-width:2.5\"/><circle cx=\"410\" cy=\"80\" r=\"8\" style=\"fill:var(--accent)\"/><text x=\"410\" y=\"62\" text-anchor=\"middle\" style=\"fill:var(--muted);font:700 13px sans-serif\">1595 г.</text><text x=\"410\" y=\"108\" text-anchor=\"middle\" style=\"fill:var(--ink);font:800 14px sans-serif\">Меркатор</text><g><text x=\"410\" y=\"130\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 12px sans-serif\">сборник карт</text><text x=\"410\" y=\"146\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 12px sans-serif\">«Атлас»</text></g></svg>"
+      }
+     },
+     "subtopic": "История картографии",
+     "text": "Кто составил **первую карту мира, на которой изображена Америка**?",
+     "type": "choice"
+    }
+   ],
+   "type": "choice"
+  },
+  {
+   "id": "q10",
+   "answer": "d",
+   "hint": "В учебнике шесть условий: кислород, жидкая вода, углекислый газ, солнечный свет, минеральные соли, подходящая температура.",
+   "lesson": {
+    "remember": "кислород, жидкая вода, CO₂, свет, соли, температура.",
+    "text": "Жизнь на Земле возможна, потому что здесь есть шесть важных условий:\n**кислород** — им дышат животные и растения;\n**вода в жидком состоянии** — без неё не живёт ни одна клетка;\n**углекислый газ** — из него растения на свету делают питательные вещества;\n**солнечный свет** — источник энергии;\n**минеральные соли** — «строительный материал» для организмов;\n**подходящая температура** — не слишком жарко и не слишком холодно.\nЛовушка: вода нужна именно **жидкая**, лёд и пар не подходят.",
+    "title": "Что нужно для жизни",
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 200\" role=\"img\"><circle cx=\"220\" cy=\"100\" r=\"42\" style=\"fill:var(--ok);fill-opacity:.3;stroke:var(--ok);stroke-width:3\"/><text x=\"220\" y=\"106\" text-anchor=\"middle\" style=\"fill:var(--ok);font:800 17px sans-serif\">жизнь</text><g data-step=\"0\"><line x1=\"220\" y1=\"54\" x2=\"220\" y2=\"44\" style=\"stroke:var(--muted);stroke-width:2\"/><text x=\"220\" y=\"30\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 13px sans-serif\">кислород</text></g><g data-step=\"0\"><line x1=\"260\" y1=\"77\" x2=\"311\" y2=\"72\" style=\"stroke:var(--muted);stroke-width:2\"/><text x=\"350\" y=\"68\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 13px sans-serif\">вода в жидком состоянии</text></g><g data-step=\"0\"><line x1=\"260\" y1=\"123\" x2=\"311\" y2=\"128\" style=\"stroke:var(--muted);stroke-width:2\"/><text x=\"350\" y=\"142\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 13px sans-serif\">углекислый газ</text></g><g data-step=\"0\"><line x1=\"220\" y1=\"146\" x2=\"220\" y2=\"156\" style=\"stroke:var(--muted);stroke-width:2\"/><text x=\"220\" y=\"180\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 13px sans-serif\">солнечный свет</text></g><g data-step=\"0\"><line x1=\"180\" y1=\"123\" x2=\"129\" y2=\"128\" style=\"stroke:var(--muted);stroke-width:2\"/><text x=\"90\" y=\"142\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 13px sans-serif\">минеральные соли</text></g><g data-step=\"0\"><line x1=\"180\" y1=\"77\" x2=\"129\" y2=\"72\" style=\"stroke:var(--muted);stroke-width:2\"/><text x=\"90\" y=\"68\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 13px sans-serif\">определённый температурный режим</text></g></svg>"
+    }
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Солнечный свет",
+     "why": "«Солнечный свет» как раз **нужен** для жизни — он есть в списке условий из учебника. Ищи то, чего в списке нет."
+    },
+    {
+     "id": "b",
+     "text": "Кислород",
+     "why": "«Кислород» как раз **нужен** для жизни — он есть в списке условий из учебника. Ищи то, чего в списке нет."
+    },
+    {
+     "id": "c",
+     "text": "Минеральные соли",
+     "why": "«Минеральные соли» как раз **нужен** для жизни — он есть в списке условий из учебника. Ищи то, чего в списке нет."
+    },
+    {
+     "id": "d",
+     "text": "Песок"
+    }
+   ],
+   "order": 10,
+   "solution": {
+    "answerLine": "Песок",
+    "steps": [
+     {
+      "layer": 1,
+      "text": "Для жизни нужны: кислород, вода в жидком состоянии, углекислый газ, солнечный свет, минеральные соли и определённый температурный режим."
+     },
+     {
+      "layer": 1,
+      "text": "«Песок» в этом списке нет. Песок — это просто горная порода, без него жизнь может существовать."
+     }
+    ],
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 200\" role=\"img\"><circle cx=\"220\" cy=\"100\" r=\"42\" style=\"fill:var(--ok);fill-opacity:.3;stroke:var(--ok);stroke-width:3\"/><text x=\"220\" y=\"106\" text-anchor=\"middle\" style=\"fill:var(--ok);font:800 17px sans-serif\">жизнь</text><g data-step=\"1\"><line x1=\"220\" y1=\"54\" x2=\"220\" y2=\"44\" style=\"stroke:var(--muted);stroke-width:2\"/><text x=\"220\" y=\"30\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 13px sans-serif\">кислород</text></g><g data-step=\"1\"><line x1=\"260\" y1=\"77\" x2=\"311\" y2=\"72\" style=\"stroke:var(--muted);stroke-width:2\"/><text x=\"350\" y=\"68\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 13px sans-serif\">вода в жидком состоянии</text></g><g data-step=\"1\"><line x1=\"260\" y1=\"123\" x2=\"311\" y2=\"128\" style=\"stroke:var(--muted);stroke-width:2\"/><text x=\"350\" y=\"142\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 13px sans-serif\">углекислый газ</text></g><g data-step=\"1\"><line x1=\"220\" y1=\"146\" x2=\"220\" y2=\"156\" style=\"stroke:var(--muted);stroke-width:2\"/><text x=\"220\" y=\"180\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 13px sans-serif\">солнечный свет</text></g><g data-step=\"1\"><line x1=\"180\" y1=\"123\" x2=\"129\" y2=\"128\" style=\"stroke:var(--muted);stroke-width:2\"/><text x=\"90\" y=\"142\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 13px sans-serif\">минеральные соли</text></g><g data-step=\"1\"><line x1=\"180\" y1=\"77\" x2=\"129\" y2=\"72\" style=\"stroke:var(--muted);stroke-width:2\"/><text x=\"90\" y=\"68\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 13px sans-serif\">определённый температурный режим</text></g></svg>"
+    }
+   },
+   "subtopic": "Условия жизни на Земле",
+   "text": "Что из перечисленного **не входит** в условия, необходимые для существования жизни на Земле?",
+   "twins": [
+    {
+     "answer": "a",
+     "hint": "В учебнике шесть условий: кислород, жидкая вода, углекислый газ, солнечный свет, минеральные соли, подходящая температура.",
+     "id": "q10t1",
+     "options": [
+      {
+       "id": "a",
+       "text": "Лёд"
+      },
+      {
+       "id": "b",
+       "text": "Углекислый газ",
+       "why": "«Углекислый газ» как раз **нужен** для жизни — он есть в списке условий из учебника. Ищи то, чего в списке нет."
+      },
+      {
+       "id": "c",
+       "text": "Вода в жидком состоянии",
+       "why": "«Вода в жидком состоянии» как раз **нужен** для жизни — он есть в списке условий из учебника. Ищи то, чего в списке нет."
+      },
+      {
+       "id": "d",
+       "text": "Солнечный свет",
+       "why": "«Солнечный свет» как раз **нужен** для жизни — он есть в списке условий из учебника. Ищи то, чего в списке нет."
+      }
+     ],
+     "solution": {
+      "answerLine": "Лёд",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Для жизни нужны: кислород, вода в жидком состоянии, углекислый газ, солнечный свет, минеральные соли и определённый температурный режим."
+       },
+       {
+        "layer": 1,
+        "text": "«Лёд» в этом списке нет. Нужна вода именно **в жидком** состоянии, лёд не подходит."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 200\" role=\"img\"><circle cx=\"220\" cy=\"100\" r=\"42\" style=\"fill:var(--ok);fill-opacity:.3;stroke:var(--ok);stroke-width:3\"/><text x=\"220\" y=\"106\" text-anchor=\"middle\" style=\"fill:var(--ok);font:800 17px sans-serif\">жизнь</text><g data-step=\"1\"><line x1=\"220\" y1=\"54\" x2=\"220\" y2=\"44\" style=\"stroke:var(--muted);stroke-width:2\"/><text x=\"220\" y=\"30\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 13px sans-serif\">кислород</text></g><g data-step=\"1\"><line x1=\"260\" y1=\"77\" x2=\"311\" y2=\"72\" style=\"stroke:var(--muted);stroke-width:2\"/><text x=\"350\" y=\"68\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 13px sans-serif\">вода в жидком состоянии</text></g><g data-step=\"1\"><line x1=\"260\" y1=\"123\" x2=\"311\" y2=\"128\" style=\"stroke:var(--muted);stroke-width:2\"/><text x=\"350\" y=\"142\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 13px sans-serif\">углекислый газ</text></g><g data-step=\"1\"><line x1=\"220\" y1=\"146\" x2=\"220\" y2=\"156\" style=\"stroke:var(--muted);stroke-width:2\"/><text x=\"220\" y=\"180\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 13px sans-serif\">солнечный свет</text></g><g data-step=\"1\"><line x1=\"180\" y1=\"123\" x2=\"129\" y2=\"128\" style=\"stroke:var(--muted);stroke-width:2\"/><text x=\"90\" y=\"142\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 13px sans-serif\">минеральные соли</text></g><g data-step=\"1\"><line x1=\"180\" y1=\"77\" x2=\"129\" y2=\"72\" style=\"stroke:var(--muted);stroke-width:2\"/><text x=\"90\" y=\"68\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 13px sans-serif\">определённый температурный режим</text></g></svg>"
+      }
+     },
+     "subtopic": "Условия жизни на Земле",
+     "text": "Какое из этих условий **лишнее** — без него жизнь на Земле может существовать?",
+     "type": "choice"
+    },
+    {
+     "answer": "b",
+     "hint": "В учебнике шесть условий: кислород, жидкая вода, углекислый газ, солнечный свет, минеральные соли, подходящая температура.",
+     "id": "q10t2",
+     "options": [
+      {
+       "id": "a",
+       "text": "Определённый температурный режим",
+       "why": "«Определённый температурный режим» как раз **нужен** для жизни — он есть в списке условий из учебника. Ищи то, чего в списке нет."
+      },
+      {
+       "id": "b",
+       "text": "Электричество"
+      },
+      {
+       "id": "c",
+       "text": "Кислород",
+       "why": "«Кислород» как раз **нужен** для жизни — он есть в списке условий из учебника. Ищи то, чего в списке нет."
+      },
+      {
+       "id": "d",
+       "text": "Углекислый газ",
+       "why": "«Углекислый газ» как раз **нужен** для жизни — он есть в списке условий из учебника. Ищи то, чего в списке нет."
+      }
+     ],
+     "solution": {
+      "answerLine": "Электричество",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Для жизни нужны: кислород, вода в жидком состоянии, углекислый газ, солнечный свет, минеральные соли и определённый температурный режим."
+       },
+       {
+        "layer": 1,
+        "text": "«Электричество» в этом списке нет. Электричество придумали люди, а жизнь на Земле существовала миллионы лет без него."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 200\" role=\"img\"><circle cx=\"220\" cy=\"100\" r=\"42\" style=\"fill:var(--ok);fill-opacity:.3;stroke:var(--ok);stroke-width:3\"/><text x=\"220\" y=\"106\" text-anchor=\"middle\" style=\"fill:var(--ok);font:800 17px sans-serif\">жизнь</text><g data-step=\"1\"><line x1=\"220\" y1=\"54\" x2=\"220\" y2=\"44\" style=\"stroke:var(--muted);stroke-width:2\"/><text x=\"220\" y=\"30\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 13px sans-serif\">кислород</text></g><g data-step=\"1\"><line x1=\"260\" y1=\"77\" x2=\"311\" y2=\"72\" style=\"stroke:var(--muted);stroke-width:2\"/><text x=\"350\" y=\"68\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 13px sans-serif\">вода в жидком состоянии</text></g><g data-step=\"1\"><line x1=\"260\" y1=\"123\" x2=\"311\" y2=\"128\" style=\"stroke:var(--muted);stroke-width:2\"/><text x=\"350\" y=\"142\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 13px sans-serif\">углекислый газ</text></g><g data-step=\"1\"><line x1=\"220\" y1=\"146\" x2=\"220\" y2=\"156\" style=\"stroke:var(--muted);stroke-width:2\"/><text x=\"220\" y=\"180\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 13px sans-serif\">солнечный свет</text></g><g data-step=\"1\"><line x1=\"180\" y1=\"123\" x2=\"129\" y2=\"128\" style=\"stroke:var(--muted);stroke-width:2\"/><text x=\"90\" y=\"142\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 13px sans-serif\">минеральные соли</text></g><g data-step=\"1\"><line x1=\"180\" y1=\"77\" x2=\"129\" y2=\"72\" style=\"stroke:var(--muted);stroke-width:2\"/><text x=\"90\" y=\"68\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 13px sans-serif\">определённый температурный режим</text></g></svg>"
+      }
+     },
+     "subtopic": "Условия жизни на Земле",
+     "text": "Найди **лишнее** в списке условий, необходимых живым организмам.",
+     "type": "choice"
+    }
+   ],
+   "type": "choice"
+  }
+ ]
+}

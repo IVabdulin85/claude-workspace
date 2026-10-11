@@ -1,0 +1,605 @@
+{
+ "test": {
+  "id": "demo-5-fractions",
+  "createdAt": "2026-10-07T03:24:38+00:00",
+  "demo": true,
+  "grade": 5,
+  "kid": "k5",
+  "source": "Пример для знакомства",
+  "subject": "Математика",
+  "title": "Пробный тест: обыкновенные дроби",
+  "topic": "Обыкновенные дроби"
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "answer": "b",
+   "figure": {
+    "kind": "svg",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 84\" role=\"img\"><rect x=\"10.0\" y=\"10\" width=\"45.0\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><rect x=\"55.0\" y=\"10\" width=\"45.0\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><rect x=\"100.0\" y=\"10\" width=\"45.0\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><rect x=\"145.0\" y=\"10\" width=\"45.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"190.0\" y=\"10\" width=\"45.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"235.0\" y=\"10\" width=\"45.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"280.0\" y=\"10\" width=\"45.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"325.0\" y=\"10\" width=\"45.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/></svg>"
+   },
+   "hint": "Знаменатель — на сколько равных частей разделили целое. Числитель — сколько из них закрасили.",
+   "lesson": {
+    "remember": "снизу — все части, сверху — взятые.",
+    "text": "Дробь записывают двумя числами через черту.\n**Знаменатель** (снизу) — на сколько **равных** частей разделили целое.\n**Числитель** (сверху) — сколько таких частей взяли.\nПиццу разрезали на 8 равных кусков, ты съел 3 — ты съел $\\frac{3}{8}$ пиццы. Сначала всегда считай **все** части, потом — взятые.",
+    "title": "Что показывает дробь",
+    "visual": {
+     "caption": "Целое — 8 частей, взяли 3: $\\frac{3}{8}$.",
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 84\" role=\"img\"><rect x=\"10.0\" y=\"10\" width=\"45.0\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><rect x=\"55.0\" y=\"10\" width=\"45.0\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><rect x=\"100.0\" y=\"10\" width=\"45.0\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><rect x=\"145.0\" y=\"10\" width=\"45.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"190.0\" y=\"10\" width=\"45.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"235.0\" y=\"10\" width=\"45.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"280.0\" y=\"10\" width=\"45.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"325.0\" y=\"10\" width=\"45.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/></svg>"
+    }
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "$\\frac{3}{5}$",
+     "why": "Ты сравнил закрашенные части с незакрашенными (3 и 5). А в знаменателе пишут, на сколько частей разделили **всё целое** — это 8."
+    },
+    {
+     "id": "b",
+     "text": "$\\frac{3}{8}$"
+    },
+    {
+     "id": "c",
+     "text": "$\\frac{5}{8}$",
+     "why": "Ты посчитал незакрашенные части (5). Спрашивали про закрашенные — их 3."
+    },
+    {
+     "id": "d",
+     "text": "$\\frac{8}{3}$",
+     "why": "Числитель и знаменатель поменялись местами. Сверху — сколько частей взяли, снизу — на сколько частей разделили целое."
+    }
+   ],
+   "order": 1,
+   "solution": {
+    "answerLine": "$\\frac{3}{8}$",
+    "steps": [
+     {
+      "layer": 1,
+      "text": "Считаем **все** равные части — их 8. Это знаменатель: $\\frac{?}{8}$."
+     },
+     {
+      "layer": 2,
+      "text": "Считаем закрашенные части — их 3. Это числитель."
+     },
+     {
+      "layer": 2,
+      "text": "Закрашено $\\frac{3}{8}$ фигуры."
+     }
+    ],
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 110\" role=\"img\"><rect x=\"10.0\" y=\"10\" width=\"45.0\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><rect x=\"55.0\" y=\"10\" width=\"45.0\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><rect x=\"100.0\" y=\"10\" width=\"45.0\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><rect x=\"145.0\" y=\"10\" width=\"45.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"190.0\" y=\"10\" width=\"45.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"235.0\" y=\"10\" width=\"45.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"280.0\" y=\"10\" width=\"45.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"325.0\" y=\"10\" width=\"45.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><text data-step=\"1\" x=\"32.5\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">1</text><text data-step=\"1\" x=\"77.5\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">2</text><text data-step=\"1\" x=\"122.5\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">3</text><text data-step=\"1\" x=\"167.5\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">4</text><text data-step=\"1\" x=\"212.5\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">5</text><text data-step=\"1\" x=\"257.5\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">6</text><text data-step=\"1\" x=\"302.5\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">7</text><text data-step=\"1\" x=\"347.5\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">8</text><rect data-step=\"2\" x=\"10\" y=\"6\" width=\"135.0\" height=\"72\" rx=\"6\" style=\"fill:none;stroke:var(--pen);stroke-width:4\"/></svg>"
+    }
+   },
+   "subtopic": "Доля фигуры",
+   "text": "Полоска разделена на 8 равных частей. Какая часть закрашена?",
+   "twins": [
+    {
+     "answer": "c",
+     "figure": {
+      "kind": "svg",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" role=\"img\" style=\"max-width:240px;margin:0 auto\"><path d=\"M100,100 L100.0,10.0 A90,90 0 0 1 177.9,55.0 Z\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><path d=\"M100,100 L177.9,55.0 A90,90 0 0 1 177.9,145.0 Z\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><path d=\"M100,100 L177.9,145.0 A90,90 0 0 1 100.0,190.0 Z\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><path d=\"M100,100 L100.0,190.0 A90,90 0 0 1 22.1,145.0 Z\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><path d=\"M100,100 L22.1,145.0 A90,90 0 0 1 22.1,55.0 Z\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><path d=\"M100,100 L22.1,55.0 A90,90 0 0 1 100.0,10.0 Z\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/></svg>"
+     },
+     "hint": "Знаменатель — на сколько равных частей разделили целое. Числитель — сколько из них закрасили.",
+     "id": "q1t1",
+     "options": [
+      {
+       "id": "a",
+       "text": "$\\frac{1}{6}$",
+       "why": "Ты посчитал незакрашенные части (1). Спрашивали про закрашенные — их 5."
+      },
+      {
+       "id": "b",
+       "text": "$\\frac{6}{5}$",
+       "why": "Числитель и знаменатель поменялись местами. Сверху — сколько частей взяли, снизу — на сколько частей разделили целое."
+      },
+      {
+       "id": "c",
+       "text": "$\\frac{5}{6}$"
+      },
+      {
+       "id": "d",
+       "text": "$\\frac{5}{1}$",
+       "why": "Ты сравнил закрашенные части с незакрашенными (5 и 1). А в знаменателе пишут, на сколько частей разделили **всё целое** — это 6."
+      }
+     ],
+     "solution": {
+      "answerLine": "$\\frac{5}{6}$",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Считаем **все** равные части — их 6. Это знаменатель: $\\frac{?}{6}$."
+       },
+       {
+        "layer": 2,
+        "text": "Считаем закрашенные части — их 5. Это числитель."
+       },
+       {
+        "layer": 2,
+        "text": "Закрашено $\\frac{5}{6}$ фигуры."
+       }
+      ],
+      "visual": {
+       "caption": "Сосчитай все доли, потом закрашенные.",
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" role=\"img\" style=\"max-width:240px;margin:0 auto\"><path d=\"M100,100 L100.0,10.0 A90,90 0 0 1 177.9,55.0 Z\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><path d=\"M100,100 L177.9,55.0 A90,90 0 0 1 177.9,145.0 Z\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><path d=\"M100,100 L177.9,145.0 A90,90 0 0 1 100.0,190.0 Z\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><path d=\"M100,100 L100.0,190.0 A90,90 0 0 1 22.1,145.0 Z\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><path d=\"M100,100 L22.1,145.0 A90,90 0 0 1 22.1,55.0 Z\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><path d=\"M100,100 L22.1,55.0 A90,90 0 0 1 100.0,10.0 Z\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/></svg>"
+      }
+     },
+     "subtopic": "Доля фигуры",
+     "text": "Круг разделён на 6 равных частей. Какая часть закрашена?",
+     "type": "choice"
+    },
+    {
+     "answer": "d",
+     "figure": {
+      "kind": "svg",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 84\" role=\"img\"><rect x=\"10.0\" y=\"10\" width=\"36.0\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><rect x=\"46.0\" y=\"10\" width=\"36.0\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><rect x=\"82.0\" y=\"10\" width=\"36.0\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><rect x=\"118.0\" y=\"10\" width=\"36.0\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><rect x=\"154.0\" y=\"10\" width=\"36.0\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><rect x=\"190.0\" y=\"10\" width=\"36.0\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><rect x=\"226.0\" y=\"10\" width=\"36.0\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><rect x=\"262.0\" y=\"10\" width=\"36.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"298.0\" y=\"10\" width=\"36.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"334.0\" y=\"10\" width=\"36.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/></svg>"
+     },
+     "hint": "Знаменатель — на сколько равных частей разделили целое. Числитель — сколько из них закрасили.",
+     "id": "q1t2",
+     "options": [
+      {
+       "id": "a",
+       "text": "$\\frac{10}{7}$",
+       "why": "Числитель и знаменатель поменялись местами. Сверху — сколько частей взяли, снизу — на сколько частей разделили целое."
+      },
+      {
+       "id": "b",
+       "text": "$\\frac{7}{3}$",
+       "why": "Ты сравнил закрашенные части с незакрашенными (7 и 3). А в знаменателе пишут, на сколько частей разделили **всё целое** — это 10."
+      },
+      {
+       "id": "c",
+       "text": "$\\frac{3}{10}$",
+       "why": "Ты посчитал незакрашенные части (3). Спрашивали про закрашенные — их 7."
+      },
+      {
+       "id": "d",
+       "text": "$\\frac{7}{10}$"
+      }
+     ],
+     "solution": {
+      "answerLine": "$\\frac{7}{10}$",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Считаем **все** равные части — их 10. Это знаменатель: $\\frac{?}{10}$."
+       },
+       {
+        "layer": 2,
+        "text": "Считаем закрашенные части — их 7. Это числитель."
+       },
+       {
+        "layer": 2,
+        "text": "Закрашено $\\frac{7}{10}$ фигуры."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 110\" role=\"img\"><rect x=\"10.0\" y=\"10\" width=\"36.0\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><rect x=\"46.0\" y=\"10\" width=\"36.0\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><rect x=\"82.0\" y=\"10\" width=\"36.0\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><rect x=\"118.0\" y=\"10\" width=\"36.0\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><rect x=\"154.0\" y=\"10\" width=\"36.0\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><rect x=\"190.0\" y=\"10\" width=\"36.0\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><rect x=\"226.0\" y=\"10\" width=\"36.0\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.55;stroke:var(--ink);stroke-width:2\"/><rect x=\"262.0\" y=\"10\" width=\"36.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"298.0\" y=\"10\" width=\"36.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"334.0\" y=\"10\" width=\"36.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><text data-step=\"1\" x=\"28.0\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">1</text><text data-step=\"1\" x=\"64.0\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">2</text><text data-step=\"1\" x=\"100.0\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">3</text><text data-step=\"1\" x=\"136.0\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">4</text><text data-step=\"1\" x=\"172.0\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">5</text><text data-step=\"1\" x=\"208.0\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">6</text><text data-step=\"1\" x=\"244.0\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">7</text><text data-step=\"1\" x=\"280.0\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">8</text><text data-step=\"1\" x=\"316.0\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">9</text><text data-step=\"1\" x=\"352.0\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">10</text><rect data-step=\"2\" x=\"10\" y=\"6\" width=\"252.0\" height=\"72\" rx=\"6\" style=\"fill:none;stroke:var(--pen);stroke-width:4\"/></svg>"
+      }
+     },
+     "subtopic": "Доля фигуры",
+     "text": "Полоска разделена на 10 равных частей. Какая часть закрашена?",
+     "type": "choice"
+    }
+   ],
+   "type": "choice"
+  },
+  {
+   "id": "q2",
+   "answer": "a",
+   "hint": "Сделай у дробей одинаковые знаменатели — тогда сравнишь числители.",
+   "lesson": {
+    "remember": "больший знаменатель — мельче доли. Сравнивай после приведения к общему знаменателю.",
+    "text": "Сравнивать числители можно, только когда доли **одинакового размера**, то есть знаменатели равны.\nПоэтому сначала приводим дроби к общему знаменателю: ищем число, которое делится на оба знаменателя, и умножаем числитель и знаменатель каждой дроби на одно и то же число.\nНапример, $\\frac{1}{2}$ и $\\frac{2}{5}$: общий знаменатель 10. $\\frac{1}{2} = \\frac{5}{10}$, $\\frac{2}{5} = \\frac{4}{10}$. Значит, $\\frac{1}{2}$ больше.",
+    "title": "Как сравнивать дроби с разными знаменателями",
+    "visual": {
+     "caption": "Чем правее на прямой, тем больше дробь.",
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 120\" role=\"img\"><line x1=\"30\" y1=\"60\" x2=\"390\" y2=\"60\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"30.0\" y1=\"50\" x2=\"30.0\" y2=\"70\" style=\"stroke:var(--muted);stroke-width:2\"/><line x1=\"66.0\" y1=\"54\" x2=\"66.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"102.0\" y1=\"54\" x2=\"102.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"138.0\" y1=\"54\" x2=\"138.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"174.0\" y1=\"54\" x2=\"174.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"210.0\" y1=\"54\" x2=\"210.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"246.0\" y1=\"54\" x2=\"246.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"282.0\" y1=\"54\" x2=\"282.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"318.0\" y1=\"54\" x2=\"318.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"354.0\" y1=\"54\" x2=\"354.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"390.0\" y1=\"50\" x2=\"390.0\" y2=\"70\" style=\"stroke:var(--muted);stroke-width:2\"/><text x=\"30\" y=\"90\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 15px sans-serif\">0</text><text x=\"390\" y=\"90\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 15px sans-serif\">1</text><g data-step=\"0\"><circle cx=\"210.0\" cy=\"60\" r=\"7\" style=\"fill:var(--accent)\"/><text x=\"210.0\" y=\"38\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">1/2</text></g><g data-step=\"0\"><circle cx=\"174.0\" cy=\"60\" r=\"7\" style=\"fill:var(--pen)\"/><text x=\"174.0\" y=\"94\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 16px sans-serif\">2/5</text></g></svg>"
+    }
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "$\\frac{3}{4}$ больше"
+    },
+    {
+     "id": "b",
+     "text": "$\\frac{2}{3}$ больше",
+     "why": "Видимо, ты смотрел только на знаменатели: 3 больше 4, но чем больше знаменатель, тем **мельче** доли. Сравнивать надо после приведения к общему знаменателю."
+    },
+    {
+     "id": "c",
+     "text": "Дроби равны",
+     "why": "Дроби кажутся похожими, но доли у них разного размера. Приведи их к общему знаменателю — числители окажутся разными."
+    }
+   ],
+   "order": 2,
+   "solution": {
+    "answerLine": "$\\frac{3}{4} > \\frac{2}{3}$",
+    "steps": [
+     {
+      "layer": 0,
+      "text": "Общий знаменатель для 4 и 3 — число 12."
+     },
+     {
+      "layer": 1,
+      "text": "$\\frac{3}{4} = \\frac{3\\cdot3}{4\\cdot3} = \\frac{9}{12}$, а $\\frac{2}{3} = \\frac{2\\cdot4}{3\\cdot4} = \\frac{8}{12}$."
+     },
+     {
+      "layer": 2,
+      "text": "Знаменатели одинаковые — сравниваем числители: 9 > 8. На прямой большая дробь стоит правее."
+     }
+    ],
+    "visual": {
+     "caption": "Числовая прямая разделена на 12 частей.",
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 120\" role=\"img\"><line x1=\"30\" y1=\"60\" x2=\"390\" y2=\"60\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"30.0\" y1=\"50\" x2=\"30.0\" y2=\"70\" style=\"stroke:var(--muted);stroke-width:2\"/><line x1=\"60.0\" y1=\"54\" x2=\"60.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"90.0\" y1=\"54\" x2=\"90.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"120.0\" y1=\"54\" x2=\"120.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"150.0\" y1=\"54\" x2=\"150.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"180.0\" y1=\"54\" x2=\"180.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"210.0\" y1=\"54\" x2=\"210.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"240.0\" y1=\"54\" x2=\"240.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"270.0\" y1=\"54\" x2=\"270.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"300.0\" y1=\"54\" x2=\"300.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"330.0\" y1=\"54\" x2=\"330.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"360.0\" y1=\"54\" x2=\"360.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"390.0\" y1=\"50\" x2=\"390.0\" y2=\"70\" style=\"stroke:var(--muted);stroke-width:2\"/><text x=\"30\" y=\"90\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 15px sans-serif\">0</text><text x=\"390\" y=\"90\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 15px sans-serif\">1</text><g data-step=\"2\"><circle cx=\"300.0\" cy=\"60\" r=\"7\" style=\"fill:var(--accent)\"/><text x=\"300.0\" y=\"38\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">3/4</text></g><g data-step=\"2\"><circle cx=\"270.0\" cy=\"60\" r=\"7\" style=\"fill:var(--pen)\"/><text x=\"270.0\" y=\"94\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 16px sans-serif\">2/3</text></g></svg>"
+    }
+   },
+   "subtopic": "Сравнение дробей с разными знаменателями",
+   "text": "Какая дробь больше: $\\frac{3}{4}$ или $\\frac{2}{3}$?",
+   "twins": [
+    {
+     "answer": "a",
+     "hint": "Сделай у дробей одинаковые знаменатели — тогда сравнишь числители.",
+     "id": "q2t1",
+     "options": [
+      {
+       "id": "a",
+       "text": "$\\frac{2}{5}$ больше"
+      },
+      {
+       "id": "b",
+       "text": "$\\frac{1}{3}$ больше",
+       "why": "Видимо, ты смотрел только на знаменатели: 3 больше 5, но чем больше знаменатель, тем **мельче** доли. Сравнивать надо после приведения к общему знаменателю."
+      },
+      {
+       "id": "c",
+       "text": "Дроби равны",
+       "why": "Дроби кажутся похожими, но доли у них разного размера. Приведи их к общему знаменателю — числители окажутся разными."
+      }
+     ],
+     "solution": {
+      "answerLine": "$\\frac{2}{5} > \\frac{1}{3}$",
+      "steps": [
+       {
+        "layer": 0,
+        "text": "Общий знаменатель для 5 и 3 — число 15."
+       },
+       {
+        "layer": 1,
+        "text": "$\\frac{2}{5} = \\frac{2\\cdot3}{5\\cdot3} = \\frac{6}{15}$, а $\\frac{1}{3} = \\frac{1\\cdot5}{3\\cdot5} = \\frac{5}{15}$."
+       },
+       {
+        "layer": 2,
+        "text": "Знаменатели одинаковые — сравниваем числители: 6 > 5. На прямой большая дробь стоит правее."
+       }
+      ],
+      "visual": {
+       "caption": "Числовая прямая разделена на 15 частей.",
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 120\" role=\"img\"><line x1=\"30\" y1=\"60\" x2=\"390\" y2=\"60\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"30.0\" y1=\"50\" x2=\"30.0\" y2=\"70\" style=\"stroke:var(--muted);stroke-width:2\"/><line x1=\"54.0\" y1=\"54\" x2=\"54.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"78.0\" y1=\"54\" x2=\"78.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"102.0\" y1=\"54\" x2=\"102.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"126.0\" y1=\"54\" x2=\"126.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"150.0\" y1=\"54\" x2=\"150.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"174.0\" y1=\"54\" x2=\"174.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"198.0\" y1=\"54\" x2=\"198.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"222.0\" y1=\"54\" x2=\"222.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"246.0\" y1=\"54\" x2=\"246.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"270.0\" y1=\"54\" x2=\"270.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"294.0\" y1=\"54\" x2=\"294.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"318.0\" y1=\"54\" x2=\"318.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"342.0\" y1=\"54\" x2=\"342.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"366.0\" y1=\"54\" x2=\"366.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"390.0\" y1=\"50\" x2=\"390.0\" y2=\"70\" style=\"stroke:var(--muted);stroke-width:2\"/><text x=\"30\" y=\"90\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 15px sans-serif\">0</text><text x=\"390\" y=\"90\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 15px sans-serif\">1</text><g data-step=\"2\"><circle cx=\"174.0\" cy=\"60\" r=\"7\" style=\"fill:var(--accent)\"/><text x=\"174.0\" y=\"38\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">2/5</text></g><g data-step=\"2\"><circle cx=\"150.0\" cy=\"60\" r=\"7\" style=\"fill:var(--pen)\"/><text x=\"150.0\" y=\"94\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 16px sans-serif\">1/3</text></g></svg>"
+      }
+     },
+     "subtopic": "Сравнение дробей с разными знаменателями",
+     "text": "Какая дробь больше: $\\frac{2}{5}$ или $\\frac{1}{3}$?",
+     "type": "choice"
+    },
+    {
+     "answer": "b",
+     "hint": "Сделай у дробей одинаковые знаменатели — тогда сравнишь числители.",
+     "id": "q2t2",
+     "options": [
+      {
+       "id": "a",
+       "text": "$\\frac{5}{6}$ больше",
+       "why": "У этой дроби меньше знаменатель, поэтому кажется, что она «крупнее». Но после приведения к знаменателю 24 видно: $\\frac{20}{24} < \\frac{21}{24}$."
+      },
+      {
+       "id": "b",
+       "text": "$\\frac{7}{8}$ больше"
+      },
+      {
+       "id": "c",
+       "text": "Дроби равны",
+       "why": "Дроби кажутся похожими, но доли у них разного размера. Приведи их к общему знаменателю — числители окажутся разными."
+      }
+     ],
+     "solution": {
+      "answerLine": "$\\frac{7}{8} > \\frac{5}{6}$",
+      "steps": [
+       {
+        "layer": 0,
+        "text": "Общий знаменатель для 6 и 8 — число 24."
+       },
+       {
+        "layer": 1,
+        "text": "$\\frac{5}{6} = \\frac{5\\cdot4}{6\\cdot4} = \\frac{20}{24}$, а $\\frac{7}{8} = \\frac{7\\cdot3}{8\\cdot3} = \\frac{21}{24}$."
+       },
+       {
+        "layer": 2,
+        "text": "Знаменатели одинаковые — сравниваем числители: 21 > 20. На прямой большая дробь стоит правее."
+       }
+      ],
+      "visual": {
+       "caption": "Числовая прямая разделена на 24 частей.",
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 120\" role=\"img\"><line x1=\"30\" y1=\"60\" x2=\"390\" y2=\"60\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"30.0\" y1=\"50\" x2=\"30.0\" y2=\"70\" style=\"stroke:var(--muted);stroke-width:2\"/><line x1=\"45.0\" y1=\"54\" x2=\"45.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"60.0\" y1=\"54\" x2=\"60.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"75.0\" y1=\"54\" x2=\"75.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"90.0\" y1=\"54\" x2=\"90.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"105.0\" y1=\"54\" x2=\"105.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"120.0\" y1=\"54\" x2=\"120.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"135.0\" y1=\"54\" x2=\"135.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"150.0\" y1=\"54\" x2=\"150.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"165.0\" y1=\"54\" x2=\"165.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"180.0\" y1=\"54\" x2=\"180.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"195.0\" y1=\"54\" x2=\"195.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"210.0\" y1=\"54\" x2=\"210.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"225.0\" y1=\"54\" x2=\"225.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"240.0\" y1=\"54\" x2=\"240.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"255.0\" y1=\"54\" x2=\"255.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"270.0\" y1=\"54\" x2=\"270.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"285.0\" y1=\"54\" x2=\"285.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"300.0\" y1=\"54\" x2=\"300.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"315.0\" y1=\"54\" x2=\"315.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"330.0\" y1=\"54\" x2=\"330.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"345.0\" y1=\"54\" x2=\"345.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"360.0\" y1=\"54\" x2=\"360.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"375.0\" y1=\"54\" x2=\"375.0\" y2=\"66\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"390.0\" y1=\"50\" x2=\"390.0\" y2=\"70\" style=\"stroke:var(--muted);stroke-width:2\"/><text x=\"30\" y=\"90\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 15px sans-serif\">0</text><text x=\"390\" y=\"90\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 15px sans-serif\">1</text><g data-step=\"2\"><circle cx=\"330.0\" cy=\"60\" r=\"7\" style=\"fill:var(--accent)\"/><text x=\"330.0\" y=\"38\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">5/6</text></g><g data-step=\"2\"><circle cx=\"345.0\" cy=\"60\" r=\"7\" style=\"fill:var(--pen)\"/><text x=\"345.0\" y=\"94\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 16px sans-serif\">7/8</text></g></svg>"
+      }
+     },
+     "subtopic": "Сравнение дробей с разными знаменателями",
+     "text": "Какая дробь больше: $\\frac{5}{6}$ или $\\frac{7}{8}$?",
+     "type": "choice"
+    }
+   ],
+   "type": "choice"
+  },
+  {
+   "id": "q3",
+   "answer": 0.7777777777777778,
+   "hint": "Доли одинакового размера складываются как обычные предметы: 2 яблока + 5 яблок = 7 яблок.",
+   "lesson": {
+    "remember": "знаменатели при сложении не складываются.",
+    "text": "Знаменатель — это «название» долей: пятые, девятые, десятые. Когда складываем 2 девятых и 5 девятых, получаем 7 девятых — так же, как 2 яблока и 5 яблок дают 7 яблок.\nПоэтому **числители складываем**, а **знаменатель оставляем** прежним: $\\frac{a}{n} + \\frac{b}{n} = \\frac{a+b}{n}$.",
+    "title": "Сложение дробей с одинаковыми знаменателями",
+    "visual": {
+     "caption": "$\\frac{2}{9} + \\frac{5}{9} = \\frac{7}{9}$",
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 84\" role=\"img\"><rect x=\"10.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"50.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"90.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"130.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"170.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"210.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"250.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"290.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"330.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"0\" x=\"10.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"0\" x=\"50.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"0\" x=\"90.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--ok);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"0\" x=\"130.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--ok);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"0\" x=\"170.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--ok);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"0\" x=\"210.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--ok);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"0\" x=\"250.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--ok);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/></svg>"
+    }
+   },
+   "order": 3,
+   "solution": {
+    "answerLine": "$\\frac{7}{9}$",
+    "steps": [
+     {
+      "layer": 1,
+      "text": "Целое разделено на 9 частей. Отмечаем $\\frac{2}{9}$ — 2 части."
+     },
+     {
+      "layer": 2,
+      "text": "Добавляем ещё 5 части — получилось 7 частей из 9."
+     },
+     {
+      "layer": 2,
+      "text": "$\\frac{2}{9} + \\frac{5}{9} = \\frac{2+5}{9} = \\frac{7}{9}$."
+     }
+    ],
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 84\" role=\"img\"><rect x=\"10.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"50.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"90.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"130.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"170.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"210.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"250.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"290.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"330.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"1\" x=\"10.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"1\" x=\"50.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"2\" x=\"90.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--ok);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"2\" x=\"130.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--ok);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"2\" x=\"170.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--ok);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"2\" x=\"210.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--ok);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"2\" x=\"250.0\" y=\"10\" width=\"40.0\" height=\"64\" style=\"fill:var(--ok);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/></svg>"
+    }
+   },
+   "subtopic": "Сложение дробей с одинаковыми знаменателями",
+   "text": "Вычисли: $\\frac{2}{9} + \\frac{5}{9}$. Ответ запиши дробью, например 3/5.",
+   "tolerance": 0.0005,
+   "twins": [
+    {
+     "answer": 0.7142857142857143,
+     "hint": "Доли одинакового размера складываются как обычные предметы: 2 яблока + 5 яблок = 7 яблок.",
+     "id": "q3t1",
+     "solution": {
+      "answerLine": "$\\frac{5}{7}$",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Целое разделено на 7 частей. Отмечаем $\\frac{3}{7}$ — 3 части."
+       },
+       {
+        "layer": 2,
+        "text": "Добавляем ещё 2 части — получилось 5 частей из 7."
+       },
+       {
+        "layer": 2,
+        "text": "$\\frac{3}{7} + \\frac{2}{7} = \\frac{3+2}{7} = \\frac{5}{7}$."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 84\" role=\"img\"><rect x=\"10.0\" y=\"10\" width=\"51.4\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"61.4\" y=\"10\" width=\"51.4\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"112.9\" y=\"10\" width=\"51.4\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"164.3\" y=\"10\" width=\"51.4\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"215.7\" y=\"10\" width=\"51.4\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"267.1\" y=\"10\" width=\"51.4\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"318.6\" y=\"10\" width=\"51.4\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"1\" x=\"10.0\" y=\"10\" width=\"51.4\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"1\" x=\"61.4\" y=\"10\" width=\"51.4\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"1\" x=\"112.9\" y=\"10\" width=\"51.4\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"2\" x=\"164.3\" y=\"10\" width=\"51.4\" height=\"64\" style=\"fill:var(--ok);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"2\" x=\"215.7\" y=\"10\" width=\"51.4\" height=\"64\" style=\"fill:var(--ok);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/></svg>"
+      }
+     },
+     "subtopic": "Сложение дробей с одинаковыми знаменателями",
+     "text": "Вычисли: $\\frac{3}{7} + \\frac{2}{7}$. Ответ запиши дробью, например 3/5.",
+     "tolerance": 0.0005,
+     "type": "number",
+     "typicalWrong": [
+      {
+       "value": 0.35714285714285715,
+       "why": "Ты сложил и знаменатели: 7+7=14. Но знаменатель показывает **размер** долей — 7-е доли остаются 7-ми. Складываем только числители."
+      },
+      {
+       "value": 0.12244897959183673,
+       "why": "Ты перемножил дроби. А здесь нужно сложение: числители складываем, знаменатель оставляем."
+      }
+     ]
+    },
+    {
+     "answer": 0.8181818181818182,
+     "hint": "Доли одинакового размера складываются как обычные предметы: 2 яблока + 5 яблок = 7 яблок.",
+     "id": "q3t2",
+     "solution": {
+      "answerLine": "$\\frac{9}{11}$",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Целое разделено на 11 частей. Отмечаем $\\frac{4}{11}$ — 4 части."
+       },
+       {
+        "layer": 2,
+        "text": "Добавляем ещё 5 части — получилось 9 частей из 11."
+       },
+       {
+        "layer": 2,
+        "text": "$\\frac{4}{11} + \\frac{5}{11} = \\frac{4+5}{11} = \\frac{9}{11}$."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 84\" role=\"img\"><rect x=\"10.0\" y=\"10\" width=\"32.7\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"42.7\" y=\"10\" width=\"32.7\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"75.5\" y=\"10\" width=\"32.7\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"108.2\" y=\"10\" width=\"32.7\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"140.9\" y=\"10\" width=\"32.7\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"173.6\" y=\"10\" width=\"32.7\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"206.4\" y=\"10\" width=\"32.7\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"239.1\" y=\"10\" width=\"32.7\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"271.8\" y=\"10\" width=\"32.7\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"304.5\" y=\"10\" width=\"32.7\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"337.3\" y=\"10\" width=\"32.7\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"1\" x=\"10.0\" y=\"10\" width=\"32.7\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"1\" x=\"42.7\" y=\"10\" width=\"32.7\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"1\" x=\"75.5\" y=\"10\" width=\"32.7\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"1\" x=\"108.2\" y=\"10\" width=\"32.7\" height=\"64\" style=\"fill:var(--accent);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"2\" x=\"140.9\" y=\"10\" width=\"32.7\" height=\"64\" style=\"fill:var(--ok);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"2\" x=\"173.6\" y=\"10\" width=\"32.7\" height=\"64\" style=\"fill:var(--ok);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"2\" x=\"206.4\" y=\"10\" width=\"32.7\" height=\"64\" style=\"fill:var(--ok);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"2\" x=\"239.1\" y=\"10\" width=\"32.7\" height=\"64\" style=\"fill:var(--ok);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"2\" x=\"271.8\" y=\"10\" width=\"32.7\" height=\"64\" style=\"fill:var(--ok);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/></svg>"
+      }
+     },
+     "subtopic": "Сложение дробей с одинаковыми знаменателями",
+     "text": "Вычисли: $\\frac{4}{11} + \\frac{5}{11}$. Ответ запиши дробью, например 3/5.",
+     "tolerance": 0.0005,
+     "type": "number",
+     "typicalWrong": [
+      {
+       "value": 0.4090909090909091,
+       "why": "Ты сложил и знаменатели: 11+11=22. Но знаменатель показывает **размер** долей — 11-е доли остаются 11-ми. Складываем только числители."
+      },
+      {
+       "value": 0.1652892561983471,
+       "why": "Ты перемножил дроби. А здесь нужно сложение: числители складываем, знаменатель оставляем."
+      }
+     ]
+    }
+   ],
+   "type": "number",
+   "typicalWrong": [
+    {
+     "value": 0.3888888888888889,
+     "why": "Ты сложил и знаменатели: 9+9=18. Но знаменатель показывает **размер** долей — 9-е доли остаются 9-ми. Складываем только числители."
+    },
+    {
+     "value": 0.12345679012345678,
+     "why": "Ты перемножил дроби. А здесь нужно сложение: числители складываем, знаменатель оставляем."
+    }
+   ]
+  },
+  {
+   "id": "q4",
+   "answer": 8,
+   "figure": {
+    "kind": "svg",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 110\" role=\"img\"><line x1=\"30\" y1=\"50\" x2=\"390\" y2=\"50\" style=\"stroke:var(--ink);stroke-width:3\"/><text x=\"30\" y=\"36\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">A</text><text x=\"390\" y=\"36\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">B</text><line x1=\"30\" y1=\"42\" x2=\"30\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:3\"/><line x1=\"390\" y1=\"42\" x2=\"390\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:3\"/><text data-until=\"99\" x=\"210.0\" y=\"84\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">12 см</text><line data-step=\"99\" x1=\"150.0\" y1=\"42\" x2=\"150.0\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line data-step=\"99\" x1=\"270.0\" y1=\"42\" x2=\"270.0\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><text data-step=\"99\" x=\"90.0\" y=\"84\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">4 см</text><text data-step=\"99\" x=\"210.0\" y=\"84\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">4 см</text><text data-step=\"99\" x=\"330.0\" y=\"84\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">4 см</text><line data-step=\"99\" x1=\"30\" y1=\"50\" x2=\"270.0\" y2=\"50\" style=\"stroke:var(--pen);stroke-width:7;stroke-linecap:round\"/><text data-step=\"99\" x=\"270.0\" y=\"36\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 16px sans-serif\">C</text></svg>"
+   },
+   "hint": "Сначала найди одну долю (раздели на знаменатель), потом возьми столько долей, сколько в числителе.",
+   "lesson": {
+    "remember": "делим на знаменатель, умножаем на числитель.",
+    "text": "Чтобы найти, например, $\\frac{3}{4}$ от числа, действуем в два шага:\n1) делим число на **знаменатель** — находим одну долю;\n2) умножаем результат на **числитель** — берём нужное количество долей.\nПример: $\\frac{3}{4}$ от 20: $20 : 4 = 5$, $5 \\cdot 3 = 15$.",
+    "title": "Как найти дробь от числа",
+    "visual": {
+     "caption": "20 разделили на 4 части по 5, взяли 3 части: 15.",
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 84\" role=\"img\"><rect x=\"10.0\" y=\"10\" width=\"90.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"100.0\" y=\"10\" width=\"90.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"190.0\" y=\"10\" width=\"90.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"280.0\" y=\"10\" width=\"90.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"0\" x=\"10.0\" y=\"10\" width=\"90.0\" height=\"64\" style=\"fill:var(--pen);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"0\" x=\"100.0\" y=\"10\" width=\"90.0\" height=\"64\" style=\"fill:var(--pen);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"0\" x=\"190.0\" y=\"10\" width=\"90.0\" height=\"64\" style=\"fill:var(--pen);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/></svg>"
+    }
+   },
+   "order": 4,
+   "solution": {
+    "answerLine": "8 см",
+    "steps": [
+     {
+      "layer": 1,
+      "text": "Делим всё на 3 равные части: $12 : 3 = 4$ — это $\\frac{1}{3}$."
+     },
+     {
+      "layer": 2,
+      "text": "Берём 2 такие части: $4 \\cdot 2 = 8$."
+     }
+    ],
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 110\" role=\"img\"><line x1=\"30\" y1=\"50\" x2=\"390\" y2=\"50\" style=\"stroke:var(--ink);stroke-width:3\"/><text x=\"30\" y=\"36\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">A</text><text x=\"390\" y=\"36\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">B</text><line x1=\"30\" y1=\"42\" x2=\"30\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:3\"/><line x1=\"390\" y1=\"42\" x2=\"390\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:3\"/><text data-until=\"1\" x=\"210.0\" y=\"84\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">12 см</text><line data-step=\"1\" x1=\"150.0\" y1=\"42\" x2=\"150.0\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><line data-step=\"1\" x1=\"270.0\" y1=\"42\" x2=\"270.0\" y2=\"58\" style=\"stroke:var(--ink);stroke-width:2\"/><text data-step=\"1\" x=\"90.0\" y=\"84\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">4 см</text><text data-step=\"1\" x=\"210.0\" y=\"84\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">4 см</text><text data-step=\"1\" x=\"330.0\" y=\"84\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">4 см</text><line data-step=\"2\" x1=\"30\" y1=\"50\" x2=\"270.0\" y2=\"50\" style=\"stroke:var(--pen);stroke-width:7;stroke-linecap:round\"/><text data-step=\"2\" x=\"270.0\" y=\"36\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 16px sans-serif\">C</text></svg>"
+    }
+   },
+   "subtopic": "Нахождение дроби от числа",
+   "text": "Длина отрезка AB — 12 см. Отрезок AC составляет $\\frac{2}{3}$ отрезка AB. Найди длину AC.",
+   "tolerance": 0.001,
+   "twins": [
+    {
+     "answer": 18,
+     "hint": "Сначала найди одну долю (раздели на знаменатель), потом возьми столько долей, сколько в числителе.",
+     "id": "q4t1",
+     "solution": {
+      "answerLine": "18 учеников",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Делим всё на 4 равные части: $24 : 4 = 6$ — это $\\frac{1}{4}$."
+       },
+       {
+        "layer": 2,
+        "text": "Берём 3 такие части: $6 \\cdot 3 = 18$."
+       }
+      ],
+      "visual": {
+       "caption": "Каждая часть — это 6 учеников.",
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 110\" role=\"img\"><rect x=\"10.0\" y=\"10\" width=\"90.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"100.0\" y=\"10\" width=\"90.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"190.0\" y=\"10\" width=\"90.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"280.0\" y=\"10\" width=\"90.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"2\" x=\"10.0\" y=\"10\" width=\"90.0\" height=\"64\" style=\"fill:var(--pen);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"2\" x=\"100.0\" y=\"10\" width=\"90.0\" height=\"64\" style=\"fill:var(--pen);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"2\" x=\"190.0\" y=\"10\" width=\"90.0\" height=\"64\" style=\"fill:var(--pen);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><text data-step=\"1\" x=\"55.0\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">1</text><text data-step=\"1\" x=\"145.0\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">2</text><text data-step=\"1\" x=\"235.0\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">3</text><text data-step=\"1\" x=\"325.0\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">4</text></svg>"
+      }
+     },
+     "subtopic": "Нахождение дроби от числа",
+     "text": "В классе 24 ученика. $\\frac{3}{4}$ из них ходят в спортивную секцию. Сколько учеников ходят в секцию?",
+     "tolerance": 0.001,
+     "type": "number",
+     "typicalWrong": [
+      {
+       "value": 6,
+       "why": "Ты нашёл только одну долю: 24 : 4 = 6. Но нужно взять 3 таких доли: 6 · 3."
+      },
+      {
+       "value": 32,
+       "why": "Действия перепутаны местами: делить нужно на знаменатель, а умножать на числитель."
+      }
+     ],
+     "unit": "учеников"
+    },
+    {
+     "answer": 12,
+     "hint": "Сначала найди одну долю (раздели на знаменатель), потом возьми столько долей, сколько в числителе.",
+     "id": "q4t2",
+     "solution": {
+      "answerLine": "12 км",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Делим всё на 5 равные части: $20 : 5 = 4$ — это $\\frac{1}{5}$."
+       },
+       {
+        "layer": 2,
+        "text": "Берём 3 такие части: $4 \\cdot 3 = 12$."
+       }
+      ],
+      "visual": {
+       "caption": "Каждая часть — это 4 км.",
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 110\" role=\"img\"><rect x=\"10.0\" y=\"10\" width=\"72.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"82.0\" y=\"10\" width=\"72.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"154.0\" y=\"10\" width=\"72.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"226.0\" y=\"10\" width=\"72.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"298.0\" y=\"10\" width=\"72.0\" height=\"64\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"2\" x=\"10.0\" y=\"10\" width=\"72.0\" height=\"64\" style=\"fill:var(--pen);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"2\" x=\"82.0\" y=\"10\" width=\"72.0\" height=\"64\" style=\"fill:var(--pen);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect data-step=\"2\" x=\"154.0\" y=\"10\" width=\"72.0\" height=\"64\" style=\"fill:var(--pen);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><text data-step=\"1\" x=\"46.0\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">1</text><text data-step=\"1\" x=\"118.0\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">2</text><text data-step=\"1\" x=\"190.0\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">3</text><text data-step=\"1\" x=\"262.0\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">4</text><text data-step=\"1\" x=\"334.0\" y=\"100\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 15px sans-serif\">5</text></svg>"
+      }
+     },
+     "subtopic": "Нахождение дроби от числа",
+     "text": "Туристы должны пройти 20 км. В первый день они прошли $\\frac{3}{5}$ пути. Сколько километров они прошли?",
+     "tolerance": 0.001,
+     "type": "number",
+     "typicalWrong": [
+      {
+       "value": 4,
+       "why": "Ты нашёл только одну долю: 20 : 5 = 4. Но нужно взять 3 таких доли: 4 · 3."
+      },
+      {
+       "value": 33.333333333333336,
+       "why": "Действия перепутаны местами: делить нужно на знаменатель, а умножать на числитель."
+      }
+     ],
+     "unit": "км"
+    }
+   ],
+   "type": "number",
+   "typicalWrong": [
+    {
+     "value": 4,
+     "why": "Ты нашёл только одну долю: 12 : 3 = 4. Но нужно взять 2 таких доли: 4 · 2."
+    },
+    {
+     "value": 18,
+     "why": "Действия перепутаны местами: делить нужно на знаменатель, а умножать на числитель."
+    }
+   ],
+   "unit": "см"
+  }
+ ]
+}

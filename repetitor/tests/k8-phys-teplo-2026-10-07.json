@@ -1,0 +1,2557 @@
+{
+ "test": {
+  "id": "k8-phys-teplo-2026-10-07",
+  "createdAt": "2026-10-07T04:35:24+00:00",
+  "grade": 8,
+  "kid": "k8",
+  "source": "Физика 8 кл., §4–8, с. 22–45",
+  "subject": "Физика",
+  "title": "Тепловые явления: теплопередача, теплоёмкость, топливо",
+  "topic": "Теплопередача, количество теплоты, энергия топлива"
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "answer": "b",
+   "hint": "Подумай, куда движется нагретый воздух и что происходит с холодным.",
+   "lesson": {
+    "remember": "Нагреваем снизу, охлаждаем сверху: тёплое поднимается, холодное опускается.",
+    "text": "**Конвекция** — это теплопередача, при которой энергию переносят потоки жидкости или газа.\nПочему потоки возникают? Нагретый воздух или вода расширяются, их плотность становится меньше. Сила Архимеда выталкивает более лёгкий тёплый слой вверх, а холодный, более плотный, опускается вниз. Так вещество перемешивается.\nОтсюда правило: чтобы **нагреть** воздух или жидкость, нагреватель ставят **внизу**; чтобы **охладить** — охладитель ставят **вверху**.\nПример: в холодильнике морозильная камера раньше всегда стояла наверху — холодный воздух опускается и охлаждает нижние полки.\nВ твёрдых телах конвекции нет: частицы не могут перемещаться потоками.",
+    "title": "Конвекция — перенос тепла потоками",
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 260\" role=\"img\"><rect x=\"20.0\" y=\"20.0\" width=\"360.0\" height=\"220.0\" rx=\"0\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"40.0\" y=\"60.0\" width=\"70.0\" height=\"90.0\" rx=\"0\" style=\"fill:var(--accent-soft);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><text x=\"75.0\" y=\"50.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 14px sans-serif\">окно</text><rect x=\"40.0\" y=\"190.0\" width=\"80.0\" height=\"34.0\" rx=\"0\" style=\"fill:var(--pen);fill-opacity:0.25;stroke:var(--pen);stroke-width:2\"/><text x=\"80.0\" y=\"214.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:600 13px sans-serif\">батарея</text><g data-step=\"0\"><line x1=\"80.0\" y1=\"182.0\" x2=\"80.0\" y2=\"100.0\" style=\"stroke:var(--pen);stroke-width:3;stroke-linecap:round\"/><polygon points=\"80.0,90.0 85.5,100.0 74.5,100.0\" style=\"fill:var(--pen)\"/></g><g data-step=\"0\"><line x1=\"110.0\" y1=\"70.0\" x2=\"320.0\" y2=\"70.0\" style=\"stroke:var(--pen);stroke-width:3;stroke-linecap:round\"/><polygon points=\"330.0,70.0 320.0,75.5 320.0,64.5\" style=\"fill:var(--pen)\"/></g><g data-step=\"0\"><line x1=\"345.0\" y1=\"80.0\" x2=\"345.0\" y2=\"190.0\" style=\"stroke:var(--accent);stroke-width:3;stroke-linecap:round\"/><polygon points=\"345.0,200.0 339.5,190.0 350.5,190.0\" style=\"fill:var(--accent)\"/></g><g data-step=\"0\"><line x1=\"330.0\" y1=\"215.0\" x2=\"150.0\" y2=\"215.0\" style=\"stroke:var(--accent);stroke-width:3;stroke-linecap:round\"/><polygon points=\"140.0,215.0 150.0,209.5 150.0,220.5\" style=\"fill:var(--accent)\"/></g><text data-step=\"0\" x=\"200.0\" y=\"100.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:600 15px sans-serif\">тёплый воздух вверх</text><text data-step=\"0\" x=\"240.0\" y=\"200.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 15px sans-serif\">холодный вниз</text></svg>"
+    }
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Внизу батарея лучше передаёт тепло по полу за счёт теплопроводности",
+     "why": "Теплопроводность у воздуха очень маленькая — воздух хороший теплоизолятор. Если бы тепло шло только так, комната прогревалась бы очень долго."
+    },
+    {
+     "id": "b",
+     "text": "Тёплый воздух от батареи поднимается вверх, а холодный опускается к ней — воздух перемешивается и прогревает всю комнату"
+    },
+    {
+     "id": "c",
+     "text": "Чтобы излучение от батареи попадало прямо на ноги",
+     "why": "Излучение от батареи есть, но оно греет только то, что рядом. Всю комнату прогревают **потоки воздуха** — это конвекция."
+    },
+    {
+     "id": "d",
+     "text": "Так просто удобнее подводить трубы, физика тут ни при чём",
+     "why": "Дело как раз в физике: нагретый воздух легче (меньше плотность), его выталкивает вверх сила Архимеда. Поэтому нагреватель ставят внизу."
+    }
+   ],
+   "order": 1,
+   "solution": {
+    "answerLine": "тёплый воздух поднимается, холодный опускается — конвекция прогревает всю комнату",
+    "steps": [
+     {
+      "layer": 1,
+      "text": "Воздух у батареи нагревается, его плотность становится меньше, и сила Архимеда выталкивает его **вверх**."
+     },
+     {
+      "layer": 2,
+      "text": "На его место **опускается** холодный воздух от окна и тоже нагревается. Так возникают потоки — **конвекция**."
+     },
+     {
+      "layer": 3,
+      "text": "Если бы батарея висела под потолком, тёплый воздух так и остался бы наверху, а у пола было бы холодно."
+     }
+    ],
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 260\" role=\"img\"><rect x=\"20.0\" y=\"20.0\" width=\"360.0\" height=\"220.0\" rx=\"0\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"40.0\" y=\"60.0\" width=\"70.0\" height=\"90.0\" rx=\"0\" style=\"fill:var(--accent-soft);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><text x=\"75.0\" y=\"50.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 14px sans-serif\">окно</text><rect x=\"40.0\" y=\"190.0\" width=\"80.0\" height=\"34.0\" rx=\"0\" style=\"fill:var(--pen);fill-opacity:0.25;stroke:var(--pen);stroke-width:2\"/><text x=\"80.0\" y=\"214.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:600 13px sans-serif\">батарея</text><g data-step=\"1\"><line x1=\"80.0\" y1=\"182.0\" x2=\"80.0\" y2=\"100.0\" style=\"stroke:var(--pen);stroke-width:3;stroke-linecap:round\"/><polygon points=\"80.0,90.0 85.5,100.0 74.5,100.0\" style=\"fill:var(--pen)\"/></g><g data-step=\"1\"><line x1=\"110.0\" y1=\"70.0\" x2=\"320.0\" y2=\"70.0\" style=\"stroke:var(--pen);stroke-width:3;stroke-linecap:round\"/><polygon points=\"330.0,70.0 320.0,75.5 320.0,64.5\" style=\"fill:var(--pen)\"/></g><g data-step=\"2\"><line x1=\"345.0\" y1=\"80.0\" x2=\"345.0\" y2=\"190.0\" style=\"stroke:var(--accent);stroke-width:3;stroke-linecap:round\"/><polygon points=\"345.0,200.0 339.5,190.0 350.5,190.0\" style=\"fill:var(--accent)\"/></g><g data-step=\"2\"><line x1=\"330.0\" y1=\"215.0\" x2=\"150.0\" y2=\"215.0\" style=\"stroke:var(--accent);stroke-width:3;stroke-linecap:round\"/><polygon points=\"140.0,215.0 150.0,209.5 150.0,220.5\" style=\"fill:var(--accent)\"/></g><text data-step=\"1\" x=\"200.0\" y=\"100.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:600 15px sans-serif\">тёплый воздух вверх</text><text data-step=\"2\" x=\"240.0\" y=\"200.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 15px sans-serif\">холодный вниз</text></svg>"
+    }
+   },
+   "subtopic": "Конвекция",
+   "text": "Почему батареи отопления устанавливают внизу, под окном?",
+   "twins": [
+    {
+     "answer": "c",
+     "hint": "Что происходит с плотностью воды при нагревании?",
+     "id": "q1t1",
+     "options": [
+      {
+       "id": "a",
+       "text": "Вода — хороший проводник тепла, тепло быстро идёт снизу вверх по воде",
+       "why": "Теплопроводность воды маленькая: если нагревать воду сверху, нижний слой долго остаётся холодным. Всю воду прогревают **потоки** — конвекция."
+      },
+      {
+       "id": "b",
+       "text": "Тепло доходит до верхних слоёв излучением от нагревателя",
+       "why": "Излучение тут почти ничего не даёт: вода его поглощает у самого нагревателя. Работают потоки тёплой и холодной воды."
+      },
+      {
+       "id": "c",
+       "text": "Нагретая вода поднимается вверх, а холодная опускается к нагревателю — возникают потоки (конвекция)"
+      }
+     ],
+     "solution": {
+      "answerLine": "конвекция: тёплая вода поднимается, холодная опускается",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Вода у дна нагревается, её плотность уменьшается, и сила Архимеда поднимает её вверх."
+       },
+       {
+        "layer": 2,
+        "text": "Холодная, более плотная вода опускается вниз, к нагревателю. Потоки перемешивают всю воду — это конвекция."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 262\" role=\"img\" style=\"max-width:380px;margin:0 auto\"><rect x=\"110.0\" y=\"40.0\" width=\"180.0\" height=\"170.0\" rx=\"14\" style=\"fill:var(--accent-soft);fill-opacity:0.5;stroke:var(--ink);stroke-width:2\"/><text x=\"200.0\" y=\"30.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 14px sans-serif\">вода</text><rect x=\"100.0\" y=\"214.0\" width=\"200.0\" height=\"18.0\" rx=\"0\" style=\"fill:var(--pen);fill-opacity:0.35;stroke:var(--pen);stroke-width:2\"/><text x=\"200.0\" y=\"252.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:600 14px sans-serif\">нагреватель снизу</text><g data-step=\"1\"><line x1=\"170.0\" y1=\"200.0\" x2=\"170.0\" y2=\"80.0\" style=\"stroke:var(--pen);stroke-width:3;stroke-linecap:round\"/><polygon points=\"170.0,70.0 175.5,80.0 164.5,80.0\" style=\"fill:var(--pen)\"/></g><g data-step=\"2\"><line x1=\"230.0\" y1=\"70.0\" x2=\"230.0\" y2=\"190.0\" style=\"stroke:var(--accent);stroke-width:3;stroke-linecap:round\"/><polygon points=\"230.0,200.0 224.5,190.0 235.5,190.0\" style=\"fill:var(--accent)\"/></g><text data-step=\"1\" x=\"150.0\" y=\"140.0\" text-anchor=\"end\" style=\"fill:var(--pen);font:600 14px sans-serif\">тёплая</text><text data-step=\"2\" x=\"250.0\" y=\"140.0\" text-anchor=\"start\" style=\"fill:var(--accent);font:600 14px sans-serif\">холодная</text></svg>"
+      }
+     },
+     "text": "Нагреватель в чайнике находится только на дне. Почему же прогревается вся вода, а не только нижний слой?",
+     "type": "choice"
+    },
+    {
+     "answer": "a",
+     "hint": "Холодный воздух поднимается или опускается?",
+     "id": "q1t2",
+     "options": [
+      {
+       "id": "a",
+       "text": "Под потолком: холодный воздух тяжелее, он опустится вниз и перемешает воздух во всей комнате"
+      },
+      {
+       "id": "b",
+       "text": "У самого пола: там холодный воздух нужнее всего",
+       "why": "У пола холодный воздух так и останется лежать внизу — он плотнее тёплого. Конвекционных потоков не будет, а наверху останется жарко."
+      },
+      {
+       "id": "c",
+       "text": "Неважно где: холодный воздух сам равномерно разойдётся",
+       "why": "Холодный воздух плотнее и опускается вниз. Поэтому место важно: охладитель ставят наверху, нагреватель — внизу."
+      }
+     ],
+     "solution": {
+      "answerLine": "кондиционер — под потолком, нагреватель — внизу",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Холодный воздух плотнее тёплого, поэтому он **опускается**."
+       },
+       {
+        "layer": 2,
+        "text": "Если охлаждать воздух наверху, он опустится, а тёплый поднимется к кондиционеру. Возникнет конвекция, и охладится вся комната."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 260\" role=\"img\"><rect x=\"20.0\" y=\"20.0\" width=\"360.0\" height=\"220.0\" rx=\"0\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"40.0\" y=\"60.0\" width=\"70.0\" height=\"90.0\" rx=\"0\" style=\"fill:var(--accent-soft);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><text x=\"75.0\" y=\"50.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 14px sans-serif\">окно</text><rect x=\"270.0\" y=\"28.0\" width=\"100.0\" height=\"28.0\" rx=\"0\" style=\"fill:var(--accent);fill-opacity:0.25;stroke:var(--accent);stroke-width:2\"/><text x=\"320.0\" y=\"47.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 13px sans-serif\">кондиционер</text><g data-step=\"2\"><line x1=\"320.0\" y1=\"64.0\" x2=\"320.0\" y2=\"195.0\" style=\"stroke:var(--accent);stroke-width:3;stroke-linecap:round\"/><polygon points=\"320.0,205.0 314.5,195.0 325.5,195.0\" style=\"fill:var(--accent)\"/></g><g data-step=\"2\"><line x1=\"300.0\" y1=\"222.0\" x2=\"90.0\" y2=\"222.0\" style=\"stroke:var(--accent);stroke-width:3;stroke-linecap:round\"/><polygon points=\"80.0,222.0 90.0,216.5 90.0,227.5\" style=\"fill:var(--accent)\"/></g><g data-step=\"1\"><line x1=\"60.0\" y1=\"210.0\" x2=\"60.0\" y2=\"85.0\" style=\"stroke:var(--pen);stroke-width:3;stroke-linecap:round\"/><polygon points=\"60.0,75.0 65.5,85.0 54.5,85.0\" style=\"fill:var(--pen)\"/></g><g data-step=\"1\"><line x1=\"80.0\" y1=\"62.0\" x2=\"240.0\" y2=\"62.0\" style=\"stroke:var(--pen);stroke-width:3;stroke-linecap:round\"/><polygon points=\"250.0,62.0 240.0,67.5 240.0,56.5\" style=\"fill:var(--pen)\"/></g><text data-step=\"2\" x=\"200.0\" y=\"160.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 15px sans-serif\">холодный вниз</text><text data-step=\"1\" x=\"165.0\" y=\"95.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:600 15px sans-serif\">тёплый вверх</text></svg>"
+      }
+     },
+     "text": "Где лучше повесить кондиционер, который **охлаждает** воздух в комнате?",
+     "type": "choice"
+    }
+   ],
+   "type": "choice"
+  },
+  {
+   "id": "q2",
+   "answer": "c",
+   "hint": "Что находится между Солнцем и Землёй? Какому способу теплопередачи вещество не нужно?",
+   "lesson": {
+    "remember": "Через вакуум тепло идёт только излучением.",
+    "text": "**Излучение** — это теплопередача с помощью электромагнитных волн (лучей): одно тело испускает лучи, они переносят энергию, другое тело их поглощает.\nГлавное отличие от двух других способов: для излучения **не нужна среда**. Теплопроводности нужны частицы, которые толкают соседей, конвекции — потоки жидкости или газа. Излучение идёт даже через вакуум.\nКак узнать излучение в задаче: тепло пришло, а то, что между телами (воздух, космос), почти не нагрелось. Пример: зимой в солнечный день на солнце тепло, хотя воздух морозный.\nОстановить излучение можно экраном: навесом, шляпой, зонтом.",
+    "title": "Излучение — теплопередача без вещества",
+    "visual": {
+     "html": "<div style=\"overflow-x:auto\"><table style=\"border-collapse:collapse;margin:0 auto;font-size:.92rem\"><tr><th style=\"padding:6px 8px;border-bottom:1px solid var(--line)\"></th><th style=\"padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top\">Теплопроводность</th><th style=\"padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top\">Конвекция</th><th style=\"padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top\">Излучение</th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);color:var(--muted)\">Как переносится</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top\">частицы передают энергию соседям</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top\">потоками жидкости или газа</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top\">лучами (электромагнитные волны)</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);color:var(--muted)\">Нужно вещество?</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top\">да</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top\">да, жидкость или газ</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top\">нет, идёт и в вакууме</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);color:var(--muted)\">Пример</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top\">ложка в горячем чае</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top\">батарея, чайник, ветер</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top\">Солнце, костёр</td></tr></table></div>",
+     "kind": "html"
+    }
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Теплопроводностью",
+     "why": "Для теплопроводности нужно вещество: частицы передают энергию соседям. А между Солнцем и Землёй — космический вакуум, частиц там почти нет."
+    },
+    {
+     "id": "b",
+     "text": "Конвекцией",
+     "why": "Конвекция — это потоки жидкости или газа. В космосе воздуха нет, потокам взяться неоткуда."
+    },
+    {
+     "id": "c",
+     "text": "Излучением"
+    }
+   ],
+   "order": 2,
+   "solution": {
+    "answerLine": "излучением",
+    "steps": [
+     {
+      "layer": 1,
+      "text": "Между Солнцем и Землёй — безвоздушное пространство (вакуум)."
+     },
+     {
+      "layer": 2,
+      "text": "Теплопроводность и конвекция без вещества невозможны. Остаётся **излучение** — оно идёт и в вакууме."
+     }
+    ],
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 240\" role=\"img\"><circle cx=\"60.0\" cy=\"120.0\" r=\"46.0\" style=\"fill:var(--warn);fill-opacity:0.8;stroke:var(--warn);stroke-width:2\"/><text x=\"60.0\" y=\"190.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 15px sans-serif\">Солнце</text><circle cx=\"340.0\" cy=\"120.0\" r=\"26.0\" style=\"fill:var(--accent);fill-opacity:0.6;stroke:var(--accent);stroke-width:2\"/><text x=\"340.0\" y=\"170.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 15px sans-serif\">Земля</text><text x=\"200.0\" y=\"40.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 14px sans-serif\">космос: вакуум, частиц нет</text><g data-step=\"1\"><line x1=\"112.0\" y1=\"90.0\" x2=\"298.0\" y2=\"107.1\" style=\"stroke:var(--warn);stroke-width:3;stroke-linecap:round\"/><polygon points=\"308.0,108.0 297.5,112.6 298.5,101.6\" style=\"fill:var(--warn)\"/></g><g data-step=\"1\"><line x1=\"112.0\" y1=\"120.0\" x2=\"298.0\" y2=\"120.0\" style=\"stroke:var(--warn);stroke-width:3;stroke-linecap:round\"/><polygon points=\"308.0,120.0 298.0,125.5 298.0,114.5\" style=\"fill:var(--warn)\"/></g><g data-step=\"1\"><line x1=\"112.0\" y1=\"150.0\" x2=\"298.0\" y2=\"132.9\" style=\"stroke:var(--warn);stroke-width:3;stroke-linecap:round\"/><polygon points=\"308.0,132.0 298.5,138.4 297.5,127.4\" style=\"fill:var(--warn)\"/></g><text data-step=\"2\" x=\"210.0\" y=\"225.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 18px sans-serif\">излучение</text></svg>"
+    }
+   },
+   "subtopic": "Излучение",
+   "text": "Каким способом энергия Солнца передаётся Земле?",
+   "twins": [
+    {
+     "answer": "a",
+     "hint": "Тепло дошло, а воздух по дороге почти не нагрелся. Какому способу воздух не нужен?",
+     "id": "q2t1",
+     "options": [
+      {
+       "id": "a",
+       "text": "Излучением"
+      },
+      {
+       "id": "b",
+       "text": "Конвекцией",
+       "why": "Тёплый воздух от костра уходит **вверх**, а не вбок к тебе. Сбоку тебя греют лучи — излучение."
+      },
+      {
+       "id": "c",
+       "text": "Теплопроводностью воздуха",
+       "why": "У воздуха очень маленькая теплопроводность — он хороший теплоизолятор. Через метр воздуха так тепло не дошло бы."
+      }
+     ],
+     "solution": {
+      "answerLine": "излучением",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Тёплый воздух от костра поднимается вверх — к тебе сбоку он не идёт."
+       },
+       {
+        "layer": 2,
+        "text": "Воздух — плохой проводник тепла. Значит, лицо греют лучи от огня — **излучение**."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 240\" role=\"img\"><polygon points=\"40,190 60,110 80,150 95,90 120,190\" style=\"fill:var(--warn);fill-opacity:.8;stroke:var(--pen);stroke-width:2\"/><text x=\"80.0\" y=\"215.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 15px sans-serif\">костёр</text><circle cx=\"340.0\" cy=\"120.0\" r=\"24.0\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><text x=\"340.0\" y=\"175.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 15px sans-serif\">ты</text><text x=\"210.0\" y=\"40.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 14px sans-serif\">воздух почти не нагрет</text><g data-step=\"1\"><line x1=\"130.0\" y1=\"90.0\" x2=\"300.0\" y2=\"107.0\" style=\"stroke:var(--warn);stroke-width:3;stroke-linecap:round\"/><polygon points=\"310.0,108.0 299.5,112.5 300.6,101.5\" style=\"fill:var(--warn)\"/></g><g data-step=\"1\"><line x1=\"130.0\" y1=\"120.0\" x2=\"300.0\" y2=\"120.0\" style=\"stroke:var(--warn);stroke-width:3;stroke-linecap:round\"/><polygon points=\"310.0,120.0 300.0,125.5 300.0,114.5\" style=\"fill:var(--warn)\"/></g><g data-step=\"1\"><line x1=\"130.0\" y1=\"150.0\" x2=\"300.0\" y2=\"133.0\" style=\"stroke:var(--warn);stroke-width:3;stroke-linecap:round\"/><polygon points=\"310.0,132.0 300.6,138.5 299.5,127.5\" style=\"fill:var(--warn)\"/></g><text data-step=\"2\" x=\"210.0\" y=\"225.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 18px sans-serif\">излучение</text></svg>"
+      }
+     },
+     "text": "Ты сидишь у костра. Воздух между тобой и огнём почти не нагрет, но лицу жарко. Каким способом тепло доходит до тебя?",
+     "type": "choice"
+    },
+    {
+     "answer": "c",
+     "hint": "Каким способам нужно вещество (частицы)?",
+     "id": "q2t2",
+     "options": [
+      {
+       "id": "a",
+       "text": "Только теплопроводность",
+       "why": "Теплопроводность — это передача энергии от частицы к частице. В вакууме частиц нет — передавать некому."
+      },
+      {
+       "id": "b",
+       "text": "Только конвекция",
+       "why": "Конвекция — это потоки жидкости или газа. В вакууме ни жидкости, ни газа нет."
+      },
+      {
+       "id": "c",
+       "text": "Только излучение"
+      },
+      {
+       "id": "d",
+       "text": "Все три вида",
+       "why": "Для теплопроводности и конвекции нужно вещество. В вакууме возможно только излучение."
+      }
+     ],
+     "solution": {
+      "answerLine": "только излучение",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Теплопроводности нужны частицы, конвекции — потоки жидкости или газа."
+       },
+       {
+        "layer": 2,
+        "text": "В вакууме вещества нет, поэтому возможно только **излучение**."
+       }
+      ],
+      "visual": {
+       "html": "<div style=\"overflow-x:auto\"><table style=\"border-collapse:collapse;margin:0 auto;font-size:.92rem\"><tr><th style=\"padding:6px 8px;border-bottom:1px solid var(--line)\"></th><th style=\"padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top\">Теплопроводность</th><th style=\"padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top\">Конвекция</th><th style=\"padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;background:var(--card)\">Излучение</th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);color:var(--muted)\">Как переносится</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top\">частицы передают энергию соседям</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top\">потоками жидкости или газа</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;background:var(--card)\">лучами (электромагнитные волны)</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);color:var(--muted)\">Нужно вещество?</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top\">да</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top\">да, жидкость или газ</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;background:var(--card)\">нет, идёт и в вакууме</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);color:var(--muted)\">Пример</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top\">ложка в горячем чае</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top\">батарея, чайник, ветер</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;background:var(--card)\">Солнце, костёр</td></tr></table><p data-step=\"1\" style=\"margin:8px 0 0;text-align:center;font-weight:700;color:var(--pen)\">Здесь: излучение</p></div>",
+       "kind": "html"
+      }
+     },
+     "text": "Какой вид теплопередачи может происходить в вакууме?",
+     "type": "choice"
+    }
+   ],
+   "type": "choice"
+  },
+  {
+   "id": "q3",
+   "answer": "b",
+   "hint": "Какие тела лучше поглощают лучи — светлые или тёмные?",
+   "lesson": {
+    "remember": "Тёмное сильнее поглощает и сильнее излучает; светлое и блестящее — отражает.",
+    "text": "**Поглощение** — это превращение энергии излучения во внутреннюю энергию тела: лучи попали на тело, и оно нагрелось.\nТёмные тела поглощают лучи сильнее, светлые и зеркальные — сильнее отражают. Поэтому на солнце тёмная машина нагревается сильнее белой.\nЛовушка: тела, которые хорошо поглощают, так же хорошо и **излучают**. Значит, тёмные тела быстрее и остывают. Горячая вода в светлом чайнике остывает медленнее, чем в тёмном.\nПример: летом носят светлую одежду, а внутреннюю колбу термоса делают зеркальной.",
+    "title": "Тёмное и светлое: поглощение и излучение",
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 240\" role=\"img\"><circle cx=\"200.0\" cy=\"25.0\" r=\"16.0\" style=\"fill:var(--warn);fill-opacity:1;stroke:var(--warn);stroke-width:2\"/><polygon points=\"40,60 70,45 90,55 110,45 140,60 130,90 120,85 120,170 60,170 60,85 50,90\" style=\"fill:var(--card);fill-opacity:.85;stroke:var(--ink);stroke-width:2\"/><polygon points=\"260,60 290,45 310,55 330,45 360,60 350,90 340,85 340,170 280,170 280,85 270,90\" style=\"fill:var(--ink);fill-opacity:.85;stroke:var(--ink);stroke-width:2\"/><text x=\"90.0\" y=\"195.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 15px sans-serif\">белая</text><text x=\"310.0\" y=\"195.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 15px sans-serif\">чёрная</text><g><line x1=\"180.0\" y1=\"35.0\" x2=\"117.3\" y2=\"93.2\" style=\"stroke:var(--warn);stroke-width:3;stroke-linecap:round\"/><polygon points=\"110.0,100.0 113.6,89.2 121.1,97.2\" style=\"fill:var(--warn)\"/></g><g><line x1=\"220.0\" y1=\"35.0\" x2=\"292.2\" y2=\"93.7\" style=\"stroke:var(--warn);stroke-width:3;stroke-linecap:round\"/><polygon points=\"300.0,100.0 288.8,98.0 295.7,89.4\" style=\"fill:var(--warn)\"/></g><g data-step=\"0\"><line x1=\"100.0\" y1=\"100.0\" x2=\"46.5\" y2=\"37.6\" style=\"stroke:var(--accent);stroke-width:3;stroke-linecap:round\"/><polygon points=\"40.0,30.0 50.7,34.0 42.3,41.2\" style=\"fill:var(--accent)\"/></g><text data-step=\"0\" x=\"40.0\" y=\"230.0\" text-anchor=\"start\" style=\"fill:var(--accent);font:600 15px sans-serif\">отражает</text><circle data-step=\"0\" cx=\"310.0\" cy=\"125.0\" r=\"16.0\" style=\"fill:var(--pen);fill-opacity:0.35;stroke:var(--pen);stroke-width:2\"/><text data-step=\"0\" x=\"370.0\" y=\"230.0\" text-anchor=\"end\" style=\"fill:var(--pen);font:600 15px sans-serif\">поглощает</text></svg>"
+    }
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "В белой",
+     "why": "Светлые поверхности **отражают** большую часть солнечных лучей. Поэтому в белой одежде летом прохладнее."
+    },
+    {
+     "id": "b",
+     "text": "В чёрной"
+    },
+    {
+     "id": "c",
+     "text": "Одинаково — греет воздух, а не солнце",
+     "why": "Солнце греет излучением, и разные цвета поглощают его по-разному. Тёмная ткань поглощает больше лучей."
+    }
+   ],
+   "order": 3,
+   "solution": {
+    "answerLine": "в чёрной футболке",
+    "steps": [
+     {
+      "layer": 1,
+      "text": "Солнечные лучи падают на обе футболки одинаково."
+     },
+     {
+      "layer": 2,
+      "text": "Белая ткань большую часть лучей **отражает**, чёрная — **поглощает**, и энергия идёт на нагревание. Значит, в чёрной жарче."
+     }
+    ],
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 240\" role=\"img\"><circle cx=\"200.0\" cy=\"25.0\" r=\"16.0\" style=\"fill:var(--warn);fill-opacity:1;stroke:var(--warn);stroke-width:2\"/><polygon points=\"40,60 70,45 90,55 110,45 140,60 130,90 120,85 120,170 60,170 60,85 50,90\" style=\"fill:var(--card);fill-opacity:.85;stroke:var(--ink);stroke-width:2\"/><polygon points=\"260,60 290,45 310,55 330,45 360,60 350,90 340,85 340,170 280,170 280,85 270,90\" style=\"fill:var(--ink);fill-opacity:.85;stroke:var(--ink);stroke-width:2\"/><text x=\"90.0\" y=\"195.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 15px sans-serif\">белая</text><text x=\"310.0\" y=\"195.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 15px sans-serif\">чёрная</text><g><line x1=\"180.0\" y1=\"35.0\" x2=\"117.3\" y2=\"93.2\" style=\"stroke:var(--warn);stroke-width:3;stroke-linecap:round\"/><polygon points=\"110.0,100.0 113.6,89.2 121.1,97.2\" style=\"fill:var(--warn)\"/></g><g><line x1=\"220.0\" y1=\"35.0\" x2=\"292.2\" y2=\"93.7\" style=\"stroke:var(--warn);stroke-width:3;stroke-linecap:round\"/><polygon points=\"300.0,100.0 288.8,98.0 295.7,89.4\" style=\"fill:var(--warn)\"/></g><g data-step=\"1\"><line x1=\"100.0\" y1=\"100.0\" x2=\"46.5\" y2=\"37.6\" style=\"stroke:var(--accent);stroke-width:3;stroke-linecap:round\"/><polygon points=\"40.0,30.0 50.7,34.0 42.3,41.2\" style=\"fill:var(--accent)\"/></g><text data-step=\"1\" x=\"40.0\" y=\"230.0\" text-anchor=\"start\" style=\"fill:var(--accent);font:600 15px sans-serif\">отражает</text><circle data-step=\"2\" cx=\"310.0\" cy=\"125.0\" r=\"16.0\" style=\"fill:var(--pen);fill-opacity:0.35;stroke:var(--pen);stroke-width:2\"/><text data-step=\"2\" x=\"370.0\" y=\"230.0\" text-anchor=\"end\" style=\"fill:var(--pen);font:600 15px sans-serif\">поглощает</text></svg>"
+    }
+   },
+   "subtopic": "Поглощение и излучение тёмных и светлых тел",
+   "text": "Солнечный летний день. В какой футболке будет жарче?",
+   "twins": [
+    {
+     "answer": "b",
+     "hint": "Тёмная поверхность лучи поглощает или отражает?",
+     "id": "q3t1",
+     "options": [
+      {
+       "id": "a",
+       "text": "Чистый белый снег в лесу",
+       "why": "Белый снег отражает почти все солнечные лучи, поэтому тает медленно."
+      },
+      {
+       "id": "b",
+       "text": "Снег, покрытый грязью и копотью, в городе"
+      },
+      {
+       "id": "c",
+       "text": "Одинаково, если одинаково светит солнце",
+       "why": "Солнце светит одинаково, но поглощается энергия по-разному: тёмная грязь поглощает лучи сильнее."
+      }
+     ],
+     "solution": {
+      "answerLine": "грязный снег в городе",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Грязь и копоть делают снег тёмным."
+       },
+       {
+        "layer": 2,
+        "text": "Тёмные тела поглощают больше энергии излучения, поэтому грязный снег нагревается и тает быстрее."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 240\" role=\"img\"><circle cx=\"200.0\" cy=\"25.0\" r=\"15.0\" style=\"fill:var(--warn);fill-opacity:1;stroke:var(--warn);stroke-width:2\"/><rect x=\"30.0\" y=\"140.0\" width=\"150.0\" height=\"60.0\" rx=\"10\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><text x=\"105.0\" y=\"225.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 14px sans-serif\">чистый снег</text><rect x=\"220.0\" y=\"140.0\" width=\"150.0\" height=\"60.0\" rx=\"10\" style=\"fill:var(--muted);fill-opacity:0.7;stroke:var(--ink);stroke-width:2\"/><text x=\"295.0\" y=\"225.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 14px sans-serif\">грязный снег</text><g><line x1=\"185.0\" y1=\"35.0\" x2=\"116.0\" y2=\"127.0\" style=\"stroke:var(--warn);stroke-width:3;stroke-linecap:round\"/><polygon points=\"110.0,135.0 111.6,123.7 120.4,130.3\" style=\"fill:var(--warn)\"/></g><g><line x1=\"215.0\" y1=\"35.0\" x2=\"284.0\" y2=\"127.0\" style=\"stroke:var(--warn);stroke-width:3;stroke-linecap:round\"/><polygon points=\"290.0,135.0 279.6,130.3 288.4,123.7\" style=\"fill:var(--warn)\"/></g><g data-step=\"1\"><line x1=\"110.0\" y1=\"135.0\" x2=\"66.1\" y2=\"77.9\" style=\"stroke:var(--accent);stroke-width:3;stroke-linecap:round\"/><polygon points=\"60.0,70.0 70.5,74.6 61.7,81.3\" style=\"fill:var(--accent)\"/></g><text data-step=\"1\" x=\"40.0\" y=\"60.0\" text-anchor=\"start\" style=\"fill:var(--accent);font:600 14px sans-serif\">отражает</text><text data-step=\"2\" x=\"295.0\" y=\"120.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:600 14px sans-serif\">поглощает → тает</text></svg>"
+      }
+     },
+     "text": "Весной на солнце где снег растает быстрее?",
+     "type": "choice"
+    },
+    {
+     "answer": "c",
+     "hint": "Тёмные тела хорошо поглощают лучи. А как они излучают?",
+     "id": "q3t2",
+     "options": [
+      {
+       "id": "a",
+       "text": "Тёмный матовый",
+       "why": "Тела с высокой поглощательной способностью так же хорошо **излучают** энергию. Тёмный чайник отдаёт тепло лучами быстрее и остывает быстрее."
+      },
+      {
+       "id": "b",
+       "text": "Одинаково — цвет на остывание не влияет",
+       "why": "Цвет влияет: тёмные тела не только сильнее поглощают, но и сильнее излучают. Светлый блестящий теряет меньше энергии."
+      },
+      {
+       "id": "c",
+       "text": "Светлый блестящий"
+      }
+     ],
+     "solution": {
+      "answerLine": "светлый блестящий",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Тела, которые хорошо поглощают излучение, так же хорошо и **излучают**."
+       },
+       {
+        "layer": 2,
+        "text": "Тёмный чайник отдаёт энергию быстрее, а светлый блестящий — медленнее. Поэтому светлый остынет медленнее."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 245\" role=\"img\"><rect x=\"50.0\" y=\"70.0\" width=\"110.0\" height=\"110.0\" rx=\"18\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"240.0\" y=\"70.0\" width=\"110.0\" height=\"110.0\" rx=\"18\" style=\"fill:var(--ink);fill-opacity:0.85;stroke:var(--ink);stroke-width:2\"/><text x=\"105.0\" y=\"205.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 14px sans-serif\">светлый блестящий</text><text x=\"295.0\" y=\"205.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 14px sans-serif\">тёмный матовый</text><g data-step=\"2\"><line x1=\"105.0\" y1=\"65.0\" x2=\"105.0\" y2=\"45.0\" style=\"stroke:var(--pen);stroke-width:2;stroke-linecap:round\"/><polygon points=\"105.0,35.0 110.5,45.0 99.5,45.0\" style=\"fill:var(--pen)\"/></g><g data-step=\"1\"><line x1=\"270.0\" y1=\"65.0\" x2=\"254.5\" y2=\"33.9\" style=\"stroke:var(--pen);stroke-width:3;stroke-linecap:round\"/><polygon points=\"250.0,25.0 259.4,31.5 249.6,36.4\" style=\"fill:var(--pen)\"/></g><g data-step=\"1\"><line x1=\"295.0\" y1=\"65.0\" x2=\"295.0\" y2=\"30.0\" style=\"stroke:var(--pen);stroke-width:3;stroke-linecap:round\"/><polygon points=\"295.0,20.0 300.5,30.0 289.5,30.0\" style=\"fill:var(--pen)\"/></g><g data-step=\"1\"><line x1=\"320.0\" y1=\"65.0\" x2=\"335.5\" y2=\"33.9\" style=\"stroke:var(--pen);stroke-width:3;stroke-linecap:round\"/><polygon points=\"340.0,25.0 340.4,36.4 330.6,31.5\" style=\"fill:var(--pen)\"/></g><text data-step=\"1\" x=\"295.0\" y=\"235.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:600 13px sans-serif\">излучает сильнее — остынет быстрее</text></svg>"
+      }
+     },
+     "text": "В два одинаковых чайника налили одинаково горячую воду. Один чайник светлый и блестящий, другой — тёмный матовый. Какой остынет **медленнее**?",
+     "type": "choice"
+    }
+   ],
+   "type": "choice"
+  },
+  {
+   "id": "q4",
+   "answer": "a",
+   "hint": "Над чем днём воздух теплее? Куда он движется?",
+   "lesson": {
+    "remember": "Ветер у земли дует оттуда, где холоднее, туда, где теплее.",
+    "text": "Бриз — это ветер на берегу моря или большого озера, который меняет направление два раза в сутки. Это конвекция в атмосфере.\nСуша нагревается и остывает быстрее, чем вода. Над более тёплой поверхностью воздух поднимается вверх — там давление ниже. У поверхности воздух движется туда, где он поднимается: **из холодного места в тёплое**.\nДнём теплее суша — бриз дует с моря на сушу. Ночью теплее море — бриз дует с суши на море.\nПример: точно так же летом с прохладного озера дует ветерок на нагретый пляж.",
+    "title": "Как возникают бризы",
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 240\" role=\"img\"><rect x=\"10.0\" y=\"160.0\" width=\"190.0\" height=\"70.0\" rx=\"0\" style=\"fill:var(--accent);fill-opacity:0.35;stroke:var(--accent);stroke-width:2\"/><text x=\"105.0\" y=\"205.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 15px sans-serif\">море</text><rect x=\"200.0\" y=\"150.0\" width=\"190.0\" height=\"80.0\" rx=\"0\" style=\"fill:var(--warn);fill-opacity:0.35;stroke:var(--warn);stroke-width:2\"/><text x=\"295.0\" y=\"205.0\" text-anchor=\"middle\" style=\"fill:var(--warn);font:600 15px sans-serif\">суша</text><circle cx=\"350.0\" cy=\"40.0\" r=\"18.0\" style=\"fill:var(--warn);fill-opacity:1;stroke:var(--warn);stroke-width:2\"/><text x=\"300.0\" y=\"45.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 14px sans-serif\">день</text><g data-step=\"0\"><line x1=\"295.0\" y1=\"140.0\" x2=\"295.0\" y2=\"70.0\" style=\"stroke:var(--pen);stroke-width:3;stroke-linecap:round\"/><polygon points=\"295.0,60.0 300.5,70.0 289.5,70.0\" style=\"fill:var(--pen)\"/></g><text data-step=\"0\" x=\"285.0\" y=\"105.0\" text-anchor=\"end\" style=\"fill:var(--pen);font:600 13px sans-serif\">тёплый воздух вверх</text><g data-step=\"0\"><line x1=\"60.0\" y1=\"140.0\" x2=\"230.0\" y2=\"140.0\" style=\"stroke:var(--accent);stroke-width:3;stroke-linecap:round\"/><polygon points=\"240.0,140.0 230.0,145.5 230.0,134.5\" style=\"fill:var(--accent)\"/></g><text data-step=\"0\" x=\"150.0\" y=\"128.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 14px sans-serif\">ветер с моря</text><g data-step=\"0\"><line x1=\"240.0\" y1=\"55.0\" x2=\"45.0\" y2=\"55.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round\"/><polygon points=\"35.0,55.0 45.0,49.5 45.0,60.5\" style=\"fill:var(--muted)\"/></g><g data-step=\"0\"><line x1=\"35.0\" y1=\"65.0\" x2=\"35.0\" y2=\"115.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round\"/><polygon points=\"35.0,125.0 29.5,115.0 40.5,115.0\" style=\"fill:var(--muted)\"/></g></svg>"
+    }
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "С моря на сушу"
+    },
+    {
+     "id": "b",
+     "text": "С суши на море",
+     "why": "Так бывает **ночью**: суша остывает быстрее моря. А днём суша теплее, тёплый воздух над ней поднимается, и на его место приходит воздух с моря."
+    },
+    {
+     "id": "c",
+     "text": "Ветра не будет: море и суша получают одинаково солнца",
+     "why": "Солнца они получают одинаково, но нагреваются по-разному: суша быстрее. Разница температур и создаёт ветер."
+    }
+   ],
+   "order": 4,
+   "solution": {
+    "answerLine": "днём бриз дует с моря на сушу",
+    "steps": [
+     {
+      "layer": 1,
+      "text": "Днём суша теплее моря. Воздух над сушей нагревается и **поднимается** вверх — там создаётся область низкого давления."
+     },
+     {
+      "layer": 2,
+      "text": "На освободившееся место у поверхности приходит прохладный воздух с моря. Получается дневной бриз — **с моря на сушу**."
+     }
+    ],
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 240\" role=\"img\"><rect x=\"10.0\" y=\"160.0\" width=\"190.0\" height=\"70.0\" rx=\"0\" style=\"fill:var(--accent);fill-opacity:0.35;stroke:var(--accent);stroke-width:2\"/><text x=\"105.0\" y=\"205.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 15px sans-serif\">море</text><rect x=\"200.0\" y=\"150.0\" width=\"190.0\" height=\"80.0\" rx=\"0\" style=\"fill:var(--warn);fill-opacity:0.35;stroke:var(--warn);stroke-width:2\"/><text x=\"295.0\" y=\"205.0\" text-anchor=\"middle\" style=\"fill:var(--warn);font:600 15px sans-serif\">суша</text><circle cx=\"350.0\" cy=\"40.0\" r=\"18.0\" style=\"fill:var(--warn);fill-opacity:1;stroke:var(--warn);stroke-width:2\"/><text x=\"300.0\" y=\"45.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 14px sans-serif\">день</text><g data-step=\"1\"><line x1=\"295.0\" y1=\"140.0\" x2=\"295.0\" y2=\"70.0\" style=\"stroke:var(--pen);stroke-width:3;stroke-linecap:round\"/><polygon points=\"295.0,60.0 300.5,70.0 289.5,70.0\" style=\"fill:var(--pen)\"/></g><text data-step=\"1\" x=\"285.0\" y=\"105.0\" text-anchor=\"end\" style=\"fill:var(--pen);font:600 13px sans-serif\">тёплый воздух вверх</text><g data-step=\"2\"><line x1=\"60.0\" y1=\"140.0\" x2=\"230.0\" y2=\"140.0\" style=\"stroke:var(--accent);stroke-width:3;stroke-linecap:round\"/><polygon points=\"240.0,140.0 230.0,145.5 230.0,134.5\" style=\"fill:var(--accent)\"/></g><text data-step=\"2\" x=\"150.0\" y=\"128.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 14px sans-serif\">ветер с моря</text><g data-step=\"2\"><line x1=\"240.0\" y1=\"55.0\" x2=\"45.0\" y2=\"55.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round\"/><polygon points=\"35.0,55.0 45.0,49.5 45.0,60.5\" style=\"fill:var(--muted)\"/></g><g data-step=\"2\"><line x1=\"35.0\" y1=\"65.0\" x2=\"35.0\" y2=\"115.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round\"/><polygon points=\"35.0,125.0 29.5,115.0 40.5,115.0\" style=\"fill:var(--muted)\"/></g></svg>"
+    }
+   },
+   "subtopic": "Бризы и конвекция в атмосфере",
+   "text": "Солнечный день на берегу моря. Суша нагревается быстрее воды. Куда дует ветер (бриз) у поверхности?",
+   "twins": [
+    {
+     "answer": "b",
+     "hint": "Над чем ночью воздух теплее?",
+     "id": "q4t1",
+     "options": [
+      {
+       "id": "a",
+       "text": "С моря на сушу",
+       "why": "Так дует **дневной** бриз. Ночью теплее над морем: тёплый воздух поднимается над водой, а к морю приходит воздух с суши."
+      },
+      {
+       "id": "b",
+       "text": "С суши на море"
+      },
+      {
+       "id": "c",
+       "text": "Вверх, от земли в небо",
+       "why": "Вверх поднимается только тёплый воздух над морем. У поверхности воздух движется горизонтально — с суши на море."
+      }
+     ],
+     "solution": {
+      "answerLine": "ночью бриз дует с суши на море",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Ночью вода остывает медленнее, поэтому воздух над морем теплее. Он поднимается вверх."
+       },
+       {
+        "layer": 2,
+        "text": "На его место у поверхности приходит прохладный воздух с суши. Ночной бриз дует **с суши на море**."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 240\" role=\"img\"><rect x=\"10.0\" y=\"160.0\" width=\"190.0\" height=\"70.0\" rx=\"0\" style=\"fill:var(--accent);fill-opacity:0.35;stroke:var(--accent);stroke-width:2\"/><text x=\"105.0\" y=\"205.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 15px sans-serif\">море</text><rect x=\"200.0\" y=\"150.0\" width=\"190.0\" height=\"80.0\" rx=\"0\" style=\"fill:var(--warn);fill-opacity:0.35;stroke:var(--warn);stroke-width:2\"/><text x=\"295.0\" y=\"205.0\" text-anchor=\"middle\" style=\"fill:var(--warn);font:600 15px sans-serif\">суша</text><circle cx=\"50.0\" cy=\"40.0\" r=\"14.0\" style=\"fill:var(--muted);fill-opacity:1;stroke:var(--muted);stroke-width:2\"/><text x=\"90.0\" y=\"45.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 14px sans-serif\">ночь</text><g data-step=\"1\"><line x1=\"105.0\" y1=\"140.0\" x2=\"105.0\" y2=\"70.0\" style=\"stroke:var(--pen);stroke-width:3;stroke-linecap:round\"/><polygon points=\"105.0,60.0 110.5,70.0 99.5,70.0\" style=\"fill:var(--pen)\"/></g><text data-step=\"1\" x=\"110.0\" y=\"110.0\" text-anchor=\"start\" style=\"fill:var(--pen);font:600 13px sans-serif\">над морем теплее</text><g data-step=\"2\"><line x1=\"340.0\" y1=\"140.0\" x2=\"170.0\" y2=\"140.0\" style=\"stroke:var(--accent);stroke-width:3;stroke-linecap:round\"/><polygon points=\"160.0,140.0 170.0,134.5 170.0,145.5\" style=\"fill:var(--accent)\"/></g><text data-step=\"2\" x=\"250.0\" y=\"128.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 14px sans-serif\">ветер с суши</text><g data-step=\"2\"><line x1=\"160.0\" y1=\"55.0\" x2=\"360.0\" y2=\"55.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round\"/><polygon points=\"370.0,55.0 360.0,60.5 360.0,49.5\" style=\"fill:var(--muted)\"/></g><g data-step=\"2\"><line x1=\"370.0\" y1=\"65.0\" x2=\"370.0\" y2=\"115.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round\"/><polygon points=\"370.0,125.0 364.5,115.0 375.5,115.0\" style=\"fill:var(--muted)\"/></g></svg>"
+      }
+     },
+     "text": "Ночью суша остывает быстрее моря. Куда дует бриз у поверхности ночью?",
+     "type": "choice"
+    },
+    {
+     "answer": "a",
+     "hint": "Вспомни, куда движется нагретый воздух.",
+     "id": "q4t2",
+     "options": [
+      {
+       "id": "a",
+       "text": "Тёплый воздух над сушей поднимается вверх, у поверхности его становится меньше"
+      },
+      {
+       "id": "b",
+       "text": "Холодный воздух над сушей опускается и давит сильнее",
+       "why": "Если бы холодный воздух опускался, давление стало бы выше, а не ниже. Днём над сушей воздух тёплый — он поднимается."
+      },
+      {
+       "id": "c",
+       "text": "Солнечные лучи прижимают воздух к земле",
+       "why": "Лучи передают энергию излучением, но не прижимают воздух. Давление падает, потому что нагретый воздух уходит вверх."
+      }
+     ],
+     "solution": {
+      "answerLine": "нагретый воздух поднимается — у поверхности давление падает",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Суша нагревает соседний воздух. Его плотность уменьшается, и он поднимается вверх."
+       },
+       {
+        "layer": 2,
+        "text": "У поверхности воздуха становится меньше — давление там ниже. Туда и устремляется воздух с моря."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 240\" role=\"img\"><rect x=\"10.0\" y=\"160.0\" width=\"190.0\" height=\"70.0\" rx=\"0\" style=\"fill:var(--accent);fill-opacity:0.35;stroke:var(--accent);stroke-width:2\"/><text x=\"105.0\" y=\"205.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 15px sans-serif\">море</text><rect x=\"200.0\" y=\"150.0\" width=\"190.0\" height=\"80.0\" rx=\"0\" style=\"fill:var(--warn);fill-opacity:0.35;stroke:var(--warn);stroke-width:2\"/><text x=\"295.0\" y=\"205.0\" text-anchor=\"middle\" style=\"fill:var(--warn);font:600 15px sans-serif\">суша</text><circle cx=\"350.0\" cy=\"40.0\" r=\"18.0\" style=\"fill:var(--warn);fill-opacity:1;stroke:var(--warn);stroke-width:2\"/><text x=\"300.0\" y=\"45.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 14px sans-serif\">день</text><g data-step=\"1\"><line x1=\"295.0\" y1=\"140.0\" x2=\"295.0\" y2=\"70.0\" style=\"stroke:var(--pen);stroke-width:3;stroke-linecap:round\"/><polygon points=\"295.0,60.0 300.5,70.0 289.5,70.0\" style=\"fill:var(--pen)\"/></g><text data-step=\"1\" x=\"285.0\" y=\"105.0\" text-anchor=\"end\" style=\"fill:var(--pen);font:600 13px sans-serif\">тёплый воздух вверх</text><g data-step=\"2\"><line x1=\"60.0\" y1=\"140.0\" x2=\"230.0\" y2=\"140.0\" style=\"stroke:var(--accent);stroke-width:3;stroke-linecap:round\"/><polygon points=\"240.0,140.0 230.0,145.5 230.0,134.5\" style=\"fill:var(--accent)\"/></g><text data-step=\"2\" x=\"150.0\" y=\"128.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 14px sans-serif\">ветер с моря</text><g data-step=\"2\"><line x1=\"240.0\" y1=\"55.0\" x2=\"45.0\" y2=\"55.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round\"/><polygon points=\"35.0,55.0 45.0,49.5 45.0,60.5\" style=\"fill:var(--muted)\"/></g><g data-step=\"2\"><line x1=\"35.0\" y1=\"65.0\" x2=\"35.0\" y2=\"115.0\" style=\"stroke:var(--muted);stroke-width:2;stroke-linecap:round\"/><polygon points=\"35.0,125.0 29.5,115.0 40.5,115.0\" style=\"fill:var(--muted)\"/></g></svg>"
+      }
+     },
+     "text": "Почему днём над нагретой сушей образуется область **низкого** давления?",
+     "type": "choice"
+    }
+   ],
+   "type": "choice"
+  },
+  {
+   "id": "q5",
+   "answer": "c",
+   "hint": "Каким способам теплопередачи нужно вещество между стенками?",
+   "lesson": {
+    "remember": "Вакуум — против теплопроводности и конвекции, зеркало — против излучения.",
+    "text": "Создатель термоса убрал **все три** способа теплопередачи:\n— **вакуум** между двойными стенками колбы: нет частиц — нет теплопроводности и конвекции;\n— **зеркальные стенки**: отражают лучи и мало излучают — почти нет потерь излучением;\n— **пробка и крышка**: мешают конвекции воздуха над жидкостью.\nХорошие теплоизоляторы — вещества с малой теплопроводностью: воздух, вата, войлок, шерсть, пух. В них много воздуха. Поэтому тёплая одежда и пористый кирпич хорошо держат тепло.",
+    "title": "Как работает термос",
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 260\" role=\"img\"><rect x=\"120.0\" y=\"40.0\" width=\"160.0\" height=\"200.0\" rx=\"20\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><text x=\"200.0\" y=\"30.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">корпус</text><rect x=\"140.0\" y=\"60.0\" width=\"120.0\" height=\"165.0\" rx=\"16\" style=\"fill:none;stroke:var(--ink);stroke-width:2\"/><rect x=\"155.0\" y=\"75.0\" width=\"90.0\" height=\"135.0\" rx=\"12\" style=\"fill:none;stroke:var(--ink);stroke-width:2\"/><rect x=\"160.0\" y=\"80.0\" width=\"80.0\" height=\"125.0\" rx=\"10\" style=\"fill:var(--pen);fill-opacity:0.15;stroke:var(--pen);stroke-width:0\"/><text x=\"200.0\" y=\"148.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:600 14px sans-serif\">чай</text><rect data-step=\"0\" x=\"141.0\" y=\"61.0\" width=\"118.0\" height=\"163.0\" rx=\"16\" style=\"fill:var(--accent-soft);fill-opacity:0.0;stroke:var(--accent);stroke-width:6\"/><text data-step=\"0\" x=\"330.0\" y=\"100.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 15px sans-serif\">вакуум</text><line data-step=\"0\" x1=\"262.0\" y1=\"100.0\" x2=\"300.0\" y2=\"100.0\" style=\"stroke:var(--accent);stroke-width:2\"/><text data-step=\"0\" x=\"330.0\" y=\"180.0\" text-anchor=\"middle\" style=\"fill:var(--warn);font:600 15px sans-serif\">зеркальный</text><text data-step=\"0\" x=\"330.0\" y=\"198.0\" text-anchor=\"middle\" style=\"fill:var(--warn);font:600 15px sans-serif\">слой</text><line data-step=\"0\" x1=\"248.0\" y1=\"180.0\" x2=\"290.0\" y2=\"180.0\" style=\"stroke:var(--warn);stroke-width:2\"/><rect data-step=\"0\" x=\"155.0\" y=\"75.0\" width=\"90.0\" height=\"135.0\" rx=\"12\" style=\"fill:none;stroke:var(--warn);stroke-width:5\"/></svg>"
+    }
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Чтобы колба была легче",
+     "why": "Воздух в узком промежутке почти ничего не весит. Вакуум нужен, чтобы тепло не уходило."
+    },
+    {
+     "id": "b",
+     "text": "Чтобы отражать излучение",
+     "why": "Излучение уменьшает зеркальный (серебристый) слой на стенках. А вакуум нужен против других способов теплопередачи."
+    },
+    {
+     "id": "c",
+     "text": "Чтобы не было теплопроводности и конвекции"
+    }
+   ],
+   "order": 5,
+   "solution": {
+    "answerLine": "вакуум убирает теплопроводность и конвекцию",
+    "steps": [
+     {
+      "layer": 1,
+      "text": "Теплопроводности нужны частицы, конвекции — поток газа."
+     },
+     {
+      "layer": 2,
+      "text": "Если между стенками вакуум, частиц нет — теплопроводности и конвекции почти нет. Вакуум — хороший изолятор."
+     },
+     {
+      "layer": 3,
+      "text": "А против излучения стенки делают зеркальными — это другая деталь термоса."
+     }
+    ],
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 260\" role=\"img\"><rect x=\"120.0\" y=\"40.0\" width=\"160.0\" height=\"200.0\" rx=\"20\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><text x=\"200.0\" y=\"30.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">корпус</text><rect x=\"140.0\" y=\"60.0\" width=\"120.0\" height=\"165.0\" rx=\"16\" style=\"fill:none;stroke:var(--ink);stroke-width:2\"/><rect x=\"155.0\" y=\"75.0\" width=\"90.0\" height=\"135.0\" rx=\"12\" style=\"fill:none;stroke:var(--ink);stroke-width:2\"/><rect x=\"160.0\" y=\"80.0\" width=\"80.0\" height=\"125.0\" rx=\"10\" style=\"fill:var(--pen);fill-opacity:0.15;stroke:var(--pen);stroke-width:0\"/><text x=\"200.0\" y=\"148.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:600 14px sans-serif\">чай</text><rect data-step=\"1\" x=\"141.0\" y=\"61.0\" width=\"118.0\" height=\"163.0\" rx=\"16\" style=\"fill:var(--accent-soft);fill-opacity:0.0;stroke:var(--accent);stroke-width:6\"/><text data-step=\"1\" x=\"330.0\" y=\"100.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 15px sans-serif\">вакуум</text><line data-step=\"1\" x1=\"262.0\" y1=\"100.0\" x2=\"300.0\" y2=\"100.0\" style=\"stroke:var(--accent);stroke-width:2\"/><text data-step=\"2\" x=\"330.0\" y=\"180.0\" text-anchor=\"middle\" style=\"fill:var(--warn);font:600 15px sans-serif\">зеркальный</text><text data-step=\"2\" x=\"330.0\" y=\"198.0\" text-anchor=\"middle\" style=\"fill:var(--warn);font:600 15px sans-serif\">слой</text><line data-step=\"2\" x1=\"248.0\" y1=\"180.0\" x2=\"290.0\" y2=\"180.0\" style=\"stroke:var(--warn);stroke-width:2\"/><rect data-step=\"2\" x=\"155.0\" y=\"75.0\" width=\"90.0\" height=\"135.0\" rx=\"12\" style=\"fill:none;stroke:var(--warn);stroke-width:5\"/></svg>"
+    }
+   },
+   "subtopic": "Термос и теплоизоляция",
+   "text": "Колба термоса — стеклянный сосуд с двойными стенками. Зачем из промежутка между стенками откачивают воздух?",
+   "twins": [
+    {
+     "answer": "b",
+     "hint": "Какие поверхности отражают лучи и мало излучают?",
+     "id": "q5t1",
+     "options": [
+      {
+       "id": "a",
+       "text": "Для красоты",
+       "why": "Дело не в красоте: каждая деталь термоса борется с одним из способов теплопередачи."
+      },
+      {
+       "id": "b",
+       "text": "Чтобы уменьшить потери тепла излучением"
+      },
+      {
+       "id": "c",
+       "text": "Чтобы не было конвекции",
+       "why": "С конвекцией и теплопроводностью борется вакуум между стенками. Зеркальный слой нужен против излучения."
+      }
+     ],
+     "solution": {
+      "answerLine": "зеркальный слой уменьшает потери излучением",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Зеркальная поверхность отражает лучи и сама мало излучает."
+       },
+       {
+        "layer": 2,
+        "text": "Поэтому через серебристые стенки почти не уходит энергия **излучением**."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 260\" role=\"img\"><rect x=\"120.0\" y=\"40.0\" width=\"160.0\" height=\"200.0\" rx=\"20\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><text x=\"200.0\" y=\"30.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">корпус</text><rect x=\"140.0\" y=\"60.0\" width=\"120.0\" height=\"165.0\" rx=\"16\" style=\"fill:none;stroke:var(--ink);stroke-width:2\"/><rect x=\"155.0\" y=\"75.0\" width=\"90.0\" height=\"135.0\" rx=\"12\" style=\"fill:none;stroke:var(--ink);stroke-width:2\"/><rect x=\"160.0\" y=\"80.0\" width=\"80.0\" height=\"125.0\" rx=\"10\" style=\"fill:var(--pen);fill-opacity:0.15;stroke:var(--pen);stroke-width:0\"/><text x=\"200.0\" y=\"148.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:600 14px sans-serif\">чай</text><rect data-step=\"9\" x=\"141.0\" y=\"61.0\" width=\"118.0\" height=\"163.0\" rx=\"16\" style=\"fill:var(--accent-soft);fill-opacity:0.0;stroke:var(--accent);stroke-width:6\"/><text data-step=\"9\" x=\"330.0\" y=\"100.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 15px sans-serif\">вакуум</text><line data-step=\"9\" x1=\"262.0\" y1=\"100.0\" x2=\"300.0\" y2=\"100.0\" style=\"stroke:var(--accent);stroke-width:2\"/><text data-step=\"1\" x=\"330.0\" y=\"180.0\" text-anchor=\"middle\" style=\"fill:var(--warn);font:600 15px sans-serif\">зеркальный</text><text data-step=\"1\" x=\"330.0\" y=\"198.0\" text-anchor=\"middle\" style=\"fill:var(--warn);font:600 15px sans-serif\">слой</text><line data-step=\"1\" x1=\"248.0\" y1=\"180.0\" x2=\"290.0\" y2=\"180.0\" style=\"stroke:var(--warn);stroke-width:2\"/><rect data-step=\"1\" x=\"155.0\" y=\"75.0\" width=\"90.0\" height=\"135.0\" rx=\"12\" style=\"fill:none;stroke:var(--warn);stroke-width:5\"/></svg>"
+      }
+     },
+     "text": "Зачем стенки колбы термоса делают зеркальными (серебристыми)?",
+     "type": "choice"
+    },
+    {
+     "answer": "a",
+     "hint": "Что находится между стёклами и как оно проводит тепло?",
+     "id": "q5t2",
+     "options": [
+      {
+       "id": "a",
+       "text": "Между стёклами есть слой воздуха или вакуум — они плохо проводят тепло"
+      },
+      {
+       "id": "b",
+       "text": "Два стекла сильнее нагреваются от батареи",
+       "why": "Стёкла не должны греться — важно, чтобы тепло через них не уходило. Это делает изолирующий слой между ними."
+      },
+      {
+       "id": "c",
+       "text": "Стекло — хороший теплоизолятор, поэтому чем больше стекла, тем лучше",
+       "why": "Главную работу делает не стекло, а прослойка воздуха или вакуума: у них очень маленькая теплопроводность."
+      }
+     ],
+     "solution": {
+      "answerLine": "прослойка воздуха или вакуума — хороший теплоизолятор",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Между стёклами — слой воздуха или вакуум."
+       },
+       {
+        "layer": 2,
+        "text": "Воздух проводит тепло очень плохо, а в вакууме теплопроводности и конвекции почти нет. Поэтому тепло из комнаты уходит медленно."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 250\" role=\"img\"><rect x=\"60.0\" y=\"40.0\" width=\"40.0\" height=\"170.0\" rx=\"0\" style=\"fill:var(--accent-soft);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><rect x=\"160.0\" y=\"40.0\" width=\"40.0\" height=\"170.0\" rx=\"0\" style=\"fill:var(--accent-soft);fill-opacity:0.6;stroke:var(--ink);stroke-width:2\"/><text x=\"80.0\" y=\"230.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 14px sans-serif\">стекло</text><text x=\"180.0\" y=\"230.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 14px sans-serif\">стекло</text><rect data-step=\"1\" x=\"100.0\" y=\"40.0\" width=\"60.0\" height=\"170.0\" rx=\"0\" style=\"fill:var(--accent);fill-opacity:0.12;stroke:var(--accent);stroke-width:0\"/><text data-step=\"1\" x=\"130.0\" y=\"30.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 14px sans-serif\">воздух / вакуум</text><text x=\"30.0\" y=\"130.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:600 14px sans-serif\">тепло</text><g><line x1=\"240.0\" y1=\"125.0\" x2=\"320.0\" y2=\"125.0\" style=\"stroke:var(--pen);stroke-width:2;stroke-linecap:round\"/><polygon points=\"330.0,125.0 320.0,130.5 320.0,119.5\" style=\"fill:var(--pen)\"/></g><text x=\"290.0\" y=\"110.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 14px sans-serif\">улица</text><text data-step=\"1\" x=\"300.0\" y=\"160.0\" text-anchor=\"middle\" style=\"fill:var(--ok);font:600 14px sans-serif\">почти не уходит</text></svg>"
+      }
+     },
+     "text": "Почему двойные стеклопакеты в окнах хорошо сохраняют тепло?",
+     "type": "choice"
+    }
+   ],
+   "type": "choice"
+  },
+  {
+   "id": "q6",
+   "answer": "c",
+   "hint": "Прочитай единицу измерения: Дж на кг на °C.",
+   "lesson": {
+    "remember": "c — джоули на 1 кг и на 1 °C.",
+    "text": "**Удельная теплоёмкость** $c$ — это количество теплоты, которое нужно, чтобы нагреть **1 кг** вещества на **1 °C**. Единица: $\\frac{Дж}{кг\\cdot °C}$.\nЧитай единицу как подсказку: «столько джоулей на каждый килограмм и на каждый градус».\nПример: у алюминия $c = 920$. Значит, 1 кг алюминия на 1 °C — 920 Дж; 2 кг на 1 °C — 1840 Дж; 1 кг на 10 °C — 9200 Дж.\nЧем больше $c$, тем медленнее вещество нагревается и остывает. У воды одна из самых больших теплоёмкостей (4200), поэтому моря смягчают климат, а воду используют в системах отопления.",
+    "title": "Что такое удельная теплоёмкость",
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 210\" role=\"img\" style=\"max-width:400px;margin:0 auto\"><rect x=\"40.0\" y=\"70.0\" width=\"90.0\" height=\"90.0\" rx=\"8\" style=\"fill:var(--accent-soft);fill-opacity:0.7;stroke:var(--ink);stroke-width:2\"/><text x=\"85.0\" y=\"120.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 18px sans-serif\">1 кг</text><text x=\"85.0\" y=\"185.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 14px sans-serif\">алюминий</text><g data-step=\"0\"><line x1=\"150.0\" y1=\"115.0\" x2=\"240.0\" y2=\"115.0\" style=\"stroke:var(--pen);stroke-width:3;stroke-linecap:round\"/><polygon points=\"250.0,115.0 240.0,120.5 240.0,109.5\" style=\"fill:var(--pen)\"/></g><text data-step=\"0\" x=\"200.0\" y=\"100.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 17px sans-serif\">920 Дж</text><rect x=\"270.0\" y=\"40.0\" width=\"30.0\" height=\"150.0\" rx=\"14\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"278.0\" y=\"120.0\" width=\"14.0\" height=\"62.0\" rx=\"6\" style=\"fill:var(--pen);fill-opacity:0.6;stroke:var(--pen);stroke-width:0\"/><rect data-step=\"0\" x=\"278.0\" y=\"108.0\" width=\"14.0\" height=\"12.0\" rx=\"0\" style=\"fill:var(--warn);fill-opacity:0.9;stroke:var(--warn);stroke-width:0\"/><text data-step=\"0\" x=\"345.0\" y=\"116.0\" text-anchor=\"middle\" style=\"fill:var(--warn);font:700 17px sans-serif\">+1 °C</text></svg>"
+    }
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Любой кусок меди нагреется на 1 °C, если передать ему 400 Дж",
+     "why": "Ты забыл про массу. 400 Дж нужны именно для **1 кг** меди. Кусок в 2 кг потребует 800 Дж."
+    },
+    {
+     "id": "b",
+     "text": "Чтобы нагреть 400 кг меди на 1 °C, нужен 1 Дж",
+     "why": "Числа перепутались местами. В единице $\\frac{Дж}{кг\\cdot °C}$ джоули стоят сверху: 400 Дж на 1 кг на 1 °C."
+    },
+    {
+     "id": "c",
+     "text": "Чтобы нагреть 1 кг меди на 1 °C, нужно 400 Дж"
+    },
+    {
+     "id": "d",
+     "text": "Медь нагревается до 400 °C, если передать ей 1 Дж",
+     "why": "Удельная теплоёмкость — это не температура. Это количество теплоты (Дж) для 1 кг и 1 °C."
+    }
+   ],
+   "order": 6,
+   "solution": {
+    "answerLine": "1 кг меди на 1 °C — 400 Дж",
+    "steps": [
+     {
+      "layer": 1,
+      "text": "Удельная теплоёмкость показывает, сколько теплоты нужно, чтобы нагреть **1 кг** вещества на **1 °C**."
+     },
+     {
+      "layer": 2,
+      "text": "У меди это **400 Дж**: столько нужно 1 кг меди, чтобы нагреться на 1 °C."
+     }
+    ],
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 210\" role=\"img\" style=\"max-width:400px;margin:0 auto\"><rect x=\"40.0\" y=\"70.0\" width=\"90.0\" height=\"90.0\" rx=\"8\" style=\"fill:var(--accent-soft);fill-opacity:0.7;stroke:var(--ink);stroke-width:2\"/><text x=\"85.0\" y=\"120.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 18px sans-serif\">1 кг</text><text x=\"85.0\" y=\"185.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 14px sans-serif\">медь</text><g data-step=\"1\"><line x1=\"150.0\" y1=\"115.0\" x2=\"240.0\" y2=\"115.0\" style=\"stroke:var(--pen);stroke-width:3;stroke-linecap:round\"/><polygon points=\"250.0,115.0 240.0,120.5 240.0,109.5\" style=\"fill:var(--pen)\"/></g><text data-step=\"1\" x=\"200.0\" y=\"100.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 17px sans-serif\">400 Дж</text><rect x=\"270.0\" y=\"40.0\" width=\"30.0\" height=\"150.0\" rx=\"14\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"278.0\" y=\"120.0\" width=\"14.0\" height=\"62.0\" rx=\"6\" style=\"fill:var(--pen);fill-opacity:0.6;stroke:var(--pen);stroke-width:0\"/><rect data-step=\"2\" x=\"278.0\" y=\"108.0\" width=\"14.0\" height=\"12.0\" rx=\"0\" style=\"fill:var(--warn);fill-opacity:0.9;stroke:var(--warn);stroke-width:0\"/><text data-step=\"2\" x=\"345.0\" y=\"116.0\" text-anchor=\"middle\" style=\"fill:var(--warn);font:700 17px sans-serif\">+1 °C</text></svg>"
+    }
+   },
+   "subtopic": "Смысл удельной теплоёмкости",
+   "text": "Удельная теплоёмкость меди равна $400\\ \\frac{Дж}{кг\\cdot °C}$. Что это означает?",
+   "twins": [
+    {
+     "answer": "a",
+     "hint": "Единица: Дж / (кг · °C). Что на что делим?",
+     "id": "q6t1",
+     "options": [
+      {
+       "id": "a",
+       "text": "Чтобы нагреть 1 кг латуни на 1 °C, нужно 380 Дж"
+      },
+      {
+       "id": "b",
+       "text": "Чтобы нагреть 380 кг латуни на 1 °C, нужен 1 Дж",
+       "why": "Числа перепутались. Джоули стоят в числителе единицы: 380 Дж на 1 кг на 1 °C."
+      },
+      {
+       "id": "c",
+       "text": "Латунь плавится при 380 °C",
+       "why": "Удельная теплоёмкость не говорит о плавлении. Она показывает, сколько теплоты нужно, чтобы нагреть 1 кг на 1 °C."
+      }
+     ],
+     "solution": {
+      "answerLine": "1 кг латуни на 1 °C — 380 Дж",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Удельная теплоёмкость — теплота для 1 кг вещества и нагревания на 1 °C."
+       },
+       {
+        "layer": 2,
+        "text": "Для латуни это 380 Дж."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 210\" role=\"img\" style=\"max-width:400px;margin:0 auto\"><rect x=\"40.0\" y=\"70.0\" width=\"90.0\" height=\"90.0\" rx=\"8\" style=\"fill:var(--accent-soft);fill-opacity:0.7;stroke:var(--ink);stroke-width:2\"/><text x=\"85.0\" y=\"120.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 18px sans-serif\">1 кг</text><text x=\"85.0\" y=\"185.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 14px sans-serif\">латунь</text><g data-step=\"1\"><line x1=\"150.0\" y1=\"115.0\" x2=\"240.0\" y2=\"115.0\" style=\"stroke:var(--pen);stroke-width:3;stroke-linecap:round\"/><polygon points=\"250.0,115.0 240.0,120.5 240.0,109.5\" style=\"fill:var(--pen)\"/></g><text data-step=\"1\" x=\"200.0\" y=\"100.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 17px sans-serif\">380 Дж</text><rect x=\"270.0\" y=\"40.0\" width=\"30.0\" height=\"150.0\" rx=\"14\" style=\"fill:var(--card);fill-opacity:1;stroke:var(--ink);stroke-width:2\"/><rect x=\"278.0\" y=\"120.0\" width=\"14.0\" height=\"62.0\" rx=\"6\" style=\"fill:var(--pen);fill-opacity:0.6;stroke:var(--pen);stroke-width:0\"/><rect data-step=\"2\" x=\"278.0\" y=\"108.0\" width=\"14.0\" height=\"12.0\" rx=\"0\" style=\"fill:var(--warn);fill-opacity:0.9;stroke:var(--warn);stroke-width:0\"/><text data-step=\"2\" x=\"345.0\" y=\"116.0\" text-anchor=\"middle\" style=\"fill:var(--warn);font:700 17px sans-serif\">+1 °C</text></svg>"
+      }
+     },
+     "text": "Удельная теплоёмкость латуни равна $380\\ \\frac{Дж}{кг\\cdot °C}$. Что это означает?",
+     "type": "choice"
+    },
+    {
+     "answer": "b",
+     "hint": "Кому на 1 °C нужно меньше джоулей?",
+     "id": "q6t2",
+     "options": [
+      {
+       "id": "a",
+       "text": "Вода — у неё теплоёмкость больше",
+       "why": "Большая теплоёмкость значит, что на каждый градус нужно **больше** энергии. Поэтому вода при той же теплоте нагреется **меньше**."
+      },
+      {
+       "id": "b",
+       "text": "Медь"
+      },
+      {
+       "id": "c",
+       "text": "Нагреются одинаково",
+       "why": "Одинакова теплота, но на 1 °C вода «тратит» 4200 Дж, а медь — только 400 Дж. Значит, медь нагреется сильнее."
+      }
+     ],
+     "solution": {
+      "answerLine": "медь нагреется сильнее",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Чтобы нагреть 1 кг воды на 1 °C, нужно 4200 Дж, а 1 кг меди — всего 400 Дж."
+       },
+       {
+        "layer": 2,
+        "text": "При одинаковой теплоте медь нагреется примерно в 10 раз сильнее: $4200 : 400 = 10{,}5$."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 195\" role=\"img\"><rect x=\"40.0\" y=\"60.0\" width=\"120.0\" height=\"80.0\" rx=\"8\" style=\"fill:var(--accent-soft);fill-opacity:0.7;stroke:var(--ink);stroke-width:2\"/><text x=\"100.0\" y=\"105.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 15px sans-serif\">вода, 1 кг</text><rect x=\"240.0\" y=\"60.0\" width=\"120.0\" height=\"80.0\" rx=\"8\" style=\"fill:var(--warn);fill-opacity:0.4;stroke:var(--ink);stroke-width:2\"/><text x=\"300.0\" y=\"105.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 15px sans-serif\">медь, 1 кг</text><text x=\"100.0\" y=\"40.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:600 14px sans-serif\">+4200 Дж → +1 °C</text><text x=\"300.0\" y=\"40.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:600 14px sans-serif\">+400 Дж → +1 °C</text><text data-step=\"1\" x=\"100.0\" y=\"175.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 15px sans-serif\">4200 Дж: +1 °C</text><text data-step=\"1\" x=\"300.0\" y=\"175.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">4200 Дж: +10,5 °C</text></svg>"
+      }
+     },
+     "text": "У воды $c = 4200\\ \\frac{Дж}{кг\\cdot °C}$, у меди $c = 400\\ \\frac{Дж}{кг\\cdot °C}$. Куску меди и воде одинаковой массы передали одинаковое количество теплоты. Что нагреется сильнее?",
+     "type": "choice"
+    }
+   ],
+   "type": "choice"
+  },
+  {
+   "id": "q7",
+   "answer": 420,
+   "hint": "Формула $Q = cm\\Delta t$. Сначала найди $\\Delta t$, массу переведи в кг.",
+   "lesson": {
+    "remember": "В формулу ставят изменение температуры Δt, а массу — в килограммах.",
+    "text": "Количество теплоты, нужное для нагревания тела: $Q = cm(t_2 - t_1)$, или $Q = cm\\Delta t$.\nПорядок действий:\n1) выпиши $c$, $m$, $t_1$, $t_2$; массу переведи в **кг** (300 г = 0,3 кг);\n2) найди изменение температуры $\\Delta t = t_2 - t_1$ — не бери просто конечную температуру;\n3) перемножь $c \\cdot m \\cdot \\Delta t$ — получишь джоули;\n4) если просят кДж — раздели на 1000.\nПример: 4 кг воды от 10 до 30 °C: $\\Delta t = 20$, $Q = 4200 \\cdot 4 \\cdot 20 = 336\\,000$ Дж $= 336$ кДж.",
+    "title": "Как считать количество теплоты при нагревании",
+    "visual": {
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto\"><tr data-step=\"0\"><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);color:var(--muted)\">1. Масса</td><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);font-weight:600\">в кг</td></tr><tr data-step=\"0\"><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);color:var(--muted)\">2. Δt</td><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);font-weight:600\">t₂ − t₁</td></tr><tr data-step=\"0\"><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);color:var(--muted)\">3. Q</td><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);font-weight:600\">c · m · Δt  (Дж)</td></tr><tr data-step=\"0\"><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);color:var(--muted)\">4. кДж</td><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);font-weight:600\">Дж : 1000</td></tr></table>",
+     "kind": "html"
+    }
+   },
+   "order": 7,
+   "solution": {
+    "answerLine": "$Q = 420$ кДж",
+    "steps": [
+     {
+      "layer": 1,
+      "text": "Дано: $c = 4200$, $m = 2$ кг, $t_1 = 20$ °C, $t_2 = 70$ °C. Формула: $Q = cm(t_2 - t_1)$."
+     },
+     {
+      "layer": 2,
+      "text": "Изменение температуры: $\\Delta t = 70 - 20 = 50$ °C."
+     },
+     {
+      "layer": 3,
+      "text": "$Q = 4200 \\cdot 2 \\cdot 50 = 420 000$ Дж."
+     },
+     {
+      "layer": 4,
+      "text": "Переводим: $420 000$ Дж $= 420$ кДж."
+     }
+    ],
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 130\" role=\"img\"><line x1=\"30.0\" y1=\"80.0\" x2=\"390.0\" y2=\"80.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"30.0\" y1=\"75.0\" x2=\"30.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"75.0\" y1=\"75.0\" x2=\"75.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"120.0\" y1=\"75.0\" x2=\"120.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"165.0\" y1=\"75.0\" x2=\"165.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"210.0\" y1=\"75.0\" x2=\"210.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"255.0\" y1=\"75.0\" x2=\"255.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"300.0\" y1=\"75.0\" x2=\"300.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"345.0\" y1=\"75.0\" x2=\"345.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"390.0\" y1=\"75.0\" x2=\"390.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><circle cx=\"120.0\" cy=\"80.0\" r=\"7.0\" style=\"fill:var(--accent);fill-opacity:1;stroke:var(--accent);stroke-width:2\"/><text x=\"120.0\" y=\"110.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 15px sans-serif\">20 °C</text><circle cx=\"345.0\" cy=\"80.0\" r=\"7.0\" style=\"fill:var(--pen);fill-opacity:1;stroke:var(--pen);stroke-width:2\"/><text x=\"345.0\" y=\"110.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">70 °C</text><text x=\"120.0\" y=\"40.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">было</text><text x=\"345.0\" y=\"40.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">стало</text><g data-step=\"1\"><line x1=\"120.0\" y1=\"62.0\" x2=\"335.0\" y2=\"62.0\" style=\"stroke:var(--warn);stroke-width:3;stroke-linecap:round\"/><polygon points=\"345.0,62.0 335.0,67.5 335.0,56.5\" style=\"fill:var(--warn)\"/></g><text data-step=\"1\" x=\"232.5\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--warn);font:700 16px sans-serif\">Δt = 50 °C</text></svg>"
+    }
+   },
+   "subtopic": "Расчёт количества теплоты Q = cmΔt",
+   "text": "Сколько теплоты нужно, чтобы нагреть 2 кг воды от 20 °C до 70 °C? Удельная теплоёмкость воды $c = 4200\\ \\frac{Дж}{кг\\cdot °C}$. Ответ дай в кДж.",
+   "tolerance": 0.01,
+   "twins": [
+    {
+     "answer": 46,
+     "hint": "Формула $Q = cm\\Delta t$. Сначала найди $\\Delta t$, массу переведи в кг.",
+     "id": "q7t1",
+     "solution": {
+      "answerLine": "$Q = 46$ кДж",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Дано: $c = 920$, $m = 0,5$ кг, $t_1 = 20$ °C, $t_2 = 120$ °C. Формула: $Q = cm(t_2 - t_1)$."
+       },
+       {
+        "layer": 2,
+        "text": "Изменение температуры: $\\Delta t = 120 - 20 = 100$ °C."
+       },
+       {
+        "layer": 3,
+        "text": "$Q = 920 \\cdot 0,5 \\cdot 100 = 46 000$ Дж."
+       },
+       {
+        "layer": 4,
+        "text": "Переводим: $46 000$ Дж $= 46$ кДж."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 130\" role=\"img\"><line x1=\"30.0\" y1=\"80.0\" x2=\"390.0\" y2=\"80.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"30.0\" y1=\"75.0\" x2=\"30.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"57.7\" y1=\"75.0\" x2=\"57.7\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"85.4\" y1=\"75.0\" x2=\"85.4\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"113.1\" y1=\"75.0\" x2=\"113.1\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"140.8\" y1=\"75.0\" x2=\"140.8\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"168.5\" y1=\"75.0\" x2=\"168.5\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"196.2\" y1=\"75.0\" x2=\"196.2\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"223.8\" y1=\"75.0\" x2=\"223.8\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"251.5\" y1=\"75.0\" x2=\"251.5\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"279.2\" y1=\"75.0\" x2=\"279.2\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"306.9\" y1=\"75.0\" x2=\"306.9\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"334.6\" y1=\"75.0\" x2=\"334.6\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"362.3\" y1=\"75.0\" x2=\"362.3\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"390.0\" y1=\"75.0\" x2=\"390.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><circle cx=\"85.4\" cy=\"80.0\" r=\"7.0\" style=\"fill:var(--accent);fill-opacity:1;stroke:var(--accent);stroke-width:2\"/><text x=\"85.4\" y=\"110.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 15px sans-serif\">20 °C</text><circle cx=\"362.3\" cy=\"80.0\" r=\"7.0\" style=\"fill:var(--pen);fill-opacity:1;stroke:var(--pen);stroke-width:2\"/><text x=\"362.3\" y=\"110.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">120 °C</text><text x=\"85.4\" y=\"40.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">было</text><text x=\"362.3\" y=\"40.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">стало</text><g data-step=\"1\"><line x1=\"85.4\" y1=\"62.0\" x2=\"352.3\" y2=\"62.0\" style=\"stroke:var(--warn);stroke-width:3;stroke-linecap:round\"/><polygon points=\"362.3,62.0 352.3,67.5 352.3,56.5\" style=\"fill:var(--warn)\"/></g><text data-step=\"1\" x=\"223.8\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--warn);font:700 16px sans-serif\">Δt = 100 °C</text></svg>"
+      }
+     },
+     "text": "Сколько теплоты нужно, чтобы нагреть алюминиевую деталь массой 0,5 кг от 20 °C до 120 °C? Удельная теплоёмкость алюминия $c = 920\\ \\frac{Дж}{кг\\cdot °C}$. Ответ дай в кДж.",
+     "tolerance": 0.01,
+     "type": "number",
+     "typicalWrong": [
+      {
+       "tolerance": 0.5,
+       "value": 46000,
+       "why": "Это ответ в джоулях (46 000 Дж). Просили в **килоджоулях**: раздели на 1000."
+      },
+      {
+       "value": 55.2,
+       "why": "Ты умножил на конечную температуру 120 °C. В формулу ставят **изменение** температуры: $\\Delta t = 120 - 20$."
+      },
+      {
+       "value": 92,
+       "why": "Ты забыл умножить на массу. Теплоёмкость дана для 1 кг, а здесь масса другая."
+      }
+     ],
+     "unit": "кДж"
+    },
+    {
+     "answer": 90,
+     "hint": "Формула $Q = cm\\Delta t$. Сначала найди $\\Delta t$, массу переведи в кг.",
+     "id": "q7t2",
+     "solution": {
+      "answerLine": "$Q = 90$ кДж",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Дано: $c = 500$, $m = 3$ кг, $t_1 = 15$ °C, $t_2 = 75$ °C. Формула: $Q = cm(t_2 - t_1)$."
+       },
+       {
+        "layer": 2,
+        "text": "Изменение температуры: $\\Delta t = 75 - 15 = 60$ °C."
+       },
+       {
+        "layer": 3,
+        "text": "$Q = 500 \\cdot 3 \\cdot 60 = 90 000$ Дж."
+       },
+       {
+        "layer": 4,
+        "text": "Переводим: $90 000$ Дж $= 90$ кДж."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 130\" role=\"img\"><line x1=\"30.0\" y1=\"80.0\" x2=\"390.0\" y2=\"80.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"30.0\" y1=\"75.0\" x2=\"30.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"70.0\" y1=\"75.0\" x2=\"70.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"110.0\" y1=\"75.0\" x2=\"110.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"150.0\" y1=\"75.0\" x2=\"150.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"190.0\" y1=\"75.0\" x2=\"190.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"230.0\" y1=\"75.0\" x2=\"230.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"270.0\" y1=\"75.0\" x2=\"270.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"310.0\" y1=\"75.0\" x2=\"310.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"350.0\" y1=\"75.0\" x2=\"350.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"390.0\" y1=\"75.0\" x2=\"390.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><circle cx=\"90.0\" cy=\"80.0\" r=\"7.0\" style=\"fill:var(--accent);fill-opacity:1;stroke:var(--accent);stroke-width:2\"/><text x=\"90.0\" y=\"110.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 15px sans-serif\">15 °C</text><circle cx=\"330.0\" cy=\"80.0\" r=\"7.0\" style=\"fill:var(--pen);fill-opacity:1;stroke:var(--pen);stroke-width:2\"/><text x=\"330.0\" y=\"110.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">75 °C</text><text x=\"90.0\" y=\"40.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">было</text><text x=\"330.0\" y=\"40.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">стало</text><g data-step=\"1\"><line x1=\"90.0\" y1=\"62.0\" x2=\"320.0\" y2=\"62.0\" style=\"stroke:var(--warn);stroke-width:3;stroke-linecap:round\"/><polygon points=\"330.0,62.0 320.0,67.5 320.0,56.5\" style=\"fill:var(--warn)\"/></g><text data-step=\"1\" x=\"210.0\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--warn);font:700 16px sans-serif\">Δt = 60 °C</text></svg>"
+      }
+     },
+     "text": "Стальную деталь массой 3 кг нагрели от 15 °C до 75 °C. Сколько теплоты для этого потребовалось? Удельная теплоёмкость стали $c = 500\\ \\frac{Дж}{кг\\cdot °C}$. Ответ дай в кДж.",
+     "tolerance": 0.01,
+     "type": "number",
+     "typicalWrong": [
+      {
+       "tolerance": 0.5,
+       "value": 90000,
+       "why": "Это ответ в джоулях (90 000 Дж). Просили в **килоджоулях**: раздели на 1000."
+      },
+      {
+       "value": 112.5,
+       "why": "Ты умножил на конечную температуру 75 °C. В формулу ставят **изменение** температуры: $\\Delta t = 75 - 15$."
+      },
+      {
+       "value": 30,
+       "why": "Ты забыл умножить на массу. Теплоёмкость дана для 1 кг, а здесь масса другая."
+      }
+     ],
+     "unit": "кДж"
+    }
+   ],
+   "type": "number",
+   "typicalWrong": [
+    {
+     "tolerance": 0.5,
+     "value": 420000,
+     "why": "Это ответ в джоулях (420 000 Дж). Просили в **килоджоулях**: раздели на 1000."
+    },
+    {
+     "value": 588,
+     "why": "Ты умножил на конечную температуру 70 °C. В формулу ставят **изменение** температуры: $\\Delta t = 70 - 20$."
+    },
+    {
+     "value": 210,
+     "why": "Ты забыл умножить на массу. Теплоёмкость дана для 1 кг, а здесь масса другая."
+    }
+   ],
+   "unit": "кДж"
+  },
+  {
+   "id": "q8",
+   "answer": 63,
+   "hint": "При остывании тоже $Q = cm\\Delta t$, только $\\Delta t$ = на сколько градусов тело остыло.",
+   "lesson": {
+    "remember": "Остывание: Δt = t₁ − t₂, энергия выделяется.",
+    "text": "Когда тело остывает, оно **отдаёт** теплоту. Считают её по той же формуле $Q = cm\\Delta t$, только $\\Delta t$ — это на сколько градусов тело остыло: из большей температуры вычитают меньшую.\nЕсли считать строго по формуле $Q = cm(t_2 - t_1)$, получится число со знаком «минус». Минус просто означает, что энергия **выделяется**, а не поглощается. В ответе на вопрос «сколько выделилось» пишут число без минуса.\nДве частые ловушки: масса в граммах (переведи в кг!) и подстановка одной температуры вместо разности.\nПример: 1 кг воды остыл с 50 до 40 °C: $Q = 4200 \\cdot 1 \\cdot 10 = 42\\,000$ Дж = 42 кДж выделилось.",
+    "title": "Теплота при остывании",
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 130\" role=\"img\"><line x1=\"30.0\" y1=\"80.0\" x2=\"390.0\" y2=\"80.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"30.0\" y1=\"75.0\" x2=\"30.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"90.0\" y1=\"75.0\" x2=\"90.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"150.0\" y1=\"75.0\" x2=\"150.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"210.0\" y1=\"75.0\" x2=\"210.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"270.0\" y1=\"75.0\" x2=\"270.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"330.0\" y1=\"75.0\" x2=\"330.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"390.0\" y1=\"75.0\" x2=\"390.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><circle cx=\"330.0\" cy=\"80.0\" r=\"7.0\" style=\"fill:var(--accent);fill-opacity:1;stroke:var(--accent);stroke-width:2\"/><text x=\"330.0\" y=\"110.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 15px sans-serif\">50 °C</text><circle cx=\"270.0\" cy=\"80.0\" r=\"7.0\" style=\"fill:var(--pen);fill-opacity:1;stroke:var(--pen);stroke-width:2\"/><text x=\"270.0\" y=\"110.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">40 °C</text><text x=\"330.0\" y=\"40.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">было</text><text x=\"270.0\" y=\"40.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">стало</text><g data-step=\"0\"><line x1=\"330.0\" y1=\"62.0\" x2=\"280.0\" y2=\"62.0\" style=\"stroke:var(--warn);stroke-width:3;stroke-linecap:round\"/><polygon points=\"270.0,62.0 280.0,56.5 280.0,67.5\" style=\"fill:var(--warn)\"/></g><text data-step=\"0\" x=\"300.0\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--warn);font:700 16px sans-serif\">Δt = 10 °C</text></svg>"
+    }
+   },
+   "order": 8,
+   "solution": {
+    "answerLine": "выделилось $Q = 63$ кДж",
+    "steps": [
+     {
+      "layer": 1,
+      "text": "Дано: $c = 4200$, $m = 0,25$ кг, тело остыло от 90 °C до 30 °C."
+     },
+     {
+      "layer": 2,
+      "text": "Тело остыло на $\\Delta t = 90 - 30 = 60$ °C."
+     },
+     {
+      "layer": 3,
+      "text": "$Q = 4200 \\cdot 0,25 \\cdot 60 = 63 000$ Дж $= 63$ кДж. Эту теплоту тело **отдало**."
+     }
+    ],
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 130\" role=\"img\"><line x1=\"30.0\" y1=\"80.0\" x2=\"390.0\" y2=\"80.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"30.0\" y1=\"75.0\" x2=\"30.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"66.0\" y1=\"75.0\" x2=\"66.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"102.0\" y1=\"75.0\" x2=\"102.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"138.0\" y1=\"75.0\" x2=\"138.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"174.0\" y1=\"75.0\" x2=\"174.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"210.0\" y1=\"75.0\" x2=\"210.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"246.0\" y1=\"75.0\" x2=\"246.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"282.0\" y1=\"75.0\" x2=\"282.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"318.0\" y1=\"75.0\" x2=\"318.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"354.0\" y1=\"75.0\" x2=\"354.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"390.0\" y1=\"75.0\" x2=\"390.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><circle cx=\"354.0\" cy=\"80.0\" r=\"7.0\" style=\"fill:var(--accent);fill-opacity:1;stroke:var(--accent);stroke-width:2\"/><text x=\"354.0\" y=\"110.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 15px sans-serif\">90 °C</text><circle cx=\"138.0\" cy=\"80.0\" r=\"7.0\" style=\"fill:var(--pen);fill-opacity:1;stroke:var(--pen);stroke-width:2\"/><text x=\"138.0\" y=\"110.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">30 °C</text><text x=\"354.0\" y=\"40.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">было</text><text x=\"138.0\" y=\"40.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">стало</text><g data-step=\"1\"><line x1=\"354.0\" y1=\"62.0\" x2=\"148.0\" y2=\"62.0\" style=\"stroke:var(--warn);stroke-width:3;stroke-linecap:round\"/><polygon points=\"138.0,62.0 148.0,56.5 148.0,67.5\" style=\"fill:var(--warn)\"/></g><text data-step=\"1\" x=\"246.0\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--warn);font:700 16px sans-serif\">Δt = 60 °C</text></svg>"
+    }
+   },
+   "subtopic": "Количество теплоты при охлаждении",
+   "text": "Чашку горячего чая (воды) массой 250 г оставили на столе, и она остыла от 90 °C до 30 °C. Сколько теплоты выделилось? $c = 4200\\ \\frac{Дж}{кг\\cdot °C}$. Ответ дай в кДж.",
+   "tolerance": 0.01,
+   "twins": [
+    {
+     "answer": 80,
+     "hint": "При остывании тоже $Q = cm\\Delta t$, только $\\Delta t$ = на сколько градусов тело остыло.",
+     "id": "q8t1",
+     "solution": {
+      "answerLine": "выделилось $Q = 80$ кДж",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Дано: $c = 400$, $m = 2$ кг, тело остыло от 120 °C до 20 °C."
+       },
+       {
+        "layer": 2,
+        "text": "Тело остыло на $\\Delta t = 120 - 20 = 100$ °C."
+       },
+       {
+        "layer": 3,
+        "text": "$Q = 400 \\cdot 2 \\cdot 100 = 80 000$ Дж $= 80$ кДж. Эту теплоту тело **отдало**."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 130\" role=\"img\"><line x1=\"30.0\" y1=\"80.0\" x2=\"390.0\" y2=\"80.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"30.0\" y1=\"75.0\" x2=\"30.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"57.7\" y1=\"75.0\" x2=\"57.7\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"85.4\" y1=\"75.0\" x2=\"85.4\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"113.1\" y1=\"75.0\" x2=\"113.1\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"140.8\" y1=\"75.0\" x2=\"140.8\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"168.5\" y1=\"75.0\" x2=\"168.5\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"196.2\" y1=\"75.0\" x2=\"196.2\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"223.8\" y1=\"75.0\" x2=\"223.8\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"251.5\" y1=\"75.0\" x2=\"251.5\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"279.2\" y1=\"75.0\" x2=\"279.2\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"306.9\" y1=\"75.0\" x2=\"306.9\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"334.6\" y1=\"75.0\" x2=\"334.6\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"362.3\" y1=\"75.0\" x2=\"362.3\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"390.0\" y1=\"75.0\" x2=\"390.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><circle cx=\"362.3\" cy=\"80.0\" r=\"7.0\" style=\"fill:var(--accent);fill-opacity:1;stroke:var(--accent);stroke-width:2\"/><text x=\"362.3\" y=\"110.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 15px sans-serif\">120 °C</text><circle cx=\"85.4\" cy=\"80.0\" r=\"7.0\" style=\"fill:var(--pen);fill-opacity:1;stroke:var(--pen);stroke-width:2\"/><text x=\"85.4\" y=\"110.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">20 °C</text><text x=\"362.3\" y=\"40.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">было</text><text x=\"85.4\" y=\"40.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">стало</text><g data-step=\"1\"><line x1=\"362.3\" y1=\"62.0\" x2=\"95.4\" y2=\"62.0\" style=\"stroke:var(--warn);stroke-width:3;stroke-linecap:round\"/><polygon points=\"85.4,62.0 95.4,56.5 95.4,67.5\" style=\"fill:var(--warn)\"/></g><text data-step=\"1\" x=\"223.8\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--warn);font:700 16px sans-serif\">Δt = 100 °C</text></svg>"
+      }
+     },
+     "text": "Медный брусок массой 2 кг остыл от 120 °C до 20 °C. Сколько теплоты он отдал? $c = 400\\ \\frac{Дж}{кг\\cdot °C}$. Ответ дай в кДж.",
+     "tolerance": 0.01,
+     "type": "number",
+     "typicalWrong": [
+      {
+       "tolerance": 0.5,
+       "value": 80000,
+       "why": "Это ответ в джоулях. Переведи в кДж: $80 000 : 1000$."
+      },
+      {
+       "value": 96,
+       "why": "Ты умножил на начальную температуру 120 °C. Нужно изменение: $\\Delta t = 120 - 20$."
+      },
+      {
+       "value": 16,
+       "why": "Ты умножил на конечную температуру 20 °C. Нужно изменение: $\\Delta t = 120 - 20$."
+      }
+     ],
+     "unit": "кДж"
+    },
+    {
+     "answer": 2100,
+     "hint": "При остывании тоже $Q = cm\\Delta t$, только $\\Delta t$ = на сколько градусов тело остыло.",
+     "id": "q8t2",
+     "solution": {
+      "answerLine": "выделилось $Q = 2 100$ кДж",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Дано: $c = 4200$, $m = 50$ кг, тело остыло от 45 °C до 35 °C."
+       },
+       {
+        "layer": 2,
+        "text": "Тело остыло на $\\Delta t = 45 - 35 = 10$ °C."
+       },
+       {
+        "layer": 3,
+        "text": "$Q = 4200 \\cdot 50 \\cdot 10 = 2 100 000$ Дж $= 2 100$ кДж. Эту теплоту тело **отдало**."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 130\" role=\"img\"><line x1=\"30.0\" y1=\"80.0\" x2=\"390.0\" y2=\"80.0\" style=\"stroke:var(--ink);stroke-width:2\"/><line x1=\"30.0\" y1=\"75.0\" x2=\"30.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"90.0\" y1=\"75.0\" x2=\"90.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"150.0\" y1=\"75.0\" x2=\"150.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"210.0\" y1=\"75.0\" x2=\"210.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"270.0\" y1=\"75.0\" x2=\"270.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"330.0\" y1=\"75.0\" x2=\"330.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><line x1=\"390.0\" y1=\"75.0\" x2=\"390.0\" y2=\"85.0\" style=\"stroke:var(--muted);stroke-width:1.5\"/><circle cx=\"300.0\" cy=\"80.0\" r=\"7.0\" style=\"fill:var(--accent);fill-opacity:1;stroke:var(--accent);stroke-width:2\"/><text x=\"300.0\" y=\"110.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 15px sans-serif\">45 °C</text><circle cx=\"240.0\" cy=\"80.0\" r=\"7.0\" style=\"fill:var(--pen);fill-opacity:1;stroke:var(--pen);stroke-width:2\"/><text x=\"240.0\" y=\"110.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">35 °C</text><text x=\"300.0\" y=\"40.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">было</text><text x=\"240.0\" y=\"40.0\" text-anchor=\"middle\" style=\"fill:var(--muted);font:600 13px sans-serif\">стало</text><g data-step=\"1\"><line x1=\"300.0\" y1=\"62.0\" x2=\"250.0\" y2=\"62.0\" style=\"stroke:var(--warn);stroke-width:3;stroke-linecap:round\"/><polygon points=\"240.0,62.0 250.0,56.5 250.0,67.5\" style=\"fill:var(--warn)\"/></g><text data-step=\"1\" x=\"270.0\" y=\"54.0\" text-anchor=\"middle\" style=\"fill:var(--warn);font:700 16px sans-serif\">Δt = 10 °C</text></svg>"
+      }
+     },
+     "text": "В ванне 50 кг воды. Она остыла от 45 °C до 35 °C. Сколько теплоты отдала вода? $c = 4200\\ \\frac{Дж}{кг\\cdot °C}$. Ответ дай в кДж.",
+     "tolerance": 0.01,
+     "type": "number",
+     "typicalWrong": [
+      {
+       "tolerance": 0.5,
+       "value": 2100000,
+       "why": "Это ответ в джоулях. Переведи в кДж: $2 100 000 : 1000$."
+      },
+      {
+       "value": 9450,
+       "why": "Ты умножил на начальную температуру 45 °C. Нужно изменение: $\\Delta t = 45 - 35$."
+      },
+      {
+       "value": 7350,
+       "why": "Ты умножил на конечную температуру 35 °C. Нужно изменение: $\\Delta t = 45 - 35$."
+      }
+     ],
+     "unit": "кДж"
+    }
+   ],
+   "type": "number",
+   "typicalWrong": [
+    {
+     "tolerance": 0.5,
+     "value": 63000,
+     "why": "Это ответ в джоулях. Переведи в кДж: $63 000 : 1000$. (Или ты подставил массу в граммах — 250 — тогда тоже получится это число. Масса нужна в кг: 0,25 кг.)"
+    },
+    {
+     "value": 94.5,
+     "why": "Ты умножил на начальную температуру 90 °C. Нужно изменение: $\\Delta t = 90 - 30$."
+    },
+    {
+     "value": 31.5,
+     "why": "Ты умножил на конечную температуру 30 °C. Нужно изменение: $\\Delta t = 90 - 30$."
+    }
+   ],
+   "unit": "кДж"
+  },
+  {
+   "id": "q9",
+   "answer": 500,
+   "figure": {
+    "board": {
+     "axis": true,
+     "boundingbox": [
+      -7.000000000000001,
+      62.5,
+      50,
+      -10
+     ],
+     "grid": true,
+     "keepAspectRatio": false
+    },
+    "caption": "График зависимости температуры тела массой 2 кг от полученной теплоты",
+    "elements": [
+     {
+      "attrs": {
+       "strokeColor": "accent",
+       "strokeWidth": 3
+      },
+      "parents": [
+       [
+        0,
+        10
+       ],
+       [
+        40,
+        50
+       ]
+      ],
+      "type": "segment"
+     },
+     {
+      "attrs": {
+       "fillColor": "accent",
+       "name": "",
+       "size": 3,
+       "strokeColor": "accent"
+      },
+      "id": "P0",
+      "parents": [
+       0,
+       10
+      ],
+      "type": "point"
+     },
+     {
+      "attrs": {
+       "fillColor": "accent",
+       "name": "",
+       "size": 3,
+       "strokeColor": "accent"
+      },
+      "id": "P1",
+      "parents": [
+       40,
+       50
+      ],
+      "type": "point"
+     },
+     {
+      "attrs": {
+       "fontSize": 15,
+       "strokeColor": "muted"
+      },
+      "parents": [
+       42,
+       6.25,
+       "Q, кДж"
+      ],
+      "type": "text"
+     },
+     {
+      "attrs": {
+       "fontSize": 15,
+       "strokeColor": "muted"
+      },
+      "parents": [
+       1,
+       60,
+       "t, °C"
+      ],
+      "type": "text"
+     }
+    ],
+    "kind": "jsx"
+   },
+   "hint": "Найди по графику, сколько кДж получило тело и на сколько градусов нагрелось. Потом $c = \\frac{Q}{m\\Delta t}$.",
+   "lesson": {
+    "remember": "c = Q / (m·Δt), Q — в джоулях.",
+    "text": "На графике по горизонтали — переданная теплота $Q$ (часто в кДж), по вертикали — температура $t$.\nЧтобы найти удельную теплоёмкость:\n1) выбери на прямой удобную точку, которая попадает в узел сетки;\n2) по горизонтали прочитай $Q$ и переведи в джоули;\n3) найди $\\Delta t$: из температуры в этой точке вычти начальную (где прямая начинается);\n4) посчитай $c = \\frac{Q}{m\\Delta t}$ — это формула $Q = cm\\Delta t$, выраженная через $c$.\nПо наклону тоже можно судить: чем круче прямая, тем меньше теплоёмкость — тело быстрее нагревается.",
+    "title": "Как читать график зависимости температуры от теплоты",
+    "visual": {
+     "board": {
+      "axis": true,
+      "boundingbox": [
+       -1.4000000000000001,
+       30,
+       10,
+       -4.8
+      ],
+      "grid": true,
+      "keepAspectRatio": false
+     },
+     "caption": "График зависимости температуры тела массой 1 кг от полученной теплоты",
+     "elements": [
+      {
+       "attrs": {
+        "strokeColor": "accent",
+        "strokeWidth": 3
+       },
+       "parents": [
+        [
+         0,
+         0
+        ],
+        [
+         8,
+         20
+        ]
+       ],
+       "type": "segment"
+      },
+      {
+       "attrs": {
+        "fillColor": "accent",
+        "name": "",
+        "size": 3,
+        "strokeColor": "accent"
+       },
+       "id": "P0",
+       "parents": [
+        0,
+        0
+       ],
+       "type": "point"
+      },
+      {
+       "attrs": {
+        "fillColor": "accent",
+        "name": "",
+        "size": 3,
+        "strokeColor": "accent"
+       },
+       "id": "P1",
+       "parents": [
+        8,
+        20
+       ],
+       "type": "point"
+      },
+      {
+       "attrs": {
+        "fontSize": 15,
+        "strokeColor": "muted"
+       },
+       "parents": [
+        8.4,
+        3,
+        "Q, кДж"
+       ],
+       "type": "text"
+      },
+      {
+       "attrs": {
+        "fontSize": 15,
+        "strokeColor": "muted"
+       },
+       "parents": [
+        0.2,
+        28.799999999999997,
+        "t, °C"
+       ],
+       "type": "text"
+      },
+      {
+       "attrs": {
+        "dash": 2,
+        "strokeColor": "pen",
+        "strokeWidth": 2
+       },
+       "parents": [
+        [
+         8,
+         0
+        ],
+        [
+         8,
+         20
+        ]
+       ],
+       "step": 1,
+       "type": "segment"
+      },
+      {
+       "attrs": {
+        "dash": 2,
+        "strokeColor": "pen",
+        "strokeWidth": 2
+       },
+       "parents": [
+        [
+         0,
+         20
+        ],
+        [
+         8,
+         20
+        ]
+       ],
+       "step": 1,
+       "type": "segment"
+      },
+      {
+       "attrs": {
+        "cssStyle": "font-weight:700",
+        "fontSize": 16,
+        "strokeColor": "warn"
+       },
+       "parents": [
+        2.8,
+        13.6,
+        "Δt = 20 °C"
+       ],
+       "step": 2,
+       "type": "text"
+      },
+      {
+       "attrs": {
+        "cssStyle": "font-weight:700",
+        "fontSize": 15,
+        "strokeColor": "pen"
+       },
+       "parents": [
+        8.16,
+        9,
+        "8 кДж"
+       ],
+       "step": 1,
+       "type": "text"
+      }
+     ],
+     "kind": "jsx"
+    }
+   },
+   "order": 9,
+   "solution": {
+    "answerLine": "$c = 500\\ \\frac{Дж}{кг\\cdot °C}$",
+    "steps": [
+     {
+      "layer": 1,
+      "text": "По графику: тело получило $Q = 40$ кДж $= 40 000$ Дж."
+     },
+     {
+      "layer": 2,
+      "text": "Температура выросла от 10 °C до 50 °C: $\\Delta t = 40$ °C."
+     },
+     {
+      "layer": 3,
+      "text": "$c = \\frac{Q}{m\\Delta t} = \\frac{40 000}{2 \\cdot 40} = 500\\ \\frac{Дж}{кг\\cdot °C}$."
+     }
+    ],
+    "visual": {
+     "board": {
+      "axis": true,
+      "boundingbox": [
+       -7.000000000000001,
+       62.5,
+       50,
+       -10
+      ],
+      "grid": true,
+      "keepAspectRatio": false
+     },
+     "caption": "График зависимости температуры тела массой 2 кг от полученной теплоты",
+     "elements": [
+      {
+       "attrs": {
+        "strokeColor": "accent",
+        "strokeWidth": 3
+       },
+       "parents": [
+        [
+         0,
+         10
+        ],
+        [
+         40,
+         50
+        ]
+       ],
+       "type": "segment"
+      },
+      {
+       "attrs": {
+        "fillColor": "accent",
+        "name": "",
+        "size": 3,
+        "strokeColor": "accent"
+       },
+       "id": "P0",
+       "parents": [
+        0,
+        10
+       ],
+       "type": "point"
+      },
+      {
+       "attrs": {
+        "fillColor": "accent",
+        "name": "",
+        "size": 3,
+        "strokeColor": "accent"
+       },
+       "id": "P1",
+       "parents": [
+        40,
+        50
+       ],
+       "type": "point"
+      },
+      {
+       "attrs": {
+        "fontSize": 15,
+        "strokeColor": "muted"
+       },
+       "parents": [
+        42,
+        6.25,
+        "Q, кДж"
+       ],
+       "type": "text"
+      },
+      {
+       "attrs": {
+        "fontSize": 15,
+        "strokeColor": "muted"
+       },
+       "parents": [
+        1,
+        60,
+        "t, °C"
+       ],
+       "type": "text"
+      },
+      {
+       "attrs": {
+        "dash": 2,
+        "strokeColor": "pen",
+        "strokeWidth": 2
+       },
+       "parents": [
+        [
+         40,
+         0
+        ],
+        [
+         40,
+         50
+        ]
+       ],
+       "step": 1,
+       "type": "segment"
+      },
+      {
+       "attrs": {
+        "dash": 2,
+        "strokeColor": "pen",
+        "strokeWidth": 2
+       },
+       "parents": [
+        [
+         0,
+         50
+        ],
+        [
+         40,
+         50
+        ]
+       ],
+       "step": 1,
+       "type": "segment"
+      },
+      {
+       "attrs": {
+        "cssStyle": "font-weight:700",
+        "fontSize": 16,
+        "strokeColor": "warn"
+       },
+       "parents": [
+        14,
+        37.5,
+        "Δt = 40 °C"
+       ],
+       "step": 2,
+       "type": "text"
+      },
+      {
+       "attrs": {
+        "cssStyle": "font-weight:700",
+        "fontSize": 15,
+        "strokeColor": "pen"
+       },
+       "parents": [
+        40.8,
+        22.5,
+        "40 кДж"
+       ],
+       "step": 1,
+       "type": "text"
+      }
+     ],
+     "kind": "jsx"
+    }
+   },
+   "subtopic": "График t(Q) и удельная теплоёмкость",
+   "text": "По графику определи удельную теплоёмкость вещества, из которого сделано тело. Масса тела 2 кг.",
+   "tolerance": 1,
+   "twins": [
+    {
+     "answer": 400,
+     "figure": {
+      "board": {
+       "axis": true,
+       "boundingbox": [
+        -11.200000000000001,
+        75,
+        80,
+        -12
+       ],
+       "grid": true,
+       "keepAspectRatio": false
+      },
+      "caption": "График зависимости температуры тела массой 4 кг от полученной теплоты",
+      "elements": [
+       {
+        "attrs": {
+         "strokeColor": "accent",
+         "strokeWidth": 3
+        },
+        "parents": [
+         [
+          0,
+          20
+         ],
+         [
+          64,
+          60
+         ]
+        ],
+        "type": "segment"
+       },
+       {
+        "attrs": {
+         "fillColor": "accent",
+         "name": "",
+         "size": 3,
+         "strokeColor": "accent"
+        },
+        "id": "P0",
+        "parents": [
+         0,
+         20
+        ],
+        "type": "point"
+       },
+       {
+        "attrs": {
+         "fillColor": "accent",
+         "name": "",
+         "size": 3,
+         "strokeColor": "accent"
+        },
+        "id": "P1",
+        "parents": [
+         64,
+         60
+        ],
+        "type": "point"
+       },
+       {
+        "attrs": {
+         "fontSize": 15,
+         "strokeColor": "muted"
+        },
+        "parents": [
+         67.2,
+         7.5,
+         "Q, кДж"
+        ],
+        "type": "text"
+       },
+       {
+        "attrs": {
+         "fontSize": 15,
+         "strokeColor": "muted"
+        },
+        "parents": [
+         1.6,
+         72,
+         "t, °C"
+        ],
+        "type": "text"
+       }
+      ],
+      "kind": "jsx"
+     },
+     "hint": "Найди по графику, сколько кДж получило тело и на сколько градусов нагрелось. Потом $c = \\frac{Q}{m\\Delta t}$.",
+     "id": "q9t1",
+     "solution": {
+      "answerLine": "$c = 400\\ \\frac{Дж}{кг\\cdot °C}$",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "По графику: тело получило $Q = 64$ кДж $= 64 000$ Дж."
+       },
+       {
+        "layer": 2,
+        "text": "Температура выросла от 20 °C до 60 °C: $\\Delta t = 40$ °C."
+       },
+       {
+        "layer": 3,
+        "text": "$c = \\frac{Q}{m\\Delta t} = \\frac{64 000}{4 \\cdot 40} = 400\\ \\frac{Дж}{кг\\cdot °C}$."
+       }
+      ],
+      "visual": {
+       "board": {
+        "axis": true,
+        "boundingbox": [
+         -11.200000000000001,
+         75,
+         80,
+         -12
+        ],
+        "grid": true,
+        "keepAspectRatio": false
+       },
+       "caption": "График зависимости температуры тела массой 4 кг от полученной теплоты",
+       "elements": [
+        {
+         "attrs": {
+          "strokeColor": "accent",
+          "strokeWidth": 3
+         },
+         "parents": [
+          [
+           0,
+           20
+          ],
+          [
+           64,
+           60
+          ]
+         ],
+         "type": "segment"
+        },
+        {
+         "attrs": {
+          "fillColor": "accent",
+          "name": "",
+          "size": 3,
+          "strokeColor": "accent"
+         },
+         "id": "P0",
+         "parents": [
+          0,
+          20
+         ],
+         "type": "point"
+        },
+        {
+         "attrs": {
+          "fillColor": "accent",
+          "name": "",
+          "size": 3,
+          "strokeColor": "accent"
+         },
+         "id": "P1",
+         "parents": [
+          64,
+          60
+         ],
+         "type": "point"
+        },
+        {
+         "attrs": {
+          "fontSize": 15,
+          "strokeColor": "muted"
+         },
+         "parents": [
+          67.2,
+          7.5,
+          "Q, кДж"
+         ],
+         "type": "text"
+        },
+        {
+         "attrs": {
+          "fontSize": 15,
+          "strokeColor": "muted"
+         },
+         "parents": [
+          1.6,
+          72,
+          "t, °C"
+         ],
+         "type": "text"
+        },
+        {
+         "attrs": {
+          "dash": 2,
+          "strokeColor": "pen",
+          "strokeWidth": 2
+         },
+         "parents": [
+          [
+           64,
+           0
+          ],
+          [
+           64,
+           60
+          ]
+         ],
+         "step": 1,
+         "type": "segment"
+        },
+        {
+         "attrs": {
+          "dash": 2,
+          "strokeColor": "pen",
+          "strokeWidth": 2
+         },
+         "parents": [
+          [
+           0,
+           60
+          ],
+          [
+           64,
+           60
+          ]
+         ],
+         "step": 1,
+         "type": "segment"
+        },
+        {
+         "attrs": {
+          "cssStyle": "font-weight:700",
+          "fontSize": 16,
+          "strokeColor": "warn"
+         },
+         "parents": [
+          22.4,
+          49,
+          "Δt = 40 °C"
+         ],
+         "step": 2,
+         "type": "text"
+        },
+        {
+         "attrs": {
+          "cssStyle": "font-weight:700",
+          "fontSize": 15,
+          "strokeColor": "pen"
+         },
+         "parents": [
+          65.28,
+          27,
+          "64 кДж"
+         ],
+         "step": 1,
+         "type": "text"
+        }
+       ],
+       "kind": "jsx"
+      }
+     },
+     "text": "По графику определи удельную теплоёмкость вещества, из которого сделано тело. Масса тела 4 кг.",
+     "tolerance": 1,
+     "type": "number",
+     "typicalWrong": [
+      {
+       "value": 1600,
+       "why": "Ты забыл разделить на массу. Теплоёмкость — для **1 кг**, а у тела масса другая."
+      },
+      {
+       "value": 266.6667,
+       "why": "Ты разделил на конечную температуру 60 °C. Нужно изменение: $\\Delta t = 60 - 20$."
+      },
+      {
+       "tolerance": 0.01,
+       "value": 0.4,
+       "why": "Ты оставил Q в килоджоулях. Удельную теплоёмкость считают в джоулях: переведи кДж в Дж (× 1000)."
+      }
+     ],
+     "unit": "Дж/(кг·°C)"
+    },
+    {
+     "answer": 920,
+     "figure": {
+      "board": {
+       "axis": true,
+       "boundingbox": [
+        -3.22,
+        50,
+        23,
+        -8
+       ],
+       "grid": true,
+       "keepAspectRatio": false
+      },
+      "caption": "График зависимости температуры тела массой 0,5 кг от полученной теплоты",
+      "elements": [
+       {
+        "attrs": {
+         "strokeColor": "accent",
+         "strokeWidth": 3
+        },
+        "parents": [
+         [
+          0,
+          0
+         ],
+         [
+          18.4,
+          40
+         ]
+        ],
+        "type": "segment"
+       },
+       {
+        "attrs": {
+         "fillColor": "accent",
+         "name": "",
+         "size": 3,
+         "strokeColor": "accent"
+        },
+        "id": "P0",
+        "parents": [
+         0,
+         0
+        ],
+        "type": "point"
+       },
+       {
+        "attrs": {
+         "fillColor": "accent",
+         "name": "",
+         "size": 3,
+         "strokeColor": "accent"
+        },
+        "id": "P1",
+        "parents": [
+         18.4,
+         40
+        ],
+        "type": "point"
+       },
+       {
+        "attrs": {
+         "fontSize": 15,
+         "strokeColor": "muted"
+        },
+        "parents": [
+         19.32,
+         5,
+         "Q, кДж"
+        ],
+        "type": "text"
+       },
+       {
+        "attrs": {
+         "fontSize": 15,
+         "strokeColor": "muted"
+        },
+        "parents": [
+         0.46,
+         48,
+         "t, °C"
+        ],
+        "type": "text"
+       }
+      ],
+      "kind": "jsx"
+     },
+     "hint": "Найди по графику, сколько кДж получило тело и на сколько градусов нагрелось. Потом $c = \\frac{Q}{m\\Delta t}$.",
+     "id": "q9t2",
+     "solution": {
+      "answerLine": "$c = 920\\ \\frac{Дж}{кг\\cdot °C}$",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "По графику: тело получило $Q = 18,4$ кДж $= 18 400$ Дж."
+       },
+       {
+        "layer": 2,
+        "text": "Температура выросла от 0 °C до 40 °C: $\\Delta t = 40$ °C."
+       },
+       {
+        "layer": 3,
+        "text": "$c = \\frac{Q}{m\\Delta t} = \\frac{18 400}{0,5 \\cdot 40} = 920\\ \\frac{Дж}{кг\\cdot °C}$."
+       }
+      ],
+      "visual": {
+       "board": {
+        "axis": true,
+        "boundingbox": [
+         -3.22,
+         50,
+         23,
+         -8
+        ],
+        "grid": true,
+        "keepAspectRatio": false
+       },
+       "caption": "График зависимости температуры тела массой 0,5 кг от полученной теплоты",
+       "elements": [
+        {
+         "attrs": {
+          "strokeColor": "accent",
+          "strokeWidth": 3
+         },
+         "parents": [
+          [
+           0,
+           0
+          ],
+          [
+           18.4,
+           40
+          ]
+         ],
+         "type": "segment"
+        },
+        {
+         "attrs": {
+          "fillColor": "accent",
+          "name": "",
+          "size": 3,
+          "strokeColor": "accent"
+         },
+         "id": "P0",
+         "parents": [
+          0,
+          0
+         ],
+         "type": "point"
+        },
+        {
+         "attrs": {
+          "fillColor": "accent",
+          "name": "",
+          "size": 3,
+          "strokeColor": "accent"
+         },
+         "id": "P1",
+         "parents": [
+          18.4,
+          40
+         ],
+         "type": "point"
+        },
+        {
+         "attrs": {
+          "fontSize": 15,
+          "strokeColor": "muted"
+         },
+         "parents": [
+          19.32,
+          5,
+          "Q, кДж"
+         ],
+         "type": "text"
+        },
+        {
+         "attrs": {
+          "fontSize": 15,
+          "strokeColor": "muted"
+         },
+         "parents": [
+          0.46,
+          48,
+          "t, °C"
+         ],
+         "type": "text"
+        },
+        {
+         "attrs": {
+          "dash": 2,
+          "strokeColor": "pen",
+          "strokeWidth": 2
+         },
+         "parents": [
+          [
+           18.4,
+           0
+          ],
+          [
+           18.4,
+           40
+          ]
+         ],
+         "step": 1,
+         "type": "segment"
+        },
+        {
+         "attrs": {
+          "dash": 2,
+          "strokeColor": "pen",
+          "strokeWidth": 2
+         },
+         "parents": [
+          [
+           0,
+           40
+          ],
+          [
+           18.4,
+           40
+          ]
+         ],
+         "step": 1,
+         "type": "segment"
+        },
+        {
+         "attrs": {
+          "cssStyle": "font-weight:700",
+          "fontSize": 16,
+          "strokeColor": "warn"
+         },
+         "parents": [
+          6.4399999999999995,
+          26,
+          "Δt = 40 °C"
+         ],
+         "step": 2,
+         "type": "text"
+        },
+        {
+         "attrs": {
+          "cssStyle": "font-weight:700",
+          "fontSize": 15,
+          "strokeColor": "pen"
+         },
+         "parents": [
+          18.767999999999997,
+          18,
+          "18,4 кДж"
+         ],
+         "step": 1,
+         "type": "text"
+        }
+       ],
+       "kind": "jsx"
+      }
+     },
+     "text": "По графику определи удельную теплоёмкость вещества, из которого сделано тело. Масса тела 0,5 кг.",
+     "tolerance": 1,
+     "type": "number",
+     "typicalWrong": [
+      {
+       "value": 460,
+       "why": "Ты забыл разделить на массу. Теплоёмкость — для **1 кг**, а у тела масса другая."
+      },
+      {
+       "tolerance": 0.01,
+       "value": 0.92,
+       "why": "Ты оставил Q в килоджоулях. Удельную теплоёмкость считают в джоулях: переведи кДж в Дж (× 1000)."
+      }
+     ],
+     "unit": "Дж/(кг·°C)"
+    }
+   ],
+   "type": "number",
+   "typicalWrong": [
+    {
+     "value": 1000,
+     "why": "Ты забыл разделить на массу. Теплоёмкость — для **1 кг**, а у тела масса другая."
+    },
+    {
+     "value": 400,
+     "why": "Ты разделил на конечную температуру 50 °C. Нужно изменение: $\\Delta t = 50 - 10$."
+    },
+    {
+     "tolerance": 0.01,
+     "value": 0.5,
+     "why": "Ты оставил Q в килоджоулях. Удельную теплоёмкость считают в джоулях: переведи кДж в Дж (× 1000)."
+    }
+   ],
+   "unit": "Дж/(кг·°C)"
+  },
+  {
+   "id": "q10",
+   "answer": 22,
+   "hint": "Удельная теплота сгорания — теплота от 1 кг топлива. Формула $Q = qm$.",
+   "lesson": {
+    "remember": "q — теплота от 1 кг топлива; Q = q·m.",
+    "text": "**Удельная теплота сгорания** $q$ — количество теплоты, которое выделяется при полном сгорании **1 кг** топлива. Единица — Дж/кг.\nЕсли сгорело $m$ кг, теплоты выделится в $m$ раз больше: $Q = qm$. Отсюда масса топлива: $m = \\frac{Q}{q}$.\nКак работать со степенями: $10^7 = 10\\,000\\,000$. Значит, $3 \\cdot 10^7$ Дж = 30 000 000 Дж = 30 МДж.\nПример: 3 кг каменного угля ($q = 3 \\cdot 10^7$): $Q = 3 \\cdot 10^7 \\cdot 3 = 9 \\cdot 10^7$ Дж = 90 МДж.\nЧем больше в топливе углерода, тем больше теплоты оно даёт: у антрацита и нефти $q$ больше, чем у дров и торфа.",
+    "title": "Удельная теплота сгорания топлива",
+    "visual": {
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto\"><tr data-step=\"0\"><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);color:var(--muted)\">1 МДж</td><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);font-weight:600\">1 000 000 Дж = 10⁶ Дж</td></tr><tr data-step=\"0\"><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);color:var(--muted)\">10⁷ Дж</td><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);font-weight:600\">10 МДж</td></tr><tr data-step=\"0\"><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);color:var(--muted)\">Q = q·m</td><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);font-weight:600\">теплота от топлива</td></tr><tr data-step=\"0\"><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);color:var(--muted)\">m = Q : q</td><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);font-weight:600\">масса топлива</td></tr></table>",
+     "kind": "html"
+    }
+   },
+   "order": 10,
+   "solution": {
+    "answerLine": "$Q = 22$ МДж",
+    "steps": [
+     {
+      "layer": 1,
+      "text": "$q = 4{,}4 \\cdot 10^7$ Дж/кг — столько выделяет 1 кг нефти. Сгорело $m = 0{,}5$ кг."
+     },
+     {
+      "layer": 2,
+      "text": "$Q = qm = 4{,}4 \\cdot 10^7 \\cdot 0{,}5 = 2{,}2 \\cdot 10^7$ Дж."
+     },
+     {
+      "layer": 3,
+      "text": "$2{,}2 \\cdot 10^7$ Дж $= 22\\,000\\,000$ Дж $= 22$ МДж."
+     }
+    ],
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 170\" role=\"img\"><rect x=\"20.0\" y=\"70.0\" width=\"110.0\" height=\"70.0\" rx=\"10\" style=\"fill:var(--warn);fill-opacity:0.4;stroke:var(--ink);stroke-width:2\"/><text x=\"75.0\" y=\"100.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 14px sans-serif\">нефть</text><text x=\"75.0\" y=\"122.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 15px sans-serif\">0,5 кг</text><g data-step=\"1\"><line x1=\"140.0\" y1=\"105.0\" x2=\"245.0\" y2=\"105.0\" style=\"stroke:var(--pen);stroke-width:4;stroke-linecap:round\"/><polygon points=\"255.0,105.0 245.0,110.5 245.0,99.5\" style=\"fill:var(--pen)\"/></g><text data-step=\"1\" x=\"198.0\" y=\"90.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">Q = q·m</text><rect x=\"265.0\" y=\"60.0\" width=\"120.0\" height=\"90.0\" rx=\"10\" style=\"fill:var(--accent);fill-opacity:0.25;stroke:var(--ink);stroke-width:2\"/><text x=\"325.0\" y=\"100.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 14px sans-serif\">вода</text><text data-step=\"2\" x=\"325.0\" y=\"124.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 15px sans-serif\">22 МДж</text></svg>"
+    }
+   },
+   "subtopic": "Теплота сгорания топлива Q = qm",
+   "text": "Сколько теплоты выделится при полном сгорании 0,5 кг нефти? Удельная теплота сгорания нефти $q = 4{,}4 \\cdot 10^7\\ \\frac{Дж}{кг}$. Ответ дай в МДж (1 МДж = 1 000 000 Дж).",
+   "tolerance": 0.01,
+   "twins": [
+    {
+     "answer": 20,
+     "hint": "Удельная теплота сгорания — теплота от 1 кг топлива. Формула $Q = qm$.",
+     "id": "q10t1",
+     "solution": {
+      "answerLine": "$Q = 20$ МДж",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "$q = 1 \\cdot 10^7$ Дж/кг, $m = 2$ кг."
+       },
+       {
+        "layer": 2,
+        "text": "$Q = qm = 1 \\cdot 10^7 \\cdot 2 = 2 \\cdot 10^7$ Дж $= 20$ МДж."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 170\" role=\"img\"><rect x=\"20.0\" y=\"70.0\" width=\"110.0\" height=\"70.0\" rx=\"10\" style=\"fill:var(--warn);fill-opacity:0.4;stroke:var(--ink);stroke-width:2\"/><text x=\"75.0\" y=\"100.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 14px sans-serif\">дрова</text><text x=\"75.0\" y=\"122.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 15px sans-serif\">2 кг</text><g data-step=\"1\"><line x1=\"140.0\" y1=\"105.0\" x2=\"245.0\" y2=\"105.0\" style=\"stroke:var(--pen);stroke-width:4;stroke-linecap:round\"/><polygon points=\"255.0,105.0 245.0,110.5 245.0,99.5\" style=\"fill:var(--pen)\"/></g><text data-step=\"1\" x=\"198.0\" y=\"90.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">Q = q·m</text><rect x=\"265.0\" y=\"60.0\" width=\"120.0\" height=\"90.0\" rx=\"10\" style=\"fill:var(--accent);fill-opacity:0.25;stroke:var(--ink);stroke-width:2\"/><text x=\"325.0\" y=\"100.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 14px sans-serif\">вода</text><text data-step=\"2\" x=\"325.0\" y=\"124.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 15px sans-serif\">20 МДж</text></svg>"
+      }
+     },
+     "text": "Сколько теплоты выделится при полном сгорании 2 кг сухих дров? $q = 1 \\cdot 10^7\\ \\frac{Дж}{кг}$. Ответ дай в МДж.",
+     "tolerance": 0.01,
+     "type": "number",
+     "typicalWrong": [
+      {
+       "value": 5,
+       "why": "Ты разделил $q$ на массу. Нужно умножить: $Q = qm$."
+      },
+      {
+       "value": 10,
+       "why": "10 МДж выделяет **1 кг** дров. А сгорело 2 кг — теплоты вдвое больше."
+      },
+      {
+       "value": 2,
+       "why": "Ошибка со степенью: $1 \\cdot 10^7 = 10\\,000\\,000$ Дж = 10 МДж на 1 кг."
+      }
+     ],
+     "unit": "МДж"
+    },
+    {
+     "answer": 2,
+     "hint": "Из $Q = qm$ выразим $m = \\frac{Q}{q}$.",
+     "id": "q10t2",
+     "solution": {
+      "answerLine": "$m = 2$ кг",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "1 кг бензина даёт $4{,}6 \\cdot 10^7$ Дж = 46 МДж."
+       },
+       {
+        "layer": 2,
+        "text": "$m = \\frac{Q}{q} = \\frac{92 \\text{ МДж}}{46 \\text{ МДж/кг}} = 2$ кг."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 170\" role=\"img\"><rect x=\"20.0\" y=\"70.0\" width=\"110.0\" height=\"70.0\" rx=\"10\" style=\"fill:var(--warn);fill-opacity:0.4;stroke:var(--ink);stroke-width:2\"/><text x=\"75.0\" y=\"100.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 14px sans-serif\">бензин</text><text x=\"75.0\" y=\"122.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 15px sans-serif\">? кг</text><g data-step=\"0\"><line x1=\"140.0\" y1=\"105.0\" x2=\"245.0\" y2=\"105.0\" style=\"stroke:var(--pen);stroke-width:4;stroke-linecap:round\"/><polygon points=\"255.0,105.0 245.0,110.5 245.0,99.5\" style=\"fill:var(--pen)\"/></g><text data-step=\"0\" x=\"198.0\" y=\"90.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">92 МДж</text><rect x=\"265.0\" y=\"60.0\" width=\"120.0\" height=\"90.0\" rx=\"10\" style=\"fill:var(--accent);fill-opacity:0.25;stroke:var(--ink);stroke-width:2\"/><text x=\"325.0\" y=\"100.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 14px sans-serif\">вода</text><text data-step=\"2\" x=\"325.0\" y=\"124.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 15px sans-serif\"></text></svg>"
+      }
+     },
+     "text": "Сколько килограммов бензина нужно сжечь, чтобы получить 92 МДж теплоты? Удельная теплота сгорания бензина $q = 4{,}6 \\cdot 10^7\\ \\frac{Дж}{кг}$.",
+     "tolerance": 0.01,
+     "type": "number",
+     "typicalWrong": [
+      {
+       "value": 0.5,
+       "why": "Ты разделил $q$ на $Q$. Массу находят наоборот: $m = \\frac{Q}{q}$ — теплоту делят на теплоту от 1 кг."
+      },
+      {
+       "value": 20,
+       "why": "Ошибка со степенью: $4{,}6 \\cdot 10^7$ Дж = 46 МДж. $92 : 46 = 2$."
+      }
+     ],
+     "unit": "кг"
+    }
+   ],
+   "type": "number",
+   "typicalWrong": [
+    {
+     "value": 88,
+     "why": "Ты разделил $q$ на массу. Нужно **умножить**: $Q = qm$ — от каждого килограмма по $4{,}4 \\cdot 10^7$ Дж."
+    },
+    {
+     "value": 2.2,
+     "why": "Ошибка в степени: $4{,}4 \\cdot 10^7 = 44\\,000\\,000$. Половина — это 22 000 000 Дж = 22 МДж."
+    },
+    {
+     "value": 44,
+     "why": "Ты не учёл массу: 44 МДж выделяет **1 кг** нефти, а сгорело только 0,5 кг."
+    }
+   ],
+   "unit": "МДж"
+  },
+  {
+   "id": "q11",
+   "answer": 4,
+   "hint": "Вся теплота от топлива идёт на воду: $qm_{топл} = cm_{воды}\\Delta t$.",
+   "lesson": {
+    "remember": "Теплота сгорания = теплота нагревания: q·m(топл) = c·m(воды)·Δt.",
+    "text": "В таких задачах два процесса: топливо **сгорает** и выделяет теплоту, вода её **получает** и нагревается.\nЕсли сказано, что вся теплота идёт на воду, то теплоты равны: $Q_1 = Q_2$, то есть $qm_{топл} = cm_{воды}\\Delta t$.\nПлан решения:\n1) все массы — в кг;\n2) посчитай теплоту той части, где всё известно (обычно сгорания: $Q = qm$);\n3) приравняй и вырази неизвестное: $m_{воды} = \\frac{Q}{c\\Delta t}$ или $m_{топл} = \\frac{Q}{q}$.\nПример: 10 г спирта ($q = 2{,}7 \\cdot 10^7$) дают $0{,}01 \\cdot 2{,}7 \\cdot 10^7 = 270\\,000$ Дж.",
+    "title": "Задачи «топливо нагревает воду»",
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 170\" role=\"img\"><rect x=\"20.0\" y=\"70.0\" width=\"110.0\" height=\"70.0\" rx=\"10\" style=\"fill:var(--warn);fill-opacity:0.4;stroke:var(--ink);stroke-width:2\"/><text x=\"75.0\" y=\"100.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 14px sans-serif\">топливо</text><text x=\"75.0\" y=\"122.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 15px sans-serif\">q · m</text><g data-step=\"0\"><line x1=\"140.0\" y1=\"105.0\" x2=\"245.0\" y2=\"105.0\" style=\"stroke:var(--pen);stroke-width:4;stroke-linecap:round\"/><polygon points=\"255.0,105.0 245.0,110.5 245.0,99.5\" style=\"fill:var(--pen)\"/></g><text data-step=\"0\" x=\"198.0\" y=\"90.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">Q₁ = Q₂</text><rect x=\"265.0\" y=\"60.0\" width=\"120.0\" height=\"90.0\" rx=\"10\" style=\"fill:var(--accent);fill-opacity:0.25;stroke:var(--ink);stroke-width:2\"/><text x=\"325.0\" y=\"100.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 14px sans-serif\">вода</text><text data-step=\"0\" x=\"325.0\" y=\"124.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 15px sans-serif\">c · m · Δt</text></svg>"
+    }
+   },
+   "order": 11,
+   "solution": {
+    "answerLine": "4 кг",
+    "steps": [
+     {
+      "layer": 1,
+      "text": "Теплота от топлива: $Q = qm = 3 \\cdot 10^7 \\cdot 0,03 = 840 000$ Дж."
+     },
+     {
+      "layer": 2,
+      "text": "Вся эта теплота идёт на воду: $Q = cm\\Delta t$, где $\\Delta t = 70 - 20 = 50$ °C."
+     },
+     {
+      "layer": 3,
+      "text": "$m = \\frac{Q}{c\\Delta t} = \\frac{840 000}{4200 \\cdot 50} = 4$ кг."
+     }
+    ],
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 170\" role=\"img\"><rect x=\"20.0\" y=\"70.0\" width=\"110.0\" height=\"70.0\" rx=\"10\" style=\"fill:var(--warn);fill-opacity:0.4;stroke:var(--ink);stroke-width:2\"/><text x=\"75.0\" y=\"100.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 14px sans-serif\">уголь</text><text x=\"75.0\" y=\"122.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 15px sans-serif\">28 г</text><g data-step=\"1\"><line x1=\"140.0\" y1=\"105.0\" x2=\"245.0\" y2=\"105.0\" style=\"stroke:var(--pen);stroke-width:4;stroke-linecap:round\"/><polygon points=\"255.0,105.0 245.0,110.5 245.0,99.5\" style=\"fill:var(--pen)\"/></g><text data-step=\"1\" x=\"198.0\" y=\"90.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">840 000 Дж</text><rect x=\"265.0\" y=\"60.0\" width=\"120.0\" height=\"90.0\" rx=\"10\" style=\"fill:var(--accent);fill-opacity:0.25;stroke:var(--ink);stroke-width:2\"/><text x=\"325.0\" y=\"100.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 14px sans-serif\">вода</text><text data-step=\"2\" x=\"325.0\" y=\"124.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 15px sans-serif\">4 кг</text></svg>"
+    }
+   },
+   "subtopic": "Задача: топливо нагревает воду",
+   "text": "Сколько воды можно нагреть от 20 °C до 70 °C, если сжечь 28 г каменного угля? Считай, что вся теплота идёт на нагревание воды. $q = 3 \\cdot 10^7\\ \\frac{Дж}{кг}$, $c = 4200\\ \\frac{Дж}{кг\\cdot °C}$. Ответ дай в кг.",
+   "tolerance": 0.01,
+   "twins": [
+    {
+     "answer": 8,
+     "hint": "Вся теплота от топлива идёт на воду: $qm_{топл} = cm_{воды}\\Delta t$.",
+     "id": "q11t1",
+     "solution": {
+      "answerLine": "8 кг",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Теплота от топлива: $Q = qm = 4,4 \\cdot 10^7 \\cdot 0,04 = 1 848 000$ Дж."
+       },
+       {
+        "layer": 2,
+        "text": "Вся эта теплота идёт на воду: $Q = cm\\Delta t$, где $\\Delta t = 75 - 20 = 55$ °C."
+       },
+       {
+        "layer": 3,
+        "text": "$m = \\frac{Q}{c\\Delta t} = \\frac{1 848 000}{4200 \\cdot 55} = 8$ кг."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 170\" role=\"img\"><rect x=\"20.0\" y=\"70.0\" width=\"110.0\" height=\"70.0\" rx=\"10\" style=\"fill:var(--warn);fill-opacity:0.4;stroke:var(--ink);stroke-width:2\"/><text x=\"75.0\" y=\"100.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 14px sans-serif\">газ</text><text x=\"75.0\" y=\"122.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 15px sans-serif\">42 г</text><g data-step=\"1\"><line x1=\"140.0\" y1=\"105.0\" x2=\"245.0\" y2=\"105.0\" style=\"stroke:var(--pen);stroke-width:4;stroke-linecap:round\"/><polygon points=\"255.0,105.0 245.0,110.5 245.0,99.5\" style=\"fill:var(--pen)\"/></g><text data-step=\"1\" x=\"198.0\" y=\"90.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">1 848 000 Дж</text><rect x=\"265.0\" y=\"60.0\" width=\"120.0\" height=\"90.0\" rx=\"10\" style=\"fill:var(--accent);fill-opacity:0.25;stroke:var(--ink);stroke-width:2\"/><text x=\"325.0\" y=\"100.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 14px sans-serif\">вода</text><text data-step=\"2\" x=\"325.0\" y=\"124.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 15px sans-serif\">8 кг</text></svg>"
+      }
+     },
+     "text": "Сколько воды можно нагреть от 20 °C до 75 °C, если сжечь 42 г природного газа? Вся теплота идёт на воду. $q = 4{,}4 \\cdot 10^7\\ \\frac{Дж}{кг}$, $c = 4200\\ \\frac{Дж}{кг\\cdot °C}$. Ответ дай в кг.",
+     "tolerance": 0.01,
+     "type": "number",
+     "typicalWrong": [
+      {
+       "tolerance": 1,
+       "value": 8000,
+       "why": "Масса газа — в граммах. Переведи: 42 г = 0,042 кг."
+      },
+      {
+       "tolerance": 0.01,
+       "value": 5.8667,
+       "why": "Ты разделил на 75 °C. Нужно изменение температуры: $75 - 20 = 55$ °C."
+      }
+     ],
+     "unit": "кг"
+    },
+    {
+     "answer": 70,
+     "hint": "Сначала найди, сколько теплоты нужно воде, потом $m_{угля} = \\frac{Q}{q}$.",
+     "id": "q11t2",
+     "solution": {
+      "answerLine": "70 г угля",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Теплота для воды: $Q = cm\\Delta t = 4200 \\cdot 10 \\cdot 50 = 2\\,100\\,000$ Дж."
+       },
+       {
+        "layer": 2,
+        "text": "Масса угля: $m = \\frac{Q}{q} = \\frac{2\\,100\\,000}{30\\,000\\,000} = 0{,}07$ кг."
+       },
+       {
+        "layer": 3,
+        "text": "$0{,}07$ кг $= 70$ г."
+       }
+      ],
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 170\" role=\"img\"><rect x=\"20.0\" y=\"70.0\" width=\"110.0\" height=\"70.0\" rx=\"10\" style=\"fill:var(--warn);fill-opacity:0.4;stroke:var(--ink);stroke-width:2\"/><text x=\"75.0\" y=\"100.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 14px sans-serif\">уголь</text><text x=\"75.0\" y=\"122.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 15px sans-serif\">? г</text><g data-step=\"0\"><line x1=\"140.0\" y1=\"105.0\" x2=\"245.0\" y2=\"105.0\" style=\"stroke:var(--pen);stroke-width:4;stroke-linecap:round\"/><polygon points=\"255.0,105.0 245.0,110.5 245.0,99.5\" style=\"fill:var(--pen)\"/></g><text data-step=\"0\" x=\"198.0\" y=\"90.0\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 15px sans-serif\">2 100 000 Дж</text><rect x=\"265.0\" y=\"60.0\" width=\"120.0\" height=\"90.0\" rx=\"10\" style=\"fill:var(--accent);fill-opacity:0.25;stroke:var(--ink);stroke-width:2\"/><text x=\"325.0\" y=\"100.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:600 14px sans-serif\">вода</text><text data-step=\"0\" x=\"325.0\" y=\"124.0\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 15px sans-serif\">10 кг, Δt = 50 °C</text></svg>"
+      }
+     },
+     "text": "Сколько граммов каменного угля нужно сжечь, чтобы нагреть 10 кг воды от 10 °C до 60 °C? Вся теплота идёт на воду. $q = 3 \\cdot 10^7\\ \\frac{Дж}{кг}$, $c = 4200\\ \\frac{Дж}{кг\\cdot °C}$.",
+     "tolerance": 0.5,
+     "type": "number",
+     "typicalWrong": [
+      {
+       "tolerance": 0.001,
+       "value": 0.07,
+       "why": "Это ответ в килограммах. Просили в граммах: 0,07 кг = 70 г."
+      },
+      {
+       "tolerance": 0.5,
+       "value": 84,
+       "why": "Ты взял конечную температуру 60 °C вместо изменения: $\\Delta t = 60 - 10 = 50$ °C."
+      },
+      {
+       "tolerance": 0.5,
+       "value": 14,
+       "why": "Ты взял начальную температуру 10 °C вместо изменения: $\\Delta t = 60 - 10 = 50$ °C."
+      }
+     ],
+     "unit": "г"
+    }
+   ],
+   "type": "number",
+   "typicalWrong": [
+    {
+     "tolerance": 1,
+     "value": 4000,
+     "why": "Ты подставил массу угля в граммах (28). В формулу её ставят в килограммах: 28 г = 0,028 кг."
+    },
+    {
+     "tolerance": 0.01,
+     "value": 2.8571,
+     "why": "Ты разделил на конечную температуру 70 °C. Нужно изменение: $\\Delta t = 70 - 20 = 50$ °C."
+    },
+    {
+     "tolerance": 0.0005,
+     "value": 0.004,
+     "why": "Похоже, ошибка со степенью: $3 \\cdot 10^7 \\cdot 0{,}028 = 840\\,000$ Дж. Проверь, сколько нулей."
+    }
+   ],
+   "unit": "кг"
+  },
+  {
+   "id": "q12",
+   "answer": "d",
+   "hint": "Какой источник не закончится, сколько бы мы его ни использовали?",
+   "lesson": {
+    "remember": "Солнце и ветер — неисчерпаемые; биомасса — возобновляемая; уголь, нефть, газ — исчерпаемые.",
+    "text": "**Исчерпаемые** — органическое топливо: уголь, нефть, природный газ, торф. Они образовывались миллионы лет, их запасы ограничены. При их сжигании выделяется углекислый газ, который создаёт парниковый эффект.\n**Неисчерпаемые** — энергия Солнца, ветра, потоков воды (приливы, отливы), тепла Земли. Они не заканчиваются.\n**Возобновляемые** — биомасса, бытовые и сельскохозяйственные отходы: они постоянно появляются снова. Из них получают биогаз.\nВ Казахстане строят ветропарки (Ерейментау) и солнечные станции («Бурное Solar» в Жамбылской области).",
+    "title": "Какие бывают энергетические ресурсы",
+    "visual": {
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto\"><tr><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);font-weight:700\">Неисчерпаемые</td><td style=\"padding:6px 10px;border-bottom:1px solid var(--line)\">энергия Солнца, ветра, потоков воды, тепла Земли</td></tr><tr><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);font-weight:700\">Возобновляемые</td><td style=\"padding:6px 10px;border-bottom:1px solid var(--line)\">биомасса, бытовые и сельскохозяйственные отходы</td></tr><tr><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);font-weight:700\">Исчерпаемые (органическое топливо)</td><td style=\"padding:6px 10px;border-bottom:1px solid var(--line)\">уголь, нефть, природный газ, торф</td></tr></table>",
+     "kind": "html"
+    }
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Каменный уголь",
+     "why": "Уголь — органическое топливо. Его запасы в земле не восстанавливаются, со временем они закончатся."
+    },
+    {
+     "id": "b",
+     "text": "Нефть",
+     "why": "Нефть — органическое топливо, её запасы ограничены (в Казахстане их хватит примерно на 100 лет)."
+    },
+    {
+     "id": "c",
+     "text": "Природный газ",
+     "why": "Природный газ — тоже органическое топливо с ограниченными запасами."
+    },
+    {
+     "id": "d",
+     "text": "Энергия ветра"
+    }
+   ],
+   "order": 12,
+   "solution": {
+    "answerLine": "энергия ветра",
+    "steps": [
+     {
+      "layer": 1,
+      "text": "Уголь, нефть и газ — органическое топливо: запасы ограничены."
+     },
+     {
+      "layer": 2,
+      "text": "Ветер, Солнце, потоки воды, тепло Земли — **неисчерпаемые** ресурсы. Значит, ответ — энергия ветра."
+     }
+    ],
+    "visual": {
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto\"><tr><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);font-weight:700;background:var(--card)\">Неисчерпаемые</td><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);background:var(--card)\">энергия Солнца, ветра, потоков воды, тепла Земли</td></tr><tr><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);font-weight:700\">Возобновляемые</td><td style=\"padding:6px 10px;border-bottom:1px solid var(--line)\">биомасса, бытовые и сельскохозяйственные отходы</td></tr><tr><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);font-weight:700\">Исчерпаемые (органическое топливо)</td><td style=\"padding:6px 10px;border-bottom:1px solid var(--line)\">уголь, нефть, природный газ, торф</td></tr></table><p data-step=\"1\" style=\"margin:8px 0 0;text-align:center;font-weight:700;color:var(--pen)\">Ответ — в строке «Неисчерпаемые»</p>",
+     "kind": "html"
+    }
+   },
+   "subtopic": "Энергетические ресурсы",
+   "text": "Какой из этих источников энергии относится к **неисчерпаемым**?",
+   "twins": [
+    {
+     "answer": "b",
+     "hint": "Что появляется снова каждый год?",
+     "id": "q12t1",
+     "options": [
+      {
+       "id": "a",
+       "text": "Нефть",
+       "why": "Нефть образовывалась миллионы лет и не восстанавливается. Это исчерпаемый ресурс."
+      },
+      {
+       "id": "b",
+       "text": "Биомасса и сельскохозяйственные отходы"
+      },
+      {
+       "id": "c",
+       "text": "Антрацит",
+       "why": "Антрацит — вид каменного угля, органическое топливо. Его запасы не возобновляются."
+      }
+     ],
+     "solution": {
+      "answerLine": "биомасса и отходы",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "Органическое топливо (нефть, уголь) не восстанавливается."
+       },
+       {
+        "layer": 2,
+        "text": "Биомасса, бытовые и сельскохозяйственные отходы появляются постоянно — это **возобновляемые** ресурсы. Из них, например, получают биогаз."
+       }
+      ],
+      "visual": {
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto\"><tr><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);font-weight:700\">Неисчерпаемые</td><td style=\"padding:6px 10px;border-bottom:1px solid var(--line)\">энергия Солнца, ветра, потоков воды, тепла Земли</td></tr><tr><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);font-weight:700;background:var(--card)\">Возобновляемые</td><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);background:var(--card)\">биомасса, бытовые и сельскохозяйственные отходы</td></tr><tr><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);font-weight:700\">Исчерпаемые (органическое топливо)</td><td style=\"padding:6px 10px;border-bottom:1px solid var(--line)\">уголь, нефть, природный газ, торф</td></tr></table><p data-step=\"1\" style=\"margin:8px 0 0;text-align:center;font-weight:700;color:var(--pen)\">Ответ — в строке «Возобновляемые»</p>",
+       "kind": "html"
+      }
+     },
+     "text": "Какой энергетический ресурс относится к **возобновляемым** — тем, что постоянно появляются в результате жизни и хозяйства людей?",
+     "type": "choice"
+    },
+    {
+     "answer": "a",
+     "hint": "Какой газ образуется, когда углерод топлива соединяется с кислородом?",
+     "id": "q12t2",
+     "options": [
+      {
+       "id": "a",
+       "text": "При сжигании выделяется углекислый газ — он создаёт парниковый эффект, климат теплеет"
+      },
+      {
+       "id": "b",
+       "text": "Топливо при сгорании охлаждает атмосферу",
+       "why": "Наоборот: сгорание выделяет теплоту, а углекислый газ задерживает тепло у Земли — климат теплеет."
+      },
+      {
+       "id": "c",
+       "text": "Вредит только добыча, а сжигание безопасно",
+       "why": "Добыча тоже вредит (карьеры, вышки), но при сжигании образуются углекислый газ и вредные вещества — это парниковый эффект."
+      }
+     ],
+     "solution": {
+      "answerLine": "углекислый газ → парниковый эффект",
+      "steps": [
+       {
+        "layer": 1,
+        "text": "При горении атомы углерода соединяются с кислородом — образуется **углекислый газ**."
+       },
+       {
+        "layer": 2,
+        "text": "Много углекислого газа в атмосфере создаёт **парниковый эффект**: Земля удерживает больше тепла, климат меняется."
+       }
+      ],
+      "visual": {
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto\"><tr><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);font-weight:700\">Неисчерпаемые</td><td style=\"padding:6px 10px;border-bottom:1px solid var(--line)\">энергия Солнца, ветра, потоков воды, тепла Земли</td></tr><tr><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);font-weight:700\">Возобновляемые</td><td style=\"padding:6px 10px;border-bottom:1px solid var(--line)\">биомасса, бытовые и сельскохозяйственные отходы</td></tr><tr><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);font-weight:700;background:var(--card)\">Исчерпаемые (органическое топливо)</td><td style=\"padding:6px 10px;border-bottom:1px solid var(--line);background:var(--card)\">уголь, нефть, природный газ, торф</td></tr></table><p data-step=\"1\" style=\"margin:8px 0 0;text-align:center;font-weight:700;color:var(--pen)\">Ответ — в строке «Исчерпаемые (органическое топливо)»</p>",
+       "kind": "html"
+      }
+     },
+     "text": "Почему сжигание угля, нефти и газа вредит климату всей планеты?",
+     "type": "choice"
+    }
+   ],
+   "type": "choice"
+  }
+ ]
+}
