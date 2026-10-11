@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Степени под корнем — объяснение</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/katex.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/katex.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]})"></script>
+<style>
+:root{--ink:#1d2433;--muted:#5b667a;--accent:#2457c5;--pen:#c8322b;--ok:#1f8a4c;--warn:#b7791f;--soft:#e8effc;--line:#d9dee8;--card:#fff;--bg:#f6f8fc}
+@media (prefers-color-scheme:dark){:root{--ink:#e8ecf5;--muted:#a3adc2;--accent:#7ea2ff;--pen:#ff7a70;--ok:#5fcf8a;--warn:#f0b84f;--soft:#1c2740;--line:#2c3550;--card:#161c2b;--bg:#0f1420}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 "Golos Text",system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:20px 16px 48px}
+h1{font-size:1.6rem;margin:8px 0 4px}
+.lead{color:var(--muted);margin:0 0 20px}
+section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 18px 14px;margin:0 0 16px}
+section h2{margin:0 0 10px;font-size:1.15rem;color:var(--accent)}
+.num{display:inline-block;width:28px;height:28px;border-radius:50%;background:var(--accent);color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:8px}
+.rule{background:var(--soft);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:1.05rem}
+.trap{border-left:4px solid var(--pen);padding:6px 12px;margin:10px 0;background:color-mix(in srgb,var(--pen) 8%,transparent);border-radius:0 8px 8px 0}
+.trap b{color:var(--pen)}
+.check{border-left:4px solid var(--ok);padding:6px 12px;margin:10px 0;background:color-mix(in srgb,var(--ok) 8%,transparent);border-radius:0 8px 8px 0}
+table{border-collapse:collapse;margin:10px auto;font-size:1rem}
+td,th{padding:6px 12px;border-bottom:1px solid var(--line);text-align:center}
+th{color:var(--muted);font-weight:600;font-size:.9rem}
+.remember{background:var(--card);border:2px dashed var(--accent);border-radius:14px;padding:14px 18px;margin:18px 0}
+.remember h2{margin:0 0 8px;font-size:1.1rem;color:var(--accent)}
+.remember li{margin:4px 0}
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;padding:14px 22px;border-radius:12px;font-size:1.05rem}
+.cta{text-align:center;margin:26px 0 10px}
+.cta p{color:var(--muted);margin:8px 0 0;font-size:.95rem}
+.ok{color:var(--ok);font-weight:700}.no{color:var(--pen);font-weight:700}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Степени под корнем и модуль</h1>
+<p class="lead">Три правила из §8, которые нужно держать в голове. Прочитай, потом пройди тест на скорость.</p>
+
+<section>
+<h2><span class="num">1</span>Главное правило: $\sqrt{x^2} = |x|$</h2>
+<p>Знак $\sqrt{\ }$ всегда даёт число <b>больше или равно нулю</b>. Поэтому из квадрата получается не само $x$, а его модуль:</p>
+<div class="rule">$$\sqrt{x^2} = |x| \qquad\text{для любого } x$$</div>
+<table>
+<tr><th>$x$</th><th>$x^2$</th><th>$\sqrt{x^2}$</th><th>$|x|$</th></tr>
+<tr><td>$5$</td><td>$25$</td><td>$5$</td><td>$5$</td></tr>
+<tr><td>$0$</td><td>$0$</td><td>$0$</td><td>$0$</td></tr>
+<tr><td>$-5$</td><td>$25$</td><td>$5$</td><td>$5$</td></tr>
+</table>
+<div class="trap"><b>Ловушка.</b> $\sqrt{(-7)^2}$ — это не $-7$ и не $\pm 7$, а просто $7$. Знак $\pm$ появляется только при решении уравнения $x^2 = 49$; сам корень — одно число.</div>
+</section>
+
+<section>
+<h2><span class="num">2</span>Чётная степень под корнем: показатель делим на 2</h2>
+<p>Любую чётную степень можно записать как квадрат: $x^{8} = (x^4)^2$, $x^{14} = (x^7)^2$. Тогда работает правило 1:</p>
+<div class="rule">$$\sqrt{x^{2n}} = \sqrt{(x^n)^2} = |x^n|$$</div>
+<p>Дальше два случая, смотри на показатель <b>после</b> деления:</p>
+<table>
+<tr><th>Пример</th><th>Делим показатель на 2</th><th>Степень после деления</th><th>Ответ</th></tr>
+<tr><td>$\sqrt{a^{8}}$</td><td>$|a^4|$</td><td>4 — чётная, $a^4 \ge 0$ всегда</td><td class="ok">$a^4$</td></tr>
+<tr><td>$\sqrt{y^{12}}$</td><td>$|y^6|$</td><td>6 — чётная</td><td class="ok">$y^6$</td></tr>
+<tr><td>$\sqrt{b^{6}}$</td><td>$|b^3|$</td><td>3 — нечётная, знак зависит от $b$</td><td>$|b^3|$ — нужно знать знак $b$</td></tr>
+</table>
+<div class="trap"><b>Ловушка.</b> $\sqrt{y^4} = y^2$, а не $y$. Делим на 2, а не на 4: $y^4 = (y^2)^2$.</div>
+<div class="check"><b>Проверка подстановкой.</b> Возьми $y = 2$: $\sqrt{2^4} = \sqrt{16} = 4 = 2^2$. Значит $y^2$, а не $y$.</div>
+</section>
+
+<section>
+<h2><span class="num">3</span>Если после деления степень нечётная — смотри на знак переменной</h2>
+<p>Нечётная степень сохраняет знак числа: $(-2)^3 = -8$, $(-1)^5 = -1$. Поэтому $|x^n|$ при нечётном $n$ раскрывается по-разному:</p>
+<div class="rule">
+$$\sqrt{x^{6}} = |x^3| = \begin{cases} x^3, & \text{если } x \ge 0 \\ -x^3, & \text{если } x < 0 \end{cases}$$
+</div>
+<p>Почему минус? При $x < 0$ число $x^3$ отрицательное, а корень отрицательным быть не может. Минус перед отрицательным числом делает его положительным: $-(-8) = 8$.</p>
+<table>
+<tr><th>Задание</th><th>Ответ</th><th>Проверка числом</th></tr>
+<tr><td>$\sqrt{x^{6}}$, $x > 0$</td><td class="ok">$x^3$</td><td>$x=2$: $\sqrt{64} = 8 = 2^3$ ✓</td></tr>
+<tr><td>$\sqrt{x^{6}}$, $x < 0$</td><td class="ok">$-x^3$</td><td>$x=-2$: $\sqrt{64} = 8$; $x^3 = -8$, значит $-x^3 = 8$ ✓</td></tr>
+<tr><td>$\sqrt{a^{10}}$, $a < 0$</td><td class="ok">$-a^5$</td><td>$a=-1$: $\sqrt{1} = 1$; $a^5 = -1$, значит $-a^5 = 1$ ✓</td></tr>
+<tr><td>$\sqrt{c^{8}}$, $c < 0$</td><td class="ok">$c^4$</td><td>4 — чётная, минус не нужен: $c=-1$: $\sqrt{1} = 1 = (-1)^4$ ✓</td></tr>
+</table>
+<div class="check"><b>Универсальная проверка.</b> Сомневаешься — подставь $x = -1$ (или $-2$) в условие и в свой ответ. Числа должны совпасть. Это занимает 10 секунд и ловит любую ошибку со знаком.</div>
+</section>
+
+<section>
+<h2><span class="num">4</span>Когда можно пользоваться свойствами корней</h2>
+<p>Свойства работают только если <b>каждый корень в формуле существует</b>, то есть под ним число $\ge 0$. И на ноль делить нельзя.</p>
+<table>
+<tr><th>Свойство</th><th>Условие</th><th>Почему именно такое</th></tr>
+<tr><td>$\sqrt{ab} = \sqrt{a}\cdot\sqrt{b}$</td><td>$a \ge 0,\ b \ge 0$</td><td>справа стоят $\sqrt a$ и $\sqrt b$ — оба должны существовать</td></tr>
+<tr><td>$\sqrt{\dfrac{a}{b}} = \dfrac{\sqrt a}{\sqrt b}$</td><td>$a \ge 0,\ b > 0$</td><td>для $b$ знак <b>строгий</b>: $b$ в знаменателе, а на 0 делить нельзя</td></tr>
+<tr><td>$\sqrt{x^2} = |x|$</td><td>любой $x$</td><td>$x^2$ никогда не отрицательно, ограничений нет</td></tr>
+</table>
+<div class="trap"><b>Ловушка.</b> $\sqrt{(-4)\cdot(-9)}$ — корень есть, потому что $(-4)(-9) = 36 > 0$. Но разложить его как $\sqrt{-4}\cdot\sqrt{-9}$ <span class="no">нельзя</span>: корней из отрицательных чисел не существует. Правильно: сначала перемножить, $\sqrt{36} = 6$.</div>
+</section>
+
+<div class="remember">
+<h2>Запомни</h2>
+<ul>
+<li>$\sqrt{x^2} = |x|$ — ответ никогда не отрицательный.</li>
+<li>Чётная степень под корнем: показатель <b>делим на 2</b>.</li>
+<li>Получилась чётная степень — модуль не нужен. Нечётная — смотри на знак: при $x<0$ ставь минус.</li>
+<li>Проверяй подстановкой $x = -1$.</li>
+<li>$\sqrt{ab}=\sqrt a\sqrt b$ при $a\ge0,\ b\ge0$; $\sqrt{a/b}$ — ещё и $b \ne 0$, то есть $b>0$.</li>
+</ul>
+</div>
+
+<div class="cta">
+<a class="btn" href="./?kid=k8&test=k8-alg-koren-stepen-povtor-2026-10-11">Начать тест на скорость →</a>
+<p>10 коротких вопросов, после каждого — разбор. В конце — работа над ошибками.</p>
+</div>
+</div>
+</body>
+</html>
