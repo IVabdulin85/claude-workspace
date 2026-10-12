@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Древний Казахстан: рассказ</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;700&family=PT+Sans+Narrow:wght@700&display=swap">
+<style>
+/* Макет: одна колонка для чтения; слева от каждой остановки — «шкала времени» с меткой эпохи */
+:root{
+  --bg:#eef1ee; --card:#f9faf8; --ink:#1d2a2b; --muted:#5a6a6a; --line:#cfd8d4;
+  --patina:#1f7a6c; --patina-soft:#d9ebe6; --copper:#a8552a;
+  --display:"PT Sans Narrow","Arial Narrow",Arial,sans-serif;
+  --body:"Golos Text",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#141b1b; --card:#1c2525; --ink:#e6ecea; --muted:#9db0ad; --line:#2f3d3c;
+  --patina:#58c2b0; --patina-soft:#1f3a36; --copper:#e39364; color-scheme:dark } }
+:root[data-theme="dark"]{
+  --bg:#141b1b; --card:#1c2525; --ink:#e6ecea; --muted:#9db0ad; --line:#2f3d3c;
+  --patina:#58c2b0; --patina-soft:#1f3a36; --copper:#e39364; color-scheme:dark }
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
+.wrap{max-width:680px;margin:0 auto;padding-inline:18px;padding-block:28px 48px;display:flex;flex-direction:column;gap:22px}
+h1{font-family:var(--display);font-size:clamp(30px,7vw,44px);line-height:1.08;margin:0;text-wrap:balance}
+.lead{color:var(--muted);margin:0}
+.kicker{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--patina);font-weight:700;margin:0}
+.scale{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;margin:0;padding:0;list-style:none}
+.scale li{background:var(--patina-soft);border-top:4px solid var(--patina);padding:8px 6px;font-size:13px;line-height:1.25;min-width:0;overflow-wrap:anywhere}
+.scale li:nth-child(n+4){border-top-color:var(--copper)}
+.scale b{display:block;font-family:var(--display);font-size:17px}
+.stops{display:flex;flex-direction:column;gap:0;border-left:3px solid var(--line);margin-left:6px}
+.stop{position:relative;padding:0 0 22px 20px}
+.stop::before{content:"";position:absolute;left:-9px;top:8px;width:15px;height:15px;border-radius:50%;background:var(--patina);border:3px solid var(--bg)}
+.stop.metal::before{background:var(--copper)}
+.stop h2{font-family:var(--display);font-size:25px;line-height:1.15;margin:0 0 2px}
+.when{font-size:14px;color:var(--muted);margin:0 0 8px;font-variant-numeric:tabular-nums}
+.stop p{margin:0 0 10px;max-width:62ch}
+mark{background:var(--patina-soft);color:inherit;padding:0 3px;border-radius:3px;font-weight:500}
+.memo{background:var(--card);border:1px solid var(--line);padding:16px 18px}
+.memo h2{font-family:var(--display);font-size:22px;margin:0 0 8px}
+.memo ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+.go{display:inline-block;background:var(--patina);color:var(--bg);font-weight:700;text-decoration:none;padding:13px 22px;border-radius:6px;align-self:flex-start}
+.go:focus-visible{outline:3px solid var(--copper);outline-offset:3px}
+.note{font-size:14px;color:var(--muted);margin:0}
+@media (max-width:460px){ .scale{grid-template-columns:repeat(2,1fr)} }
+</style>
+</head>
+<body style="margin:0">
+<div class="wrap">
+  <p class="kicker">История Казахстана · 5 класс · §1–17</p>
+  <h1>Руслан, садись в машину времени</h1>
+  <p class="lead">Прочитай рассказ — это 5 минут. Потом пройди тест из 20 вопросов. После каждого ответа будет объяснение.</p>
+
+  <ol class="scale" aria-label="Шкала времени">
+    <li><b>Палеолит</b>древний камень</li>
+    <li><b>Мезолит</b>средний камень</li>
+    <li><b>Неолит</b>новый камень</li>
+    <li><b>Энеолит</b>медь и камень</li>
+    <li><b>Бронза</b>медь + олово</li>
+  </ol>
+
+  <div class="stops">
+    <section class="stop">
+      <h2>Сначала — кто такие историки</h2>
+      <p class="when">До поездки</p>
+      <p><mark>История</mark> — наука о прошлом людей. Первым большой труд о прошлом написал грек <mark>Геродот</mark>. В его «Истории» было 9 книг, и его прозвали «отцом истории».</p>
+      <p>О прошлом рассказывают <mark>источники</mark>. Нашли при раскопках вещь, сделанную человеком, — это <mark>археологический</mark> источник. Прочитали древнюю книгу или надпись — <mark>письменный</mark>. Ещё бывают этнологические и антропологические.</p>
+      <p>Древний Казахстан изучал академик <mark>Алькей Маргулан</mark>. С 1946 по 1974 год он вёл экспедицию в Центральном Казахстане. Он доказал: здесь были города и своя цивилизация.</p>
+    </section>
+
+    <section class="stop">
+      <h2>Остановка 1. Первые люди</h2>
+      <p class="when">Миллионы лет назад</p>
+      <p>Первым был <mark>Человек умелый</mark>: он научился делать каменные орудия. Потом — <mark>Человек прямоходящий</mark>: питекантроп, синантроп, неандерталец. Последним появился <mark>Человек разумный</mark>, это уже мы. Его ранний вид — <mark>кроманьонец</mark>.</p>
+      <p>Главное отличие человека от обезьяны — объём мозга. У обезьяны до 400 см³, у австралопитека 650, у питекантропа до 900.</p>
+    </section>
+
+    <section class="stop">
+      <h2>Остановка 2. Палеолит</h2>
+      <p class="when">2,6 млн – 12 тыс. лет назад · древнекаменный век</p>
+      <p>Холодно. По степи ходят мамонты и шерстистые носороги. Люди живут в горах <mark>Каратау</mark> и на <mark>Устюрте</mark>. Их орудиям около миллиона лет. Вот <mark>чоппер</mark> — орудие из речной гальки. Вот <mark>бифас</mark> — камень, обитый с двух сторон.</p>
+      <p>Сначала люди жили стадом по 20–30 особей. Потом — большой <mark>общиной</mark>. Добычу делили поровну. Еду не выращивали, а брали у природы: это <mark>присваивающее хозяйство</mark>. Самый древний вид охоты — поджог травы. Позже охотились все вместе, облавой.</p>
+    </section>
+
+    <section class="stop">
+      <h2>Остановка 3. Мезолит</h2>
+      <p class="when">12–5 тысячелетия до н.э. · среднекаменный век</p>
+      <p>Потеплело, ледник растаял. Мамонты ушли на север. Люди придумали <mark>микролиты</mark> — каменные пластинки длиной 1–2 см. Из них делали наконечники стрел. Община разделилась на <mark>роды</mark>, а роды объединились в <mark>племена</mark>. В конце мезолита приручили первых животных.</p>
+    </section>
+
+    <section class="stop metal">
+      <h2>Остановка 4. Энеолит</h2>
+      <p class="when">Меднокаменный век</p>
+      <p>Люди нашли первый металл — <mark>медь</mark>. Но она мягкая, и её мало, поэтому камень не бросили. На севере Казахстана живут <mark>ботайцы</mark>. У них полуземлянки и огромные табуны: они одними из первых в мире приручили <mark>лошадь</mark>.</p>
+    </section>
+
+    <section class="stop metal">
+      <h2>Остановка 5. Бронзовый век</h2>
+      <p class="when">2–1 тысячелетия до н.э.</p>
+      <p>Мастера сплавили медь с оловом и получили <mark>бронзу</mark>. Она твёрже меди. Медь добывают у Жезказгана, олово — в горах Атасу, золото — в Степняке.</p>
+      <p>Почти весь Казахстан заняли племена <mark>андроновской</mark> культуры. Её назвали по селу Андроново в Сибири. На западе жили племена <mark>срубной</mark> культуры, в центре позже появилась <mark>бегазы-дандыбаевская</mark>.</p>
+    </section>
+  </div>
+
+  <div class="memo">
+    <h2>Запомни перед тестом</h2>
+    <ul>
+      <li>Палео — древний, мезо — средний, нео — новый, энео — медный.</li>
+      <li>Умелый → прямоходящий → разумный.</li>
+      <li>Стадо → община → роды → племя.</li>
+      <li>Ботай — лошади. Бронза — медь и олово.</li>
+    </ul>
+  </div>
+
+  <a class="go" href="./?kid=k5&amp;test=k5-hist-drevniy-kz-2026-10-12">Начать тест</a>
+  <p class="note">Неолит (§10–11) в тест не вошёл: эти страницы на фото не читаются.</p>
+</div>
+</body>
+</html>
