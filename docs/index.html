@@ -245,6 +245,15 @@ math{font-size:1.1em}
   window.addEventListener("load", () => {
     const p = new URLSearchParams(location.search);
     const kid = p.get("kid"), test = p.get("test");
+    /* тест с объяснением (поле intro): пока объяснение не прочитано, вместо теста открываем его */
+    const introSeen = id => { try { if(localStorage.getItem("intro-read:" + id) === "1") return true; } catch(e){} return p.get("read") === "1" && p.get("test") === id; };
+    if(typeof startTest === "function"){
+      const orig = startTest;
+      startTest = function(k, t, a){
+        if(t && t.intro && !a && !introSeen(t.id)){ location.href = t.intro; return; }
+        return orig(k, t, a);
+      };
+    }
     if(!kid) return;
     let n = 0;
     const tick = () => {

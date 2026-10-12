@@ -82,6 +82,15 @@ SHIM = r"""
   window.addEventListener("load", () => {
     const p = new URLSearchParams(location.search);
     const kid = p.get("kid"), test = p.get("test");
+    /* тест с объяснением (поле intro): пока объяснение не прочитано, вместо теста открываем его */
+    const introSeen = id => { try { if(localStorage.getItem("intro-read:" + id) === "1") return true; } catch(e){} return p.get("read") === "1" && p.get("test") === id; };
+    if(typeof startTest === "function"){
+      const orig = startTest;
+      startTest = function(k, t, a){
+        if(t && t.intro && !a && !introSeen(t.id)){ location.href = t.intro; return; }
+        return orig(k, t, a);
+      };
+    }
     if(!kid) return;
     let n = 0;
     const tick = () => {
@@ -149,7 +158,7 @@ def main():
     for f in sorted(glob.glob(os.path.join(TESTS, "*.json"))):
         d = json.load(open(f, encoding="utf-8"))
         t = dict(d["test"]); qs = d["questions"]
-        meta = {k: t.get(k) for k in ("id", "kid", "grade", "subject", "topic", "title", "source", "demo") if t.get(k) is not None}
+        meta = {k: t.get(k) for k in ("id", "kid", "grade", "subject", "topic", "title", "source", "demo", "intro") if t.get(k) is not None}
         meta["qCount"] = len(qs)
         meta["createdAt"] = t.get("createdAt") or datetime.datetime.fromtimestamp(os.path.getmtime(f)).isoformat(timespec="seconds")
         tests.append(meta)
@@ -159,7 +168,8 @@ def main():
               open(os.path.join(DOCS, "data", "index.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     open(os.path.join(DOCS, "index.html"), "w", encoding="utf-8").write(build_page(html))
     open(os.path.join(DOCS, ".nojekyll"), "w").close()
-    shutil.copy(src, os.path.join(ROOT, "tools", "tutor.html"))  # копия шаблона на случай отсутствия скилла
+    if os.path.abspath(src) != os.path.abspath(os.path.join(ROOT, "tools", "tutor.html")):
+        shutil.copy(src, os.path.join(ROOT, "tools", "tutor.html"))  # копия шаблона на случай отсутствия скилла
     print(f"ok: {len(tests)} тест(ов) → docs/  (шаблон: {src})")
     for m in tests:
         print(f"  {m['id']}: {m['kid']} · {m['title']} · {m['qCount']} вопр.")
