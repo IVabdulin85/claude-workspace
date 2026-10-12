@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Плавление и кипение: объяснение</title>
+<style>
+/* Макет: одна колонка для чтения; каждая часть — свой блок, формулы вынесены в плашки */
+:root{
+  --bg:#eef2f5; --card:#f9fbfc; --ink:#17232d; --muted:#566673; --line:#cdd7df;
+  --cold:#1c6aa6; --cold-soft:#dbe9f4; --hot:#b8451f; --hot-soft:#f6e2d9; --ok:#1c7a52;
+  --display:"Arial Narrow","Roboto Condensed",Arial,sans-serif;
+  --body:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){ :root{
+  --bg:#131a20; --card:#1b242c; --ink:#e5ecf1; --muted:#9aacb9; --line:#2e3b46;
+  --cold:#6db3e6; --cold-soft:#1d3447; --hot:#f08a62; --hot-soft:#43261b; --ok:#5fcf9c; color-scheme:dark } }
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
+.wrap{max-width:700px;margin:0 auto;padding-inline:18px;padding-block:28px 48px;display:flex;flex-direction:column;gap:22px}
+h1{font-family:var(--display);font-size:clamp(30px,7vw,42px);line-height:1.1;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-size:26px;line-height:1.15;margin:0 0 8px}
+h3{font-size:17px;margin:14px 0 4px}
+p{margin:0 0 10px;max-width:64ch}
+.kicker{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--cold);font-weight:700;margin:0}
+.lead{color:var(--muted);margin:0}
+section{background:var(--card);border:1px solid var(--line);padding:18px}
+section.cold{border-top:4px solid var(--cold)} section.hot{border-top:4px solid var(--hot)}
+.f{display:block;font-size:20px;font-weight:700;padding:10px 14px;margin:8px 0 12px;background:var(--cold-soft);border-left:4px solid var(--cold);overflow-x:auto;white-space:nowrap}
+.hot .f{background:var(--hot-soft);border-left-color:var(--hot)}
+.f small{font-weight:400;font-size:15px;color:var(--muted);margin-left:10px}
+.trap{border-left:4px solid var(--hot);padding:2px 0 2px 12px;margin:10px 0}
+.trap b{color:var(--hot)}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:7px 9px;border-bottom:1px solid var(--line)}
+th{color:var(--muted);font-weight:600}
+td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
+svg{display:block;width:100%;max-width:520px;height:auto;margin:6px auto}
+.ax{stroke:var(--ink);stroke-width:1.5} .gr{stroke:var(--line);stroke-dasharray:4 4}
+.t{fill:var(--ink);font:600 14px sans-serif} .tm{fill:var(--muted);font:14px sans-serif}
+.ex{background:var(--bg);border:1px dashed var(--line);padding:12px 14px;margin-top:10px}
+.ex p{margin:0 0 6px} .ans{color:var(--ok);font-weight:700}
+ul{margin:0 0 10px;padding-left:20px}
+.go{display:inline-block;background:var(--cold);color:var(--bg);font-weight:700;text-decoration:none;padding:13px 22px;border-radius:6px;align-self:flex-start}
+.go:focus-visible{outline:3px solid var(--hot);outline-offset:3px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="kicker">Физика · 8 класс · §10–12</p>
+  <h1>Соня, как вещество меняет состояние</h1>
+  <p class="lead">Прочитай объяснение — это минут десять. Потом пройди тест из 12 вопросов. После каждого ответа будет разбор, а у задач — решение по шагам.</p>
+
+  <section>
+    <h2>Главная идея на одной картинке</h2>
+    <p>Берём лёд при −20 °C и всё время греем. Температура растёт не всегда. На графике есть две «полки» — там вещество меняет состояние, а температура стоит на месте.</p>
+    <svg viewBox="0 0 470 250" role="img" aria-label="График нагревания льда, воды и пара">
+      <line class="ax" x1="52" y1="222" x2="462" y2="222"/><line class="ax" x1="52" y1="222" x2="52" y2="14"/>
+      <line class="gr" x1="52" y1="185" x2="462" y2="185"/><line class="gr" x1="52" y1="60" x2="462" y2="60"/>
+      <text class="t" x="44" y="190" text-anchor="end">0</text><text class="t" x="44" y="65" text-anchor="end">100</text>
+      <text class="tm" x="58" y="18">t, °C</text><text class="tm" x="462" y="240" text-anchor="end">полученное тепло Q</text>
+      <polyline points="52,210 95,185" style="fill:none;stroke:var(--cold);stroke-width:3"/>
+      <polyline points="95,185 185,185" style="fill:none;stroke:var(--cold);stroke-width:6;stroke-linecap:round"/>
+      <polyline points="185,185 255,60" style="fill:none;stroke:var(--hot);stroke-width:3"/>
+      <polyline points="255,60 415,60" style="fill:none;stroke:var(--hot);stroke-width:6;stroke-linecap:round"/>
+      <polyline points="415,60 452,30" style="fill:none;stroke:var(--hot);stroke-width:3"/>
+      <text class="t" x="140" y="176" text-anchor="middle">плавление</text>
+      <text class="tm" x="140" y="205" text-anchor="middle">Q = λm</text>
+      <text class="t" x="335" y="51" text-anchor="middle">кипение</text>
+      <text class="tm" x="335" y="80" text-anchor="middle">Q = rm</text>
+      <text class="tm" x="232" y="130" text-anchor="end">вода греется</text>
+      <text class="tm" x="232" y="148" text-anchor="end">Q = cmΔt</text>
+    </svg>
+    <p>Наклонные участки — вещество нагревается. Горизонтальные — плавится или кипит. Это правило работает для любого графика из параграфа.</p>
+  </section>
+
+  <section class="cold">
+    <h2>§10. Плавление и кристаллизация</h2>
+    <p><b>Плавление</b> — переход вещества из твёрдого состояния в жидкое. <b>Кристаллизация</b> (отвердевание) — обратный переход. Оба идут при одной и той же температуре — температуре плавления.</p>
+    <h3>Кристаллические и аморфные тела</h3>
+    <p>В кристаллических телах частицы стоят в строгом порядке — образуют решётку. Такие тела плавятся при определённой температуре: лёд при 0 °C, олово при 232 °C, свинец при 327 °C. В аморфных телах (воск, стекло, пластилин) порядка нет. Они размягчаются постепенно, и определённой температуры плавления у них нет.</p>
+    <h3>Почему температура не растёт</h3>
+    <p>Пока тело плавится, всё тепло идёт на разрушение решётки. Растёт потенциальная энергия частиц, а их скорость — нет. Температура же зависит именно от скорости частиц. Поэтому она стоит на месте, пока не расплавится всё.</p>
+    <h3>Удельная теплота плавления</h3>
+    <p>λ (лямбда) показывает, сколько теплоты нужно, чтобы расплавить 1 кг вещества при температуре плавления. Единица — Дж/кг.</p>
+    <span class="f">Q = λm <small>плавление; при кристаллизации Q = −λm</small></span>
+    <p>Если тело холоднее температуры плавления, его сначала надо нагреть:</p>
+    <span class="f">Q = cm(t₂ − t₁) + λm <small>t₂ — температура плавления</small></span>
+    <div class="ex">
+      <p><b>Пример.</b> 10 г свинца при 27 °C нужно расплавить. c = 140 Дж/(кг·°C), λ = 0,25·10⁵ Дж/кг, плавится при 327 °C.</p>
+      <p>1. Масса в СИ: 10 г = 0,01 кг.</p>
+      <p>2. Нагрев: Q₁ = 140 · 0,01 · (327 − 27) = 420 Дж.</p>
+      <p>3. Плавление: Q₂ = 0,25·10⁵ · 0,01 = 250 Дж.</p>
+      <p class="ans">4. Всего: Q = 420 + 250 = 670 Дж.</p>
+    </div>
+    <p class="trap"><b>Ловушка.</b> Вода — исключение: при замерзании она расширяется. Поэтому лёд рвёт трубы и разрушает горные породы.</p>
+  </section>
+
+  <section class="hot">
+    <h2>§11. Испарение и конденсация</h2>
+    <p><b>Парообразование</b> — превращение жидкости в пар. Способов два: испарение и кипение.</p>
+    <p><b>Испарение</b> идёт только с поверхности жидкости и при любой температуре. Жидкость покидают самые быстрые молекулы.</p>
+    <div class="tw"><table>
+      <tr><th>От чего зависит скорость</th><th>Как</th></tr>
+      <tr><td>Температура</td><td>чем выше, тем быстрее</td></tr>
+      <tr><td>Площадь поверхности</td><td>чем больше, тем быстрее</td></tr>
+      <tr><td>Ветер</td><td>уносит пар, молекулы не возвращаются</td></tr>
+      <tr><td>Род жидкости</td><td>эфир и спирт испаряются быстрее воды</td></tr>
+    </table></div>
+    <h3>Почему испарение охлаждает</h3>
+    <p>Улетают самые быстрые молекулы — остаются медленные. Средняя кинетическая энергия уменьшается, значит, жидкость охлаждается. Поэтому после купания на ветру холодно.</p>
+    <h3>Названия переходов</h3>
+    <ul>
+      <li><b>Конденсация</b> — пар становится жидкостью (роса, туман).</li>
+      <li><b>Сублимация</b> (возгонка) — твёрдое вещество становится газом, минуя жидкость (сухой лёд).</li>
+      <li><b>Десублимация</b> — газ становится твёрдым веществом, минуя жидкость (иней).</li>
+    </ul>
+    <h3>Насыщенный пар</h3>
+    <p>В закрытом сосуде наступает момент, когда из жидкости вылетает столько же молекул, сколько возвращается. Это <b>динамическое равновесие</b>, а пар в таком состоянии — <b>насыщенный</b>. Если его сжать при той же температуре, часть пара станет жидкостью, а давление не изменится.</p>
+    <div class="tw"><table>
+      <tr><th>Вещество</th><th>Давление насыщенного пара при 20 °C, кПа</th></tr>
+      <tr><td>ртуть</td><td class="n">0,0002</td></tr><tr><td>вода</td><td class="n">2,3</td></tr><tr><td>спирт</td><td class="n">5,9</td></tr>
+      <tr><td>эфир</td><td class="n">60</td></tr><tr><td>фреон</td><td class="n">567</td></tr><tr><td>аммиак</td><td class="n">857</td></tr>
+    </table></div>
+    <p>Чем больше это давление, тем легче жидкость испаряется.</p>
+  </section>
+
+  <section class="hot">
+    <h2>§12. Кипение</h2>
+    <p><b>Кипение</b> — парообразование по всему объёму жидкости. Внутри растут пузырьки пара, всплывают и лопаются. Кипение идёт при определённой температуре, и пока жидкость кипит, температура не меняется.</p>
+    <h3>Удельная теплота парообразования</h3>
+    <p>r показывает, сколько теплоты нужно, чтобы превратить в пар 1 кг жидкости при температуре кипения. Для воды r = 2,3·10⁶ Дж/кг.</p>
+    <span class="f">Q = rm <small>парообразование; при конденсации Q = −rm</small></span>
+    <span class="f">Q = cm(t₂ − t₁) + rm <small>t₂ — температура кипения</small></span>
+    <div class="ex">
+      <p><b>Пример.</b> 2 кг воды при 15 °C нужно превратить в пар. c = 4200 Дж/(кг·°C), r = 2,3·10⁶ Дж/кг.</p>
+      <p>1. Нагрев до 100 °C: Q₁ = 4200 · 2 · (100 − 15) = 714 000 Дж.</p>
+      <p>2. Парообразование: Q₂ = 2,3·10⁶ · 2 = 4 600 000 Дж.</p>
+      <p class="ans">3. Всего: Q = 714 000 + 4 600 000 = 5 314 000 Дж ≈ 5,3 МДж.</p>
+    </div>
+    <h3>Температура кипения и давление</h3>
+    <div class="tw"><table>
+      <tr><th>Давление над жидкостью</th><th>Вода кипит</th><th>Где</th></tr>
+      <tr><td>ниже нормального</td><td>ниже 100 °C</td><td>в горах; в опреснителе в Актау — уже при 75 °C</td></tr>
+      <tr><td>нормальное</td><td>при 100 °C</td><td>в открытой кастрюле</td></tr>
+      <tr><td>выше нормального</td><td>выше 100 °C</td><td>в скороварке</td></tr>
+    </table></div>
+    <p class="trap"><b>Ловушка.</b> Если сделать огонь сильнее, кипящая вода не станет горячее. Она просто быстрее выкипит.</p>
+  </section>
+
+  <section>
+    <h2>Шпаргалка для задач</h2>
+    <div class="tw"><table>
+      <tr><th>Что происходит</th><th>Формула</th></tr>
+      <tr><td>Нагревание или охлаждение</td><td class="n">Q = cm(t₂ − t₁)</td></tr>
+      <tr><td>Плавление / кристаллизация</td><td class="n">Q = λm / Q = −λm</td></tr>
+      <tr><td>Парообразование / конденсация</td><td class="n">Q = rm / Q = −rm</td></tr>
+    </table></div>
+    <ul>
+      <li>Сначала спроси себя: тело уже при нужной температуре? Если нет — будет два слагаемых.</li>
+      <li>Граммы переводи в килограммы: 10 г = 0,01 кг.</li>
+      <li>1 кДж = 1000 Дж, 1 МДж = 1 000 000 Дж.</li>
+    </ul>
+  </section>
+
+  <a class="go" href="./?kid=k8&amp;test=k8-phys-plavlenie-kipenie-2026-10-12">Начать тест</a>
+</div>
+</body>
+</html>
