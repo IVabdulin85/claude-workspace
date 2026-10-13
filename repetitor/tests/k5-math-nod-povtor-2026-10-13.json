@@ -1,0 +1,1699 @@
+{
+ "test": {
+  "id": "k5-math-nod-povtor-2026-10-13",
+  "kid": "k5",
+  "grade": 5,
+  "subject": "Математика",
+  "topic": "НОД и вынесение общего множителя за скобки",
+  "title": "Работа над ошибками: НОД и вынесение за скобки",
+  "source": "Формативная работа, вариант 1 (задания 1–4). Перед тестом прочитай объяснение на сайте",
+  "createdAt": "2026-10-13T15:30:00+00:00",
+  "intro": "nod-povtor.html"
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "text": "Вычисли: $(5 \\cdot 2)^3$",
+   "hint": "Сначала действие в скобках, потом степень.",
+   "type": "number",
+   "answer": 1000,
+   "tolerance": 0.001,
+   "typicalWrong": [
+    {
+     "value": 30,
+     "why": "Ты умножил 10 на 3. Но степень — это не умножение на 3: число 10 нужно умножить само на себя 3 раза."
+    },
+    {
+     "value": 40,
+     "why": "Ты возвёл в степень только второе число. Скобки говорят: сначала умножь, потом возводи в степень весь результат."
+    },
+    {
+     "value": 100,
+     "why": "Ты взял только 2 множителя. Нужно 3 одинаковых множителя."
+    }
+   ],
+   "genericWrong": "Пройди по шагам ещё раз: разложи, найди общие множители, перемножь их.",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">В скобках</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">5 · 2 = 10</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Степень</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">10 · 10 · 10</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Ответ</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">1000</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "Сначала считаем в скобках: $5 \\cdot 2 = 10$.",
+      "layer": 0
+     },
+     {
+      "text": "Степень 3 значит: умножить 10 само на себя 3 раза: $10 \\cdot 10 \\cdot 10 = 1000$.",
+      "layer": 2
+     }
+    ],
+    "answerLine": "1000"
+   },
+   "order": 1,
+   "subtopic": "Степень произведения",
+   "lesson": {
+    "title": "Что значит степень",
+    "text": "Степень показывает, сколько раз число умножают само на себя. $4^3$ — это $4 \\cdot 4 \\cdot 4 = 64$, а не $4 \\cdot 3$. Если в степень возводят скобку, сначала считают то, что в скобках. Пример: $(2 \\cdot 5)^2$. В скобках 10. Потом $10 \\cdot 10 = 100$. Ловушка: умножить число на показатель степени. $10^2$ — это не 20, а 100.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Пример</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">(2 · 5)²</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">В скобках</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2 · 5 = 10</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Степень</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">10 · 10 = 100</td></tr></table>"
+    },
+    "remember": "сначала скобки, потом число умножаем само на себя столько раз, сколько показывает степень."
+   },
+   "twins": [
+    {
+     "id": "q1t1",
+     "text": "Вычисли: $(3 \\cdot 2)^3$",
+     "hint": "Сначала действие в скобках, потом степень.",
+     "type": "number",
+     "answer": 216,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 18,
+       "why": "Ты умножил 6 на 3. Но степень — это не умножение на 3: число 6 нужно умножить само на себя 3 раза."
+      },
+      {
+       "value": 24,
+       "why": "Ты возвёл в степень только второе число. Скобки говорят: сначала умножь, потом возводи в степень весь результат."
+      },
+      {
+       "value": 36,
+       "why": "Ты взял только 2 множителя. Нужно 3 одинаковых множителя."
+      }
+     ],
+     "genericWrong": "Пройди по шагам ещё раз: разложи, найди общие множители, перемножь их.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">В скобках</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">3 · 2 = 6</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Степень</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">6 · 6 · 6</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Ответ</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">216</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Сначала считаем в скобках: $3 \\cdot 2 = 6$.",
+        "layer": 0
+       },
+       {
+        "text": "Степень 3 значит: умножить 6 само на себя 3 раза: $6 \\cdot 6 \\cdot 6 = 216$.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "216"
+     }
+    },
+    {
+     "id": "q1t2",
+     "text": "Вычисли: $(2 \\cdot 2)^3$",
+     "hint": "Сначала действие в скобках, потом степень.",
+     "type": "number",
+     "answer": 64,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 12,
+       "why": "Ты умножил 4 на 3. Но степень — это не умножение на 3: число 4 нужно умножить само на себя 3 раза."
+      },
+      {
+       "value": 16,
+       "why": "Ты возвёл в степень только второе число. Скобки говорят: сначала умножь, потом возводи в степень весь результат."
+      }
+     ],
+     "genericWrong": "Пройди по шагам ещё раз: разложи, найди общие множители, перемножь их.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">В скобках</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2 · 2 = 4</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Степень</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">4 · 4 · 4</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Ответ</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">64</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Сначала считаем в скобках: $2 \\cdot 2 = 4$.",
+        "layer": 0
+       },
+       {
+        "text": "Степень 3 значит: умножить 4 само на себя 3 раза: $4 \\cdot 4 \\cdot 4 = 64$.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "64"
+     }
+    }
+   ]
+  },
+  {
+   "id": "q2",
+   "text": "Какое разложение числа 36 на **простые** множители верное?",
+   "hint": "Простое число делится только на 1 и на само себя. Проверь каждый множитель.",
+   "type": "choice",
+   "options": [
+    {
+     "id": "a",
+     "text": "$2 \\cdot 3 \\cdot 6$",
+     "why": "Число 6 не простое: $6 = 2 \\cdot 3$. Его нужно разложить дальше."
+    },
+    {
+     "id": "b",
+     "text": "$2 \\cdot 2 \\cdot 3 \\cdot 3$"
+    },
+    {
+     "id": "c",
+     "text": "$4 \\cdot 9$",
+     "why": "Произведение верное, но 4 и 9 — не простые числа: $4 = 2 \\cdot 2$, $9 = 3 \\cdot 3$."
+    }
+   ],
+   "answer": "b",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Число</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">36</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Делим по порядку</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2 · 2 · 3 · 3</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Проверка</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">2 · 2 · 3 · 3 = 36</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "Делим 36 на самое маленькое простое число, пока делится: получаем множители 2, 2, 3, 3.",
+      "layer": 0
+     },
+     {
+      "text": "Проверка: $2 \\cdot 2 \\cdot 3 \\cdot 3 = 36$, и все множители простые.",
+      "layer": 2
+     }
+    ],
+    "answerLine": "$2 \\cdot 2 \\cdot 3 \\cdot 3$"
+   },
+   "order": 2,
+   "subtopic": "Разложение на простые множители",
+   "lesson": {
+    "title": "Как разложить число на простые множители",
+    "text": "Простое число делится только на 1 и на само себя: 2, 3, 5, 7, 11, 13… Разложить число на простые множители — значит записать его как произведение простых чисел. Делай так: дели число на 2, пока делится. Потом на 3, пока делится. Потом на 5 и так далее, пока не получишь 1. Пример: 90. $90 : 2 = 45$, $45 : 3 = 15$, $15 : 3 = 5$, $5 : 5 = 1$. Значит, $90 = 2 \\cdot 3 \\cdot 3 \\cdot 5$. Ловушка: оставить составной множитель, например 4, 6 или 9. Их нужно раскладывать дальше.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">90 : 2</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">45</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">45 : 3</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">15</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">15 : 3</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">5</td></tr><tr data-step=\"3\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">5 : 5</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">1 → 90 = 2 · 3 · 3 · 5</td></tr></table>"
+    },
+    "remember": "все множители должны быть простыми, а их произведение — равно числу."
+   },
+   "twins": [
+    {
+     "id": "q2t1",
+     "text": "Какое разложение числа 54 на **простые** множители верное?",
+     "hint": "Простое число делится только на 1 и на само себя. Проверь каждый множитель.",
+     "type": "choice",
+     "options": [
+      {
+       "id": "a",
+       "text": "$6 \\cdot 9$",
+       "why": "Произведение верное, но 6 и 9 — не простые числа. Раскладывай дальше."
+      },
+      {
+       "id": "b",
+       "text": "$2 \\cdot 3 \\cdot 3 \\cdot 5$",
+       "why": "Проверь умножением: $2 \\cdot 3 \\cdot 3 \\cdot 5 = 90$, а не 54."
+      },
+      {
+       "id": "c",
+       "text": "$2 \\cdot 3 \\cdot 3 \\cdot 3$"
+      }
+     ],
+     "answer": "c",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Число</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">54</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Делим по порядку</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2 · 3 · 3 · 3</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Проверка</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">2 · 3 · 3 · 3 = 54</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Делим 54 на самое маленькое простое число, пока делится: получаем множители 2, 3, 3, 3.",
+        "layer": 0
+       },
+       {
+        "text": "Проверка: $2 \\cdot 3 \\cdot 3 \\cdot 3 = 54$, и все множители простые.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "$2 \\cdot 3 \\cdot 3 \\cdot 3$"
+     }
+    },
+    {
+     "id": "q2t2",
+     "text": "Какое разложение числа 60 на **простые** множители верное?",
+     "hint": "Простое число делится только на 1 и на само себя. Проверь каждый множитель.",
+     "type": "choice",
+     "options": [
+      {
+       "id": "a",
+       "text": "$2 \\cdot 2 \\cdot 3 \\cdot 5$"
+      },
+      {
+       "id": "b",
+       "text": "$2 \\cdot 3 \\cdot 10$",
+       "why": "Число 10 не простое: $10 = 2 \\cdot 5$."
+      },
+      {
+       "id": "c",
+       "text": "$2 \\cdot 2 \\cdot 3 \\cdot 3$",
+       "why": "Проверь умножением: $2 \\cdot 2 \\cdot 3 \\cdot 3 = 36$, а не 60."
+      }
+     ],
+     "answer": "a",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Число</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">60</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Делим по порядку</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2 · 2 · 3 · 5</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Проверка</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">2 · 2 · 3 · 5 = 60</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Делим 60 на самое маленькое простое число, пока делится: получаем множители 2, 2, 3, 5.",
+        "layer": 0
+       },
+       {
+        "text": "Проверка: $2 \\cdot 2 \\cdot 3 \\cdot 5 = 60$, и все множители простые.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "$2 \\cdot 2 \\cdot 3 \\cdot 5$"
+     }
+    }
+   ]
+  },
+  {
+   "id": "q3",
+   "text": "$36 = 2 \\cdot 2 \\cdot 3 \\cdot 3$, а $54 = 2 \\cdot 3 \\cdot 3 \\cdot 3$. Какие множители у этих чисел **общие**?",
+   "hint": "Обводи множители парами: один из первого числа, такой же из второго.",
+   "type": "choice",
+   "options": [
+    {
+     "id": "a",
+     "text": "$2 \\cdot 2 \\cdot 3 \\cdot 3$",
+     "why": "Это все множители числа 36. А общие — только те, что есть в **обоих** разложениях."
+    },
+    {
+     "id": "b",
+     "text": "$2 \\cdot 3$",
+     "why": "Ты взял каждый общий множитель по одному разу. Но если множитель повторяется в обоих разложениях дважды, его берут дважды."
+    },
+    {
+     "id": "c",
+     "text": "$2 \\cdot 3 \\cdot 3$"
+    }
+   ],
+   "answer": "c",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Первое число</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">36 = <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">2</b> · 2 · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">3</b> · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">3</b></td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Второе число</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">54 = <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">2</b> · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">3</b> · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">3</b> · 3</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Общие</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">2 · 3 · 3</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "Общий множитель — тот, что есть и в первом разложении, и во втором. Обводим парами.",
+      "layer": 0
+     },
+     {
+      "text": "Пары нашлись для: 2, 3, 3. Значит, общие множители: $2 \\cdot 3 \\cdot 3$.",
+      "layer": 2
+     }
+    ],
+    "answerLine": "$2 \\cdot 3 \\cdot 3$"
+   },
+   "order": 3,
+   "subtopic": "Общие простые множители",
+   "lesson": {
+    "title": "Какие множители общие",
+    "text": "Общий множитель — тот, который есть и в первом разложении, и во втором. Удобно обводить парами: один множитель из первого числа и такой же из второго. Если двойка есть в первом числе два раза, а во втором один раз, то общая двойка только одна — пары для второй нет. Пример: $12 = 2 \\cdot 2 \\cdot 3$, $18 = 2 \\cdot 3 \\cdot 3$. Пары: 2 и 2, 3 и 3. Общие множители: $2 \\cdot 3$.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">12</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\"><b>2</b> · 2 · <b>3</b></td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">18</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\"><b>2</b> · <b>3</b> · 3</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Общие</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">2 · 3</td></tr></table>"
+    },
+    "remember": "общий множитель — тот, у которого есть пара во втором числе."
+   },
+   "twins": [
+    {
+     "id": "q3t1",
+     "text": "$24 = 2 \\cdot 2 \\cdot 2 \\cdot 3$, а $60 = 2 \\cdot 2 \\cdot 3 \\cdot 5$. Какие множители у этих чисел **общие**?",
+     "hint": "Обводи множители парами: один из первого числа, такой же из второго.",
+     "type": "choice",
+     "options": [
+      {
+       "id": "a",
+       "text": "$2 \\cdot 2 \\cdot 3$"
+      },
+      {
+       "id": "b",
+       "text": "$2 \\cdot 2 \\cdot 2 \\cdot 3$",
+       "why": "Это все множители числа 24. А общие — только те, что есть в **обоих** разложениях."
+      },
+      {
+       "id": "c",
+       "text": "$2 \\cdot 3$",
+       "why": "Ты взял каждый общий множитель по одному разу. Но если множитель повторяется в обоих разложениях дважды, его берут дважды."
+      }
+     ],
+     "answer": "a",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Первое число</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">24 = <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">2</b> · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">2</b> · 2 · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">3</b></td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Второе число</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">60 = <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">2</b> · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">2</b> · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">3</b> · 5</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Общие</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">2 · 2 · 3</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Общий множитель — тот, что есть и в первом разложении, и во втором. Обводим парами.",
+        "layer": 0
+       },
+       {
+        "text": "Пары нашлись для: 2, 2, 3. Значит, общие множители: $2 \\cdot 2 \\cdot 3$.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "$2 \\cdot 2 \\cdot 3$"
+     }
+    },
+    {
+     "id": "q3t2",
+     "text": "$18 = 2 \\cdot 3 \\cdot 3$, а $30 = 2 \\cdot 3 \\cdot 5$. Какие множители у этих чисел **общие**?",
+     "hint": "Обводи множители парами: один из первого числа, такой же из второго.",
+     "type": "choice",
+     "options": [
+      {
+       "id": "a",
+       "text": "$2 \\cdot 2 \\cdot 3 \\cdot 3 \\cdot 3 \\cdot 5$",
+       "why": "Ты выписал все множители обоих чисел. Нужны только общие."
+      },
+      {
+       "id": "b",
+       "text": "$2 \\cdot 3$"
+      },
+      {
+       "id": "c",
+       "text": "$2 \\cdot 3 \\cdot 3$",
+       "why": "Это все множители числа 18. А общие — только те, что есть в **обоих** разложениях."
+      }
+     ],
+     "answer": "b",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Первое число</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">18 = <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">2</b> · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">3</b> · 3</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Второе число</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">30 = <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">2</b> · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">3</b> · 5</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Общие</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">2 · 3</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Общий множитель — тот, что есть и в первом разложении, и во втором. Обводим парами.",
+        "layer": 0
+       },
+       {
+        "text": "Пары нашлись для: 2, 3. Значит, общие множители: $2 \\cdot 3$.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "$2 \\cdot 3$"
+     }
+    }
+   ]
+  },
+  {
+   "id": "q4",
+   "text": "Найди НОД(36; 54). Запиши число.",
+   "hint": "Разложи оба числа, обведи общие множители и обязательно перемножь их.",
+   "type": "number",
+   "answer": 18,
+   "tolerance": 0.001,
+   "typicalWrong": [
+    {
+     "value": 8,
+     "why": "Ты сложил общие множители: 2 + 3 + 3. А их нужно **перемножить**."
+    },
+    {
+     "value": 108,
+     "why": "Ты взял все множители обоих чисел. Так находят общее кратное. Для НОД нужны только общие множители."
+    },
+    {
+     "value": 2,
+     "why": "Ты взял только один общий множитель. А общих несколько: 2, 3, 3 — перемножь их все."
+    },
+    {
+     "value": 3,
+     "why": "Ты посчитал, сколько общих множителей. А нужно их перемножить: $2 \\cdot 3 \\cdot 3$."
+    }
+   ],
+   "genericWrong": "Пройди по шагам ещё раз: разложи, найди общие множители, перемножь их.",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">36</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">36 = <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">2</b> · 2 · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">3</b> · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">3</b></td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">54</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">54 = <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">2</b> · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">3</b> · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">3</b> · 3</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Общие множители</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2 · 3 · 3</td></tr><tr data-step=\"3\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">НОД(36; 54)</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">2 · 3 · 3 = 18</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "Раскладываем: $36 = 2 \\cdot 2 \\cdot 3 \\cdot 3$, $54 = 2 \\cdot 3 \\cdot 3 \\cdot 3$.",
+      "layer": 0
+     },
+     {
+      "text": "Общие множители (есть в обоих разложениях): 2, 3, 3.",
+      "layer": 1
+     },
+     {
+      "text": "Последний шаг — перемножить: $2 \\cdot 3 \\cdot 3 = 18$. Это и есть НОД.",
+      "layer": 3
+     }
+    ],
+    "answerLine": "18"
+   },
+   "order": 4,
+   "subtopic": "Вычисление НОД",
+   "lesson": {
+    "title": "НОД: четыре шага, последний — обязательный",
+    "text": "НОД — наибольший общий делитель: самое большое число, на которое делятся оба числа. Шаг 1: разложи первое число на простые множители. Шаг 2: разложи второе. Шаг 3: обведи общие множители. Шаг 4: **перемножь** обведённые множители — получится число. Без шага 4 ответа нет: НОД — это число, а не кружки. Пример: $12 = 2 \\cdot 2 \\cdot 3$, $18 = 2 \\cdot 3 \\cdot 3$. Общие: 2 и 3. НОД(12; 18) $= 2 \\cdot 3 = 6$. Проверка: $12 : 6 = 2$, $18 : 6 = 3$ — делятся оба.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Шаг 1</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">12 = 2 · 2 · 3</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Шаг 2</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">18 = 2 · 3 · 3</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Шаг 3</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">общие: 2 и 3</td></tr><tr data-step=\"3\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Шаг 4</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">НОД = 2 · 3 = 6</td></tr></table>"
+    },
+    "remember": "обвёл общие множители — перемножь их и запиши «НОД = число»."
+   },
+   "twins": [
+    {
+     "id": "q4t1",
+     "text": "Найди НОД(24; 60). Запиши число.",
+     "hint": "Разложи оба числа, обведи общие множители и обязательно перемножь их.",
+     "type": "number",
+     "answer": 12,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 7,
+       "why": "Ты сложил общие множители: 2 + 2 + 3. А их нужно **перемножить**."
+      },
+      {
+       "value": 120,
+       "why": "Ты взял все множители обоих чисел. Так находят общее кратное. Для НОД нужны только общие множители."
+      },
+      {
+       "value": 2,
+       "why": "Ты взял только один общий множитель. А общих несколько: 2, 2, 3 — перемножь их все."
+      },
+      {
+       "value": 3,
+       "why": "Ты посчитал, сколько общих множителей. А нужно их перемножить: $2 \\cdot 2 \\cdot 3$."
+      }
+     ],
+     "genericWrong": "Пройди по шагам ещё раз: разложи, найди общие множители, перемножь их.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">24</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">24 = <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">2</b> · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">2</b> · 2 · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">3</b></td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">60</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">60 = <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">2</b> · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">2</b> · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">3</b> · 5</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Общие множители</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2 · 2 · 3</td></tr><tr data-step=\"3\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">НОД(24; 60)</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">2 · 2 · 3 = 12</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Раскладываем: $24 = 2 \\cdot 2 \\cdot 2 \\cdot 3$, $60 = 2 \\cdot 2 \\cdot 3 \\cdot 5$.",
+        "layer": 0
+       },
+       {
+        "text": "Общие множители (есть в обоих разложениях): 2, 2, 3.",
+        "layer": 1
+       },
+       {
+        "text": "Последний шаг — перемножить: $2 \\cdot 2 \\cdot 3 = 12$. Это и есть НОД.",
+        "layer": 3
+       }
+      ],
+      "answerLine": "12"
+     }
+    },
+    {
+     "id": "q4t2",
+     "text": "Найди НОД(48; 72). Запиши число.",
+     "hint": "Разложи оба числа, обведи общие множители и обязательно перемножь их.",
+     "type": "number",
+     "answer": 24,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 9,
+       "why": "Ты сложил общие множители: 2 + 2 + 2 + 3. А их нужно **перемножить**."
+      },
+      {
+       "value": 144,
+       "why": "Ты взял все множители обоих чисел. Так находят общее кратное. Для НОД нужны только общие множители."
+      },
+      {
+       "value": 2,
+       "why": "Ты взял только один общий множитель. А общих несколько: 2, 2, 2, 3 — перемножь их все."
+      },
+      {
+       "value": 4,
+       "why": "Ты посчитал, сколько общих множителей. А нужно их перемножить: $2 \\cdot 2 \\cdot 2 \\cdot 3$."
+      }
+     ],
+     "genericWrong": "Пройди по шагам ещё раз: разложи, найди общие множители, перемножь их.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">48</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">48 = <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">2</b> · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">2</b> · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">2</b> · 2 · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">3</b></td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">72</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">72 = <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">2</b> · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">2</b> · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">2</b> · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">3</b> · 3</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Общие множители</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2 · 2 · 2 · 3</td></tr><tr data-step=\"3\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">НОД(48; 72)</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">2 · 2 · 2 · 3 = 24</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Раскладываем: $48 = 2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 3$, $72 = 2 \\cdot 2 \\cdot 2 \\cdot 3 \\cdot 3$.",
+        "layer": 0
+       },
+       {
+        "text": "Общие множители (есть в обоих разложениях): 2, 2, 2, 3.",
+        "layer": 1
+       },
+       {
+        "text": "Последний шаг — перемножить: $2 \\cdot 2 \\cdot 2 \\cdot 3 = 24$. Это и есть НОД.",
+        "layer": 3
+       }
+      ],
+      "answerLine": "24"
+     }
+    }
+   ]
+  },
+  {
+   "id": "q5",
+   "text": "Найди НОД(45; 75). Запиши число.",
+   "hint": "Разложи оба числа, обведи общие множители и обязательно перемножь их.",
+   "type": "number",
+   "answer": 15,
+   "tolerance": 0.001,
+   "typicalWrong": [
+    {
+     "value": 8,
+     "why": "Ты сложил общие множители: 3 + 5. А их нужно **перемножить**."
+    },
+    {
+     "value": 225,
+     "why": "Ты взял все множители обоих чисел. Так находят общее кратное. Для НОД нужны только общие множители."
+    },
+    {
+     "value": 3,
+     "why": "Ты взял только один общий множитель. А общих несколько: 3, 5 — перемножь их все."
+    },
+    {
+     "value": 2,
+     "why": "Ты посчитал, сколько общих множителей. А нужно их перемножить: $3 \\cdot 5$."
+    }
+   ],
+   "genericWrong": "Пройди по шагам ещё раз: разложи, найди общие множители, перемножь их.",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">45</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">45 = <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">3</b> · 3 · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">5</b></td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">75</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">75 = <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">3</b> · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">5</b> · 5</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Общие множители</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">3 · 5</td></tr><tr data-step=\"3\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">НОД(45; 75)</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">3 · 5 = 15</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "Раскладываем: $45 = 3 \\cdot 3 \\cdot 5$, $75 = 3 \\cdot 5 \\cdot 5$.",
+      "layer": 0
+     },
+     {
+      "text": "Общие множители (есть в обоих разложениях): 3, 5.",
+      "layer": 1
+     },
+     {
+      "text": "Последний шаг — перемножить: $3 \\cdot 5 = 15$. Это и есть НОД.",
+      "layer": 3
+     }
+    ],
+    "answerLine": "15"
+   },
+   "order": 5,
+   "subtopic": "Вычисление НОД",
+   "lesson": {
+    "title": "НОД: четыре шага, последний — обязательный",
+    "text": "НОД — наибольший общий делитель: самое большое число, на которое делятся оба числа. Шаг 1: разложи первое число на простые множители. Шаг 2: разложи второе. Шаг 3: обведи общие множители. Шаг 4: **перемножь** обведённые множители — получится число. Без шага 4 ответа нет: НОД — это число, а не кружки. Пример: $12 = 2 \\cdot 2 \\cdot 3$, $18 = 2 \\cdot 3 \\cdot 3$. Общие: 2 и 3. НОД(12; 18) $= 2 \\cdot 3 = 6$. Проверка: $12 : 6 = 2$, $18 : 6 = 3$ — делятся оба.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Шаг 1</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">12 = 2 · 2 · 3</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Шаг 2</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">18 = 2 · 3 · 3</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Шаг 3</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">общие: 2 и 3</td></tr><tr data-step=\"3\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Шаг 4</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">НОД = 2 · 3 = 6</td></tr></table>"
+    },
+    "remember": "обвёл общие множители — перемножь их и запиши «НОД = число»."
+   },
+   "twins": [
+    {
+     "id": "q5t1",
+     "text": "Найди НОД(28; 42). Запиши число.",
+     "hint": "Разложи оба числа, обведи общие множители и обязательно перемножь их.",
+     "type": "number",
+     "answer": 14,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 9,
+       "why": "Ты сложил общие множители: 2 + 7. А их нужно **перемножить**."
+      },
+      {
+       "value": 84,
+       "why": "Ты взял все множители обоих чисел. Так находят общее кратное. Для НОД нужны только общие множители."
+      },
+      {
+       "value": 2,
+       "why": "Ты взял только один общий множитель. А общих несколько: 2, 7 — перемножь их все."
+      }
+     ],
+     "genericWrong": "Пройди по шагам ещё раз: разложи, найди общие множители, перемножь их.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">28</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">28 = <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">2</b> · 2 · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">7</b></td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">42</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">42 = <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">2</b> · 3 · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">7</b></td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Общие множители</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2 · 7</td></tr><tr data-step=\"3\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">НОД(28; 42)</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">2 · 7 = 14</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Раскладываем: $28 = 2 \\cdot 2 \\cdot 7$, $42 = 2 \\cdot 3 \\cdot 7$.",
+        "layer": 0
+       },
+       {
+        "text": "Общие множители (есть в обоих разложениях): 2, 7.",
+        "layer": 1
+       },
+       {
+        "text": "Последний шаг — перемножить: $2 \\cdot 7 = 14$. Это и есть НОД.",
+        "layer": 3
+       }
+      ],
+      "answerLine": "14"
+     }
+    },
+    {
+     "id": "q5t2",
+     "text": "Найди НОД(40; 100). Запиши число.",
+     "hint": "Разложи оба числа, обведи общие множители и обязательно перемножь их.",
+     "type": "number",
+     "answer": 20,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 9,
+       "why": "Ты сложил общие множители: 2 + 2 + 5. А их нужно **перемножить**."
+      },
+      {
+       "value": 200,
+       "why": "Ты взял все множители обоих чисел. Так находят общее кратное. Для НОД нужны только общие множители."
+      },
+      {
+       "value": 2,
+       "why": "Ты взял только один общий множитель. А общих несколько: 2, 2, 5 — перемножь их все."
+      },
+      {
+       "value": 3,
+       "why": "Ты посчитал, сколько общих множителей. А нужно их перемножить: $2 \\cdot 2 \\cdot 5$."
+      }
+     ],
+     "genericWrong": "Пройди по шагам ещё раз: разложи, найди общие множители, перемножь их.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">40</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">40 = <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">2</b> · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">2</b> · 2 · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">5</b></td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">100</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">100 = <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">2</b> · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">2</b> · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">5</b> · 5</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Общие множители</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2 · 2 · 5</td></tr><tr data-step=\"3\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">НОД(40; 100)</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">2 · 2 · 5 = 20</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Раскладываем: $40 = 2 \\cdot 2 \\cdot 2 \\cdot 5$, $100 = 2 \\cdot 2 \\cdot 5 \\cdot 5$.",
+        "layer": 0
+       },
+       {
+        "text": "Общие множители (есть в обоих разложениях): 2, 2, 5.",
+        "layer": 1
+       },
+       {
+        "text": "Последний шаг — перемножить: $2 \\cdot 2 \\cdot 5 = 20$. Это и есть НОД.",
+        "layer": 3
+       }
+      ],
+      "answerLine": "20"
+     }
+    }
+   ]
+  },
+  {
+   "id": "q6",
+   "text": "В разложении числа $a$ есть $2^3$, а в разложении числа $b$ есть $2^2$. Что войдёт в НОД(a; b)?",
+   "hint": "Сколько множителей есть сразу в обоих числах?",
+   "type": "choice",
+   "options": [
+    {
+     "id": "a",
+     "text": "$2^3$",
+     "why": "Большую степень берут для НОК. В одном из чисел множителей 2 всего 2, поэтому общих — только 2."
+    },
+    {
+     "id": "b",
+     "text": "$2^5$",
+     "why": "Ты сложил показатели — так умножают степени. Для НОД нужно выбрать меньшую."
+    },
+    {
+     "id": "c",
+     "text": "$2^2$"
+    }
+   ],
+   "answer": "c",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">В числе a</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2 · 2 · 2</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">В числе b</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2 · 2</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Общие</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">2 · 2</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "В числе $a$ множитель 2 встречается 3 раз(а), в числе $b$ — 2 раз(а).",
+      "layer": 0
+     },
+     {
+      "text": "Общими могут быть только те, что есть в обоих числах: их 2. В НОД входит $2^2$.",
+      "layer": 2
+     }
+    ],
+    "answerLine": "$2^2$"
+   },
+   "order": 6,
+   "subtopic": "НОД по разложениям со степенями",
+   "lesson": {
+    "title": "НОД, когда разложения записаны со степенями",
+    "text": "Запись $2^3$ — это коротко $2 \\cdot 2 \\cdot 2$. Если у числа $a$ три двойки, а у числа $b$ две, то общих двоек только две. Поэтому правило такое: в НОД берут общие простые числа, каждое — в **меньшей** степени. Если какого-то простого числа нет в одном из разложений, в НОД оно не входит. В конце всё перемножают. Пример: $a = 2^3 \\cdot 5$, $b = 2 \\cdot 5^2$. Двойка: меньшая степень — 2. Пятёрка: меньшая степень — 5. НОД $= 2 \\cdot 5 = 10$.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">a</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2³ · 5</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">b</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2 · 5²</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Меньшие степени</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2 и 5</td></tr><tr data-step=\"3\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">НОД</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">2 · 5 = 10</td></tr></table>"
+    },
+    "remember": "для НОД — общие множители в меньшей степени, потом перемножить."
+   },
+   "twins": [
+    {
+     "id": "q6t1",
+     "text": "В разложении числа $a$ есть $3$, а в разложении числа $b$ есть $3^2$. Что войдёт в НОД(a; b)?",
+     "hint": "Сколько множителей есть сразу в обоих числах?",
+     "type": "choice",
+     "options": [
+      {
+       "id": "a",
+       "text": "$3$"
+      },
+      {
+       "id": "b",
+       "text": "$3^2$",
+       "why": "Большую степень берут для НОК. В одном из чисел множителей 3 всего 1, поэтому общих — только 1."
+      },
+      {
+       "id": "c",
+       "text": "$3^3$",
+       "why": "Ты сложил показатели — так умножают степени. Для НОД нужно выбрать меньшую."
+      }
+     ],
+     "answer": "a",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">В числе a</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">3</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">В числе b</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">3 · 3</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Общие</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">3</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "В числе $a$ множитель 3 встречается 1 раз(а), в числе $b$ — 2 раз(а).",
+        "layer": 0
+       },
+       {
+        "text": "Общими могут быть только те, что есть в обоих числах: их 1. В НОД входит $3$.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "$3$"
+     }
+    },
+    {
+     "id": "q6t2",
+     "text": "В разложении числа $a$ есть $5^3$, а в разложении числа $b$ есть $5$. Что войдёт в НОД(a; b)?",
+     "hint": "Сколько множителей есть сразу в обоих числах?",
+     "type": "choice",
+     "options": [
+      {
+       "id": "a",
+       "text": "$5^4$",
+       "why": "Ты сложил показатели — так умножают степени. Для НОД нужно выбрать меньшую."
+      },
+      {
+       "id": "b",
+       "text": "$5$"
+      },
+      {
+       "id": "c",
+       "text": "$5^3$",
+       "why": "Большую степень берут для НОК. В одном из чисел множителей 5 всего 1, поэтому общих — только 1."
+      }
+     ],
+     "answer": "b",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">В числе a</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">5 · 5 · 5</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">В числе b</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">5</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Общие</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">5</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "В числе $a$ множитель 5 встречается 3 раз(а), в числе $b$ — 1 раз(а).",
+        "layer": 0
+       },
+       {
+        "text": "Общими могут быть только те, что есть в обоих числах: их 1. В НОД входит $5$.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "$5$"
+     }
+    }
+   ]
+  },
+  {
+   "id": "q7",
+   "text": "Числа уже разложены на простые множители: $a = 2^2 \\cdot 3 \\cdot 5$, $b = 2 \\cdot 3^2 \\cdot 5$. Найди НОД(a; b). Запиши число.",
+   "hint": "Бери только общие простые числа, каждое — в меньшей степени. Потом перемножь.",
+   "type": "number",
+   "answer": 30,
+   "tolerance": 0.001,
+   "typicalWrong": [
+    {
+     "value": 180,
+     "why": "Ты взял каждый множитель в **большей** степени. Так находят НОК. Для НОД берут меньшую степень."
+    },
+    {
+     "value": 10,
+     "why": "Ты сложил множители. А их нужно перемножить."
+    }
+   ],
+   "genericWrong": "Пройди по шагам ещё раз: разложи, найди общие множители, перемножь их.",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">a</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2² · 3 · 5</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">b</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2 · 3² · 5</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Общие, в меньшей степени</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2 · 3 · 5</td></tr><tr data-step=\"3\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">НОД(a; b)</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">2 · 3 · 5 = 30</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "В НОД входят только те простые числа, которые есть в обоих разложениях.",
+      "layer": 0
+     },
+     {
+      "text": "Каждое берём в **меньшей** из двух степеней: $2^2$ и $2^1$ → $2^1$, $3^1$ и $3^2$ → $3^1$, 5 и 5 → 5.",
+      "layer": 1
+     },
+     {
+      "text": "Перемножаем: $2 \\cdot 3 \\cdot 5 = 30$.",
+      "layer": 3
+     }
+    ],
+    "answerLine": "30"
+   },
+   "order": 7,
+   "subtopic": "НОД по разложениям со степенями",
+   "lesson": {
+    "title": "НОД, когда разложения записаны со степенями",
+    "text": "Запись $2^3$ — это коротко $2 \\cdot 2 \\cdot 2$. Если у числа $a$ три двойки, а у числа $b$ две, то общих двоек только две. Поэтому правило такое: в НОД берут общие простые числа, каждое — в **меньшей** степени. Если какого-то простого числа нет в одном из разложений, в НОД оно не входит. В конце всё перемножают. Пример: $a = 2^3 \\cdot 5$, $b = 2 \\cdot 5^2$. Двойка: меньшая степень — 2. Пятёрка: меньшая степень — 5. НОД $= 2 \\cdot 5 = 10$.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">a</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2³ · 5</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">b</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2 · 5²</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Меньшие степени</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2 и 5</td></tr><tr data-step=\"3\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">НОД</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">2 · 5 = 10</td></tr></table>"
+    },
+    "remember": "для НОД — общие множители в меньшей степени, потом перемножить."
+   },
+   "twins": [
+    {
+     "id": "q7t1",
+     "text": "Числа уже разложены на простые множители: $a = 2^3 \\cdot 3$, $b = 2^2 \\cdot 3^2$. Найди НОД(a; b). Запиши число.",
+     "hint": "Бери только общие простые числа, каждое — в меньшей степени. Потом перемножь.",
+     "type": "number",
+     "answer": 12,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 72,
+       "why": "Ты взял каждый множитель в **большей** степени. Так находят НОК. Для НОД берут меньшую степень."
+      },
+      {
+       "value": 7,
+       "why": "Ты сложил множители. А их нужно перемножить."
+      }
+     ],
+     "genericWrong": "Пройди по шагам ещё раз: разложи, найди общие множители, перемножь их.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">a</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2³ · 3</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">b</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2² · 3²</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Общие, в меньшей степени</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2² · 3</td></tr><tr data-step=\"3\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">НОД(a; b)</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">2² · 3 = 12</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "В НОД входят только те простые числа, которые есть в обоих разложениях.",
+        "layer": 0
+       },
+       {
+        "text": "Каждое берём в **меньшей** из двух степеней: $2^3$ и $2^2$ → $2^2$, $3^1$ и $3^2$ → $3^1$.",
+        "layer": 1
+       },
+       {
+        "text": "Перемножаем: $2^2 \\cdot 3 = 12$.",
+        "layer": 3
+       }
+      ],
+      "answerLine": "12"
+     }
+    },
+    {
+     "id": "q7t2",
+     "text": "Числа уже разложены на простые множители: $a = 2 \\cdot 5^2$, $b = 2^2 \\cdot 5 \\cdot 7$. Найди НОД(a; b). Запиши число.",
+     "hint": "Бери только общие простые числа, каждое — в меньшей степени. Потом перемножь.",
+     "type": "number",
+     "answer": 10,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 700,
+       "why": "Ты взял каждый множитель в **большей** степени. Так находят НОК. Для НОД берут меньшую степень."
+      },
+      {
+       "value": 100,
+       "why": "Ты взял общие множители в большей степени. Для НОД нужна меньшая: больше общих множителей в числах просто нет."
+      },
+      {
+       "value": 7,
+       "why": "Ты сложил множители. А их нужно перемножить."
+      }
+     ],
+     "genericWrong": "Пройди по шагам ещё раз: разложи, найди общие множители, перемножь их.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">a</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2 · 5²</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">b</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2² · 5 · 7</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Общие, в меньшей степени</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2 · 5</td></tr><tr data-step=\"3\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">НОД(a; b)</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">2 · 5 = 10</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "В НОД входят только те простые числа, которые есть в обоих разложениях.",
+        "layer": 0
+       },
+       {
+        "text": "Каждое берём в **меньшей** из двух степеней: $2^1$ и $2^2$ → $2^1$, $5^2$ и $5^1$ → $5^1$.",
+        "layer": 1
+       },
+       {
+        "text": "Перемножаем: $2 \\cdot 5 = 10$.",
+        "layer": 3
+       }
+      ],
+      "answerLine": "10"
+     }
+    }
+   ]
+  },
+  {
+   "id": "q8",
+   "text": "Числа уже разложены на простые множители: $a = 2^3 \\cdot 3^2 \\cdot 5$, $b = 2^2 \\cdot 3 \\cdot 7$. Найди НОД(a; b). Запиши число.",
+   "hint": "Бери только общие простые числа, каждое — в меньшей степени. Потом перемножь.",
+   "type": "number",
+   "answer": 12,
+   "tolerance": 0.001,
+   "typicalWrong": [
+    {
+     "value": 2520,
+     "why": "Ты взял каждый множитель в **большей** степени. Так находят НОК. Для НОД берут меньшую степень."
+    },
+    {
+     "value": 72,
+     "why": "Ты взял общие множители в большей степени. Для НОД нужна меньшая: больше общих множителей в числах просто нет."
+    },
+    {
+     "value": 7,
+     "why": "Ты сложил множители. А их нужно перемножить."
+    }
+   ],
+   "genericWrong": "Пройди по шагам ещё раз: разложи, найди общие множители, перемножь их.",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">a</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2³ · 3² · 5</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">b</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2² · 3 · 7</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Общие, в меньшей степени</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2² · 3</td></tr><tr data-step=\"3\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">НОД(a; b)</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">2² · 3 = 12</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "В НОД входят только те простые числа, которые есть в обоих разложениях.",
+      "layer": 0
+     },
+     {
+      "text": "Каждое берём в **меньшей** из двух степеней: $2^3$ и $2^2$ → $2^2$, $3^2$ и $3^1$ → $3^1$.",
+      "layer": 1
+     },
+     {
+      "text": "Перемножаем: $2^2 \\cdot 3 = 12$.",
+      "layer": 3
+     }
+    ],
+    "answerLine": "12"
+   },
+   "order": 8,
+   "subtopic": "НОД по разложениям со степенями",
+   "lesson": {
+    "title": "НОД, когда разложения записаны со степенями",
+    "text": "Запись $2^3$ — это коротко $2 \\cdot 2 \\cdot 2$. Если у числа $a$ три двойки, а у числа $b$ две, то общих двоек только две. Поэтому правило такое: в НОД берут общие простые числа, каждое — в **меньшей** степени. Если какого-то простого числа нет в одном из разложений, в НОД оно не входит. В конце всё перемножают. Пример: $a = 2^3 \\cdot 5$, $b = 2 \\cdot 5^2$. Двойка: меньшая степень — 2. Пятёрка: меньшая степень — 5. НОД $= 2 \\cdot 5 = 10$.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">a</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2³ · 5</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">b</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2 · 5²</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Меньшие степени</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2 и 5</td></tr><tr data-step=\"3\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">НОД</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">2 · 5 = 10</td></tr></table>"
+    },
+    "remember": "для НОД — общие множители в меньшей степени, потом перемножить."
+   },
+   "twins": [
+    {
+     "id": "q8t1",
+     "text": "Числа уже разложены на простые множители: $a = 2^2 \\cdot 7$, $b = 2 \\cdot 7^2$. Найди НОД(a; b). Запиши число.",
+     "hint": "Бери только общие простые числа, каждое — в меньшей степени. Потом перемножь.",
+     "type": "number",
+     "answer": 14,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 196,
+       "why": "Ты взял каждый множитель в **большей** степени. Так находят НОК. Для НОД берут меньшую степень."
+      },
+      {
+       "value": 9,
+       "why": "Ты сложил множители. А их нужно перемножить."
+      }
+     ],
+     "genericWrong": "Пройди по шагам ещё раз: разложи, найди общие множители, перемножь их.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">a</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2² · 7</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">b</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2 · 7²</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Общие, в меньшей степени</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">2 · 7</td></tr><tr data-step=\"3\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">НОД(a; b)</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">2 · 7 = 14</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "В НОД входят только те простые числа, которые есть в обоих разложениях.",
+        "layer": 0
+       },
+       {
+        "text": "Каждое берём в **меньшей** из двух степеней: $2^2$ и $2^1$ → $2^1$, $7^1$ и $7^2$ → $7^1$.",
+        "layer": 1
+       },
+       {
+        "text": "Перемножаем: $2 \\cdot 7 = 14$.",
+        "layer": 3
+       }
+      ],
+      "answerLine": "14"
+     }
+    },
+    {
+     "id": "q8t2",
+     "text": "Числа уже разложены на простые множители: $a = 3^3 \\cdot 5$, $b = 3^2 \\cdot 5 \\cdot 7$. Найди НОД(a; b). Запиши число.",
+     "hint": "Бери только общие простые числа, каждое — в меньшей степени. Потом перемножь.",
+     "type": "number",
+     "answer": 45,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 945,
+       "why": "Ты взял каждый множитель в **большей** степени. Так находят НОК. Для НОД берут меньшую степень."
+      },
+      {
+       "value": 135,
+       "why": "Ты взял общие множители в большей степени. Для НОД нужна меньшая: больше общих множителей в числах просто нет."
+      },
+      {
+       "value": 11,
+       "why": "Ты сложил множители. А их нужно перемножить."
+      }
+     ],
+     "genericWrong": "Пройди по шагам ещё раз: разложи, найди общие множители, перемножь их.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">a</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">3³ · 5</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">b</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">3² · 5 · 7</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Общие, в меньшей степени</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">3² · 5</td></tr><tr data-step=\"3\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">НОД(a; b)</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">3² · 5 = 45</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "В НОД входят только те простые числа, которые есть в обоих разложениях.",
+        "layer": 0
+       },
+       {
+        "text": "Каждое берём в **меньшей** из двух степеней: $3^3$ и $3^2$ → $3^2$, 5 и 5 → 5.",
+        "layer": 1
+       },
+       {
+        "text": "Перемножаем: $3^2 \\cdot 5 = 45$.",
+        "layer": 3
+       }
+      ],
+      "answerLine": "45"
+     }
+    }
+   ]
+  },
+  {
+   "id": "q9",
+   "text": "Дано выражение $22a + 20b$. Чему равен НОД его коэффициентов, то есть НОД(22; 20)?",
+   "hint": "Коэффициент — число перед буквой. Здесь это 22 и 20. На какое самое большое число делятся оба?",
+   "type": "number",
+   "answer": 2,
+   "tolerance": 0.001,
+   "typicalWrong": [
+    {
+     "value": 42,
+     "why": "Ты сложил коэффициенты: 22 + 20. А нужно найти число, на которое делятся оба."
+    },
+    {
+     "value": 220,
+     "why": "Это общее кратное. А нужен общий делитель — он не больше самих чисел."
+    },
+    {
+     "value": 440,
+     "why": "Ты перемножил коэффициенты. Нужен их наибольший общий делитель."
+    }
+   ],
+   "genericWrong": "Пройди по шагам ещё раз: разложи, найди общие множители, перемножь их.",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">22</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">22 = <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">2</b> · 11</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">20</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">20 = <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">2</b> · 2 · 5</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">НОД</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">2</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "Коэффициенты — числа перед буквами: 22 и 20.",
+      "layer": 0
+     },
+     {
+      "text": "Раскладываем: $22 = 2 \\cdot 11$, $20 = 2 \\cdot 2 \\cdot 5$.",
+      "layer": 1
+     },
+     {
+      "text": "Общие множители: 2. НОД = $2$.",
+      "layer": 2
+     }
+    ],
+    "answerLine": "2"
+   },
+   "order": 9,
+   "subtopic": "НОД коэффициентов",
+   "lesson": {
+    "title": "Что такое коэффициент и его НОД",
+    "text": "В выражении $12a + 18b$ числа 12 и 18 стоят перед буквами. Их называют коэффициентами. Складывать $12a$ и $18b$ нельзя: буквы разные, это как яблоки и груши. Зато можно найти число, на которое делятся оба коэффициента. Самое большое такое число — НОД. $12 = 2 \\cdot 2 \\cdot 3$, $18 = 2 \\cdot 3 \\cdot 3$, общие множители 2 и 3, НОД $= 6$. Ловушка: сложить коэффициенты ($12 + 18 = 30$). Это не НОД.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Выражение</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">12a + 18b</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Коэффициенты</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">12 и 18</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">НОД(12; 18)</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">6</td></tr></table>"
+    },
+    "remember": "НОД коэффициентов — число, на которое делятся оба; складывать коэффициенты не надо."
+   },
+   "twins": [
+    {
+     "id": "q9t1",
+     "text": "Дано выражение $18a + 24b$. Чему равен НОД его коэффициентов, то есть НОД(18; 24)?",
+     "hint": "Коэффициент — число перед буквой. Здесь это 18 и 24. На какое самое большое число делятся оба?",
+     "type": "number",
+     "answer": 6,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 42,
+       "why": "Ты сложил коэффициенты: 18 + 24. А нужно найти число, на которое делятся оба."
+      },
+      {
+       "value": 72,
+       "why": "Это общее кратное. А нужен общий делитель — он не больше самих чисел."
+      },
+      {
+       "value": 432,
+       "why": "Ты перемножил коэффициенты. Нужен их наибольший общий делитель."
+      }
+     ],
+     "genericWrong": "Пройди по шагам ещё раз: разложи, найди общие множители, перемножь их.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">18</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">18 = <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">2</b> · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">3</b> · 3</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">24</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">24 = <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">2</b> · 2 · 2 · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">3</b></td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">НОД</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">2 · 3 = 6</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Коэффициенты — числа перед буквами: 18 и 24.",
+        "layer": 0
+       },
+       {
+        "text": "Раскладываем: $18 = 2 \\cdot 3 \\cdot 3$, $24 = 2 \\cdot 2 \\cdot 2 \\cdot 3$.",
+        "layer": 1
+       },
+       {
+        "text": "Общие множители: 2, 3. НОД = $2 \\cdot 3 = 6$.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "6"
+     }
+    },
+    {
+     "id": "q9t2",
+     "text": "Дано выражение $15x + 35y$. Чему равен НОД его коэффициентов, то есть НОД(15; 35)?",
+     "hint": "Коэффициент — число перед буквой. Здесь это 15 и 35. На какое самое большое число делятся оба?",
+     "type": "number",
+     "answer": 5,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 50,
+       "why": "Ты сложил коэффициенты: 15 + 35. А нужно найти число, на которое делятся оба."
+      },
+      {
+       "value": 105,
+       "why": "Это общее кратное. А нужен общий делитель — он не больше самих чисел."
+      },
+      {
+       "value": 525,
+       "why": "Ты перемножил коэффициенты. Нужен их наибольший общий делитель."
+      }
+     ],
+     "genericWrong": "Пройди по шагам ещё раз: разложи, найди общие множители, перемножь их.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">15</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">15 = 3 · <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">5</b></td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">35</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">35 = <b style=\"color:var(--accent);border:2px solid var(--accent);border-radius:50%;padding:0 6px\">5</b> · 7</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">НОД</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">5</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Коэффициенты — числа перед буквами: 15 и 35.",
+        "layer": 0
+       },
+       {
+        "text": "Раскладываем: $15 = 3 \\cdot 5$, $35 = 5 \\cdot 7$.",
+        "layer": 1
+       },
+       {
+        "text": "Общие множители: 5. НОД = $5$.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "5"
+     }
+    }
+   ]
+  },
+  {
+   "id": "q10",
+   "text": "Вынеси за скобки наибольший общий делитель коэффициентов: $22a + 20b$",
+   "hint": "Найди НОД коэффициентов. Потом раздели на него каждый коэффициент.",
+   "type": "choice",
+   "options": [
+    {
+     "id": "a",
+     "text": "$2(11a + 20b)$",
+     "why": "Ты разделил на 2 только первое слагаемое. Делить нужно оба: $20 : 2 = 10$."
+    },
+    {
+     "id": "b",
+     "text": "$2(11a + 10b)$"
+    },
+    {
+     "id": "c",
+     "text": "$42ab$",
+     "why": "Складывать $22a$ и $20b$ нельзя: буквы разные. Нужно вынести общий множитель за скобки."
+    }
+   ],
+   "answer": "b",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">НОД коэффициентов</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">НОД(22; 20) = 2</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Делим</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">22 : 2 = 11, &nbsp; 20 : 2 = 10</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Ответ</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">2(11a + 10b)</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "НОД(22; 20) = 2.",
+      "layer": 0
+     },
+     {
+      "text": "Делим каждый коэффициент на 2: $22 : 2 = 11$, $20 : 2 = 10$.",
+      "layer": 1
+     },
+     {
+      "text": "Записываем: $22a + 20b = 2(11a + 10b)$. Проверка: $2 \\cdot 11a = 22a$, $2 \\cdot 10b = 20b$.",
+      "layer": 2
+     }
+    ],
+    "answerLine": "$2(11a + 10b)$"
+   },
+   "order": 10,
+   "subtopic": "Вынесение НОД за скобки",
+   "lesson": {
+    "title": "Как вынести общий множитель за скобки",
+    "text": "Вынести за скобки — значит записать сумму как произведение. Шаг 1: найди НОД коэффициентов. Шаг 2: раздели на него каждый коэффициент. Шаг 3: напиши НОД перед скобкой, а в скобках — то, что получилось после деления. Пример: $12a + 18b$. НОД(12; 18) $= 6$. $12 : 6 = 2$, $18 : 6 = 3$. Ответ: $6(2a + 3b)$. Проверка — раскрой скобки: $6 \\cdot 2a = 12a$, $6 \\cdot 3b = 18b$. Получилось то же выражение, значит, верно.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">НОД(12; 18)</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">6</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Делим</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">12 : 6 = 2, &nbsp; 18 : 6 = 3</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Ответ</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">6(2a + 3b)</td></tr><tr data-step=\"3\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Проверка</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">6 · 2a + 6 · 3b = 12a + 18b</td></tr></table>"
+    },
+    "remember": "НОД — перед скобкой, в скобках — результаты деления; проверяй раскрытием скобок."
+   },
+   "twins": [
+    {
+     "id": "q10t1",
+     "text": "Вынеси за скобки наибольший общий делитель коэффициентов: $18a + 24b$",
+     "hint": "Найди НОД коэффициентов. Потом раздели на него каждый коэффициент.",
+     "type": "choice",
+     "options": [
+      {
+       "id": "a",
+       "text": "$42ab$",
+       "why": "Складывать $18a$ и $24b$ нельзя: буквы разные. Нужно вынести общий множитель за скобки."
+      },
+      {
+       "id": "b",
+       "text": "$2(9a + 12b)$",
+       "why": "Равенство верное, но 2 — не **наибольший** общий делитель: числа 9 и 12 ещё делятся на 3."
+      },
+      {
+       "id": "c",
+       "text": "$6(3a + 4b)$"
+      }
+     ],
+     "answer": "c",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">НОД коэффициентов</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">НОД(18; 24) = 6</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Делим</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">18 : 6 = 3, &nbsp; 24 : 6 = 4</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Ответ</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">6(3a + 4b)</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "НОД(18; 24) = 6.",
+        "layer": 0
+       },
+       {
+        "text": "Делим каждый коэффициент на 6: $18 : 6 = 3$, $24 : 6 = 4$.",
+        "layer": 1
+       },
+       {
+        "text": "Записываем: $18a + 24b = 6(3a + 4b)$. Проверка: $6 \\cdot 3a = 18a$, $6 \\cdot 4b = 24b$.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "$6(3a + 4b)$"
+     }
+    },
+    {
+     "id": "q10t2",
+     "text": "Вынеси за скобки наибольший общий делитель коэффициентов: $15x + 35y$",
+     "hint": "Найди НОД коэффициентов. Потом раздели на него каждый коэффициент.",
+     "type": "choice",
+     "options": [
+      {
+       "id": "a",
+       "text": "$5(3x + 7y)$"
+      },
+      {
+       "id": "b",
+       "text": "$50xy$",
+       "why": "Складывать $15x$ и $35y$ нельзя: буквы разные. Нужно вынести общий множитель за скобки."
+      },
+      {
+       "id": "c",
+       "text": "$5(3x + 35y)$",
+       "why": "Ты разделил на 5 только первое слагаемое. Делить нужно оба: $35 : 5 = 7$."
+      }
+     ],
+     "answer": "a",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">НОД коэффициентов</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">НОД(15; 35) = 5</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Делим</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">15 : 5 = 3, &nbsp; 35 : 5 = 7</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Ответ</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">5(3x + 7y)</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "НОД(15; 35) = 5.",
+        "layer": 0
+       },
+       {
+        "text": "Делим каждый коэффициент на 5: $15 : 5 = 3$, $35 : 5 = 7$.",
+        "layer": 1
+       },
+       {
+        "text": "Записываем: $15x + 35y = 5(3x + 7y)$. Проверка: $5 \\cdot 3x = 15x$, $5 \\cdot 7y = 35y$.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "$5(3x + 7y)$"
+     }
+    }
+   ]
+  },
+  {
+   "id": "q11",
+   "text": "Вынеси за скобки наибольший общий делитель коэффициентов: $12a + 30b$",
+   "hint": "Найди НОД коэффициентов. Потом раздели на него каждый коэффициент.",
+   "type": "choice",
+   "options": [
+    {
+     "id": "a",
+     "text": "$6(2a + 5b)$"
+    },
+    {
+     "id": "b",
+     "text": "$42ab$",
+     "why": "Складывать $12a$ и $30b$ нельзя: буквы разные. Нужно вынести общий множитель за скобки."
+    },
+    {
+     "id": "c",
+     "text": "$2(6a + 15b)$",
+     "why": "Равенство верное, но 2 — не **наибольший** общий делитель: числа 6 и 15 ещё делятся на 3."
+    }
+   ],
+   "answer": "a",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">НОД коэффициентов</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">НОД(12; 30) = 6</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Делим</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">12 : 6 = 2, &nbsp; 30 : 6 = 5</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Ответ</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">6(2a + 5b)</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "НОД(12; 30) = 6.",
+      "layer": 0
+     },
+     {
+      "text": "Делим каждый коэффициент на 6: $12 : 6 = 2$, $30 : 6 = 5$.",
+      "layer": 1
+     },
+     {
+      "text": "Записываем: $12a + 30b = 6(2a + 5b)$. Проверка: $6 \\cdot 2a = 12a$, $6 \\cdot 5b = 30b$.",
+      "layer": 2
+     }
+    ],
+    "answerLine": "$6(2a + 5b)$"
+   },
+   "order": 11,
+   "subtopic": "Вынесение НОД за скобки",
+   "lesson": {
+    "title": "Как вынести общий множитель за скобки",
+    "text": "Вынести за скобки — значит записать сумму как произведение. Шаг 1: найди НОД коэффициентов. Шаг 2: раздели на него каждый коэффициент. Шаг 3: напиши НОД перед скобкой, а в скобках — то, что получилось после деления. Пример: $12a + 18b$. НОД(12; 18) $= 6$. $12 : 6 = 2$, $18 : 6 = 3$. Ответ: $6(2a + 3b)$. Проверка — раскрой скобки: $6 \\cdot 2a = 12a$, $6 \\cdot 3b = 18b$. Получилось то же выражение, значит, верно.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">НОД(12; 18)</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">6</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Делим</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">12 : 6 = 2, &nbsp; 18 : 6 = 3</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Ответ</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">6(2a + 3b)</td></tr><tr data-step=\"3\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Проверка</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">6 · 2a + 6 · 3b = 12a + 18b</td></tr></table>"
+    },
+    "remember": "НОД — перед скобкой, в скобках — результаты деления; проверяй раскрытием скобок."
+   },
+   "twins": [
+    {
+     "id": "q11t1",
+     "text": "Вынеси за скобки наибольший общий делитель коэффициентов: $16x + 40y$",
+     "hint": "Найди НОД коэффициентов. Потом раздели на него каждый коэффициент.",
+     "type": "choice",
+     "options": [
+      {
+       "id": "a",
+       "text": "$4(4x + 10y)$",
+       "why": "Равенство верное, но 4 — не **наибольший** общий делитель: числа 4 и 10 ещё делятся на 2."
+      },
+      {
+       "id": "b",
+       "text": "$8(2x + 5y)$"
+      },
+      {
+       "id": "c",
+       "text": "$56xy$",
+       "why": "Складывать $16x$ и $40y$ нельзя: буквы разные. Нужно вынести общий множитель за скобки."
+      }
+     ],
+     "answer": "b",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">НОД коэффициентов</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">НОД(16; 40) = 8</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Делим</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">16 : 8 = 2, &nbsp; 40 : 8 = 5</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Ответ</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">8(2x + 5y)</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "НОД(16; 40) = 8.",
+        "layer": 0
+       },
+       {
+        "text": "Делим каждый коэффициент на 8: $16 : 8 = 2$, $40 : 8 = 5$.",
+        "layer": 1
+       },
+       {
+        "text": "Записываем: $16x + 40y = 8(2x + 5y)$. Проверка: $8 \\cdot 2x = 16x$, $8 \\cdot 5y = 40y$.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "$8(2x + 5y)$"
+     }
+    },
+    {
+     "id": "q11t2",
+     "text": "Вынеси за скобки наибольший общий делитель коэффициентов: $27a + 18b$",
+     "hint": "Найди НОД коэффициентов. Потом раздели на него каждый коэффициент.",
+     "type": "choice",
+     "options": [
+      {
+       "id": "a",
+       "text": "$45ab$",
+       "why": "Складывать $27a$ и $18b$ нельзя: буквы разные. Нужно вынести общий множитель за скобки."
+      },
+      {
+       "id": "b",
+       "text": "$3(9a + 6b)$",
+       "why": "Равенство верное, но 3 — не **наибольший** общий делитель: числа 9 и 6 ещё делятся на 3."
+      },
+      {
+       "id": "c",
+       "text": "$9(3a + 2b)$"
+      }
+     ],
+     "answer": "c",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">НОД коэффициентов</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">НОД(27; 18) = 9</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Делим</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">27 : 9 = 3, &nbsp; 18 : 9 = 2</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Ответ</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">9(3a + 2b)</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "НОД(27; 18) = 9.",
+        "layer": 0
+       },
+       {
+        "text": "Делим каждый коэффициент на 9: $27 : 9 = 3$, $18 : 9 = 2$.",
+        "layer": 1
+       },
+       {
+        "text": "Записываем: $27a + 18b = 9(3a + 2b)$. Проверка: $9 \\cdot 3a = 27a$, $9 \\cdot 2b = 18b$.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "$9(3a + 2b)$"
+     }
+    }
+   ]
+  },
+  {
+   "id": "q12",
+   "text": "Раскрой скобки: чему равно $7(2a + 3b)$?",
+   "hint": "Число перед скобкой умножают на каждое слагаемое в скобках.",
+   "type": "choice",
+   "options": [
+    {
+     "id": "a",
+     "text": "$14a + 3b$",
+     "why": "Ты умножил на 7 только первое слагаемое. Множитель перед скобкой умножают на каждое слагаемое."
+    },
+    {
+     "id": "b",
+     "text": "$9a + 10b$",
+     "why": "Ты прибавил 7, а нужно умножить."
+    },
+    {
+     "id": "c",
+     "text": "$14a + 21b$"
+    }
+   ],
+   "answer": "c",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Первое слагаемое</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">7 · 2a = 14a</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Второе слагаемое</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">7 · 3b = 21b</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Ответ</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">14a + 21b</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "Умножаем 7 на первое слагаемое: $7 \\cdot 2a = 14a$.",
+      "layer": 0
+     },
+     {
+      "text": "Умножаем 7 на второе: $7 \\cdot 3b = 21b$. Получаем $14a + 21b$.",
+      "layer": 2
+     }
+    ],
+    "answerLine": "$14a + 21b$"
+   },
+   "order": 12,
+   "subtopic": "Проверка раскрытием скобок",
+   "lesson": {
+    "title": "Раскрытие скобок — проверка для вынесения",
+    "text": "Число перед скобкой умножают на **каждое** слагаемое в скобках. $5(2a + 3b) = 5 \\cdot 2a + 5 \\cdot 3b = 10a + 15b$. Это действие, обратное вынесению за скобки. Поэтому им удобно проверять себя: вынес множитель — раскрой скобки обратно. Если получилось исходное выражение, всё верно. Ловушка: умножить только первое слагаемое и забыть про второе.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Пример</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">5(2a + 3b)</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Первое</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">5 · 2a = 10a</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Второе</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">5 · 3b = 15b</td></tr><tr data-step=\"3\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Итог</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">10a + 15b</td></tr></table>"
+    },
+    "remember": "множитель перед скобкой умножается на каждое слагаемое."
+   },
+   "twins": [
+    {
+     "id": "q12t1",
+     "text": "Раскрой скобки: чему равно $4(3x + 5y)$?",
+     "hint": "Число перед скобкой умножают на каждое слагаемое в скобках.",
+     "type": "choice",
+     "options": [
+      {
+       "id": "a",
+       "text": "$12x + 20y$"
+      },
+      {
+       "id": "b",
+       "text": "$12x + 5y$",
+       "why": "Ты умножил на 4 только первое слагаемое. Множитель перед скобкой умножают на каждое слагаемое."
+      },
+      {
+       "id": "c",
+       "text": "$7x + 9y$",
+       "why": "Ты прибавил 4, а нужно умножить."
+      }
+     ],
+     "answer": "a",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Первое слагаемое</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">4 · 3x = 12x</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Второе слагаемое</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">4 · 5y = 20y</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Ответ</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">12x + 20y</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Умножаем 4 на первое слагаемое: $4 \\cdot 3x = 12x$.",
+        "layer": 0
+       },
+       {
+        "text": "Умножаем 4 на второе: $4 \\cdot 5y = 20y$. Получаем $12x + 20y$.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "$12x + 20y$"
+     }
+    },
+    {
+     "id": "q12t2",
+     "text": "Раскрой скобки: чему равно $6(2a + 7b)$?",
+     "hint": "Число перед скобкой умножают на каждое слагаемое в скобках.",
+     "type": "choice",
+     "options": [
+      {
+       "id": "a",
+       "text": "$8a + 13b$",
+       "why": "Ты прибавил 6, а нужно умножить."
+      },
+      {
+       "id": "b",
+       "text": "$12a + 42b$"
+      },
+      {
+       "id": "c",
+       "text": "$12a + 7b$",
+       "why": "Ты умножил на 6 только первое слагаемое. Множитель перед скобкой умножают на каждое слагаемое."
+      }
+     ],
+     "answer": "b",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Первое слагаемое</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">6 · 2a = 12a</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Второе слагаемое</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px\">6 · 7b = 42b</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;color:var(--muted)\">Ответ</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:16px;font-weight:700;color:var(--ok)\">12a + 42b</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Умножаем 6 на первое слагаемое: $6 \\cdot 2a = 12a$.",
+        "layer": 0
+       },
+       {
+        "text": "Умножаем 6 на второе: $6 \\cdot 7b = 42b$. Получаем $12a + 42b$.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "$12a + 42b$"
+     }
+    }
+   ]
+  }
+ ]
+}

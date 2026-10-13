@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>НОД: работа над ошибками</title>
+<style>
+/* Макет: одна колонка; сначала разбор самой работы, потом тема по шагам, в конце кнопка теста */
+:root{
+  --bg:#f0f2ee; --card:#fafbf8; --ink:#1c2620; --muted:#586459; --line:#ced6cc;
+  --acc:#2c6e49; --acc-soft:#dcebdf; --pen:#b3401f; --pen-soft:#f6e3db;
+  --display:"Arial Narrow","Roboto Condensed",Arial,sans-serif;
+  --body:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){ :root{
+  --bg:#141a16; --card:#1c2520; --ink:#e5ece6; --muted:#9db0a1; --line:#2f3d34;
+  --acc:#6fc494; --acc-soft:#1e3a2a; --pen:#f08a62; --pen-soft:#43261b; color-scheme:dark } }
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.6}
+.wrap{max-width:700px;margin:0 auto;padding-inline:18px;padding-block:28px 56px;display:flex;flex-direction:column;gap:22px}
+h1{font-family:var(--display);font-size:clamp(30px,7vw,42px);line-height:1.1;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-size:27px;line-height:1.15;margin:0 0 10px;text-wrap:balance}
+h3{font-size:18px;margin:16px 0 6px}
+p{margin:0 0 10px;max-width:62ch}
+.kicker{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--acc);font-weight:700;margin:0}
+.lead{color:var(--muted);margin:0}
+section{background:var(--card);border:1px solid var(--line);padding:20px 18px}
+section.top{border-top:4px solid var(--acc)}
+.tw{overflow-x:auto;margin:8px 0 12px}
+table{border-collapse:collapse;width:100%;font-size:16px}
+th,td{text-align:left;vertical-align:top;padding:7px 9px;border-bottom:1px solid var(--line)}
+th{color:var(--muted);font-weight:600}
+.okc{color:var(--acc);font-weight:700} .bad{color:var(--pen);font-weight:700}
+.m{font-size:21px;font-weight:600;padding:10px 14px;margin:8px 0 12px;background:var(--acc-soft);border-left:4px solid var(--acc);overflow-x:auto;white-space:nowrap;font-variant-numeric:tabular-nums}
+.m .c{display:inline-block;border:2px solid var(--pen);border-radius:50%;min-width:1.5em;text-align:center;color:var(--pen)}
+.rule{border-left:4px solid var(--acc);background:var(--acc-soft);padding:10px 14px;margin:10px 0}
+.trap{border-left:4px solid var(--pen);background:var(--pen-soft);padding:10px 14px;margin:12px 0}
+.trap b{color:var(--pen)}
+ol,ul{margin:0 0 10px;padding-left:24px} li{margin-bottom:5px}
+.ex{background:var(--bg);border:1px dashed var(--line);padding:12px 14px;margin:12px 0}
+.ex p{margin:0 0 6px} .ex .h{font-weight:700} .ans{color:var(--acc);font-weight:700}
+.col{display:inline-grid;grid-template-columns:auto auto;column-gap:0;font-variant-numeric:tabular-nums;font-size:19px;margin:4px 26px 8px 0;vertical-align:top}
+.col span{padding:1px 10px;text-align:right}
+.col span:nth-child(odd){border-right:2px solid var(--ink)}
+.col span:nth-child(even){text-align:left;color:var(--acc);font-weight:700}
+details{border:1px solid var(--line);padding:10px 14px;margin:8px 0;background:var(--bg)}
+summary{cursor:pointer;font-weight:600}
+details p{margin:8px 0 0}
+.finish{background:var(--card);border:2px solid var(--acc);padding:20px 18px;display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.go{display:inline-block;background:var(--acc);color:var(--bg);font-weight:700;font-size:19px;text-decoration:none;padding:14px 26px;border-radius:6px}
+.go:focus-visible, summary:focus-visible{outline:3px solid var(--pen);outline-offset:3px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="kicker">Математика · 5 класс · работа над ошибками</p>
+  <h1>Руслан, доводим НОД до ответа</h1>
+  <p class="lead">Сначала прочитай объяснение — это 10 минут. Кнопка «Начать тест» стоит в самом конце. В тесте 12 вопросов, после каждого ответа будет разбор.</p>
+
+  <section class="top">
+    <h2>Что получилось в работе</h2>
+    <div class="tw"><table>
+      <tr><th>Задание</th><th>Что ты сделал</th><th>Итог</th></tr>
+      <tr><td>1. (6 · 2)³</td><td>6 · 2 = 12, потом 12 · 12 · 12 = 1728</td><td class="okc">верно</td></tr>
+      <tr><td>2. НОД(36; 54)</td><td>разложил оба числа правильно, обвёл общие множители</td><td class="bad">не перемножил</td></tr>
+      <tr><td>3. НОД по готовым разложениям</td><td>обвёл общие множители</td><td class="bad">не перемножил</td></tr>
+      <tr><td>4. 22a + 20b</td><td>сложил коэффициенты: 42</td><td class="bad">нужно было вынести за скобки</td></tr>
+    </table></div>
+    <p>Самое трудное — разложить числа на множители — ты умеешь. Не хватило двух вещей: последнего шага в НОД и умения выносить число за скобки. Их и разберём.</p>
+  </section>
+
+  <section>
+    <h2>1. Что такое НОД</h2>
+    <p><b>Делитель</b> числа — это число, на которое оно делится без остатка. У 12 делители: 1, 2, 3, 4, 6, 12. У 18 делители: 1, 2, 3, 6, 9, 18.</p>
+    <p><b>Общие делители</b> — те, что есть в обоих списках: 1, 2, 3, 6. Самый большой из них — 6.</p>
+    <div class="rule"><b>НОД</b> — наибольший общий делитель. Это самое большое число, на которое делятся оба числа. НОД(12; 18) = 6.</div>
+    <p>Пример из жизни: есть 12 яблок и 18 груш. Нужно собрать одинаковые наборы так, чтобы ничего не осталось. Больше всего наборов получится 6: в каждом 2 яблока и 3 груши.</p>
+    <p>Главное: <b>НОД — это число</b>. Не кружки и не список множителей, а одно число в ответе.</p>
+  </section>
+
+  <section>
+    <h2>2. Как найти НОД: четыре шага</h2>
+    <p>Для больших чисел выписывать все делители долго. Быстрее разложить числа на простые множители. Простое число делится только на 1 и на себя: 2, 3, 5, 7, 11…</p>
+    <ol>
+      <li>Разложи первое число на простые множители.</li>
+      <li>Разложи второе число.</li>
+      <li>Обведи общие множители парами: один из первого числа, такой же из второго.</li>
+      <li><b>Перемножь обведённые множители</b> и запиши: НОД = число.</li>
+    </ol>
+    <h3>Твоё задание 2: НОД(36; 54)</h3>
+    <p>Шаги 1 и 2 — делим столбиком на простые числа, как ты и делал:</p>
+    <div>
+      <div class="col"><span>36</span><span>2</span><span>18</span><span>2</span><span>9</span><span>3</span><span>3</span><span>3</span><span>1</span><span></span></div>
+      <div class="col"><span>54</span><span>2</span><span>27</span><span>3</span><span>9</span><span>3</span><span>3</span><span>3</span><span>1</span><span></span></div>
+    </div>
+    <p>Шаг 3 — обводим пары:</p>
+    <div class="m">36 = <span class="c">2</span> · 2 · <span class="c">3</span> · <span class="c">3</span><br>54 = <span class="c">2</span> · <span class="c">3</span> · <span class="c">3</span> · 3</div>
+    <p>У двойки пара одна: в числе 54 двойка только одна, поэтому вторая двойка из 36 остаётся без пары. У тройки пары две. Третья тройка из 54 остаётся без пары.</p>
+    <p>Шаг 4 — тот, которого не было в работе:</p>
+    <div class="m">НОД(36; 54) = 2 · 3 · 3 = 18</div>
+    <p>Проверка: 36 : 18 = 2 и 54 : 18 = 3. Оба делятся — верно.</p>
+    <div class="trap"><b>Запомни.</b> Обвёл множители — это ещё не ответ. Учитель так и написал: «А посчитать?» Всегда дописывай строку «НОД = …» с числом.</div>
+    <div class="trap"><b>Не путай.</b> Общие множители перемножают, а не складывают и не считают, сколько их. 2 · 3 · 3 = 18, а не 2 + 3 + 3 = 8 и не «три множителя».</div>
+  </section>
+
+  <section>
+    <h2>3. НОД, когда разложения уже даны со степенями</h2>
+    <p>Степень — короткая запись одинаковых множителей: 2² = 2 · 2, 3² = 3 · 3, 2³ = 2 · 2 · 2.</p>
+    <h3>Твоё задание 3</h3>
+    <div class="m">a = 2² · 3 · 5<br>b = 2 · 3² · 5</div>
+    <p>Распишем без степеней и обведём пары:</p>
+    <div class="m">a = <span class="c">2</span> · 2 · <span class="c">3</span> · <span class="c">5</span><br>b = <span class="c">2</span> · <span class="c">3</span> · 3 · <span class="c">5</span></div>
+    <p>Пары: одна двойка, одна тройка, одна пятёрка. Перемножаем:</p>
+    <div class="m">НОД(a; b) = 2 · 3 · 5 = 30</div>
+    <div class="rule"><b>Правило покороче.</b> В НОД берём только те простые числа, которые есть в обоих разложениях. Каждое — в <b>меньшей</b> степени. Потом перемножаем.</div>
+    <p>Почему в меньшей? У числа a две двойки, у числа b одна. Общей может быть только одна — второй двойке не с кем встать в пару.</p>
+    <div class="ex">
+      <p class="h">Ещё пример</p>
+      <p>a = 2³ · 3, b = 2² · 3² · 7.</p>
+      <p>Двойка: 2³ и 2² — меньшая степень 2² = 4.</p>
+      <p>Тройка: 3 и 3² — меньшая степень 3.</p>
+      <p>Семёрка есть только в b — в НОД не входит.</p>
+      <p class="ans">НОД(a; b) = 2² · 3 = 4 · 3 = 12.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>4. Вынесение за скобки</h2>
+    <h3>Что такое коэффициент</h3>
+    <p>В выражении 22a + 20b числа 22 и 20 стоят перед буквами. Они называются <b>коэффициентами</b>. Запись 22a значит «22 умножить на a».</p>
+    <div class="trap"><b>Почему 42 — неверно.</b> Сложить 22a и 20b нельзя: буквы разные. Это как 22 яблока и 20 груш — «42 яблока» не получится. В задании и не просили складывать. Просили вынести общий множитель за скобки.</div>
+    <h3>Как выносить: три шага</h3>
+    <ol>
+      <li>Найди НОД коэффициентов.</li>
+      <li>Раздели на него каждый коэффициент.</li>
+      <li>Запиши НОД перед скобкой, а в скобках — то, что получилось после деления.</li>
+    </ol>
+    <h3>Твоё задание 4: 22a + 20b</h3>
+    <p>Шаг 1. 22 = 2 · 11, 20 = 2 · 2 · 5. Общий множитель один — двойка. НОД(22; 20) = 2.</p>
+    <p>Шаг 2. 22 : 2 = 11, 20 : 2 = 10.</p>
+    <p>Шаг 3.</p>
+    <div class="m">22a + 20b = 2(11a + 10b)</div>
+    <p><b>Проверка.</b> Раскрой скобки обратно: число перед скобкой умножаем на каждое слагаемое. 2 · 11a = 22a, 2 · 10b = 20b. Получилось 22a + 20b — то же выражение. Значит, верно.</p>
+    <div class="ex">
+      <p class="h">Ещё пример: 18a + 24b</p>
+      <p>18 = 2 · 3 · 3, 24 = 2 · 2 · 2 · 3. Общие множители: 2 и 3. НОД = 2 · 3 = 6.</p>
+      <p>18 : 6 = 3, 24 : 6 = 4.</p>
+      <p class="ans">18a + 24b = 6(3a + 4b).</p>
+      <p>Если вынести только 2, получится 2(9a + 12b). Равенство верное, но 2 — не наибольший общий делитель: 9 и 12 ещё делятся на 3.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Проверь себя перед тестом</h2>
+    <p>Ответь про себя, потом открой ответ.</p>
+    <details><summary>Ты обвёл общие множители 2, 2 и 3. Что делать дальше?</summary><p>Перемножить: 2 · 2 · 3 = 12. И записать: НОД = 12.</p></details>
+    <details><summary>В числе a есть 5², в числе b есть 5. Что войдёт в НОД?</summary><p>5 — меньшая степень. Общая пятёрка только одна.</p></details>
+    <details><summary>Можно ли сложить 15x и 35y и получить 50?</summary><p>Нельзя: буквы разные. Можно вынести НОД за скобки: 5(3x + 7y).</p></details>
+    <details><summary>Как проверить, что множитель вынесен верно?</summary><p>Раскрыть скобки обратно. Должно получиться исходное выражение.</p></details>
+  </section>
+
+  <div class="finish">
+    <b>Всё прочитал? Теперь тест.</b>
+    <span>12 вопросов. Там есть и твои задания из работы — теперь ты доведёшь их до ответа.</span>
+    <a class="go" id="go" href="./?kid=k5&amp;test=k5-math-nod-povtor-2026-10-13&amp;read=1">Начать тест</a>
+  </div>
+</div>
+<script>
+document.getElementById("go").addEventListener("click", function(){
+  try { localStorage.setItem("intro-read:k5-math-nod-povtor-2026-10-13", "1"); } catch(e){}
+});
+</script>
+</body>
+</html>
