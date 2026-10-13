@@ -1,0 +1,2038 @@
+{
+ "test": {
+  "id": "k8-geom-parallelogramm-2-2026-10-13",
+  "kid": "k8",
+  "grade": 8,
+  "subject": "Геометрия",
+  "topic": "Многоугольники и параллелограмм",
+  "title": "Проверка 2: многоугольники и параллелограмм",
+  "source": "Геометрия 8 кл., §1–5: те же типы заданий, новые числа. Проходной результат — 12 из 14",
+  "createdAt": "2026-10-13T18:30:00+00:00"
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "text": "Простая незамкнутая ломаная имеет 12 вершин. Сколько у неё сторон?",
+   "hint": "Нарисуй ломаную из 3 вершин и посчитай стороны. Потом из 4.",
+   "type": "number",
+   "answer": 11,
+   "tolerance": 0.001,
+   "typicalWrong": [
+    {
+     "value": 12,
+     "why": "Столько сторон было бы у замкнутой ломаной. У незамкнутой последняя вершина не соединена с первой — сторон на одну меньше."
+    },
+    {
+     "value": 13,
+     "why": "Сторон не больше, а меньше, чем вершин: каждая сторона соединяет две соседние вершины."
+    }
+   ],
+   "genericWrong": "Перечитай условие и пройди решение по шагам.",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">3 вершины</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">2 стороны</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">4 вершины</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">3 стороны</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">12 вершин</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;font-weight:700;color:var(--ok)\">12 − 1 = 11</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "У незамкнутой ломаной каждая сторона соединяет две соседние вершины: 2 вершины — 1 сторона, 3 вершины — 2 стороны.",
+      "layer": 0
+     },
+     {
+      "text": "Сторон всегда на одну меньше, чем вершин: $12 - 1 = 11$.",
+      "layer": 2
+     }
+    ],
+    "answerLine": "11"
+   },
+   "order": 1,
+   "subtopic": "Вершины и стороны ломаной",
+   "lesson": {
+    "title": "Ломаная: вершины и стороны",
+    "text": "Ломаная — фигура из отрезков, идущих друг за другом: конец первого — начало второго, конец второго — начало третьего. Отрезки называют сторонами ломаной, их концы — вершинами. Простая ломаная не пересекает сама себя. Замкнутая ломаная — та, у которой конец последнего отрезка совпадает с началом первого. Счёт простой. У **незамкнутой** ломаной вершин на одну больше, чем сторон: у одного отрезка два конца. У **замкнутой** вершин и сторон поровну, как у треугольника. Пример: незамкнутая ломаная из 6 сторон имеет 7 вершин, а замкнутая из 6 сторон — 6 вершин.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Ломаная</th><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Сторон</th><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Вершин</th></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">незамкнутая</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">n</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">n + 1</td></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">замкнутая</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">n</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">n</td></tr></table>"
+    },
+    "remember": "незамкнутая: вершин на 1 больше, чем сторон; замкнутая: поровну."
+   },
+   "twins": [
+    {
+     "id": "q1t1",
+     "text": "Простая незамкнутая ломаная имеет 9 сторон. Сколько у неё вершин?",
+     "hint": "У одного отрезка 2 конца. У ломаной из двух отрезков 3 вершины.",
+     "type": "number",
+     "answer": 10,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 9,
+       "why": "Столько вершин было бы у замкнутой ломаной. У незамкнутой есть начало и конец — вершин на одну больше."
+      },
+      {
+       "value": 8,
+       "why": "Наоборот: вершин больше, чем сторон. У одной стороны уже два конца."
+      }
+     ],
+     "genericWrong": "Перечитай условие и пройди решение по шагам.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">1 сторона</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">2 вершины</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">2 стороны</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">3 вершины</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">9 сторон</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;font-weight:700;color:var(--ok)\">9 + 1 = 10</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "У незамкнутой ломаной: 1 сторона — 2 вершины, 2 стороны — 3 вершины.",
+        "layer": 0
+       },
+       {
+        "text": "Вершин всегда на одну больше, чем сторон: $9 + 1 = 10$.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "10"
+     }
+    },
+    {
+     "id": "q1t2",
+     "text": "Простая **замкнутая** ломаная имеет 15 сторон. Сколько у неё вершин?",
+     "hint": "Вспомни треугольник: это замкнутая ломаная из трёх сторон.",
+     "type": "number",
+     "answer": 15,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 16,
+       "why": "Так было бы у незамкнутой ломаной. У замкнутой конец последнего отрезка совпадает с началом первого — лишней вершины нет."
+      },
+      {
+       "value": 14,
+       "why": "У замкнутой ломаной вершин ровно столько же, сколько сторон."
+      }
+     ],
+     "genericWrong": "Перечитай условие и пройди решение по шагам.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Треугольник</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">3 стороны, 3 вершины</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Четырёхугольник</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">4 стороны, 4 вершины</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">15 сторон</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;font-weight:700;color:var(--ok)\">15 вершин</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Замкнутая ломаная: конец последнего отрезка совпадает с началом первого.",
+        "layer": 0
+       },
+       {
+        "text": "Поэтому вершин столько же, сколько сторон (как у треугольника: 3 и 3). Ответ: 15.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "15"
+     }
+    }
+   ]
+  },
+  {
+   "id": "q2",
+   "text": "Ломаная состоит из 4 сторон, их длины подписаны на рисунке: 5, 3, 6, 2. Найди длину ломаной.",
+   "hint": "Длина ломаной — это сумма длин всех её сторон.",
+   "figure": {
+    "kind": "svg",
+    "svg": "<svg viewBox=\"0 0 400 190\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polyline points=\"30,150 65.0,89.1 102.8,107.6 153.2,40.4 177.0,55.2\" style=\"fill:none;stroke:var(--accent);stroke-width:3\"/><text x=\"33.5\" y=\"115.55\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">5</text><text x=\"97.9\" y=\"92.35\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">3</text><text x=\"114.0\" y=\"70.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">6</text><text x=\"179.1\" y=\"41.8\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">2</text><circle cx=\"30\" cy=\"150\" r=\"4\" style=\"fill:var(--ink)\"/><circle cx=\"65.0\" cy=\"89.1\" r=\"4\" style=\"fill:var(--ink)\"/><circle cx=\"102.8\" cy=\"107.6\" r=\"4\" style=\"fill:var(--ink)\"/><circle cx=\"153.2\" cy=\"40.4\" r=\"4\" style=\"fill:var(--ink)\"/><circle cx=\"177.0\" cy=\"55.2\" r=\"4\" style=\"fill:var(--ink)\"/></svg>"
+   },
+   "type": "number",
+   "answer": 16,
+   "tolerance": 0.001,
+   "typicalWrong": [
+    {
+     "value": 14,
+     "why": "Ты пропустил последнюю сторону. Складывать нужно все стороны."
+    },
+    {
+     "value": 6,
+     "why": "Это длина самой большой стороны. Длина ломаной — сумма длин всех сторон."
+    },
+    {
+     "value": 4,
+     "why": "Это число сторон. А нужна сумма их длин."
+    }
+   ],
+   "genericWrong": "Перечитай условие и пройди решение по шагам.",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Стороны</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">5, 3, 6, 2</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Складываем</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">5 + 3 + 6 + 2</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Длина</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;font-weight:700;color:var(--ok)\">16</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "Длина ломаной — сумма длин всех её сторон.",
+      "layer": 0
+     },
+     {
+      "text": "$5 + 3 + 6 + 2 = 16$.",
+      "layer": 2
+     }
+    ],
+    "answerLine": "16"
+   },
+   "order": 2,
+   "subtopic": "Длина ломаной",
+   "lesson": {
+    "title": "Длина ломаной",
+    "text": "Длина ломаной — это сумма длин всех её сторон. Чтобы её найти, нужно сложить длины всех отрезков, из которых ломаная состоит. Ни одну сторону пропускать нельзя. Пример: стороны 2, 7 и 5 — длина $2 + 7 + 5 = 14$. У замкнутой ломаной, которая ограничивает многоугольник, эта сумма называется периметром многоугольника.",
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg viewBox=\"0 0 400 190\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polyline points=\"30,150 44.0,125.6 132.2,168.8 174.2,112.8\" style=\"fill:none;stroke:var(--accent);stroke-width:3\"/><text x=\"23.0\" y=\"133.8\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">2</text><text x=\"102.1\" y=\"141.2\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">7</text><text x=\"139.2\" y=\"136.8\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">5</text><circle cx=\"30\" cy=\"150\" r=\"4\" style=\"fill:var(--ink)\"/><circle cx=\"44.0\" cy=\"125.6\" r=\"4\" style=\"fill:var(--ink)\"/><circle cx=\"132.2\" cy=\"168.8\" r=\"4\" style=\"fill:var(--ink)\"/><circle cx=\"174.2\" cy=\"112.8\" r=\"4\" style=\"fill:var(--ink)\"/></svg>"
+    },
+    "remember": "длина ломаной = сумма длин всех сторон."
+   },
+   "twins": [
+    {
+     "id": "q2t1",
+     "text": "Ломаная состоит из 3 сторон, их длины подписаны на рисунке: 3, 7, 4. Найди длину ломаной.",
+     "hint": "Длина ломаной — это сумма длин всех её сторон.",
+     "figure": {
+      "kind": "svg",
+      "svg": "<svg viewBox=\"0 0 400 190\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polyline points=\"30,150 51.0,113.5 139.2,156.6 172.8,111.8\" style=\"fill:none;stroke:var(--accent);stroke-width:3\"/><text x=\"26.5\" y=\"127.75\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">3</text><text x=\"109.1\" y=\"129.05\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">7</text><text x=\"142.0\" y=\"130.2\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">4</text><circle cx=\"30\" cy=\"150\" r=\"4\" style=\"fill:var(--ink)\"/><circle cx=\"51.0\" cy=\"113.5\" r=\"4\" style=\"fill:var(--ink)\"/><circle cx=\"139.2\" cy=\"156.6\" r=\"4\" style=\"fill:var(--ink)\"/><circle cx=\"172.8\" cy=\"111.8\" r=\"4\" style=\"fill:var(--ink)\"/></svg>"
+     },
+     "type": "number",
+     "answer": 14,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 10,
+       "why": "Ты пропустил последнюю сторону. Складывать нужно все стороны."
+      },
+      {
+       "value": 7,
+       "why": "Это длина самой большой стороны. Длина ломаной — сумма длин всех сторон."
+      },
+      {
+       "value": 3,
+       "why": "Это число сторон. А нужна сумма их длин."
+      }
+     ],
+     "genericWrong": "Перечитай условие и пройди решение по шагам.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Стороны</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">3, 7, 4</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Складываем</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">3 + 7 + 4</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Длина</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;font-weight:700;color:var(--ok)\">14</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Длина ломаной — сумма длин всех её сторон.",
+        "layer": 0
+       },
+       {
+        "text": "$3 + 7 + 4 = 14$.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "14"
+     }
+    },
+    {
+     "id": "q2t2",
+     "text": "Ломаная состоит из 5 сторон, их длины подписаны на рисунке: 6, 2, 5, 3, 4. Найди длину ломаной.",
+     "hint": "Длина ломаной — это сумма длин всех её сторон.",
+     "figure": {
+      "kind": "svg",
+      "svg": "<svg viewBox=\"0 0 400 190\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polyline points=\"30,150 72.0,76.9 97.2,89.2 139.2,33.2 174.9,55.5 205.7,9.0\" style=\"fill:none;stroke:var(--accent);stroke-width:3\"/><text x=\"37.0\" y=\"109.45\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">6</text><text x=\"98.6\" y=\"77.05000000000001\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">2</text><text x=\"104.19999999999999\" y=\"57.2\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">5</text><text x=\"171.05\" y=\"38.35\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">3</text><text x=\"176.3\" y=\"28.25\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">4</text><circle cx=\"30\" cy=\"150\" r=\"4\" style=\"fill:var(--ink)\"/><circle cx=\"72.0\" cy=\"76.9\" r=\"4\" style=\"fill:var(--ink)\"/><circle cx=\"97.2\" cy=\"89.2\" r=\"4\" style=\"fill:var(--ink)\"/><circle cx=\"139.2\" cy=\"33.2\" r=\"4\" style=\"fill:var(--ink)\"/><circle cx=\"174.9\" cy=\"55.5\" r=\"4\" style=\"fill:var(--ink)\"/><circle cx=\"205.7\" cy=\"9.0\" r=\"4\" style=\"fill:var(--ink)\"/></svg>"
+     },
+     "type": "number",
+     "answer": 20,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 16,
+       "why": "Ты пропустил последнюю сторону. Складывать нужно все стороны."
+      },
+      {
+       "value": 6,
+       "why": "Это длина самой большой стороны. Длина ломаной — сумма длин всех сторон."
+      },
+      {
+       "value": 5,
+       "why": "Это число сторон. А нужна сумма их длин."
+      }
+     ],
+     "genericWrong": "Перечитай условие и пройди решение по шагам.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Стороны</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">6, 2, 5, 3, 4</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Складываем</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">6 + 2 + 5 + 3 + 4</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Длина</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;font-weight:700;color:var(--ok)\">20</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Длина ломаной — сумма длин всех её сторон.",
+        "layer": 0
+       },
+       {
+        "text": "$6 + 2 + 5 + 3 + 4 = 20$.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "20"
+     }
+    }
+   ]
+  },
+  {
+   "id": "q3",
+   "text": "Сколько диагоналей можно провести из одной вершины выпуклого семиугольника?",
+   "hint": "Диагональ соединяет несоседние вершины. К каким вершинам её провести нельзя?",
+   "figure": {
+    "kind": "svg",
+    "svg": "<svg viewBox=\"0 0 380 225\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:380px;margin:0 auto\"><polygon points=\"190.0,24.0 258.8,57.1 275.8,131.6 228.2,191.3 151.8,191.3 104.2,131.6 121.2,57.1\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><circle cx=\"190.0\" cy=\"24.0\" r=\"4\" style=\"fill:var(--pen)\"/></svg>"
+   },
+   "type": "number",
+   "answer": 4,
+   "tolerance": 0.001,
+   "typicalWrong": [
+    {
+     "value": 5,
+     "why": "5 — это число треугольников, на которые диагонали разбивают многоугольник. Самих диагоналей на одну меньше."
+    },
+    {
+     "value": 6,
+     "why": "Ты вычел только саму вершину. Но к двум соседним вершинам идут стороны, а не диагонали."
+    },
+    {
+     "value": 7,
+     "why": "Из вершины нельзя провести диагональ к самой себе и к двум соседним вершинам."
+    }
+   ],
+   "genericWrong": "Перечитай условие и пройди решение по шагам.",
+   "solution": {
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg viewBox=\"0 0 380 225\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:380px;margin:0 auto\"><polygon points=\"190.0,24.0 258.8,57.1 275.8,131.6 228.2,191.3 151.8,191.3 104.2,131.6 121.2,57.1\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"275.8\" y2=\"131.6\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"228.2\" y2=\"191.3\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"151.8\" y2=\"191.3\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"104.2\" y2=\"131.6\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><circle cx=\"190.0\" cy=\"24.0\" r=\"4\" style=\"fill:var(--pen)\"/></svg>"
+    },
+    "steps": [
+     {
+      "text": "Всего вершин 7. Диагональ нельзя провести к самой вершине и к двум соседним: к ним идут стороны.",
+      "layer": 0
+     },
+     {
+      "text": "Остаётся $7 - 3 = 4$ вершин — столько и диагоналей.",
+      "layer": 1
+     }
+    ],
+    "answerLine": "4"
+   },
+   "order": 3,
+   "subtopic": "Диагонали многоугольника",
+   "lesson": {
+    "title": "Диагональ многоугольника",
+    "text": "Диагональ — отрезок, соединяющий две **несоседние** вершины многоугольника. Соседние вершины соединяет сторона, а не диагональ. Из одной вершины $n$-угольника диагональ нельзя провести к ней самой и к двум соседним. Остаётся $n - 3$ вершины — столько диагоналей выходит из одной вершины. Эти диагонали делят многоугольник на $n - 2$ треугольника. Пример: в семиугольнике из одной вершины выходит $7 - 3 = 4$ диагонали, и они делят его на 5 треугольников. Выпуклый многоугольник содержит все свои диагонали.",
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg viewBox=\"0 0 380 225\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:380px;margin:0 auto\"><polygon points=\"190.0,24.0 258.8,57.1 275.8,131.6 228.2,191.3 151.8,191.3 104.2,131.6 121.2,57.1\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"275.8\" y2=\"131.6\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"228.2\" y2=\"191.3\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"151.8\" y2=\"191.3\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"104.2\" y2=\"131.6\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><circle cx=\"190.0\" cy=\"24.0\" r=\"4\" style=\"fill:var(--pen)\"/></svg>"
+    },
+    "remember": "из одной вершины n-угольника выходит n − 3 диагонали, они дают n − 2 треугольника."
+   },
+   "twins": [
+    {
+     "id": "q3t1",
+     "text": "Сколько диагоналей можно провести из одной вершины выпуклого десятиугольника?",
+     "hint": "Диагональ соединяет несоседние вершины. К каким вершинам её провести нельзя?",
+     "figure": {
+      "kind": "svg",
+      "svg": "<svg viewBox=\"0 0 380 225\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:380px;margin:0 auto\"><polygon points=\"190.0,24.0 241.7,40.8 273.7,84.8 273.7,139.2 241.7,183.2 190.0,200.0 138.3,183.2 106.3,139.2 106.3,84.8 138.3,40.8\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><circle cx=\"190.0\" cy=\"24.0\" r=\"4\" style=\"fill:var(--pen)\"/></svg>"
+     },
+     "type": "number",
+     "answer": 7,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 8,
+       "why": "8 — это число треугольников, на которые диагонали разбивают многоугольник. Самих диагоналей на одну меньше."
+      },
+      {
+       "value": 9,
+       "why": "Ты вычел только саму вершину. Но к двум соседним вершинам идут стороны, а не диагонали."
+      },
+      {
+       "value": 10,
+       "why": "Из вершины нельзя провести диагональ к самой себе и к двум соседним вершинам."
+      }
+     ],
+     "genericWrong": "Перечитай условие и пройди решение по шагам.",
+     "solution": {
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg viewBox=\"0 0 380 225\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:380px;margin:0 auto\"><polygon points=\"190.0,24.0 241.7,40.8 273.7,84.8 273.7,139.2 241.7,183.2 190.0,200.0 138.3,183.2 106.3,139.2 106.3,84.8 138.3,40.8\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"273.7\" y2=\"84.8\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"273.7\" y2=\"139.2\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"241.7\" y2=\"183.2\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"190.0\" y2=\"200.0\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"138.3\" y2=\"183.2\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"106.3\" y2=\"139.2\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"106.3\" y2=\"84.8\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><circle cx=\"190.0\" cy=\"24.0\" r=\"4\" style=\"fill:var(--pen)\"/></svg>"
+      },
+      "steps": [
+       {
+        "text": "Всего вершин 10. Диагональ нельзя провести к самой вершине и к двум соседним: к ним идут стороны.",
+        "layer": 0
+       },
+       {
+        "text": "Остаётся $10 - 3 = 7$ вершин — столько и диагоналей.",
+        "layer": 1
+       }
+      ],
+      "answerLine": "7"
+     }
+    },
+    {
+     "id": "q3t2",
+     "text": "Сколько диагоналей можно провести из одной вершины выпуклого девятиугольника?",
+     "hint": "Диагональ соединяет несоседние вершины. К каким вершинам её провести нельзя?",
+     "figure": {
+      "kind": "svg",
+      "svg": "<svg viewBox=\"0 0 380 225\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:380px;margin:0 auto\"><polygon points=\"190.0,24.0 246.6,44.6 276.7,96.7 266.2,156.0 220.1,194.7 159.9,194.7 113.8,156.0 103.3,96.7 133.4,44.6\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><circle cx=\"190.0\" cy=\"24.0\" r=\"4\" style=\"fill:var(--pen)\"/></svg>"
+     },
+     "type": "number",
+     "answer": 6,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 7,
+       "why": "7 — это число треугольников, на которые диагонали разбивают многоугольник. Самих диагоналей на одну меньше."
+      },
+      {
+       "value": 8,
+       "why": "Ты вычел только саму вершину. Но к двум соседним вершинам идут стороны, а не диагонали."
+      },
+      {
+       "value": 9,
+       "why": "Из вершины нельзя провести диагональ к самой себе и к двум соседним вершинам."
+      }
+     ],
+     "genericWrong": "Перечитай условие и пройди решение по шагам.",
+     "solution": {
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg viewBox=\"0 0 380 225\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:380px;margin:0 auto\"><polygon points=\"190.0,24.0 246.6,44.6 276.7,96.7 266.2,156.0 220.1,194.7 159.9,194.7 113.8,156.0 103.3,96.7 133.4,44.6\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"276.7\" y2=\"96.7\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"266.2\" y2=\"156.0\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"220.1\" y2=\"194.7\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"159.9\" y2=\"194.7\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"113.8\" y2=\"156.0\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"103.3\" y2=\"96.7\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><circle cx=\"190.0\" cy=\"24.0\" r=\"4\" style=\"fill:var(--pen)\"/></svg>"
+      },
+      "steps": [
+       {
+        "text": "Всего вершин 9. Диагональ нельзя провести к самой вершине и к двум соседним: к ним идут стороны.",
+        "layer": 0
+       },
+       {
+        "text": "Остаётся $9 - 3 = 6$ вершин — столько и диагоналей.",
+        "layer": 1
+       }
+      ],
+      "answerLine": "6"
+     }
+    }
+   ]
+  },
+  {
+   "id": "q4",
+   "text": "Ромб, у которого углы не прямые, — это правильный многоугольник?",
+   "hint": "Проверь оба условия: стороны и углы.",
+   "type": "choice",
+   "options": [
+    {
+     "id": "a",
+     "text": "Да: у него все стороны равны",
+     "why": "Равных сторон мало. У правильного многоугольника должны быть равны ещё и все углы."
+    },
+    {
+     "id": "b",
+     "text": "Да: любой четырёхугольник правильный",
+     "why": "Правильный четырёхугольник только один — квадрат."
+    },
+    {
+     "id": "c",
+     "text": "Нет: стороны равны, но углы не равны"
+    }
+   ],
+   "answer": "c",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Фигура</th><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Стороны равны</th><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Углы равны</th><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Правильный?</th></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">ромб</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">да</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">нет</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">нет</td></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">прямоугольник</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">нет</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">да</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">нет</td></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">квадрат</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">да</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">да</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">да</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "Правильный многоугольник: все стороны равны и все углы равны.",
+      "layer": 0
+     },
+     {
+      "text": "У такого ромба стороны равны, а углы — нет. Значит, он не правильный.",
+      "layer": 0
+     }
+    ],
+    "answerLine": "Нет: стороны равны, но углы не равны"
+   },
+   "order": 4,
+   "subtopic": "Правильные и выпуклые многоугольники",
+   "lesson": {
+    "title": "Правильный и выпуклый многоугольник",
+    "text": "Многоугольник — фигура, образованная простой замкнутой ломаной вместе с внутренней областью. **Выпуклый** многоугольник вместе с любыми двумя своими точками содержит и весь отрезок между ними; проще говоря, у него нет «вмятин». **Правильный** многоугольник — тот, у которого равны все стороны **и** все углы. Нужны оба условия сразу. У ромба все стороны равны, но углы разные — он не правильный. У прямоугольника все углы равны, но стороны разные — тоже не правильный. Правильный четырёхугольник — это квадрат.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Фигура</th><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Стороны равны</th><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Углы равны</th><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Правильный?</th></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">ромб</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">да</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">нет</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">нет</td></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">прямоугольник</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">нет</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">да</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">нет</td></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">квадрат</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">да</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">да</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">да</td></tr></table>"
+    },
+    "remember": "правильный = все стороны равны И все углы равны."
+   },
+   "twins": [
+    {
+     "id": "q4t1",
+     "text": "Какой треугольник является правильным?",
+     "hint": "Все стороны равны и все углы равны.",
+     "type": "choice",
+     "options": [
+      {
+       "id": "a",
+       "text": "Равносторонний"
+      },
+      {
+       "id": "b",
+       "text": "Равнобедренный",
+       "why": "У равнобедренного треугольника равны только две стороны, а нужны все три."
+      },
+      {
+       "id": "c",
+       "text": "Прямоугольный",
+       "why": "В прямоугольном треугольнике один угол 90°, а два других меньше — углы не равны."
+      }
+     ],
+     "answer": "a",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Фигура</th><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Стороны равны</th><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Углы равны</th><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Правильный?</th></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">ромб</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">да</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">нет</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">нет</td></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">прямоугольник</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">нет</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">да</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">нет</td></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">квадрат</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">да</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">да</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">да</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Правильный многоугольник: все стороны равны и все углы равны.",
+        "layer": 0
+       },
+       {
+        "text": "У равностороннего треугольника три равные стороны и три угла по 60°.",
+        "layer": 0
+       }
+      ],
+      "answerLine": "Равносторонний"
+     }
+    },
+    {
+     "id": "q4t2",
+     "text": "Что такое диагональ многоугольника?",
+     "hint": "Чем диагональ отличается от стороны?",
+     "type": "choice",
+     "options": [
+      {
+       "id": "a",
+       "text": "Отрезок от вершины до середины стороны",
+       "why": "Диагональ соединяет вершину с другой вершиной, а не с серединой стороны."
+      },
+      {
+       "id": "b",
+       "text": "Отрезок, соединяющий две несоседние вершины"
+      },
+      {
+       "id": "c",
+       "text": "Отрезок, соединяющий две соседние вершины",
+       "why": "Соседние вершины соединяет сторона, а не диагональ."
+      }
+     ],
+     "answer": "b",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Фигура</th><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Стороны равны</th><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Углы равны</th><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Правильный?</th></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">ромб</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">да</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">нет</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">нет</td></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">прямоугольник</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">нет</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">да</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">нет</td></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">квадрат</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">да</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">да</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">да</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Сторона соединяет соседние вершины.",
+        "layer": 0
+       },
+       {
+        "text": "Диагональ соединяет две вершины, которые соседними не являются.",
+        "layer": 0
+       }
+      ],
+      "answerLine": "Отрезок, соединяющий две несоседние вершины"
+     }
+    }
+   ]
+  },
+  {
+   "id": "q5",
+   "text": "Чему равна сумма внутренних углов выпуклого восьмиугольника? Ответ в градусах.",
+   "hint": "Проведи диагонали из одной вершины. На сколько треугольников разделится фигура?",
+   "figure": {
+    "kind": "svg",
+    "svg": "<svg viewBox=\"0 0 380 225\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:380px;margin:0 auto\"><polygon points=\"190.0,24.0 252.2,49.8 278.0,112.0 252.2,174.2 190.0,200.0 127.8,174.2 102.0,112.0 127.8,49.8\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><circle cx=\"190.0\" cy=\"24.0\" r=\"4\" style=\"fill:var(--pen)\"/></svg>"
+   },
+   "type": "number",
+   "answer": 1080,
+   "tolerance": 0.001,
+   "typicalWrong": [
+    {
+     "value": 1440,
+     "why": "Ты умножил 180° на 8. Но треугольников получается не 8, а на два меньше: 6."
+    },
+    {
+     "value": 360,
+     "why": "360° — это сумма внешних углов. Спрашивают про внутренние."
+    },
+    {
+     "value": 1260,
+     "why": "Проверь число треугольников: диагонали из одной вершины делят восьмиугольник на 6, а не на 7."
+    }
+   ],
+   "genericWrong": "Перечитай условие и пройди решение по шагам.",
+   "unit": "°",
+   "solution": {
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg viewBox=\"0 0 380 225\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:380px;margin:0 auto\"><polygon points=\"190.0,24.0 252.2,49.8 278.0,112.0 252.2,174.2 190.0,200.0 127.8,174.2 102.0,112.0 127.8,49.8\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"278.0\" y2=\"112.0\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"252.2\" y2=\"174.2\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"190.0\" y2=\"200.0\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"127.8\" y2=\"174.2\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"102.0\" y2=\"112.0\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><circle cx=\"190.0\" cy=\"24.0\" r=\"4\" style=\"fill:var(--pen)\"/></svg>"
+    },
+    "steps": [
+     {
+      "text": "Диагонали из одной вершины делят восьмиугольник на $8 - 2 = 6$ треугольника(ов).",
+      "layer": 0
+     },
+     {
+      "text": "В каждом треугольнике сумма углов 180°.",
+      "layer": 1
+     },
+     {
+      "text": "Сумма углов: $180° \\cdot (8 - 2) = 180° \\cdot 6 = 1080°$.",
+      "layer": 1
+     }
+    ],
+    "answerLine": "1080°"
+   },
+   "order": 5,
+   "subtopic": "Сумма углов многоугольника",
+   "lesson": {
+    "title": "Сумма внутренних углов: 180°(n − 2)",
+    "text": "Сумма углов треугольника равна 180°. Любой выпуклый $n$-угольник можно разрезать диагоналями из одной вершины на $n - 2$ треугольника. Углы этих треугольников вместе как раз составляют все углы многоугольника. Поэтому сумма внутренних углов выпуклого $n$-угольника равна $180°(n - 2)$. Пример: семиугольник. $180° \\cdot (7 - 2) = 900°$. Обратная задача: сумма 900°, найти число сторон. $n - 2 = 900 : 180 = 5$, значит, $n = 7$. У правильного многоугольника все углы равны, поэтому один угол — это сумма, делённая на $n$. Ловушка: умножить 180° на $n$ вместо $n - 2$.",
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg viewBox=\"0 0 380 225\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:380px;margin:0 auto\"><polygon points=\"190.0,24.0 258.8,57.1 275.8,131.6 228.2,191.3 151.8,191.3 104.2,131.6 121.2,57.1\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"275.8\" y2=\"131.6\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"228.2\" y2=\"191.3\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"151.8\" y2=\"191.3\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"104.2\" y2=\"131.6\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><circle cx=\"190.0\" cy=\"24.0\" r=\"4\" style=\"fill:var(--pen)\"/></svg>"
+    },
+    "remember": "сумма углов = 180° · (n − 2); треугольников на два меньше, чем сторон."
+   },
+   "twins": [
+    {
+     "id": "q5t1",
+     "text": "Чему равна сумма внутренних углов выпуклого семиугольника? Ответ в градусах.",
+     "hint": "Проведи диагонали из одной вершины. На сколько треугольников разделится фигура?",
+     "figure": {
+      "kind": "svg",
+      "svg": "<svg viewBox=\"0 0 380 225\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:380px;margin:0 auto\"><polygon points=\"190.0,24.0 258.8,57.1 275.8,131.6 228.2,191.3 151.8,191.3 104.2,131.6 121.2,57.1\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><circle cx=\"190.0\" cy=\"24.0\" r=\"4\" style=\"fill:var(--pen)\"/></svg>"
+     },
+     "type": "number",
+     "answer": 900,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 1260,
+       "why": "Ты умножил 180° на 7. Но треугольников получается не 7, а на два меньше: 5."
+      },
+      {
+       "value": 360,
+       "why": "360° — это сумма внешних углов. Спрашивают про внутренние."
+      },
+      {
+       "value": 1080,
+       "why": "Проверь число треугольников: диагонали из одной вершины делят семиугольник на 5, а не на 6."
+      }
+     ],
+     "genericWrong": "Перечитай условие и пройди решение по шагам.",
+     "unit": "°",
+     "solution": {
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg viewBox=\"0 0 380 225\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:380px;margin:0 auto\"><polygon points=\"190.0,24.0 258.8,57.1 275.8,131.6 228.2,191.3 151.8,191.3 104.2,131.6 121.2,57.1\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"275.8\" y2=\"131.6\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"228.2\" y2=\"191.3\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"151.8\" y2=\"191.3\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"104.2\" y2=\"131.6\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><circle cx=\"190.0\" cy=\"24.0\" r=\"4\" style=\"fill:var(--pen)\"/></svg>"
+      },
+      "steps": [
+       {
+        "text": "Диагонали из одной вершины делят семиугольник на $7 - 2 = 5$ треугольника(ов).",
+        "layer": 0
+       },
+       {
+        "text": "В каждом треугольнике сумма углов 180°.",
+        "layer": 1
+       },
+       {
+        "text": "Сумма углов: $180° \\cdot (7 - 2) = 180° \\cdot 5 = 900°$.",
+        "layer": 1
+       }
+      ],
+      "answerLine": "900°"
+     }
+    },
+    {
+     "id": "q5t2",
+     "text": "Чему равна сумма внутренних углов выпуклого двенадцатиугольника? Ответ в градусах.",
+     "hint": "Проведи диагонали из одной вершины. На сколько треугольников разделится фигура?",
+     "figure": {
+      "kind": "svg",
+      "svg": "<svg viewBox=\"0 0 380 225\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:380px;margin:0 auto\"><polygon points=\"190.0,24.0 234.0,35.8 266.2,68.0 278.0,112.0 266.2,156.0 234.0,188.2 190.0,200.0 146.0,188.2 113.8,156.0 102.0,112.0 113.8,68.0 146.0,35.8\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><circle cx=\"190.0\" cy=\"24.0\" r=\"4\" style=\"fill:var(--pen)\"/></svg>"
+     },
+     "type": "number",
+     "answer": 1800,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 2160,
+       "why": "Ты умножил 180° на 12. Но треугольников получается не 12, а на два меньше: 10."
+      },
+      {
+       "value": 360,
+       "why": "360° — это сумма внешних углов. Спрашивают про внутренние."
+      },
+      {
+       "value": 1980,
+       "why": "Проверь число треугольников: диагонали из одной вершины делят двенадцатиугольник на 10, а не на 11."
+      }
+     ],
+     "genericWrong": "Перечитай условие и пройди решение по шагам.",
+     "unit": "°",
+     "solution": {
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg viewBox=\"0 0 380 225\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:380px;margin:0 auto\"><polygon points=\"190.0,24.0 234.0,35.8 266.2,68.0 278.0,112.0 266.2,156.0 234.0,188.2 190.0,200.0 146.0,188.2 113.8,156.0 102.0,112.0 113.8,68.0 146.0,35.8\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"266.2\" y2=\"68.0\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"278.0\" y2=\"112.0\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"266.2\" y2=\"156.0\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"234.0\" y2=\"188.2\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"190.0\" y2=\"200.0\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"146.0\" y2=\"188.2\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"113.8\" y2=\"156.0\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"102.0\" y2=\"112.0\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"113.8\" y2=\"68.0\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><circle cx=\"190.0\" cy=\"24.0\" r=\"4\" style=\"fill:var(--pen)\"/></svg>"
+      },
+      "steps": [
+       {
+        "text": "Диагонали из одной вершины делят двенадцатиугольник на $12 - 2 = 10$ треугольника(ов).",
+        "layer": 0
+       },
+       {
+        "text": "В каждом треугольнике сумма углов 180°.",
+        "layer": 1
+       },
+       {
+        "text": "Сумма углов: $180° \\cdot (12 - 2) = 180° \\cdot 10 = 1800°$.",
+        "layer": 1
+       }
+      ],
+      "answerLine": "1800°"
+     }
+    }
+   ]
+  },
+  {
+   "id": "q6",
+   "text": "Сумма внутренних углов выпуклого многоугольника равна 1080°. Сколько у него сторон?",
+   "hint": "Формула $180°(n - 2)$. Сначала найди $n - 2$.",
+   "type": "number",
+   "answer": 8,
+   "tolerance": 0.001,
+   "typicalWrong": [
+    {
+     "value": 6,
+     "why": "$1080 : 180 = 6$ — это число треугольников, то есть $n - 2$. Чтобы найти $n$, прибавь 2."
+    },
+    {
+     "value": 3,
+     "why": "Делить нужно на 180°, а не на 360°."
+    },
+    {
+     "value": 7,
+     "why": "После деления на 180 нужно прибавить 2, а не 1."
+    }
+   ],
+   "genericWrong": "Перечитай условие и пройди решение по шагам.",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Формула</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">180 · (n − 2) = 1080</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Делим на 180</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">n − 2 = 6</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Прибавляем 2</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;font-weight:700;color:var(--ok)\">n = 8</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "Сумма углов равна $180°(n - 2)$. Значит, $180(n - 2) = 1080$.",
+      "layer": 0
+     },
+     {
+      "text": "$n - 2 = 1080 : 180 = 6$.",
+      "layer": 1
+     },
+     {
+      "text": "$n = 6 + 2 = 8$.",
+      "layer": 2
+     }
+    ],
+    "answerLine": "8"
+   },
+   "order": 6,
+   "subtopic": "Сумма углов многоугольника",
+   "lesson": {
+    "title": "Сумма внутренних углов: 180°(n − 2)",
+    "text": "Сумма углов треугольника равна 180°. Любой выпуклый $n$-угольник можно разрезать диагоналями из одной вершины на $n - 2$ треугольника. Углы этих треугольников вместе как раз составляют все углы многоугольника. Поэтому сумма внутренних углов выпуклого $n$-угольника равна $180°(n - 2)$. Пример: семиугольник. $180° \\cdot (7 - 2) = 900°$. Обратная задача: сумма 900°, найти число сторон. $n - 2 = 900 : 180 = 5$, значит, $n = 7$. У правильного многоугольника все углы равны, поэтому один угол — это сумма, делённая на $n$. Ловушка: умножить 180° на $n$ вместо $n - 2$.",
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg viewBox=\"0 0 380 225\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:380px;margin:0 auto\"><polygon points=\"190.0,24.0 258.8,57.1 275.8,131.6 228.2,191.3 151.8,191.3 104.2,131.6 121.2,57.1\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"275.8\" y2=\"131.6\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"228.2\" y2=\"191.3\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"151.8\" y2=\"191.3\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"104.2\" y2=\"131.6\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><circle cx=\"190.0\" cy=\"24.0\" r=\"4\" style=\"fill:var(--pen)\"/></svg>"
+    },
+    "remember": "сумма углов = 180° · (n − 2); треугольников на два меньше, чем сторон."
+   },
+   "twins": [
+    {
+     "id": "q6t1",
+     "text": "Сумма внутренних углов выпуклого многоугольника равна 720°. Сколько у него сторон?",
+     "hint": "Формула $180°(n - 2)$. Сначала найди $n - 2$.",
+     "type": "number",
+     "answer": 6,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 4,
+       "why": "$720 : 180 = 4$ — это число треугольников, то есть $n - 2$. Чтобы найти $n$, прибавь 2."
+      },
+      {
+       "value": 2,
+       "why": "Делить нужно на 180°, а не на 360°."
+      },
+      {
+       "value": 5,
+       "why": "После деления на 180 нужно прибавить 2, а не 1."
+      }
+     ],
+     "genericWrong": "Перечитай условие и пройди решение по шагам.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Формула</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">180 · (n − 2) = 720</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Делим на 180</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">n − 2 = 4</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Прибавляем 2</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;font-weight:700;color:var(--ok)\">n = 6</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Сумма углов равна $180°(n - 2)$. Значит, $180(n - 2) = 720$.",
+        "layer": 0
+       },
+       {
+        "text": "$n - 2 = 720 : 180 = 4$.",
+        "layer": 1
+       },
+       {
+        "text": "$n = 4 + 2 = 6$.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "6"
+     }
+    },
+    {
+     "id": "q6t2",
+     "text": "Сумма внутренних углов выпуклого многоугольника равна 1440°. Сколько у него сторон?",
+     "hint": "Формула $180°(n - 2)$. Сначала найди $n - 2$.",
+     "type": "number",
+     "answer": 10,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 8,
+       "why": "$1440 : 180 = 8$ — это число треугольников, то есть $n - 2$. Чтобы найти $n$, прибавь 2."
+      },
+      {
+       "value": 4,
+       "why": "Делить нужно на 180°, а не на 360°."
+      },
+      {
+       "value": 9,
+       "why": "После деления на 180 нужно прибавить 2, а не 1."
+      }
+     ],
+     "genericWrong": "Перечитай условие и пройди решение по шагам.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Формула</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">180 · (n − 2) = 1440</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Делим на 180</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">n − 2 = 8</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Прибавляем 2</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;font-weight:700;color:var(--ok)\">n = 10</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Сумма углов равна $180°(n - 2)$. Значит, $180(n - 2) = 1440$.",
+        "layer": 0
+       },
+       {
+        "text": "$n - 2 = 1440 : 180 = 8$.",
+        "layer": 1
+       },
+       {
+        "text": "$n = 8 + 2 = 10$.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "10"
+     }
+    }
+   ]
+  },
+  {
+   "id": "q7",
+   "text": "Найди угол правильного десятиугольника. Ответ в градусах.",
+   "hint": "Сначала найди сумму всех углов, потом раздели на их число.",
+   "figure": {
+    "kind": "svg",
+    "svg": "<svg viewBox=\"0 0 380 225\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:380px;margin:0 auto\"><polygon points=\"190.0,24.0 241.7,40.8 273.7,84.8 273.7,139.2 241.7,183.2 190.0,200.0 138.3,183.2 106.3,139.2 106.3,84.8 138.3,40.8\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><circle cx=\"190.0\" cy=\"24.0\" r=\"4\" style=\"fill:var(--pen)\"/></svg>"
+   },
+   "type": "number",
+   "answer": 144,
+   "tolerance": 0.001,
+   "typicalWrong": [
+    {
+     "value": 1440,
+     "why": "1440° — это сумма всех углов. У правильного многоугольника углы равны, поэтому сумму надо разделить на 10."
+    },
+    {
+     "value": 36,
+     "why": "36° — это внешний угол. Внутренний равен $180° - $ внешний."
+    },
+    {
+     "value": 180,
+     "why": "180° — развёрнутый угол, у многоугольника таких углов нет."
+    }
+   ],
+   "genericWrong": "Перечитай условие и пройди решение по шагам.",
+   "unit": "°",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Сумма углов</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">180° · (10 − 2) = 1440°</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Углов</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">10</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Один угол</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;font-weight:700;color:var(--ok)\">1440° : 10 = 144°</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "Сумма углов: $180° \\cdot (10 - 2) = 1440°$.",
+      "layer": 0
+     },
+     {
+      "text": "У правильного многоугольника все 10 углов равны.",
+      "layer": 1
+     },
+     {
+      "text": "Один угол: $1440° : 10 = 144°$.",
+      "layer": 2
+     }
+    ],
+    "answerLine": "144°"
+   },
+   "order": 7,
+   "subtopic": "Сумма углов многоугольника",
+   "lesson": {
+    "title": "Сумма внутренних углов: 180°(n − 2)",
+    "text": "Сумма углов треугольника равна 180°. Любой выпуклый $n$-угольник можно разрезать диагоналями из одной вершины на $n - 2$ треугольника. Углы этих треугольников вместе как раз составляют все углы многоугольника. Поэтому сумма внутренних углов выпуклого $n$-угольника равна $180°(n - 2)$. Пример: семиугольник. $180° \\cdot (7 - 2) = 900°$. Обратная задача: сумма 900°, найти число сторон. $n - 2 = 900 : 180 = 5$, значит, $n = 7$. У правильного многоугольника все углы равны, поэтому один угол — это сумма, делённая на $n$. Ловушка: умножить 180° на $n$ вместо $n - 2$.",
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg viewBox=\"0 0 380 225\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:380px;margin:0 auto\"><polygon points=\"190.0,24.0 258.8,57.1 275.8,131.6 228.2,191.3 151.8,191.3 104.2,131.6 121.2,57.1\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"275.8\" y2=\"131.6\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"228.2\" y2=\"191.3\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"151.8\" y2=\"191.3\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><line x1=\"190.0\" y1=\"24.0\" x2=\"104.2\" y2=\"131.6\" data-step=\"1\" style=\"stroke:var(--pen);stroke-width:2;stroke-dasharray:6 5\"/><circle cx=\"190.0\" cy=\"24.0\" r=\"4\" style=\"fill:var(--pen)\"/></svg>"
+    },
+    "remember": "сумма углов = 180° · (n − 2); треугольников на два меньше, чем сторон."
+   },
+   "twins": [
+    {
+     "id": "q7t1",
+     "text": "Найди угол правильного девятиугольника. Ответ в градусах.",
+     "hint": "Сначала найди сумму всех углов, потом раздели на их число.",
+     "figure": {
+      "kind": "svg",
+      "svg": "<svg viewBox=\"0 0 380 225\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:380px;margin:0 auto\"><polygon points=\"190.0,24.0 246.6,44.6 276.7,96.7 266.2,156.0 220.1,194.7 159.9,194.7 113.8,156.0 103.3,96.7 133.4,44.6\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><circle cx=\"190.0\" cy=\"24.0\" r=\"4\" style=\"fill:var(--pen)\"/></svg>"
+     },
+     "type": "number",
+     "answer": 140,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 1260,
+       "why": "1260° — это сумма всех углов. У правильного многоугольника углы равны, поэтому сумму надо разделить на 9."
+      },
+      {
+       "value": 40,
+       "why": "40° — это внешний угол. Внутренний равен $180° - $ внешний."
+      },
+      {
+       "value": 180,
+       "why": "180° — развёрнутый угол, у многоугольника таких углов нет."
+      }
+     ],
+     "genericWrong": "Перечитай условие и пройди решение по шагам.",
+     "unit": "°",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Сумма углов</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">180° · (9 − 2) = 1260°</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Углов</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">9</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Один угол</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;font-weight:700;color:var(--ok)\">1260° : 9 = 140°</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Сумма углов: $180° \\cdot (9 - 2) = 1260°$.",
+        "layer": 0
+       },
+       {
+        "text": "У правильного многоугольника все 9 углов равны.",
+        "layer": 1
+       },
+       {
+        "text": "Один угол: $1260° : 9 = 140°$.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "140°"
+     }
+    },
+    {
+     "id": "q7t2",
+     "text": "Найди угол правильного двенадцатиугольника. Ответ в градусах.",
+     "hint": "Сначала найди сумму всех углов, потом раздели на их число.",
+     "figure": {
+      "kind": "svg",
+      "svg": "<svg viewBox=\"0 0 380 225\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:380px;margin:0 auto\"><polygon points=\"190.0,24.0 234.0,35.8 266.2,68.0 278.0,112.0 266.2,156.0 234.0,188.2 190.0,200.0 146.0,188.2 113.8,156.0 102.0,112.0 113.8,68.0 146.0,35.8\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><circle cx=\"190.0\" cy=\"24.0\" r=\"4\" style=\"fill:var(--pen)\"/></svg>"
+     },
+     "type": "number",
+     "answer": 150,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 1800,
+       "why": "1800° — это сумма всех углов. У правильного многоугольника углы равны, поэтому сумму надо разделить на 12."
+      },
+      {
+       "value": 30,
+       "why": "30° — это внешний угол. Внутренний равен $180° - $ внешний."
+      },
+      {
+       "value": 180,
+       "why": "180° — развёрнутый угол, у многоугольника таких углов нет."
+      }
+     ],
+     "genericWrong": "Перечитай условие и пройди решение по шагам.",
+     "unit": "°",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Сумма углов</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">180° · (12 − 2) = 1800°</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Углов</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">12</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Один угол</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;font-weight:700;color:var(--ok)\">1800° : 12 = 150°</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Сумма углов: $180° \\cdot (12 - 2) = 1800°$.",
+        "layer": 0
+       },
+       {
+        "text": "У правильного многоугольника все 12 углов равны.",
+        "layer": 1
+       },
+       {
+        "text": "Один угол: $1800° : 12 = 150°$.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "150°"
+     }
+    }
+   ]
+  },
+  {
+   "id": "q8",
+   "text": "Внешний угол правильного многоугольника равен 36°. Сколько у него сторон?",
+   "hint": "Сумма внешних углов любого выпуклого многоугольника — 360°.",
+   "type": "number",
+   "answer": 10,
+   "tolerance": 0.001,
+   "typicalWrong": [
+    {
+     "value": 144,
+     "why": "$144°$ — это внутренний угол, а не число сторон."
+    },
+    {
+     "value": 5,
+     "why": "Сумма внешних углов равна 360°, а не 180°."
+    },
+    {
+     "value": 12,
+     "why": "Прибавлять 2 не нужно: формула с $n - 2$ относится к внутренним углам."
+    }
+   ],
+   "genericWrong": "Перечитай условие и пройди решение по шагам.",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Сумма внешних углов</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">360°</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Один внешний угол</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">36°</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Число сторон</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;font-weight:700;color:var(--ok)\">360 : 36 = 10</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "Сумма внешних углов выпуклого многоугольника (по одному при каждой вершине) равна 360°.",
+      "layer": 0
+     },
+     {
+      "text": "У правильного многоугольника все внешние углы равны.",
+      "layer": 1
+     },
+     {
+      "text": "Число сторон: $360° : 36° = 10$.",
+      "layer": 2
+     }
+    ],
+    "answerLine": "10"
+   },
+   "order": 8,
+   "subtopic": "Внешние углы многоугольника",
+   "lesson": {
+    "title": "Внешние углы: в сумме всегда 360°",
+    "text": "Внешний угол многоугольника — угол, смежный с внутренним. Внешний и внутренний угол при одной вершине дают в сумме 180°. Если взять по одному внешнему углу при каждой вершине выпуклого многоугольника, их сумма равна 360° — для любого числа сторон. Почему: всех пар «внутренний + внешний» $n$ штук, это $180° \\cdot n$. Вычитаем внутренние: $180°n - 180°(n - 2) = 360°$. У правильного многоугольника все внешние углы равны, поэтому один внешний угол равен $360° : n$. Пример: внешний угол 30° — сторон $360 : 30 = 12$.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Все пары</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">180° · n</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Внутренние углы</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">180° · (n − 2)</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Внешние углы</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;font-weight:700;color:var(--ok)\">180°n − 180°(n − 2) = 360°</td></tr></table>"
+    },
+    "remember": "сумма внешних углов = 360°; у правильного: число сторон = 360° : внешний угол."
+   },
+   "twins": [
+    {
+     "id": "q8t1",
+     "text": "Внешний угол правильного многоугольника равен 72°. Сколько у него сторон?",
+     "hint": "Сумма внешних углов любого выпуклого многоугольника — 360°.",
+     "type": "number",
+     "answer": 5,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 108,
+       "why": "$108°$ — это внутренний угол, а не число сторон."
+      },
+      {
+       "value": 7,
+       "why": "Прибавлять 2 не нужно: формула с $n - 2$ относится к внутренним углам."
+      }
+     ],
+     "genericWrong": "Перечитай условие и пройди решение по шагам.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Сумма внешних углов</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">360°</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Один внешний угол</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">72°</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Число сторон</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;font-weight:700;color:var(--ok)\">360 : 72 = 5</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Сумма внешних углов выпуклого многоугольника (по одному при каждой вершине) равна 360°.",
+        "layer": 0
+       },
+       {
+        "text": "У правильного многоугольника все внешние углы равны.",
+        "layer": 1
+       },
+       {
+        "text": "Число сторон: $360° : 72° = 5$.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "5"
+     }
+    },
+    {
+     "id": "q8t2",
+     "text": "Внешний угол правильного многоугольника равен 30°. Сколько у него сторон?",
+     "hint": "Сумма внешних углов любого выпуклого многоугольника — 360°.",
+     "type": "number",
+     "answer": 12,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 150,
+       "why": "$150°$ — это внутренний угол, а не число сторон."
+      },
+      {
+       "value": 6,
+       "why": "Сумма внешних углов равна 360°, а не 180°."
+      },
+      {
+       "value": 14,
+       "why": "Прибавлять 2 не нужно: формула с $n - 2$ относится к внутренним углам."
+      }
+     ],
+     "genericWrong": "Перечитай условие и пройди решение по шагам.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Сумма внешних углов</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">360°</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Один внешний угол</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">30°</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Число сторон</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;font-weight:700;color:var(--ok)\">360 : 30 = 12</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Сумма внешних углов выпуклого многоугольника (по одному при каждой вершине) равна 360°.",
+        "layer": 0
+       },
+       {
+        "text": "У правильного многоугольника все внешние углы равны.",
+        "layer": 1
+       },
+       {
+        "text": "Число сторон: $360° : 30° = 12$.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "12"
+     }
+    }
+   ]
+  },
+  {
+   "id": "q9",
+   "text": "В параллелограмме ABCD угол A равен 50°. Найди угол B. Ответ в градусах.",
+   "hint": "Углы A и B прилежат к одной стороне AB.",
+   "figure": {
+    "kind": "svg",
+    "svg": "<svg viewBox=\"0 0 400 215\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polygon points=\"50,170 290,170 350,50 110,50\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><text x=\"36\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">A</text><text x=\"304\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">B</text><text x=\"364\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">C</text><text x=\"96\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">D</text><text x=\"92\" y=\"160\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 15px sans-serif\">50°</text><text x=\"250\" y=\"160\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 16px sans-serif\">?</text></svg>"
+   },
+   "type": "number",
+   "answer": 130,
+   "tolerance": 0.001,
+   "typicalWrong": [
+    {
+     "value": 50,
+     "why": "50° равен противолежащий угол C. А углы A и B прилежат к одной стороне AB — их сумма 180°."
+    },
+    {
+     "value": 40,
+     "why": "Сумма прилежащих углов равна 180°, а не 90°."
+    },
+    {
+     "value": 310,
+     "why": "360° — сумма всех четырёх углов. А на два соседних угла приходится 180°."
+    }
+   ],
+   "genericWrong": "Перечитай условие и пройди решение по шагам.",
+   "unit": "°",
+   "solution": {
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg viewBox=\"0 0 400 215\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polygon points=\"50,170 290,170 350,50 110,50\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><text x=\"36\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">A</text><text x=\"304\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">B</text><text x=\"364\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">C</text><text x=\"96\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">D</text><text x=\"92\" y=\"160\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 15px sans-serif\">50°</text><text x=\"250\" y=\"160\" text-anchor=\"middle\" data-until=\"2\" style=\"fill:var(--pen);font:700 16px sans-serif\">?</text><text x=\"246\" y=\"160\" text-anchor=\"middle\" data-step=\"2\" style=\"fill:var(--ok);font:700 15px sans-serif\">130°</text></svg>"
+    },
+    "steps": [
+     {
+      "text": "Углы A и B прилежат к одной стороне AB. Это внутренние односторонние углы при параллельных AD и BC.",
+      "layer": 0
+     },
+     {
+      "text": "Сумма углов параллелограмма, прилежащих к одной стороне, равна 180°.",
+      "layer": 1
+     },
+     {
+      "text": "$\\angle B = 180° - 50° = 130°$.",
+      "layer": 2
+     }
+    ],
+    "answerLine": "130°"
+   },
+   "order": 9,
+   "subtopic": "Углы параллелограмма",
+   "lesson": {
+    "title": "Углы параллелограмма",
+    "text": "Параллелограмм — четырёхугольник, у которого противолежащие стороны попарно параллельны. Про его углы нужно знать два факта. Первый: сумма углов, прилежащих к одной стороне, равна 180°. Это внутренние односторонние углы при параллельных прямых и секущей. Второй: противолежащие углы равны. Поэтому по одному углу находят все остальные. Пример: $\\angle A = 70°$. Тогда $\\angle C = 70°$ (противолежащий), $\\angle B = \\angle D = 180° - 70° = 110°$. Ловушка: посчитать соседний угол равным данному. Равны только противолежащие углы.",
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg viewBox=\"0 0 400 215\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polygon points=\"50,170 290,170 350,50 110,50\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><text x=\"36\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">A</text><text x=\"304\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">B</text><text x=\"364\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">C</text><text x=\"96\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">D</text><text x=\"92\" y=\"160\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 15px sans-serif\">70°</text><text x=\"246\" y=\"160\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 15px sans-serif\">110°</text><text x=\"312\" y=\"70\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 15px sans-serif\">70°</text><text x=\"134\" y=\"70\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 15px sans-serif\">110°</text></svg>"
+    },
+    "remember": "соседние углы в сумме 180°, противолежащие равны."
+   },
+   "twins": [
+    {
+     "id": "q9t1",
+     "text": "В параллелограмме ABCD угол A равен 75°. Найди угол B. Ответ в градусах.",
+     "hint": "Углы A и B прилежат к одной стороне AB.",
+     "figure": {
+      "kind": "svg",
+      "svg": "<svg viewBox=\"0 0 400 215\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polygon points=\"50,170 290,170 350,50 110,50\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><text x=\"36\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">A</text><text x=\"304\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">B</text><text x=\"364\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">C</text><text x=\"96\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">D</text><text x=\"92\" y=\"160\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 15px sans-serif\">75°</text><text x=\"250\" y=\"160\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 16px sans-serif\">?</text></svg>"
+     },
+     "type": "number",
+     "answer": 105,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 75,
+       "why": "75° равен противолежащий угол C. А углы A и B прилежат к одной стороне AB — их сумма 180°."
+      },
+      {
+       "value": 15,
+       "why": "Сумма прилежащих углов равна 180°, а не 90°."
+      },
+      {
+       "value": 285,
+       "why": "360° — сумма всех четырёх углов. А на два соседних угла приходится 180°."
+      }
+     ],
+     "genericWrong": "Перечитай условие и пройди решение по шагам.",
+     "unit": "°",
+     "solution": {
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg viewBox=\"0 0 400 215\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polygon points=\"50,170 290,170 350,50 110,50\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><text x=\"36\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">A</text><text x=\"304\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">B</text><text x=\"364\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">C</text><text x=\"96\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">D</text><text x=\"92\" y=\"160\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 15px sans-serif\">75°</text><text x=\"250\" y=\"160\" text-anchor=\"middle\" data-until=\"2\" style=\"fill:var(--pen);font:700 16px sans-serif\">?</text><text x=\"246\" y=\"160\" text-anchor=\"middle\" data-step=\"2\" style=\"fill:var(--ok);font:700 15px sans-serif\">105°</text></svg>"
+      },
+      "steps": [
+       {
+        "text": "Углы A и B прилежат к одной стороне AB. Это внутренние односторонние углы при параллельных AD и BC.",
+        "layer": 0
+       },
+       {
+        "text": "Сумма углов параллелограмма, прилежащих к одной стороне, равна 180°.",
+        "layer": 1
+       },
+       {
+        "text": "$\\angle B = 180° - 75° = 105°$.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "105°"
+     }
+    },
+    {
+     "id": "q9t2",
+     "text": "В параллелограмме ABCD угол A равен 125°. Найди угол B. Ответ в градусах.",
+     "hint": "Углы A и B прилежат к одной стороне AB.",
+     "figure": {
+      "kind": "svg",
+      "svg": "<svg viewBox=\"0 0 400 215\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polygon points=\"50,170 290,170 350,50 110,50\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><text x=\"36\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">A</text><text x=\"304\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">B</text><text x=\"364\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">C</text><text x=\"96\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">D</text><text x=\"92\" y=\"160\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 15px sans-serif\">125°</text><text x=\"250\" y=\"160\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 16px sans-serif\">?</text></svg>"
+     },
+     "type": "number",
+     "answer": 55,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 125,
+       "why": "125° равен противолежащий угол C. А углы A и B прилежат к одной стороне AB — их сумма 180°."
+      },
+      {
+       "value": 235,
+       "why": "360° — сумма всех четырёх углов. А на два соседних угла приходится 180°."
+      }
+     ],
+     "genericWrong": "Перечитай условие и пройди решение по шагам.",
+     "unit": "°",
+     "solution": {
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg viewBox=\"0 0 400 215\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polygon points=\"50,170 290,170 350,50 110,50\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><text x=\"36\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">A</text><text x=\"304\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">B</text><text x=\"364\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">C</text><text x=\"96\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">D</text><text x=\"92\" y=\"160\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 15px sans-serif\">125°</text><text x=\"250\" y=\"160\" text-anchor=\"middle\" data-until=\"2\" style=\"fill:var(--pen);font:700 16px sans-serif\">?</text><text x=\"246\" y=\"160\" text-anchor=\"middle\" data-step=\"2\" style=\"fill:var(--ok);font:700 15px sans-serif\">55°</text></svg>"
+      },
+      "steps": [
+       {
+        "text": "Углы A и B прилежат к одной стороне AB. Это внутренние односторонние углы при параллельных AD и BC.",
+        "layer": 0
+       },
+       {
+        "text": "Сумма углов параллелограмма, прилежащих к одной стороне, равна 180°.",
+        "layer": 1
+       },
+       {
+        "text": "$\\angle B = 180° - 125° = 55°$.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "55°"
+     }
+    }
+   ]
+  },
+  {
+   "id": "q10",
+   "text": "Диагональ AC параллелограмма ABCD образует со сторонами AB и AD углы 30° и 40°. Найди угол B. Ответ в градусах.",
+   "hint": "Диагональ делит угол A на две части. Сначала найди весь угол A.",
+   "figure": {
+    "kind": "svg",
+    "svg": "<svg viewBox=\"0 0 400 215\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polygon points=\"50,170 290,170 350,50 110,50\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><text x=\"36\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">A</text><text x=\"304\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">B</text><text x=\"364\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">C</text><text x=\"96\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">D</text><line x1=\"50\" y1=\"170\" x2=\"350\" y2=\"50\" style=\"stroke:var(--accent);stroke-width:2\"/><text x=\"132\" y=\"163\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 14px sans-serif\">30°</text><text x=\"112\" y=\"128\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 14px sans-serif\">40°</text><text x=\"250\" y=\"160\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 16px sans-serif\">?</text></svg>"
+   },
+   "type": "number",
+   "answer": 110,
+   "tolerance": 0.001,
+   "typicalWrong": [
+    {
+     "value": 70,
+     "why": "70° — это угол A. А спрашивают угол B: он прилежит к той же стороне, что и A."
+    },
+    {
+     "value": 150,
+     "why": "Ты вычел только 30°. Угол A состоит из двух частей: 30° и 40°."
+    },
+    {
+     "value": 140,
+     "why": "Ты вычел только 40°. Угол A состоит из двух частей: 30° и 40°."
+    }
+   ],
+   "genericWrong": "Перечитай условие и пройди решение по шагам.",
+   "unit": "°",
+   "solution": {
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg viewBox=\"0 0 400 215\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polygon points=\"50,170 290,170 350,50 110,50\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><text x=\"36\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">A</text><text x=\"304\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">B</text><text x=\"364\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">C</text><text x=\"96\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">D</text><line x1=\"50\" y1=\"170\" x2=\"350\" y2=\"50\" style=\"stroke:var(--accent);stroke-width:2\"/><text x=\"132\" y=\"163\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 14px sans-serif\">30°</text><text x=\"112\" y=\"128\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 14px sans-serif\">40°</text><text x=\"246\" y=\"160\" text-anchor=\"middle\" data-step=\"2\" style=\"fill:var(--ok);font:700 15px sans-serif\">110°</text><text x=\"250\" y=\"160\" text-anchor=\"middle\" data-until=\"2\" style=\"fill:var(--pen);font:700 16px sans-serif\">?</text></svg>"
+    },
+    "steps": [
+     {
+      "text": "Диагональ AC делит угол A на две части: $\\angle A = 30° + 40° = 70°$.",
+      "layer": 0
+     },
+     {
+      "text": "Углы A и B прилежат к одной стороне, их сумма 180°.",
+      "layer": 1
+     },
+     {
+      "text": "$\\angle B = 180° - 70° = 110°$.",
+      "layer": 2
+     }
+    ],
+    "answerLine": "110°"
+   },
+   "order": 10,
+   "subtopic": "Углы параллелограмма",
+   "lesson": {
+    "title": "Углы параллелограмма",
+    "text": "Параллелограмм — четырёхугольник, у которого противолежащие стороны попарно параллельны. Про его углы нужно знать два факта. Первый: сумма углов, прилежащих к одной стороне, равна 180°. Это внутренние односторонние углы при параллельных прямых и секущей. Второй: противолежащие углы равны. Поэтому по одному углу находят все остальные. Пример: $\\angle A = 70°$. Тогда $\\angle C = 70°$ (противолежащий), $\\angle B = \\angle D = 180° - 70° = 110°$. Ловушка: посчитать соседний угол равным данному. Равны только противолежащие углы.",
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg viewBox=\"0 0 400 215\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polygon points=\"50,170 290,170 350,50 110,50\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><text x=\"36\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">A</text><text x=\"304\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">B</text><text x=\"364\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">C</text><text x=\"96\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">D</text><text x=\"92\" y=\"160\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 15px sans-serif\">70°</text><text x=\"246\" y=\"160\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 15px sans-serif\">110°</text><text x=\"312\" y=\"70\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 15px sans-serif\">70°</text><text x=\"134\" y=\"70\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 15px sans-serif\">110°</text></svg>"
+    },
+    "remember": "соседние углы в сумме 180°, противолежащие равны."
+   },
+   "twins": [
+    {
+     "id": "q10t1",
+     "text": "Диагональ AC параллелограмма ABCD образует со сторонами AB и AD углы 18° и 42°. Найди угол B. Ответ в градусах.",
+     "hint": "Диагональ делит угол A на две части. Сначала найди весь угол A.",
+     "figure": {
+      "kind": "svg",
+      "svg": "<svg viewBox=\"0 0 400 215\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polygon points=\"50,170 290,170 350,50 110,50\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><text x=\"36\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">A</text><text x=\"304\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">B</text><text x=\"364\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">C</text><text x=\"96\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">D</text><line x1=\"50\" y1=\"170\" x2=\"350\" y2=\"50\" style=\"stroke:var(--accent);stroke-width:2\"/><text x=\"132\" y=\"163\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 14px sans-serif\">18°</text><text x=\"112\" y=\"128\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 14px sans-serif\">42°</text><text x=\"250\" y=\"160\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 16px sans-serif\">?</text></svg>"
+     },
+     "type": "number",
+     "answer": 120,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 60,
+       "why": "60° — это угол A. А спрашивают угол B: он прилежит к той же стороне, что и A."
+      },
+      {
+       "value": 162,
+       "why": "Ты вычел только 18°. Угол A состоит из двух частей: 18° и 42°."
+      },
+      {
+       "value": 138,
+       "why": "Ты вычел только 42°. Угол A состоит из двух частей: 18° и 42°."
+      }
+     ],
+     "genericWrong": "Перечитай условие и пройди решение по шагам.",
+     "unit": "°",
+     "solution": {
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg viewBox=\"0 0 400 215\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polygon points=\"50,170 290,170 350,50 110,50\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><text x=\"36\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">A</text><text x=\"304\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">B</text><text x=\"364\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">C</text><text x=\"96\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">D</text><line x1=\"50\" y1=\"170\" x2=\"350\" y2=\"50\" style=\"stroke:var(--accent);stroke-width:2\"/><text x=\"132\" y=\"163\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 14px sans-serif\">18°</text><text x=\"112\" y=\"128\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 14px sans-serif\">42°</text><text x=\"246\" y=\"160\" text-anchor=\"middle\" data-step=\"2\" style=\"fill:var(--ok);font:700 15px sans-serif\">120°</text><text x=\"250\" y=\"160\" text-anchor=\"middle\" data-until=\"2\" style=\"fill:var(--pen);font:700 16px sans-serif\">?</text></svg>"
+      },
+      "steps": [
+       {
+        "text": "Диагональ AC делит угол A на две части: $\\angle A = 18° + 42° = 60°$.",
+        "layer": 0
+       },
+       {
+        "text": "Углы A и B прилежат к одной стороне, их сумма 180°.",
+        "layer": 1
+       },
+       {
+        "text": "$\\angle B = 180° - 60° = 120°$.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "120°"
+     }
+    },
+    {
+     "id": "q10t2",
+     "text": "Диагональ AC параллелограмма ABCD образует со сторонами AB и AD углы 35° и 50°. Найди угол B. Ответ в градусах.",
+     "hint": "Диагональ делит угол A на две части. Сначала найди весь угол A.",
+     "figure": {
+      "kind": "svg",
+      "svg": "<svg viewBox=\"0 0 400 215\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polygon points=\"50,170 290,170 350,50 110,50\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><text x=\"36\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">A</text><text x=\"304\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">B</text><text x=\"364\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">C</text><text x=\"96\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">D</text><line x1=\"50\" y1=\"170\" x2=\"350\" y2=\"50\" style=\"stroke:var(--accent);stroke-width:2\"/><text x=\"132\" y=\"163\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 14px sans-serif\">35°</text><text x=\"112\" y=\"128\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 14px sans-serif\">50°</text><text x=\"250\" y=\"160\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 16px sans-serif\">?</text></svg>"
+     },
+     "type": "number",
+     "answer": 95,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 85,
+       "why": "85° — это угол A. А спрашивают угол B: он прилежит к той же стороне, что и A."
+      },
+      {
+       "value": 145,
+       "why": "Ты вычел только 35°. Угол A состоит из двух частей: 35° и 50°."
+      },
+      {
+       "value": 130,
+       "why": "Ты вычел только 50°. Угол A состоит из двух частей: 35° и 50°."
+      }
+     ],
+     "genericWrong": "Перечитай условие и пройди решение по шагам.",
+     "unit": "°",
+     "solution": {
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg viewBox=\"0 0 400 215\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polygon points=\"50,170 290,170 350,50 110,50\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><text x=\"36\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">A</text><text x=\"304\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">B</text><text x=\"364\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">C</text><text x=\"96\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">D</text><line x1=\"50\" y1=\"170\" x2=\"350\" y2=\"50\" style=\"stroke:var(--accent);stroke-width:2\"/><text x=\"132\" y=\"163\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 14px sans-serif\">35°</text><text x=\"112\" y=\"128\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 14px sans-serif\">50°</text><text x=\"246\" y=\"160\" text-anchor=\"middle\" data-step=\"2\" style=\"fill:var(--ok);font:700 15px sans-serif\">95°</text><text x=\"250\" y=\"160\" text-anchor=\"middle\" data-until=\"2\" style=\"fill:var(--pen);font:700 16px sans-serif\">?</text></svg>"
+      },
+      "steps": [
+       {
+        "text": "Диагональ AC делит угол A на две части: $\\angle A = 35° + 50° = 85°$.",
+        "layer": 0
+       },
+       {
+        "text": "Углы A и B прилежат к одной стороне, их сумма 180°.",
+        "layer": 1
+       },
+       {
+        "text": "$\\angle B = 180° - 85° = 95°$.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "95°"
+     }
+    }
+   ]
+  },
+  {
+   "id": "q11",
+   "text": "Две соседние стороны параллелограмма равны 12 см и 7 см. Найди его периметр.",
+   "hint": "Противолежащие стороны параллелограмма равны.",
+   "figure": {
+    "kind": "svg",
+    "svg": "<svg viewBox=\"0 0 400 215\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polygon points=\"50,170 290,170 350,50 110,50\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><text x=\"36\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">A</text><text x=\"304\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">B</text><text x=\"364\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">C</text><text x=\"96\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">D</text><text x=\"170\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">12</text><text x=\"336\" y=\"118\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">7</text></svg>"
+   },
+   "type": "number",
+   "answer": 38,
+   "tolerance": 0.001,
+   "typicalWrong": [
+    {
+     "value": 19,
+     "why": "Ты сложил только две стороны. У параллелограмма их четыре: две по 12 см и две по 7 см."
+    },
+    {
+     "value": 84,
+     "why": "Ты перемножил стороны. Периметр — это сумма длин всех сторон."
+    },
+    {
+     "value": 31,
+     "why": "Противолежащие стороны равны попарно: вторая пара тоже повторяется дважды."
+    }
+   ],
+   "genericWrong": "Перечитай условие и пройди решение по шагам.",
+   "unit": "см",
+   "solution": {
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg viewBox=\"0 0 400 215\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polygon points=\"50,170 290,170 350,50 110,50\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><text x=\"36\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">A</text><text x=\"304\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">B</text><text x=\"364\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">C</text><text x=\"96\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">D</text><text x=\"170\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">12</text><text x=\"336\" y=\"118\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">7</text><text x=\"230\" y=\"40\" text-anchor=\"middle\" data-step=\"1\" style=\"fill:var(--ok);font:700 16px sans-serif\">12</text><text x=\"66\" y=\"118\" text-anchor=\"middle\" data-step=\"1\" style=\"fill:var(--ok);font:700 16px sans-serif\">7</text></svg>"
+    },
+    "steps": [
+     {
+      "text": "Противолежащие стороны параллелограмма равны: две стороны по 12 см и две по 7 см.",
+      "layer": 0
+     },
+     {
+      "text": "Периметр: $2 \\cdot (12 + 7) = 2 \\cdot 19 = 38$ см.",
+      "layer": 1
+     }
+    ],
+    "answerLine": "38 см"
+   },
+   "order": 11,
+   "subtopic": "Стороны параллелограмма",
+   "lesson": {
+    "title": "Стороны и периметр параллелограмма",
+    "text": "В параллелограмме противолежащие стороны равны: $AB = CD$ и $BC = AD$. Значит, у него всего два разных размера сторон, и каждый повторяется дважды. Периметр: $P = 2(a + b)$, где $a$ и $b$ — соседние стороны. Сумма двух соседних сторон — это половина периметра. Пример: стороны 6 см и 9 см. $P = 2 \\cdot (6 + 9) = 30$ см. Обратная задача: $P = 30$ см, одна сторона 6 см. Полупериметр 15 см, соседняя сторона $15 - 6 = 9$ см.",
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg viewBox=\"0 0 400 215\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polygon points=\"50,170 290,170 350,50 110,50\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><text x=\"36\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">A</text><text x=\"304\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">B</text><text x=\"364\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">C</text><text x=\"96\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">D</text><text x=\"170\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">9</text><text x=\"336\" y=\"118\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">6</text><text x=\"230\" y=\"40\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 16px sans-serif\">9</text><text x=\"66\" y=\"118\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 16px sans-serif\">6</text></svg>"
+    },
+    "remember": "P = 2(a + b); сумма двух соседних сторон — половина периметра."
+   },
+   "twins": [
+    {
+     "id": "q11t1",
+     "text": "Две соседние стороны параллелограмма равны 9 см и 14 см. Найди его периметр.",
+     "hint": "Противолежащие стороны параллелограмма равны.",
+     "figure": {
+      "kind": "svg",
+      "svg": "<svg viewBox=\"0 0 400 215\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polygon points=\"50,170 290,170 350,50 110,50\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><text x=\"36\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">A</text><text x=\"304\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">B</text><text x=\"364\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">C</text><text x=\"96\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">D</text><text x=\"170\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">9</text><text x=\"336\" y=\"118\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">14</text></svg>"
+     },
+     "type": "number",
+     "answer": 46,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 23,
+       "why": "Ты сложил только две стороны. У параллелограмма их четыре: две по 9 см и две по 14 см."
+      },
+      {
+       "value": 126,
+       "why": "Ты перемножил стороны. Периметр — это сумма длин всех сторон."
+      },
+      {
+       "value": 32,
+       "why": "Противолежащие стороны равны попарно: вторая пара тоже повторяется дважды."
+      }
+     ],
+     "genericWrong": "Перечитай условие и пройди решение по шагам.",
+     "unit": "см",
+     "solution": {
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg viewBox=\"0 0 400 215\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polygon points=\"50,170 290,170 350,50 110,50\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><text x=\"36\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">A</text><text x=\"304\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">B</text><text x=\"364\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">C</text><text x=\"96\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">D</text><text x=\"170\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">9</text><text x=\"336\" y=\"118\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">14</text><text x=\"230\" y=\"40\" text-anchor=\"middle\" data-step=\"1\" style=\"fill:var(--ok);font:700 16px sans-serif\">9</text><text x=\"66\" y=\"118\" text-anchor=\"middle\" data-step=\"1\" style=\"fill:var(--ok);font:700 16px sans-serif\">14</text></svg>"
+      },
+      "steps": [
+       {
+        "text": "Противолежащие стороны параллелограмма равны: две стороны по 9 см и две по 14 см.",
+        "layer": 0
+       },
+       {
+        "text": "Периметр: $2 \\cdot (9 + 14) = 2 \\cdot 23 = 46$ см.",
+        "layer": 1
+       }
+      ],
+      "answerLine": "46 см"
+     }
+    },
+    {
+     "id": "q11t2",
+     "text": "Периметр параллелограмма равен 44 см, одна из сторон — 8 см. Найди соседнюю с ней сторону.",
+     "hint": "Полупериметр — это сумма двух соседних сторон.",
+     "figure": {
+      "kind": "svg",
+      "svg": "<svg viewBox=\"0 0 400 215\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polygon points=\"50,170 290,170 350,50 110,50\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><text x=\"36\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">A</text><text x=\"304\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">B</text><text x=\"364\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">C</text><text x=\"96\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">D</text><text x=\"170\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">8</text><text x=\"336\" y=\"118\" text-anchor=\"middle\" style=\"fill:var(--pen);font:700 16px sans-serif\">?</text></svg>"
+     },
+     "type": "number",
+     "answer": 14,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 36,
+       "why": "Ты вычел одну сторону. Но сторон по 8 см две, и искомых тоже две."
+      },
+      {
+       "value": 28,
+       "why": "$44 - 2 \\cdot 8 = 28$ — это сумма двух одинаковых искомых сторон. Раздели на 2."
+      },
+      {
+       "value": 22,
+       "why": "Это полупериметр — сумма двух соседних сторон. Вычти из него известную сторону."
+      }
+     ],
+     "genericWrong": "Перечитай условие и пройди решение по шагам.",
+     "unit": "см",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Периметр</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">44 см</td></tr><tr data-step=\"1\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Сумма двух соседних сторон</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">44 : 2 = 22 см</td></tr><tr data-step=\"2\"><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted)\">Искомая сторона</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;font-weight:700;color:var(--ok)\">22 − 8 = 14 см</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Противолежащие стороны равны, поэтому сумма двух соседних сторон — половина периметра.",
+        "layer": 0
+       },
+       {
+        "text": "Полупериметр: $44 : 2 = 22$ см.",
+        "layer": 1
+       },
+       {
+        "text": "Соседняя сторона: $22 - 8 = 14$ см.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "14 см"
+     }
+    }
+   ]
+  },
+  {
+   "id": "q12",
+   "text": "Диагонали параллелограмма ABCD пересекаются в точке O. $BD = 22$ см. Найди $BO$.",
+   "hint": "Точка пересечения делит каждую диагональ пополам.",
+   "figure": {
+    "kind": "svg",
+    "svg": "<svg viewBox=\"0 0 400 215\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polygon points=\"50,170 290,170 350,50 110,50\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><line x1=\"50\" y1=\"170\" x2=\"350\" y2=\"50\" style=\"stroke:var(--accent);stroke-width:2\"/><line x1=\"290\" y1=\"170\" x2=\"110\" y2=\"50\" style=\"stroke:var(--accent);stroke-width:2\"/><circle cx=\"200\" cy=\"110\" r=\"3.5\" style=\"fill:var(--ink)\"/><text x=\"200\" y=\"134\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">O</text><text x=\"36\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">A</text><text x=\"304\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">B</text><text x=\"364\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">C</text><text x=\"96\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">D</text></svg>"
+   },
+   "type": "number",
+   "answer": 11,
+   "tolerance": 0.001,
+   "typicalWrong": [
+    {
+     "value": 22,
+     "why": "Это вся диагональ. Точка O делит её пополам, а BO — только половина."
+    },
+    {
+     "value": 44,
+     "why": "Наоборот: отрезок меньше диагонали в два раза, а не больше."
+    }
+   ],
+   "genericWrong": "Перечитай условие и пройди решение по шагам.",
+   "unit": "см",
+   "solution": {
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg viewBox=\"0 0 400 215\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polygon points=\"50,170 290,170 350,50 110,50\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><line x1=\"50\" y1=\"170\" x2=\"350\" y2=\"50\" style=\"stroke:var(--accent);stroke-width:2\"/><line x1=\"290\" y1=\"170\" x2=\"110\" y2=\"50\" style=\"stroke:var(--accent);stroke-width:2\"/><circle cx=\"200\" cy=\"110\" r=\"3.5\" style=\"fill:var(--ink)\"/><text x=\"200\" y=\"134\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">O</text><text x=\"36\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">A</text><text x=\"304\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">B</text><text x=\"364\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">C</text><text x=\"96\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">D</text><text x=\"252\" y=\"150\" text-anchor=\"middle\" data-step=\"1\" style=\"fill:var(--ok);font:700 16px sans-serif\">11</text></svg>"
+    },
+    "steps": [
+     {
+      "text": "Диагонали параллелограмма точкой пересечения делятся пополам.",
+      "layer": 0
+     },
+     {
+      "text": "$BO = BD : 2 = 22 : 2 = 11$ см.",
+      "layer": 1
+     }
+    ],
+    "answerLine": "11 см"
+   },
+   "order": 12,
+   "subtopic": "Диагонали параллелограмма",
+   "lesson": {
+    "title": "Диагонали параллелограмма",
+    "text": "Диагонали параллелограмма пересекаются, и точка пересечения делит каждую из них пополам. Если O — точка пересечения диагоналей AC и BD, то $AO = OC$ и $BO = OD$. Важно: пополам делится каждая диагональ, но сами диагонали друг другу в общем случае не равны. Пример: $AC = 12$ см, $BD = 8$ см. Тогда $AO = OC = 6$ см, $BO = OD = 4$ см. И наоборот: если $AO = 5$ см, то $AC = 10$ см.",
+    "visual": {
+     "kind": "svg",
+     "svg": "<svg viewBox=\"0 0 400 215\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polygon points=\"50,170 290,170 350,50 110,50\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><line x1=\"50\" y1=\"170\" x2=\"350\" y2=\"50\" style=\"stroke:var(--accent);stroke-width:2\"/><line x1=\"290\" y1=\"170\" x2=\"110\" y2=\"50\" style=\"stroke:var(--accent);stroke-width:2\"/><circle cx=\"200\" cy=\"110\" r=\"3.5\" style=\"fill:var(--ink)\"/><text x=\"200\" y=\"134\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">O</text><text x=\"36\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">A</text><text x=\"304\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">B</text><text x=\"364\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">C</text><text x=\"96\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">D</text><text x=\"128\" y=\"122\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">6</text><text x=\"282\" y=\"84\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">6</text><text x=\"252\" y=\"150\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 16px sans-serif\">4</text><text x=\"150\" y=\"76\" text-anchor=\"middle\" style=\"fill:var(--ok);font:700 16px sans-serif\">4</text></svg>"
+    },
+    "remember": "точка пересечения делит каждую диагональ пополам: AO = OC, BO = OD."
+   },
+   "twins": [
+    {
+     "id": "q12t1",
+     "text": "Диагонали параллелограмма ABCD пересекаются в точке O. $AC = 30$ см. Найди $AO$.",
+     "hint": "Точка пересечения делит каждую диагональ пополам.",
+     "figure": {
+      "kind": "svg",
+      "svg": "<svg viewBox=\"0 0 400 215\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polygon points=\"50,170 290,170 350,50 110,50\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><line x1=\"50\" y1=\"170\" x2=\"350\" y2=\"50\" style=\"stroke:var(--accent);stroke-width:2\"/><line x1=\"290\" y1=\"170\" x2=\"110\" y2=\"50\" style=\"stroke:var(--accent);stroke-width:2\"/><circle cx=\"200\" cy=\"110\" r=\"3.5\" style=\"fill:var(--ink)\"/><text x=\"200\" y=\"134\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">O</text><text x=\"36\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">A</text><text x=\"304\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">B</text><text x=\"364\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">C</text><text x=\"96\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">D</text></svg>"
+     },
+     "type": "number",
+     "answer": 15,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 30,
+       "why": "Это вся диагональ. Точка O делит её пополам, а AO — только половина."
+      },
+      {
+       "value": 60,
+       "why": "Наоборот: отрезок меньше диагонали в два раза, а не больше."
+      }
+     ],
+     "genericWrong": "Перечитай условие и пройди решение по шагам.",
+     "unit": "см",
+     "solution": {
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg viewBox=\"0 0 400 215\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polygon points=\"50,170 290,170 350,50 110,50\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><line x1=\"50\" y1=\"170\" x2=\"350\" y2=\"50\" style=\"stroke:var(--accent);stroke-width:2\"/><line x1=\"290\" y1=\"170\" x2=\"110\" y2=\"50\" style=\"stroke:var(--accent);stroke-width:2\"/><circle cx=\"200\" cy=\"110\" r=\"3.5\" style=\"fill:var(--ink)\"/><text x=\"200\" y=\"134\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">O</text><text x=\"36\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">A</text><text x=\"304\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">B</text><text x=\"364\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">C</text><text x=\"96\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">D</text><text x=\"128\" y=\"122\" text-anchor=\"middle\" data-step=\"1\" style=\"fill:var(--ok);font:700 16px sans-serif\">15</text></svg>"
+      },
+      "steps": [
+       {
+        "text": "Диагонали параллелограмма точкой пересечения делятся пополам.",
+        "layer": 0
+       },
+       {
+        "text": "$AO = AC : 2 = 30 : 2 = 15$ см.",
+        "layer": 1
+       }
+      ],
+      "answerLine": "15 см"
+     }
+    },
+    {
+     "id": "q12t2",
+     "text": "Диагонали параллелограмма ABCD пересекаются в точке O. $AO = 5$ см, $BO = 6$ см. Найди сумму длин диагоналей $AC + BD$.",
+     "hint": "AO — половина AC, BO — половина BD.",
+     "figure": {
+      "kind": "svg",
+      "svg": "<svg viewBox=\"0 0 400 215\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polygon points=\"50,170 290,170 350,50 110,50\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><line x1=\"50\" y1=\"170\" x2=\"350\" y2=\"50\" style=\"stroke:var(--accent);stroke-width:2\"/><line x1=\"290\" y1=\"170\" x2=\"110\" y2=\"50\" style=\"stroke:var(--accent);stroke-width:2\"/><circle cx=\"200\" cy=\"110\" r=\"3.5\" style=\"fill:var(--ink)\"/><text x=\"200\" y=\"134\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">O</text><text x=\"36\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">A</text><text x=\"304\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">B</text><text x=\"364\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">C</text><text x=\"96\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">D</text><text x=\"128\" y=\"122\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">5</text><text x=\"252\" y=\"150\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">6</text></svg>"
+     },
+     "type": "number",
+     "answer": 22,
+     "tolerance": 0.001,
+     "typicalWrong": [
+      {
+       "value": 11,
+       "why": "Ты сложил половинки. Каждая диагональ в два раза длиннее своей половины."
+      },
+      {
+       "value": 16,
+       "why": "Удвоить нужно обе половинки: и AO, и BO."
+      }
+     ],
+     "genericWrong": "Перечитай условие и пройди решение по шагам.",
+     "unit": "см",
+     "solution": {
+      "visual": {
+       "kind": "svg",
+       "svg": "<svg viewBox=\"0 0 400 215\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:420px;margin:0 auto\"><polygon points=\"50,170 290,170 350,50 110,50\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2.5\"/><line x1=\"50\" y1=\"170\" x2=\"350\" y2=\"50\" style=\"stroke:var(--accent);stroke-width:2\"/><line x1=\"290\" y1=\"170\" x2=\"110\" y2=\"50\" style=\"stroke:var(--accent);stroke-width:2\"/><circle cx=\"200\" cy=\"110\" r=\"3.5\" style=\"fill:var(--ink)\"/><text x=\"200\" y=\"134\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">O</text><text x=\"36\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">A</text><text x=\"304\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">B</text><text x=\"364\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">C</text><text x=\"96\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink);font:700 16px sans-serif\">D</text><text x=\"128\" y=\"122\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">5</text><text x=\"252\" y=\"150\" text-anchor=\"middle\" style=\"fill:var(--accent);font:700 16px sans-serif\">6</text><text x=\"282\" y=\"84\" text-anchor=\"middle\" data-step=\"1\" style=\"fill:var(--ok);font:700 16px sans-serif\">5</text><text x=\"150\" y=\"76\" text-anchor=\"middle\" data-step=\"1\" style=\"fill:var(--ok);font:700 16px sans-serif\">6</text></svg>"
+      },
+      "steps": [
+       {
+        "text": "Диагонали делятся точкой O пополам: $AC = 2 \\cdot AO$, $BD = 2 \\cdot BO$.",
+        "layer": 0
+       },
+       {
+        "text": "$AC = 2 \\cdot 5 = 10$ см, $BD = 2 \\cdot 6 = 12$ см.",
+        "layer": 1
+       },
+       {
+        "text": "$AC + BD = 10 + 12 = 22$ см.",
+        "layer": 1
+       }
+      ],
+      "answerLine": "22 см"
+     }
+    }
+   ]
+  },
+  {
+   "id": "q13",
+   "text": "Диагонали четырёхугольника пересекаются и точкой пересечения делятся пополам. Какая это фигура?",
+   "hint": "Это один из трёх признаков.",
+   "type": "choice",
+   "options": [
+    {
+     "id": "a",
+     "text": "Трапеция",
+     "why": "У трапеции диагонали точкой пересечения пополам не делятся."
+    },
+    {
+     "id": "b",
+     "text": "Параллелограмм"
+    },
+    {
+     "id": "c",
+     "text": "Обязательно прямоугольник",
+     "why": "У прямоугольника диагонали ещё и равны. Здесь известно только, что они делятся пополам, — это параллелограмм."
+    }
+   ],
+   "answer": "b",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Признак</th><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Что достаточно знать о четырёхугольнике</th></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">Первый</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">две стороны равны и параллельны</td></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">Второй</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">противолежащие стороны попарно равны</td></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">Третий</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">диагонали точкой пересечения делятся пополам</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "Третий признак: если диагонали точкой пересечения делятся пополам, то четырёхугольник — параллелограмм.",
+      "layer": 0
+     },
+     {
+      "text": "Больше ничего не дано, поэтому сказать «прямоугольник» нельзя.",
+      "layer": 0
+     }
+    ],
+    "answerLine": "Параллелограмм"
+   },
+   "order": 13,
+   "subtopic": "Признаки параллелограмма",
+   "lesson": {
+    "title": "Признаки параллелограмма",
+    "text": "Свойство говорит: «если это параллелограмм, то…». Признак работает в обратную сторону: «если у четырёхугольника есть такое условие, то он параллелограмм». Признаков три. Первый: две стороны равны **и** параллельны. Второй: противолежащие стороны попарно равны. Третий: диагонали точкой пересечения делятся пополам. В первом признаке нужны оба условия для одной и той же пары сторон. Только «две стороны параллельны» — это может быть трапеция. Только «две стороны равны» — тоже недостаточно. В задачах сначала ищи пару сторон, про которую можно сказать и «равны», и «параллельны».",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Признак</th><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Что достаточно знать о четырёхугольнике</th></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">Первый</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">две стороны равны и параллельны</td></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">Второй</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">противолежащие стороны попарно равны</td></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">Третий</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">диагонали точкой пересечения делятся пополам</td></tr></table>"
+    },
+    "remember": "признак: равны и параллельны / попарно равны / диагонали делятся пополам."
+   },
+   "twins": [
+    {
+     "id": "q13t1",
+     "text": "Две стороны четырёхугольника параллельны, а две **другие** стороны равны. Обязательно ли это параллелограмм?",
+     "hint": "Посмотри, про одну ли пару сторон сказано «равны» и «параллельны».",
+     "type": "choice",
+     "options": [
+      {
+       "id": "a",
+       "text": "Да, по первому признаку",
+       "why": "В первом признаке равны и параллельны одни и те же две стороны. Здесь параллельна одна пара, а равна другая."
+      },
+      {
+       "id": "b",
+       "text": "Да, по второму признаку",
+       "why": "Во втором признаке попарно равны обе пары противолежащих сторон. Здесь равна только одна пара."
+      },
+      {
+       "id": "c",
+       "text": "Нет: это может быть равнобедренная трапеция"
+      }
+     ],
+     "answer": "c",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Признак</th><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Что достаточно знать о четырёхугольнике</th></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">Первый</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">две стороны равны и параллельны</td></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">Второй</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">противолежащие стороны попарно равны</td></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">Третий</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">диагонали точкой пересечения делятся пополам</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "В первом признаке оба условия относятся к одной паре сторон.",
+        "layer": 0
+       },
+       {
+        "text": "Здесь условия про разные пары. Такой фигурой может быть равнобедренная трапеция — не параллелограмм.",
+        "layer": 0
+       }
+      ],
+      "answerLine": "Нет: это может быть равнобедренная трапеция"
+     }
+    },
+    {
+     "id": "q13t2",
+     "text": "Сколько пар сторон нужно проверить по первому признаку параллелограмма?",
+     "hint": "Вспомни формулировку: «если две стороны…».",
+     "type": "choice",
+     "options": [
+      {
+       "id": "a",
+       "text": "Одну: достаточно, чтобы две стороны были равны и параллельны"
+      },
+      {
+       "id": "b",
+       "text": "Две: обе пары должны быть равны и параллельны",
+       "why": "Это уже следствие. Для признака достаточно одной пары равных и параллельных сторон."
+      },
+      {
+       "id": "c",
+       "text": "Ни одной: достаточно знать углы",
+       "why": "В первом признаке про углы ничего не говорится, он про стороны."
+      }
+     ],
+     "answer": "a",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Признак</th><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Что достаточно знать о четырёхугольнике</th></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">Первый</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">две стороны равны и параллельны</td></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">Второй</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">противолежащие стороны попарно равны</td></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">Третий</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">диагонали точкой пересечения делятся пополам</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Первый признак: если две стороны четырёхугольника равны и параллельны, то это параллелограмм.",
+        "layer": 0
+       },
+       {
+        "text": "Значит, достаточно одной пары сторон.",
+        "layer": 0
+       }
+      ],
+      "answerLine": "Одну: достаточно, чтобы две стороны были равны и параллельны"
+     }
+    }
+   ]
+  },
+  {
+   "id": "q14",
+   "text": "В четырёхугольнике ABCD стороны BC и AD параллельны, $BC = 12$ см, $AD = 12$ см. Является ли он параллелограммом?",
+   "hint": "Одна пара сторон и равна, и параллельна.",
+   "type": "choice",
+   "options": [
+    {
+     "id": "a",
+     "text": "Да, по первому признаку"
+    },
+    {
+     "id": "b",
+     "text": "Нет, нужно знать ещё AB и CD",
+     "why": "Не нужно: одной пары равных и параллельных сторон достаточно."
+    },
+    {
+     "id": "c",
+     "text": "Нет, это трапеция",
+     "why": "У трапеции параллельные стороны не равны. Здесь они равны: 12 см и 12 см."
+    }
+   ],
+   "answer": "a",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Признак</th><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Что достаточно знать о четырёхугольнике</th></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">Первый</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">две стороны равны и параллельны</td></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">Второй</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">противолежащие стороны попарно равны</td></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">Третий</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">диагонали точкой пересечения делятся пополам</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "BC и AD параллельны по условию.",
+      "layer": 0
+     },
+     {
+      "text": "$BC = AD = 12$ см. Две стороны равны и параллельны — это параллелограмм.",
+      "layer": 0
+     }
+    ],
+    "answerLine": "Да, по первому признаку"
+   },
+   "order": 14,
+   "subtopic": "Признаки параллелограмма",
+   "lesson": {
+    "title": "Признаки параллелограмма",
+    "text": "Свойство говорит: «если это параллелограмм, то…». Признак работает в обратную сторону: «если у четырёхугольника есть такое условие, то он параллелограмм». Признаков три. Первый: две стороны равны **и** параллельны. Второй: противолежащие стороны попарно равны. Третий: диагонали точкой пересечения делятся пополам. В первом признаке нужны оба условия для одной и той же пары сторон. Только «две стороны параллельны» — это может быть трапеция. Только «две стороны равны» — тоже недостаточно. В задачах сначала ищи пару сторон, про которую можно сказать и «равны», и «параллельны».",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Признак</th><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Что достаточно знать о четырёхугольнике</th></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">Первый</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">две стороны равны и параллельны</td></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">Второй</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">противолежащие стороны попарно равны</td></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">Третий</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">диагонали точкой пересечения делятся пополам</td></tr></table>"
+    },
+    "remember": "признак: равны и параллельны / попарно равны / диагонали делятся пополам."
+   },
+   "twins": [
+    {
+     "id": "q14t1",
+     "text": "В четырёхугольнике ABCD: $AB = 5$ см, $CD = 5$ см, $BC = 8$ см, $AD = 8$ см. Является ли он параллелограммом?",
+     "hint": "AB и CD — противолежащие стороны. BC и AD — тоже.",
+     "type": "choice",
+     "options": [
+      {
+       "id": "a",
+       "text": "Нет, стороны должны быть все равны",
+       "why": "Все четыре стороны равны у ромба. Для параллелограмма достаточно равенства по парам."
+      },
+      {
+       "id": "b",
+       "text": "Да, по второму признаку"
+      },
+      {
+       "id": "c",
+       "text": "Нет, ничего не сказано о параллельности",
+       "why": "Параллельность знать не нужно: попарного равенства противолежащих сторон достаточно."
+      }
+     ],
+     "answer": "b",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Признак</th><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Что достаточно знать о четырёхугольнике</th></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">Первый</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">две стороны равны и параллельны</td></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">Второй</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">противолежащие стороны попарно равны</td></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">Третий</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">диагонали точкой пересечения делятся пополам</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "$AB = CD$ и $BC = AD$ — противолежащие стороны попарно равны.",
+        "layer": 0
+       },
+       {
+        "text": "Это второй признак параллелограмма.",
+        "layer": 0
+       }
+      ],
+      "answerLine": "Да, по второму признаку"
+     }
+    },
+    {
+     "id": "q14t2",
+     "text": "Диагонали четырёхугольника ABCD пересекаются в точке O: $AO = 4$ см, $OC = 4$ см, $BO = 3$ см, $OD = 5$ см. Является ли он параллелограммом?",
+     "hint": "Проверь каждую диагональ отдельно.",
+     "type": "choice",
+     "options": [
+      {
+       "id": "a",
+       "text": "Да, по третьему признаку",
+       "why": "В третьем признаке пополам должны делиться обе диагонали. Здесь $BO = 3$ см, а $OD = 5$ см."
+      },
+      {
+       "id": "b",
+       "text": "Да, потому что AO = OC",
+       "why": "Одной диагонали мало: пополам должна делиться и вторая."
+      },
+      {
+       "id": "c",
+       "text": "Нет: диагональ BD не делится точкой O пополам"
+      }
+     ],
+     "answer": "c",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;max-width:560px\"><tr><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Свойство параллелограмма</th><th style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px;color:var(--muted);font-weight:600\">Запись</th></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">Сумма углов, прилежащих к одной стороне, — 180°</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">∠A + ∠B = 180°</td></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">Противолежащие стороны равны</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">AB = CD, BC = AD</td></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">Противолежащие углы равны</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">∠A = ∠C, ∠B = ∠D</td></tr><tr><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">Диагонали точкой пересечения делятся пополам</td><td style=\"padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px\">AO = OC, BO = OD</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "AC делится пополам: $AO = OC = 4$ см.",
+        "layer": 0
+       },
+       {
+        "text": "BD — нет: $BO = 3$ см, $OD = 5$ см. У параллелограмма пополам делятся обе диагонали, значит, это не параллелограмм.",
+        "layer": 0
+       }
+      ],
+      "answerLine": "Нет: диагональ BD не делится точкой O пополам"
+     }
+    }
+   ]
+  }
+ ]
+}
