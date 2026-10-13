@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Многоугольники и параллелограмм: объяснение</title>
+<style>
+/* Макет: одна колонка для чтения; оглавление, пять параграфов по порядку, чертёж рядом с каждым правилом */
+:root{
+  --bg:#eef2f5; --card:#f9fbfc; --ink:#17232d; --muted:#566673; --line:#cdd7df;
+  --cold:#3b4fa3; --cold-soft:#e0e4f5; --hot:#b8451f; --hot-soft:#f6e2d9; --ok:#1c7a52;
+  --display:"Arial Narrow","Roboto Condensed",Arial,sans-serif;
+  --body:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){ :root{
+  --bg:#131a20; --card:#1b242c; --ink:#e5ecf1; --muted:#9aacb9; --line:#2e3b46;
+  --cold:#93a3ee; --cold-soft:#232a4d; --hot:#f08a62; --hot-soft:#43261b; --ok:#5fcf9c; color-scheme:dark } }
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.62}
+.wrap{max-width:720px;margin:0 auto;padding-inline:18px;padding-block:28px 56px;display:flex;flex-direction:column;gap:22px}
+h1{font-family:var(--display);font-size:clamp(30px,7vw,42px);line-height:1.1;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-size:27px;line-height:1.15;margin:0 0 10px;text-wrap:balance}
+h3{font-size:18px;margin:18px 0 6px}
+p{margin:0 0 10px;max-width:66ch}
+.kicker{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--cold);font-weight:700;margin:0}
+.lead{color:var(--muted);margin:0}
+nav{background:var(--card);border:1px solid var(--line);padding:14px 18px}
+nav b{display:block;margin-bottom:6px}
+nav ol{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:3px}
+nav a{color:var(--cold)}
+section{background:var(--card);border:1px solid var(--line);padding:20px 18px}
+section.cold{border-top:4px solid var(--cold)} section.hot{border-top:4px solid var(--hot)}
+.def{border-left:4px solid var(--cold);background:var(--cold-soft);padding:10px 14px;margin:10px 0}
+.hot .def{border-left-color:var(--hot);background:var(--hot-soft)}
+.f{display:block;font-size:20px;font-weight:700;padding:10px 14px;margin:8px 0 12px;background:var(--cold-soft);border-left:4px solid var(--cold);overflow-x:auto;white-space:nowrap}
+.hot .f{background:var(--hot-soft);border-left-color:var(--hot)}
+.f small{font-weight:400;font-size:15px;color:var(--muted);margin-left:10px}
+.trap{border-left:4px solid var(--hot);padding:2px 0 2px 12px;margin:12px 0}
+.trap b{color:var(--hot)}
+.tw{overflow-x:auto;margin:8px 0 12px}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:7px 9px;border-bottom:1px solid var(--line)}
+th{color:var(--muted);font-weight:600}
+td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
+figure{margin:10px 0 14px}
+figcaption{font-size:14px;color:var(--muted);text-align:center}
+svg{display:block;width:100%;max-width:520px;height:auto;margin:6px auto}
+.ax{stroke:var(--ink);stroke-width:1.5} .gr{stroke:var(--line);stroke-dasharray:4 4}
+.t{fill:var(--ink);font:600 14px sans-serif} .tm{fill:var(--muted);font:14px sans-serif}
+.lc{fill:none;stroke:var(--cold);stroke-width:3} .lh{fill:none;stroke:var(--hot);stroke-width:3}
+.pc{fill:none;stroke:var(--cold);stroke-width:6;stroke-linecap:round} .ph{fill:none;stroke:var(--hot);stroke-width:6;stroke-linecap:round}
+.ex{background:var(--bg);border:1px dashed var(--line);padding:12px 14px;margin:12px 0}
+.ex p{margin:0 0 6px} .ex .h{font-weight:700} .ans{color:var(--ok);font-weight:700}
+ul,ol.steps{margin:0 0 10px;padding-left:22px}
+li{margin-bottom:4px}
+details{border:1px solid var(--line);padding:10px 14px;margin:8px 0;background:var(--bg)}
+summary{cursor:pointer;font-weight:600}
+details p{margin:8px 0 0}
+.finish{background:var(--card);border:2px solid var(--cold);padding:20px 18px;display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.go{display:inline-block;background:var(--cold);color:var(--bg);font-weight:700;font-size:18px;text-decoration:none;padding:14px 26px;border-radius:6px}
+.go:focus-visible, nav a:focus-visible, summary:focus-visible{outline:3px solid var(--hot);outline-offset:3px}
+.fg{fill:var(--cold-soft);stroke:var(--ink);stroke-width:2.5} .ln{stroke:var(--ink);stroke-width:2.5;fill:none} .la{stroke:var(--cold);stroke-width:2.5;fill:none} .lp{stroke:var(--hot);stroke-width:2.5;fill:none} .ld{stroke:var(--hot);stroke-width:2;stroke-dasharray:6 5;fill:none} .tb{fill:var(--ink);font:700 16px sans-serif} .th{fill:var(--hot);font:700 15px sans-serif} .tc{fill:var(--cold);font:700 15px sans-serif} .pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px} .pair figure{margin:0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="kicker">Геометрия · 8 класс · §1–5</p>
+  <h1>Соня, от ломаной до параллелограмма</h1>
+  <p class="lead">Сначала прочитай объяснение целиком — это 20 минут. Кнопка «Начать тест» стоит в самом конце. В тесте 14 вопросов, после каждого ответа будет разбор с чертежом.</p>
+
+  <nav aria-label="Оглавление">
+    <b>Что здесь есть</b>
+    <ol>
+      <li><a href="#p1">Ломаные (§1)</a></li>
+      <li><a href="#p2">Многоугольник (§2)</a></li>
+      <li><a href="#p3">Сумма углов выпуклого многоугольника (§3)</a></li>
+      <li><a href="#p4">Параллелограмм и его свойства (§4)</a></li>
+      <li><a href="#p5">Признаки параллелограмма (§5)</a></li>
+      <li><a href="#p6">Шпаргалка и проверь себя</a></li>
+    </ol>
+  </nav>
+
+  <section id="p1" class="cold">
+    <h2>1. Ломаные (§1)</h2>
+    <div class="def"><b>Ломаная</b> — фигура из нескольких отрезков, идущих друг за другом: конец первого служит началом второго, конец второго — началом третьего и так далее.</div>
+    <p>Отрезки называют <b>сторонами</b> ломаной, а их концы — <b>вершинами</b>. Ломаную записывают по порядку вершин: ломаная ABCD.</p>
+    <div class="pair">
+      <figure><svg viewBox="0 0 220 150" role="img" aria-label="Простая незамкнутая ломаная"><polyline class="la" points="20,120 60,40 110,100 160,30 200,90"/><text class="tb" x="12" y="140">A</text><text class="tb" x="54" y="30">B</text><text class="tb" x="104" y="122">C</text><text class="tb" x="156" y="22">D</text><text class="tb" x="200" y="112">E</text></svg><figcaption>Простая: сама себя не пересекает</figcaption></figure>
+      <figure><svg viewBox="0 0 220 150" role="img" aria-label="Ломаная с самопересечением"><polyline class="lp" points="20,120 170,40 60,30 150,125"/><text class="tb" x="12" y="140">A</text><text class="tb" x="176" y="38">B</text><text class="tb" x="46" y="26">C</text><text class="tb" x="154" y="142">D</text></svg><figcaption>Не простая: есть точка самопересечения</figcaption></figure>
+      <figure><svg viewBox="0 0 220 150" role="img" aria-label="Простая замкнутая ломаная"><polygon class="ln" points="30,120 60,35 120,70 180,30 190,120"/><text class="tb" x="16" y="138">A</text><text class="tb" x="50" y="26">B</text><text class="tb" x="114" y="62">C</text><text class="tb" x="182" y="22">D</text><text class="tb" x="194" y="138">E</text></svg><figcaption>Замкнутая: конец совпал с началом</figcaption></figure>
+    </div>
+    <ul>
+      <li><b>Простая</b> ломаная не имеет точек самопересечения.</li>
+      <li><b>Замкнутая</b> ломаная — та, у которой конец последнего отрезка совпадает с началом первого.</li>
+      <li><b>Длина ломаной</b> — сумма длин всех её сторон.</li>
+    </ul>
+    <h3>Сколько вершин и сколько сторон</h3>
+    <div class="tw"><table>
+      <tr><th>Ломаная</th><th>Сторон</th><th>Вершин</th><th>Почему</th></tr>
+      <tr><td>незамкнутая</td><td class="n">n</td><td class="n">n + 1</td><td>у одного отрезка два конца; каждый новый отрезок добавляет одну вершину</td></tr>
+      <tr><td>замкнутая</td><td class="n">n</td><td class="n">n</td><td>последняя вершина совпала с первой</td></tr>
+    </table></div>
+    <div class="ex">
+      <p class="h">Задача. Простая незамкнутая ломаная имеет 10 вершин. Сколько у неё сторон?</p>
+      <p>У незамкнутой ломаной сторон на одну меньше, чем вершин.</p>
+      <p class="ans">Ответ: 10 − 1 = 9 сторон.</p>
+    </div>
+    <div class="ex">
+      <p class="h">Задача. Простая замкнутая ломаная имеет 20 сторон. Сколько у неё вершин?</p>
+      <p>У замкнутой ломаной вершин столько же, сколько сторон.</p>
+      <p class="ans">Ответ: 20 вершин.</p>
+    </div>
+    <p class="trap"><b>Ловушка.</b> Сначала посмотри, замкнута ломаная или нет. От этого зависит, прибавлять единицу или нет.</p>
+  </section>
+
+  <section id="p2" class="cold">
+    <h2>2. Многоугольник (§2)</h2>
+    <p>Простая замкнутая ломаная делит плоскость на две области: внутреннюю и внешнюю.</p>
+    <div class="def"><b>Многоугольник</b> — фигура, образованная простой замкнутой ломаной вместе с её внутренней областью.</div>
+    <p>Вершины ломаной — это вершины многоугольника, стороны ломаной — его стороны. Углы между соседними сторонами — углы многоугольника. <b>Периметр</b> — сумма длин всех сторон. Многоугольник с n углами называют n-угольником: треугольник, четырёхугольник, пятиугольник…</p>
+    <h3>Слова, которые нужны дальше</h3>
+    <ul>
+      <li><b>Соседние стороны</b> имеют общую вершину. В четырёхугольнике ABCD это, например, AB и BC.</li>
+      <li><b>Противолежащие стороны</b> общих вершин не имеют: AB и CD, BC и AD.</li>
+      <li><b>Противолежащие вершины</b>: A и C, B и D.</li>
+      <li><b>Диагональ</b> — отрезок, соединяющий две несоседние вершины.</li>
+    </ul>
+    <h3>Выпуклый и невыпуклый</h3>
+    <div class="pair">
+      <figure><svg viewBox="0 0 220 150" role="img" aria-label="Выпуклый пятиугольник с диагоналями"><polygon class="fg" points="110,15 195,70 160,135 60,135 25,70"/><line class="ld" x1="110" y1="15" x2="160" y2="135"/><line class="ld" x1="110" y1="15" x2="60" y2="135"/></svg><figcaption>Выпуклый: все диагонали внутри</figcaption></figure>
+      <figure><svg viewBox="0 0 220 150" role="img" aria-label="Невыпуклый четырёхугольник, диагональ снаружи"><polygon class="fg" points="40,15 200,75 40,135 100,75"/><line class="ld" x1="40" y1="15" x2="40" y2="135"/></svg><figcaption>Невыпуклый: одна диагональ оказалась снаружи</figcaption></figure>
+    </div>
+    <div class="def"><b>Выпуклый многоугольник</b> вместе с любыми двумя своими точками содержит и весь отрезок, который их соединяет.</div>
+    <p>Проще: у выпуклого многоугольника нет «вмятин». Выпуклый многоугольник содержит все свои диагонали, невыпуклый может какие-то не содержать.</p>
+    <h3>Правильный многоугольник</h3>
+    <div class="def"><b>Правильный многоугольник</b> — многоугольник, у которого все стороны равны и все углы равны.</div>
+    <div class="tw"><table>
+      <tr><th>Фигура</th><th>Стороны равны</th><th>Углы равны</th><th>Правильный?</th></tr>
+      <tr><td>ромб</td><td>да</td><td>нет</td><td>нет</td></tr>
+      <tr><td>прямоугольник</td><td>нет</td><td>да</td><td>нет</td></tr>
+      <tr><td>квадрат</td><td>да</td><td>да</td><td>да</td></tr>
+    </table></div>
+    <p>Нужны оба условия сразу. Правильный треугольник — равносторонний, правильный четырёхугольник — квадрат. <b>Прямоугольник</b> — четырёхугольник, у которого все углы прямые.</p>
+    <h3>Диагонали из одной вершины</h3>
+    <p>Из вершины n-угольника диагональ нельзя провести к ней самой и к двум соседним вершинам (туда идут стороны). Остаётся n − 3 вершины.</p>
+    <span class="f">из одной вершины выходит n − 3 диагонали</span>
+    <p>Пример: в шестиугольнике из одной вершины выходит 6 − 3 = 3 диагонали.</p>
+  </section>
+
+  <section id="p3" class="hot">
+    <h2>3. Сумма углов выпуклого многоугольника (§3)</h2>
+    <p>Из 7 класса известно: сумма углов треугольника равна 180°. На этом строится всё остальное.</p>
+    <div class="def"><b>Теорема.</b> Сумма внутренних углов выпуклого n-угольника равна 180°(n − 2).</div>
+    <h3>Откуда берётся n − 2</h3>
+    <figure><svg viewBox="0 0 320 210" role="img" aria-label="Пятиугольник разбит диагоналями из одной вершины на три треугольника"><polygon class="fg" points="60,150 40,70 150,20 270,70 220,180"/><line class="ld" x1="60" y1="150" x2="150" y2="20"/><line class="ld" x1="60" y1="150" x2="270" y2="70"/><text class="th" x="78" y="86">1</text><text class="th" x="150" y="94">2</text><text class="th" x="180" y="146">3</text></svg><figcaption>Пятиугольник: 2 диагонали из одной вершины, 3 треугольника</figcaption></figure>
+    <ol class="steps">
+      <li>Выбираем одну вершину и проводим из неё все диагонали. Их n − 3.</li>
+      <li>Диагонали режут многоугольник на треугольники. Треугольников на один больше, чем диагоналей: n − 2.</li>
+      <li>В каждом треугольнике сумма углов 180°. Углы всех треугольников вместе как раз составляют углы многоугольника.</li>
+      <li>Значит, сумма углов равна 180° · (n − 2).</li>
+    </ol>
+    <div class="tw"><table>
+      <tr><th>Многоугольник</th><th>n</th><th>Треугольников</th><th>Сумма углов</th><th>Угол правильного</th></tr>
+      <tr><td>треугольник</td><td class="n">3</td><td class="n">1</td><td class="n">180°</td><td class="n">60°</td></tr>
+      <tr><td>четырёхугольник</td><td class="n">4</td><td class="n">2</td><td class="n">360°</td><td class="n">90°</td></tr>
+      <tr><td>пятиугольник</td><td class="n">5</td><td class="n">3</td><td class="n">540°</td><td class="n">108°</td></tr>
+      <tr><td>шестиугольник</td><td class="n">6</td><td class="n">4</td><td class="n">720°</td><td class="n">120°</td></tr>
+      <tr><td>восьмиугольник</td><td class="n">8</td><td class="n">6</td><td class="n">1080°</td><td class="n">135°</td></tr>
+    </table></div>
+    <h3>Три типа задач</h3>
+    <div class="ex">
+      <p class="h">Тип 1. Найти сумму углов семиугольника</p>
+      <p>180° · (7 − 2) = 180° · 5.</p>
+      <p class="ans">Ответ: 900°.</p>
+    </div>
+    <div class="ex">
+      <p class="h">Тип 2. Сумма углов равна 1260°. Сколько сторон?</p>
+      <p>180 · (n − 2) = 1260. Делим на 180: n − 2 = 7. Прибавляем 2.</p>
+      <p class="ans">Ответ: n = 9.</p>
+    </div>
+    <div class="ex">
+      <p class="h">Тип 3. Найти угол правильного десятиугольника</p>
+      <p>Сумма углов: 180° · (10 − 2) = 1440°. Все 10 углов равны.</p>
+      <p class="ans">Ответ: 1440° : 10 = 144°.</p>
+    </div>
+    <p class="trap"><b>Ловушки.</b> 1) Умножить 180° на n вместо n − 2. 2) В обратной задаче забыть прибавить 2 после деления на 180.</p>
+
+    <h3>Внешние углы</h3>
+    <div class="def"><b>Внешний угол</b> выпуклого многоугольника — угол, смежный с каким-нибудь его внутренним углом.</div>
+    <figure><svg viewBox="0 0 320 170" role="img" aria-label="Внутренний и внешний угол при одной вершине"><polygon class="fg" points="40,140 90,30 220,30 200,140"/><line class="lp" x1="200" y1="140" x2="300" y2="140"/><path d="M 178 140 A 22 22 0 0 1 196 118" class="la"/><path d="M 204 118 A 22 22 0 0 1 222 140" class="lp"/><text class="tc" x="150" y="126">внутр.</text><text class="th" x="226" y="122">внешний</text></svg><figcaption>Внутренний и внешний угол вместе дают 180°</figcaption></figure>
+    <div class="def"><b>Теорема.</b> Сумма внешних углов выпуклого n-угольника, взятых по одному при каждой вершине, равна 360°.</div>
+    <p>Почему так. При каждой вершине внутренний и внешний угол в сумме дают 180°. Вершин n, значит, все пары вместе — это 180° · n. Вычтем отсюда внутренние углы:</p>
+    <span class="f">180°·n − 180°·(n − 2) = 360°</span>
+    <p>Число n сократилось: результат один и тот же для любого выпуклого многоугольника.</p>
+    <div class="ex">
+      <p class="h">Задача. Внешний угол правильного многоугольника равен 30°. Сколько у него сторон?</p>
+      <p>У правильного многоугольника все внешние углы равны, а в сумме они дают 360°.</p>
+      <p class="ans">Ответ: 360° : 30° = 12 сторон.</p>
+    </div>
+  </section>
+
+  <section id="p4" class="cold">
+    <h2>4. Параллелограмм и его свойства (§4)</h2>
+    <div class="def"><b>Параллелограмм</b> — четырёхугольник, у которого противолежащие стороны попарно параллельны.</div>
+    <figure><svg viewBox="0 0 400 210" role="img" aria-label="Параллелограмм ABCD с высотой DH"><polygon class="fg" points="50,170 290,170 350,50 110,50"/><line class="lp" x1="110" y1="50" x2="110" y2="170"/><rect x="110" y="156" width="14" height="14" class="lp"/><text class="tb" x="34" y="190">A</text><text class="tb" x="296" y="190">B</text><text class="tb" x="356" y="46">C</text><text class="tb" x="92" y="44">D</text><text class="tb" x="104" y="192">H</text></svg><figcaption>AB ∥ CD, AD ∥ BC. Отрезок DH — высота</figcaption></figure>
+    <div class="def"><b>Высота параллелограмма</b> — перпендикуляр, опущенный из его вершины на прямую, содержащую противолежащую сторону.</div>
+
+    <h3>Свойство 1. Углы при одной стороне дают 180°</h3>
+    <span class="f">∠A + ∠B = 180° <small>и так для любой стороны</small></span>
+    <p>Идея доказательства: стороны AD и BC параллельны, AB — секущая. Углы A и B — внутренние односторонние, а их сумма при параллельных прямых равна 180°.</p>
+
+    <h3>Свойство 2. Противолежащие стороны равны, противолежащие углы равны</h3>
+    <span class="f">AB = CD, BC = AD, ∠A = ∠C, ∠B = ∠D</span>
+    <figure><svg viewBox="0 0 400 210" role="img" aria-label="Диагональ AC делит параллелограмм на два равных треугольника"><polygon class="fg" points="50,170 290,170 350,50 110,50"/><line class="la" x1="50" y1="170" x2="350" y2="50"/><text class="tb" x="34" y="190">A</text><text class="tb" x="296" y="190">B</text><text class="tb" x="356" y="46">C</text><text class="tb" x="92" y="44">D</text><text class="th" x="120" y="164">1</text><text class="th" x="278" y="68">2</text><text class="tc" x="96" y="130">3</text><text class="tc" x="306" y="98">4</text></svg><figcaption>∠1 = ∠2 и ∠3 = ∠4 — накрест лежащие углы</figcaption></figure>
+    <p>Идея доказательства: проводим диагональ AC. Она делит параллелограмм на треугольники ABC и CDA. У них общая сторона AC, ∠1 = ∠2 и ∠3 = ∠4 как внутренние накрест лежащие углы при параллельных прямых. По второму признаку равенства треугольников (сторона и два прилежащих угла) треугольники равны. Из равенства треугольников следует всё остальное: AB = CD, BC = AD, ∠B = ∠D.</p>
+
+    <h3>Свойство 3. Диагонали делятся точкой пересечения пополам</h3>
+    <span class="f">AO = OC, BO = OD</span>
+    <figure><svg viewBox="0 0 400 210" role="img" aria-label="Диагонали параллелограмма пересекаются в точке O"><polygon class="fg" points="50,170 290,170 350,50 110,50"/><line class="la" x1="50" y1="170" x2="350" y2="50"/><line class="lp" x1="290" y1="170" x2="110" y2="50"/><circle cx="200" cy="110" r="4" style="fill:var(--ink)"/><text class="tb" x="34" y="190">A</text><text class="tb" x="296" y="190">B</text><text class="tb" x="356" y="46">C</text><text class="tb" x="92" y="44">D</text><text class="tb" x="194" y="138">O</text></svg><figcaption>O — середина и AC, и BD</figcaption></figure>
+    <p>Идея доказательства: треугольники AOD и COB равны (AD = BC по свойству 2, и по два равных накрест лежащих угла). Значит, AO = OC и BO = OD.</p>
+    <p class="trap"><b>Ловушка.</b> Пополам делится каждая диагональ. Но сами диагонали друг другу не равны: AC и BD могут быть разной длины.</p>
+
+    <h3>Задачи из параграфа</h3>
+    <div class="ex">
+      <p class="h">1. Две стороны параллелограмма равны 10 см и 15 см. Чему равны две другие?</p>
+      <p>Противолежащие стороны равны.</p>
+      <p class="ans">Ответ: 10 см и 15 см. Периметр: 2 · (10 + 15) = 50 см.</p>
+    </div>
+    <div class="ex">
+      <p class="h">2. Один из углов параллелограмма равен 30°. Найти остальные</p>
+      <p>Противолежащий угол тоже 30°. Соседние углы: 180° − 30° = 150°.</p>
+      <p class="ans">Ответ: 30°, 150°, 150°. Проверка: 30 + 150 + 30 + 150 = 360°.</p>
+    </div>
+    <div class="ex">
+      <p class="h">3. Диагональ образует с двумя сторонами углы 25° и 35°. Найти углы параллелограмма</p>
+      <p>Диагональ делит угол на две части: 25° + 35° = 60°. Это один из углов параллелограмма.</p>
+      <p>Соседний угол: 180° − 60° = 120°.</p>
+      <p class="ans">Ответ: 60°, 120°, 60°, 120°.</p>
+    </div>
+    <div class="ex">
+      <p class="h">4. Расстояния от точки пересечения диагоналей до двух вершин — 3 см и 4 см. Найти расстояния до двух других вершин</p>
+      <p>Точка пересечения делит каждую диагональ пополам, поэтому до противолежащих вершин расстояния такие же.</p>
+      <p class="ans">Ответ: 3 см и 4 см. Диагонали равны 6 см и 8 см.</p>
+    </div>
+  </section>
+
+  <section id="p5" class="hot">
+    <h2>5. Признаки параллелограмма (§5)</h2>
+    <h3>Свойство и признак — не одно и то же</h3>
+    <div class="tw"><table>
+      <tr><th></th><th>Что известно</th><th>Что получаем</th></tr>
+      <tr><td><b>Свойство</b></td><td>фигура — параллелограмм</td><td>у неё равны стороны, углы, делятся диагонали</td></tr>
+      <tr><td><b>Признак</b></td><td>у четырёхугольника есть такое-то условие</td><td>значит, он параллелограмм</td></tr>
+    </table></div>
+    <p>Признак нужен, когда про фигуру ещё не известно, параллелограмм ли она, и это надо доказать.</p>
+    <div class="def"><b>Первый признак.</b> Если в четырёхугольнике две стороны равны и параллельны, то он параллелограмм.</div>
+    <div class="def"><b>Второй признак.</b> Если в четырёхугольнике противолежащие стороны попарно равны, то он параллелограмм.</div>
+    <div class="def"><b>Третий признак.</b> Если диагонали четырёхугольника точкой пересечения делятся пополам, то он параллелограмм.</div>
+    <h3>Как доказывают первый признак</h3>
+    <ol class="steps">
+      <li>Дано: AB = CD и AB ∥ CD. Проводим диагональ AC.</li>
+      <li>В треугольниках ABC и CDA: AC — общая, AB = CD, углы между ними равны как накрест лежащие при AB ∥ CD.</li>
+      <li>Треугольники равны по первому признаку (две стороны и угол между ними).</li>
+      <li>Из равенства получаем ещё одну пару равных накрест лежащих углов — значит, AD ∥ BC.</li>
+      <li>Обе пары противолежащих сторон параллельны. По определению это параллелограмм.</li>
+    </ol>
+    <p>Второй признак доказывают так же, только треугольники равны по трём сторонам. Третий — через равенство треугольников, на которые диагонали делят четырёхугольник.</p>
+    <p class="trap"><b>Ловушка.</b> В первом признаке нужны оба условия для одной пары сторон. Только «две стороны параллельны» — это может быть трапеция. Только «две стороны равны» — тоже мало.</p>
+
+    <h3>Задачи из параграфа</h3>
+    <figure><svg viewBox="0 0 400 210" role="img" aria-label="Параллелограмм ABCD, точки E на AB и F на CD"><polygon class="fg" points="50,170 290,170 350,50 110,50"/><line class="lp" x1="110" y1="50" x2="110" y2="170"/><line class="lp" x1="290" y1="170" x2="290" y2="50"/><text class="tb" x="34" y="190">A</text><text class="tb" x="296" y="190">B</text><text class="tb" x="356" y="46">C</text><text class="tb" x="92" y="44">D</text><text class="tb" x="104" y="192">E</text><text class="tb" x="284" y="42">F</text></svg><figcaption>AE = CF</figcaption></figure>
+    <div class="ex">
+      <p class="h">1. На сторонах AB и CD параллелограмма ABCD отложены равные отрезки AE = CF. Является ли BFDE параллелограммом?</p>
+      <p>Ищем пару сторон, про которую можно сказать и «равны», и «параллельны». Это EB и DF.</p>
+      <p>Параллельны: EB лежит на AB, DF лежит на CD, а AB ∥ CD.</p>
+      <p>Равны: EB = AB − AE, DF = CD − CF. Но AB = CD и AE = CF, значит, EB = DF.</p>
+      <p class="ans">Ответ: да, по первому признаку.</p>
+    </div>
+    <div class="ex">
+      <p class="h">2. В параллелограмме ABCD проведены параллельные прямые AE и CF (E на BC, F на AD). Будет ли AECF параллелограммом?</p>
+      <p>AE ∥ CF по условию. Стороны AF и EC лежат на параллельных сторонах AD и BC, значит, AF ∥ EC.</p>
+      <p class="ans">Ответ: да. Обе пары противолежащих сторон параллельны — это определение параллелограмма.</p>
+    </div>
+    <div class="ex">
+      <p class="h">3. У четырёхугольника AB ∥ CD, AB = 7 см, CD = 9 см. Параллелограмм ли это?</p>
+      <p>У параллелограмма противолежащие стороны равны, а здесь 7 ≠ 9.</p>
+      <p class="ans">Ответ: нет. Это трапеция.</p>
+    </div>
+  </section>
+
+  <section id="p6">
+    <h2>6. Шпаргалка и проверь себя</h2>
+    <div class="tw"><table>
+      <tr><th>Что</th><th>Правило</th></tr>
+      <tr><td>Незамкнутая ломаная из n сторон</td><td class="n">n + 1 вершина</td></tr>
+      <tr><td>Замкнутая ломаная из n сторон</td><td class="n">n вершин</td></tr>
+      <tr><td>Диагоналей из одной вершины</td><td class="n">n − 3</td></tr>
+      <tr><td>Сумма внутренних углов</td><td class="n">180° · (n − 2)</td></tr>
+      <tr><td>Угол правильного n-угольника</td><td class="n">180° · (n − 2) : n</td></tr>
+      <tr><td>Сумма внешних углов</td><td class="n">360°</td></tr>
+      <tr><td>Внешний угол правильного n-угольника</td><td class="n">360° : n</td></tr>
+      <tr><td>Параллелограмм: соседние углы</td><td class="n">∠A + ∠B = 180°</td></tr>
+      <tr><td>Параллелограмм: периметр</td><td class="n">P = 2(a + b)</td></tr>
+      <tr><td>Параллелограмм: диагонали</td><td class="n">AO = OC, BO = OD</td></tr>
+    </table></div>
+    <h3>Проверь себя перед тестом</h3>
+    <p>Ответь про себя, потом открой ответ.</p>
+    <details><summary>Почему в формуле суммы углов стоит n − 2, а не n?</summary><p>Диагонали из одной вершины делят n-угольник на n − 2 треугольника, и в каждом сумма углов 180°.</p></details>
+    <details><summary>Ромб — правильный многоугольник?</summary><p>Нет. Стороны у него равны, но углы разные. Нужны оба условия.</p></details>
+    <details><summary>Угол параллелограмма равен 40°. Чему равны остальные?</summary><p>Противолежащий — 40°, два соседних — по 180° − 40° = 140°.</p></details>
+    <details><summary>AC = 16 см, O — точка пересечения диагоналей параллелограмма. Чему равно AO?</summary><p>8 см: точка O делит диагональ пополам.</p></details>
+    <details><summary>У четырёхугольника две стороны параллельны. Это параллелограмм?</summary><p>Не обязательно: это может быть трапеция. Нужно, чтобы эти стороны были ещё и равны.</p></details>
+    <details><summary>Чем признак отличается от свойства?</summary><p>Свойство: «если параллелограмм, то…». Признак: «если выполнено условие, то это параллелограмм».</p></details>
+  </section>
+
+  <div class="finish">
+    <b>Прочитала всё? Теперь тест.</b>
+    <span>14 вопросов: ломаные, многоугольники, сумма углов, параллелограмм и его признаки. После каждого ответа — разбор с чертежом.</span>
+    <a class="go" id="go" href="./?kid=k8&amp;test=k8-geom-parallelogramm-2026-10-13&amp;read=1">Начать тест</a>
+  </div>
+</div>
+<script>
+document.getElementById("go").addEventListener("click", function(){
+  try { localStorage.setItem("intro-read:k8-geom-parallelogramm-2026-10-13", "1"); } catch(e){}
+});
+</script>
+</body>
+</html>
