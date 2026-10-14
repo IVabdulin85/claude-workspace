@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Материки и острова: рассказ</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;700&family=PT+Sans+Narrow:wght@700&display=swap">
+<style>
+/* Макет: одна колонка; маршрут из пяти остановок по шкале слева, таблицы и полоски долей внутри остановок */
+:root{
+  --bg:#eef1ee; --card:#f9faf8; --ink:#1d2a2b; --muted:#5a6a6a; --line:#cfd8d4;
+  --patina:#1f6f9a; --patina-soft:#dcebf3; --copper:#a8552a; --land:#c9a24a; --sea:#7fb2d3;
+  --display:"PT Sans Narrow","Arial Narrow",Arial,sans-serif;
+  --body:"Golos Text",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#141b1b; --card:#1c2525; --ink:#e6ecea; --muted:#9db0ad; --line:#2f3d3c;
+  --patina:#6fb8e0; --patina-soft:#1c3443; --copper:#e39364; --land:#b8913c; --sea:#2c5a78; color-scheme:dark } }
+:root[data-theme="dark"]{
+  --bg:#141b1b; --card:#1c2525; --ink:#e6ecea; --muted:#9db0ad; --line:#2f3d3c;
+  --patina:#6fb8e0; --patina-soft:#1c3443; --copper:#e39364; --land:#b8913c; --sea:#2c5a78; color-scheme:dark }
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
+.wrap{max-width:680px;margin:0 auto;padding-inline:18px;padding-block:28px 48px;display:flex;flex-direction:column;gap:22px}
+h1{font-family:var(--display);font-size:clamp(30px,7vw,44px);line-height:1.08;margin:0;text-wrap:balance}
+.lead{color:var(--muted);margin:0}
+.kicker{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--patina);font-weight:700;margin:0}
+.scale{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;margin:0;padding:0;list-style:none}
+.scale li{background:var(--patina-soft);border-top:4px solid var(--patina);padding:8px 6px;font-size:13px;line-height:1.25;min-width:0;overflow-wrap:anywhere}
+.scale li:nth-child(n+4){border-top-color:var(--copper)}
+.scale b{display:block;font-family:var(--display);font-size:17px}
+.stops{display:flex;flex-direction:column;gap:0;border-left:3px solid var(--line);margin-left:6px}
+.stop{position:relative;padding:0 0 22px 20px}
+.stop::before{content:"";position:absolute;left:-9px;top:8px;width:15px;height:15px;border-radius:50%;background:var(--patina);border:3px solid var(--bg)}
+.stop.metal::before{background:var(--copper)}
+.stop h2{font-family:var(--display);font-size:25px;line-height:1.15;margin:0 0 2px}
+.when{font-size:14px;color:var(--muted);margin:0 0 8px;font-variant-numeric:tabular-nums}
+.stop p{margin:0 0 10px;max-width:62ch}
+mark{background:var(--patina-soft);color:inherit;padding:0 3px;border-radius:3px;font-weight:500}
+.memo{background:var(--card);border:1px solid var(--line);padding:16px 18px}
+.memo h2{font-family:var(--display);font-size:22px;margin:0 0 8px}
+.memo ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+.go{display:inline-block;background:var(--patina);color:var(--bg);font-weight:700;text-decoration:none;padding:13px 22px;border-radius:6px;align-self:flex-start}
+.go:focus-visible{outline:3px solid var(--copper);outline-offset:3px}
+.note{font-size:14px;color:var(--muted);margin:0}
+@media (max-width:460px){ .scale{grid-template-columns:repeat(2,1fr)} }
+.bar{display:flex;height:30px;margin:4px 0 10px;font-size:13px;font-weight:700;overflow:hidden;border-radius:4px}
+.bar span{display:flex;align-items:center;padding:0 8px;white-space:nowrap;color:var(--ink)}
+.b-land{background:var(--land)} .b-sea{background:var(--sea);justify-content:flex-end}
+.stop h3{font-size:17px;margin:12px 0 6px}
+.list{margin:0 0 10px;padding-left:22px} .list li{margin-bottom:4px}
+.trap{border-left:4px solid var(--copper);padding:4px 0 4px 12px;margin:10px 0}
+.trap b{color:var(--copper)}
+.tw{overflow-x:auto;margin:6px 0 12px}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:6px 8px;border-bottom:1px solid var(--line)}
+th{color:var(--muted);font-weight:600} td.n{white-space:nowrap;font-variant-numeric:tabular-nums}
+figure{margin:6px 0 10px} svg{display:block;width:100%;max-width:480px;height:auto;margin:0 auto}
+</style>
+</head>
+<body style="margin:0">
+<div class="wrap">
+  <p class="kicker">География · 5 класс · §13</p>
+  <h1>Руслан, отправляемся вокруг света</h1>
+  <p class="lead">Прочитай объяснение — это 10 минут. Кнопка «Начать тест» стоит в самом конце. В тесте 12 вопросов, после каждого ответа будет разбор. Чтобы закрыть тему, нужно 11 из 12.</p>
+
+  <div class="stops">
+    <section class="stop">
+      <h2>Остановка 1. Суша и вода</h2>
+      <p class="when">Смотрим на Землю из космоса</p>
+      <p>Поверхность Земли — это суша и Мировой океан. <mark>Суша</mark> — все материки вместе с островами.</p>
+      <div class="bar" role="img" aria-label="Суша 29 процентов, океан 71 процент"><span class="b-land" style="width:29%">суша 29%</span><span class="b-sea" style="width:71%">океан 71%</span></div>
+      <p>Суша — <mark>29%</mark> поверхности (149 млн км²), океан — <mark>71%</mark> (361 млн км²). Воды больше, поэтому из космоса Земля голубая.</p>
+      <p>Суша распределена неравномерно:</p>
+      <div class="bar" role="img" aria-label="Северное полушарие: суша 39 процентов"><span class="b-land" style="width:39%">север: суша 39%</span><span class="b-sea" style="width:61%">61%</span></div>
+      <div class="bar" role="img" aria-label="Южное полушарие: суша 19 процентов"><span class="b-land" style="width:19%">19%</span><span class="b-sea" style="width:81%">юг: океан 81%</span></div>
+      <p>В Северном полушарии суши 100 млн км², в Южном — 49 млн км². Значит, на севере суши <mark>в 2 раза больше</mark>.</p>
+    </section>
+
+    <section class="stop">
+      <h2>Остановка 2. Шесть материков</h2>
+      <p class="when">Материк — огромный массив суши, окружённый водой</p>
+      <p>Материки ещё называют континентами. Их шесть:</p>
+      <ol class="list">
+        <li><b>Евразия</b> — самый большой, на нём Казахстан</li>
+        <li><b>Африка</b></li>
+        <li><b>Северная Америка</b></li>
+        <li><b>Южная Америка</b></li>
+        <li><b>Австралия</b></li>
+        <li><b>Антарктида</b> — вокруг Южного полюса</li>
+      </ol>
+      <p class="trap"><b>Не путай.</b> Европа и Азия — это две части света, а материк у них один — Евразия. Гренландия — остров, а не материк.</p>
+      <h3>Остров, полуостров, архипелаг</h3>
+      <div class="tw"><table>
+        <tr><th>Что</th><th>Вода вокруг</th><th>Пример</th></tr>
+        <tr><td><b>Остров</b></td><td>со всех сторон</td><td>Гренландия</td></tr>
+        <tr><td><b>Полуостров</b></td><td>с трёх сторон, четвёртой соединён с материком</td><td>Аравийский</td></tr>
+        <tr><td><b>Архипелаг</b></td><td>группа островов рядом, одного происхождения</td><td>Японские острова</td></tr>
+      </table></div>
+      <p>Слова на трёх языках: суша — құрлық — land; материк — материк — mainland; полуостров — түбек — peninsula; остров — арал — island; архипелаг — архипелаг — archipelago.</p>
+      <h3>А где мы?</h3>
+      <p>Казахстан расположен на материке <mark>Евразия</mark>, в его глубине. Выхода к Мировому океану у нас нет, поэтому Казахстан называют <mark>внутриконтинентальной</mark> страной. Каспийское море с океаном не соединено.</p>
+    </section>
+
+    <section class="stop">
+      <h2>Остановка 3. Материки, которых больше нет</h2>
+      <p class="when">Очень давно</p>
+      <figure>
+        <svg viewBox="0 0 460 150" role="img" aria-label="Пангея раскололась на Лавразию и Гондвану, потом на шесть материков">
+          <circle cx="70" cy="75" r="56" style="fill:var(--sea)"/><path d="M50 40 q30-12 45 8 q10 30-10 50 q-25 15-40-5 q-12-25 5-53z" style="fill:var(--land)"/>
+          <text x="70" y="146" text-anchor="middle" style="fill:var(--ink);font:700 15px sans-serif">Пангея</text>
+          <text x="140" y="80" style="fill:var(--muted);font:700 22px sans-serif">→</text>
+          <circle cx="230" cy="75" r="56" style="fill:var(--sea)"/><path d="M200 32 q35-10 55 6 q-5 18-30 20 q-22 0-25-26z" style="fill:var(--land)"/><path d="M205 80 q30-8 50 8 q-2 26-28 34 q-25-6-22-42z" style="fill:var(--land)"/>
+          <text x="230" y="146" text-anchor="middle" style="fill:var(--ink);font:700 15px sans-serif">Лавразия и Гондвана</text>
+          <text x="300" y="80" style="fill:var(--muted);font:700 22px sans-serif">→</text>
+          <circle cx="390" cy="75" r="56" style="fill:var(--sea)"/>
+          <path d="M352 40 l18-6 6 14 -14 8z M392 32 l30 4 -4 18 -24-2z M372 66 l14 2 2 22 -14 6z M402 70 l16 4 -2 16 -14-2z M396 104 l26 2 -2 8 -24 0z M357 70 l8 4 -2 22 -8 -4z" style="fill:var(--land)"/>
+          <text x="390" y="146" text-anchor="middle" style="fill:var(--ink);font:700 15px sans-serif">6 материков</text>
+        </svg>
+      </figure>
+      <ol class="list">
+        <li>Сначала был один материк — <mark>Пангея</mark> — и вокруг него один океан — <mark>Панталасса</mark>.</li>
+        <li>Пангея раскололась на два материка. Северный — <mark>Лавразия</mark>: из него получились Евразия и Северная Америка. Южный — <mark>Гондвана</mark>: из него материки Южного полушария. Между ними появился океан <mark>Тетис</mark>.</li>
+        <li>Материки раскололись ещё и разошлись. Образовались три новых океана: Атлантический, Индийский и Северный Ледовитый.</li>
+        <li><mark>Тихий океан</mark> — остаток древней Панталассы.</li>
+      </ol>
+      <p class="trap"><b>Подсказка, как запомнить.</b> Пангея и Панталасса начинаются одинаково: «пан» — значит «всё». Всё в одном материке, всё в одном океане.</p>
+    </section>
+
+    <section class="stop metal">
+      <h2>Остановка 4. Что знали в древности</h2>
+      <p class="when">До н.э. и средние века</p>
+      <p>Античные учёные знали только три части света: <mark>Европу, Азию и Африку</mark>. Об Америке, Австралии и Антарктиде никто не знал.</p>
+      <ul class="list">
+        <li><b>Геродот</b> (V век до н.э.) описал известные тогда земли.</li>
+        <li><b>Пифей</b> (IV век до н.э.) плавал вдоль западных побережий Европы.</li>
+        <li>Китайцы и арабы собирали сведения об Азии. Торговали по Шёлковому пути.</li>
+        <li><b>Марко Поло</b> (1254–1324) — итальянец, благодаря ему европейцы узнали об Азии.</li>
+        <li><b>Семёнов-Тян-Шанский</b> исследовал Тянь-Шань, <b>Пржевальский</b> — Центральную Азию.</li>
+      </ul>
+    </section>
+
+    <section class="stop metal">
+      <h2>Остановка 5. Великие географические открытия</h2>
+      <p class="when">XV–XVII века</p>
+      <p>Сухопутные пути из Европы в Китай и Индию оказались перекрыты. Европейцы стали искать морские пути на Восток.</p>
+      <div class="tw"><table>
+        <tr><th>Когда</th><th>Кто</th><th>Что открыл</th></tr>
+        <tr><td class="n">1492</td><td><b>Христофор Колумб</b></td><td>Америку. 3 августа три корабля вышли из Испании и плыли на запад, 12 октября достигли островов у Северной Америки. Колумб думал, что это Индия</td></tr>
+        <tr><td class="n">1497–1498</td><td><b>Васко да Гама</b></td><td>морской путь в Индию: обогнул Африку и вышел в Индийский океан</td></tr>
+        <tr><td class="n">1606</td><td><b>Виллем Янц</b></td><td>первым из европейцев увидел северное побережье Австралии</td></tr>
+        <tr><td class="n">1642</td><td><b>Абел Тасман</b></td><td>остров Тасмания, доплыл до Новой Зеландии</td></tr>
+        <tr><td class="n">1771</td><td><b>Джеймс Кук</b></td><td>восточное побережье Австралии — его и считают открывшим Австралию</td></tr>
+        <tr><td class="n">1820</td><td><b>Беллинсгаузен и Лазарев</b></td><td>Антарктиду, на кораблях «Восток» и «Мирный»</td></tr>
+        <tr><td class="n">1911</td><td><b>Руаль Амундсен</b></td><td>первым достиг Южного полюса; Роберт Скотт — в начале 1912 года</td></tr>
+      </table></div>
+      <p>Африку изучали <b>Давид Ливингстон</b> и <b>Мунго Парк</b>.</p>
+      <p class="trap"><b>Ловушка с Австралией.</b> Первым её увидел Янц, но его сведения держали в тайне. Поэтому открывшим Австралию считают Кука.</p>
+      <p>Антарктиду открыли <mark>последней</mark>: она далеко и покрыта льдом. Кук пытался до неё доплыть, но его не пустили льды.</p>
+    </section>
+  </div>
+
+  <div class="memo">
+    <h2>Запомни перед тестом</h2>
+    <ul>
+      <li>Суша 29%, океан 71%. На севере суши в 2 раза больше.</li>
+      <li>Шесть материков. Казахстан — на Евразии, без выхода к океану.</li>
+      <li>Пангея → Лавразия и Гондвана → 6 материков. Тихий океан — остаток Панталассы.</li>
+      <li>Колумб — Америка, 1492. Васко да Гама — путь в Индию. Кук — Австралия. Беллинсгаузен и Лазарев — Антарктида, 1820.</li>
+    </ul>
+  </div>
+
+  <a class="go" id="go" href="./?kid=k5&amp;test=k5-geo-materiki-2026-10-14&amp;read=1">Начать тест</a>
+</div>
+<script>
+document.getElementById("go").addEventListener("click", function(){
+  try { localStorage.setItem("intro-read:k5-geo-materiki-2026-10-14", "1"); } catch(e){}
+});
+</script>
+</body>
+</html>
