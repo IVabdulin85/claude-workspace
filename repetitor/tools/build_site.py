@@ -124,6 +124,41 @@ PARENT_OLD = 'h("p",{},"Откройте страницу в Claude под св�
 EXTRA_CSS = "<style>.share-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.share-row .btn{text-decoration:none}</style>\n"
 
 
+# ===== Тип вопроса "text": ребёнок вписывает ответ; проверка по смыслу, опечатки не важны =====
+TEXT_HELPERS = r"""
+function normT(s){return String(s??"").toLowerCase().replace(/ё/g,"е").replace(/[«»"'`.,;:!?()\[\]\-–—\/°]/g," ").replace(/\s+/g," ").trim();}
+function levT(a,b){const m=a.length,n=b.length;if(!m)return n;if(!n)return m;let p=Array.from({length:n+1},(_,j)=>j);
+  for(let i=1;i<=m;i++){const c=[i];for(let j=1;j<=n;j++)c[j]=Math.min(p[j]+1,c[j-1]+1,p[j-1]+(a[i-1]===b[j-1]?0:1));p=c;}return p[n];}
+const FILLER_T=new Set("на в во это знаки знак съемка сьемка съемки материк материке остров острова океан океана г год году градусов градуса градус по к с со из от до и наука прибор линия линию".split(" "));
+function tolT(n){return n<=4?0:n<=8?1:2;}
+function textHit(resp,vars){const r=normT(resp);if(!r)return false;const rt=r.split(" ");
+  for(const v0 of vars){const v=normT(v0);if(!v)continue;const tol=tolT(v.replace(/ /g,"").length);
+    if(levT(r,v)<=tol||levT(r.replace(/ /g,""),v.replace(/ /g,""))<=tol)return true;
+    const n=v.split(" ").length;for(let i=0;i+n<=rt.length;i++){const rest=rt.slice(0,i).concat(rt.slice(i+n));
+      if(rest.every(w=>FILLER_T.has(w))&&levT(rt.slice(i,i+n).join(" "),v)<=tol)return true;}}
+  return false;}
+function textMatch(q,resp){return textHit(resp,[q.answer,...(q.accept||[])]);}
+"""
+TEXT_PATCHES = [
+  ('function isRight(q,resp){\n',
+   TEXT_HELPERS + 'function isRight(q,resp){\n  if(q.type==="text")return textMatch(q,resp);\n'),
+  ('function whyWrong(q,resp){\n',
+   'function whyWrong(q,resp){\n  if(q.type==="text"){for(const t of q.typicalWrong||[]){if(textHit(resp,[t.value,...(t.also||[])]))return t.why;}\n    return q.genericWrong||"Сравни свой ответ с разбором ниже.";}\n'),
+  ('function answerText(q){\n',
+   'function answerText(q){\n  if(q.type==="text")return String(q.answer);\n'),
+  ('  if(q.type==="number"){\n    const inp=',
+   '  if(q.type==="text"){\n    const inp=h("input",{type:"text",autocomplete:"off",autocapitalize:"off",spellcheck:"false",id:"txt-"+q.id,"aria-label":"Ответ",placeholder:"Впиши ответ",style:"width:min(420px,100%)"});\n    inp.addEventListener("input",()=>{chosen=inp.value;submit.disabled=!inp.value.trim();});\n    inp.addEventListener("keydown",e=>{if(e.key==="Enter"&&!submit.disabled)submit.click();});\n    ans.append(h("div",{class:"numrow"},inp));\n    ans.append(h("p",{class:"muted small",style:"margin-top:6px"},"Напиши ответ словами. Ошибки в написании не страшны — проверяется смысл."));\n  }else if(q.type==="number"){\n    const inp='),
+  ('h("span",{class:"hand ok"},"Верно!"),h("span",{},"Посмотри решение — так закрепишь способ.")',
+   'h("span",{class:"hand ok"},"Верно!"),q.type==="text"?h("span",{html:"Правильно пишется: <b>"+esc(String(q.answer))+"</b>. Посмотри разбор."}):h("span",{},"Посмотри решение — так закрепишь способ.")'),
+]
+
+def apply_text_patch(html):
+    for old, new in TEXT_PATCHES:
+        assert html.count(old) == 1, "text-патч: не найден или не уникален: " + old[:40]
+        html = html.replace(old, new, 1)
+    return html
+
+
 def load_template():
     for p in TEMPLATE_CANDIDATES:
         if os.path.exists(p):
@@ -136,6 +171,7 @@ def build_page(html):
     assert SEND_PATCH_OLD in html, "не найден блок отправки результата — шаблон изменился"
     html = html.replace(SEND_PATCH_OLD, SEND_PATCH_NEW, 1)
     html = html.replace(BANNER_OLD, BANNER_NEW, 1)
+    html = apply_text_patch(html)
     # шим вставляем перед основным скриптом страницы
     i = html.index("<script>")
     html = html[:i] + EXTRA_CSS + SHIM + html[i:]

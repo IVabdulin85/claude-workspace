@@ -427,17 +427,34 @@ function parseNum(s){
   const m=s.match(/^(-?\d+(?:\.\d+)?)\/(\d+(?:\.\d+)?)$/);if(m)return +m[2]?+m[1]/+m[2]:NaN;
   return /^-?\d+(?:\.\d+)?$/.test(s)?Number(s):NaN;
 }
+
+function normT(s){return String(s??"").toLowerCase().replace(/ё/g,"е").replace(/[«»"'`.,;:!?()\[\]\-–—\/°]/g," ").replace(/\s+/g," ").trim();}
+function levT(a,b){const m=a.length,n=b.length;if(!m)return n;if(!n)return m;let p=Array.from({length:n+1},(_,j)=>j);
+  for(let i=1;i<=m;i++){const c=[i];for(let j=1;j<=n;j++)c[j]=Math.min(p[j]+1,c[j-1]+1,p[j-1]+(a[i-1]===b[j-1]?0:1));p=c;}return p[n];}
+const FILLER_T=new Set("на в во это знаки знак съемка сьемка съемки материк материке остров острова океан океана г год году градусов градуса градус по к с со из от до и наука прибор линия линию".split(" "));
+function tolT(n){return n<=4?0:n<=8?1:2;}
+function textHit(resp,vars){const r=normT(resp);if(!r)return false;const rt=r.split(" ");
+  for(const v0 of vars){const v=normT(v0);if(!v)continue;const tol=tolT(v.replace(/ /g,"").length);
+    if(levT(r,v)<=tol||levT(r.replace(/ /g,""),v.replace(/ /g,""))<=tol)return true;
+    const n=v.split(" ").length;for(let i=0;i+n<=rt.length;i++){const rest=rt.slice(0,i).concat(rt.slice(i+n));
+      if(rest.every(w=>FILLER_T.has(w))&&levT(rt.slice(i,i+n).join(" "),v)<=tol)return true;}}
+  return false;}
+function textMatch(q,resp){return textHit(resp,[q.answer,...(q.accept||[])]);}
 function isRight(q,resp){
+  if(q.type==="text")return textMatch(q,resp);
   if(q.type==="number"){const v=parseNum(resp);if(!isFinite(v))return false;return Math.abs(v-Number(q.answer))<=(q.tolerance??0.001);}
   return String(resp)===String(q.answer);
 }
 function whyWrong(q,resp){
+  if(q.type==="text"){for(const t of q.typicalWrong||[]){if(textHit(resp,[t.value,...(t.also||[])]))return t.why;}
+    return q.genericWrong||"Сравни свой ответ с разбором ниже.";}
   if(q.type==="number"){const v=parseNum(resp);
     for(const t of q.typicalWrong||[]){if(isFinite(v)&&Math.abs(v-Number(t.value))<=(t.tolerance??q.tolerance??0.001))return t.why;}
     return q.genericWrong||"Сравни свой ход решения с разбором ниже: найди шаг, где ответ пошёл не туда.";}
   const o=(q.options||[]).find(o=>o.id===resp);return o&&o.why?o.why:"Посмотри разбор ниже, шаг за шагом.";
 }
 function answerText(q){
+  if(q.type==="text")return String(q.answer);
   if(q.type==="number")return String(q.answer).replace(".",",")+(q.unit?" "+q.unit:"");
   const o=(q.options||[]).find(o=>o.id===q.answer);return o?o.text:"";
 }
@@ -585,7 +602,13 @@ function questionWidget(q,onAnswer,opts={}){
   let hintShown=false;const hintBtn=q.hint?h("button",{class:"btn soft",type:"button"},"Подсказка"):null;
   const hintBox=h("div",{});
   if(hintBtn)hintBtn.onclick=()=>{if(hintShown)return;hintShown=true;hintBox.append(h("div",{class:"hintbox",html:"<b>Подсказка.</b> "+rich(q.hint)}));hintBtn.disabled=true;};
-  if(q.type==="number"){
+  if(q.type==="text"){
+    const inp=h("input",{type:"text",autocomplete:"off",autocapitalize:"off",spellcheck:"false",id:"txt-"+q.id,"aria-label":"Ответ",placeholder:"Впиши ответ",style:"width:min(420px,100%)"});
+    inp.addEventListener("input",()=>{chosen=inp.value;submit.disabled=!inp.value.trim();});
+    inp.addEventListener("keydown",e=>{if(e.key==="Enter"&&!submit.disabled)submit.click();});
+    ans.append(h("div",{class:"numrow"},inp));
+    ans.append(h("p",{class:"muted small",style:"margin-top:6px"},"Напиши ответ словами. Ошибки в написании не страшны — проверяется смысл."));
+  }else if(q.type==="number"){
     const inp=h("input",{type:"text",inputmode:"decimal",autocomplete:"off",id:"num-"+q.id,"aria-label":"Ответ"});
     inp.addEventListener("input",()=>{chosen=inp.value;submit.disabled=!isFinite(parseNum(inp.value));});
     inp.addEventListener("keydown",e=>{if(e.key==="Enter"&&!submit.disabled)submit.click();});
@@ -642,7 +665,7 @@ function screenQuestion(idx){
 }
 function feedbackBlock(q,res,onNext){
   const box=h("div",{});
-  if(res.ok)box.append(h("div",{class:"verdict ok"},h("span",{class:"hand ok"},"Верно!"),h("span",{},"Посмотри решение — так закрепишь способ.")));
+  if(res.ok)box.append(h("div",{class:"verdict ok"},h("span",{class:"hand ok"},"Верно!"),q.type==="text"?h("span",{html:"Правильно пишется: <b>"+esc(String(q.answer))+"</b>. Посмотри разбор."}):h("span",{},"Посмотри решение — так закрепишь способ.")));
   else{box.append(h("div",{class:"verdict bad"},h("span",{class:"hand"},"Ошибка"),h("span",{html:"Правильный ответ: <b>"+rich(answerText(q))+"</b>"})));
     box.append(h("div",{class:"why"},h("div",{class:"lbl"},"Почему не так"),h("p",{style:"margin-top:4px",html:rich(whyWrong(q,res.resp))})));}
   box.append(solutionBlock(q,false));

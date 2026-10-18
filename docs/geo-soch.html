@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>География: к СОЧ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&family=Golos+Text:wght@400;500;600;700&display=swap">
+<style>
+/* Макет: лист топографического плана — светлая бумага с горизонталями, главы как «участки», стрелка севера у заголовков */
+:root{
+  --bg:#F1F4EF; --card:#FFFFFF; --ink:#1F2A24; --muted:#5B6A60; --line:#D3DCD3;
+  --green:#2E7A4C; --green-soft:#E2F0E6; --water:#1F6FA8; --water-soft:#E1EEF8; --brown:#8A5626; --brown-soft:#F5EADF; --red:#B83A2E; --red-soft:#F8E5E2;
+  --display:"PT Sans Narrow","Arial Narrow",Arial,sans-serif;
+  --body:"Golos Text",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121815; --card:#1A221D; --ink:#E5ECE7; --muted:#9DB0A4; --line:#2D3A32;
+  --green:#6CCB93; --green-soft:#1C3326; --water:#7DB9E8; --water-soft:#18293A; --brown:#E0A86E; --brown-soft:#33271B; --red:#F08A7E; --red-soft:#3A2220; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121815; --card:#1A221D; --ink:#E5ECE7; --muted:#9DB0A4; --line:#2D3A32;
+  --green:#6CCB93; --green-soft:#1C3326; --water:#7DB9E8; --water-soft:#18293A; --brown:#E0A86E; --brown-soft:#33271B; --red:#F08A7E; --red-soft:#3A2220; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--body)}
+.wrap{max-width:740px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 56px;display:flex;flex-direction:column;gap:22px}
+h1,h2{font-family:var(--display);font-weight:700;line-height:1.1;margin:0;text-wrap:balance}
+h1{font-size:clamp(32px,7vw,46px);color:var(--green)}
+h2{font-size:clamp(24px,5vw,30px)}
+h3{font-size:18px;margin:6px 0 0;font-weight:700}
+p{margin:0}
+.kicker{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--water);font-weight:700;margin:0}
+.lead{color:var(--muted)}
+nav.toc{display:flex;flex-wrap:wrap;gap:8px}
+nav.toc a{font-size:14px;font-weight:600;color:var(--green);background:var(--green-soft);padding:6px 11px;border-radius:999px;text-decoration:none}
+nav.toc a:focus-visible,.go:focus-visible,summary:focus-visible{outline:3px solid var(--water);outline-offset:2px}
+.plan{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:0;padding:0;list-style:none;counter-reset:p}
+.plan li{counter-increment:p;background:var(--card);border:1px solid var(--line);border-top:4px solid var(--green);padding:10px;font-size:14px;line-height:1.35;min-width:0}
+.plan li::before{content:counter(p) ". ";font-weight:700;color:var(--green)}
+@media (max-width:520px){.plan{grid-template-columns:1fr}}
+section.ch{background:var(--card);border:1px solid var(--line);padding:20px 18px;display:flex;flex-direction:column;gap:12px;scroll-margin-top:12px}
+.ch>h2{display:flex;gap:12px;align-items:baseline}
+.ch>h2 .n{font-family:var(--display);color:var(--card);background:var(--green);min-width:38px;height:38px;display:inline-grid;place-items:center;font-size:22px;flex:none;border-radius:50%}
+.par{font-size:13px;color:var(--muted);font-weight:600;letter-spacing:.04em}
+mark{background:var(--brown-soft);color:inherit;padding:0 3px;border-radius:3px;font-weight:600}
+.def{border-left:4px solid var(--water);background:var(--water-soft);padding:10px 14px}
+.def b:first-child{color:var(--water)}
+.trap{border-left:4px solid var(--red);background:var(--red-soft);padding:10px 14px}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.45}
+th,td{text-align:left;vertical-align:top;padding:8px 9px;border-bottom:1px solid var(--line)}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+td:first-child{font-weight:600}
+td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
+ul.l,ol.l{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:5px}
+.chain{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}
+.chain li{flex:1 1 130px;background:var(--brown-soft);border:1px solid var(--line);padding:8px 10px;font-size:14px;line-height:1.35;min-width:0}
+.chain li b{display:block;color:var(--brown);font-size:15px}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;align-items:center}
+@media (max-width:560px){.two{grid-template-columns:1fr}}
+figure{margin:0}
+svg{display:block;max-width:100%;height:auto;margin:0 auto}
+.bar{display:flex;height:34px;border-radius:6px;overflow:hidden;font-weight:700;font-size:14px}
+.bar span{display:flex;align-items:center;justify-content:center}
+.land{background:var(--green-soft);color:var(--green)} .sea{background:var(--water-soft);color:var(--water)}
+details{border:1px solid var(--line);padding:10px 14px;background:var(--bg)}
+summary{cursor:pointer;font-weight:700;color:var(--green)}
+details ol{margin:8px 0 0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
+details .a{color:var(--muted)}
+.memo{background:var(--card);border:2px solid var(--green);padding:18px}
+.memo h2{color:var(--green);margin-bottom:8px}
+.go{display:flex;align-items:center;justify-content:center;min-height:56px;background:var(--green);color:#fff;font:700 19px var(--body);text-decoration:none;border-radius:10px}
+:root[data-theme="dark"] .go{color:#121815}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .go{color:#121815}}
+.small{font-size:14px;color:var(--muted)}
+.words{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:6px;font-size:14px}
+.words div{border:1px solid var(--line);padding:6px 8px;min-width:0}
+.words b{display:block}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="kicker">География · 5 класс · к СОЧ · §10–13</p>
+  <h1>Руслан, повторяем перед СОЧ</h1>
+  <p class="lead">Здесь всё по твоему учебнику (с. 35–45): карта и план, масштаб, азимут, условные знаки, съёмка местности, материки и открытия. Читай примерно 20 минут. В тесте ответы нужно <b>вписывать самому</b>, поэтому запоминай названия и числа. Ошибки в написании не страшны: проверяется смысл. Кнопка «Начать тест» в самом конце.</p>
+
+  <ol class="plan">
+    <li>Прочитай все главы. В конце каждой открой «Проверь себя» и ответь вслух, не подглядывая.</li>
+    <li>Пройди тест. После каждого ответа читай разбор.</li>
+    <li>Сделай работу над ошибками и отправь результат папе.</li>
+  </ol>
+
+  <nav class="toc" aria-label="Главы">
+    <a href="#karta">Карта и план</a><a href="#masshtab">Масштаб</a><a href="#azimut">Азимут</a><a href="#znaki">Условные знаки</a><a href="#syomka">Съёмка</a><a href="#materiki">Материки</a><a href="#otkrytiya">Открытия</a>
+  </nav>
+
+  <!-- 1 -->
+  <section class="ch" id="karta">
+    <p class="par">§10</p>
+    <h2><span class="n">1</span>От карты к плану местности</h2>
+    <p class="def"><b>Картография</b> — наука о составлении географических карт и само их составление.</p>
+    <p>Древние карты делали на камне, глиняных табличках, костях мамонта и моржа, на блюдах, папирусе, пергаменте и бумаге.</p>
+    <div class="tw"><table>
+      <tr><th>Кто</th><th>Когда</th><th>Что сделал</th></tr>
+      <tr><td>Анаксимандр</td><td class="n">больше 2,5 тыс. лет назад</td><td><mark>первая карта с масштабом</mark>; в центре — Греция, по краю — океан</td></tr>
+      <tr><td>Птолемей</td><td class="n">около 150 г. н. э.</td><td>известная карта; на ней <b>нет</b> Америки, Австралии и Тихого океана</td></tr>
+      <tr><td>Мартин Вальдземюллер</td><td class="n">1507</td><td>первая карта мира, на которой есть <mark>Америка</mark></td></tr>
+      <tr><td>Герард Меркатор</td><td class="n">1595</td><td>«<mark>Атлас</mark>» — сборник карт</td></tr>
+    </table></div>
+    <p class="def"><b>Географическая карта</b> — уменьшенное изображение земной поверхности на плоскости.</p>
+    <p class="def"><b>План местности</b> — изображение участка земной поверхности крупного масштаба, при создании которого используются условные знаки.</p>
+    <div class="tw"><table>
+      <tr><th></th><th>План местности</th><th>Географическая карта</th></tr>
+      <tr><td>Что показывает</td><td>небольшой участок</td><td>большие территории, всю Землю</td></tr>
+      <tr><td>Масштаб</td><td>крупный, всё подробно</td><td>мелкий</td></tr>
+      <tr><td>Видно</td><td>каждый дом, дерево, столб</td><td>только крупные объекты</td></tr>
+    </table></div>
+    <p class="trap"><b>В прошлый раз здесь была ошибка.</b> Запомни: <b>план</b> — маленький участок подробно, <b>карта</b> — большие территории. Самыми первыми картами в истории были как раз планы.</p>
+    <p class="def"><b>Объекты участка карты</b> — все элементы местности, которые нужно нанести на план: деревья, здания, дороги, ограждения, реки, столбы.</p>
+    <p>Для современных планов используют технику: вертолёты, самолёты, дроны и даже спутники. Снимки с воздуха называются <mark>аэрофотоснимками</mark>.</p>
+    <details><summary>Проверь себя</summary><ol>
+      <li>Кто составил первую карту с масштабом? <span class="a">Анаксимандр.</span></li>
+      <li>Кто издал «Атлас» в 1595 году? <span class="a">Герард Меркатор.</span></li>
+      <li>Что такое план местности? <span class="a">Изображение участка земной поверхности крупного масштаба с условными знаками.</span></li>
+    </ol></details>
+  </section>
+
+  <!-- 2 -->
+  <section class="ch" id="masshtab">
+    <p class="par">§10</p>
+    <h2><span class="n">2</span>Масштаб</h2>
+    <p class="def"><b>Масштаб</b> — дробь, показывающая, во сколько раз уменьшена земная поверхность на плане (карте).</p>
+    <p><mark>Составление плана начинается с выбора масштаба.</mark> Сначала выбирают точку, откуда хорошо виден весь участок: <b>возвышенность, холм, открытое пространство</b>. Потом — масштаб. Потом находят север (доской-планшетом и компасом) и проводят съёмку — полярную или маршрутную.</p>
+    <h3>Как считать по масштабу</h3>
+    <figure>
+      <svg viewBox="0 0 420 110" role="img" aria-label="Масштаб: в 1 сантиметре 50 метров, 4 сантиметра — 200 метров">
+        <rect x="20" y="34" width="80" height="16" style="fill:var(--green-soft);stroke:var(--ink);stroke-width:1.5"/>
+        <rect x="100" y="34" width="80" height="16" style="fill:var(--card);stroke:var(--ink);stroke-width:1.5"/>
+        <rect x="180" y="34" width="80" height="16" style="fill:var(--green-soft);stroke:var(--ink);stroke-width:1.5"/>
+        <rect x="260" y="34" width="80" height="16" style="fill:var(--card);stroke:var(--ink);stroke-width:1.5"/>
+        <text x="60" y="26" text-anchor="middle" style="fill:var(--water);font:600 13px sans-serif">50 м</text>
+        <text x="140" y="26" text-anchor="middle" style="fill:var(--water);font:600 13px sans-serif">50 м</text>
+        <text x="220" y="26" text-anchor="middle" style="fill:var(--water);font:600 13px sans-serif">50 м</text>
+        <text x="300" y="26" text-anchor="middle" style="fill:var(--water);font:600 13px sans-serif">50 м</text>
+        <text x="20" y="68" text-anchor="middle" style="fill:var(--muted);font:500 13px sans-serif">0</text>
+        <text x="100" y="68" text-anchor="middle" style="fill:var(--muted);font:500 13px sans-serif">1</text>
+        <text x="180" y="68" text-anchor="middle" style="fill:var(--muted);font:500 13px sans-serif">2</text>
+        <text x="260" y="68" text-anchor="middle" style="fill:var(--muted);font:500 13px sans-serif">3</text>
+        <text x="340" y="68" text-anchor="middle" style="fill:var(--muted);font:500 13px sans-serif">4 см</text>
+        <text x="180" y="98" text-anchor="middle" style="fill:var(--green);font:700 16px sans-serif">4 см × 50 м = 200 м</text>
+      </svg>
+    </figure>
+    <ul class="l">
+      <li><b>План → местность: умножай.</b> «В 1 см — 50 м», на плане 4 см → 4 × 50 = <mark>200 м</mark>.</li>
+      <li><b>Местность → план: дели.</b> «В 1 см — 100 м», на местности 300 м → 300 : 100 = <mark>3 см</mark>.</li>
+    </ul>
+    <p class="trap"><b>Ловушка.</b> Числа не складывают. 4 см и 50 м — это не 54, а 4 раза по 50.</p>
+    <details><summary>Проверь себя</summary><ol>
+      <li>«В 1 см — 20 м». На плане 5 см. Сколько метров? <span class="a">5 × 20 = 100 м.</span></li>
+      <li>«В 1 см — 50 м». На местности 150 м. Сколько см на плане? <span class="a">150 : 50 = 3 см.</span></li>
+    </ol></details>
+  </section>
+
+  <!-- 3 -->
+  <section class="ch" id="azimut">
+    <p class="par">§10, §12</p>
+    <h2><span class="n">3</span>Азимут</h2>
+    <p class="def"><b>Азимут</b> — угол между направлением на север и направлением движения (на предмет). Применяется для ориентирования на местности.</p>
+    <div class="two">
+      <figure>
+        <svg viewBox="0 0 300 300" role="img" aria-label="Круг азимутов: север 0, восток 90, юг 180, запад 270 градусов">
+          <circle cx="150" cy="150" r="105" style="fill:var(--card);stroke:var(--line);stroke-width:2"/>
+          <line x1="150" y1="150" x2="150" y2="50" style="stroke:var(--water);stroke-width:3"/>
+          <path d="M150,150 L150,110 A40,40 0 0,1 190,150 Z" style="fill:var(--brown);opacity:.3"/>
+          <line x1="150" y1="150" x2="241" y2="150" style="stroke:var(--red);stroke-width:3"/>
+          <text x="150" y="30" text-anchor="middle" style="fill:var(--ink);font:700 16px sans-serif">С 0°</text>
+          <text x="275" y="155" text-anchor="middle" style="fill:var(--ink);font:700 16px sans-serif">В 90°</text>
+          <text x="150" y="285" text-anchor="middle" style="fill:var(--ink);font:700 16px sans-serif">Ю 180°</text>
+          <text x="22" y="155" text-anchor="middle" style="fill:var(--ink);font:700 16px sans-serif">З 270°</text>
+          <text x="232" y="70" text-anchor="middle" style="fill:var(--muted);font:600 13px sans-serif">СВ 45°</text>
+          <text x="236" y="240" text-anchor="middle" style="fill:var(--muted);font:600 13px sans-serif">ЮВ 135°</text>
+          <text x="64" y="240" text-anchor="middle" style="fill:var(--muted);font:600 13px sans-serif">ЮЗ 225°</text>
+          <text x="66" y="70" text-anchor="middle" style="fill:var(--muted);font:600 13px sans-serif">СЗ 315°</text>
+          <path d="M200 92 A80 80 0 0 1 226 118" style="fill:none;stroke:var(--brown);stroke-width:2"/>
+          <path d="M226 118 l-2 -9 l-7 6 z" style="fill:var(--brown)"/>
+          <circle cx="150" cy="150" r="4" style="fill:var(--ink)"/>
+        </svg>
+      </figure>
+      <ul class="l">
+        <li>Отсчитывают <b>компасом</b> от направления <b>на север</b>.</li>
+        <li><mark>По часовой стрелке</mark>, от 0° до 360°.</li>
+        <li>Север 0°, восток 90°, юг 180°, запад 270°.</li>
+        <li>Между ними: СВ 45°, ЮВ 135°, ЮЗ 225°, СЗ 315°.</li>
+        <li>Азимут нужен в топографии, картографии, туризме, авиации, навигации, астрономии.</li>
+      </ul>
+    </div>
+    <p class="trap"><b>В прошлый раз здесь была ошибка.</b> Не путай восток и запад: по часовой стрелке от севера сначала идёт <b>восток (90°)</b>, а запад — только на 270°. Представь часы: 12 — север, 3 — восток, 6 — юг, 9 — запад.</p>
+    <details><summary>Проверь себя</summary><ol>
+      <li>Азимут 180° — куда? <span class="a">На юг.</span></li>
+      <li>Какой азимут у запада? <span class="a">270°.</span></li>
+      <li>Азимут 45° — какое направление? <span class="a">Северо-восток.</span></li>
+    </ol></details>
+  </section>
+
+  <!-- 4 -->
+  <section class="ch" id="znaki">
+    <p class="par">§11</p>
+    <h2><span class="n">4</span>Условные знаки</h2>
+    <p class="def"><b>Условные знаки</b> — обозначения на картах и планах, которыми изображают объекты и их количественные и качественные характеристики. Это «<mark>азбука</mark>» плана. Они <mark>одинаковы для всех стран мира</mark>, поэтому план можно прочитать без знания иностранного языка.</p>
+    <div class="tw"><table>
+      <tr><th>Вид знаков</th><th>Для чего</th><th>Примеры</th></tr>
+      <tr><td>Масштабные (площадные)</td><td>объекты, которые занимают большую площадь; размер виден в масштабе</td><td>лес, озеро, луг</td></tr>
+      <tr><td>Внемасштабные (точечные)</td><td>объекты, которые в масштабе не выразить</td><td>заводы, мосты, месторождения полезных ископаемых</td></tr>
+      <tr><td>Линейные</td><td>протяжённые объекты</td><td>железные и автомобильные дороги, просеки, ЛЭП, ручьи, границы, <b>горизонтали</b></td></tr>
+      <tr><td>Пояснительные</td><td>дополнительная характеристика</td><td>длина, ширина моста, ширина дороги, высота и толщина деревьев, глубина брода</td></tr>
+    </table></div>
+    <p class="small">Ключ: площадь → площадные; точка → точечные; линия → линейные; пояснение → пояснительные.</p>
+    <h3>Как читать знак леса</h3>
+    <figure>
+      <svg viewBox="0 0 470 140" role="img" aria-label="Знак леса: ель и берёза, высота 20, толщина 0,2, расстояние 6">
+        <rect x="10" y="10" width="230" height="110" rx="6" style="fill:var(--card);stroke:var(--line);stroke-width:2"/>
+        <text x="24" y="58" style="fill:var(--ink);font:600 17px sans-serif">ель</text>
+        <text x="24" y="84" style="fill:var(--ink);font:600 17px sans-serif">бер</text>
+        <path d="M110 40 l-14 24 h9 l-12 20 h34 l-12 -20 h9 z" style="fill:var(--green)"/><rect x="107" y="84" width="6" height="12" style="fill:var(--green)"/>
+        <text x="150" y="60" style="fill:var(--red);font:700 22px sans-serif">20</text>
+        <line x1="148" y1="68" x2="200" y2="68" style="stroke:var(--ink);stroke-width:2"/>
+        <text x="150" y="94" style="fill:var(--water);font:700 22px sans-serif">0,2</text>
+        <text x="208" y="80" style="fill:var(--brown);font:700 24px sans-serif">6</text>
+        <text x="252" y="44" style="fill:var(--red);font:600 14px sans-serif">над чертой — высота, м</text>
+        <text x="252" y="74" style="fill:var(--brown);font:600 14px sans-serif">справа — расстояние между</text>
+        <text x="252" y="90" style="fill:var(--brown);font:600 14px sans-serif">деревьями, м</text>
+        <text x="252" y="118" style="fill:var(--water);font:600 14px sans-serif">под чертой — толщина, м</text>
+      </svg>
+    </figure>
+    <p>Задание из учебника: лес из тополя и ивы, высота 12 м, толщина 40 см, расстояние 7 м → над чертой <b>12</b>, под чертой <b>0,4</b> (40 см = 0,4 м), справа <b>7</b>.</p>
+    <p class="trap"><b>Ловушка.</b> Толщину пишут в <b>метрах</b>: 20 см = 0,2 м, 30 см = 0,3 м, 40 см = 0,4 м.</p>
+    <details><summary>Проверь себя</summary><ol>
+      <li>Какими знаками обозначают мост и завод? <span class="a">Внемасштабными (точечными).</span></li>
+      <li>Какими — реку-ручей, дорогу, границу? <span class="a">Линейными.</span></li>
+      <li>Почему условные знаки — «азбука» плана? <span class="a">По ним план «читают», как текст по буквам.</span></li>
+    </ol></details>
+  </section>
+
+  <!-- 5 -->
+  <section class="ch" id="syomka">
+    <p class="par">§10, §12</p>
+    <h2><span class="n">5</span>Съёмка местности</h2>
+    <p><b>Оборудование:</b> планшет (лист фанеры или картона), компас, линейка, карандаш, ластик.</p>
+    <p class="def"><b>Доска-планшет</b> — доска (или лист твёрдого картона), на которую крепят бумагу, чтобы она лежала ровно. <b>Компас</b> — главный инструмент для нахождения азимута.</p>
+    <div class="tw"><table>
+      <tr><th>Съёмка</th><th>Как проводят</th></tr>
+      <tr><td>Глазомерная</td><td><mark>наиболее простой вид</mark> съёмки; измерения простыми приспособлениями. Её способы — полярный и маршрутный</td></tr>
+      <tr><td>Полярная</td><td>для <b>открытого</b> участка. Планшет ставят над точкой наблюдения — <mark>полюсом</mark>. Из одной точки проводят направления на все объекты</td></tr>
+      <tr><td>Маршрутная</td><td>по <b>пути движения</b>. Весь путь делят на участки со всеми поворотами; на каждой остановке — как полярная. Отмечают отрезки пути в масштабе и все видимые объекты вдоль пути</td></tr>
+    </table></div>
+    <h3>Как идёт работа</h3>
+    <ol class="chain">
+      <li><b>Подготовка</b>прикрепить бумагу, в углу — компас</li>
+      <li><b>Линия «Север–Юг»</b>начертить стрелкой</li>
+      <li><b>Ориентировать</b>северный конец стрелки — на 0</li>
+      <li><b>Азимуты</b>0° — север, по часовой</li>
+      <li><b>Расстояние</b>рулеткой, землемерным циркулем или шагами</li>
+      <li><b>На план</b>в масштабе, условным знаком, лишнюю линию стереть</li>
+    </ol>
+    <p>Сначала на бумаге отмечают точку съёмки, затем основные ориентиры: <b>углы зданий, крупные деревья, столбы</b>.</p>
+    <details><summary>Проверь себя</summary><ol>
+      <li>Какая съёмка — самая простая? <span class="a">Глазомерная.</span></li>
+      <li>Как называется точка наблюдения при полярной съёмке? <span class="a">Полюс.</span></li>
+      <li>Какую съёмку проводят по пути движения? <span class="a">Маршрутную.</span></li>
+      <li>Как сориентировать планшет? <span class="a">Повернуть так, чтобы северный конец стрелки компаса показал на 0.</span></li>
+    </ol></details>
+  </section>
+
+  <!-- 6 -->
+  <section class="ch" id="materiki">
+    <p class="par">§13</p>
+    <h2><span class="n">6</span>Материки и острова</h2>
+    <div class="words">
+      <div><b>Суша</b>құрлық · land</div><div><b>Материк</b>материк · mainland</div><div><b>Полуостров</b>түбек · peninsula</div><div><b>Остров</b>арал · island</div><div><b>Архипелаг</b>архипелаг · archipelago</div>
+    </div>
+    <div class="bar" role="img" aria-label="Суша 29 процентов, океан 71 процент"><span class="land" style="width:29%">суша 29%</span><span class="sea" style="width:71%">океан 71%</span></div>
+    <p>Суша (материки с островами) — <mark>29%</mark> поверхности Земли, <b>149 млн км²</b>. Океан — <mark>71%</mark>, <b>361 млн км²</b>. В Северном полушарии суши <mark>в 2 раза больше</mark>, чем в Южном (100 и 49 млн км²). Самые крупные формы рельефа — выступы материков и океанические впадины.</p>
+    <p><b>Шесть материков:</b> Евразия, Африка, Северная Америка, Южная Америка, Австралия, Антарктида. Казахстан — на <mark>Евразии</mark>.</p>
+    <p class="trap"><b>Ловушка.</b> Европа и Азия — две <b>части света</b>, а материк у них один — Евразия. Поэтому материков 6, а не 7.</p>
+    <div class="tw"><table>
+      <tr><th>Что</th><th>Вода вокруг</th><th>Пример</th></tr>
+      <tr><td>Остров</td><td>со всех сторон, намного меньше материка</td><td>Гренландия</td></tr>
+      <tr><td>Полуостров</td><td>с трёх сторон, четвёртой соединён с сушей</td><td>Аравийский</td></tr>
+      <tr><td>Архипелаг</td><td>группа островов рядом</td><td>Японские острова</td></tr>
+    </table></div>
+    <h3>Как появились материки</h3>
+    <ol class="chain">
+      <li><b>Пангея</b>один материк, вокруг — океан Панталасса</li>
+      <li><b>Лавразия и Гондвана</b>север (Евразия + Сев. Америка) и юг; между ними океан Тетис</li>
+      <li><b>6 материков</b>новые океаны: Атлантический, Индийский, Северный Ледовитый</li>
+    </ol>
+    <p><b>Тихий океан</b> — остаток древней <mark>Панталассы</mark>. Подсказка для памяти: «пан» — «всё»: Пангея — вся земля, Панталасса — всё море.</p>
+    <details><summary>Проверь себя</summary><ol>
+      <li>Сколько процентов поверхности Земли — суша? <span class="a">29%.</span></li>
+      <li>Как назывался единственный древний материк? <span class="a">Пангея.</span></li>
+      <li>Группа островов — это…? <span class="a">Архипелаг.</span></li>
+    </ol></details>
+  </section>
+
+  <!-- 7 -->
+  <section class="ch" id="otkrytiya">
+    <p class="par">§13</p>
+    <h2><span class="n">7</span>От древних учёных до великих открытий</h2>
+    <p>Античные учёные знали три части света: <mark>Европу, Азию и Африку</mark>.</p>
+    <div class="tw"><table>
+      <tr><th>Когда</th><th>Кто</th><th>Что сделал</th></tr>
+      <tr><td class="n">V в. до н. э.</td><td>Геродот</td><td>древнегреческий историк, описал известные тогда земли</td></tr>
+      <tr><td class="n">IV в. до н. э.</td><td>Пифей</td><td>плавал вдоль западных берегов Европы</td></tr>
+      <tr><td class="n">1254–1324</td><td>Марко Поло</td><td>итальянец; первые сведения европейцев об <b>Азии</b></td></tr>
+      <tr><td class="n">1827–1914</td><td>П. Семёнов-Тян-Шанский</td><td>исследовал <b>Тянь-Шань</b></td></tr>
+      <tr><td class="n">1839–1888</td><td>Н. Пржевальский</td><td>исследовал <b>Центральную Азию</b></td></tr>
+    </table></div>
+    <p><b>Великие географические открытия</b> — XV–XVII века. Торговые пути на Восток были отрезаны, и европейцы искали новые пути.</p>
+    <div class="tw"><table>
+      <tr><th>Год</th><th>Кто</th><th>Что открыл</th></tr>
+      <tr><td class="n">1492</td><td>Христофор Колумб</td><td><mark>Америку</mark>. 3 августа три корабля вышли из Испании, 12 октября достигли островов у Северной Америки. Колумб думал, что это Индия</td></tr>
+      <tr><td class="n">1497–1498</td><td>Васко да Гама</td><td><mark>морской путь в Индию</mark>: обогнул Африку и вышел в Индийский океан</td></tr>
+      <tr><td class="n">XIX в.</td><td>Давид Ливингстон, Мунго Парк</td><td>изучали Африку</td></tr>
+      <tr><td class="n">1606</td><td>Виллем Янц</td><td>первым из европейцев увидел северное побережье <b>Австралии</b></td></tr>
+      <tr><td class="n">1642</td><td>Абел Тасман</td><td>остров <b>Тасмания</b>, доплыл до Новой Зеландии, Тонга и Фиджи</td></tr>
+      <tr><td class="n">1771</td><td>Джеймс Кук</td><td>восточное побережье Австралии — <mark>его считают открывшим Австралию</mark></td></tr>
+      <tr><td class="n">1820</td><td>Ф. Беллинсгаузен и М. Лазарев</td><td><mark>Антарктиду</mark>, на кораблях «Восток» и «Мирный»</td></tr>
+      <tr><td class="n">конец 1911</td><td>Руаль Амундсен (Норвегия)</td><td>первым достиг <mark>Южного полюса</mark>; Роберт Скотт — в начале 1912</td></tr>
+    </table></div>
+    <p class="trap"><b>Ловушки.</b> Австралию первым увидел Янц, но сведения держали в тайне, поэтому открывателем считают <b>Кука</b>. Кук пытался доплыть до Антарктиды, но его остановили льды. Антарктиду открыли <b>последней</b>.</p>
+    <details><summary>Проверь себя</summary><ol>
+      <li>Кто нашёл морской путь в Индию вокруг Африки? <span class="a">Васко да Гама.</span></li>
+      <li>Кто и когда открыл Антарктиду? <span class="a">Беллинсгаузен и Лазарев, 1820 год.</span></li>
+      <li>Кто первым достиг Южного полюса? <span class="a">Руаль Амундсен.</span></li>
+      <li>Что изучал Пржевальский? <span class="a">Центральную Азию.</span></li>
+    </ol></details>
+  </section>
+
+  <div class="memo">
+    <h2>Главное запомнить</h2>
+    <ul class="l">
+      <li>Картография — наука о картах. Анаксимандр — первая карта с масштабом. Меркатор — «Атлас» (1595).</li>
+      <li>Карта — уменьшенное изображение земной поверхности на плоскости. План — небольшой участок, крупный масштаб, условные знаки.</li>
+      <li>Масштаб — дробь: во сколько раз уменьшено. План → местность: умножай; местность → план: дели.</li>
+      <li>Азимут — от севера по часовой: С 0°, В 90°, Ю 180°, З 270°. Измеряют компасом.</li>
+      <li>Знаки: масштабные (площадные), внемасштабные (точечные), линейные, пояснительные.</li>
+      <li>Съёмка: глазомерная (самая простая) → полярная (из одной точки, полюса) и маршрутная (по пути).</li>
+      <li>Суша 29% (149 млн км²), океан 71% (361 млн км²). 6 материков. Пангея → Лавразия + Гондвана.</li>
+      <li>Колумб — Америка, 1492. Васко да Гама — путь в Индию. Кук — Австралия, 1771. Беллинсгаузен и Лазарев — Антарктида, 1820. Амундсен — Южный полюс.</li>
+    </ul>
+  </div>
+
+  <p class="lead">В тесте 26 вопросов, ответы в основном нужно вписать самому. После каждого ответа будет разбор, в конце — работа над ошибками. Когда закончишь, нажми «WhatsApp» или «Поделиться» и отправь результат папе.</p>
+  <a class="go" id="go" href="./?kid=k5&amp;test=k5-geo-soch-2026-10-18&amp;read=1">Начать тест</a>
+</div>
+<script>
+document.getElementById("go").addEventListener("click", function(){
+  try { localStorage.setItem("intro-read:k5-geo-soch-2026-10-18", "1"); } catch(e){}
+});
+</script>
+</body>
+</html>
