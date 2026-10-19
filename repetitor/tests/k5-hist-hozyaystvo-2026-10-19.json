@@ -1,0 +1,1622 @@
+{
+ "test": {
+  "id": "k5-hist-hozyaystvo-2026-10-19",
+  "kid": "k5",
+  "grade": 5,
+  "subject": "История Казахстана",
+  "topic": "Хозяйство племён эпохи ранних металлов",
+  "title": "Хозяйство племён эпохи ранних металлов (§15–17)",
+  "source": "История Казахстана 5 кл., §15–17, с. 46–51. Сначала прочитай памятку",
+  "intro": "hist-hoz.html",
+  "createdAt": "2026-10-19T16:15:00+00:00"
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "type": "choice",
+   "text": "Чем в **поздней бронзе** начали окружать поселения для защиты?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Рвами, валами, частоколами"
+    },
+    {
+     "id": "b",
+     "text": "Каменными крепостными стенами с башнями",
+     "why": "Каменных крепостей тогда не было. Поселения окружали рвами, валами и частоколами."
+    },
+    {
+     "id": "c",
+     "text": "Ничем, поселения были открытыми",
+     "why": "В поздней бронзе поселения как раз начали защищать."
+    },
+    {
+     "id": "d",
+     "text": "Каналами с водой",
+     "why": "Каналы прокапывали для полива полей, а не для защиты."
+    }
+   ],
+   "answer": "a",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Поселения и могильники</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Где</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">на берегах рек, реже у озёр, в устьях ручьёв</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Энеолит → бронза</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">поселения были небольшими, в эпоху бронзы стали больше</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Поздняя бронза</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">окружали рвами, валами, частоколами</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Поздняя бронза</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">окружали рвами, валами, частоколами</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Могильники</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">древние кладбища; курганы становились выше</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Поза покойного</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">скорченная; в конце бронзы (бегазы-дандыбаевская) — вытянутая</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "В поздней бронзе появились внешние враги.",
+      "layer": 1
+     },
+     {
+      "text": "Поселения окружали **рвами, валами, частоколами**.",
+      "layer": 2
+     }
+    ]
+   },
+   "subtopic": "Поселения и могильники",
+   "lesson": {
+    "title": "Поселения и могильники",
+    "text": "Все культуры эпохи ранних металлов оставили поселения и могильники, то есть древние кладбища. Поселения энеолита были небольшими, в эпоху бронзы они стали больше, а в поздней бронзе их окружали рвами, валами и частоколами. Поселения стояли на берегах рек, реже у озёр. В могильниках курганные насыпи становились выше; рядом с покойным клали глиняные сосуды, обожжённые на костре. Покойного укладывали в скорченной позе, а в конце эпохи бронзы, в бегазы-дандыбаевской культуре, — в вытянутом положении.",
+    "remember": "Поздняя бронза: рвы, валы, частоколы.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Поселения и могильники</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Где</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">на берегах рек, реже у озёр, в устьях ручьёв</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Энеолит → бронза</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">поселения были небольшими, в эпоху бронзы стали больше</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Поздняя бронза</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">окружали рвами, валами, частоколами</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Могильники</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">древние кладбища; курганы становились выше</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Поза покойного</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">скорченная; в конце бронзы (бегазы-дандыбаевская) — вытянутая</td></tr></table>"
+    }
+   },
+   "twins": [
+    {
+     "id": "q1t1",
+     "type": "text",
+     "text": "Как называют **древние кладбища**, которые оставили культуры эпохи ранних металлов?",
+     "answer": "могильники",
+     "accept": [
+      "могильники",
+      "могильник",
+      "курганы",
+      "курган"
+     ],
+     "typicalWrong": [
+      {
+       "value": "поселения",
+       "why": "Поселения — это места, где жили. Древние кладбища — **могильники**.",
+       "also": [
+        "поселение"
+       ]
+      }
+     ],
+     "genericWrong": "Древние кладбища — **могильники**.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Поселения и могильники</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Где</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">на берегах рек, реже у озёр, в устьях ручьёв</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Энеолит → бронза</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">поселения были небольшими, в эпоху бронзы стали больше</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Поздняя бронза</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">окружали рвами, валами, частоколами</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Могильники</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">древние кладбища; курганы становились выше</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Могильники</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">древние кладбища; курганы становились выше</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Поза покойного</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">скорченная; в конце бронзы (бегазы-дандыбаевская) — вытянутая</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Люди оставили и поселения, и кладбища.",
+        "layer": 1
+       },
+       {
+        "text": "Древние кладбища называют **могильниками**.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "могильники"
+     }
+    },
+    {
+     "id": "q1t2",
+     "type": "choice",
+     "text": "Как укладывали покойных в **бегазы-дандыбаевской** культуре в конце эпохи бронзы?",
+     "options": [
+      {
+       "id": "a",
+       "text": "В скорченной позе",
+       "why": "Скорченная поза была раньше. В бегазы-дандыбаевской культуре — вытянутое положение."
+      },
+      {
+       "id": "b",
+       "text": "В вытянутом положении"
+      },
+      {
+       "id": "c",
+       "text": "Сидя",
+       "why": "Об этом в учебнике ничего нет."
+      },
+      {
+       "id": "d",
+       "text": "Их не хоронили, а оставляли в степи",
+       "why": "Их хоронили в могильных ямах."
+      }
+     ],
+     "answer": "b",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Поселения и могильники</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Где</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">на берегах рек, реже у озёр, в устьях ручьёв</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Энеолит → бронза</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">поселения были небольшими, в эпоху бронзы стали больше</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Поздняя бронза</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">окружали рвами, валами, частоколами</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Могильники</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">древние кладбища; курганы становились выше</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Поза покойного</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">скорченная; в конце бронзы (бегазы-дандыбаевская) — вытянутая</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Поза покойного</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">скорченная; в конце бронзы (бегазы-дандыбаевская) — вытянутая</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Обычно покойного укладывали в **скорченной** позе.",
+        "layer": 1
+       },
+       {
+        "text": "А в конце эпохи бронзы, в бегазы-дандыбаевской культуре, — в **вытянутом** положении.",
+        "layer": 2
+       }
+      ]
+     }
+    }
+   ],
+   "order": 1
+  },
+  {
+   "id": "q2",
+   "type": "choice",
+   "text": "Как располагались жилища в поселениях племён ариев?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Длинной улицей вдоль реки",
+     "why": "В учебнике сказано: жилища располагались по кругу."
+    },
+    {
+     "id": "b",
+     "text": "Беспорядочно, без площади",
+     "why": "Порядок был: по кругу, с площадью в центре."
+    },
+    {
+     "id": "c",
+     "text": "По кругу, а в центре оставляли свободную площадь"
+    },
+    {
+     "id": "d",
+     "text": "В пещерах на горе",
+     "why": "Пещеры — жилища каменного века, а не эпохи бронзы."
+    }
+   ],
+   "answer": "c",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Поселения ариев</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Сколько жилищ</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">от 6–10 до 20–50</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Расположение</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">по кругу; в центре — свободная площадь</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Расположение</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">по кругу; в центре — свободная площадь</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Площадь в центре</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">для собраний, а в войну — загон для скота</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Жилища</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">полуземлянки и наземные, 100–400 м²; в лесу — из брёвен</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Жилища-кузницы</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">плавили металл, делали орудия и оружие</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "Жилища ставили **по кругу**.",
+      "layer": 1
+     },
+     {
+      "text": "В центре оставляли **площадь**: для собраний, а в войну — загон для скота.",
+      "layer": 2
+     }
+    ]
+   },
+   "subtopic": "Жилища эпохи бронзы",
+   "lesson": {
+    "title": "Как жили люди эпохи бронзы",
+    "text": "Поселения ариев состояли из 6–10, а иногда 20–50 жилищ. Жилища ставили по кругу, а в центре оставляли свободную площадь: там проходили общие собрания, а во время войны загоняли скот. Жилища были полуземлянки и наземные, площадью 100–400 м². Потолок держался на вкопанных столбах, стены внутри обкладывали камнем. В лесных районах дома строили из брёвен. Были и жилища-кузницы, где плавили металл и делали орудия и оружие.",
+    "remember": "Жилища — по кругу, в центре площадь.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Поселения ариев</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Сколько жилищ</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">от 6–10 до 20–50</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Расположение</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">по кругу; в центре — свободная площадь</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Площадь в центре</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">для собраний, а в войну — загон для скота</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Жилища</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">полуземлянки и наземные, 100–400 м²; в лесу — из брёвен</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Жилища-кузницы</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">плавили металл, делали орудия и оружие</td></tr></table>"
+    }
+   },
+   "twins": [
+    {
+     "id": "q2t1",
+     "type": "text",
+     "text": "Как называются жилища, в которых **плавили металл** и делали орудия и оружие?",
+     "answer": "жилища-кузницы",
+     "accept": [
+      "жилища-кузницы",
+      "жилища кузницы",
+      "кузницы",
+      "кузница",
+      "кузня"
+     ],
+     "typicalWrong": [
+      {
+       "value": "полуземлянки",
+       "why": "Полуземлянки — обычные жилища. Где плавили металл — **жилища-кузницы**.",
+       "also": [
+        "полуземлянка"
+       ]
+      }
+     ],
+     "genericWrong": "Это **жилища-кузницы**.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Поселения ариев</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Сколько жилищ</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">от 6–10 до 20–50</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Расположение</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">по кругу; в центре — свободная площадь</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Площадь в центре</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">для собраний, а в войну — загон для скота</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Жилища</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">полуземлянки и наземные, 100–400 м²; в лесу — из брёвен</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Жилища-кузницы</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">плавили металл, делали орудия и оружие</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Жилища-кузницы</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">плавили металл, делали орудия и оружие</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "В них плавили металл, как в кузнице.",
+        "layer": 1
+       },
+       {
+        "text": "Их называют **жилищами-кузницами**.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "жилища-кузницы"
+     }
+    },
+    {
+     "id": "q2t2",
+     "type": "choice",
+     "text": "Для чего служила **площадь в центре** поселения?",
+     "options": [
+      {
+       "id": "a",
+       "text": "Для огорода",
+       "why": "Огороды и поля были у реки. Площадь — для собраний и скота."
+      },
+      {
+       "id": "b",
+       "text": "Для кладбища",
+       "why": "Кладбища были рядом с поселениями, а не в центре."
+      },
+      {
+       "id": "c",
+       "text": "Для литейной мастерской",
+       "why": "Металл плавили в жилищах-кузницах."
+      },
+      {
+       "id": "d",
+       "text": "Для общих собраний, а во время войны — загон для скота"
+      }
+     ],
+     "answer": "d",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Поселения ариев</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Сколько жилищ</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">от 6–10 до 20–50</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Расположение</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">по кругу; в центре — свободная площадь</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Площадь в центре</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">для собраний, а в войну — загон для скота</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Площадь в центре</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">для собраний, а в войну — загон для скота</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Жилища</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">полуземлянки и наземные, 100–400 м²; в лесу — из брёвен</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Жилища-кузницы</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">плавили металл, делали орудия и оружие</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Площадь в центре была свободной от построек.",
+        "layer": 1
+       },
+       {
+        "text": "Там собиралась община, а в войну туда **загоняли скот**.",
+        "layer": 2
+       }
+      ]
+     }
+    }
+   ],
+   "order": 2
+  },
+  {
+   "id": "q3",
+   "type": "choice",
+   "text": "На местах раскопок поселений эпохи ранних металлов каких костей **больше всего**?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Диких животных — значит, охота была очень важна"
+    },
+    {
+     "id": "b",
+     "text": "Домашних животных",
+     "why": "Учёные пишут наоборот: костей диких животных больше, чем домашних."
+    },
+    {
+     "id": "c",
+     "text": "Рыб",
+     "why": "Рыбу ловили, но больше всего — костей диких животных."
+    },
+    {
+     "id": "d",
+     "text": "Мамонтов",
+     "why": "Мамонты вымерли ещё в каменном веке."
+    }
+   ],
+   "answer": "a",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Занятия</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Что известно</th></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Охота</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">костей диких животных на раскопках больше, чем домашних</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Охота</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">костей диких животных на раскопках больше, чем домашних</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Объекты охоты</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">зайцы, лоси, бобры, медведи, лисицы, косули, дикие быки, кабаны, птицы</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Орудия охоты</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">каменные и костяные наконечники стрел, дротиков, копий; ножи, скребки</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Рыболовство</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">костяные гарпуны и крючки, шилья для сетей, каменные грузила</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "На раскопках количество костей **диких** животных больше, чем домашних.",
+      "layer": 1
+     },
+     {
+      "text": "Значит, **охота** оставалась важным занятием.",
+      "layer": 2
+     }
+    ]
+   },
+   "subtopic": "Охота и рыболовство",
+   "lesson": {
+    "title": "Охота и рыбалка в эпоху бронзы",
+    "text": "Древние племена занимались скотоводством, а также охотой и рыбной ловлей. На раскопках костей диких животных больше, чем домашних. Охотились на зайцев, лосей, бобров, медведей, лисиц, барсуков, выдр, косуль, диких быков, кабанов, птиц, ловили рыбу и речных черепах. Орудия охоты: каменные и костяные наконечники стрел, дротиков и копий, ножи, скребки. Орудия рыболовства: костяные гарпуны и крючки, шилья для плетения сетей, каменные грузила.",
+    "remember": "Костей диких животных больше — охота была важна.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Занятия</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Что известно</th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Охота</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">костей диких животных на раскопках больше, чем домашних</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Объекты охоты</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">зайцы, лоси, бобры, медведи, лисицы, косули, дикие быки, кабаны, птицы</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Орудия охоты</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">каменные и костяные наконечники стрел, дротиков, копий; ножи, скребки</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Рыболовство</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">костяные гарпуны и крючки, шилья для сетей, каменные грузила</td></tr></table>"
+    }
+   },
+   "twins": [
+    {
+     "id": "q3t1",
+     "type": "text",
+     "text": "Назови **любое одно** животное, на которое охотились люди эпохи ранних металлов.",
+     "answer": "зайцы, лоси, бобры, медведи, лисицы, косули, кабаны…",
+     "accept": [
+      "заяц",
+      "зайцы",
+      "зайца",
+      "лось",
+      "лоси",
+      "лося",
+      "бобр",
+      "бобры",
+      "медведь",
+      "медведи",
+      "лиса",
+      "лисы",
+      "лисицы",
+      "лисица",
+      "барсук",
+      "барсуки",
+      "выдра",
+      "выдры",
+      "косуля",
+      "косули",
+      "дикий бык",
+      "дикие быки",
+      "бык",
+      "кабан",
+      "кабаны",
+      "птицы",
+      "птица",
+      "утка",
+      "утки",
+      "рыба",
+      "черепаха",
+      "черепахи"
+     ],
+     "typicalWrong": [
+      {
+       "value": "мамонт",
+       "why": "Мамонты вымерли ещё в каменном веке. Подойдут: заяц, лось, бобр, медведь, лиса, косуля, кабан.",
+       "also": [
+        "мамонты",
+        "мамонта"
+       ]
+      },
+      {
+       "value": "корова",
+       "why": "Корова — домашнее животное, её разводили, а не охотились. Подойдут: заяц, лось, кабан, косуля.",
+       "also": [
+        "коровы",
+        "овца",
+        "овцы",
+        "лошадь"
+       ]
+      }
+     ],
+     "genericWrong": "Охотились на зайцев, лосей, бобров, медведей, лисиц, барсуков, выдр, косуль, диких быков, кабанов, птиц.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Занятия</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Что известно</th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Охота</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">костей диких животных на раскопках больше, чем домашних</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Объекты охоты</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">зайцы, лоси, бобры, медведи, лисицы, косули, дикие быки, кабаны, птицы</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Объекты охоты</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">зайцы, лоси, бобры, медведи, лисицы, косули, дикие быки, кабаны, птицы</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Орудия охоты</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">каменные и костяные наконечники стрел, дротиков, копий; ножи, скребки</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Рыболовство</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">костяные гарпуны и крючки, шилья для сетей, каменные грузила</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Подходит любое дикое животное из учебника.",
+        "layer": 1
+       },
+       {
+        "text": "Например: заяц, лось, бобр, медведь, лиса, косуля, кабан.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "зайцы, лоси, бобры, медведи, лисицы, косули, кабаны…"
+     }
+    },
+    {
+     "id": "q3t2",
+     "type": "choice",
+     "text": "Какие орудия относятся к **рыболовству**?",
+     "options": [
+      {
+       "id": "a",
+       "text": "Серпы и мотыги",
+       "why": "Это орудия земледелия."
+      },
+      {
+       "id": "b",
+       "text": "Костяные гарпуны и крючки, каменные грузила"
+      },
+      {
+       "id": "c",
+       "text": "Кирки и кайла",
+       "why": "Это орудия добычи руды."
+      },
+      {
+       "id": "d",
+       "text": "Литейные формы",
+       "why": "В них отливали металлические изделия."
+      }
+     ],
+     "answer": "b",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Занятия</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Что известно</th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Охота</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">костей диких животных на раскопках больше, чем домашних</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Объекты охоты</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">зайцы, лоси, бобры, медведи, лисицы, косули, дикие быки, кабаны, птицы</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Орудия охоты</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">каменные и костяные наконечники стрел, дротиков, копий; ножи, скребки</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Рыболовство</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">костяные гарпуны и крючки, шилья для сетей, каменные грузила</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Рыболовство</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">костяные гарпуны и крючки, шилья для сетей, каменные грузила</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Рыбу ловили гарпунами и на крючок, сети утяжеляли грузилами.",
+        "layer": 1
+       },
+       {
+        "text": "Значит, ответ: **костяные гарпуны и крючки, каменные грузила**.",
+        "layer": 2
+       }
+      ]
+     }
+    }
+   ],
+   "order": 3
+  },
+  {
+   "id": "q4",
+   "type": "text",
+   "text": "В поздней бронзе пастухи стали перегонять скот с одного пастбища на другое. Каким стало скотоводство? Впиши.",
+   "answer": "отгонным",
+   "accept": [
+    "отгонное",
+    "отгонным",
+    "отгонный",
+    "отгонное скотоводство"
+   ],
+   "typicalWrong": [
+    {
+     "value": "придомное",
+     "why": "Придомное было раньше: скот пасли рядом с поселением. С перекочёвками — **отгонное**.",
+     "also": [
+      "придомным"
+     ]
+    },
+    {
+     "value": "кочевое",
+     "why": "Похоже по смыслу, но в учебнике — **отгонное** скотоводство.",
+     "also": [
+      "кочевым"
+     ]
+    }
+   ],
+   "genericWrong": "Скотоводство стало **отгонным**.",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Скотоводство</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">В основе</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">разведение лошадей и крупного рогатого скота → оседлость</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Придомное</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">стадо пасли недалеко от поселения, на пойменных лугах</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Зима</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">скот по семьям; летом заготавливали сено</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Поздняя бронза</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">придомное стало отгонным: перекочёвки с пастбища на пастбище</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Поздняя бронза</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">придомное стало отгонным: перекочёвки с пастбища на пастбище</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">В стаде стало больше</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">овец, коз и лошадей</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "Сначала скот пасли рядом с домом — **придомное**.",
+      "layer": 1
+     },
+     {
+      "text": "Потом стали **отгонять** на дальние пастбища — **отгонное**.",
+      "layer": 2
+     }
+    ],
+    "answerLine": "отгонным"
+   },
+   "subtopic": "Скотоводство",
+   "lesson": {
+    "title": "Скотоводство эпохи бронзы",
+    "text": "В основе скотоводства лежало разведение лошадей и крупного рогатого скота. Это признак оседлой жизни: коровам нужны сочные луга рядом с домом. Сначала скотоводство было придомным: стадо пасли на пойменных лугах недалеко от поселения, летом заготавливали сено на зиму, а зимой скот распределяли по семьям. В поздней бронзе придомное скотоводство стало отгонным: пастухи совершали небольшие перекочёвки с пастбища на пастбище, и в стаде стало больше овец, коз и лошадей.",
+    "remember": "Придомное → отгонное.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Скотоводство</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">В основе</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">разведение лошадей и крупного рогатого скота → оседлость</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Придомное</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">стадо пасли недалеко от поселения, на пойменных лугах</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Зима</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">скот по семьям; летом заготавливали сено</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Поздняя бронза</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">придомное стало отгонным: перекочёвки с пастбища на пастбище</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">В стаде стало больше</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">овец, коз и лошадей</td></tr></table>"
+    }
+   },
+   "twins": [
+    {
+     "id": "q4t1",
+     "type": "choice",
+     "text": "Что лежало **в основе** скотоводства эпохи бронзы?",
+     "options": [
+      {
+       "id": "a",
+       "text": "Разведение верблюдов",
+       "why": "Верблюда одомашнили, но основой были лошади и крупный рогатый скот."
+      },
+      {
+       "id": "b",
+       "text": "Разведение свиней",
+       "why": "Об этом в учебнике ничего нет."
+      },
+      {
+       "id": "c",
+       "text": "Разведение лошадей и крупного рогатого скота"
+      },
+      {
+       "id": "d",
+       "text": "Только охота на диких быков",
+       "why": "Охота — не скотоводство."
+      }
+     ],
+     "answer": "c",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Скотоводство</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">В основе</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">разведение лошадей и крупного рогатого скота → оседлость</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">В основе</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">разведение лошадей и крупного рогатого скота → оседлость</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Придомное</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">стадо пасли недалеко от поселения, на пойменных лугах</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Зима</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">скот по семьям; летом заготавливали сено</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Поздняя бронза</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">придомное стало отгонным: перекочёвки с пастбища на пастбище</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">В стаде стало больше</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">овец, коз и лошадей</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "В учебнике: «В основе скотоводческого хозяйства лежало разведение лошадей и крупного рогатого скота».",
+        "layer": 1
+       },
+       {
+        "text": "Это ещё одно свидетельство **оседлого** характера хозяйства.",
+        "layer": 2
+       }
+      ]
+     }
+    },
+    {
+     "id": "q4t2",
+     "type": "choice",
+     "text": "Что заготавливали **летом**, чтобы прокормить скот зимой?",
+     "options": [
+      {
+       "id": "a",
+       "text": "Мясо и шкуры",
+       "why": "Это продукты для людей. Для скота заготавливали сено."
+      },
+      {
+       "id": "b",
+       "text": "Медную руду",
+       "why": "Руду добывали для металла, а не для скота."
+      },
+      {
+       "id": "c",
+       "text": "Глиняную посуду",
+       "why": "Посуда скоту не нужна."
+      },
+      {
+       "id": "d",
+       "text": "Сено и другие корма"
+      }
+     ],
+     "answer": "d",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Скотоводство</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">В основе</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">разведение лошадей и крупного рогатого скота → оседлость</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Придомное</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">стадо пасли недалеко от поселения, на пойменных лугах</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Зима</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">скот по семьям; летом заготавливали сено</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Зима</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">скот по семьям; летом заготавливали сено</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Поздняя бронза</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">придомное стало отгонным: перекочёвки с пастбища на пастбище</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">В стаде стало больше</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">овец, коз и лошадей</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Зимой травы нет.",
+        "layer": 1
+       },
+       {
+        "text": "Поэтому летом заготавливали **сено** и другие корма.",
+        "layer": 2
+       }
+      ]
+     }
+    }
+   ],
+   "order": 4
+  },
+  {
+   "id": "q5",
+   "type": "text",
+   "text": "Земледелие эпохи бронзы: от реки прокапывали **каналы** и по ним поливали посевы. Каким было земледелие? Впиши одно слово.",
+   "answer": "поливным",
+   "accept": [
+    "поливное",
+    "поливным",
+    "поливной",
+    "орошаемое",
+    "орошаемым"
+   ],
+   "typicalWrong": [
+    {
+     "value": "мотыжное",
+     "why": "Землю рыхлили мотыгами, но главное здесь — каналы для полива. Земледелие **поливное**.",
+     "also": [
+      "мотыжным"
+     ]
+    },
+    {
+     "value": "подсечное",
+     "why": "В учебнике — **поливное** земледелие: воду подводили каналами."
+    }
+   ],
+   "genericWrong": "Земледелие было **поливным**.",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Земледелие</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Где</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">на наносных чернозёмных почвах возле водоёмов</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Как поливали</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">поливное: от реки прокапывали каналы</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Как поливали</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">поливное: от реки прокапывали каналы</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Чем пахали</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">плуги с бронзовыми и каменными лемехами, каменные мотыги</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Беда</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">от частого полива поля засаливались за 2–3 года</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Итог</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">людей стало больше, земель мало → кризис земледелия</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "Воду из реки подводили по каналам.",
+      "layer": 1
+     },
+     {
+      "text": "Такое земледелие называют **поливным**.",
+      "layer": 2
+     }
+    ],
+    "answerLine": "поливным"
+   },
+   "subtopic": "Земледелие",
+   "lesson": {
+    "title": "Земледелие эпохи бронзы",
+    "text": "Земледелие было возможно только на наносных чернозёмных почвах возле водоёмов. Эти земли были поливными: от реки прокапывали каналы и поливали посевы. Степную землю было тяжело вспахивать плугами с бронзовыми и каменными лемехами. При частом поливе поля за 2–3 года засаливались и приходили в негодность. Удобных земель в Казахстане мало, а людей становилось больше, поэтому у андроновцев и срубников наступил кризис земледелия.",
+    "remember": "Каналы → поливное земледелие; засоление → кризис.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Земледелие</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Где</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">на наносных чернозёмных почвах возле водоёмов</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Как поливали</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">поливное: от реки прокапывали каналы</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Чем пахали</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">плуги с бронзовыми и каменными лемехами, каменные мотыги</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Беда</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">от частого полива поля засаливались за 2–3 года</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Итог</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">людей стало больше, земель мало → кризис земледелия</td></tr></table>"
+    }
+   },
+   "twins": [
+    {
+     "id": "q5t1",
+     "type": "choice",
+     "text": "Почему поля через **2–3 года** приходили в негодность?",
+     "options": [
+      {
+       "id": "a",
+       "text": "При частом поливе в них скапливалось много солей, и они засаливались"
+      },
+      {
+       "id": "b",
+       "text": "Их вытаптывал скот",
+       "why": "В учебнике причина другая: засоление от частого полива."
+      },
+      {
+       "id": "c",
+       "text": "Их съедала саранча",
+       "why": "Об этом в учебнике ничего нет."
+      },
+      {
+       "id": "d",
+       "text": "На них строили дома",
+       "why": "Дома строили в поселениях, поля были отдельно."
+      }
+     ],
+     "answer": "a",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Земледелие</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Где</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">на наносных чернозёмных почвах возле водоёмов</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Как поливали</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">поливное: от реки прокапывали каналы</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Чем пахали</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">плуги с бронзовыми и каменными лемехами, каменные мотыги</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Беда</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">от частого полива поля засаливались за 2–3 года</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Беда</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">от частого полива поля засаливались за 2–3 года</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Итог</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">людей стало больше, земель мало → кризис земледелия</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "При частом поливе в почве скапливались **минеральные соли**.",
+        "layer": 1
+       },
+       {
+        "text": "Поле **засаливалось** и за 2–3 года становилось непригодным.",
+        "layer": 2
+       }
+      ]
+     }
+    },
+    {
+     "id": "q5t2",
+     "type": "choice",
+     "text": "Почему у андроновцев и срубников земледелие пришло к **кризису**?",
+     "options": [
+      {
+       "id": "a",
+       "text": "Люди разучились пахать",
+       "why": "Они пахали плугами и мотыгами. Причина — рост населения и нехватка земель."
+      },
+      {
+       "id": "b",
+       "text": "Людей стало больше, а удобных пойменных земель мало"
+      },
+      {
+       "id": "c",
+       "text": "Реки замёрзли навсегда",
+       "why": "Такого не было."
+      },
+      {
+       "id": "d",
+       "text": "Им запретили сеять",
+       "why": "Об этом в учебнике ничего нет."
+      }
+     ],
+     "answer": "b",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Земледелие</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Где</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">на наносных чернозёмных почвах возле водоёмов</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Как поливали</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">поливное: от реки прокапывали каналы</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Чем пахали</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">плуги с бронзовыми и каменными лемехами, каменные мотыги</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Беда</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">от частого полива поля засаливались за 2–3 года</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Итог</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">людей стало больше, земель мало → кризис земледелия</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Итог</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">людей стало больше, земель мало → кризис земледелия</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Удобных пойменных земель в Казахстане **очень мало**.",
+        "layer": 1
+       },
+       {
+        "text": "А людей становилось **больше** — поэтому начался кризис.",
+        "layer": 2
+       }
+      ]
+     }
+    }
+   ],
+   "order": 5
+  },
+  {
+   "id": "q6",
+   "type": "choice",
+   "text": "Была ли у андроновцев и срубников **частная собственность** на землю и скот?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Да: у каждой семьи была своя земля",
+     "why": "В учебнике: «В общине не было частной собственности». Земля и скот — общие."
+    },
+    {
+     "id": "b",
+     "text": "Да: всё принадлежало вождю",
+     "why": "Земля и скот были в общем пользовании всей общины."
+    },
+    {
+     "id": "c",
+     "text": "Нет: земля и скот были в общем пользовании общины"
+    },
+    {
+     "id": "d",
+     "text": "Да: землю продавали и покупали",
+     "why": "Торговли землёй не было, всё было общее."
+    }
+   ],
+   "answer": "c",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Семья и собственность</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Семья</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">большие патриархальные семьи</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Земля и скот</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">в общем пользовании общины</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Частная собственность</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">не было</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Частная собственность</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">не было</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Личная собственность</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">была: например, лук, который охотник сделал сам</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "Земля и скот были **в общем пользовании**.",
+      "layer": 1
+     },
+     {
+      "text": "Частной собственности **не было**, была только **личная**.",
+      "layer": 2
+     }
+    ]
+   },
+   "subtopic": "Семья и собственность",
+   "lesson": {
+    "title": "Общая и личная собственность",
+    "text": "Срубники и андроновцы жили большими патриархальными семьями. Земля и скот были в общем пользовании общины, частной собственности не было. Но у людей была личная собственность: если охотник сделал хороший лук, он принадлежал только ему. После смерти лук клали рядом с телом, как и другие личные вещи.",
+    "remember": "Земля и скот — общие; лук охотника — личный.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Семья и собственность</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Семья</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">большие патриархальные семьи</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Земля и скот</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">в общем пользовании общины</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Частная собственность</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">не было</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Личная собственность</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">была: например, лук, который охотник сделал сам</td></tr></table>"
+    }
+   },
+   "twins": [
+    {
+     "id": "q6t1",
+     "type": "text",
+     "text": "Охотник сам сделал хороший лук, и лук принадлежал только ему. Какая это собственность? Впиши.",
+     "answer": "личная",
+     "accept": [
+      "личная",
+      "личной",
+      "личная собственность"
+     ],
+     "typicalWrong": [
+      {
+       "value": "частная",
+       "why": "Частной собственности тогда не было. Вещь, которая принадлежит одному человеку, — **личная**.",
+       "also": [
+        "частной"
+       ]
+      },
+      {
+       "value": "общая",
+       "why": "Общими были земля и скот. Лук охотника — **личная** собственность.",
+       "also": [
+        "общей",
+        "общинная"
+       ]
+      }
+     ],
+     "genericWrong": "Это **личная** собственность.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Семья и собственность</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Семья</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">большие патриархальные семьи</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Земля и скот</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">в общем пользовании общины</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Частная собственность</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">не было</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Личная собственность</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">была: например, лук, который охотник сделал сам</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Личная собственность</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">была: например, лук, который охотник сделал сам</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Лук принадлежал **только** охотнику.",
+        "layer": 1
+       },
+       {
+        "text": "Это **личная** собственность.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "личная"
+     }
+    },
+    {
+     "id": "q6t2",
+     "type": "choice",
+     "text": "Какими семьями жили андроновцы и срубники?",
+     "options": [
+      {
+       "id": "a",
+       "text": "Маленькими семьями по 2–3 человека",
+       "why": "Жилища были большие, 100–400 м², в них жили большие семьи."
+      },
+      {
+       "id": "b",
+       "text": "Каждый жил отдельно",
+       "why": "Люди жили семьями и общинами."
+      },
+      {
+       "id": "c",
+       "text": "Только в пещерах по одному",
+       "why": "Пещеры — каменный век."
+      },
+      {
+       "id": "d",
+       "text": "Большими патриархальными семьями"
+      }
+     ],
+     "answer": "d",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Семья и собственность</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Семья</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">большие патриархальные семьи</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Семья</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">большие патриархальные семьи</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Земля и скот</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">в общем пользовании общины</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Частная собственность</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">не было</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Личная собственность</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">была: например, лук, который охотник сделал сам</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Жилища были очень большие.",
+        "layer": 1
+       },
+       {
+        "text": "Значит, жили **большими патриархальными семьями**.",
+        "layer": 2
+       }
+      ]
+     }
+    }
+   ],
+   "order": 6
+  },
+  {
+   "id": "q7",
+   "type": "choice",
+   "text": "Где в древности добывали **медь**? (Там выплавили около 100 тыс. т меди.)",
+   "options": [
+    {
+     "id": "a",
+     "text": "Жезказган"
+    },
+    {
+     "id": "b",
+     "text": "Горы Атасу",
+     "why": "В горах Атасу добывали олово."
+    },
+    {
+     "id": "c",
+     "text": "Степняк",
+     "why": "В местности Степняк добывали золото."
+    },
+    {
+     "id": "d",
+     "text": "Устюрт",
+     "why": "Устюрт известен джебельской культурой каменного века."
+    }
+   ],
+   "answer": "a",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Металл</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Где добывали</th></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Медь</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Жезказган (около 100 тыс. т выплавленной меди)</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Медь</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Жезказган (около 100 тыс. т выплавленной меди)</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Олово</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">горы Атасу</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Золото</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">местность Степняк</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "Многочисленные древние разработки меди — в районе **Жезказгана**.",
+      "layer": 1
+     },
+     {
+      "text": "Там выплавили около **100 тыс. т** меди.",
+      "layer": 2
+     }
+    ]
+   },
+   "subtopic": "Месторождения металлов",
+   "lesson": {
+    "title": "Где добывали металлы",
+    "text": "Казахстан с давних времён богат месторождениями меди, олова и золота. Медь добывали в районе Жезказгана: там выплавили около 100 тыс. т меди. Олово — в горах Атасу. Золото — в местности Степняк. Отвалы древних выработок Имантауского месторождения показали, что там добыли 48 тыс. т медной руды. Эти земли были центрами древней металлургии.",
+    "remember": "Медь — Жезказган, олово — Атасу, золото — Степняк.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Металл</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Где добывали</th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Медь</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Жезказган (около 100 тыс. т выплавленной меди)</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Олово</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">горы Атасу</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Золото</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">местность Степняк</td></tr></table>"
+    }
+   },
+   "twins": [
+    {
+     "id": "q7t1",
+     "type": "choice",
+     "text": "Где в древности добывали **олово**?",
+     "options": [
+      {
+       "id": "a",
+       "text": "В Жезказгане",
+       "why": "В Жезказгане добывали медь."
+      },
+      {
+       "id": "b",
+       "text": "В горах Атасу"
+      },
+      {
+       "id": "c",
+       "text": "В Степняке",
+       "why": "В Степняке добывали золото."
+      },
+      {
+       "id": "d",
+       "text": "На Устюрте",
+       "why": "На Устюрте олово не добывали."
+      }
+     ],
+     "answer": "b",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Металл</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Где добывали</th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Медь</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Жезказган (около 100 тыс. т выплавленной меди)</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Олово</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">горы Атасу</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Олово</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">горы Атасу</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Золото</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">местность Степняк</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Медь — Жезказган, золото — Степняк.",
+        "layer": 1
+       },
+       {
+        "text": "Олово — **горы Атасу**.",
+        "layer": 2
+       }
+      ]
+     }
+    },
+    {
+     "id": "q7t2",
+     "type": "choice",
+     "text": "Где в древности добывали **золото**?",
+     "options": [
+      {
+       "id": "a",
+       "text": "В Жезказгане",
+       "why": "В Жезказгане добывали медь."
+      },
+      {
+       "id": "b",
+       "text": "В горах Атасу",
+       "why": "В горах Атасу добывали олово."
+      },
+      {
+       "id": "c",
+       "text": "В местности Степняк"
+      },
+      {
+       "id": "d",
+       "text": "В Отраре",
+       "why": "Отрар — древний город, а не место добычи золота."
+      }
+     ],
+     "answer": "c",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Металл</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Где добывали</th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Медь</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Жезказган (около 100 тыс. т выплавленной меди)</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Олово</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">горы Атасу</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Золото</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">местность Степняк</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Золото</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">местность Степняк</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Медь — Жезказган, олово — Атасу.",
+        "layer": 1
+       },
+       {
+        "text": "Золото — **Степняк**.",
+        "layer": 2
+       }
+      ]
+     }
+    }
+   ],
+   "order": 7
+  },
+  {
+   "id": "q8",
+   "type": "text",
+   "text": "Как называется способ добычи **рыхлой** руды с помощью отбойников и топоров? Впиши.",
+   "answer": "кайлование",
+   "accept": [
+    "кайлование",
+    "кайлованием",
+    "кайлавание",
+    "каилование"
+   ],
+   "typicalWrong": [
+    {
+     "value": "огневая проходка",
+     "why": "Огневая проходка — для плотных руд: костёр и вода. Рыхлую руду добывали **кайлованием**.",
+     "also": [
+      "огневой проходкой"
+     ]
+    }
+   ],
+   "genericWrong": "Это **кайлование**.",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<div style=\"display:flex;flex-wrap:wrap;gap:6px;align-items:stretch\"><div data-until=\"1\" style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Кайлование</b>рыхлую руду — отбойниками и топорами</div><div data-step=\"1\" style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3;border-color:var(--ok);background:var(--ok-soft)\"><b style=\"display:block;font-size:15px\">Кайлование</b>рыхлую руду — отбойниками и топорами</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Огневая проходка</b>плотную породу — костёр и вода</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Подъём</b>в кожаных мешках</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Обработка</b>дробили и промывали</div></div>"
+    },
+    "steps": [
+     {
+      "text": "Рыхлую руду откалывали отбойниками и топорами.",
+      "layer": 1
+     },
+     {
+      "text": "Такой способ называется **кайлование**.",
+      "layer": 2
+     }
+    ],
+    "answerLine": "кайлование"
+   },
+   "subtopic": "Добыча руды",
+   "lesson": {
+    "title": "Как добывали руду",
+    "text": "Рыхлые руды добывали кайлованием: отбойниками и топорами. Для плотных руд применяли огневую проходку: у жилы разводили костёр, а когда порода раскалялась, её поливали водой, и скала трескалась. Каменными кирками и кайлами откалывали куски, деревянными лопатами насыпали руду в кожаные мешки и поднимали наверх. Наверху руду дробили каменными молотками и рудодробилками и промывали. Труд рудокопов был опасным: шахты часто обваливались. Археологи находили скелеты людей с кожаными мешками, полными руды.",
+    "remember": "Рыхлая руда — кайлование; плотная — огневая проходка.",
+    "visual": {
+     "kind": "html",
+     "html": "<div style=\"display:flex;flex-wrap:wrap;gap:6px;align-items:stretch\"><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Кайлование</b>рыхлую руду — отбойниками и топорами</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Огневая проходка</b>плотную породу грели костром, поливали водой — трескалась</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Подъём</b>кирками откалывали, в кожаных мешках поднимали</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Обработка</b>дробили каменными молотками, промывали</div></div>"
+    }
+   },
+   "twins": [
+    {
+     "id": "q8t1",
+     "type": "choice",
+     "text": "Что такое **огневая проходка**?",
+     "options": [
+      {
+       "id": "a",
+       "text": "Руду плавили прямо в шахте",
+       "why": "Руду плавили потом, отдельно. Огневая проходка — способ разрушить плотную породу."
+      },
+      {
+       "id": "b",
+       "text": "Шахту освещали факелами",
+       "why": "Освещение тут ни при чём."
+      },
+      {
+       "id": "c",
+       "text": "Руду сжигали вместо дров",
+       "why": "Руду не сжигали, её добывали."
+      },
+      {
+       "id": "d",
+       "text": "У жилы разводили костёр, раскалённую породу поливали водой, и она трескалась"
+      }
+     ],
+     "answer": "d",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<div style=\"display:flex;flex-wrap:wrap;gap:6px;align-items:stretch\"><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Кайлование</b>рыхлая руда</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div data-until=\"1\" style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Огневая проходка</b>костёр + вода — порода трескается</div><div data-step=\"1\" style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3;border-color:var(--ok);background:var(--ok-soft)\"><b style=\"display:block;font-size:15px\">Огневая проходка</b>костёр + вода — порода трескается</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Подъём</b>кожаные мешки</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Обработка</b>дробили, промывали</div></div>"
+      },
+      "steps": [
+       {
+        "text": "Плотную породу трудно разбить.",
+        "layer": 1
+       },
+       {
+        "text": "Её **нагревали костром** и **поливали водой** — скала трескалась.",
+        "layer": 2
+       }
+      ]
+     }
+    },
+    {
+     "id": "q8t2",
+     "type": "choice",
+     "text": "Почему труд рудокопов был **опасен**?",
+     "options": [
+      {
+       "id": "a",
+       "text": "Шахты часто обваливались и засыпали рудокопов"
+      },
+      {
+       "id": "b",
+       "text": "В шахтах жили дикие звери",
+       "why": "Об этом в учебнике ничего нет."
+      },
+      {
+       "id": "c",
+       "text": "Руда была ядовитой",
+       "why": "Учебник называет другую причину: обвалы шахт."
+      },
+      {
+       "id": "d",
+       "text": "Работать разрешали только ночью",
+       "why": "Такого не было."
+      }
+     ],
+     "answer": "a",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<div style=\"display:flex;flex-wrap:wrap;gap:6px;align-items:stretch\"><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Кайлование</b>рыхлую руду — отбойниками и топорами</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Огневая проходка</b>плотную породу грели костром, поливали водой — трескалась</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Подъём</b>кирками откалывали, в кожаных мешках поднимали</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Обработка</b>дробили каменными молотками, промывали</div></div>"
+      },
+      "steps": [
+       {
+        "text": "Шахты нередко **обваливались**.",
+        "layer": 1
+       },
+       {
+        "text": "Археологи находили скелеты рудокопов с мешками, полными руды.",
+        "layer": 2
+       }
+      ]
+     }
+    }
+   ],
+   "order": 8
+  },
+  {
+   "id": "q9",
+   "type": "choice",
+   "text": "Как получали **бронзу**?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Плавили вместе медь и железо",
+     "why": "Железо тогда не использовали. Бронза — медь с оловом."
+    },
+    {
+     "id": "b",
+     "text": "Медную и оловянную руду плавили отдельно, а при отливке добавляли олово в медь"
+    },
+    {
+     "id": "c",
+     "text": "Нагревали камень на костре",
+     "why": "Так разрушали породу в шахтах. Бронзу получали из меди и олова."
+    },
+    {
+     "id": "d",
+     "text": "Смешивали медь с глиной",
+     "why": "Глина шла на формы, а в медь добавляли олово."
+    }
+   ],
+   "answer": "b",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Металлургия</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Плавка</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">медную и оловянную руду плавили отдельно</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Отливка</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">при отливке в медь добавляли олово</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Отливка</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">при отливке в медь добавляли олово</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Формы</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">каменные и глиняные литейные формы</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Что отливали</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">серпы, топоры, кинжалы, ножи, наконечники</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "Медную и оловянную руду плавили **отдельно**.",
+      "layer": 1
+     },
+     {
+      "text": "При отливке изделия в медь **добавляли олово** — получалась бронза.",
+      "layer": 2
+     }
+    ]
+   },
+   "subtopic": "Металлургия и литьё",
+   "lesson": {
+    "title": "Литейное дело",
+    "text": "Медную и оловянную руду плавили отдельно, а при отливке изделия добавляли в медь нужное количество олова. На поселениях найдены литейные мастерские. В каменных и глиняных литейных формах отливали большинство орудий: серпы, топоры, кинжалы, ножи, наконечники копий и стрел.",
+    "remember": "Медь + олово при отливке = бронза; формы каменные и глиняные.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Металлургия</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Плавка</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">медную и оловянную руду плавили отдельно</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Отливка</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">при отливке в медь добавляли олово</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Формы</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">каменные и глиняные литейные формы</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Что отливали</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">серпы, топоры, кинжалы, ножи, наконечники копий и стрел</td></tr></table>"
+    }
+   },
+   "twins": [
+    {
+     "id": "q9t1",
+     "type": "text",
+     "text": "Из чего были сделаны **литейные формы**, в которых отливали орудия? Впиши.",
+     "answer": "из камня и глины",
+     "accept": [
+      "камень и глина",
+      "каменные и глиняные",
+      "из камня и глины",
+      "глина",
+      "из глины",
+      "глиняные",
+      "камень",
+      "из камня",
+      "каменные",
+      "камня и глины"
+     ],
+     "typicalWrong": [
+      {
+       "value": "дерево",
+       "why": "Деревянная форма сгорела бы от горячего металла. Формы были **каменные и глиняные**.",
+       "also": [
+        "из дерева",
+        "деревянные"
+       ]
+      },
+      {
+       "value": "железо",
+       "why": "Железо тогда не использовали. Формы — **каменные и глиняные**.",
+       "also": [
+        "железные"
+       ]
+      }
+     ],
+     "genericWrong": "Формы были **каменные и глиняные**.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Металлургия</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Плавка</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">медную и оловянную руду плавили отдельно</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Отливка</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">при отливке в медь добавляли олово</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Формы</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">каменные и глиняные литейные формы</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Формы</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">каменные и глиняные литейные формы</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Что отливали</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">серпы, топоры, кинжалы, ножи, наконечники</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Горячий металл заливали в форму.",
+        "layer": 1
+       },
+       {
+        "text": "Формы делали из **камня и глины**.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "из камня и глины"
+     }
+    },
+    {
+     "id": "q9t2",
+     "type": "choice",
+     "text": "Что отливали в литейных формах?",
+     "options": [
+      {
+       "id": "a",
+       "text": "Глиняные горшки",
+       "why": "Горшки лепили из глины, а не отливали из металла."
+      },
+      {
+       "id": "b",
+       "text": "Каменные микролиты",
+       "why": "Микролиты — каменные орудия мезолита."
+      },
+      {
+       "id": "c",
+       "text": "Серпы, топоры, кинжалы, ножи, наконечники копий и стрел"
+      },
+      {
+       "id": "d",
+       "text": "Деревянные лопаты",
+       "why": "Лопаты делали из дерева, их не отливали."
+      }
+     ],
+     "answer": "c",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Металлургия</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Плавка</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">медную и оловянную руду плавили отдельно</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Отливка</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">при отливке в медь добавляли олово</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Формы</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">каменные и глиняные литейные формы</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Что отливали</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">серпы, топоры, кинжалы, ножи, наконечники</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Что отливали</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">серпы, топоры, кинжалы, ножи, наконечники</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "В формах отливали **металлические** орудия.",
+        "layer": 1
+       },
+       {
+        "text": "Это **серпы, топоры, кинжалы, ножи, наконечники**.",
+        "layer": 2
+       }
+      ]
+     }
+    }
+   ],
+   "order": 9
+  },
+  {
+   "id": "q10",
+   "type": "choice",
+   "text": "Какими способами в основном изготавливали **украшения** в эпоху бронзы?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Резьбой по дереву",
+     "why": "Украшения делали из металла: ковкой, чеканкой, тиснением."
+    },
+    {
+     "id": "b",
+     "text": "Вязанием",
+     "why": "Украшения были металлические."
+    },
+    {
+     "id": "c",
+     "text": "Огневой проходкой",
+     "why": "Огневая проходка — способ добычи руды."
+    },
+    {
+     "id": "d",
+     "text": "Ковкой, чеканкой, тиснением"
+    }
+   ],
+   "answer": "d",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Ювелирное искусство</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Способы</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">ковка, чеканка, тиснение</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Способы</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">ковка, чеканка, тиснение</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Шедевры</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">бронза с золотой фольгой</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Украшения</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">височные кольца, заколки, подвески</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Бусы</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">из стекловидной пасты</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "Вершина ремесла — ювелирные изделия.",
+      "layer": 1
+     },
+     {
+      "text": "Их делали **ковкой, чеканкой, тиснением**.",
+      "layer": 2
+     }
+    ]
+   },
+   "subtopic": "Ювелирное искусство",
+   "lesson": {
+    "title": "Ювелиры эпохи бронзы",
+    "text": "Вершиной ремесленного искусства было изготовление ювелирных изделий. Украшения делали ковкой, чеканкой и тиснением. Шедевры — бронзовые украшения, обложенные золотой фольгой: височные кольца разных типов, заколки лопатковидной формы, лапчатые ромбовидные и продолговатые подвески. Ремесленники уже умели получать стекловидную массу — пасту, из которой делали бусы.",
+    "remember": "Ковка, чеканка, тиснение; бусы из стекловидной пасты.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Ювелирное искусство</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Способы</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">ковка, чеканка, тиснение</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Шедевры</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">бронзовые украшения, обложенные золотой фольгой</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Украшения</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">височные кольца, заколки лопатковидной формы, подвески</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Бусы</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">из стекловидной пасты</td></tr></table>"
+    }
+   },
+   "twins": [
+    {
+     "id": "q10t1",
+     "type": "text",
+     "text": "Из чего делали **бусы** ремесленники эпохи бронзы? Впиши.",
+     "answer": "из стекловидной пасты",
+     "accept": [
+      "стекловидная паста",
+      "паста",
+      "из пасты",
+      "стекловидной пасты",
+      "стекловидная масса",
+      "стекловидной массы",
+      "стекло",
+      "из стекла"
+     ],
+     "typicalWrong": [
+      {
+       "value": "золото",
+       "why": "Золотом обкладывали бронзовые украшения. Бусы делали из **стекловидной пасты**.",
+       "also": [
+        "из золота"
+       ]
+      },
+      {
+       "value": "глина",
+       "why": "Из глины лепили посуду. Бусы — из **стекловидной пасты**.",
+       "also": [
+        "из глины"
+       ]
+      }
+     ],
+     "genericWrong": "Бусы делали из **стекловидной пасты**.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Ювелирное искусство</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Способы</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">ковка, чеканка, тиснение</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Шедевры</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">бронза с золотой фольгой</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Украшения</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">височные кольца, заколки, подвески</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Бусы</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">из стекловидной пасты</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Бусы</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">из стекловидной пасты</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Ремесленники умели получать стекловидную массу — **пасту**.",
+        "layer": 1
+       },
+       {
+        "text": "Из неё делали **бусы**.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "из стекловидной пасты"
+     }
+    },
+    {
+     "id": "q10t2",
+     "type": "choice",
+     "text": "Что учёные называют **шедеврами** ювелирного искусства эпохи бронзы в Казахстане?",
+     "options": [
+      {
+       "id": "a",
+       "text": "Бронзовые украшения, обложенные золотой фольгой"
+      },
+      {
+       "id": "b",
+       "text": "Каменные топоры",
+       "why": "Топоры — орудия труда, а не украшения."
+      },
+      {
+       "id": "c",
+       "text": "Глиняные горшки с орнаментом",
+       "why": "Это посуда, а не ювелирные изделия."
+      },
+      {
+       "id": "d",
+       "text": "Костяные гарпуны",
+       "why": "Это орудия рыболовства."
+      }
+     ],
+     "answer": "a",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Ювелирное искусство</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Способы</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">ковка, чеканка, тиснение</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Шедевры</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">бронза с золотой фольгой</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Шедевры</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">бронза с золотой фольгой</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Украшения</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">височные кольца, заколки, подвески</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Бусы</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">из стекловидной пасты</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Шедевры — самые лучшие работы мастеров.",
+        "layer": 1
+       },
+       {
+        "text": "Это **бронзовые украшения с золотой фольгой**: височные кольца, заколки, подвески.",
+        "layer": 2
+       }
+      ]
+     }
+    }
+   ],
+   "order": 10
+  },
+  {
+   "id": "q11",
+   "type": "choice",
+   "text": "Какие находки доказывают, что в поздней бронзе лошадь использовали для **верховой езды**?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Глиняные горшки",
+     "why": "Горшки не связаны с ездой на лошади."
+    },
+    {
+     "id": "b",
+     "text": "Костяные нащечники-псалии для удил"
+    },
+    {
+     "id": "c",
+     "text": "Медные топоры",
+     "why": "Топоры — орудия, а не конская упряжь."
+    },
+    {
+     "id": "d",
+     "text": "Каменные грузила",
+     "why": "Грузила — для рыболовных сетей."
+    }
+   ],
+   "answer": "b",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Поздняя бронза</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Лошадь</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">тягловая сила и верховая езда; доказательство — костяные нащечники-псалии для удил</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Лошадь</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">тягловая сила и верховая езда; доказательство — костяные нащечники-псалии для удил</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Где нашли псалии</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Степняк, Айдабул, Тасты-Булак</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Верблюд</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">одомашнен дикий верблюд в степях Центрального Казахстана (Аксу-Аюлы II)</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Бегазы-дандыбаевская культура</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">переходная от андроновской к сакской, Центральный Казахстан</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "Для управления лошадью нужны удила.",
+      "layer": 1
+     },
+     {
+      "text": "Нашли **костяные нащечники-псалии** для удил — значит, на лошадях ездили верхом.",
+      "layer": 2
+     }
+    ]
+   },
+   "subtopic": "Лошадь и верблюд",
+   "lesson": {
+    "title": "Лошадь и верблюд",
+    "text": "В поздней бронзе лошадь использовали не только как тягловую силу, но и для верховой езды. Это доказывают костяные нащечники-псалии для удил, найденные в Степняке, Айдабуле, Тасты-Булаке. Верховая езда помогала осваивать обширные степи и высокогорные пастбища. В степях Центрального Казахстана одомашнили дикого верблюда: в могильнике Аксу-Аюлы II нашли кости верблюжонка.",
+    "remember": "Псалии — доказательство верховой езды; одомашнили верблюда.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Поздняя бронза</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Лошадь</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">тягловая сила и верховая езда; доказательство — костяные нащечники-псалии для удил</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Где нашли псалии</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Степняк, Айдабул, Тасты-Булак</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Верблюд</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">одомашнен дикий верблюд в степях Центрального Казахстана (Аксу-Аюлы II)</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Бегазы-дандыбаевская культура</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">переходная от андроновской к сакской, Центральный Казахстан</td></tr></table>"
+    }
+   },
+   "twins": [
+    {
+     "id": "q11t1",
+     "type": "text",
+     "text": "Какое **дикое животное** одомашнили в степях Центрального Казахстана в эпоху бронзы? (Нашли кости его детёныша.)",
+     "answer": "верблюд",
+     "accept": [
+      "верблюд",
+      "верблюда",
+      "верблюды",
+      "верблюжонок"
+     ],
+     "typicalWrong": [
+      {
+       "value": "лошадь",
+       "why": "Лошадей приручили ещё раньше, в Ботае. В эпоху бронзы одомашнили **верблюда**.",
+       "also": [
+        "лошадей",
+        "лошади"
+       ]
+      }
+     ],
+     "genericWrong": "Одомашнили **верблюда**.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Поздняя бронза</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Лошадь</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">тягловая сила и верховая езда; доказательство — костяные нащечники-псалии для удил</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Где нашли псалии</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Степняк, Айдабул, Тасты-Булак</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Верблюд</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">одомашнен дикий верблюд в степях Центрального Казахстана (Аксу-Аюлы II)</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Верблюд</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">одомашнен дикий верблюд в степях Центрального Казахстана (Аксу-Аюлы II)</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Бегазы-дандыбаевская культура</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">переходная от андроновской к сакской, Центральный Казахстан</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "В могильнике Аксу-Аюлы II нашли кости **верблюжонка**.",
+        "layer": 1
+       },
+       {
+        "text": "Значит, в степях одомашнили **верблюда**.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "верблюд"
+     }
+    },
+    {
+     "id": "q11t2",
+     "type": "choice",
+     "text": "Какая культура была **переходной** от андроновской к культуре саков?",
+     "options": [
+      {
+       "id": "a",
+       "text": "Срубная",
+       "why": "Срубная — в Западном Казахстане, это не переходная культура."
+      },
+      {
+       "id": "b",
+       "text": "Ботайская",
+       "why": "Ботайская — эпоха энеолита."
+      },
+      {
+       "id": "c",
+       "text": "Бегазы-дандыбаевская"
+      },
+      {
+       "id": "d",
+       "text": "Кельтиминарская",
+       "why": "Кельтиминарская — неолит."
+      }
+     ],
+     "answer": "c",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Поздняя бронза</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Лошадь</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">тягловая сила и верховая езда; доказательство — костяные нащечники-псалии для удил</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Где нашли псалии</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Степняк, Айдабул, Тасты-Булак</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Верблюд</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">одомашнен дикий верблюд в степях Центрального Казахстана (Аксу-Аюлы II)</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Бегазы-дандыбаевская культура</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">переходная от андроновской к сакской, Центральный Казахстан</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Бегазы-дандыбаевская культура</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">переходная от андроновской к сакской, Центральный Казахстан</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Это культура Центрального Казахстана в поздней бронзе.",
+        "layer": 1
+       },
+       {
+        "text": "**Бегазы-дандыбаевская** — переход от андроновской к сакской.",
+        "layer": 2
+       }
+      ]
+     }
+    }
+   ],
+   "order": 11
+  }
+ ]
+}

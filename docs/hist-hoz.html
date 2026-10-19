@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Хозяйство эпохи металлов</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&family=Golos+Text:wght@400;500;600;700&display=swap">
+<style>
+/* Макет: «раскоп» — главы идут как слои земли от древних к новым, у каждой эпохи своя полоса цвета на шкале времени */
+:root{
+  --bg:#F4F1EC; --card:#FFFFFF; --ink:#2A2420; --muted:#6B6058; --line:#DDD5CB;
+  --clay:#A4532B; --clay-soft:#F6E7DD; --stone:#5E6B73; --stone-soft:#E7ECEF; --bronze:#9A7420; --bronze-soft:#F5EDD6; --sky:#2C6E9C; --sky-soft:#E2EEF7; --red:#B23A2E; --red-soft:#F8E4E1;
+  --display:"PT Sans Narrow","Arial Narrow",Arial,sans-serif;
+  --body:"Golos Text",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#17140F; --card:#201B16; --ink:#EEE7DF; --muted:#AFA397; --line:#3A3129;
+  --clay:#E8996E; --clay-soft:#3A271C; --stone:#A9B7BF; --stone-soft:#242C31; --bronze:#E2BE65; --bronze-soft:#352B14; --sky:#86BCE6; --sky-soft:#182A38; --red:#F08A7E; --red-soft:#3A2220; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#17140F; --card:#201B16; --ink:#EEE7DF; --muted:#AFA397; --line:#3A3129;
+  --clay:#E8996E; --clay-soft:#3A271C; --stone:#A9B7BF; --stone-soft:#242C31; --bronze:#E2BE65; --bronze-soft:#352B14; --sky:#86BCE6; --sky-soft:#182A38; --red:#F08A7E; --red-soft:#3A2220; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--body)}
+.wrap{max-width:740px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 56px;display:flex;flex-direction:column;gap:22px}
+h1,h2{font-family:var(--display);font-weight:700;line-height:1.1;margin:0;text-wrap:balance}
+h1{font-size:clamp(32px,7vw,46px);color:var(--clay)}
+h2{font-size:clamp(24px,5vw,30px)}
+h3{font-size:18px;margin:6px 0 0;font-weight:700}
+p{margin:0}
+.kicker{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--sky);font-weight:700;margin:0}
+.lead{color:var(--muted)}
+nav.toc{display:flex;flex-wrap:wrap;gap:8px}
+nav.toc a{font-size:14px;font-weight:600;color:var(--clay);background:var(--clay-soft);padding:6px 11px;border-radius:999px;text-decoration:none}
+nav.toc a:focus-visible,.go:focus-visible,summary:focus-visible{outline:3px solid var(--sky);outline-offset:2px}
+.timeline{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px;margin:0;padding:0;list-style:none}
+.timeline li{padding:8px 6px;font-size:13px;line-height:1.3;min-width:0;overflow-wrap:anywhere;border-top:5px solid var(--stone);background:var(--stone-soft)}
+.timeline li b{display:block;font-family:var(--display);font-size:18px}
+.timeline li.m{border-top-color:var(--bronze);background:var(--bronze-soft)}
+@media (max-width:560px){.timeline{grid-template-columns:1fr}}
+section.ch{background:var(--card);border:1px solid var(--line);padding:20px 18px;display:flex;flex-direction:column;gap:12px;scroll-margin-top:12px}
+.ch>h2{display:flex;gap:12px;align-items:baseline}
+.ch>h2 .n{font-family:var(--display);color:var(--card);background:var(--clay);min-width:38px;height:38px;display:inline-grid;place-items:center;font-size:22px;flex:none}
+.par{font-size:13px;color:var(--muted);font-weight:600;letter-spacing:.04em}
+mark{background:var(--bronze-soft);color:inherit;padding:0 3px;border-radius:3px;font-weight:600}
+.def{border-left:4px solid var(--sky);background:var(--sky-soft);padding:10px 14px}
+.def b:first-child{color:var(--sky)}
+.trap{border-left:4px solid var(--red);background:var(--red-soft);padding:10px 14px}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.45}
+th,td{text-align:left;vertical-align:top;padding:8px 9px;border-bottom:1px solid var(--line)}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+td:first-child{font-weight:600}
+ul.l,ol.l{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:5px}
+.chain{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}
+.chain li{flex:1 1 150px;background:var(--clay-soft);border:1px solid var(--line);padding:8px 10px;font-size:14px;line-height:1.35;min-width:0}
+.chain li b{display:block;color:var(--clay);font-size:15px}
+details{border:1px solid var(--line);padding:10px 14px;background:var(--bg)}
+summary{cursor:pointer;font-weight:700;color:var(--clay)}
+details ol{margin:8px 0 0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
+details .a{color:var(--muted)}
+.memo{background:var(--card);border:2px solid var(--clay);padding:18px}
+.memo h2{color:var(--clay);margin-bottom:8px}
+.go{display:flex;align-items:center;justify-content:center;min-height:56px;background:var(--clay);color:#fff;font:700 19px var(--body);text-decoration:none;border-radius:10px}
+:root[data-theme="dark"] .go{color:#17140F}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .go{color:#17140F}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="kicker">История Казахстана · 5 класс · §15–17</p>
+  <h1>Хозяйство племён эпохи ранних металлов</h1>
+  <p class="lead">Руслан, это короткая памятка, читать 10 минут. Потом тест из 11 вопросов: в основном выбор из вариантов, несколько слов нужно вписать самому. Ошибки в написании не страшны.</p>
+
+  <nav class="toc" aria-label="Главы">
+    <a href="#pos">Поселения</a><a href="#zan">Занятия</a><a href="#sob">Собственность</a><a href="#gor">Горное дело</a><a href="#rem">Ремёсла</a><a href="#kon">Лошадь и верблюд</a>
+  </nav>
+
+  <section class="ch" id="pos">
+    <h2><span class="n">1</span>Поселения и могильники</h2>
+    <ul class="l">
+      <li>Все культуры оставили <b>поселения</b> и <b>могильники</b> (древние кладбища).</li>
+      <li>Поселения энеолита были небольшими, в эпоху бронзы стали больше. В поздней бронзе их окружали <mark>рвами, валами, частоколами</mark>.</li>
+      <li>Поселения стояли на <b>берегах рек</b>, реже у озёр, там, где много травы для скота и земли для полива.</li>
+      <li>В поселениях ариев 6–10, иногда 20–50 жилищ. Жилища стояли <mark>по кругу</mark>, в центре — площадь для собраний, а в войну — загон для скота.</li>
+      <li>Жилища — <b>полуземлянки</b> и наземные, 100–400 м²; в лесу — из брёвен. В <mark>жилищах-кузницах</mark> плавили металл.</li>
+      <li>Курганы становились выше. Покойного клали в <b>скорченной</b> позе, а в бегазы-дандыбаевской культуре — в <b>вытянутом</b> положении.</li>
+    </ul>
+  </section>
+
+  <section class="ch" id="zan">
+    <h2><span class="n">2</span>Занятия</h2>
+    <div class="tw"><table>
+      <tr><th>Занятие</th><th>Главное</th></tr>
+      <tr><td>Охота</td><td>костей <b>диких</b> животных на раскопках больше, чем домашних. Охотились на зайцев, лосей, бобров, медведей, лисиц, косуль, диких быков, кабанов, птиц</td></tr>
+      <tr><td>Рыболовство</td><td>костяные гарпуны и крючки, шилья для сетей, каменные грузила</td></tr>
+      <tr><td>Скотоводство</td><td>в основе — <mark>лошади и крупный рогатый скот</mark> (это признак оседлости). Сначала <b>придомное</b>, в поздней бронзе — <mark>отгонное</mark>; больше стало овец, коз, лошадей. Летом заготавливали сено</td></tr>
+      <tr><td>Земледелие</td><td><mark>поливное</mark>: от реки прокапывали каналы. Пахали плугами с бронзовыми и каменными лемехами. От частого полива поля <b>засаливались</b> за 2–3 года. Людей стало больше, земель мало — кризис</td></tr>
+    </table></div>
+  </section>
+
+  <section class="ch" id="sob">
+    <h2><span class="n">3</span>Семья и собственность</h2>
+    <p>Срубники и андроновцы жили <b>большими патриархальными семьями</b>. Земля и скот были <mark>в общем пользовании</mark>, частной собственности не было. Была только <mark>личная</mark>: например, лук, который охотник сделал сам. Его клали в могилу вместе с хозяином.</p>
+  </section>
+
+  <section class="ch" id="gor">
+    <h2><span class="n">4</span>Горное дело и металлургия</h2>
+    <div class="tw"><table>
+      <tr><th>Металл</th><th>Где добывали</th></tr>
+      <tr><td>Медь</td><td><mark>Жезказган</mark> — выплавили около 100 тыс. т меди</td></tr>
+      <tr><td>Олово</td><td><mark>горы Атасу</mark></td></tr>
+      <tr><td>Золото</td><td><mark>Степняк</mark></td></tr>
+    </table></div>
+    <ol class="chain">
+      <li><b>Кайлование</b>рыхлую руду — отбойниками и топорами</li>
+      <li><b>Огневая проходка</b>плотную породу грели костром и поливали водой — она трескалась</li>
+      <li><b>Подъём</b>кирками откалывали, в кожаных мешках поднимали наверх</li>
+      <li><b>Обработка</b>дробили каменными молотками, промывали</li>
+    </ol>
+    <p class="trap"><b>Труд рудокопов был опасным:</b> шахты обваливались. Археологи находили скелеты с мешками, полными руды.</p>
+    <p>Медную и оловянную руду плавили <b>отдельно</b>, а при отливке добавляли олово в медь — получалась бронза. В <mark>каменных и глиняных литейных формах</mark> отливали серпы, топоры, кинжалы, ножи, наконечники копий и стрел.</p>
+  </section>
+
+  <section class="ch" id="rem">
+    <h2><span class="n">5</span>Ювелирное искусство</h2>
+    <p>Вершина ремесла — украшения. Их делали <mark>ковкой, чеканкой, тиснением</mark>. Шедевры — <b>бронзовые украшения, обложенные золотой фольгой</b>: височные кольца, заколки, подвески. <b>Бусы</b> делали из <mark>стекловидной пасты</mark>.</p>
+  </section>
+
+  <section class="ch" id="kon">
+    <h2><span class="n">6</span>Лошадь и верблюд</h2>
+    <p>В поздней бронзе на лошади стали ездить <b>верхом</b>. Доказательство — костяные <mark>нащечники-псалии</mark> для удил (Степняк, Айдабул, Тасты-Булак). В степях Центрального Казахстана одомашнили <mark>верблюда</mark>: в могильнике Аксу-Аюлы II нашли кости верблюжонка.</p>
+    <p><b>Бегазы-дандыбаевская культура</b> — <mark>переходная</mark> от андроновской к сакской, Центральный Казахстан.</p>
+    <details><summary>Проверь себя</summary><ol>
+      <li>Где добывали медь, олово, золото? <span class="a">Жезказган, горы Атасу, Степняк.</span></li>
+      <li>Каким стало скотоводство в поздней бронзе? <span class="a">Отгонным.</span></li>
+      <li>Что такое огневая проходка? <span class="a">Породу грели костром и поливали водой, чтобы она треснула.</span></li>
+      <li>Была ли частная собственность? <span class="a">Нет, только личная.</span></li>
+    </ol></details>
+  </section>
+
+  <p class="lead">В конце теста нажми «WhatsApp» или «Поделиться» и отправь результат папе.</p>
+  <a class="go" id="go" href="./?kid=k5&amp;test=k5-hist-hozyaystvo-2026-10-19&amp;read=1">Начать тест</a>
+</div>
+<script>
+document.getElementById("go").addEventListener("click", function(){
+  try { localStorage.setItem("intro-read:k5-hist-hozyaystvo-2026-10-19", "1"); } catch(e){}
+});
+</script>
+</body>
+</html>
