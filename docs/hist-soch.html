@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>История: к СОЧ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&family=Golos+Text:wght@400;500;600;700&display=swap">
+<style>
+/* Макет: «раскоп» — главы идут как слои земли от древних к новым, у каждой эпохи своя полоса цвета на шкале времени */
+:root{
+  --bg:#F4F1EC; --card:#FFFFFF; --ink:#2A2420; --muted:#6B6058; --line:#DDD5CB;
+  --clay:#A4532B; --clay-soft:#F6E7DD; --stone:#5E6B73; --stone-soft:#E7ECEF; --bronze:#9A7420; --bronze-soft:#F5EDD6; --sky:#2C6E9C; --sky-soft:#E2EEF7; --red:#B23A2E; --red-soft:#F8E4E1;
+  --display:"PT Sans Narrow","Arial Narrow",Arial,sans-serif;
+  --body:"Golos Text",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#17140F; --card:#201B16; --ink:#EEE7DF; --muted:#AFA397; --line:#3A3129;
+  --clay:#E8996E; --clay-soft:#3A271C; --stone:#A9B7BF; --stone-soft:#242C31; --bronze:#E2BE65; --bronze-soft:#352B14; --sky:#86BCE6; --sky-soft:#182A38; --red:#F08A7E; --red-soft:#3A2220; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#17140F; --card:#201B16; --ink:#EEE7DF; --muted:#AFA397; --line:#3A3129;
+  --clay:#E8996E; --clay-soft:#3A271C; --stone:#A9B7BF; --stone-soft:#242C31; --bronze:#E2BE65; --bronze-soft:#352B14; --sky:#86BCE6; --sky-soft:#182A38; --red:#F08A7E; --red-soft:#3A2220; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--body)}
+.wrap{max-width:740px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 56px;display:flex;flex-direction:column;gap:22px}
+h1,h2{font-family:var(--display);font-weight:700;line-height:1.1;margin:0;text-wrap:balance}
+h1{font-size:clamp(32px,7vw,46px);color:var(--clay)}
+h2{font-size:clamp(24px,5vw,30px)}
+h3{font-size:18px;margin:6px 0 0;font-weight:700}
+p{margin:0}
+.kicker{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--sky);font-weight:700;margin:0}
+.lead{color:var(--muted)}
+nav.toc{display:flex;flex-wrap:wrap;gap:8px}
+nav.toc a{font-size:14px;font-weight:600;color:var(--clay);background:var(--clay-soft);padding:6px 11px;border-radius:999px;text-decoration:none}
+nav.toc a:focus-visible,.go:focus-visible,summary:focus-visible{outline:3px solid var(--sky);outline-offset:2px}
+.timeline{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px;margin:0;padding:0;list-style:none}
+.timeline li{padding:8px 6px;font-size:13px;line-height:1.3;min-width:0;overflow-wrap:anywhere;border-top:5px solid var(--stone);background:var(--stone-soft)}
+.timeline li b{display:block;font-family:var(--display);font-size:18px}
+.timeline li.m{border-top-color:var(--bronze);background:var(--bronze-soft)}
+@media (max-width:560px){.timeline{grid-template-columns:1fr}}
+section.ch{background:var(--card);border:1px solid var(--line);padding:20px 18px;display:flex;flex-direction:column;gap:12px;scroll-margin-top:12px}
+.ch>h2{display:flex;gap:12px;align-items:baseline}
+.ch>h2 .n{font-family:var(--display);color:var(--card);background:var(--clay);min-width:38px;height:38px;display:inline-grid;place-items:center;font-size:22px;flex:none}
+.par{font-size:13px;color:var(--muted);font-weight:600;letter-spacing:.04em}
+mark{background:var(--bronze-soft);color:inherit;padding:0 3px;border-radius:3px;font-weight:600}
+.def{border-left:4px solid var(--sky);background:var(--sky-soft);padding:10px 14px}
+.def b:first-child{color:var(--sky)}
+.trap{border-left:4px solid var(--red);background:var(--red-soft);padding:10px 14px}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.45}
+th,td{text-align:left;vertical-align:top;padding:8px 9px;border-bottom:1px solid var(--line)}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+td:first-child{font-weight:600}
+ul.l,ol.l{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:5px}
+.chain{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}
+.chain li{flex:1 1 150px;background:var(--clay-soft);border:1px solid var(--line);padding:8px 10px;font-size:14px;line-height:1.35;min-width:0}
+.chain li b{display:block;color:var(--clay);font-size:15px}
+details{border:1px solid var(--line);padding:10px 14px;background:var(--bg)}
+summary{cursor:pointer;font-weight:700;color:var(--clay)}
+details ol{margin:8px 0 0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
+details .a{color:var(--muted)}
+.memo{background:var(--card);border:2px solid var(--clay);padding:18px}
+.memo h2{color:var(--clay);margin-bottom:8px}
+.go{display:flex;align-items:center;justify-content:center;min-height:56px;background:var(--clay);color:#fff;font:700 19px var(--body);text-decoration:none;border-radius:10px}
+:root[data-theme="dark"] .go{color:#17140F}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .go{color:#17140F}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="kicker">История Казахстана · 5 класс · к СОЧ · §1–17</p>
+  <h1>Руслан, повторяем перед СОЧ</h1>
+  <p class="lead">Здесь всё главное из учебника: что такое история, источники, учёные, как появился человек, каменный век, энеолит и эпоха бронзы. Читай примерно 15–20 минут. В тесте 14 вопросов: имена выбираешь из списка, а названия эпох и культур иногда нужно вписать самому. Ошибки в написании не страшны.</p>
+
+  <ol class="timeline" aria-label="Шкала эпох">
+    <li><b>Палеолит</b>древнекаменный век · 2,6 млн – 12 тыс. лет назад</li>
+    <li><b>Мезолит</b>среднекаменный · 12–5 тыс. до н. э.</li>
+    <li><b>Неолит</b>новокаменный · 5–3 тыс. до н. э.</li>
+    <li class="m"><b>Энеолит</b>медно-каменный · эпоха ранних металлов</li>
+    <li class="m"><b>Бронза</b>2–1 тыс. до н. э.</li>
+  </ol>
+  <p class="small lead">Подсказка: «палео» — древний, «мезо» — средний, «нео» — новый, «лит» — камень.</p>
+
+  <nav class="toc" aria-label="Главы">
+    <a href="#ist">История</a><a href="#uch">Учёные</a><a href="#chel">Человек</a><a href="#pal">Палеолит</a><a href="#mez">Мезолит</a><a href="#neo">Неолит</a><a href="#ene">Энеолит</a><a href="#brz">Бронза</a>
+  </nav>
+
+  <section class="ch" id="ist">
+    <p class="par">§1</p>
+    <h2><span class="n">1</span>Что изучает история</h2>
+    <p class="def"><b>История</b> — наука о прошлом человечества: важные события и деятельность исторических личностей. По-древнегречески «история» — <mark>расследование, установление, повествование</mark>.</p>
+    <ul class="l">
+      <li><b>Геродот</b> (484–425 гг. до н. э.) — <mark>«отец истории»</mark>, его труд «История» из девяти книг.</li>
+      <li><b>Аль-Фараби</b>: «Не зная прошлого истории, трудно знать настоящее время, предположить будущее».</li>
+      <li><b>А. Байтурсынов</b>: «Самое великое и симпатичное слово — история».</li>
+      <li>Древнейшая история — от появления человека до 1-го тыс. до н. э.; древняя — с 1-го тыс. до н. э. до V века н. э.</li>
+    </ul>
+    <div class="tw"><table>
+      <tr><th>Источники</th><th>Что это</th><th>Пример</th></tr>
+      <tr><td>Археологические</td><td>вещи, сделанные руками человека и <b>найденные при раскопках</b></td><td>«Золотой человек» (курган Иссык), «Царский курган» на Алтае, Отрар</td></tr>
+      <tr><td>Письменные</td><td>записи предков</td><td>«Авеста», «История» Геродота, «География» Страбона, Орхоно-Енисейские письмена</td></tr>
+      <tr><td>Этнологические, антропологические</td><td>обычаи народов; останки людей</td><td>черепа, кости</td></tr>
+    </table></div>
+    <details><summary>Проверь себя</summary><ol>
+      <li>Кто «отец истории»? <span class="a">Геродот.</span></li>
+      <li>Находка из раскопок — какой источник? <span class="a">Археологический.</span></li>
+    </ol></details>
+  </section>
+
+  <section class="ch" id="uch">
+    <p class="par">§2</p>
+    <h2><span class="n">2</span>Учёные-исследователи</h2>
+    <div class="tw"><table>
+      <tr><th>Эпоха</th><th>Кто исследовал</th></tr>
+      <tr><td>Каменный век</td><td>Х. А. Алпысбаев, А. Г. Медоев, А. М. Оразбаев</td></tr>
+      <tr><td>Медь и бронза</td><td>А. Х. Маргулан, М. К. Кадырбаев, В. Ф. Зайберт</td></tr>
+      <tr><td>Железо</td><td>С. С. Черников, К. А. Акишев</td></tr>
+      <tr><td>Средневековье</td><td>Б. Е. Кумеков, Т. Н. Сенигова, К. М. Байпаков</td></tr>
+    </table></div>
+    <p><b>Алькей Маргулан</b> (1904–1985) — <mark>основоположник национальной археологической школы</mark>, академик. Учился вместе с К. Сатпаевым и М. Ауэзовым. Его экспедиция (1946–1974) открыла <mark>бегазы-дандыбаевскую культуру</mark>, изучала Отрар, Тараз, Сайрам, Сыгнак и доказала, что в древнем Казахстане были города. Его именем назван Институт археологии.</p>
+    <p>Казахстан — <b>9-е место</b> в мире по территории.</p>
+  </section>
+
+  <section class="ch" id="chel">
+    <p class="par">§3–4</p>
+    <h2><span class="n">3</span>Возникновение человека</h2>
+    <ol class="chain">
+      <li><b>Человек умелый</b>австралопитеки; первыми стали делать каменные орудия</li>
+      <li><b>Человек прямоходящий</b>питекантропы, синантропы, неандертальцы</li>
+      <li><b>Человек разумный</b>человек нашего времени, 40–35 тыс. лет назад; ранний вид — <b>кроманьонец</b> (пещера Кро-Маньон, Франция)</li>
+    </ol>
+    <p>Главный признак, отличающий древнейшего человека от обезьяны, — <mark>объём мозга</mark>: обезьяна до 400 см³, австралопитек 650 см³, питекантроп до 900 см³. Неандертальцы жили в шалашах, умели добывать огонь, имели похоронные обряды.</p>
+    <details><summary>Проверь себя</summary><ol>
+      <li>Назови этапы по порядку. <span class="a">Умелый → прямоходящий → разумный.</span></li>
+      <li>Почему ранний человек разумный — «кроманьонец»? <span class="a">Его останки нашли в пещере Кро-Маньон во Франции.</span></li>
+    </ol></details>
+  </section>
+
+  <section class="ch" id="pal">
+    <p class="par">§5–8</p>
+    <h2><span class="n">4</span>Палеолит — древнекаменный век</h2>
+    <ul class="l">
+      <li>Делится на <b>ранний, средний, поздний</b>. Орудия — из камня: кремень для ножей, базальт и песчаник для жерновов.</li>
+      <li>Около 250 тыс. лет назад началось <b>оледенение</b>. Охотились на мамонтов, шерстистых носорогов, северных оленей.</li>
+      <li>Хозяйство <mark>присваивающее</mark>: брали у природы готовое — охота, собирательство, рыбалка.</li>
+      <li><mark>Главное занятие — охота</mark>: она давала больше всего еды в любое время года.</li>
+      <li>Самый древний вид охоты — <b>поджог степной травы</b>. Потом — <b>облавная охота</b>: зверей загоняли в ямы-западни.</li>
+      <li>Из шкуры и рёбер мамонта делали <b>чумы</b>, жир шёл на свет и тепло. Мясо сушили, солили, вялили.</li>
+    </ul>
+    <p>Люди жили общинами. В мезолите роды объединились в <b>племена</b>, в неолите появилась большая <b>патриархальная семья</b>. Предки тюрков считали прародителем волка и почитали бога Неба — <b>Тенгри</b>.</p>
+  </section>
+
+  <section class="ch" id="mez">
+    <p class="par">§9</p>
+    <h2><span class="n">5</span>Мезолит — среднекаменный век (12–5 тыс. до н. э.)</h2>
+    <ul class="l">
+      <li>Растаяли ледники; человек современного облика окончательно победил неандертальцев.</li>
+      <li>Изобрели <mark>лук со стрелами</mark>.</li>
+      <li><mark>Главное занятие — рыболовство</mark>: лодки, плоты, сети, костяные гарпуны. Стоянки — у рек и озёр (Есиль, Тобол, Торгай, Жайык).</li>
+      <li><mark>Микролиты</mark> — мелкие каменные орудия 1–2 см; их вставляли в костяную или деревянную основу (вкладышевая техника).</li>
+      <li>В конце мезолита начали <b>одомашнивать</b> животных: овцу, козу, корову, свинью, лошадь, собаку.</li>
+    </ul>
+  </section>
+
+  <section class="ch" id="neo">
+    <p class="par">§10–11</p>
+    <h2><span class="n">6</span>Неолит — новокаменный век (5–3 тыс. до н. э.)</h2>
+    <p class="def"><b>Неолитическая революция</b> — появление <mark>производящего хозяйства</mark>: скотоводства, земледелия, позже ремёсел. Присваивающее хозяйство (брать готовое) уступило производящему (выращивать и разводить самим).</p>
+    <p>Главное достижение — <b>глиняная посуда</b>, поэтому неолит называют <mark>«эпохой глиняных горшков»</mark>. Одомашнивание животных — <b>доместикация</b>.</p>
+    <div class="tw"><table>
+      <tr><th>Культура неолита</th><th>Где</th><th>Чем известна</th></tr>
+      <tr><td>Кельтиминарская</td><td>Приаралье, низовья Амударьи</td><td><b>рыболовство</b>; большие прямоугольные жилища с очагами</td></tr>
+      <tr><td>Атбасарская</td><td>Северный Казахстан, Приесилье</td><td>следы приручения <b>лошадей</b>, пили кумыс</td></tr>
+      <tr><td>Джебельская</td><td>Устюрт, пещеры Джебель</td><td>одомашнили <b>овец и коз</b></td></tr>
+    </table></div>
+    <p>В неолите сложились древнейшие народы: дравиды (Индостан), индоевропейцы (арии), алтае-маньчжурские народы — предки турок, казахов, китайцев. С 4-го по 2-е тыс. до н. э. территорию Казахстана заселили <b>индоиранские</b> племена.</p>
+    <details><summary>Проверь себя</summary><ol>
+      <li>Что такое неолитическая революция? <span class="a">Переход к производящему хозяйству: скотоводству и земледелию.</span></li>
+      <li>Какая культура — рыболовы Приаралья? <span class="a">Кельтиминарская.</span></li>
+    </ol></details>
+  </section>
+
+  <section class="ch" id="ene">
+    <p class="par">§12–13</p>
+    <h2><span class="n">7</span>Энеолит — медно-каменный век</h2>
+    <ul class="l">
+      <li>Название: лат. aeneus — медный + греч. lithos — камень. Его ещё называют <b>эпохой ранних металлов</b>.</li>
+      <li><mark>Первый металл — медь</mark>. Камень остался, потому что медь <b>мягкая</b> и самородков было <b>мало</b>. Зато медное орудие можно починить.</li>
+      <li>Изобрели <mark>колесницу</mark>: два колеса и возок, впрягали 1–4 коня.</li>
+      <li><b>Ботайская культура</b> — стоянка Ботай на реке Иманбурлук (Северо-Казахстанская обл.): около 160 полуземлянок и <mark>свыше 70 тыс. останков лошадей</mark>. Ботайцы — одни из <b>первых в мире приручили лошадей</b>.</li>
+      <li>Самарская и древнеямная культуры — между Волгой и Жайыком; над могилами насыпали холм — ранний прообраз кургана; посуда с «ногтевым» и «гребенчатым» орнаментом.</li>
+    </ul>
+  </section>
+
+  <section class="ch" id="brz">
+    <p class="par">§14–17</p>
+    <h2><span class="n">8</span>Эпоха бронзы (2–1 тыс. до н. э.)</h2>
+    <p class="def"><b>Бронза</b> — сплав <mark>меди с оловом</mark>. Она твёрже меди, плавится при низкой температуре, золотистого цвета. Периоды: <b>ранняя, развитая, поздняя</b> бронза.</p>
+    <div class="tw"><table>
+      <tr><th>Культура</th><th>Где</th><th>Особенность</th></tr>
+      <tr><td>Андроновская</td><td>весь Казахстан, <b>кроме Западного</b></td><td>названа по кургану у <b>села Андроново</b> (Западная Сибирь); европеоиды; посуда с плоским дном, лепили вручную</td></tr>
+      <tr><td>Срубная</td><td>Западный Казахстан</td><td>стенки могильных ям укрепляли <b>деревянными срубами</b></td></tr>
+      <tr><td>Бегазы-дандыбаевская</td><td>Центральный Казахстан</td><td><b>переходная</b> от андроновской к сакской</td></tr>
+    </table></div>
+    <h3>Хозяйство</h3>
+    <ul class="l">
+      <li>Скотоводство: <mark>придомное → отгонное</mark> (в поздней бронзе скот перегоняли с пастбища на пастбище). Появились колодцы.</li>
+      <li>Земледелие поливное: от реки прокапывали каналы.</li>
+      <li>Металлы: <mark>медь — Жезказган</mark> (около 100 тыс. т), олово — горы Атасу, золото — Степняк.</li>
+      <li>Руду добывали кайлами и огнём, дробили каменными молотками; орудия отливали в каменных и глиняных формах.</li>
+      <li>Украшения делали ковкой, чеканкой, тиснением; <b>бусы</b> — из стекловидной пасты. Лошадь стали использовать для верховой езды, одомашнили верблюда.</li>
+    </ul>
+    <details><summary>Проверь себя</summary><ol>
+      <li>Бронза — сплав меди с чем? <span class="a">С оловом.</span></li>
+      <li>Почему культура «андроновская»? <span class="a">Первый курган исследовали у села Андроново.</span></li>
+      <li>Где добывали медь? <span class="a">Жезказган.</span></li>
+    </ol></details>
+  </section>
+
+  <div class="memo">
+    <h2>Главное запомнить</h2>
+    <ul class="l">
+      <li>Геродот — «отец истории». Источники: археологические (раскопки) и письменные (тексты).</li>
+      <li>Маргулан — основоположник археологии Казахстана, открыл бегазы-дандыбаевскую культуру.</li>
+      <li>Человек умелый → прямоходящий → разумный (кроманьонец). Главный признак — объём мозга.</li>
+      <li>Палеолит — охота, присваивающее хозяйство. Мезолит — лук, рыболовство, микролиты.</li>
+      <li>Неолит — неолитическая революция, глиняная посуда; культуры: кельтиминарская, атбасарская, джебельская.</li>
+      <li>Энеолит — медь и колесница; Ботай — первые приручили лошадей.</li>
+      <li>Бронза = медь + олово. Андроновская, срубная, бегазы-дандыбаевская. Медь — Жезказган.</li>
+    </ul>
+  </div>
+
+  <p class="lead">В конце теста нажми «WhatsApp» или «Поделиться» и отправь результат папе.</p>
+  <a class="go" id="go" href="./?kid=k5&amp;test=k5-hist-soch-2026-10-19&amp;read=1">Начать тест</a>
+</div>
+<script>
+document.getElementById("go").addEventListener("click", function(){
+  try { localStorage.setItem("intro-read:k5-hist-soch-2026-10-19", "1"); } catch(e){}
+});
+</script>
+</body>
+</html>

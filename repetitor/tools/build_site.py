@@ -131,13 +131,13 @@ function levT(a,b){const m=a.length,n=b.length;if(!m)return n;if(!n)return m;let
   for(let i=1;i<=m;i++){const c=[i];for(let j=1;j<=n;j++)c[j]=Math.min(p[j]+1,c[j-1]+1,p[j-1]+(a[i-1]===b[j-1]?0:1));p=c;}return p[n];}
 const FILLER_T=new Set("на в во это знаки знак съемка сьемка съемки материк материке остров острова океан океана г год году градусов градуса градус по к с со из от до и наука прибор линия линию".split(" "));
 function tolT(n){return n<=4?0:n<=8?1:2;}
-function textHit(resp,vars){const r=normT(resp);if(!r)return false;const rt=r.split(" ");
-  for(const v0 of vars){const v=normT(v0);if(!v)continue;const tol=tolT(v.replace(/ /g,"").length);
+function textHit(resp,vars,mt){const r=normT(resp);if(!r)return false;const rt=r.split(" ");
+  for(const v0 of vars){const v=normT(v0);if(!v)continue;let tol=tolT(v.replace(/ /g,"").length);if(mt!=null)tol=Math.min(tol,mt);
     if(levT(r,v)<=tol||levT(r.replace(/ /g,""),v.replace(/ /g,""))<=tol)return true;
     const n=v.split(" ").length;for(let i=0;i+n<=rt.length;i++){const rest=rt.slice(0,i).concat(rt.slice(i+n));
       if(rest.every(w=>FILLER_T.has(w))&&levT(rt.slice(i,i+n).join(" "),v)<=tol)return true;}}
   return false;}
-function textMatch(q,resp){return textHit(resp,[q.answer,...(q.accept||[])]);}
+function textMatch(q,resp){return textHit(resp,[q.answer,...(q.accept||[])],q.maxTypos);}
 """
 TEXT_PATCHES = [
   ('function isRight(q,resp){\n',

@@ -1,0 +1,1978 @@
+{
+ "test": {
+  "id": "k5-hist-soch-2026-10-19",
+  "kid": "k5",
+  "grade": 5,
+  "subject": "История Казахстана",
+  "topic": "Древний Казахстан: история, источники, учёные, каменный век, энеолит, бронза",
+  "title": "Подготовка к СОЧ: история древнего Казахстана (§1–17)",
+  "source": "История Казахстана 5 кл., §1–17. Сначала прочитай памятку. Имена — выбор из списка, термины — вписываешь",
+  "intro": "hist-soch.html",
+  "createdAt": "2026-10-19T15:30:00+00:00"
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "type": "choice",
+   "text": "Кого назвали **«отцом истории»**?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Геродота"
+    },
+    {
+     "id": "b",
+     "text": "Аль-Фараби",
+     "why": "Аль-Фараби — учёный средневековья, он сказал: «Не зная прошлого, трудно знать настоящее». «Отец истории» — Геродот."
+    },
+    {
+     "id": "c",
+     "text": "Маргулана",
+     "why": "Маргулан — казахстанский археолог XX века. «Отец истории» — древнегреческий учёный Геродот."
+    },
+    {
+     "id": "d",
+     "text": "Байтурсынова",
+     "why": "А. Байтурсынов сказал: «Самое великое и симпатичное слово — история». «Отец истории» — Геродот."
+    }
+   ],
+   "answer": "a",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<div style=\"max-width:520px;margin:0 auto;padding:12px 14px;border-left:4px solid var(--accent);background:var(--accent-soft);border-radius:6px;font-size:17px;line-height:1.5\"><div style=\"font-style:italic\">Слово «история» впервые было использовано в труде «История» древнегреческого учёного <span style=\"border-bottom:3px solid var(--accent)\">Геродота</span>, которого назвали <span style=\"border-bottom:3px solid var(--accent)\">«отцом истории»</span>.</div></div><div data-step=\"2\" style=\"text-align:center;margin-top:10px\"><span style=\"display:inline-block;padding:4px 12px;border-radius:999px;background:var(--ok-soft);color:var(--ok);font-weight:700\">Геродот</span></div>"
+    },
+    "steps": [
+     {
+      "text": "Слово «история» впервые встречается в труде древнегреческого учёного **Геродота** (484–425 гг. до н. э.).",
+      "layer": 1
+     },
+     {
+      "text": "Его труд «История» из девяти книг дошёл до нас, поэтому его назвали **«отцом истории»**.",
+      "layer": 2
+     }
+    ]
+   },
+   "subtopic": "Что изучает история",
+   "lesson": {
+    "title": "История",
+    "text": "История — наука о прошлом человеческого общества: она изучает важные события и деятельность исторических личностей. Слово «история» по-древнегречески значит «расследование, установление, повествование». Впервые его использовал Геродот (484–425 гг. до н. э.) — «отец истории». Древнюю историю делят на два периода: древнейшая история — от появления человека до 1-го тысячелетия до н. э.; древняя история — с 1-го тысячелетия до н. э. до V века н. э.",
+    "remember": "Геродот — «отец истории».",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Источники</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Что это</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Пример</th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Археологические</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">вещи, найденные при раскопках</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">«Золотой человек» из кургана Иссык</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Письменные</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">записи предков</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">«Авеста», «История» Геродота</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Этнологические, антропологические</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">обычаи; останки людей</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">черепа, кости</td></tr></table>"
+    }
+   },
+   "twins": [
+    {
+     "id": "q1t1",
+     "type": "choice",
+     "text": "Что изначально означало слово **«история»** по-древнегречески?",
+     "options": [
+      {
+       "id": "a",
+       "text": "Земля и небо",
+       "why": "Нет, «история» — это рассказ о том, что расследовали и установили."
+      },
+      {
+       "id": "b",
+       "text": "Расследование, установление, повествование"
+      },
+      {
+       "id": "c",
+       "text": "Каменный век",
+       "why": "Это одна из эпох, а не значение слова."
+      },
+      {
+       "id": "d",
+       "text": "Наука о звёздах",
+       "why": "Это астрономия."
+      }
+     ],
+     "answer": "b",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Источники</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Что это</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Пример</th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Археологические</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">вещи, найденные при раскопках</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">«Золотой человек» из кургана Иссык</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Письменные</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">записи предков</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">«Авеста», «История» Геродота</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Этнологические, антропологические</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">обычаи; останки людей</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">черепа, кости</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "По-древнегречески «история» — **расследование, установление, повествование**.",
+        "layer": 1
+       },
+       {
+        "text": "Позже историей стали называть любой рассказ о событиях прошлого.",
+        "layer": 2
+       }
+      ]
+     }
+    },
+    {
+     "id": "q1t2",
+     "type": "choice",
+     "text": "Кто сказал: «Не зная прошлого истории, трудно знать настоящее время, предположить будущее»?",
+     "options": [
+      {
+       "id": "a",
+       "text": "Геродот",
+       "why": "Геродот — «отец истории», но эти слова принадлежат Аль-Фараби."
+      },
+      {
+       "id": "b",
+       "text": "А. Байтурсынов",
+       "why": "Байтурсынов сказал: «Самое великое и симпатичное слово — история»."
+      },
+      {
+       "id": "c",
+       "text": "Аль-Фараби"
+      },
+      {
+       "id": "d",
+       "text": "А. Маргулан",
+       "why": "Маргулан — археолог; эти слова сказал Аль-Фараби."
+      }
+     ],
+     "answer": "c",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Источники</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Что это</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Пример</th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Археологические</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">вещи, найденные при раскопках</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">«Золотой человек» из кургана Иссык</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Письменные</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">записи предков</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">«Авеста», «История» Геродота</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Этнологические, антропологические</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">обычаи; останки людей</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">черепа, кости</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Это слова учёного средневековья **Абу Насыра аль-Фараби**.",
+        "layer": 1
+       },
+       {
+        "text": "Байтурсынов сказал другое: «Самое великое и симпатичное слово — история».",
+        "layer": 2
+       }
+      ]
+     }
+    }
+   ],
+   "order": 1
+  },
+  {
+   "id": "q2",
+   "type": "text",
+   "text": "Вещи, сделанные руками человека и найденные в ходе раскопок, — это какие исторические источники?",
+   "answer": "археологические",
+   "accept": [
+    "археологические",
+    "археологический",
+    "археологическими",
+    "археология"
+   ],
+   "typicalWrong": [
+    {
+     "value": "письменные",
+     "why": "Письменные — это записи («Авеста», «История» Геродота). Вещи из раскопок — **археологические**.",
+     "also": [
+      "письменный"
+     ]
+    },
+    {
+     "value": "антропологические",
+     "why": "Антропологические — останки самих людей. Вещи из раскопок — **археологические**."
+    }
+   ],
+   "genericWrong": "Это **археологические** источники.",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Источники</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Что это</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Пример</th></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Археологические</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">вещи, найденные при раскопках</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">«Золотой человек» из кургана Иссык</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Археологические</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">вещи, найденные при раскопках</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">«Золотой человек» из кургана Иссык</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Письменные</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">записи предков</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">«Авеста», «История» Геродота</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Этнологические, антропологические</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">обычаи; останки людей</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">черепа, кости</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "Раскопки проводят археологи.",
+      "layer": 1
+     },
+     {
+      "text": "Вещи из раскопок — **археологические** источники.",
+      "layer": 2
+     }
+    ],
+    "answerLine": "археологические"
+   },
+   "subtopic": "Исторические источники",
+   "lesson": {
+    "title": "Исторические источники",
+    "text": "Исторические источники — всё, что дошло до нас из древности. Они бывают археологические, письменные, этнологические и антропологические. Археологические — вещи, сделанные руками человека и найденные при раскопках: например, «Золотой человек» из кургана Иссык, находки «Царского кургана» на Алтае, раскопки Отрара. Письменные — «Авеста» (древнеиранский источник), «История» Геродота, Бехистунская надпись, «География» Страбона, Орхоно-Енисейские письмена.",
+    "remember": "Раскопки — археологические; записи — письменные.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Источники</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Что это</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Пример</th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Археологические</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">вещи, найденные при раскопках</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">«Золотой человек» из кургана Иссык</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Письменные</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">записи предков</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">«Авеста», «История» Геродота</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Этнологические, антропологические</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">обычаи; останки людей</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">черепа, кости</td></tr></table>"
+    }
+   },
+   "twins": [
+    {
+     "id": "q2t1",
+     "type": "choice",
+     "text": "«Авеста» и Орхоно-Енисейские письмена — это какие источники?",
+     "options": [
+      {
+       "id": "a",
+       "text": "Археологические",
+       "why": "Археологические — вещи из раскопок. «Авеста» и письмена — это тексты, значит, **письменные**."
+      },
+      {
+       "id": "b",
+       "text": "Антропологические",
+       "why": "Антропологические — останки людей. Это **письменные** источники."
+      },
+      {
+       "id": "c",
+       "text": "Географические",
+       "why": "Таких источников в учебнике нет. Это **письменные**."
+      },
+      {
+       "id": "d",
+       "text": "Письменные"
+      }
+     ],
+     "answer": "d",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Источники</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Что это</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Пример</th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Археологические</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">вещи, найденные при раскопках</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">«Золотой человек» из кургана Иссык</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Письменные</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">записи предков</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">«Авеста», «История» Геродота</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Письменные</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">записи предков</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">«Авеста», «История» Геродота</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Этнологические, антропологические</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">обычаи; останки людей</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">черепа, кости</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "«Авеста» и письмена — это **тексты**.",
+        "layer": 1
+       },
+       {
+        "text": "Значит, источники **письменные**.",
+        "layer": 2
+       }
+      ]
+     }
+    },
+    {
+     "id": "q2t2",
+     "type": "text",
+     "text": "Какую знаменитую находку дали раскопки **кургана Иссык**? Впиши.",
+     "answer": "«Золотой человек»",
+     "accept": [
+      "золотой человек",
+      "золотого человека",
+      "золотой воин"
+     ],
+     "typicalWrong": [
+      {
+       "value": "царский курган",
+       "why": "«Царский курган» нашли на Алтае. Курган Иссык дал **«Золотого человека»**."
+      }
+     ],
+     "genericWrong": "Курган Иссык дал **«Золотого человека»**.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Источники</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Что это</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Пример</th></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Археологические</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">вещи, найденные при раскопках</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">«Золотой человек» из кургана Иссык</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Археологические</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">вещи, найденные при раскопках</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">«Золотой человек» из кургана Иссык</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Письменные</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">записи предков</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">«Авеста», «История» Геродота</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Этнологические, антропологические</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">обычаи; останки людей</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">черепа, кости</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Раскопки кургана Иссык — это археологический источник.",
+        "layer": 1
+       },
+       {
+        "text": "Там нашли **«Золотого человека»**.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "«Золотой человек»"
+     }
+    }
+   ],
+   "order": 2
+  },
+  {
+   "id": "q3",
+   "type": "choice",
+   "text": "Экспедиция какого учёного открыла **бегазы-дандыбаевскую культуру** и доказала, что в древнем Казахстане были города?",
+   "options": [
+    {
+     "id": "a",
+     "text": "А. Х. Маргулан"
+    },
+    {
+     "id": "b",
+     "text": "Х. А. Алпысбаев",
+     "why": "Алпысбаев исследовал каменный век."
+    },
+    {
+     "id": "c",
+     "text": "К. А. Акишев",
+     "why": "Акишев исследовал эпоху железа."
+    },
+    {
+     "id": "d",
+     "text": "Геродот",
+     "why": "Геродот жил в Древней Греции, он «отец истории»."
+    }
+   ],
+   "answer": "a",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Эпоха</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Кто исследовал</th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Каменный век</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Алпысбаев, Медоев, Оразбаев</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Медь и бронза</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Маргулан, Кадырбаев, Зайберт</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Медь и бронза</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Маргулан, Кадырбаев, Зайберт</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Железо</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Черников, Акишев</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Средневековье</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Кумеков, Сенигова, Байпаков</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "С 1946 по 1974 год **Маргулан** руководил Центрально-Казахстанской археологической экспедицией.",
+      "layer": 1
+     },
+     {
+      "text": "Она открыла **бегазы-дандыбаевскую культуру**, изучила Отрар, Тараз, Сайрам, Сыгнак.",
+      "layer": 2
+     }
+    ]
+   },
+   "subtopic": "Казахстанские учёные",
+   "lesson": {
+    "title": "Алькей Маргулан и другие учёные",
+    "text": "Алькей Хаканович Маргулан (1904–1985) — основоположник национальной археологической школы Казахстана, академик. Он учился в Семипалатинском техникуме вместе с Канышем Сатпаевым и Мухтаром Ауэзовым, потом в Ленинграде. Его экспедиция (1946–1974) открыла бегазы-дандыбаевскую культуру и доказала, что в древнем Казахстане были города. Его именем назван Институт археологии. Каменный век изучали Алпысбаев, Медоев, Оразбаев; медь и бронзу — Маргулан, Кадырбаев, Зайберт; железо — Черников, Акишев; средневековье — Кумеков, Сенигова, Байпаков.",
+    "remember": "Маргулан — основоположник археологии Казахстана.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Эпоха</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Кто исследовал</th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Каменный век</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Алпысбаев, Медоев, Оразбаев</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Медь и бронза</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Маргулан, Кадырбаев, Зайберт</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Железо</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Черников, Акишев</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Средневековье</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Кумеков, Сенигова, Байпаков</td></tr></table>"
+    }
+   },
+   "twins": [
+    {
+     "id": "q3t1",
+     "type": "choice",
+     "text": "Кто из учёных исследовал **каменный век**?",
+     "options": [
+      {
+       "id": "a",
+       "text": "С. С. Черников, К. А. Акишев",
+       "why": "Они исследовали эпоху железа."
+      },
+      {
+       "id": "b",
+       "text": "Х. А. Алпысбаев, А. Г. Медоев, А. М. Оразбаев"
+      },
+      {
+       "id": "c",
+       "text": "Б. Е. Кумеков, К. М. Байпаков",
+       "why": "Они исследовали средневековье."
+      },
+      {
+       "id": "d",
+       "text": "М. К. Кадырбаев, В. Ф. Зайберт",
+       "why": "Они исследовали эпоху меди и бронзы."
+      }
+     ],
+     "answer": "b",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Эпоха</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Кто исследовал</th></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Каменный век</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Алпысбаев, Медоев, Оразбаев</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Каменный век</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Алпысбаев, Медоев, Оразбаев</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Медь и бронза</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Маргулан, Кадырбаев, Зайберт</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Железо</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Черников, Акишев</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Средневековье</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Кумеков, Сенигова, Байпаков</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Каменный век — самая древняя эпоха.",
+        "layer": 1
+       },
+       {
+        "text": "Его исследовали **Алпысбаев, Медоев, Оразбаев**.",
+        "layer": 2
+       }
+      ]
+     }
+    },
+    {
+     "id": "q3t2",
+     "type": "choice",
+     "text": "Кого считают **основоположником национальной археологической школы** Казахстана?",
+     "options": [
+      {
+       "id": "a",
+       "text": "Мухтара Ауэзова",
+       "why": "Ауэзов — писатель. Он учился вместе с Маргуланом и позвал его в Ленинград."
+      },
+      {
+       "id": "b",
+       "text": "Каныша Сатпаева",
+       "why": "Сатпаев — академик-геолог."
+      },
+      {
+       "id": "c",
+       "text": "Алькея Маргулана"
+      },
+      {
+       "id": "d",
+       "text": "Абу Насыра аль-Фараби",
+       "why": "Аль-Фараби — учёный средневековья."
+      }
+     ],
+     "answer": "c",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Эпоха</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Кто исследовал</th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Каменный век</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Алпысбаев, Медоев, Оразбаев</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Медь и бронза</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Маргулан, Кадырбаев, Зайберт</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Медь и бронза</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Маргулан, Кадырбаев, Зайберт</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Железо</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Черников, Акишев</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Средневековье</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Кумеков, Сенигова, Байпаков</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Маргулан всю жизнь изучал историю Казахстана.",
+        "layer": 1
+       },
+       {
+        "text": "Он — **основоположник национальной археологической школы**, в его честь назван Институт археологии.",
+        "layer": 2
+       }
+      ]
+     }
+    }
+   ],
+   "order": 3
+  },
+  {
+   "id": "q4",
+   "type": "choice",
+   "text": "В каком порядке шли **этапы развития человека**?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Человек разумный → человек умелый → человек прямоходящий",
+     "why": "Человек разумный — последний, самый современный этап."
+    },
+    {
+     "id": "b",
+     "text": "Человек прямоходящий → человек разумный → человек умелый",
+     "why": "Человек умелый — самый древний: он первым начал делать каменные орудия."
+    },
+    {
+     "id": "c",
+     "text": "Кроманьонец → неандерталец → австралопитек",
+     "why": "Наоборот: австралопитек самый древний, кроманьонец — человек разумный."
+    },
+    {
+     "id": "d",
+     "text": "Человек умелый → человек прямоходящий → человек разумный"
+    }
+   ],
+   "answer": "d",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<div style=\"display:flex;flex-wrap:wrap;gap:6px;align-items:stretch\"><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Человек умелый</b>Homo habilis: австралопитеки, первые каменные орудия</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Человек прямоходящий</b>Homo erectus: питекантропы, синантропы, неандертальцы</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Человек разумный</b>Homo sapiens: ранний вид — кроманьонец</div></div>"
+    },
+    "steps": [
+     {
+      "text": "Сначала **человек умелый**: начал делать каменные орудия.",
+      "layer": 1
+     },
+     {
+      "text": "Потом **прямоходящий** (питекантропы, неандертальцы), затем **разумный** (кроманьонец).",
+      "layer": 2
+     }
+    ]
+   },
+   "subtopic": "Возникновение человека",
+   "lesson": {
+    "title": "Как появился человек",
+    "text": "Учёные считают, что человек произошёл от одного из видов обезьян в тропическом поясе Земли. Этапы: 1) человек умелый — австралопитеки, начали делать каменные орудия; 2) человек прямоходящий — питекантропы, синантропы, неандертальцы; 3) человек разумный — человек нашего времени, появился 40–35 тыс. лет назад. Его останки впервые нашли в пещере Кро-Маньон во Франции, поэтому ранний вид назвали кроманьонцем. Главный признак, отличающий человека от обезьяны, — объём мозга: у обезьяны до 400 см³, у австралопитека 650 см³, у питекантропа до 900 см³.",
+    "remember": "Умелый → прямоходящий → разумный (кроманьонец).",
+    "visual": {
+     "kind": "html",
+     "html": "<div style=\"display:flex;flex-wrap:wrap;gap:6px;align-items:stretch\"><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Человек умелый</b>Homo habilis: австралопитеки, первые каменные орудия</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Человек прямоходящий</b>Homo erectus: питекантропы, синантропы, неандертальцы</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Человек разумный</b>Homo sapiens: ранний вид — кроманьонец</div></div>"
+    }
+   },
+   "twins": [
+    {
+     "id": "q4t1",
+     "type": "text",
+     "text": "Ранний вид человека разумного назван по пещере во Франции. Как его называют?",
+     "answer": "кроманьонец",
+     "accept": [
+      "кроманьонец",
+      "кроманьонцы",
+      "кро маньонец",
+      "кроманьенец"
+     ],
+     "typicalWrong": [
+      {
+       "value": "неандерталец",
+       "why": "Неандертальцы — другой вид, человек прямоходящий. Ранний человек разумный — **кроманьонец**.",
+       "also": [
+        "неандертальцы"
+       ]
+      },
+      {
+       "value": "питекантроп",
+       "why": "Питекантроп — человек прямоходящий. Ответ: **кроманьонец**."
+      }
+     ],
+     "genericWrong": "Это **кроманьонец** (пещера Кро-Маньон во Франции).",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<div style=\"display:flex;flex-wrap:wrap;gap:6px;align-items:stretch\"><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Человек умелый</b>первые каменные орудия</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Человек прямоходящий</b>питекантропы, синантропы, неандертальцы</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div data-until=\"1\" style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Человек разумный</b>кроманьонец, 40–35 тыс. лет назад</div><div data-step=\"1\" style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3;border-color:var(--ok);background:var(--ok-soft)\"><b style=\"display:block;font-size:15px\">Человек разумный</b>кроманьонец, 40–35 тыс. лет назад</div></div>"
+      },
+      "steps": [
+       {
+        "text": "Останки человека разумного впервые нашли в пещере **Кро-Маньон** во Франции.",
+        "layer": 1
+       },
+       {
+        "text": "Поэтому его назвали **кроманьонцем**.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "кроманьонец"
+     }
+    },
+    {
+     "id": "q4t2",
+     "type": "choice",
+     "text": "Какой признак учёные считают **главным**, чтобы отличить древнейшего человека от обезьяны?",
+     "options": [
+      {
+       "id": "a",
+       "text": "Объём мозга"
+      },
+      {
+       "id": "b",
+       "text": "Умение пользоваться орудиями",
+       "why": "Оказалось, что обезьяны тоже умеют пользоваться орудиями. Главный признак — объём мозга."
+      },
+      {
+       "id": "c",
+       "text": "Прямохождение",
+       "why": "Учёные нашли обезьян, которые тоже ходили на задних ногах. Остался признак — объём мозга."
+      },
+      {
+       "id": "d",
+       "text": "Цвет кожи",
+       "why": "Цвет кожи не отличает человека от обезьяны."
+      }
+     ],
+     "answer": "a",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<div style=\"display:flex;flex-wrap:wrap;gap:6px;align-items:stretch\"><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Человек умелый</b>Homo habilis: австралопитеки, первые каменные орудия</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Человек прямоходящий</b>Homo erectus: питекантропы, синантропы, неандертальцы</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Человек разумный</b>Homo sapiens: ранний вид — кроманьонец</div></div>"
+      },
+      "steps": [
+       {
+        "text": "Обезьяны тоже могут пользоваться орудиями и ходить на двух ногах.",
+        "layer": 1
+       },
+       {
+        "text": "Остался главный признак — **объём мозга**: у обезьяны до 400 см³, у австралопитека — 650 см³.",
+        "layer": 2
+       }
+      ]
+     }
+    }
+   ],
+   "order": 4
+  },
+  {
+   "id": "q5",
+   "type": "text",
+   "text": "Как называется **древнекаменный век** — самая первая эпоха (2,6 млн – 12 тыс. лет назад)?",
+   "answer": "палеолит",
+   "accept": [
+    "палеолит",
+    "палеолита",
+    "палиолит"
+   ],
+   "typicalWrong": [
+    {
+     "value": "мезолит",
+     "why": "Мезолит — среднекаменный век. Древнекаменный — **палеолит**."
+    },
+    {
+     "value": "неолит",
+     "why": "Неолит — новокаменный век. Древнекаменный — **палеолит**."
+    }
+   ],
+   "genericWrong": "Древнекаменный век — **палеолит**.",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<div style=\"display:flex;flex-wrap:wrap;gap:6px;align-items:stretch\"><div data-until=\"1\" style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Палеолит</b>древнекаменный, 2,6 млн – 12 тыс. лет назад</div><div data-step=\"1\" style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3;border-color:var(--ok);background:var(--ok-soft)\"><b style=\"display:block;font-size:15px\">Палеолит</b>древнекаменный, 2,6 млн – 12 тыс. лет назад</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Мезолит</b>среднекаменный, 12–5 тыс. до н. э.</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Неолит</b>новокаменный, 5–3 тыс. до н. э.</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Энеолит</b>медно-каменный</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Бронза</b>2–1 тыс. до н. э.</div></div>"
+    },
+    "steps": [
+     {
+      "text": "Палео — «древний», лит — «камень».",
+      "layer": 1
+     },
+     {
+      "text": "Древнекаменный век — **палеолит**.",
+      "layer": 2
+     }
+    ],
+    "answerLine": "палеолит"
+   },
+   "subtopic": "Эпохи каменного века",
+   "lesson": {
+    "title": "Три каменных века",
+    "text": "Палеолит — древнекаменный век (2,6 млн – 12 тыс. лет назад), делится на ранний, средний и поздний. Мезолит — среднекаменный век (12–5 тыс. до н. э.). Неолит — новокаменный век (5–3 тыс. до н. э.). После неолита — энеолит (медно-каменный век), затем эпоха бронзы (2–1 тыс. до н. э.). Подсказка: «палео» — древний, «мезо» — средний, «нео» — новый, «лит» — камень.",
+    "remember": "Палео — древний, мезо — средний, нео — новый.",
+    "visual": {
+     "kind": "html",
+     "html": "<div style=\"display:flex;flex-wrap:wrap;gap:6px;align-items:stretch\"><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Палеолит</b>древнекаменный, 2,6 млн – 12 тыс. лет назад</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Мезолит</b>среднекаменный, 12–5 тыс. до н. э.</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Неолит</b>новокаменный, 5–3 тыс. до н. э.</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Энеолит</b>медно-каменный</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Бронза</b>2–1 тыс. до н. э.</div></div>"
+    }
+   },
+   "twins": [
+    {
+     "id": "q5t1",
+     "type": "text",
+     "text": "Как называется **среднекаменный век** (12–5 тыс. до н. э.)?",
+     "answer": "мезолит",
+     "accept": [
+      "мезолит",
+      "мезолита",
+      "мизолит"
+     ],
+     "typicalWrong": [
+      {
+       "value": "палеолит",
+       "why": "Палеолит — древнекаменный. Среднекаменный — **мезолит**."
+      },
+      {
+       "value": "неолит",
+       "why": "Неолит — новокаменный. Среднекаменный — **мезолит**."
+      }
+     ],
+     "genericWrong": "Среднекаменный век — **мезолит**.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<div style=\"display:flex;flex-wrap:wrap;gap:6px;align-items:stretch\"><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Палеолит</b>древнекаменный, 2,6 млн – 12 тыс. лет назад</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div data-until=\"1\" style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Мезолит</b>среднекаменный, 12–5 тыс. до н. э.</div><div data-step=\"1\" style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3;border-color:var(--ok);background:var(--ok-soft)\"><b style=\"display:block;font-size:15px\">Мезолит</b>среднекаменный, 12–5 тыс. до н. э.</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Неолит</b>новокаменный, 5–3 тыс. до н. э.</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Энеолит</b>медно-каменный</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Бронза</b>2–1 тыс. до н. э.</div></div>"
+      },
+      "steps": [
+       {
+        "text": "«Мезо» — средний.",
+        "layer": 1
+       },
+       {
+        "text": "Среднекаменный век — **мезолит**.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "мезолит"
+     }
+    },
+    {
+     "id": "q5t2",
+     "type": "text",
+     "text": "Как называется **новокаменный век** (5–3 тыс. до н. э.)?",
+     "answer": "неолит",
+     "accept": [
+      "неолит",
+      "неолита",
+      "нэолит",
+      "неалит",
+      "неолид",
+      "ниолит"
+     ],
+     "typicalWrong": [
+      {
+       "value": "энеолит",
+       "why": "Энеолит — медно-каменный век, он после неолита. Новокаменный — **неолит**."
+      },
+      {
+       "value": "мезолит",
+       "why": "Мезолит — среднекаменный. Новокаменный — **неолит**."
+      }
+     ],
+     "genericWrong": "Новокаменный век — **неолит**.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<div style=\"display:flex;flex-wrap:wrap;gap:6px;align-items:stretch\"><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Палеолит</b>древнекаменный, 2,6 млн – 12 тыс. лет назад</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Мезолит</b>среднекаменный, 12–5 тыс. до н. э.</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div data-until=\"1\" style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Неолит</b>новокаменный, 5–3 тыс. до н. э.</div><div data-step=\"1\" style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3;border-color:var(--ok);background:var(--ok-soft)\"><b style=\"display:block;font-size:15px\">Неолит</b>новокаменный, 5–3 тыс. до н. э.</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Энеолит</b>медно-каменный</div><div style=\"align-self:center;color:var(--muted);font-weight:700\">→</div><div style=\"flex:1 1 125px;min-width:0;padding:8px 10px;border:2px solid var(--line);border-radius:8px;font-size:14px;line-height:1.3\"><b style=\"display:block;font-size:15px\">Бронза</b>2–1 тыс. до н. э.</div></div>"
+      },
+      "steps": [
+       {
+        "text": "«Нео» — новый.",
+        "layer": 1
+       },
+       {
+        "text": "Новокаменный век — **неолит**.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "неолит"
+     },
+     "maxTypos": 0
+    }
+   ],
+   "order": 5
+  },
+  {
+   "id": "q6",
+   "type": "text",
+   "text": "Что было **основным видом добывания пищи** в палеолите? Впиши одно слово.",
+   "answer": "охота",
+   "accept": [
+    "охота",
+    "охотой",
+    "охотились",
+    "охоту"
+   ],
+   "typicalWrong": [
+    {
+     "value": "земледелие",
+     "why": "Земледелие появилось намного позже, в неолите. В палеолите главное — **охота**.",
+     "also": [
+      "скотоводство"
+     ]
+    },
+    {
+     "value": "рыболовство",
+     "why": "Рыболовство стало главным в мезолите. В палеолите — **охота**.",
+     "also": [
+      "рыбалка"
+     ]
+    }
+   ],
+   "genericWrong": "Основной вид добывания пищи в палеолите — **охота**.",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Палеолит</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Хозяйство</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">присваивающее: брали у природы готовое</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Главное занятие</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">охота</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Главное занятие</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">охота</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Самый древний вид охоты</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">поджог степной травы</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Облавная охота</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">загоняли зверей в ямы-западни</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Мамонт</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">шкура и рёбра — для чумов, жир — для света и тепла</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "Охота была всесезонной и давала больше всего еды.",
+      "layer": 1
+     },
+     {
+      "text": "Поэтому главным занятием в палеолите была **охота**.",
+      "layer": 2
+     }
+    ],
+    "answerLine": "охота"
+   },
+   "subtopic": "Занятия людей в палеолите",
+   "lesson": {
+    "title": "Как жили люди палеолита",
+    "text": "Хозяйство древнейших людей было присваивающим: они забирали у природы готовое — охотились, собирали съедобные растения, ловили рыбу. Главным занятием была охота: она была всесезонной и давала больше всего еды. Самый древний вид охоты — поджог степной травы и части леса. Позже появилась облавная охота: зверей загоняли в ямы-западни. В ледниковый период охотились на мамонтов, шерстистых носорогов, северных оленей. Из шкуры и рёбер мамонта делали чумы, жир шёл на освещение и топливо.",
+    "remember": "Палеолит: присваивающее хозяйство, главное — охота.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Палеолит</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Хозяйство</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">присваивающее: брали у природы готовое</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Главное занятие</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">охота</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Самый древний вид охоты</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">поджог степной травы</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Облавная охота</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">загоняли зверей в ямы-западни</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Мамонт</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">шкура и рёбра — для чумов, жир — для света и тепла</td></tr></table>"
+    }
+   },
+   "twins": [
+    {
+     "id": "q6t1",
+     "type": "choice",
+     "text": "Какой вид охоты был **самым древним**?",
+     "options": [
+      {
+       "id": "a",
+       "text": "Охота с луком и стрелами",
+       "why": "Лук со стрелами изобрели позже, в мезолите."
+      },
+      {
+       "id": "b",
+       "text": "Поджог степной травы и части леса"
+      },
+      {
+       "id": "c",
+       "text": "Охота с собаками",
+       "why": "Собаку одомашнили позже, в конце мезолита."
+      },
+      {
+       "id": "d",
+       "text": "Ловля рыбы сетями",
+       "why": "Сети появились в мезолите, и это рыболовство, а не охота."
+      }
+     ],
+     "answer": "b",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Палеолит</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Хозяйство</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">присваивающее: брали у природы готовое</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Главное занятие</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">охота</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Самый древний вид охоты</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">поджог степной травы</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Самый древний вид охоты</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">поджог степной травы</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Облавная охота</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">загоняли зверей в ямы-западни</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Мамонт</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">шкура и рёбра — для чумов, жир — для света и тепла</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Люди поджигали траву, а потом шли по выжженной земле.",
+        "layer": 1
+       },
+       {
+        "text": "Они собирали погибших животных. Это **самый древний вид охоты**.",
+        "layer": 2
+       }
+      ]
+     }
+    },
+    {
+     "id": "q6t2",
+     "type": "choice",
+     "text": "Что такое **присваивающее хозяйство**?",
+     "options": [
+      {
+       "id": "a",
+       "text": "Люди сами выращивали растения и разводили скот",
+       "why": "Это производящее хозяйство, оно появилось в неолите."
+      },
+      {
+       "id": "b",
+       "text": "Люди торговали металлом",
+       "why": "Металлы появились намного позже."
+      },
+      {
+       "id": "c",
+       "text": "Люди брали у природы готовое: охотились, собирали растения"
+      },
+      {
+       "id": "d",
+       "text": "Люди жили в городах",
+       "why": "Городов в каменном веке не было."
+      }
+     ],
+     "answer": "c",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Палеолит</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Хозяйство</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">присваивающее: брали у природы готовое</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Хозяйство</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">присваивающее: брали у природы готовое</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Главное занятие</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">охота</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Самый древний вид охоты</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">поджог степной травы</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Облавная охота</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">загоняли зверей в ямы-западни</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Мамонт</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">шкура и рёбра — для чумов, жир — для света и тепла</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "«Присваивать» — брать себе готовое.",
+        "layer": 1
+       },
+       {
+        "text": "Люди забирали у природы **готовые** плоды, не вкладывая труда в их производство.",
+        "layer": 2
+       }
+      ]
+     }
+    }
+   ],
+   "order": 6
+  },
+  {
+   "id": "q7",
+   "type": "text",
+   "text": "Какое **новое оружие** изобрели люди в мезолите для охоты на быстрых мелких животных?",
+   "answer": "лук со стрелами",
+   "accept": [
+    "лук со стрелами",
+    "лук",
+    "лук и стрелы",
+    "луки",
+    "стрелы",
+    "лук стрелы"
+   ],
+   "typicalWrong": [
+    {
+     "value": "копьё",
+     "why": "Копьями охотились ещё в палеолите. Новое оружие мезолита — **лук со стрелами**.",
+     "also": [
+      "копье",
+      "копья"
+     ]
+    },
+    {
+     "value": "меч",
+     "why": "Мечи появились в эпоху бронзы. В мезолите — **лук со стрелами**."
+    }
+   ],
+   "genericWrong": "В мезолите изобрели **лук со стрелами**.",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Мезолит</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Время</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">12–5 тыс. до н. э.</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Новое оружие</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">лук со стрелами</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Новое оружие</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">лук со стрелами</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Главное занятие</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">рыболовство</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Орудия</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">микролиты, 1–2 см</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">В конце эпохи</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">одомашнивание животных</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "Ледник растаял, крупные звери ушли на север.",
+      "layer": 1
+     },
+     {
+      "text": "Для охоты на зайцев, сусликов, лосей нужен был **лук со стрелами**.",
+      "layer": 2
+     }
+    ],
+    "answerLine": "лук со стрелами"
+   },
+   "subtopic": "Мезолит",
+   "lesson": {
+    "title": "Мезолит — среднекаменный век",
+    "text": "В мезолите (12–5 тыс. до н. э.) растаяли ледники, и вслед за ними на север ушли мамонты. Человек современного облика окончательно победил неандертальцев. Изобрели лук со стрелами. Поднялся уровень рек и озёр, поэтому главным занятием стало рыболовство: появились лодки, плоты, сети, костяные гарпуны. Люди научились делать микролиты — мелкие каменные орудия длиной 1–2 см, их вставляли в костяные и деревянные основы. В конце мезолита начали одомашнивать животных: овцу, козу, корову, свинью, лошадь, собаку.",
+    "remember": "Мезолит: лук, рыболовство, микролиты.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Мезолит</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Время</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">12–5 тыс. до н. э.</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Новое оружие</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">лук со стрелами</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Главное занятие</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">рыболовство</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Орудия</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">микролиты, 1–2 см</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">В конце эпохи</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">одомашнивание животных</td></tr></table>"
+    }
+   },
+   "twins": [
+    {
+     "id": "q7t1",
+     "type": "text",
+     "text": "Какое занятие стало **главным** в мезолите, когда поднялся уровень рек и озёр?",
+     "answer": "рыболовство",
+     "accept": [
+      "рыболовство",
+      "рыбалка",
+      "ловля рыбы",
+      "рыбная ловля"
+     ],
+     "typicalWrong": [
+      {
+       "value": "охота",
+       "why": "Охота была главной в палеолите. В мезолите главное — **рыболовство**."
+      },
+      {
+       "value": "земледелие",
+       "why": "Земледелие появилось в неолите. В мезолите — **рыболовство**."
+      }
+     ],
+     "genericWrong": "Главным стало **рыболовство**.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Мезолит</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Время</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">12–5 тыс. до н. э.</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Новое оружие</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">лук со стрелами</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Главное занятие</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">рыболовство</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Главное занятие</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">рыболовство</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Орудия</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">микролиты, 1–2 см</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">В конце эпохи</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">одомашнивание животных</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Ледник отступил, рек и озёр стало больше.",
+        "layer": 1
+       },
+       {
+        "text": "Главным занятием стало **рыболовство**.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "рыболовство"
+     }
+    },
+    {
+     "id": "q7t2",
+     "type": "text",
+     "text": "Как называются мелкие каменные орудия длиной 1–2 см, которые научились делать в мезолите?",
+     "answer": "микролиты",
+     "accept": [
+      "микролиты",
+      "микролит"
+     ],
+     "typicalWrong": [
+      {
+       "value": "гарпуны",
+       "why": "Гарпуны делали из кости. Мелкие каменные пластинки — **микролиты**.",
+       "also": [
+        "гарпун"
+       ]
+      },
+      {
+       "value": "рубила",
+       "why": "Рубила — крупные орудия. Мелкие — **микролиты**."
+      }
+     ],
+     "genericWrong": "Это **микролиты**.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Мезолит</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Время</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">12–5 тыс. до н. э.</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Новое оружие</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">лук со стрелами</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Главное занятие</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">рыболовство</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Орудия</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">микролиты, 1–2 см</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Орудия</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">микролиты, 1–2 см</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">В конце эпохи</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">одомашнивание животных</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "«Микро» — маленький, «лит» — камень.",
+        "layer": 1
+       },
+       {
+        "text": "Маленькие каменные орудия — **микролиты**.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "микролиты"
+     }
+    }
+   ],
+   "order": 7
+  },
+  {
+   "id": "q8",
+   "type": "text",
+   "text": "Как называют переход людей в неолите к **производящему хозяйству** — скотоводству и земледелию?",
+   "answer": "неолитическая революция",
+   "accept": [
+    "неолитическая революция",
+    "неолитическая",
+    "революция"
+   ],
+   "typicalWrong": [
+    {
+     "value": "доместикация",
+     "why": "Доместикация — это одомашнивание животных, часть процесса. Весь переход — **неолитическая революция**.",
+     "also": [
+      "одомашнивание"
+     ]
+    }
+   ],
+   "genericWrong": "Это **неолитическая революция**.",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Неолит</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Время</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">5–3 тыс. до н. э.</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Неолитическая революция</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">появилось производящее хозяйство</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Неолитическая революция</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">появилось производящее хозяйство</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Главное достижение</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">глиняная посуда — «эпоха глиняных горшков»</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Культуры</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">кельтиминарская, атбасарская, джебельская</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "Люди стали сами разводить скот и выращивать растения.",
+      "layer": 1
+     },
+     {
+      "text": "Такой переворот назвали **неолитической революцией**.",
+      "layer": 2
+     }
+    ],
+    "answerLine": "неолитическая революция"
+   },
+   "subtopic": "Неолит",
+   "lesson": {
+    "title": "Неолит — новокаменный век",
+    "text": "Неолит — 5–3 тыс. до н. э. Главное событие — неолитическая революция: появилось производящее хозяйство — скотоводство, земледелие, позже ремёсла. Присваивающее хозяйство (брать готовое у природы) уступало место производящему (выращивать и разводить самим). Значительное достижение — производство глиняной посуды, поэтому неолит называют «эпохой глиняных горшков». Одомашнивание животных называют доместикацией.",
+    "remember": "Неолит: неолитическая революция, глиняная посуда.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Неолит</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Время</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">5–3 тыс. до н. э.</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Неолитическая революция</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">появилось производящее хозяйство</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Главное достижение</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">глиняная посуда — «эпоха глиняных горшков»</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Культуры</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">кельтиминарская, атбасарская, джебельская</td></tr></table>"
+    }
+   },
+   "twins": [
+    {
+     "id": "q8t1",
+     "type": "choice",
+     "text": "Почему неолит называют **«эпохой глиняных горшков»**?",
+     "options": [
+      {
+       "id": "a",
+       "text": "В неолите люди жили в глиняных домах",
+       "why": "Дело не в домах, а в посуде."
+      },
+      {
+       "id": "b",
+       "text": "В неолите научились плавить бронзу",
+       "why": "Бронза появилась позже, в эпоху бронзы."
+      },
+      {
+       "id": "c",
+       "text": "В неолите исчезла охота",
+       "why": "Охота осталась, хоть и стала не главной."
+      },
+      {
+       "id": "d",
+       "text": "В неолите начали делать глиняную посуду"
+      }
+     ],
+     "answer": "d",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Неолит</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Время</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">5–3 тыс. до н. э.</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Неолитическая революция</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">появилось производящее хозяйство</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Главное достижение</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">глиняная посуда — «эпоха глиняных горшков»</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Главное достижение</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">глиняная посуда — «эпоха глиняных горшков»</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Культуры</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">кельтиминарская, атбасарская, джебельская</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Значительное достижение неолита — **начало производства глиняной посуды**.",
+        "layer": 1
+       },
+       {
+        "text": "Поэтому неолит называют «эпохой глиняных горшков».",
+        "layer": 2
+       }
+      ]
+     }
+    },
+    {
+     "id": "q8t2",
+     "type": "choice",
+     "text": "Что такое **производящее хозяйство**?",
+     "options": [
+      {
+       "id": "a",
+       "text": "Люди сами разводят скот и выращивают растения"
+      },
+      {
+       "id": "b",
+       "text": "Люди берут у природы готовые плоды",
+       "why": "Это присваивающее хозяйство, оно было раньше."
+      },
+      {
+       "id": "c",
+       "text": "Люди только охотятся",
+       "why": "Охота — это присваивающее хозяйство."
+      },
+      {
+       "id": "d",
+       "text": "Люди переселяются за мамонтами",
+       "why": "Так жили в палеолите."
+      }
+     ],
+     "answer": "a",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Неолит</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Время</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">5–3 тыс. до н. э.</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Неолитическая революция</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">появилось производящее хозяйство</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Неолитическая революция</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">появилось производящее хозяйство</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Главное достижение</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">глиняная посуда — «эпоха глиняных горшков»</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Культуры</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">кельтиминарская, атбасарская, джебельская</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "«Производить» — делать самим.",
+        "layer": 1
+       },
+       {
+        "text": "Производящее хозяйство — **скотоводство и земледелие**: люди сами разводят скот и выращивают растения.",
+        "layer": 2
+       }
+      ]
+     }
+    }
+   ],
+   "order": 8
+  },
+  {
+   "id": "q9",
+   "type": "choice",
+   "text": "Какая неолитическая культура находилась в **Приаралье**, а её люди занимались в основном **рыболовством**?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Атбасарская",
+     "why": "Атбасарская — в Северном Казахстане, там приручали лошадей."
+    },
+    {
+     "id": "b",
+     "text": "Кельтиминарская"
+    },
+    {
+     "id": "c",
+     "text": "Джебельская",
+     "why": "Джебельская — на Устюрте, там одомашнили овец и коз."
+    },
+    {
+     "id": "d",
+     "text": "Андроновская",
+     "why": "Андроновская — культура эпохи бронзы, а не неолита."
+    }
+   ],
+   "answer": "b",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Культура неолита</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Где</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Чем известна</th></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Кельтиминарская</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Приаралье</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">рыболовство</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Кельтиминарская</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Приаралье</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">рыболовство</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Атбасарская</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Северный Казахстан, Приесилье</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">приручение лошадей, кумыс</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Джебельская</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Устюрт</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">одомашнили овец и коз</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "Стоянки **кельтиминарцев** изучены в Приаралье, в низовьях Амударьи.",
+      "layer": 1
+     },
+     {
+      "text": "Кости, керамика и микролиты показывают: главным занятием было **рыболовство**.",
+      "layer": 2
+     }
+    ]
+   },
+   "subtopic": "Культуры неолита",
+   "lesson": {
+    "title": "Три культуры неолита",
+    "text": "В Казахстане хорошо изучены три неолитические культуры. Кельтиминарская — Приаралье, низовья Амударьи; главное занятие — рыболовство; большие прямоугольные жилища с очагами. Атбасарская — Северный Казахстан, Приесилье; найдены следы приручения лошадей, люди пили кумыс. Джебельская — Устюрт, пещеры Джебель и Дам-Дам-Чашма II; одомашнили овец и коз, жили в шалашах и пещерах.",
+    "remember": "Кельтиминарская — рыба; атбасарская — лошади; джебельская — овцы и козы.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Культура неолита</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Где</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Чем известна</th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Кельтиминарская</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Приаралье</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">рыболовство</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Атбасарская</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Северный Казахстан, Приесилье</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">приручение лошадей, кумыс</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Джебельская</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Устюрт</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">одомашнили овец и коз</td></tr></table>"
+    }
+   },
+   "twins": [
+    {
+     "id": "q9t1",
+     "type": "choice",
+     "text": "В какой неолитической культуре на **Устюрте** одомашнили **овец и коз**?",
+     "options": [
+      {
+       "id": "a",
+       "text": "Кельтиминарская",
+       "why": "Кельтиминарцы жили в Приаралье и занимались рыболовством."
+      },
+      {
+       "id": "b",
+       "text": "Атбасарская",
+       "why": "Атбасарцы приручали лошадей."
+      },
+      {
+       "id": "c",
+       "text": "Джебельская"
+      },
+      {
+       "id": "d",
+       "text": "Ботайская",
+       "why": "Ботайская — культура энеолита, там были лошади."
+      }
+     ],
+     "answer": "c",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Культура неолита</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Где</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Чем известна</th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Кельтиминарская</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Приаралье</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">рыболовство</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Атбасарская</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Северный Казахстан, Приесилье</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">приручение лошадей, кумыс</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Джебельская</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Устюрт</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">одомашнили овец и коз</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Джебельская</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Устюрт</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">одомашнили овец и коз</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Джебельская культура найдена на Устюрте.",
+        "layer": 1
+       },
+       {
+        "text": "**Джебельцы** одомашнили овец и коз.",
+        "layer": 2
+       }
+      ]
+     }
+    },
+    {
+     "id": "q9t2",
+     "type": "choice",
+     "text": "В какой неолитической культуре нашли следы **приручения лошадей** и узнали, что люди пили **кумыс**?",
+     "options": [
+      {
+       "id": "a",
+       "text": "Кельтиминарская",
+       "why": "Кельтиминарцы — рыболовы Приаралья."
+      },
+      {
+       "id": "b",
+       "text": "Джебельская",
+       "why": "Джебельцы одомашнили овец и коз."
+      },
+      {
+       "id": "c",
+       "text": "Срубная",
+       "why": "Срубная — культура эпохи бронзы."
+      },
+      {
+       "id": "d",
+       "text": "Атбасарская"
+      }
+     ],
+     "answer": "d",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Культура неолита</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Где</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Чем известна</th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Кельтиминарская</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Приаралье</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">рыболовство</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Атбасарская</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Северный Казахстан, Приесилье</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">приручение лошадей, кумыс</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Атбасарская</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Северный Казахстан, Приесилье</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">приручение лошадей, кумыс</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Джебельская</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Устюрт</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">одомашнили овец и коз</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "В **атбасарской** культуре нашли следы приручения лошадей.",
+        "layer": 1
+       },
+       {
+        "text": "Выяснилось, что эти люди употребляли **кумыс**.",
+        "layer": 2
+       }
+      ]
+     }
+    }
+   ],
+   "order": 9
+  },
+  {
+   "id": "q10",
+   "type": "text",
+   "text": "Как называется **медно-каменный век** — переход от каменного к бронзовому?",
+   "answer": "энеолит",
+   "accept": [
+    "энеолит",
+    "энеолита",
+    "эниолит",
+    "энолит",
+    "эналит",
+    "энеалит",
+    "энеолид",
+    "энеолитт"
+   ],
+   "typicalWrong": [
+    {
+     "value": "неолит",
+     "why": "Неолит — новокаменный век, он раньше. Медно-каменный — **энеолит**.",
+     "also": [
+      "неолита"
+     ]
+    },
+    {
+     "value": "бронзовый век",
+     "why": "Эпоха бронзы — после энеолита. Медно-каменный — **энеолит**.",
+     "also": [
+      "бронза"
+     ]
+    }
+   ],
+   "genericWrong": "Медно-каменный век — **энеолит**.",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Энеолит</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Название</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">медно-каменный век</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Название</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">медно-каменный век</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Первый металл</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">медь</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Почему камень остался</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">медь мягкая, самородков мало</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Новый транспорт</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">колесница</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Культуры</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">ботайская, самарская, древнеямная</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "Aeneus — медный, lithos — камень.",
+      "layer": 1
+     },
+     {
+      "text": "Медно-каменный век — **энеолит**, его ещё называют эпохой ранних металлов.",
+      "layer": 2
+     }
+    ],
+    "answerLine": "энеолит"
+   },
+   "subtopic": "Энеолит",
+   "lesson": {
+    "title": "Энеолит — медно-каменный век",
+    "text": "Энеолит (от лат. aeneus — медный и греч. lithos — камень) — медно-каменный век, переход от каменного века к бронзовому. Его называют эпохой ранних металлов. Первый металл, который люди научились добывать и обрабатывать, — медь. Сначала медь принимали за камень и обрабатывали ковкой. Медь не вытеснила камень, потому что она мягкая и самородков было мало. Зато медные орудия при поломке можно было починить. В энеолите изобрели колесницу.",
+    "remember": "Энеолит: медь + камень; колесница.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Энеолит</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Название</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">медно-каменный век</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Первый металл</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">медь</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Почему камень остался</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">медь мягкая, самородков мало</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Новый транспорт</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">колесница</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Культуры</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">ботайская, самарская, древнеямная</td></tr></table>"
+    }
+   },
+   "twins": [
+    {
+     "id": "q10t1",
+     "type": "text",
+     "text": "Какой **первый металл** люди научились добывать и обрабатывать?",
+     "answer": "медь",
+     "accept": [
+      "медь",
+      "меди",
+      "медный"
+     ],
+     "typicalWrong": [
+      {
+       "value": "бронза",
+       "why": "Бронза — это сплав, его научились делать позже. Первый металл — **медь**."
+      },
+      {
+       "value": "железо",
+       "why": "Железо появилось намного позже. Первый — **медь**."
+      },
+      {
+       "value": "золото",
+       "why": "Золото тоже знали, но первым металлом в учебнике названа **медь**."
+      }
+     ],
+     "genericWrong": "Первый металл — **медь**.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Энеолит</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Название</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">медно-каменный век</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Первый металл</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">медь</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Первый металл</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">медь</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Почему камень остался</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">медь мягкая, самородков мало</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Новый транспорт</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">колесница</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Культуры</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">ботайская, самарская, древнеямная</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Энеолит — медно-каменный век.",
+        "layer": 1
+       },
+       {
+        "text": "Первым металлом стала **медь**.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "медь"
+     }
+    },
+    {
+     "id": "q10t2",
+     "type": "choice",
+     "text": "Почему медь **не вытеснила** каменные орудия полностью?",
+     "options": [
+      {
+       "id": "a",
+       "text": "Медь мягкая, и медных самородков было мало"
+      },
+      {
+       "id": "b",
+       "text": "Медь была слишком тяжёлой",
+       "why": "Дело не в тяжести, а в мягкости металла и нехватке самородков."
+      },
+      {
+       "id": "c",
+       "text": "Медь была запрещена вождями",
+       "why": "Об этом в учебнике ничего нет."
+      },
+      {
+       "id": "d",
+       "text": "Из меди нельзя было ничего сделать",
+       "why": "Можно: из меди делали орудия и украшения."
+      }
+     ],
+     "answer": "a",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Энеолит</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Название</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">медно-каменный век</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Первый металл</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">медь</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Почему камень остался</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">медь мягкая, самородков мало</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Почему камень остался</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">медь мягкая, самородков мало</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Новый транспорт</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">колесница</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Культуры</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">ботайская, самарская, древнеямная</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Медь — **мягкий** металл.",
+        "layer": 1
+       },
+       {
+        "text": "К тому же медных **самородков было мало**. Там, где меди было много, она быстро вытесняла камень.",
+        "layer": 2
+       }
+      ]
+     }
+    }
+   ],
+   "order": 10,
+   "maxTypos": 0
+  },
+  {
+   "id": "q11",
+   "type": "choice",
+   "text": "Чем знаменита **ботайская культура** (Северо-Казахстанская область, река Иманбурлук)?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Ботайцы первыми плавили бронзу",
+     "why": "Бронзу научились делать позже, в эпоху бронзы."
+    },
+    {
+     "id": "b",
+     "text": "Ботайцы одними из первых в мире приручили лошадей"
+    },
+    {
+     "id": "c",
+     "text": "Ботайцы строили города",
+     "why": "Ботайцы жили в полуземлянках, городов не было."
+    },
+    {
+     "id": "d",
+     "text": "Ботайцы были рыболовами Приаралья",
+     "why": "Это кельтиминарцы."
+    }
+   ],
+   "answer": "b",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<div style=\"max-width:520px;margin:0 auto;padding:12px 14px;border-left:4px solid var(--accent);background:var(--accent-soft);border-radius:6px;font-size:17px;line-height:1.5\"><div style=\"font-style:italic\">Ботайцы были одними из первых в мире пастушеских племён, занимавшихся <span style=\"border-bottom:3px solid var(--accent)\">приручением и разведением лошадей</span>.</div></div><div data-step=\"2\" style=\"text-align:center;margin-top:10px\"><span style=\"display:inline-block;padding:4px 12px;border-radius:999px;background:var(--ok-soft);color:var(--ok);font-weight:700\">ботайская культура</span></div>"
+    },
+    "steps": [
+     {
+      "text": "На основной стоянке Ботай нашли останки **свыше 70 тысяч лошадей**.",
+      "layer": 1
+     },
+     {
+      "text": "Поэтому считают, что ботайцы — одни из **первых в мире приручили лошадей**.",
+      "layer": 2
+     }
+    ]
+   },
+   "subtopic": "Ботайская культура",
+   "lesson": {
+    "title": "Ботай",
+    "text": "Ботайская культура — эпоха энеолита. Стоянка Ботай находится на правом берегу реки Иманбурлук в Северо-Казахстанской области. Там нашли около 160 жилищ-полуземлянок и останки свыше 70 тысяч лошадей. Ботайцы были одними из первых в мире, кто приручал и разводил лошадей. Вокруг могил они укладывали черепа лошадей: верили, что лошади будут служить умершему в другой жизни.",
+    "remember": "Ботай — первые в мире приручили лошадей.",
+    "visual": {
+     "kind": "html",
+     "html": "<div style=\"max-width:520px;margin:0 auto;padding:12px 14px;border-left:4px solid var(--accent);background:var(--accent-soft);border-radius:6px;font-size:17px;line-height:1.5\"><div style=\"font-style:italic\">Ботайцы были одними из первых в мире пастушеских племён, занимавшихся <span style=\"border-bottom:3px solid var(--accent)\">приручением и разведением лошадей</span>.</div></div><div data-step=\"2\" style=\"text-align:center;margin-top:10px\"><span style=\"display:inline-block;padding:4px 12px;border-radius:999px;background:var(--ok-soft);color:var(--ok);font-weight:700\">ботайская культура</span></div>"
+    }
+   },
+   "twins": [
+    {
+     "id": "q11t1",
+     "type": "text",
+     "text": "Как называется культура энеолита, где нашли останки **свыше 70 тысяч лошадей**?",
+     "answer": "ботайская",
+     "accept": [
+      "ботайская",
+      "ботай",
+      "ботайской"
+     ],
+     "typicalWrong": [
+      {
+       "value": "атбасарская",
+       "why": "В атбасарской (неолит) тоже есть следы лошадей. Но 70 тысяч лошадей — в **ботайской** культуре."
+      }
+     ],
+     "genericWrong": "Это **ботайская** культура.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<div style=\"max-width:520px;margin:0 auto;padding:12px 14px;border-left:4px solid var(--accent);background:var(--accent-soft);border-radius:6px;font-size:17px;line-height:1.5\"><div style=\"font-style:italic\">Ботайцы были одними из первых в мире пастушеских племён, занимавшихся <span style=\"border-bottom:3px solid var(--accent)\">приручением и разведением лошадей</span>.</div></div><div data-step=\"2\" style=\"text-align:center;margin-top:10px\"><span style=\"display:inline-block;padding:4px 12px;border-radius:999px;background:var(--ok-soft);color:var(--ok);font-weight:700\">ботайская культура</span></div>"
+      },
+      "steps": [
+       {
+        "text": "Стоянка Ботай — на реке Иманбурлук.",
+        "layer": 1
+       },
+       {
+        "text": "Там нашли **свыше 70 тысяч** останков лошадей.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "ботайская"
+     }
+    },
+    {
+     "id": "q11t2",
+     "type": "text",
+     "text": "Какой **новый вид транспорта** появился в энеолите? (Два колеса, возок, лошади.)",
+     "answer": "колесница",
+     "accept": [
+      "колесница",
+      "колесницы",
+      "колесниц"
+     ],
+     "typicalWrong": [
+      {
+       "value": "телега",
+       "why": "Похоже, но в учебнике это **колесница**: два колеса, возок, 1–4 коня.",
+       "also": [
+        "повозка"
+       ]
+      }
+     ],
+     "genericWrong": "Это **колесница**.",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Энеолит</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Название</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">медно-каменный век</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Первый металл</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">медь</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Почему камень остался</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">медь мягкая, самородков мало</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Новый транспорт</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">колесница</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Новый транспорт</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">колесница</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Культуры</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">ботайская, самарская, древнеямная</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Два колеса и возок, в который впрягали лошадей.",
+        "layer": 1
+       },
+       {
+        "text": "Это **колесница**.",
+        "layer": 2
+       }
+      ],
+      "answerLine": "колесница"
+     }
+    }
+   ],
+   "order": 11
+  },
+  {
+   "id": "q12",
+   "type": "text",
+   "text": "**Бронза** — это сплав меди с … Впиши металл.",
+   "answer": "оловом",
+   "accept": [
+    "олово",
+    "оловом",
+    "олова"
+   ],
+   "typicalWrong": [
+    {
+     "value": "железо",
+     "why": "Железо в бронзу не добавляли. Бронза — сплав меди с **оловом**.",
+     "also": [
+      "железом"
+     ]
+    },
+    {
+     "value": "золото",
+     "why": "Золото — драгоценный металл. Бронза — медь + **олово**.",
+     "also": [
+      "золотом"
+     ]
+    }
+   ],
+   "genericWrong": "Бронза — сплав меди с **оловом**.",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Эпоха бронзы</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Время</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">2–1 тыс. до н. э.</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Периоды</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">ранняя, развитая, поздняя</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Бронза</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">сплав меди с оловом</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Бронза</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">сплав меди с оловом</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Плюсы</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">твёрдая, плавится легче, золотистая</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "Люди пробовали разные сплавы металлов.",
+      "layer": 1
+     },
+     {
+      "text": "Самым удачным оказался сплав **меди с оловом** — бронза.",
+      "layer": 2
+     }
+    ],
+    "answerLine": "оловом"
+   },
+   "subtopic": "Эпоха бронзы",
+   "lesson": {
+    "title": "Эпоха бронзы",
+    "text": "Эпоха бронзы — 2–1 тыс. до н. э. Археологи делят её на три периода: ранняя, развитая и поздняя бронза, каждый около тысячи лет. Бронза — сплав меди с оловом. Она твёрже меди, плавится при низкой температуре и имеет красивый золотистый цвет. Две тысячи лет бронза была основным сплавом для орудий труда и оружия. Казахстан стал одним из древнейших центров металлургии, потому что богат медью, оловом и золотом.",
+    "remember": "Бронза = медь + олово.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Эпоха бронзы</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Время</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">2–1 тыс. до н. э.</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Периоды</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">ранняя, развитая, поздняя</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Бронза</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">сплав меди с оловом</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Плюсы</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">твёрдая, плавится легче, золотистая</td></tr></table>"
+    }
+   },
+   "twins": [
+    {
+     "id": "q12t1",
+     "type": "choice",
+     "text": "Чем бронза **лучше** меди?",
+     "options": [
+      {
+       "id": "a",
+       "text": "Она мягче меди",
+       "why": "Наоборот: бронза твёрже меди."
+      },
+      {
+       "id": "b",
+       "text": "Она легче дерева",
+       "why": "Металл тяжелее дерева."
+      },
+      {
+       "id": "c",
+       "text": "Она твёрже, плавится при низкой температуре, золотистого цвета"
+      },
+      {
+       "id": "d",
+       "text": "Её не нужно плавить",
+       "why": "Бронзу плавили и отливали в формы."
+      }
+     ],
+     "answer": "c",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Эпоха бронзы</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Время</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">2–1 тыс. до н. э.</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Периоды</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">ранняя, развитая, поздняя</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Бронза</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">сплав меди с оловом</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Плюсы</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">твёрдая, плавится легче, золотистая</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Плюсы</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">твёрдая, плавится легче, золотистая</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Бронза **твёрже** меди.",
+        "layer": 1
+       },
+       {
+        "text": "Она плавится при **низкой температуре** и имеет **золотистый цвет**.",
+        "layer": 2
+       }
+      ]
+     }
+    },
+    {
+     "id": "q12t2",
+     "type": "choice",
+     "text": "На какие **три периода** делят эпоху бронзы?",
+     "options": [
+      {
+       "id": "a",
+       "text": "Палеолит, мезолит, неолит",
+       "why": "Это периоды каменного века."
+      },
+      {
+       "id": "b",
+       "text": "Медь, олово, золото",
+       "why": "Это металлы, а не периоды."
+      },
+      {
+       "id": "c",
+       "text": "Андроновская, срубная, бегазы-дандыбаевская",
+       "why": "Это культуры эпохи бронзы, а не периоды."
+      },
+      {
+       "id": "d",
+       "text": "Ранняя, развитая, поздняя бронза"
+      }
+     ],
+     "answer": "d",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Эпоха бронзы</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Время</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">2–1 тыс. до н. э.</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Периоды</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">ранняя, развитая, поздняя</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Периоды</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">ранняя, развитая, поздняя</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Бронза</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">сплав меди с оловом</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Плюсы</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">твёрдая, плавится легче, золотистая</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Археологи делят эпоху бронзы на три периода.",
+        "layer": 1
+       },
+       {
+        "text": "**Ранняя, развитая и поздняя** бронза — по тысяче лет каждый.",
+        "layer": 2
+       }
+      ]
+     }
+    }
+   ],
+   "order": 12
+  },
+  {
+   "id": "q13",
+   "type": "text",
+   "text": "Как называется культура эпохи бронзы, которая занимала **весь Казахстан, кроме Западного**? Её назвали по селу в Западной Сибири.",
+   "answer": "андроновская",
+   "accept": [
+    "андроновская",
+    "андроновская культура",
+    "андроново",
+    "андроновцы",
+    "андроновской"
+   ],
+   "typicalWrong": [
+    {
+     "value": "срубная",
+     "why": "Срубная — в Западном Казахстане. Почти весь Казахстан занимала **андроновская**."
+    },
+    {
+     "value": "ботайская",
+     "why": "Ботайская — энеолит, Северный Казахстан. В эпоху бронзы — **андроновская**."
+    }
+   ],
+   "genericWrong": "Это **андроновская** культура.",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Культура бронзы</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Где</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Особенность</th></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Андроновская</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">весь Казахстан, кроме Западного</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">по селу Андроново</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Андроновская</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">весь Казахстан, кроме Западного</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">по селу Андроново</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Срубная</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Западный Казахстан</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">деревянные срубы в могилах</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Бегазы-дандыбаевская</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Центральный Казахстан</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">переходная к сакской</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "Первый курган исследовали у села **Андроново** в Западной Сибири.",
+      "layer": 1
+     },
+     {
+      "text": "Отсюда название — **андроновская** культура.",
+      "layer": 2
+     }
+    ],
+    "answerLine": "андроновская"
+   },
+   "subtopic": "Культуры эпохи бронзы",
+   "lesson": {
+    "title": "Три культуры бронзы",
+    "text": "Андроновская культура занимала весь Казахстан, кроме Западного; названа по первому кургану у села Андроново в Западной Сибири. Андроновцы были европеоидами, жили в полуземлянках, посуду лепили вручную, с плоским дном и геометрическим орнаментом. Главные признаки культуры — погребальный обряд и набор глиняной посуды. Срубная культура — Западный Казахстан; стенки могильных ям укрепляли деревянными срубами, отсюда и название. Бегазы-дандыбаевская — Центральный Казахстан, переходная от андроновской к сакской.",
+    "remember": "Андроновская — почти весь Казахстан; срубная — запад; бегазы-дандыбаевская — центр.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Культура бронзы</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Где</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Особенность</th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Андроновская</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">весь Казахстан, кроме Западного</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">по селу Андроново</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Срубная</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Западный Казахстан</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">деревянные срубы в могилах</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Бегазы-дандыбаевская</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Центральный Казахстан</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">переходная к сакской</td></tr></table>"
+    }
+   },
+   "twins": [
+    {
+     "id": "q13t1",
+     "type": "choice",
+     "text": "Почему **срубная** культура получила такое название?",
+     "options": [
+      {
+       "id": "a",
+       "text": "Стенки могильных ям укрепляли деревянными срубами"
+      },
+      {
+       "id": "b",
+       "text": "Люди рубили лес для пашни",
+       "why": "Название связано с погребениями, а не с пашней."
+      },
+      {
+       "id": "c",
+       "text": "Её открыли у села Срубное",
+       "why": "Это андроновскую назвали по селу. Срубная — по деревянным срубам в могилах."
+      },
+      {
+       "id": "d",
+       "text": "Люди жили только в деревянных городах",
+       "why": "Городов не было; дома — полуземлянки и срубы."
+      }
+     ],
+     "answer": "a",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Культура бронзы</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Где</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Особенность</th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Андроновская</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">весь Казахстан, кроме Западного</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">по селу Андроново</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Срубная</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Западный Казахстан</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">деревянные срубы в могилах</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Срубная</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Западный Казахстан</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">деревянные срубы в могилах</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Бегазы-дандыбаевская</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Центральный Казахстан</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">переходная к сакской</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "В погребениях этой культуры стенки ям укрепляли **деревянными срубами**.",
+        "layer": 1
+       },
+       {
+        "text": "Отсюда название — **срубная**.",
+        "layer": 2
+       }
+      ]
+     }
+    },
+    {
+     "id": "q13t2",
+     "type": "choice",
+     "text": "Какая культура была **переходной** от андроновской к культуре саков и находилась в Центральном Казахстане?",
+     "options": [
+      {
+       "id": "a",
+       "text": "Срубная",
+       "why": "Срубная — в Западном Казахстане."
+      },
+      {
+       "id": "b",
+       "text": "Бегазы-дандыбаевская"
+      },
+      {
+       "id": "c",
+       "text": "Кельтиминарская",
+       "why": "Кельтиминарская — неолит, Приаралье."
+      },
+      {
+       "id": "d",
+       "text": "Ботайская",
+       "why": "Ботайская — энеолит, Северный Казахстан."
+      }
+     ],
+     "answer": "b",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Культура бронзы</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Где</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Особенность</th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Андроновская</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">весь Казахстан, кроме Западного</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">по селу Андроново</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Срубная</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Западный Казахстан</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">деревянные срубы в могилах</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Бегазы-дандыбаевская</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Центральный Казахстан</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">переходная к сакской</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Бегазы-дандыбаевская</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Центральный Казахстан</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">переходная к сакской</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "В Центральном Казахстане в поздней бронзе появилась новая культура.",
+        "layer": 1
+       },
+       {
+        "text": "Это **бегазы-дандыбаевская** — переход от андроновской к сакской.",
+        "layer": 2
+       }
+      ]
+     }
+    }
+   ],
+   "order": 13
+  },
+  {
+   "id": "q14",
+   "type": "choice",
+   "text": "В каком районе Казахстана в древности добывали очень много **меди** (около 100 тыс. т)?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Степняк",
+     "why": "В местности Степняк добывали золото."
+    },
+    {
+     "id": "b",
+     "text": "Горы Атасу",
+     "why": "В горах Атасу добывали олово."
+    },
+    {
+     "id": "c",
+     "text": "Жезказган"
+    },
+    {
+     "id": "d",
+     "text": "Устюрт",
+     "why": "Устюрт известен джебельской культурой, а не медью."
+    }
+   ],
+   "answer": "c",
+   "solution": {
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Хозяйство эпохи бронзы</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Скотоводство</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">придомное → отгонное</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Земледелие</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">поливное, каналы</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Медь</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Жезказган</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Медь</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Жезказган</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Олово / золото</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">горы Атасу / Степняк</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Ремёсла</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">литьё, ковка, чеканка; бусы из пасты</td></tr></table>"
+    },
+    "steps": [
+     {
+      "text": "Древние разработки меди найдены в районе **Жезказгана**.",
+      "layer": 1
+     },
+     {
+      "text": "Там выплавили около **100 тыс. т** меди.",
+      "layer": 2
+     }
+    ]
+   },
+   "subtopic": "Хозяйство эпохи бронзы",
+   "lesson": {
+    "title": "Хозяйство и ремёсла бронзы",
+    "text": "Люди эпохи бронзы занимались скотоводством, земледелием и металлургией. Скотоводство сначала было придомным, а в поздней бронзе стало отгонным: пастухи перегоняли скот с пастбища на пастбище. Земледелие было поливным: от реки прокапывали каналы. Казахстан богат металлами: медь добывали у Жезказгана, олово — в горах Атасу, золото — в местности Степняк. Руду дробили каменными молотками, а орудия отливали в каменных и глиняных формах. Украшения делали ковкой, чеканкой и тиснением, а бусы — из стекловидной пасты.",
+    "remember": "Медь — Жезказган; скотоводство придомное → отгонное.",
+    "visual": {
+     "kind": "html",
+     "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Хозяйство эпохи бронзы</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Скотоводство</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">придомное → отгонное</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Земледелие</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">поливное, каналы</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Медь</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Жезказган</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Олово / золото</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">горы Атасу / Степняк</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Ремёсла</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">литьё, ковка, чеканка; бусы из пасты</td></tr></table>"
+    }
+   },
+   "twins": [
+    {
+     "id": "q14t1",
+     "type": "choice",
+     "text": "Как изменилось **скотоводство** в эпоху поздней бронзы?",
+     "options": [
+      {
+       "id": "a",
+       "text": "Скотоводство исчезло",
+       "why": "Нет, скотоводство оставалось главным занятием."
+      },
+      {
+       "id": "b",
+       "text": "Люди перестали держать лошадей",
+       "why": "Наоборот, лошадей стали использовать и для верховой езды."
+      },
+      {
+       "id": "c",
+       "text": "Скот стали держать только в городах",
+       "why": "Городов не было, скот пасли на пастбищах."
+      },
+      {
+       "id": "d",
+       "text": "Придомное стало отгонным: скот перегоняли с пастбища на пастбище"
+      }
+     ],
+     "answer": "d",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Хозяйство эпохи бронзы</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Скотоводство</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">придомное → отгонное</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Скотоводство</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">придомное → отгонное</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Земледелие</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">поливное, каналы</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Медь</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Жезказган</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Олово / золото</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">горы Атасу / Степняк</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Ремёсла</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">литьё, ковка, чеканка; бусы из пасты</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Сначала скот пасли рядом с поселением — **придомное** скотоводство.",
+        "layer": 1
+       },
+       {
+        "text": "В поздней бронзе его перегоняли на дальние пастбища — **отгонное**.",
+        "layer": 2
+       }
+      ]
+     }
+    },
+    {
+     "id": "q14t2",
+     "type": "choice",
+     "text": "Из чего ремесленники эпохи бронзы делали **бусы**?",
+     "options": [
+      {
+       "id": "a",
+       "text": "Из стекловидной массы — пасты"
+      },
+      {
+       "id": "b",
+       "text": "Из пластмассы",
+       "why": "Пластмассы тогда не было."
+      },
+      {
+       "id": "c",
+       "text": "Из железа",
+       "why": "Железо ещё не использовали."
+      },
+      {
+       "id": "d",
+       "text": "Из бумаги",
+       "why": "Бумаги тогда не было."
+      }
+     ],
+     "answer": "a",
+     "solution": {
+      "visual": {
+       "kind": "html",
+       "html": "<table style=\"border-collapse:collapse;margin:0 auto;font-size:15px\"><tr><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\">Хозяйство эпохи бронзы</th><th style=\"text-align:left;padding:6px 8px;border-bottom:2px solid var(--line);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em\"></th></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Скотоводство</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">придомное → отгонное</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Земледелие</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">поливное, каналы</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Медь</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Жезказган</td></tr><tr><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Олово / золото</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">горы Атасу / Степняк</td></tr><tr data-until=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">Ремёсла</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top\">литьё, ковка, чеканка; бусы из пасты</td></tr><tr data-step=\"1\"><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">Ремёсла</td><td style=\"padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--ok-soft);font-weight:600\">литьё, ковка, чеканка; бусы из пасты</td></tr></table>"
+      },
+      "steps": [
+       {
+        "text": "Ремесленники уже умели получать **стекловидную массу — пасту**.",
+        "layer": 1
+       },
+       {
+        "text": "Из неё делали **бусы**.",
+        "layer": 2
+       }
+      ]
+     }
+    }
+   ],
+   "order": 14
+  }
+ ]
+}
