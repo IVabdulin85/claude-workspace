@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>English: Starter–Module 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Golos+Text:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: рабочая тетрадь — вкладки сверху (Словарь · Диктант · Упражнения · Итог), каждое задание — карточка как упражнение в учебнике */
+:root{
+  --bg:#EEF4F8; --card:#FFFFFF; --ink:#18263A; --muted:#5A6B80; --line:#D3DEE8;
+  --blue:#1F6FB2; --blue-soft:#E1EEF9; --teal:#138A86; --teal-soft:#DDF3F1; --pink:#C2316B; --pink-soft:#FBE3EC;
+  --ok:#23824B; --ok-soft:#DFF3E7; --bad:#C23A2B; --bad-soft:#FBE4E1; --warn:#9A6A10; --warn-soft:#F7EEDB;
+  --display:"Fredoka","Golos Text",system-ui,sans-serif;
+  --body:"Golos Text",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#111A24; --card:#18232F; --ink:#E5EDF5; --muted:#9BAEC2; --line:#2B3A4A;
+  --blue:#7DB6EA; --blue-soft:#1A2E43; --teal:#5FD0C9; --teal-soft:#15312F; --pink:#F08BB2; --pink-soft:#3A1F2A;
+  --ok:#6CCB93; --ok-soft:#183324; --bad:#F08A7E; --bad-soft:#3A2220; --warn:#E2B85E; --warn-soft:#352B17; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111A24; --card:#18232F; --ink:#E5EDF5; --muted:#9BAEC2; --line:#2B3A4A;
+  --blue:#7DB6EA; --blue-soft:#1A2E43; --teal:#5FD0C9; --teal-soft:#15312F; --pink:#F08BB2; --pink-soft:#3A1F2A;
+  --ok:#6CCB93; --ok-soft:#183324; --bad:#F08A7E; --bad-soft:#3A2220; --warn:#E2B85E; --warn-soft:#352B17; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.55 var(--body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--card)}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--card);border-bottom:1px solid var(--line)}
+.top .in{max-width:900px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:10px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.brand{font-family:var(--display);font-weight:700;font-size:20px;color:var(--blue);margin-right:auto}
+.tab{font:600 15px var(--body);border:1px solid var(--line);background:var(--card);color:var(--ink);padding:8px 14px;border-radius:999px;cursor:pointer}
+.tab[aria-current="page"]{background:var(--blue);border-color:var(--blue);color:#fff}
+main{max-width:900px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:18px 64px;display:flex;flex-direction:column;gap:16px}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.2;margin:0;text-wrap:balance}
+h1{font-size:clamp(26px,5vw,34px)} h2{font-size:22px} h3{font-size:18px}
+p{margin:0}
+.muted{color:var(--muted)} .small{font-size:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+@media (max-width:640px){.steps{grid-template-columns:1fr 1fr}}
+.step{border:1px solid var(--line);border-radius:12px;padding:12px;background:var(--card);text-align:left;font:inherit;color:inherit;cursor:pointer;display:flex;flex-direction:column;gap:4px;min-width:0}
+.step b{font-family:var(--display);font-size:18px;color:var(--blue)}
+.step .n{font-family:var(--display);font-size:13px;color:var(--muted)}
+.btn{font:600 16px var(--body);min-height:44px;padding:8px 18px;border-radius:10px;border:2px solid var(--blue);background:var(--blue);color:#fff;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--blue)}
+.btn.small{min-height:36px;padding:4px 12px;font-size:14px}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.topic{font:600 14px var(--body);border:1px solid var(--line);background:var(--card);color:var(--ink);padding:6px 12px;border-radius:999px;cursor:pointer}
+.topic[aria-pressed="true"]{background:var(--teal);border-color:var(--teal);color:#fff}
+.topic .st{font-weight:700;margin-left:6px}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:16px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:middle}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+td.en{font-weight:700;color:var(--blue);font-size:17px}
+.hidecell{background:var(--blue-soft);color:transparent!important;border-radius:6px;cursor:pointer;user-select:none}
+.say{border:none;background:var(--blue-soft);color:var(--blue);border-radius:8px;min-width:36px;min-height:32px;cursor:pointer;font-size:15px}
+.dict{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.prompt{font-family:var(--display);font-size:clamp(24px,5vw,32px);font-weight:600}
+input.w{font:600 20px var(--body);min-height:50px;padding:6px 14px;border:2px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);width:min(420px,100%)}
+input.w:focus-visible,.btn:focus-visible,.tab:focus-visible,.topic:focus-visible,.chip:focus-visible,.gap:focus-visible,.step:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+.fb{padding:10px 14px;border-radius:10px;width:100%}
+.fb.ok{background:var(--ok-soft);color:var(--ok);font-weight:600}
+.fb.bad{background:var(--bad-soft)}
+.fb.bad .t{color:var(--bad);font-weight:700}
+.diff{font-family:ui-monospace,Menlo,monospace;font-size:20px;letter-spacing:.04em}
+.diff .m{background:var(--warn-soft);color:var(--warn);border-bottom:3px solid var(--warn);font-weight:700}
+.prog{height:8px;background:var(--line);border-radius:999px;overflow:hidden}
+.prog i{display:block;height:100%;background:var(--teal)}
+.rule{background:var(--blue-soft);border-radius:10px;padding:10px 14px;font-size:15px}
+.rule b{color:var(--blue)}
+.lines{display:flex;flex-direction:column;gap:10px;margin:0;padding:0;list-style:none;counter-reset:l}
+.lines li{display:flex;gap:10px;align-items:flex-start;line-height:2.1}
+.lines li::before{counter-increment:l;content:counter(l);font-family:var(--display);color:var(--muted);min-width:20px}
+.lines li.nonum::before{content:"";min-width:0}
+.lines .who{font-weight:700;min-width:60px;color:var(--pink)}
+.lines .pic{flex:none}
+.gap{display:inline-flex;align-items:center;justify-content:center;min-width:96px;min-height:34px;padding:0 10px;border:2px dashed var(--blue);border-radius:8px;background:var(--blue-soft);color:var(--ink);font:600 16px var(--body);cursor:pointer;vertical-align:middle;line-height:1.2}
+.gap.filled{border-style:solid;background:var(--card)}
+.gap.ok{border-color:var(--ok);background:var(--ok-soft);color:var(--ok)}
+.gap.bad{border-color:var(--bad);background:var(--bad-soft);color:var(--bad)}
+.gap.over{background:var(--teal-soft)}
+input.tg{font:600 16px var(--body);width:150px;min-height:34px;padding:2px 8px;border:2px solid var(--blue);border-radius:8px;background:var(--card);color:var(--ink);vertical-align:middle}
+input.tg.ok{border-color:var(--ok);background:var(--ok-soft)} input.tg.bad{border-color:var(--bad);background:var(--bad-soft)}
+.corr{font-size:13px;color:var(--bad);font-weight:600;margin-left:4px}
+.bank{display:flex;flex-wrap:wrap;gap:8px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--bg)}
+.chip{font:600 16px var(--body);padding:6px 12px;border-radius:999px;border:2px solid var(--teal);background:var(--card);color:var(--ink);cursor:grab;user-select:none}
+.chip[aria-pressed="true"]{background:var(--teal);color:#fff}
+.chip.used{opacity:.35}
+.chip.ok{border-color:var(--ok);background:var(--ok-soft)} .chip.bad{border-color:var(--bad);background:var(--bad-soft)}
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+.cat{border:2px dashed var(--line);border-radius:12px;padding:10px;min-height:110px;display:flex;flex-direction:column;gap:8px;background:var(--card);min-width:0}
+.cat h3{font-size:16px;color:var(--pink)}
+.cat .in{display:flex;flex-wrap:wrap;gap:6px}
+.cat.over{border-color:var(--teal);background:var(--teal-soft)}
+.cat.target{border-color:var(--teal)}
+.score{font-family:var(--display);font-size:20px;font-weight:600}
+.exlist{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:8px}
+.exbtn{text-align:left;font:inherit;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;cursor:pointer;display:flex;justify-content:space-between;gap:8px;align-items:center;min-width:0}
+.exbtn .mod{font-size:12px;color:var(--muted);display:block}
+.badge{font-size:13px;font-weight:700;padding:2px 8px;border-radius:999px;white-space:nowrap}
+.badge.ok{background:var(--ok-soft);color:var(--ok)} .badge.mid{background:var(--warn-soft);color:var(--warn)} .badge.no{background:var(--blue-soft);color:var(--muted)}
+textarea.rep{width:100%;min-height:160px;font:14px/1.45 ui-monospace,Menlo,monospace;padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
+.toast{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--card);padding:10px 16px;border-radius:10px;z-index:20;max-width:calc(100% - 32px)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="top"><div class="in">
+  <span class="brand">English · Руслан</span>
+  <nav class="row" aria-label="Разделы">
+    <button class="tab" type="button" data-r="home">Начало</button>
+    <button class="tab" type="button" data-r="dict">1. Словарь</button>
+    <button class="tab" type="button" data-r="write">2. Диктант</button>
+    <button class="tab" type="button" data-r="ex">3. Упражнения</button>
+    <button class="tab" type="button" data-r="res">4. Итог</button>
+  </nav>
+</div></header>
+<main id="view"></main>
+<div class="toast" id="toast" hidden role="status"></div>
+
+<script>
+"use strict";
+/* ================= DATA ================= */
+// [english, russian, alternatives(optional array), flags(optional: "cap" = capital letters matter)]
+const TOPICS = [
+ {id:"greet", mod:"Starter · 2d", title:"Приветствия и вопросы", words:[
+  ["hello","привет",["hi"]],["good morning","доброе утро"],["good afternoon","добрый день"],["good evening","добрый вечер"],
+  ["goodbye","до свидания",["bye"]],["good night","спокойной ночи"],["see you later","увидимся позже"],["How are you?","Как дела?"],
+  ["I'm fine, thanks.","У меня всё хорошо, спасибо.",["I am fine, thanks","I'm fine, thank you","I am fine, thank you"]],["not bad","неплохо"],
+  ["Nice to meet you.","Приятно познакомиться."],["What's your name?","Как тебя зовут?",["What is your name?"]],
+  ["Where are you from?","Откуда ты?"],["How old are you?","Сколько тебе лет?"],
+  ["What's your favourite subject?","Какой твой любимый предмет?",["What is your favourite subject?"]],["How do you spell it?","Как это пишется?"]]},
+ {id:"class", mod:"Starter", title:"Класс и школьные вещи", words:[
+  ["read","читать"],["listen","слушать"],["Be quiet, please.","Тише, пожалуйста."],["Open your books.","Откройте книги."],
+  ["Close your books.","Закройте книги."],["Sit down, please.","Садитесь, пожалуйста."],["Stand up, please.","Встаньте, пожалуйста."],
+  ["Come to the board, please.","Выйди к доске, пожалуйста."],
+  ["notebook","тетрадь"],["book","книга"],["eraser","ластик"],["pencil","карандаш"],["pencil sharpener","точилка"],
+  ["ruler","линейка"],["pencil case","пенал"],["schoolbag","школьная сумка, рюкзак",["school bag"]],["atlas","атлас"]]},
+ {id:"col", mod:"Starter", title:"Цвета", words:[
+  ["blue","синий, голубой"],["yellow","жёлтый"],["green","зелёный"],["black","чёрный"],["brown","коричневый"],["pink","розовый"],
+  ["white","белый"],["orange","оранжевый"],["red","красный"],["grey","серый"],["purple","фиолетовый"]]},
+ {id:"days", mod:"Starter", title:"Дни недели", words:[
+  ["Monday","понедельник",null,"cap"],["Tuesday","вторник",null,"cap"],["Wednesday","среда",null,"cap"],["Thursday","четверг",null,"cap"],
+  ["Friday","пятница",null,"cap"],["Saturday","суббота",null,"cap"],["Sunday","воскресенье",null,"cap"],["weekend","выходные"]]},
+ {id:"num", mod:"Starter", title:"Числа", words:[
+  ["eleven","11"],["twelve","12"],["thirteen","13"],["fourteen","14"],["fifteen","15"],["sixteen","16"],["eighteen","18"],["nineteen","19"],
+  ["twenty","20"],["twenty-one","21"],["thirty","30"],["forty","40"],["fifty","50"],["eighty","80"],["ninety","90"],
+  ["a hundred","100",["one hundred","hundred"]],["a thousand","1000",["one thousand","thousand"]]]},
+ {id:"ord", mod:"1b", title:"Порядковые числительные", words:[
+  ["first","1-й (первый)"],["second","2-й"],["third","3-й"],["fourth","4-й"],["fifth","5-й"],["eighth","8-й"],["ninth","9-й"],
+  ["twelfth","12-й"],["twentieth","20-й"],["twenty-first","21-й"],["thirtieth","30-й"],["a hundredth","100-й",["hundredth","one hundredth"]]]},
+ {id:"rooms", mod:"Module 1", title:"Комнаты и дом", words:[
+  ["bedroom","спальня"],["bathroom","ванная комната"],["living room","гостиная"],["kitchen","кухня"],["hall","прихожая, холл"],
+  ["floor","пол; этаж"],["ceiling","потолок"],["wall","стена"],["window","окно"],["door","дверь"],["stairs","лестница"],
+  ["upstairs","наверху"],["downstairs","внизу"],["garden","сад"],["fireplace","камин"]]},
+ {id:"furn", mod:"Module 1", title:"Мебель и техника", words:[
+  ["wardrobe","шкаф для одежды"],["bookcase","книжный шкаф"],["desk","письменный стол"],["bed","кровать"],["pillow","подушка (на кровати)",["pillows"]],
+  ["bedside cabinet","прикроватная тумбочка"],["mirror","зеркало"],["bath","ванна"],["toilet","унитаз, туалет"],["washbasin","раковина (в ванной)"],
+  ["sink","раковина (на кухне)"],["cooker","плита"],["fridge","холодильник"],["cupboard","кухонный шкаф",["cupboards"]],["table","стол"],["chair","стул"],
+  ["armchair","кресло"],["sofa","диван"],["cushion","диванная подушка",["cushions"]],["carpet","ковёр"],["curtains","шторы"],["painting","картина"],["poster","плакат, постер"]]},
+ {id:"prep", mod:"1b", title:"Предлоги места", words:[
+  ["in","в"],["on","на"],["under","под"],["behind","за, позади"],["next to","рядом с"],["in front of","перед"],["between","между"]]},
+ {id:"build", mod:"1a · 1e · 1f", title:"Здания и достопримечательности", words:[
+  ["unusual","необычный"],["building","здание"],["office","офис"],["shape","форма"],["lift","лифт"],["great view","прекрасный вид"],
+  ["outside","снаружи"],["inside","внутри"],["metal","металл"],["wood","дерево (материал)"],["summer","лето"],["winter","зима"],
+  ["tall","высокий"],["huge","огромный"],["tourist attraction","достопримечательность"],["wheel","колесо"],["steel","сталь"],
+  ["glass","стекло"],["capsule","капсула"],["castle","замок"],["palace","дворец"],["observation deck","смотровая площадка"]]},
+ {id:"bugs", mod:"1c", title:"Насекомые", words:[
+  ["insect","насекомое",["insects"]],["ant","муравей"],["beetle","жук"],["fly","муха"],["spider","паук"],["web","паутина"],
+  ["moth","моль, мотылёк"],["cockroach","таракан"],["flea","блоха"],["scorpion","скорпион"],["bedbug","клоп",["bedbugs"]],
+  ["smell","запах"],["empty","пустой"],["tidy","аккуратный, чистый"],["corner","угол"],["alone","один, в одиночестве"],["people","люди"]]},
+ {id:"things", mod:"Module 2", title:"Вещи и животные", words:[
+  ["dog","собака"],["goldfish","золотая рыбка"],["snake","змея"],["tortoise","черепаха"],["flowers","цветы"],["skateboard","скейтборд"],
+  ["guitar","гитара"],["cap","кепка"],["gloves","перчатки"],["helmet","шлем"],["digital camera","цифровой фотоаппарат"],["watch","наручные часы"],
+  ["comic book","комикс"],["trainers","кроссовки"],["basketball","баскетбольный мяч"],["scarf","шарф"],["bicycle","велосипед",["bike"]]]},
+ {id:"body", mod:"2a", title:"Части тела", words:[
+  ["head","голова"],["hair","волосы"],["face","лицо"],["eye","глаз"],["ear","ухо"],["nose","нос"],["mouth","рот"],["lips","губы"],
+  ["teeth","зубы"],["hand","кисть руки"],["arm","рука"],["leg","нога"],["knee","колено"],["foot","ступня"],["ankle","лодыжка"],
+  ["moustache","усы"],["beard","борода"]]},
+ {id:"look", mod:"2a · 2c", title:"Внешность", words:[
+  ["tall","высокий (о человеке)"],["short","низкий; короткий"],["thin","худой; тонкий"],["plump","полный, пухлый"],["fat","толстый"],
+  ["long","длинный"],["straight","прямые (о волосах)"],["curly","кудрявые"],["fair","светлые (о волосах)"],["spiky","торчащие, ёжиком"],
+  ["bald","лысый"],["young","молодой"],["old","старый"],["big","большой"],["small","маленький"]]},
+ {id:"nat", mod:"2c", title:"Страны и национальности", words:[
+  ["the UK","Великобритания",["UK"],"cap"],["British","британский",null,"cap"],["the USA","США",["USA"],"cap"],["American","американский",null,"cap"],
+  ["Kazakhstan","Казахстан",null,"cap"],["Kazakhstani","казахстанский",null,"cap"],["Russia","Россия",null,"cap"],["Russian","русский, российский",null,"cap"],
+  ["France","Франция",null,"cap"],["French","французский",null,"cap"],["Italy","Италия",null,"cap"],["Italian","итальянский",null,"cap"],
+  ["Spain","Испания",null,"cap"],["Spanish","испанский",null,"cap"],["Turkey","Турция",null,"cap"],["Turkish","турецкий",null,"cap"],
+  ["China","Китай",null,"cap"],["Chinese","китайский",null,"cap"],["Greece","Греция",null,"cap"],["Greek","греческий",null,"cap"],
+  ["Mexico","Мексика",null,"cap"],["Mexican","мексиканский",null,"cap"],["Portugal","Португалия",null,"cap"],["Portuguese","португальский",null,"cap"]]},
+ {id:"iron", mod:"2a", title:"Iron Man: слова из текста", words:[
+  ["engineer","инженер"],["secretary","секретарь"],["business","бизнес, компания"],["strong","сильный"],["protect","защищать"],
+  ["world","мир"],["enemy","враг"],["loyal","верный, преданный"],["fly","летать"],["brilliant","потрясающий"],["metal suit","металлический костюм"],["find out","узнать, выяснить"]]},
+];
+
+/* Exercises. Gap syntax in text: [[answer]] or [[answer|other accepted]]. */
+const EXS = [
+ {id:"aan", mod:"Starter", title:"a или an", kind:"bank", reuse:true, bank:["a","an"],
+  rule:"<b>a</b> — перед словом, которое начинается с согласного звука: a book. <b>an</b> — перед гласным звуком: an apple, an eraser.",
+  items:["This is [[an]] eraser.","This is [[a]] notebook.","It's [[an]] atlas.","I've got [[a]] schoolbag.","She's got [[an]] apple.","It's [[an]] orange pencil case.","There's [[an]] insect on the wall.","He's got [[a]] ruler."]},
+ {id:"plural", mod:"Starter · 2b", title:"Напиши множественное число", kind:"type",
+  rule:"Обычно + <b>-s</b>: book → books. После <b>-s, -ss, -sh, -ch, -x, -o</b> + <b>-es</b>: box → boxes. Согласная + <b>y → ies</b>: lady → ladies, но гласная + y → <b>s</b>: toy → toys. <b>-f/-fe → ves</b>: leaf → leaves. Исключения: child → children, man → men, woman → women, tooth → teeth, foot → feet, mouse → mice.",
+  items:["one box — two [[boxes]]","one bus — two [[buses]]","one watch — two [[watches]]","one tomato — two [[tomatoes]]","one brush — two [[brushes]]","one glass — two [[glasses]]",
+   "one fox — two [[foxes]]","one lady — two [[ladies]]","one baby — two [[babies]]","one toy — two [[toys]]","one day — two [[days]]","one boy — two [[boys]]",
+   "one leaf — two [[leaves]]","one knife — two [[knives]]","one scarf — two [[scarves]]","one child — two [[children]]","one man — two [[men]]","one woman — two [[women]]",
+   "one tooth — two [[teeth]]","one foot — two [[feet]]","one mouse — two [[mice]]","one flag — two [[flags]]"]},
+ {id:"numbers", mod:"Starter · 1b", title:"Напиши числа словами", kind:"type",
+  rule:"Запомни трудные: <b>twelve</b>, <b>forty</b> (без u!), <b>eighth</b>, <b>ninth</b> (без e), <b>twelfth</b>. Порядковые обычно + <b>th</b>: fourth, sixth; но <b>first, second, third</b>.",
+  items:["12 — [[twelve]]","14 — [[fourteen]]","15 — [[fifteen]]","40 — [[forty]]","90 — [[ninety]]","22 — [[twenty-two|twenty two]]","1st — [[first]]","2nd — [[second]]",
+   "3rd — [[third]]","5th — [[fifth]]","8th — [[eighth]]","9th — [[ninth]]","12th — [[twelfth]]","20th — [[twentieth]]"]},
+ {id:"thereis", mod:"1b", title:"there is / there are", kind:"bank", reuse:true, bank:["There is","There are","There isn't","There aren't","Is there","Are there"],
+  rule:"<b>There is</b> + один предмет: There is a sofa. <b>There are</b> + много: There are two chairs. Отрицание: <b>There isn't / There aren't</b>. Вопрос: <b>Is there…? / Are there…?</b>",
+  items:["[[There is]] a bed in my bedroom.","[[There are]] two windows in the living room.","[[Is there]] a TV in your room? — Yes, there is.","[[Are there]] any posters on the wall? — No, there aren't.",
+   "My flat is small. [[There isn't]] a garden.","[[There aren't]] any chairs in the hall.","[[There are]] three cushions on the sofa.","[[Is there]] a fireplace in the living room?"]},
+ {id:"someany", mod:"1b", title:"some или any", kind:"bank", reuse:true, bank:["some","any"],
+  rule:"<b>some</b> — в утвердительных предложениях: There are some chairs. <b>any</b> — в отрицаниях и вопросах: There aren't any paintings. Are there any posters?",
+  items:["There are [[some]] books on the desk.","Are there [[any]] chairs in the kitchen?","There aren't [[any]] posters on the wall.","There are [[some]] cushions on the sofa.","Have you got [[any]] books in the bookcase?","There are [[some]] flowers in the vase."]},
+ {id:"prep", mod:"1b", title:"Где мяч? Предлоги места", kind:"bank", reuse:true, bank:["in","on","under","behind","next to","in front of","between"],
+  rule:"in — в, on — на, under — под, behind — за, next to — рядом с, in front of — перед, between — между.",
+  items:[{pic:"in",t:"The ball is [[in]] the box."},{pic:"on",t:"The ball is [[on]] the box."},{pic:"under",t:"The ball is [[under]] the box."},{pic:"behind",t:"The ball is [[behind]] the box."},
+   {pic:"next",t:"The ball is [[next to]] the box."},{pic:"front",t:"The ball is [[in front of]] the box."},{pic:"between",t:"The ball is [[between]] the boxes."}]},
+ {id:"rooms", mod:"Module 1", title:"Разложи по комнатам", kind:"sort",
+  rule:"Перетащи каждое слово в комнату, где эта вещь обычно стоит (или нажми на слово, а потом на комнату).",
+  cats:[{name:"Bedroom",items:["wardrobe","bed","pillows","bedside cabinet","desk"]},{name:"Living room",items:["sofa","armchair","fireplace","cushions","curtains"]},
+   {name:"Bathroom",items:["bath","toilet","washbasin","mirror"]},{name:"Kitchen",items:["cooker","fridge","sink","cupboards"]}]},
+ {id:"imper", mod:"1c", title:"В музее: повелительное наклонение", kind:"bank", reuse:false, bank:["Don't touch","Plan","Don't take","Don't eat","Visit"],
+  rule:"Просьба или совет: глагол в начале — <b>Close</b> the window. Запрет: <b>Don't</b> + глагол — <b>Don't open</b> the door.",
+  items:["[[Don't touch]] the exhibits.","[[Plan]] your visit ahead of time and avoid queues.","[[Don't take]] photographs.","[[Don't eat]] inside the museum. You can go to the café.","[[Visit]] the museum shop and see a big selection of souvenirs."]},
+ {id:"living", mod:"Module 2", title:"Живое и неживое", kind:"sort",
+  rule:"Living things — живое (животные, растения). Non-living things — неживое (вещи).",
+  cats:[{name:"Living things",items:["dog","goldfish","snake","tortoise","flowers","spider"]},{name:"Non-living things",items:["guitar","skateboard","cap","gloves","helmet","watch","trainers","scarf"]}]},
+ {id:"havegot", mod:"2b", title:"have got / has got", kind:"bank", reuse:true, bank:["have","has","haven't","hasn't","Have","Has"],
+  rule:"I / you / we / they <b>have got</b>; he / she / it <b>has got</b>. Отрицание: <b>haven't got / hasn't got</b>. Вопрос: <b>Have</b> you got…? <b>Has</b> he got…? Ответ: Yes, I have. / No, he hasn't.",
+  items:["Paul [[has]] got curly brown hair.","Michelle [[has]] got long straight red hair.","Jack [[hasn't]] got brown hair. He's got fair hair.","Paul and Lauren [[have]] got brown eyes.",
+   "I [[haven't]] got a bicycle.","[[Have]] you got a guitar? — Yes, I [[have]].","[[Has]] Ulan got a skateboard? — No, he [[hasn't]]."]},
+ {id:"poss", mod:"2b", title:"my, his, her… mine", kind:"bank", reuse:true, bank:["my","your","his","her","its","our","their","mine"],
+  rule:"I → <b>my</b>, you → <b>your</b>, he → <b>his</b>, she → <b>her</b>, it → <b>its</b>, we → <b>our</b>, they → <b>their</b>. Без существительного после: <b>mine</b> — мой: These gloves are mine.",
+  items:["Anna and [[her]] brother have got a dog.","Ben has got a scarf. It's [[his]] scarf.","My parents have got a car. It's [[their]] car.","We've got a cat. Look at [[its]] tail!",
+   "I've got a bike. This is [[my]] bike.","These gloves are [[mine]].","We live in a big house. This is [[our]] house.","Is this [[your]] pen, Dana?"]},
+ {id:"this", mod:"2b", title:"this / these / that / those", kind:"bank", reuse:true, bank:["This","These","That","Those"],
+  rule:"Рядом: <b>this</b> (один), <b>these</b> (много). Далеко: <b>that</b> (один), <b>those</b> (много).",
+  items:["👇 рядом: [[This]] is my cap.","👇 рядом: [[These]] are my shoes.","👉 далеко: [[That]] is my bag.","👉 далеко: [[Those]] are my sunglasses.","👇 рядом: [[These]] are my trainers.","👉 далеко: [[That]] is a window."]},
+ {id:"nat", mod:"2c", title:"Страна → национальность", kind:"bank", reuse:false,
+  bank:["British","American","Kazakhstani","Turkish","French","Russian","Italian","Portuguese","Greek","Mexican","Chinese","Spanish"],
+  rule:"Страны и национальности в английском всегда пишутся <b>с большой буквы</b>.",
+  items:["the UK — [[British]]","the USA — [[American]]","Kazakhstan — [[Kazakhstani]]","Turkey — [[Turkish]]","France — [[French]]","Russia — [[Russian]]",
+   "Italy — [[Italian]]","Portugal — [[Portuguese]]","Greece — [[Greek]]","Mexico — [[Mexican]]","China — [[Chinese]]","Spain — [[Spanish]]"]},
+ {id:"shrek", mod:"2a", title:"Кто это? Описание персонажей", kind:"bank", reuse:false, bank:["Shrek","Princess Fiona","Rapunzel","Merlin","Prince Charming"],
+  rule:"big — большой, fat — толстый, plump — полный, thin — худой, bald — лысый, moustache — усы, beard — борода, fair hair — светлые волосы.",
+  items:["He's big and fat with green skin. — [[Shrek]]","She's short and plump with long red hair. — [[Princess Fiona]]","She's tall and thin with very long fair hair. — [[Rapunzel]]",
+   "He's old and thin, quite bald with a moustache and a long white beard. — [[Merlin]]","He's young, tall and thin with short fair hair. — [[Prince Charming]]"]},
+ {id:"dialog", mod:"2d", title:"Собери диалог", kind:"bank", reuse:false, dialog:true,
+  bank:["How are you?","Not bad.","This is Ben.","Nice to meet you.","Where are you from","How old are you?","What's your favourite subject?","Mine, too."],
+  rule:"Знакомство: <i>This is Ben.</i> — <i>Nice to meet you.</i> Вопросы: <i>Where are you from? How old are you? What's your favourite subject?</i>",
+  items:[{w:"Susan",t:"Good morning, Anna!"},{w:"Anna",t:"Hi, Susan. [[How are you?]]"},{w:"Susan",t:"I'm fine, thanks. And you?"},{w:"Anna",t:"[[Not bad.]]"},
+   {w:"Susan",t:"[[This is Ben.]] He's new to our school."},{w:"Anna",t:"Hi, Ben! [[Nice to meet you.]]"},{w:"Ben",t:"Nice to meet you, too."},
+   {w:"Anna",t:"[[Where are you from]], Ben?"},{w:"Ben",t:"I'm from Glasgow. I'm Scottish. How about you?"},{w:"Anna",t:"I'm from London. [[How old are you?]]"},
+   {w:"Ben",t:"I'm eleven. And you?"},{w:"Anna",t:"I'm twelve. [[What's your favourite subject?]]"},{w:"Ben",t:"English."},{w:"Anna",t:"[[Mine, too.]]"}]},
+ {id:"land", mod:"1e · 1f", title:"Достопримечательности", kind:"bank", reuse:false,
+  bank:["Paris","324","Astana","105","London","775","steel and glass","32","Thames","135"],
+  rule:"Вспомни тексты Landmarks и The London Eye.",
+  items:["The Eiffel Tower is in [[Paris]]. It is [[324]] metres tall.","Baiterek is an observation tower in [[Astana]]. It is [[105]] metres tall.",
+   "Buckingham Palace is in [[London]]. There are [[775]] rooms in it.","The London Eye is made of [[steel and glass]]. It has got [[32]] capsules.",
+   "It is next to the River [[Thames]]. It is [[135]] metres from the top to the bottom."]},
+];
+
+/* ================= STATE ================= */
+const KEY="eng-ruslan-v1";
+let ST={dict:{},ex:{}};
+try{const s=localStorage.getItem(KEY);if(s)ST=Object.assign(ST,JSON.parse(s));}catch(e){}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(ST));}catch(e){}}
+const $v=document.getElementById("view");
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function h(tag,attrs,...kids){const el=document.createElement(tag);for(const [k,v] of Object.entries(attrs||{})){if(v==null||v===false)continue;if(k==="html")el.innerHTML=v;else if(k.startsWith("on"))el.addEventListener(k.slice(2),v);else if(k==="class")el.className=v;else el.setAttribute(k,v===true?"":v);}for(const c of kids.flat()){if(c==null||c===false)continue;el.append(c instanceof Node?c:document.createTextNode(String(c)));}return el;}
+let toastT;function toast(m){const t=document.getElementById("toast");t.textContent=m;t.hidden=false;clearTimeout(toastT);toastT=setTimeout(()=>t.hidden=true,3000);}
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+
+/* speech */
+let VOICE=null;const canSay=typeof speechSynthesis!=="undefined";
+function pickVoice(){try{const vs=speechSynthesis.getVoices();VOICE=vs.find(v=>/en-GB/i.test(v.lang))||vs.find(v=>/^en/i.test(v.lang))||null;}catch(e){}}
+if(canSay){pickVoice();try{speechSynthesis.onvoiceschanged=pickVoice;}catch(e){}}
+function say(t){if(!canSay)return;try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t.replace(/\(.*?\)/g,""));u.lang="en-GB";u.rate=.85;if(VOICE)u.voice=VOICE;speechSynthesis.speak(u);}catch(e){}}
+function sayBtn(t){return canSay?h("button",{class:"say",type:"button","aria-label":"Послушать "+t,onclick:e=>{e.stopPropagation();say(t);}},"🔊"):null;}
+
+/* strict spelling check */
+function norm(s){return String(s||"").replace(/[’‘`´]/g,"'").replace(/[.,?!;:]/g," ").replace(/-/g," ").replace(/\s+/g," ").trim();}
+function checkWord(typed,answers,cap){
+  const t=norm(typed);if(!t)return{ok:false};
+  for(const a of answers){const n=norm(a);
+    if(t.toLowerCase()===n.toLowerCase()){
+      if(cap){for(let i=0;i<n.length;i++){if(n[i]!==n[i].toLowerCase()&&t[i]!==n[i])return{ok:false,cap:true,ans:a};}}
+      return{ok:true,ans:a};}}
+  return{ok:false};
+}
+// highlight letters of correct word that typed version missed/changed (LCS)
+function diffHtml(typed,correct){
+  const a=norm(typed).toLowerCase(),b=correct;const bl=b.toLowerCase();
+  const m=a.length,n=bl.length;const L=Array.from({length:m+1},()=>new Array(n+1).fill(0));
+  for(let i=m-1;i>=0;i--)for(let j=n-1;j>=0;j--)L[i][j]=a[i]===bl[j]?L[i+1][j+1]+1:Math.max(L[i+1][j],L[i][j+1]);
+  const keep=new Array(n).fill(false);let i=0,j=0;
+  while(i<m&&j<n){if(a[i]===bl[j]){keep[j]=true;i++;j++;}else if(L[i+1][j]>=L[i][j+1])i++;else j++;}
+  return [...b].map((c,k)=>keep[k]||c===" "||c==="'"||c==="-"||c==="?"||c==="."||c===","?esc(c):'<span class="m">'+esc(c)+'</span>').join("");
+}
+
+/* ================= ROUTER ================= */
+let R={name:"home"};
+function go(r){R=r;window.scrollTo({top:0});render();}
+document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{if(b.dataset.r==="ex")curEx=null;go({name:b.dataset.r});});
+function render(){
+  document.querySelectorAll(".tab").forEach(b=>b.setAttribute("aria-current",b.dataset.r===R.name?"page":"false"));
+  $v.replaceChildren();
+  ({home:vHome,dict:vDict,write:vWrite,ex:vEx,res:vRes})[R.name]();
+}
+
+/* ================= HOME ================= */
+function totals(){
+  const words=TOPICS.reduce((s,t)=>s+t.words.length,0);
+  const done=TOPICS.reduce((s,t)=>s+(ST.dict[t.id]&&ST.dict[t.id].done?t.words.length:0),0);
+  const exDone=EXS.filter(e=>ST.ex[e.id]).length;
+  return{words,done,exDone};
+}
+function vHome(){
+  const t=totals();
+  $v.append(h("section",{class:"card"},
+    h("h1",{},"Руслан, готовимся к СОЧ по английскому"),
+    h("p",{class:"muted"},"Starter, Module 1 (Home & Away) и Module 2 (Living things). Это не тест, а рабочая тетрадь. Сначала повтори слова, потом напиши их сам, потом сделай упражнения как в учебнике. Слова нужно писать без ошибок: каждая буква важна."),
+    h("div",{class:"steps"},
+      step(1,"Словарь","Прочитай и послушай все слова. Закрой английский столбик и проверь себя.","dict"),
+      step(2,"Диктант",`Пишешь английское слово по-русски подсказке. Готово ${t.done} из ${t.words} слов.`,"write"),
+      step(3,"Упражнения",`Вставь слова в пропуски, разложи по группам, собери диалог. Сделано ${t.exDone} из ${EXS.length}.`,"ex"),
+      step(4,"Итог","Посмотри результат и отправь папе.","res"))));
+  $v.append(h("section",{class:"card"},h("h2",{},"Как работать"),
+    h("ul",{},h("li",{},"Прогресс сохраняется на этом компьютере. Можно делать по частям."),
+      h("li",{},"🔊 — послушать, как произносится слово."),
+      h("li",{},"В диктанте слово, написанное с ошибкой, вернётся в конце темы. Тема закончится, когда ты напишешь все слова правильно."),
+      h("li",{},"В упражнениях нажми на слово внизу, а потом на пропуск. Можно и перетащить мышкой."))));
+}
+function step(n,t,d,r){return h("button",{class:"step",type:"button",onclick:()=>go({name:r})},h("span",{class:"n"},"Шаг "+n),h("b",{},t),h("span",{class:"small muted"},d));}
+
+/* ================= DICTIONARY ================= */
+let dictTopic=TOPICS[0].id,hideMode="none";
+function vDict(){
+  const card=h("section",{class:"card"},h("h1",{},"Словарь"),
+    h("p",{class:"muted"},"Читай слово, слушай 🔊, повторяй вслух. Потом спрячь английский столбик и вспомни каждое слово. Нажми на синюю плашку, чтобы проверить."));
+  const tps=h("div",{class:"chips"});
+  for(const t of TOPICS)tps.append(h("button",{class:"topic",type:"button","aria-pressed":String(t.id===dictTopic),onclick:()=>{dictTopic=t.id;render();}},t.title));
+  const modes=h("div",{class:"row"},
+    h("button",{class:"btn small"+(hideMode==="none"?"":" ghost"),type:"button",onclick:()=>{hideMode="none";render();}},"Показать всё"),
+    h("button",{class:"btn small"+(hideMode==="en"?"":" ghost"),type:"button",onclick:()=>{hideMode="en";render();}},"Спрятать английский"),
+    h("button",{class:"btn small"+(hideMode==="ru"?"":" ghost"),type:"button",onclick:()=>{hideMode="ru";render();}},"Спрятать русский"));
+  const T=TOPICS.find(t=>t.id===dictTopic);
+  const tbl=h("table",{},h("tr",{},h("th",{},"English"),h("th",{},""),h("th",{},"Русский")));
+  for(const w of T.words){
+    const en=h("td",{class:"en"+(hideMode==="en"?" hidecell":"")},w[0]);
+    const ru=h("td",{class:hideMode==="ru"?"hidecell":""},w[1]);
+    for(const c of [en,ru])c.addEventListener("click",()=>c.classList.remove("hidecell"));
+    tbl.append(h("tr",{},en,h("td",{},sayBtn(w[0])),ru));
+  }
+  card.append(tps,modes,h("p",{class:"small muted"},T.mod+" · "+T.words.length+" слов"),h("div",{class:"tw"},tbl),
+    h("div",{class:"row"},h("button",{class:"btn",type:"button",onclick:()=>{wTopic=T.id;startTopic();go({name:"write"});}},"Написать эти слова →")));
+  $v.append(card);
+}
+
+/* ================= DICTATION ================= */
+let wTopic=null,W=null;
+function startTopic(){const T=TOPICS.find(t=>t.id===wTopic);W={topic:T,queue:shuffle(T.words.map((w,i)=>i)),first:{},errors:[],retry:[],cur:null,shown:false,count:0};}
+function vWrite(){
+  const card=h("section",{class:"card"},h("h1",{},"Диктант"),
+    h("p",{class:"muted"},"Выбери тему. Читаешь по-русски, слушаешь 🔊 и пишешь слово по-английски. Регистр букв не важен, но страны, национальности и дни недели пишутся с большой буквы."));
+  const tps=h("div",{class:"chips"});
+  for(const t of TOPICS){const d=ST.dict[t.id];
+    const st=d&&d.done?(d.first===t.words.length?"✓":d.first+"/"+t.words.length):"";
+    tps.append(h("button",{class:"topic",type:"button","aria-pressed":String(W&&W.topic.id===t.id),onclick:()=>{wTopic=t.id;startTopic();render();}},t.title,st?h("span",{class:"st"},st):null));}
+  card.append(tps);
+  if(!W){card.append(h("p",{},"Нажми на тему, чтобы начать. Лучше идти по порядку."));$v.append(card);return;}
+  const T=W.topic,total=T.words.length;
+  const doneN=Object.keys(W.first).length;
+  card.append(h("div",{class:"prog","aria-hidden":"true"},h("i",{style:`width:${Math.round(doneN/total*100)}%`})),
+    h("p",{class:"small muted"},`${T.title}: ${doneN} из ${total}`+(W.retry.length?` · на повтор: ${W.retry.length}`:"")));
+  if(!W.queue.length&&!W.retry.length){finishTopic(card);$v.append(card);return;}
+  if(W.cur==null){if(W.queue.length)W.cur={i:W.queue.shift(),again:false};else{W.cur={i:W.retry.shift(),again:true};}W.shown=false;}
+  const w=T.words[W.cur.i];const answers=[w[0],...(w[2]||[])];const cap=w[3]==="cap";
+  const inp=h("input",{class:"w",type:"text",id:"dict-in",autocomplete:"off",autocapitalize:"off",spellcheck:"false","aria-label":"Напиши по-английски"});
+  const fb=h("div",{});const btn=h("button",{class:"btn",type:"button"},"Проверить");
+  const box=h("div",{class:"dict"},h("span",{class:"small muted"},W.cur.again?"Повтори это слово ещё раз":"Напиши по-английски"),
+    h("div",{class:"row"},h("span",{class:"prompt"},w[1]),sayBtn(w[0])),inp,h("div",{class:"row"},btn),fb);
+  let checked=false;
+  const next=()=>{W.cur=null;render();setTimeout(()=>{const el=document.getElementById("dict-in");el&&el.focus();},30);};
+  btn.onclick=()=>{
+    if(checked){next();return;}
+    if(!inp.value.trim()){inp.focus();return;}
+    const r=checkWord(inp.value,answers,cap);checked=true;inp.disabled=true;
+    if(!(W.cur.i in W.first))W.first[W.cur.i]=r.ok;
+    if(r.ok){fb.className="fb ok";fb.textContent="Верно! "+w[0];say(w[0]);}
+    else{
+      fb.className="fb bad";
+      fb.append(h("span",{class:"t"},r.cap?"Почти! Нужна большая буква. ":"Ошибка. "),h("span",{},"Ты написал: "),h("b",{},inp.value),h("br"),
+        h("span",{},"Правильно: "),h("span",{class:"diff",html:diffHtml(inp.value,w[0])}),h("span",{class:"small muted"}," — выделены буквы, где ошибка"));
+      W.errors.push({en:w[0],typed:inp.value});W.retry.push(W.cur.i);say(w[0]);
+    }
+    btn.textContent="Дальше →";btn.focus();
+  };
+  inp.addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();btn.click();}});
+  card.append(box);$v.append(card);
+  setTimeout(()=>inp.focus(),30);
+}
+function finishTopic(card){
+  const T=W.topic,total=T.words.length;const first=Object.values(W.first).filter(Boolean).length;
+  if(!ST.dict[T.id]){ST.dict[T.id]={done:true,first,total,errors:W.errors.slice(0,40),at:new Date().toISOString()};save();}
+  card.append(h("div",{class:"fb ok"},`Тема «${T.title}» закончена! С первого раза: ${first} из ${total}.`));
+  if(W.errors.length)card.append(h("p",{},"Повтори слова, где были ошибки: ",h("b",{},[...new Set(W.errors.map(e=>e.en))].join(", "))));
+  const idx=TOPICS.indexOf(T);const nx=TOPICS[idx+1];
+  card.append(h("div",{class:"row"},nx?h("button",{class:"btn",type:"button",onclick:()=>{wTopic=nx.id;startTopic();render();}},"Следующая тема: "+nx.title+" →"):h("button",{class:"btn",type:"button",onclick:()=>go({name:"ex"})},"К упражнениям →"),
+    h("button",{class:"btn ghost",type:"button",onclick:()=>{startTopic();render();}},"Пройти тему ещё раз")));
+}
+
+/* ================= EXERCISES ================= */
+let curEx=null,E=null;
+function vEx(){
+  if(curEx){return vExOne();}
+  const card=h("section",{class:"card"},h("h1",{},"Упражнения"),h("p",{class:"muted"},"Как в учебнике: вставь слова в пропуски, разложи по группам, собери диалог. Нажми «Проверить» — ошибки подсветятся, потом их можно исправить."));
+  const list=h("div",{class:"exlist"});
+  EXS.forEach((e,i)=>{const s=ST.ex[e.id];
+    const b=s?h("span",{class:"badge "+(s.score===s.total?"ok":"mid")},s.score+"/"+s.total):h("span",{class:"badge no"},"не сделано");
+    list.append(h("button",{class:"exbtn",type:"button",onclick:()=>{curEx=e.id;E=null;render();}},h("span",{},h("span",{class:"mod"},(i+1)+". "+e.mod),e.title),b));});
+  card.append(list);$v.append(card);
+}
+function parseText(t){const parts=[];const re=/\[\[(.+?)\]\]/g;let last=0,m;while((m=re.exec(t))){if(m.index>last)parts.push({s:t.slice(last,m.index)});parts.push({a:m[1].split("|")});last=re.lastIndex;}if(last<t.length)parts.push({s:t.slice(last)});return parts;}
+const PICS={in:[30,40],on:[30,8],under:[30,72],behind:[42,16],next:[66,44],front:[30,50],between:[60,44]};
+function prepPic(k){
+  const box=(x)=>`<rect x="${x}" y="22" width="40" height="40" rx="3" style="fill:var(--pink);opacity:.85"/><path d="M${x} 22 l8 -8 h40 l-8 8z" style="fill:var(--pink);opacity:.6"/>`;
+  let s='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 90" width="96" height="72" aria-hidden="true">';
+  const ball=(x,y)=>`<circle cx="${x}" cy="${y}" r="9" style="fill:var(--teal)"/>`;
+  if(k==="between")s+=box(6)+box(74)+ball(60,50);
+  else if(k==="behind")s+=ball(46,22)+box(26);
+  else if(k==="in")s+=ball(46,44)+`<rect x="26" y="22" width="40" height="40" rx="3" style="fill:var(--pink);opacity:.35;stroke:var(--pink);stroke-width:2"/><path d="M26 22 l8 -8 h40 l-8 8z" style="fill:var(--pink);opacity:.3"/>`;
+  else if(k==="on")s+=box(26)+ball(50,5+3);
+  else if(k==="under")s+=`<rect x="26" y="8" width="40" height="40" rx="3" style="fill:var(--pink);opacity:.85"/>`+`<line x1="18" y1="80" x2="102" y2="80" style="stroke:var(--muted);stroke-width:2"/>`+ball(46,68);
+  else if(k==="next")s+=box(18)+ball(84,52);
+  else if(k==="front")s+=box(26)+`<circle cx="46" cy="56" r="12" style="fill:var(--teal);stroke:var(--card);stroke-width:2"/>`;
+  return s+"</svg>";
+}
+function vExOne(){
+  const ex=EXS.find(e=>e.id===curEx);const idx=EXS.indexOf(ex);
+  if(!E||E.id!==ex.id)E={id:ex.id,checked:false,first:null,sel:null};
+  const card=h("section",{class:"card"},
+    h("div",{class:"row"},h("button",{class:"btn small ghost",type:"button",onclick:()=>{curEx=null;render();}},"← Все упражнения"),h("span",{class:"small muted"},(idx+1)+" из "+EXS.length+" · "+ex.mod)),
+    h("h1",{},ex.title),h("div",{class:"rule",html:ex.rule}));
+  if(ex.kind==="sort")buildSort(card,ex);else buildGaps(card,ex);
+  $v.append(card);
+}
+function exNav(card,ex){
+  const idx=EXS.indexOf(ex);const nx=EXS[idx+1];
+  return h("div",{class:"row"},nx?h("button",{class:"btn ghost",type:"button",onclick:()=>{curEx=nx.id;E=null;render();}},"Следующее упражнение →"):h("button",{class:"btn ghost",type:"button",onclick:()=>{curEx=null;go({name:"res"});}},"К итогу →"));
+}
+function recordFirst(ex,score,total,errs){if(E.first)return;E.first={score,total};if(!ST.ex[ex.id]){ST.ex[ex.id]={score,total,errors:errs.slice(0,30),at:new Date().toISOString()};save();}}
+
+/* gaps: bank (tap/drag chips) or typed */
+function buildGaps(card,ex){
+  const gaps=[];const ol=h("ol",{class:"lines"});
+  let bankEl=null,chips=[];
+  ex.items.forEach(it=>{
+    const o=typeof it==="string"?{t:it}:it;const li=h("li",{class:ex.dialog?"nonum":""});
+    if(ex.dialog)li.append(h("span",{class:"who"},o.w+":"));
+    if(o.pic)li.append(h("span",{class:"pic",html:prepPic(o.pic)}));
+    const line=h("span",{});
+    for(const p of parseText(o.t)){
+      if(p.s!=null){line.append(p.s);continue;}
+      if(ex.kind==="type"){const inp=h("input",{class:"tg",type:"text",autocomplete:"off",autocapitalize:"off",spellcheck:"false","aria-label":"Впиши слово",id:"g-"+ex.id+"-"+gaps.length});
+        const g={el:inp,ans:p.a,val:()=>inp.value};gaps.push(g);line.append(inp);}
+      else{const el=h("span",{class:"gap",role:"button",tabindex:"0","aria-label":"Пропуск"},"   ");
+        const g={el,ans:p.a,chip:null,text:null,val:()=>g.text||""};gaps.push(g);
+        el.addEventListener("click",()=>gapClick(g));el.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();gapClick(g);}});
+        el.addEventListener("dragover",e=>{e.preventDefault();el.classList.add("over");});el.addEventListener("dragleave",()=>el.classList.remove("over"));
+        el.addEventListener("drop",e=>{e.preventDefault();el.classList.remove("over");const ci=+e.dataTransfer.getData("text/plain");if(!isNaN(ci)){E.sel=ci;gapClick(g);}});
+        line.append(el);}
+    }
+    li.append(line);ol.append(li);
+  });
+  function setGap(g,ci){
+    if(g.chip!=null&&!ex.reuse){chips[g.chip].used=false;}
+    if(ci==null){g.chip=null;g.text=null;g.el.textContent="   ";g.el.classList.remove("filled","ok","bad");}
+    else{g.chip=ci;g.text=chips[ci].t;g.el.textContent=g.text;g.el.classList.add("filled");g.el.classList.remove("ok","bad");if(!ex.reuse)chips[ci].used=true;}
+    const c=g.el.parentNode&&g.el.parentNode.querySelector(".corr");
+    drawBank();
+  }
+  function gapClick(g){
+    if(g.locked)return;
+    if(E.sel!=null){setGap(g,E.sel);E.sel=null;}
+    else if(g.chip!=null){setGap(g,null);}
+    else toast("Сначала нажми на слово внизу");
+    drawBank();
+  }
+  function drawBank(){
+    if(!bankEl)return;bankEl.replaceChildren();
+    chips.forEach((c,i)=>{if(c.used&&!ex.reuse)return;
+      const b=h("button",{class:"chip",type:"button",draggable:"true","aria-pressed":String(E.sel===i)},c.t);
+      b.onclick=()=>{E.sel=E.sel===i?null:i;drawBank();};
+      b.addEventListener("dragstart",e=>{e.dataTransfer.setData("text/plain",String(i));});
+      bankEl.append(b);});
+    if(!bankEl.children.length)bankEl.append(h("span",{class:"small muted"},"Все слова расставлены."));
+  }
+  if(ex.kind!=="type"){chips=shuffle(ex.bank).map(t=>({t,used:false}));bankEl=h("div",{class:"bank","aria-label":"Слова для вставки"});card.append(h("p",{class:"small muted"},ex.reuse?"Слова можно использовать несколько раз.":"Каждое слово — один раз."),bankEl);drawBank();}
+  card.append(ol);
+  const res=h("div",{});const chk=h("button",{class:"btn",type:"button"},"Проверить");const fix=h("button",{class:"btn ghost",type:"button",hidden:true},"Исправить ошибки");
+  chk.onclick=()=>{
+    const empty=gaps.filter(g=>!String(g.val()).trim());
+    if(empty.length){toast("Заполни все пропуски ("+empty.length+" пустых)");return;}
+    let ok=0;const errs=[];
+    gaps.forEach(g=>{
+      g.el.parentNode.querySelectorAll(".corr").forEach(x=>x.remove());
+      let good;if(ex.kind==="type"){const r=checkWord(g.val(),g.ans,false);good=r.ok;}else good=g.ans.includes(g.text);
+      g.el.classList.toggle("ok",good);g.el.classList.toggle("bad",!good);
+      if(good){ok++;g.locked=true;if(ex.kind==="type")g.el.disabled=true;}
+      else{errs.push({ans:g.ans[0],got:g.val()});g.el.insertAdjacentElement("afterend",h("span",{class:"corr"},"→ "+g.ans[0]));}
+    });
+    recordFirst(ex,ok,gaps.length,errs);
+    res.replaceChildren(h("p",{class:"score"},`Верно ${ok} из ${gaps.length}`+(E.first&&E.first.score!==ok?` (с первой попытки: ${E.first.score})`:"")),
+      ok===gaps.length?h("div",{class:"fb ok"},"Отлично! Всё верно."):h("p",{class:"muted"},"Красным — ошибки, рядом правильный ответ. Прочитай правило ещё раз и нажми «Исправить ошибки»."));
+    fix.hidden=ok===gaps.length;
+  };
+  fix.onclick=()=>{gaps.forEach(g=>{if(g.locked)return;g.el.parentNode.querySelectorAll(".corr").forEach(x=>x.remove());
+      if(ex.kind==="type"){g.el.value="";g.el.classList.remove("bad");}else setGap(g,null);});
+    fix.hidden=true;res.replaceChildren(h("p",{class:"muted"},"Вставь ответы заново и нажми «Проверить»."));const f=gaps.find(g=>!g.locked);f&&f.el.focus();};
+  card.append(h("div",{class:"row"},chk,fix),res,exNav(card,ex));
+}
+
+/* sort into categories */
+function buildSort(card,ex){
+  const items=shuffle(ex.cats.flatMap(c=>c.items.map(t=>({t,cat:c.name,at:null}))));
+  let sel=null;
+  const bankEl=h("div",{class:"bank"});const catsEl=h("div",{class:"cats"});
+  const catBoxes={};
+  for(const c of ex.cats){const inn=h("div",{class:"in"});const box=h("div",{class:"cat",role:"button",tabindex:"0"},h("h3",{},c.name),inn);
+    box.addEventListener("click",e=>{if(e.target.closest(".chip"))return;place(c.name);});
+    box.addEventListener("keydown",e=>{if(e.key==="Enter"){place(c.name);}});
+    box.addEventListener("dragover",e=>{e.preventDefault();box.classList.add("over");});box.addEventListener("dragleave",()=>box.classList.remove("over"));
+    box.addEventListener("drop",e=>{e.preventDefault();box.classList.remove("over");const i=+e.dataTransfer.getData("text/plain");if(!isNaN(i)){sel=i;place(c.name);}});
+    catBoxes[c.name]={box,inn};catsEl.append(box);}
+  function place(cat){if(sel==null){toast("Сначала нажми на слово");return;}items[sel].at=cat;items[sel].res=null;sel=null;draw();}
+  function chipEl(it,i){const b=h("button",{class:"chip"+(it.res===true?" ok":it.res===false?" bad":""),type:"button",draggable:String(it.res!==true),"aria-pressed":String(sel===i)},it.t);
+    b.onclick=()=>{if(it.res===true)return;if(it.at&&sel!==i&&sel==null){it.at=null;it.res=null;draw();return;}sel=sel===i?null:i;draw();};
+    b.addEventListener("dragstart",e=>e.dataTransfer.setData("text/plain",String(i)));return b;}
+  function draw(){bankEl.replaceChildren();Object.values(catBoxes).forEach(c=>{c.inn.replaceChildren();c.box.classList.toggle("target",sel!=null);});
+    items.forEach((it,i)=>{(it.at?catBoxes[it.at].inn:bankEl).append(chipEl(it,i));});
+    if(!bankEl.children.length)bankEl.append(h("span",{class:"small muted"},"Все слова разложены. Нажми «Проверить»."));}
+  card.append(h("p",{class:"small muted"},"Нажми на слово, потом на нужную группу. Чтобы убрать слово из группы — нажми на него."),bankEl,catsEl);draw();
+  const res=h("div",{});const chk=h("button",{class:"btn",type:"button"},"Проверить");
+  chk.onclick=()=>{if(items.some(it=>!it.at)){toast("Разложи все слова");return;}
+    let ok=0;const errs=[];items.forEach(it=>{it.res=it.at===it.cat;if(it.res)ok++;else{errs.push({ans:it.t+" → "+it.cat,got:it.at});it.at=null;it.res=null;}});
+    recordFirst(ex,ok,items.length,errs);draw();
+    res.replaceChildren(h("p",{class:"score"},`Верно ${ok} из ${items.length}`+(E.first&&E.first.score!==ok?` (с первой попытки: ${E.first.score})`:"")),
+      ok===items.length?h("div",{class:"fb ok"},"Отлично! Всё разложено верно."):h("p",{class:"muted"},"Неверные слова вернулись наверх. Разложи их ещё раз: "+errs.map(e=>e.ans).join("; ")));};
+  card.append(h("div",{class:"row"},chk),res,exNav(card,ex));
+}
+
+/* ================= RESULTS ================= */
+function report(){
+  const L=["АНГЛИЙСКИЙ — РЕЗУЛЬТАТ Руслана (Starter, Module 1–2)",""];
+  let wt=0,wf=0,wd=0;const wErr=[];
+  for(const t of TOPICS){const d=ST.dict[t.id];if(!d)continue;wd++;wt+=d.total;wf+=d.first;for(const e of d.errors||[])wErr.push(`${e.en} (написал: ${e.typed})`);}
+  L.push(`ДИКТАНТ: пройдено тем ${wd} из ${TOPICS.length}; слов с первого раза ${wf} из ${wt}.`);
+  for(const t of TOPICS){const d=ST.dict[t.id];L.push(` - ${t.title}: `+(d?`${d.first}/${d.total}`:"не пройдено"));}
+  if(wErr.length)L.push("Ошибки в словах: "+wErr.join("; "));
+  L.push("");
+  let es=0,et=0,ed=0;
+  L.push("УПРАЖНЕНИЯ (с первой попытки):");
+  for(const e of EXS){const s=ST.ex[e.id];if(s){ed++;es+=s.score;et+=s.total;}
+    L.push(` - ${e.title}: `+(s?`${s.score}/${s.total}`+(s.errors&&s.errors.length?" — ошибки: "+s.errors.map(x=>`${x.ans} (у него: ${x.got})`).join("; "):""):"не сделано"));}
+  L.push(`Итого упражнений: ${ed} из ${EXS.length}, верно ${es} из ${et}.`);
+  return L.join("\n");
+}
+function vRes(){
+  const t=totals();
+  const card=h("section",{class:"card"},h("h1",{},"Итог"),
+    h("p",{class:"muted"},`Диктант: ${t.done} из ${t.words} слов. Упражнения: ${t.exDone} из ${EXS.length}. Когда всё сделаешь, отправь результат папе.`));
+  const tbl=h("table",{},h("tr",{},h("th",{},"Тема / упражнение"),h("th",{},"С первого раза")));
+  for(const tp of TOPICS){const d=ST.dict[tp.id];tbl.append(h("tr",{},h("td",{},"Диктант: "+tp.title),h("td",{},d?h("span",{class:"badge "+(d.first===d.total?"ok":"mid")},d.first+"/"+d.total):h("span",{class:"badge no"},"—"))));}
+  for(const e of EXS){const s=ST.ex[e.id];tbl.append(h("tr",{},h("td",{},e.title),h("td",{},s?h("span",{class:"badge "+(s.score===s.total?"ok":"mid")},s.score+"/"+s.total):h("span",{class:"badge no"},"—"))));}
+  const txt=report();const ta=h("textarea",{class:"rep",readonly:true,id:"rep","aria-label":"Текст результата"});ta.value=txt;
+  const row=h("div",{class:"row"});
+  if(navigator.share)row.append(h("button",{class:"btn",type:"button",onclick:()=>navigator.share({text:txt}).catch(()=>{})},"Поделиться"));
+  row.append(h("a",{class:"btn ghost",href:"https://wa.me/?text="+encodeURIComponent(txt),target:"_blank",rel:"noopener",style:"text-decoration:none;display:inline-flex;align-items:center"},"WhatsApp"),
+    h("button",{class:"btn ghost",type:"button",onclick:()=>{navigator.clipboard&&navigator.clipboard.writeText(txt).then(()=>toast("Скопировано"),()=>{ta.select();toast("Выдели и скопируй текст");});if(!navigator.clipboard){ta.select();}}},"Скопировать"));
+  card.append(h("div",{class:"tw"},tbl),h("h2",{},"Отправить папе"),row,ta,
+    h("button",{class:"btn small ghost",type:"button",onclick:()=>{if(resetArm){ST={dict:{},ex:{}};save();resetArm=false;render();toast("Прогресс сброшен");}else{resetArm=true;toast("Нажми ещё раз, чтобы сбросить весь прогресс");setTimeout(()=>resetArm=false,4000);}}},"Начать заново"));
+  $v.append(card);
+}
+let resetArm=false;
+render();
+</script>
+</body>
+</html>
